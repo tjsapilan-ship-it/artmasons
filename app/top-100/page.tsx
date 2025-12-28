@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Playfair_Display } from 'next/font/google';
 import { Trophy, Search } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { ARTWORKS, generateSlug, getArtworkSlug, Artwork } from '../../data/artworks';
+import { ARTWORKS, getArtworkSlug, Artwork } from '../../data/artworks';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
 

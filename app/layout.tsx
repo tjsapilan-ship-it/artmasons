@@ -6,6 +6,7 @@ import PageLoader from "./components/PageLoader";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import ErrorBoundary from "./components/ErrorBoundary";
 import { CartProvider } from "./context/CartContext";
 import { ToastProvider } from "./context/ToastContext";
 
@@ -22,11 +23,30 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Art Masons",
   description: "Museum-Quality Oil Painting Reproductions - Hand-Painted by Master Artists",
+  keywords: "oil paintings, art reproductions, hand-painted art, museum quality art, famous paintings, art gallery",
+  authors: [{ name: "Art Masons" }],
+  openGraph: {
+    title: "Art Masons - Museum-Quality Art Reproductions",
+    description: "Hand-painted oil painting reproductions by master artists. Museum-quality craftsmanship.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Art Masons",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Art Masons - Museum-Quality Art Reproductions",
+    description: "Hand-painted oil painting reproductions by master artists",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   icons: {
-    icon: [
-      { url: '/artmasons_logo.png' },
-      { url: '/icon.png', type: 'image/png' }
-    ],
+    icon: '/artmasons_logo.png',
     apple: '/artmasons_logo.png',
     shortcut: '/artmasons_logo.png',
   },
@@ -44,14 +64,16 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <PageLoader />
-        <ToastProvider>
-          <CartProvider>
-            <Header />
-            {children}
-            <BackToTop />
-            <Footer />
-          </CartProvider>
-        </ToastProvider>
+        <ErrorBoundary>
+          <ToastProvider>
+            <CartProvider>
+              <Header />
+              {children}
+              <BackToTop />
+              <Footer />
+            </CartProvider>
+          </ToastProvider>
+        </ErrorBoundary>
       </body>
     </html>
   );

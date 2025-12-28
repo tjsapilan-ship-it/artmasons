@@ -320,7 +320,13 @@ export default function AboutUsPage() {
           </section>
 
           {/* Know Your Essence Quiz */}
-          <section className="bg-gradient-to-br from-[#800000] to-[#600000] text-white p-8 md:p-12 rounded-lg shadow-xl">
+          <section 
+            className="text-white p-8 md:p-12 rounded-lg shadow-xl"
+            style={{
+              background: '#800000',
+              backgroundImage: 'linear-gradient(to bottom right, #800000, #600000)'
+            }}
+          >
             <div className="text-center mb-8">
               <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">Know Your Essence</h2>
               <p className="text-lg md:text-xl opacity-90">

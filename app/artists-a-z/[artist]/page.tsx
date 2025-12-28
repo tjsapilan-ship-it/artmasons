@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Playfair_Display } from 'next/font/google';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import PageTransition from '../../components/PageTransition';
-import { generateSlug, getArtworkSlug, getArtworksByArtistSlug, getArtistNameBySlug, type Artwork } from '../../../data/artworks';
+import { getArtworkSlug, getArtworksByArtistSlug, getArtistNameBySlug, type Artwork } from '../../../data/artworks';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
 

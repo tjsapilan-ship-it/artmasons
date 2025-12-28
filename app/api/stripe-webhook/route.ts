@@ -24,7 +24,7 @@ function recipientFromOrder(order: StoredOrder): string | null {
 const stripeSecret = process.env.STRIPE_SECRET_KEY;
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
-const stripe = stripeSecret ? new Stripe(stripeSecret, { apiVersion: '2022-11-15' }) : null;
+const stripe = stripeSecret ? new Stripe(stripeSecret, { apiVersion: '2025-01-27.acacia' as Stripe.LatestApiVersion }) : null;
 
 export async function POST(req: Request) {
   if (!stripe) {

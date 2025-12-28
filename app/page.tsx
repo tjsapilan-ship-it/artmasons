@@ -345,14 +345,20 @@ export default function ArtMasonsLanding() {
   }, [playTop100Random, isTop100AutoPlay, triggerArtTransition]);
 
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return;
+    
     const container = scrollContainerRef.current;
     if (!container) return;
 
-    let animationFrameId: number;
+    let animationFrameId: number | null = null;
     let lastTime = 0;
     const speed = 40;
+    let isRunning = true;
 
     const step = (time: number) => {
+      if (!isRunning) return;
+      
       if (document.hidden || isCarouselPaused) {
         lastTime = time;
         animationFrameId = requestAnimationFrame(step);
@@ -374,16 +380,28 @@ export default function ArtMasonsLanding() {
     };
 
     const handleVisibility = () => {
-      if (!document.hidden) {
+      if (!document.hidden && isRunning) {
         lastTime = performance.now();
       }
     };
 
     document.addEventListener('visibilitychange', handleVisibility);
-    animationFrameId = requestAnimationFrame(step);
+    
+    // Ensure animation starts with a slight delay for Safari compatibility
+    const startAnimation = () => {
+      lastTime = performance.now();
+      animationFrameId = requestAnimationFrame(step);
+    };
+    
+    // Use setTimeout to ensure DOM is ready, especially for Safari/macOS
+    const timeoutId = setTimeout(startAnimation, 100);
 
     return () => {
-      cancelAnimationFrame(animationFrameId);
+      isRunning = false;
+      clearTimeout(timeoutId);
+      if (animationFrameId !== null) {
+        cancelAnimationFrame(animationFrameId);
+      }
       document.removeEventListener('visibilitychange', handleVisibility);
     };
   }, [isCarouselPaused]);
@@ -623,7 +641,7 @@ export default function ArtMasonsLanding() {
         <section className="container mx-auto px-4 py-20 flex flex-col md:flex-row gap-12">
           {/* FUN FACTS */}
           <div className="w-full md:w-1/2">
-            <h3 className="font-serif text-2xl font-bold mb-6 text-center md:text-left uppercase">
+            <h3 className="font-serif text-3xl font-bold mb-6 text-center md:text-left uppercase tracking-widest">
               FUN FACTS
             </h3>
             <div className="p-8 md:p-12 min-h-[300px] flex items-center justify-center text-center relative bg-white shadow-sm border-2 border-[#800000] rounded-lg">
@@ -659,46 +677,53 @@ export default function ArtMasonsLanding() {
 
             {/* Logos below Fun Facts */}
             <div className="mt-12">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-center md:text-left uppercase">
-                ART MASON'S QUALITY PROMISE
+              <h3 className="font-serif text-3xl font-bold mb-6 text-center md:text-left uppercase tracking-widest">
+                ART MASON&apos;S QUALITY PROMISE
               </h3>
               <div className="p-8 bg-white border-2 border-[#800000] rounded-lg shadow-sm flex flex-col items-center gap-6">
                 {/* First Row */}
                 <div className="w-full flex justify-center">
-                  <div className="relative w-32 h-32 sm:w-44 sm:h-44 md:w-72 md:h-72">
-                    <Image
-                      src="/image/icons/logo_1.png"
-                      alt="Logo 1"
-                      fill
-                      className="object-contain"
-                    />
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="relative w-32 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56">
+                      <Image
+                        src="/image/icons/logo_1.png"
+                        alt="Logo 1"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <p className="font-serif text-lg sm:text-xl font-bold text-[#800000] text-center">
+                      Hand Painted - Museum Quality
+                    </p>
                   </div>
                 </div>
                 {/* Second Row */}
-                <div className="w-full flex justify-center gap-12 items-center">
-                  <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44">
-                    <Image
-                      src="/image/icons/logo_2.png"
-                      alt="Logo 2"
-                      fill
-                      className="object-contain"
-                    />
+                <div className="w-full flex justify-center gap-8 sm:gap-12 items-start">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="relative w-32 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56">
+                      <Image
+                        src="/image/icons/logo_5.png"
+                        alt="Logo 5"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <p className="font-serif text-base sm:text-lg font-bold text-[#800000] text-center max-w-[150px] sm:max-w-none">
+                      Free Worldwide Shipping
+                    </p>
                   </div>
-                  <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44">
-                    <Image
-                      src="/image/icons/logo_3.png"
-                      alt="Logo 3"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44">
-                    <Image
-                      src="/image/icons/logo_4.png"
-                      alt="Logo 4"
-                      fill
-                      className="object-contain"
-                    />
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="relative w-32 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56">
+                      <Image
+                        src="/image/icons/logo_6.png"
+                        alt="Logo 6"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <p className="font-serif text-base sm:text-lg font-bold text-[#800000] text-center max-w-[150px] sm:max-w-none">
+                      100% Money Guarantee
+                    </p>
                   </div>
                 </div>
               </div>
@@ -706,7 +731,7 @@ export default function ArtMasonsLanding() {
           </div>
 
           {/* --- IMAGE ASPECT CALCULATOR --- */}
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 flex flex-col">
             <div className="flex items-center justify-center gap-4 mb-6">
                <div className="h-px bg-[#800000] flex-grow"></div>
                <h3 className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
@@ -715,33 +740,37 @@ export default function ArtMasonsLanding() {
                <div className="h-px bg-[#800000] flex-grow"></div>
             </div>
             
-            <div className="font-serif bg-white p-8 border-2 border-[#800000] rounded-lg shadow-sm flex flex-col text-black text-lg relative">
+            <div className="font-serif bg-white p-8 border-2 border-[#800000] rounded-lg shadow-sm flex flex-col text-black text-lg relative flex-grow justify-between gap-6">
               
-              <p className="mb-2 text-lg text-black">Keep your art perfectly proportional while fitting it to your space.</p>
-              <p className="mb-6 text-base text-black">Note: All artwork across our site is listed as Height x Width in <span className="font-bold text-[#b91c1c]">centimeters (cm)</span></p>
+              <div>
+                <p className="mb-2 text-lg text-black">Keep your art perfectly proportional while fitting it to your space.</p>
+                <p className="mb-6 text-base text-black">Note: All artwork across our site is listed as Height x Width in <span className="font-bold text-black">centimeters (cm)</span></p>
 
-              <div className="bg-[#b91c1c] text-white p-4 rounded mb-8 text-center font-medium shadow-sm">
-                Your artwork will always remain perfectly proportional – never stretched or distorted.
-              </div>
-
-              <p className="mb-4 font-semibold text-black">Follow these 3 simple steps:</p>
-
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <span className="bg-[#b91c1c] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 1</span>
-                  <p className="text-base text-black">Enter the original Height and Width found on the product page.</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="bg-[#b91c1c] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 2</span>
-                  <p className="text-base text-black">Measure your wall to decide how large you want the piece to be.</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="bg-[#b91c1c] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 3</span>
-                  <p className="text-base text-black">Enter either your new Height OR Width.</p>
+                <div className="bg-[#800000] text-white p-4 rounded text-center font-medium shadow-sm">
+                  Your artwork will always remain perfectly proportional – never stretched or distorted.
                 </div>
               </div>
 
-              <div className="flex gap-6 mb-6 bg-gray-50 p-4 rounded-lg border border-gray-100">
+              <div>
+                <p className="mb-4 font-semibold text-black">Follow these 3 simple steps:</p>
+
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 1</span>
+                    <p className="text-base text-black">Enter the original Height and Width found on the product page.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 2</span>
+                    <p className="text-base text-black">Measure your wall to decide how large you want the piece to be.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 3</span>
+                    <p className="text-base text-black">Enter either your new Height OR Width.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-6 bg-gray-50 p-4 rounded-lg border border-gray-100">
                 <div className="w-1/2">
                   <label className="text-base font-bold text-black block mb-2">Enter Original Height</label>
                   <input
@@ -764,28 +793,28 @@ export default function ArtMasonsLanding() {
                 </div>
               </div>
 
-              <div className="mb-6 bg-gray-50 p-4 rounded-lg border border-gray-100">
-                <label className="text-sm font-bold text-black block mb-4">
-                  Enter either the new desired Height <span className="text-[#b91c1c] font-extrabold">OR</span> Width
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <label className="text-base font-bold text-black block mb-4">
+                  Enter either the new desired Height <span className="text-[#800000] font-extrabold">OR</span> Width
                 </label>
                 
                 <div className="flex items-center gap-4 mb-4">
                    <label className="flex items-center gap-2 cursor-pointer group">
-                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${knownDim === 'height' ? 'border-[#b91c1c]' : 'border-gray-400'}`}>
-                        {knownDim === 'height' && <div className="w-2.5 h-2.5 rounded-full bg-[#b91c1c]" />}
+                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${knownDim === 'height' ? 'border-[#800000]' : 'border-gray-400'}`}>
+                        {knownDim === 'height' && <div className="w-2.5 h-2.5 rounded-full bg-[#800000]" />}
                       </div>
                       <input type="radio" name="known" checked={knownDim === 'height'} onChange={() => setKnownDim('height')} className="hidden" />
-                      <span className="text-base font-medium text-black group-hover:text-[#b91c1c] transition-colors">New Height</span>
+                      <span className="text-base font-medium text-black group-hover:text-[#800000] transition-colors">New Height</span>
                    </label>
 
-                   <span className="bg-[#b91c1c] text-white text-xs font-bold px-3 py-1 rounded shadow-sm">OR</span>
+                   <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shadow-sm">OR</span>
 
                    <label className="flex items-center gap-2 cursor-pointer group">
-                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${knownDim === 'width' ? 'border-[#b91c1c]' : 'border-gray-400'}`}>
-                        {knownDim === 'width' && <div className="w-2.5 h-2.5 rounded-full bg-[#b91c1c]" />}
+                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${knownDim === 'width' ? 'border-[#800000]' : 'border-gray-400'}`}>
+                        {knownDim === 'width' && <div className="w-2.5 h-2.5 rounded-full bg-[#800000]" />}
                       </div>
                       <input type="radio" name="known" checked={knownDim === 'width'} onChange={() => setKnownDim('width')} className="hidden" />
-                      <span className="text-base font-medium text-black group-hover:text-[#b91c1c] transition-colors">New Width</span>
+                      <span className="text-base font-medium text-black group-hover:text-[#800000] transition-colors">New Width</span>
                    </label>
                 </div>
 
@@ -803,16 +832,16 @@ export default function ArtMasonsLanding() {
                    <div className="px-4 py-3 text-black text-base border-r border-gray-200 bg-gray-50 min-w-[180px] font-medium">
                       Behold your new {knownDim === 'width' ? 'Height' : 'Width'}
                    </div>
-                    <div className="px-4 py-3 font-bold text-[#b91c1c] text-lg flex-grow">
+                    <div className="px-4 py-3 font-bold text-[#800000] text-lg flex-grow">
                        {typeof computedOtherDim === 'number' ? `${computedOtherDim} cm` : ''}
                     </div>
                 </div>
               </div>
 
-              <div className="border-2 border-[#800000] rounded p-4 mt-2">
+              <div className="border-2 border-[#800000] rounded p-4">
                  <p className="font-bold text-base mb-1 text-black">Need a hand?</p>
                  <p className="text-base text-black">
-                   We're happy to help — contact us at <a href="mailto:info@artmasons.com" className="text-[#800000] underline font-medium">info@artmasons.com</a>
+                   We&apos;re happy to help — contact us at <a href="mailto:info@artmasons.com" className="text-[#800000] underline font-medium">info@artmasons.com</a>
                  </p>
               </div>
 

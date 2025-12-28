@@ -14,7 +14,7 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import { type CartItem, useCart } from '../context/CartContext';
 import type { Artwork } from '../../data/artworks';
-import { generateSlug, getArtworkSlug } from '../../data/artworks';
+import { getArtworkSlug } from '../../data/artworks';
 import { useToast } from '../context/ToastContext';
 
 type ArtworkOption = NonNullable<Artwork['options']>[number];

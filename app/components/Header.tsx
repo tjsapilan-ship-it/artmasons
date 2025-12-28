@@ -74,7 +74,7 @@ export default function Header() {
         <Link href="/" className="flex-shrink-0 flex flex-col items-center justify-end w-auto md:w-56 cursor-pointer pb-2">
           <div className="relative w-20 h-20 sm:w-28 sm:h-28 md:w-44 md:h-44">
             <Image
-              src="/artmasons_logo.png"
+              src="/image/icons/logo_1.png"
               alt="Art Masons Seal"
               fill
               className="object-contain"

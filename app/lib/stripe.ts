@@ -1,6 +1,6 @@
 import Stripe from 'stripe';
 
-const STRIPE_API_VERSION: Stripe.LatestApiVersion = '2022-11-15';
+const STRIPE_API_VERSION = '2025-01-27.acacia' as Stripe.LatestApiVersion;
 
 let stripeSingleton: Stripe | null = null;
 
