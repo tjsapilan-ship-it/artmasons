@@ -11,6 +11,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { ARTWORKS, getArtworkSlug } from "../data/artworks";
+import { FAMOUS_ART, TOP_100_PAINTINGS, getFamousArtworkSlug } from "../data/famousAndTop100";
 
 function shuffle<T>(arr: T[]) {
   const a = arr.slice();
@@ -90,55 +91,79 @@ const FUN_FACTS_DATA = [
 ];
 
 const TESTIMONIALS_DATA = [
-  "Art Masons delivered a masterpiece far beyond what I imagined.",
-  "The quality from Art Masons is simply unmatched.",
-  "Everyone who visits my home compliments my Art Masons painting.",
-  "Art Masons truly sets the standard for museum-quality work.",
-  "I’ve never seen replicas done this perfectly — Art Masons is elite.",
-  "The attention to detail from Art Masons is extraordinary.",
-  "Art Masons turned my space into a gallery.",
-  "The colors from Art Masons feel alive — absolutely stunning.",
-  "My home finally feels complete thanks to Art Masons.",
-  "Art Masons delivered flawless craftsmanship.",
-  "I trust Art Masons with every commission — they never disappoint.",
-  "Art Masons brings old masterpieces back to life.",
-  "The texture and realism from Art Masons are unbelievable.",
-  "Art Masons exceeded all my expectations.",
-  "I feel like I own a museum piece — thank you, Art Masons.",
-  "Art Masons has the very best artists I’ve ever worked with.",
-  "Every stroke shows the passion behind Art Masons.",
-  "Brilliant work — Art Masons truly understands fine art.",
-  "Art Masons delivered my painting in perfect condition and perfect quality.",
-  "You can immediately see the expertise at Art Masons.",
-  "My Art Masons piece is now the centerpiece of my living room.",
-  "Exceptional craftsmanship — Art Masons is world class.",
-  "The painting looks identical to the original reference — Art Masons nailed it.",
-  "If you want premium art, Art Masons is the only choice.",
-  "Art Masons created a piece that feels alive with emotion.",
-  "I trust Art Masons because their quality is consistent and outstanding.",
-  "My Art Masons painting has transformed the entire room.",
-  "The realism is so powerful — Art Masons are true masters.",
-  "Art Masons made the entire process smooth and professional.",
-  "Every detail is perfect. Art Masons is the real deal.",
-  "The texture, color, and depth from Art Masons is incredible.",
-  "Art Masons delivered exactly what I envisioned and more.",
-  "A truly luxurious experience — Art Masons understands art lovers.",
-  "I own three pieces from Art Masons and each one is perfection.",
-  "The quality from Art Masons rivals any gallery I’ve visited.",
-  "Art Masons captured the spirit of the original painting beautifully.",
-  "The craftsmanship at Art Masons is second to none.",
-  "I am blown away by the accuracy of my Art Masons replica.",
-  "Professional, talented, and reliable — Art Masons is exceptional.",
-  "My Art Masons artwork feels like a treasure I will keep forever.",
-  "The gold-leaf work from Art Masons is absolutely exquisite.",
-  "Art Masons makes art collectors out of everyone.",
-  "From communication to delivery, Art Masons was perfect.",
-  "This is the best replica art I’ve ever purchased — thank you, Art Masons.",
-  "Every Art Masons painting feels rich, elegant, and timeless.",
-  "I can’t stop staring at my Art Masons piece — it’s mesmerizing.",
-  "Art Masons delivers gallery-level quality at an incredible standard.",
-  "I instantly knew my Art Masons artwork was something special.",
-  "Art Masons brings luxury and authenticity together beautifully.",
+  "I ordered a reproduction of a Van Gogh and couldn't believe the quality, every brushstroke felt alive. Truly stunning work!",
+  "The team at Art Masons was so patient with my questions. The final piece arrived even more beautiful than I imagined.",
+  "Absolutely worth every penny. The reproduction looks like it was painted by the original artist. Obsessed",
+  "Fast shipping and excellent packaging, my print arrived perfect and securely wrapped.",
+  "I bought art for our living room and have received so many compliments. Incredible attention to detail.",
+  "I was nervous ordering online, but the photos don't do justice to the real thing. Gorgeous!",
+  "Superb customer service! They helped me choose the right size for my space and it fits perfectly.",
+  "The colors are vibrant and true to the original. You can see the texture and depth.",
+  "I ordered three pieces for my office and they really elevate the space. Professional and inspiring.",
+  "This was my first reproduction purchase, and I'm already planning my next one. Exceptional quality.",
+  "The art arrived quickly and exactly as described. Trustworthy and high quality.",
+  "You can tell these pieces are made with a lot of care and skill. I love my new artwork!",
+  "So happy with my print. It looks as rich and detailed as the original museum piece.",
+  "Incredible craftsmanship! Every detail is sharp and beautiful.",
+  "I bought a self-portrait for my grandmother's birthday. she cried tears of joy!",
+  "Beautiful art, excellent service, and fair pricing. What more could you ask for?",
+  "Shipped faster than expected and arrived in perfect condition. Fantastic experience.",
+  "The Dubai framing I chose is gorgeous, exactly what I wanted for my living room. Feel like I'm in a gallery!",
+  "I've purchased art from several sites, but Art Masons is by far the best quality.",
+  "The painting feels like a gallery painting. I'm obsessed with it!",
+  "I asked for a custom size and they delivered it perfectly. Highly recommend it!.",
+  "I get asked where I bought my art all the time. It's that impressive!",
+  "True to the original artist's style and feel. I couldn't be happier.",
+  "Exceptional work and attention to detail. This piece feels like the real deal.",
+  "My expectations were high and they were exceeded. This is gallery quality.",
+  "Beautiful reproduction art at an affordable price. Love it!",
+  "Art Masons helped me pick a piece that matches my décor perfectly.",
+  "The quality of the canvas and printing is top notch. Very happy customer!",
+  "I've never been disappointed with any order. Always excellent!",
+  "The colors on my piece are so rich and deep - just wow.",
+  "Every guest comments on how amazing this artwork looks. Great choice!",
+  "Fantastic craftsmanship and friendly customer support. A+ experience.",
+  "Worth every cent. It looks like an original masterpiece on my wall.",
+  "The whole process was smooth. from ordering to delivery.",
+  "I bought this as a gift and it was absolutely loved. Stunning art!",
+  "Beautiful reproduction. I felt like I was hanging a real museum piece.",
+  "The detail is incredible. You can see depth and layers like a museum painting.",
+  "Art Masons did not disappoint. This piece made my home feel complete.",
+  "The texture and finish are phenomenal, truly high-end quality.",
+  "I love the authenticity and elegance of this art. It breathes life into the room.",
+  "I was hesitant at first, but now I'm a loyal customer. Fantastic work!",
+  "Great communication, great product, and great value. Highly recommended.",
+  "I'm blown away by how true to the original this reproduction is..  the colours are true to the original and so vibrant!",
+  "The painting was perfect and looks professionally done.",
+  "So impressed with the craftsmanship. I'll be back for more!  Thinking which other walls I could add art to at this price it's a steal! ",
+  "The artwork arrived perfect and is such a statement piece in my home.",
+  "Customer service really took care of me, very personal and friendly.",
+  "Every detail feels thoughtfully reproduced. Exceptional art!",
+  "Beautiful and vibrant, this piece truly stands out on my wall.",
+  "Honestly, this is the best piece of art I've ever purchased online.",
+  "As an interior designer I'm always hesitant to add art to stage the home because the prints cheapen the final look. Art Masons art really makes it look so high end!",
+  "Hotels suffer from mass produced prints - we won't be making that mistake again! Art Masons hand painted art is our choice!",
+  "Can't believe I have a Monet of my own, totally lost in the dreamy brushstrokes…",
+  "When I scaled my art to fit a feature wall I didn't realize just how impactful it would be. It's all everyone talks about! Thank you!",
+  "After discussing the Art with Rosie she gave me a whole backstory of the artist and why this suited my character and decor - a perfect match!",
+  "Inspired and captivated thanks Art Masons you have superseded my expectations!",
+  "I wouldn't go to any other artists. This is where quality art lives! Art Masons hand painted art is off the charts!!",
+  "Did someone say reproduction art? I would say the art I received should be in a gallery!!!",
+  "I love how you can see the 3D canvas texture and pigments of paint reflecting in the light. It really is living art",
+  "I now understand why hand painted art has been treasured by those who could afford it. Who would have thought I could own my own for just £150, that's AED1500.. It was worth every penny.",
+  "Staging a home for sale just became easier, Art Masons raised the bar and added pure luxury and character after I added the art I considered not selling the home!!",
+  "I wish I had more walls to add more art to! So beautiful.",
+  "I bought Art Masons art and when I redecorated I managed to sell it for double what I paid for it! The new art I purchased to fit the new decor was the same fabulous quality!",
+  "I'm not one for shouting compliments unless deserved, Art Masons you really have made museum-grade art accessible to everyone! What a find!",
+  "Art Masons 'resize art tool' helped me easily resize the art to a large size to fill my feature wall and wow just wow!",
+  "The artist's brushstrokes and quality of care and precision left me astonished!!",
+  "Van Gogh in my home??? Who would have thought it possible? Perfection!",
+  "Always been a fan of Matisse, now I have my own! Love it!",
+  "Rembrandt has forever captivated me, the snapshot of history, the light, the shadows.. I am honored to own one!",
+  "Whenever anyone comes to my home they are drawn to the art, it's an instant talking piece. I became more inspired to learn about the art and Monet's back story because of it.",
+  "We considered prints but at this price we went for hand-painted art!! Thank you Art Masons I never thought I would own a Matisse! ",
+  "My friends think I own a Van Gogh hahaha not going to tell them!",
+  "Our Prestigious Hotel needed hand-painted art not flat prints to match the decor,  What started as an idea translated into a master-piece!",
 ];
 
 const POPULAR_ARTISTS = [
@@ -161,90 +186,39 @@ const generateSlug = (title: string) =>
     .replace(/-+/g, "-")
     .trim();
 
-const ART_OF_THE_DAY = [
-  { title: "Mona Lisa", artist: "Leonardo da Vinci", image: "/image/famous-art/mona_lisa.webp" },
-  { title: "Starry Night", artist: "Vincent van Gogh", image: "/image/famous-art/starry_night.webp" },
-  { title: "The Scream", artist: "Edvard Munch", image: "/image/famous-art/the_scream.webp" },
-  { title: "Girl With A Pearl Earring", artist: "Johannes Vermeer", image: "/image/famous-art/pearl_earing.jpg" },
-  { title: "The Kiss", artist: "Gustav Klimt", image: "/image/famous-art/the_kiss.jpg" },
-  { title: "The Birth of Venus", artist: "Sandro Botticelli", image: "/image/famous-art/primavera.webp" },
-  { title: "Impression Sunrise", artist: "Claude Monet", image: "/image/famous-art/impression_sunrise.jpg" },
-  { title: "Water Lilies", artist: "Claude Monet", image: "/image/famous-art/water_lilies.jpg" },
-  { title: "The Last Supper", artist: "Leonardo da Vinci", image: "/image/famous-art/calling_matthew.jpg" },
-  { title: "The Creation of Adam", artist: "Michelangelo", image: "/image/famous-art/sistine_madonna.jpg" },
-  { title: "Guernica", artist: "Pablo Picasso", image: "/image/famous-art/picasso054.jpg" },
-  { title: "American Gothic", artist: "Grant Wood", image: "/image/famous-art/horse_head.jpg" },
-  { title: "The Persistence of Memory", artist: "Salvador Dalí", image: "/image/famous-art/the_dream.jpg" },
-  { title: "The Night Watch", artist: "Rembrandt", image: "/image/famous-art/wanderer_mist.jpg" },
-  { title: "Las Meninas", artist: "Diego Velázquez", image: "/image/famous-art/lady_godiva.jpg" },
-  { title: "The Great Wave off Kanagawa", artist: "Katsushika Hokusai", image: "/image/famous-art/sea_gaiilee.jpg" },
-  { title: "Sunflowers", artist: "Vincent van Gogh", image: "/image/famous-art/fourteen_sunflowers.webp" },
-  { title: "Irises", artist: "Vincent van Gogh", image: "/image/famous-art/irises.jpg" },
-  { title: "Café Terrace at Night", artist: "Vincent van Gogh", image: "/image/famous-art/cafe_terrace.webp" },
-  { title: "Wheat Field with Crows", artist: "Vincent van Gogh", image: "/image/famous-art/wheat_field.webp" },
-  { title: "Portrait of Joseph Roulin", artist: "Vincent van Gogh", image: "/image/famous-art/joseph_roulin.jpg" },
-  { title: "A Pair of Shoes", artist: "Vincent van Gogh", image: "/image/famous-art/shoes.jpg" },
-  { title: "Vase with Irises", artist: "Vincent van Gogh", image: "/image/famous-art/vase_irises.jpg" },
-  { title: "Vase with Roses", artist: "Vincent van Gogh", image: "/image/famous-art/vase_roses.jpg" },
-  { title: "The Dance", artist: "Henri Matisse", image: "/image/famous-art/the_dance.jpg" },
-  { title: "Red Room (Harmony in Red)", artist: "Henri Matisse", image: "/image/famous-art/red_room.jpg" },
-  { title: "Goldfish", artist: "Henri Matisse", image: "/image/famous-art/goldfish.jpg" },
-  { title: "The Red Nude", artist: "Henri Matisse", image: "/image/famous-art/red_nude.jpg" },
-  { title: "Open Window", artist: "Henri Matisse", image: "/image/famous-art/open_window.jpg" },
-  { title: "The Tree of Life", artist: "Gustav Klimt", image: "/image/famous-art/tree_life.jpg" },
-  { title: "Hope II", artist: "Gustav Klimt", image: "/image/famous-art/hope_II.jpg" },
-  { title: "Music I", artist: "Gustav Klimt", image: "/image/famous-art/music_I.jpg" },
-  { title: "The Dancer", artist: "Gustav Klimt", image: "/image/famous-art/the_dancer_1.jpg" },
-  { title: "Composition VIII", artist: "Wassily Kandinsky", image: "/image/famous-art/composition_8.jpg" },
-  { title: "The Garden of Earthly Delights", artist: "Hieronymus Bosch", image: "/image/famous-art/earthly_delights.jpg" },
-  { title: "Luncheon on the Grass", artist: "Édouard Manet", image: "/image/famous-art/lunch_grass.jpg" },
-  { title: "A Bar at the Folies-Bergère", artist: "Édouard Manet", image: "/image/famous-art/folies_begere.jpg" },
-  { title: "The Swing", artist: "Jean-Honoré Fragonard", image: "/image/famous-art/the_swing.webp" },
-  { title: "Bal du Moulin de la Galette", artist: "Pierre-Auguste Renoir", image: "/image/famous-art/moulin_galette.jpg" },
-  { title: "Two Sisters (On the Terrace)", artist: "Pierre-Auguste Renoir", image: "/image/famous-art/two_sisters.jpg" },
-  { title: "The Skiff", artist: "Pierre-Auguste Renoir", image: "/image/famous-art/the_skiff.jpg" },
-  { title: "Madame Monet and Her Son", artist: "Pierre-Auguste Renoir", image: "/image/famous-art/madame_monet.webp" },
-  { title: "Haystacks", artist: "Claude Monet", image: "/image/famous-art/hay_stacks.jpg" },
-  { title: "Water Lily Pond", artist: "Claude Monet", image: "/image/famous-art/water_lily.webp" },
-  { title: "The Grand Canal Venice", artist: "Claude Monet", image: "/image/famous-art/grand_canal.jpg" },
-  { title: "Flaming June", artist: "Frederic Leighton", image: "/image/famous-art/flaming_june.jpg" },
-  { title: "The Lady of Shalott", artist: "John William Waterhouse", image: "/image/famous-art/lady_shalotte.webp" },
-  { title: "Lady Godiva", artist: "John Collier", image: "/image/famous-art/lady_godiva.jpg" },
-  { title: "Wanderer Above the Sea of Fog", artist: "Caspar David Friedrich", image: "/image/famous-art/wanderer_mist.jpg" },
-  { title: "The Sleeping Gypsy", artist: "Henri Rousseau", image: "/image/famous-art/sleeping_gypsy.jpg" },
-  { title: "The Dream", artist: "Henri Rousseau", image: "/image/famous-art/the_dream.jpg" },
-  { title: "The Hunt in the Forest", artist: "Claude Monet", image: "/image/famous-art/the_hunt.jpg" },
-  { title: "Madame X", artist: "John Singer Sargent", image: "/image/famous-art/madame_x.jpg" },
-  { title: "The Angelus", artist: "Jean-François Millet", image: "/image/famous-art/the_angelus.jpg" },
-  { title: "Napoleon Crossing the Alps", artist: "Jacques-Louis David", image: "/image/famous-art/napoleon_crossing.jpg" },
-  { title: "View of Toledo", artist: "El Greco", image: "/image/famous-art/view_toledo.jpg" },
-  { title: "Storm on the Sea of Galilee", artist: "Rembrandt", image: "/image/famous-art/sea_gaiilee.jpg" },
-  { title: "The Calling of Saint Matthew", artist: "Caravaggio", image: "/image/famous-art/calling_matthew.jpg" },
-  { title: "Nude Descending a Staircase", artist: "Marcel Duchamp", image: "/image/famous-art/nude_descending.jpg" },
-  { title: "Dancers in Blue", artist: "Edgar Degas", image: "/image/famous-art/dancers_blue.jpg" },
-  { title: "Crouching Woman", artist: "Egon Schiele", image: "/image/famous-art/crouching_woman.jpg" },
-].map((item) => {
-  const byImage = ARTWORKS.find((a) => a.image === item.image);
-  const byTitleArtist =
-    byImage ||
-    ARTWORKS.find(
-      (a) =>
-        (a.title ?? "").toLowerCase() === item.title.toLowerCase() &&
-        (a.artist ?? "").toLowerCase() === item.artist.toLowerCase(),
-    );
+// Famous Art collection from PDF data - mapped to display format
+const ART_OF_THE_DAY = FAMOUS_ART.map((item) => {
+  // Try to find matching artwork in main ARTWORKS collection for slug
+  const byTitleArtist = ARTWORKS.find(
+    (a) =>
+      (a.title ?? "").toLowerCase() === item.title.toLowerCase() &&
+      (a.artist ?? "").toLowerCase().replace(/\s+/g, ' ') === item.artist.toLowerCase().replace(/\s+/g, ' '),
+  );
 
   return {
-    ...item,
-    slug: byTitleArtist ? getArtworkSlug(byTitleArtist) : undefined,
+    title: item.title,
+    artist: item.artist,
+    image: item.image,
+    slug: byTitleArtist ? getArtworkSlug(byTitleArtist) : getFamousArtworkSlug(item),
   };
 });
 
-const TOP_100_ARTS = Array.from({ length: 100 }).map((_, i) => ({
-  title: `Artwork #${i + 1}`,
-  artist: `Artist #${i + 1}`,
-  image: `/image/placeholder-${(i % 10) + 1}.webp`,
-  slug: `artwork-${i + 1}`,
-}));
+// Top 100 Paintings collection from PDF data - mapped to display format
+const TOP_100_ARTS = TOP_100_PAINTINGS.map((item) => {
+  // Try to find matching artwork in main ARTWORKS collection for slug
+  const byTitleArtist = ARTWORKS.find(
+    (a) =>
+      (a.title ?? "").toLowerCase() === item.title.toLowerCase() &&
+      (a.artist ?? "").toLowerCase().replace(/\s+/g, ' ') === item.artist.toLowerCase().replace(/\s+/g, ' '),
+  );
+
+  return {
+    title: item.title,
+    artist: item.artist,
+    image: item.image,
+    slug: byTitleArtist ? getArtworkSlug(byTitleArtist) : getFamousArtworkSlug(item),
+  };
+});
 
 export default function ArtMasonsLanding() {
   const [currentArtIndex, setCurrentArtIndex] = useState(0);
@@ -557,7 +531,7 @@ export default function ArtMasonsLanding() {
               <div className="w-full h-full flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="text-center text-white p-6 border-2 border-white">
                   <p className="font-serif text-3xl italic mb-2">
-                    {isClient ? currentArt.artist : ""}
+                    {isClient ? currentArt.title : ""}
                   </p>
                   <p className="font-serif text-xs uppercase tracking-widest">
                     Click to View Details
@@ -641,9 +615,13 @@ export default function ArtMasonsLanding() {
         <section className="container mx-auto px-4 py-20 flex flex-col md:flex-row gap-12">
           {/* FUN FACTS */}
           <div className="w-full md:w-1/2">
-            <h3 className="font-serif text-3xl font-bold mb-6 text-center md:text-left uppercase tracking-widest">
-              FUN FACTS
-            </h3>
+            <div className="flex items-center justify-center gap-4 mb-6">
+               <div className="h-px bg-[#800000] flex-grow"></div>
+               <h3 className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
+                 FUN FACTS
+               </h3>
+               <div className="h-px bg-[#800000] flex-grow"></div>
+            </div>
             <div className="p-8 md:p-12 min-h-[300px] flex items-center justify-center text-center relative bg-white shadow-sm border-2 border-[#800000] rounded-lg">
               <div
                 className="absolute left-6 text-[#800000] opacity-90"
@@ -677,9 +655,13 @@ export default function ArtMasonsLanding() {
 
             {/* Logos below Fun Facts */}
             <div className="mt-12">
-              <h3 className="font-serif text-3xl font-bold mb-6 text-center md:text-left uppercase tracking-widest">
-                ART MASON&apos;S QUALITY PROMISE
-              </h3>
+              <div className="flex items-center justify-center gap-4 mb-6">
+                 <div className="h-px bg-[#800000] flex-grow"></div>
+                 <h3 className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
+                   SEALS OF EXCELLENCE
+                 </h3>
+                 <div className="h-px bg-[#800000] flex-grow"></div>
+              </div>
               <div className="p-8 bg-white border-2 border-[#800000] rounded-lg shadow-sm flex flex-col items-center gap-6">
                 {/* First Row */}
                 <div className="w-full flex justify-center">

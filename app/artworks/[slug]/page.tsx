@@ -4,6 +4,7 @@ import PageTransition from '../../components/PageTransition';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import ClientProductDetails from '../ClientProductDetails';
 import { type Artwork, ARTWORKS, generateArtistSlug, getArtworkBySlug, getArtworkSlug } from '../../../data/artworks';
+import { getFamousArtworkBySlug, getFamousArtworkSlug, FAMOUS_ART } from '../../../data/famousAndTop100';
 
 // --- Fonts ---
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
@@ -12,11 +13,28 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 // --- MAIN PRODUCT PAGE ---
 export default async function ProductDetailsPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const artwork = getArtworkBySlug(slug as string) as Artwork | null;
+  
+  // First try to find in main ARTWORKS collection
+  let artwork = getArtworkBySlug(slug as string) as Artwork | null;
+  
+  // If not found, try to find in FAMOUS_ART collection
+  if (!artwork) {
+    const famousArtwork = getFamousArtworkBySlug(slug as string);
+    if (famousArtwork) {
+      artwork = famousArtwork as Artwork;
+    }
+  }
+  
+  // Find similar artworks from both collections
   const similarArtworks = artwork
-    ? ARTWORKS.filter(
-        (item) => item.artist === artwork.artist && getArtworkSlug(item) !== slug
-      ).slice(0, 4)
+    ? [
+        ...ARTWORKS.filter(
+          (item) => item.artist === artwork.artist && getArtworkSlug(item) !== slug
+        ).map(item => ({ ...item, _slug: getArtworkSlug(item) })),
+        ...FAMOUS_ART.filter(
+          (item) => item.artist === artwork.artist && getFamousArtworkSlug(item) !== slug
+        ).map(item => ({ ...item as Artwork, _slug: getFamousArtworkSlug(item) }))
+      ].slice(0, 4)
     : [];
 
   // Breadcrumbs component always prepends Home, so provide trail starting at Artists A-Z

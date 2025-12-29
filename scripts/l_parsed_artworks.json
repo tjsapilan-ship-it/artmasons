@@ -1,0 +1,290 @@
+[
+  {
+    "title": "A Favorite Greyhound Of Prince Albert",
+    "year": "1841",
+    "artist": "Sir Edwin Henry Landseer",
+    "artistLife": "1902-1873",
+    "originalSize": "11.8 x 142.9",
+    "sku": "8125",
+    "basePrice": 8125
+  },
+  {
+    "title": "There's No Place Like Home",
+    "year": "",
+    "artist": "Sir Edwin Henry Landseer",
+    "artistLife": "1802-1873",
+    "originalSize": "60 x 70",
+    "sku": "4532",
+    "basePrice": 4532
+  },
+  {
+    "title": "Monarch Of The Glen",
+    "year": "1851",
+    "artist": "Sir Edwin Henry Landseer",
+    "artistLife": "1802-1873",
+    "originalSize": "163.8 x 169",
+    "sku": "10451",
+    "basePrice": 10451
+  },
+  {
+    "title": "The Gold Turban",
+    "year": "1929",
+    "artist": "Sir John Lavery",
+    "artistLife": "1856-1941",
+    "originalSize": "75 x 63.5",
+    "sku": "4245",
+    "basePrice": 4245
+  },
+  {
+    "title": "Hazel In Black And Gold",
+    "year": "1916",
+    "artist": "Sir John Lavery",
+    "artistLife": "1856-1941",
+    "originalSize": "183 x 92.3",
+    "sku": "5383",
+    "basePrice": 5383
+  },
+  {
+    "title": "The Green Coat",
+    "year": "1926",
+    "artist": "Sir John Lavery",
+    "artistLife": "1856-1941",
+    "originalSize": "198.4 x 107.8",
+    "sku": "22043",
+    "basePrice": 22043
+  },
+  {
+    "title": "Children In The Meadow",
+    "year": "1906",
+    "artist": "Henri Lebasque",
+    "artistLife": "1865-1937",
+    "originalSize": "54 x 65.5",
+    "sku": "2099",
+    "basePrice": 2099
+  },
+  {
+    "title": "The Resting In Saint Tropez",
+    "year": "1906",
+    "artist": "Henri Lebasque",
+    "artistLife": "1865-1937",
+    "originalSize": "88.8 x 115.8",
+    "sku": "3500",
+    "basePrice": 3500
+  },
+  {
+    "title": "A Boat On The Marne",
+    "year": "1905",
+    "artist": "Henri Lebasque",
+    "artistLife": "1865-1937",
+    "originalSize": "65.2 x 92",
+    "sku": "2809",
+    "basePrice": 2809
+  },
+  {
+    "title": "The Japanese Bathrobe",
+    "year": "1926",
+    "artist": "Henri Lebasque",
+    "artistLife": "1865-1937",
+    "originalSize": "61 x 50.3",
+    "sku": "2019",
+    "basePrice": 2019
+  },
+  {
+    "title": "Nude Lying",
+    "year": "",
+    "artist": "Henri Lebasque",
+    "artistLife": "1865-1937",
+    "originalSize": "46.5 x 73",
+    "sku": "2634",
+    "basePrice": 2634
+  },
+  {
+    "title": "Portrait Of Eugine-Louis-Napoleon Bonaparte Jules Joseph Lefebvre 3748 1836 - 1911 Mary Magdelene In The Cave",
+    "year": "1874",
+    "artist": "Jules Joseph Lefebvre",
+    "artistLife": "1836-1911",
+    "originalSize": "61 x 46",
+    "sku": "5986",
+    "basePrice": 5986
+  },
+  {
+    "title": "Portrait of Imperial Prince",
+    "year": "1870",
+    "artist": "Jules Joseph Lefebvre",
+    "artistLife": "1836-1911",
+    "originalSize": "56 x 46.5",
+    "sku": "4272",
+    "basePrice": 4272
+  },
+  {
+    "title": "Oldasique",
+    "year": "1974",
+    "artist": "Jules Joseph Lefebvre",
+    "artistLife": "1836-1911",
+    "originalSize": "102.4 x 200.7",
+    "sku": "12899",
+    "basePrice": 12899
+  },
+  {
+    "title": "The Grasshopper",
+    "year": "1872",
+    "artist": "Jules Joseph Lefebvre",
+    "artistLife": "1836-1911",
+    "originalSize": "186.7 x 123.8",
+    "sku": "6303",
+    "basePrice": 6303
+  },
+  {
+    "title": "Chloe",
+    "year": "1875",
+    "artist": "Jules Joseph Lefebvre",
+    "artistLife": "1836-1911",
+    "originalSize": "260 x 139",
+    "sku": "6630",
+    "basePrice": 6630
+  },
+  {
+    "title": "Flaming June",
+    "year": "1895",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "120.6 x 120.6",
+    "sku": "9400",
+    "basePrice": 9400
+  },
+  {
+    "title": "Phoebe Lord Frederick Leighton 1830 - 1896 Music Lesson",
+    "year": "4084",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "56 x 61",
+    "sku": "9703",
+    "basePrice": 9703
+  },
+  {
+    "title": "Hercules Wrestling With Death For The Body Of Alcestis",
+    "year": "1869",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "132.4 x 265.4",
+    "sku": "13256",
+    "basePrice": 13256
+  },
+  {
+    "title": "Mother And Child",
+    "year": "1865",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "48 x 82",
+    "sku": "9831",
+    "basePrice": 9831
+  },
+  {
+    "title": "The Painters Honeymoonn",
+    "year": "1864",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "83.8 x 76.8",
+    "sku": "5259",
+    "basePrice": 5259
+  },
+  {
+    "title": "Wedded",
+    "year": "1882",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "145.4 x 81.3",
+    "sku": "6607",
+    "basePrice": 6607
+  },
+  {
+    "title": "Mrs James Guthrie",
+    "year": "1864",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "210.7 x 138.5",
+    "sku": "7676",
+    "basePrice": 7676
+  },
+  {
+    "title": "The Roman Lady (La Nana)",
+    "year": "1858",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "80 x 52.1",
+    "sku": "5118",
+    "basePrice": 5118
+  },
+  {
+    "title": "Pavonia",
+    "year": "1859",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "53.3 x 42",
+    "sku": "4084",
+    "basePrice": 4084
+  },
+  {
+    "title": "The Fisherman And The Syren",
+    "year": "1867",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "66.4 x 49",
+    "sku": "4691",
+    "basePrice": 4691
+  },
+  {
+    "title": "The Nymph Of The River",
+    "year": "1880",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "76.8 x 27.2",
+    "sku": "4387",
+    "basePrice": 4387
+  },
+  {
+    "title": "Memories",
+    "year": "1883",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "76 x 64.5",
+    "sku": "4415",
+    "basePrice": 4415
+  },
+  {
+    "title": "Gulnihal",
+    "year": "1886",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "53 x 40",
+    "sku": "4486",
+    "basePrice": 4486
+  },
+  {
+    "title": "Solitude",
+    "year": "1890",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "183 x 81.5",
+    "sku": "5259",
+    "basePrice": 5259
+  },
+  {
+    "title": "The Vestal",
+    "year": "1882",
+    "artist": "Lord Frederick Leighton",
+    "artistLife": "1830-1896",
+    "originalSize": "63 x 45",
+    "sku": "3724",
+    "basePrice": 3724
+  },
+  {
+    "title": "Hhareem Life Constantinople",
+    "year": "1857",
+    "artist": "John Frederick Lewis",
+    "artistLife": "1805-1876",
+    "originalSize": "47.5 x 30.5",
+    "sku": "5773",
+    "basePrice": 5773
+  }
+]

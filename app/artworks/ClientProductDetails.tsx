@@ -31,7 +31,7 @@ export default function ClientProductDetails({
 }: {
   artwork: Artwork;
   slug: string;
-  similarArtworks?: Artwork[];
+  similarArtworks?: (Artwork & { _slug?: string })[];
 }) {
   const [selectedOption, setSelectedOption] = useState<ArtworkOption>(
     (artwork.options && artwork.options.length > 0 && artwork.options[0]) || {
@@ -381,7 +381,7 @@ export default function ClientProductDetails({
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5 max-w-6xl mx-auto justify-center">
             {similarArtworks.map((item) => {
-              const itemSlug = getArtworkSlug(item);
+              const itemSlug = item._slug || getArtworkSlug(item);
               const displayPrice = item.basePrice ?? item.options?.[0]?.price ?? 0;
 
               return (

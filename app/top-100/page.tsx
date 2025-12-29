@@ -6,7 +6,8 @@ import Image from 'next/image';
 import { Playfair_Display } from 'next/font/google';
 import { Trophy, Search } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { ARTWORKS, getArtworkSlug, Artwork } from '../../data/artworks';
+import { ARTWORKS, getArtworkSlug } from '../../data/artworks';
+import { TOP_100_PAINTINGS, getFamousArtworkSlug, FamousArtwork } from '../../data/famousAndTop100';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
 
@@ -46,7 +47,7 @@ const getPeriod = (artistLife?: string, year?: string): string => {
   return 'Contemporary';
 };
 
-const getPrimaryPricing = (artwork: Artwork) => {
+const getPrimaryPricing = (artwork: FamousArtwork) => {
   const hasOptions = Array.isArray(artwork.options) && artwork.options.length > 0;
   const minOption = hasOptions
     ? artwork.options.reduce((min, option) => (option.price < min.price ? option : min), artwork.options[0])
@@ -60,19 +61,29 @@ const formatPrice = (price: number, currency: string) => {
   return `${currency} ${formatted}`;
 };
 
-const COLLECTION_PAINTINGS: CollectionPainting[] = ARTWORKS.map((artwork: Artwork, index: number) => ({
-  rank: index + 1,
-  title: artwork.title,
-  artist: artwork.artist,
-  year: artwork.year || 'Unknown',
-  period: getPeriod(artwork.artistLife, artwork.year),
-  image: artwork.image,
-  slug: getArtworkSlug(artwork),
-  ...(() => {
-    const pricing = getPrimaryPricing(artwork);
-    return { price: pricing.price, currency: pricing.currency, priceLabel: pricing.label };
-  })()
-}));
+// Use TOP_100_PAINTINGS from the PDF data file
+const COLLECTION_PAINTINGS: CollectionPainting[] = TOP_100_PAINTINGS.map((artwork: FamousArtwork, index: number) => {
+  // Try to find matching artwork in main ARTWORKS collection for slug
+  const matchingArtwork = ARTWORKS.find(
+    (a) =>
+      (a.title ?? "").toLowerCase() === artwork.title.toLowerCase() ||
+      (a.artist ?? "").toLowerCase() === artwork.artist.toLowerCase(),
+  );
+  
+  return {
+    rank: index + 1,
+    title: artwork.title,
+    artist: artwork.artist,
+    year: artwork.year || 'Unknown',
+    period: getPeriod(artwork.artistLife, artwork.year),
+    image: artwork.image,
+    slug: matchingArtwork ? getArtworkSlug(matchingArtwork) : getFamousArtworkSlug(artwork),
+    ...(() => {
+      const pricing = getPrimaryPricing(artwork);
+      return { price: pricing.price, currency: pricing.currency, priceLabel: pricing.label };
+    })()
+  };
+});
 
 export default function Top100Page() {
   const [searchQuery, setSearchQuery] = useState('');
