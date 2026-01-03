@@ -109,7 +109,7 @@ export default async function ArtistPage({
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {sortedArtworks.map((art) => (
                 <article
-                  key={art.sku ?? getArtworkSlug(art)}
+                  key={getArtworkSlug(art)}
                   className="bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-shadow rounded-md overflow-hidden"
                 >
                   <Link href={`/artworks/${getArtworkSlug(art)}`} className="block group">

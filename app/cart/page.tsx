@@ -98,7 +98,6 @@ export default function CartPage() {
                             {item.title}
                           </h3>
                           <p className="font-serif text-gray-600 mb-1">by {item.artist}</p>
-                          <p className="font-serif text-sm text-gray-500">SKU: {item.sku}</p>
                         </div>
                         <button
                           onClick={() => removeItem(item.id)}

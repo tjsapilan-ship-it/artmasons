@@ -259,10 +259,9 @@ export default function Top100Page() {
 
                     {/* Additional Info */}
                     <div className="text-xs font-serif text-gray-500 leading-relaxed space-y-1 pt-3 border-t border-gray-100">
-                      <p className="font-medium text-gray-600">SKU: {painting.slug.toUpperCase().substring(0, 8)}-{painting.rank}</p>
                       <p className="line-clamp-1">{painting.artist}</p>
-                      <p className="line-clamp-1">Original Size: 73.7 x 92.1 cm</p>
-                      <p className="line-clamp-1 text-gray-400">Museum of Modern Art, New York, USA</p>
+                      <p className="line-clamp-1">Year: {painting.year}</p>
+                      <p className="line-clamp-1 text-gray-400">Hand-painted on linen canvas</p>
                     </div>
                   </div>
                 </div>

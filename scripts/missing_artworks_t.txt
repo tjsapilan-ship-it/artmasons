@@ -1,0 +1,25 @@
+  {
+    title: "The Birth Of John The Baptisst",
+    year: "1550",
+    originalSize: "181 x 226 cm",
+    artist: "Jacopa Robusti Tintoretto",
+    artistLife: "1518-1594",
+    sku: "AM-JRT-001",
+    basePrice: 92677,
+    currency: "AED",
+    image: "/image/t/the birth of john the baptisst.jpg",
+    options: [{ id: 'opt1', width: 181, height: 226, price: 92677, label: 'Original Size' }],
+  },
+
+  {
+    title: "Three Sisters A study In June Sunlight",
+    year: "1890",
+    originalSize: "89.2 x 102 cm",
+    artist: "Edward Charles Tarbell",
+    artistLife: "1862-1938",
+    sku: "AM-ECT-001",
+    basePrice: 5384,
+    currency: "AED",
+    image: "/image/t/three sisters a study in june sunlight.jpg",
+    options: [{ id: 'opt1', width: 89.2, height: 102, price: 5384, label: 'Original Size' }],
+  }

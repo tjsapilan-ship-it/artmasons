@@ -1,0 +1,25 @@
+  {
+    title: "David Bearing The Head Of Goliath",
+    year: "1643",
+    originalSize: "102 x 81 cm",
+    artist: "Jacob Van Oost The Elder",
+    artistLife: "1601-1671",
+    sku: "AM-JVO-001",
+    basePrice: 7049,
+    currency: "AED",
+    image: "/image/e/david bearing the head of goliath.jpg",
+    options: [{ id: 'opt1', width: 102, height: 81, price: 7049, label: 'Original Size' }],
+  },
+
+  {
+    title: "Old Woman Praying",
+    year: "Unknown",
+    originalSize: "71.2 x 56.5 cm",
+    artist: "Jacob Van Oost The Elder",
+    artistLife: "1601-1671",
+    sku: "AM-JVO-002",
+    basePrice: 5010,
+    currency: "AED",
+    image: "/image/e/old woman praying.jpg",
+    options: [{ id: 'opt1', width: 71.2, height: 56.5, price: 5010, label: 'Original Size' }],
+  }

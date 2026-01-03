@@ -1,0 +1,12 @@
+  {
+    title: "Marie-Anne Caralus Duran ( The Artists Daughter)",
+    year: "1874",
+    originalSize: "130.2 x 85 cm",
+    artist: "Charles Emile August Caralus -Duran",
+    artistLife: "1837-1917",
+    sku: "AM-CEA-001",
+    basePrice: 4974,
+    currency: "AED",
+    image: "/image/-/marie-anne caralus duran the artists daughter.jpg",
+    options: [{ id: 'opt1', width: 67, height: 56, price: 4974, label: 'Original Size' }],
+  }

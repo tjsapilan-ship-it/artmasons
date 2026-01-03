@@ -101,10 +101,6 @@ export default function ClientProductDetails({
                 {artwork.year ?? 'Unknown'}
               </p>
               <p>
-                <span className="font-bold text-gray-900">Current Location:</span>{' '}
-                {artwork.location ?? 'Unknown'}
-              </p>
-              <p>
                 <span className="font-bold text-gray-900">Original Dimensions:</span>{' '}
                 {artwork.originalSize ?? (selectedOption ? `${selectedOption.width} x ${selectedOption.height} cm` : 'Varies')}
               </p>
@@ -146,9 +142,6 @@ export default function ClientProductDetails({
           <p className="font-serif text-xl md:text-2xl text-gray-600 italic mb-3">
             {artwork.artist}, {artwork.year}
           </p>
-          <p className="text-gray-700 leading-relaxed font-serif text-base">
-            {artwork.description ?? 'No description available for this artwork.'}
-          </p>
         </div>
 
         {/* Pricing Section */}
@@ -160,7 +153,7 @@ export default function ClientProductDetails({
             <span className="font-serif text-lg md:text-xl text-gray-600">{artwork.currency}</span>
           </div>
           <p className="text-sm md:text-sm text-gray-500 font-serif uppercase tracking-wide">
-            SKU: {artwork.sku}
+            Hand-painted on linen canvas
           </p>
         </div>
 
@@ -270,7 +263,6 @@ export default function ClientProductDetails({
                 dimensions: `${selectedOption.width} x ${selectedOption.height} cm`,
                 price: selectedOption.price,
                 quantity,
-                sku: artwork.sku || itemId,
               };
 
               // If a product with same base id exists but different option, prompt user
@@ -295,7 +287,7 @@ export default function ClientProductDetails({
           </button>
           
           <button className="w-full bg-white border border-[#800000] text-[#800000] hover:bg-red-50 font-serif font-bold text-base md:text-lg py-3 md:py-3.5 px-4 transition-colors uppercase tracking-wide">
-            Request Custom Quote
+            Request Custom Size Quote
           </button>
 
           <div className="flex items-center justify-center gap-2 text-sm md:text-base text-gray-600 font-serif pt-1">

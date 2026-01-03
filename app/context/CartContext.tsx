@@ -21,7 +21,6 @@ export type CartItem = {
   price: number;
   currency?: string;
   quantity: number;
-  sku?: string;
 };
 
 type CartContextValue = {

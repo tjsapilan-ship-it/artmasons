@@ -47,6 +47,19 @@ button, input, select, textarea {
   touch-action: manipulation;
 }
 
+/* Smooth scrolling for Apple devices */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optimize scrolling on Apple devices */
+@supports (-webkit-overflow-scrolling: touch) {
+  .overflow-x-auto, .overflow-y-auto, .overflow-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 /* Container padding variable to ensure consistent padding across breakpoints */
 :root {
   --container-padding: 1rem;

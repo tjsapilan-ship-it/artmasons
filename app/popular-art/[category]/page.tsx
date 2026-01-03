@@ -4,10 +4,25 @@ import Link from 'next/link';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { Playfair_Display } from 'next/font/google';
 import PageTransition from '../../components/PageTransition';
+import PopularArtCarousel from '../../components/PopularArtCarousel';
 import { ARTWORKS, generateSlug, getArtworkBySlug, getArtworkSlug, type Artwork } from '../../../data/artworks';
 import { getCategorySlugs } from '../../../data/popularCategories';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
+
+const getPrimaryPricing = (artwork: Artwork) => {
+  const hasOptions = Array.isArray(artwork.options) && artwork.options.length > 0;
+  const minOption = hasOptions
+    ? artwork.options.reduce((min, option) => (option.price < min.price ? option : min), artwork.options[0])
+    : null;
+  const price = minOption?.price ?? artwork.basePrice ?? null;
+  return { price, currency: artwork.currency || 'AED', label: minOption?.label || 'Original Size' };
+};
+
+const formatPrice = (price: number, currency: string) => {
+  const formatted = new Intl.NumberFormat('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(price);
+  return `${currency} ${formatted}`;
+};
 
 function humanize(slug: string) {
   return slug
@@ -90,6 +105,8 @@ export default async function CategoryPage({ params, searchParams }: { params: P
   return (
     <main className={`${playfair.variable} min-h-screen bg-art-texture text-black font-serif`}>
       <PageTransition>
+        <PopularArtCarousel />
+        
         <div className="container mx-auto px-4 py-8 max-w-7xl relative z-10">
           <div className="mb-6">
             <Breadcrumbs items={[{ label: 'Popular Art', href: '/' }, { label: title, href: `/popular-art/${slug}` }]} />
@@ -118,20 +135,86 @@ export default async function CategoryPage({ params, searchParams }: { params: P
               <p className="text-gray-500 mt-2">We couldn&apos;t find artworks for “{title}”.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {gridItems.map((art) => (
-                <article key={art.title} className="bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 rounded-md overflow-hidden hover:border-[#800000]/20">
-                  <Link href={`/artworks/${getArtworkSlug(art)}`} className="block group">
-                    <div className="relative w-full h-56 md:h-44 lg:h-48">
-                      <Image src={art.image} alt={art.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {gridItems.map((art) => {
+                // Get pricing directly from the artwork
+                const pricing = getPrimaryPricing(art);
+                
+                return (
+                  <div 
+                    key={getArtworkSlug(art)}
+                    className="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group hover:border-[#800000]/20 border border-transparent"
+                  >
+                    {/* Image */}
+                    <Link href={`/artworks/${getArtworkSlug(art)}`} className="block">
+                      <div className="relative bg-gray-50 aspect-[3/4] overflow-hidden">
+                        <Image 
+                          src={art.image} 
+                          alt={art.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-700"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                        />
+                      </div>
+                    </Link>
+
+                    <div className="p-5">
+                      {/* Title - Clickable */}
+                      <Link href={`/artworks/${getArtworkSlug(art)}`}>
+                        <h3 className="font-serif text-base font-bold text-[#800000] mb-1.5 line-clamp-2 leading-snug min-h-[2.8rem] hover:underline cursor-pointer">
+                          {art.title}
+                        </h3>
+                      </Link>
+                      
+                      {/* Year */}
+                      {art.year && (
+                        <p className="font-serif text-sm text-gray-500 mb-1.5">
+                          {art.year}
+                        </p>
+                      )}
+                      
+                      {/* Artist */}
+                      <p className="font-serif text-sm text-[#4A5568] mb-3 font-medium line-clamp-1">
+                        {art.artist}
+                      </p>
+                      
+                      {/* Star Rating */}
+                      <div className="flex gap-0.5 mb-4 justify-center">
+                        {[...Array(5)].map((_, i) => (
+                          <svg key={i} className="w-5 h-5 fill-orange-400" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                          </svg>
+                        ))}
+                      </div>
+
+                      {/* Product Buttons */}
+                      <div className="grid grid-cols-2 gap-2.5 mb-4">
+                        <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all">
+                          <div className="font-serif text-xs text-gray-600 mb-1">
+                            {pricing.label}
+                          </div>
+                          <div className="font-serif text-base font-bold text-[#800000]">
+                            {pricing.price !== null && pricing.price !== undefined
+                              ? formatPrice(pricing.price, pricing.currency)
+                              : 'Price on request'}
+                          </div>
+                        </button>
+                        <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all">
+                          <div className="font-serif text-xs text-gray-600 mb-1">Custom Size</div>
+                          <div className="font-serif text-base font-bold text-[#800000]">Request quote</div>
+                        </button>
+                      </div>
+
+                      {/* Additional Info */}
+                      <div className="text-xs font-serif text-gray-500 leading-relaxed space-y-1 pt-3 border-t border-gray-100">
+                        <p className="line-clamp-1">{art.artist}</p>
+                        <p className="line-clamp-1">Original Size: {art.originalSize || '73.7 x 92.1 cm'}</p>
+                        <p className="line-clamp-1 text-gray-400">Hand-painted on linen canvas</p>
+                      </div>
                     </div>
-                    <div className="p-3">
-                      <h3 className="font-serif text-sm font-semibold text-gray-900 truncate group-hover:text-[#800000] transition-colors">{art.title}</h3>
-                      <p className="text-xs text-gray-500 mt-1 truncate">{art.artist}</p>
-                    </div>
-                  </Link>
-                </article>
-              ))}
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>

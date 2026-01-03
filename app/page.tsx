@@ -420,6 +420,15 @@ export default function ArtMasonsLanding() {
         .hide-scrollbar {
           -ms-overflow-style: none;
           scrollbar-width: none;
+          -webkit-overflow-scrolling: touch;
+          scroll-behavior: smooth;
+          will-change: scroll-position;
+        }
+        @supports (-webkit-touch-callout: none) {
+          .hide-scrollbar {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
         }
         input[type=number]::-webkit-inner-spin-button, 
         input[type=number]::-webkit-outer-spin-button { 
@@ -570,10 +579,12 @@ export default function ArtMasonsLanding() {
               <div
                 ref={scrollContainerRef}
                 className="flex gap-4 overflow-x-auto pb-4 hide-scrollbar w-full"
+                style={{ WebkitOverflowScrolling: 'touch' }}
                 onMouseEnter={() => setIsCarouselPaused(true)}
                 onMouseLeave={() => setIsCarouselPaused(false)}
                 onTouchStart={() => setIsCarouselPaused(true)}
                 onTouchEnd={() => setIsCarouselPaused(false)}
+                onTouchMove={() => setIsCarouselPaused(true)}
               >
                 {extendedArtists.map((artist, i) => (
                   <Link

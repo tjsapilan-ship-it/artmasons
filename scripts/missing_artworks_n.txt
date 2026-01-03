@@ -1,0 +1,34 @@
+  {
+    title: "The Palazzo Contarini",
+    year: "1855",
+    originalSize: "48.5 x 39 cm",
+    artist: "Friedich Von Nerly",
+    artistLife: "1807-1878",
+    sku: "AM-FVN-001",
+    basePrice: 6972,
+    currency: "AED",
+    image: "/image/n/the palazzo contarini.jpg",
+    options: [{ id: 'opt1', width: 48.5, height: 39, price: 6972, label: 'Original Size' }],
+  },
+
+  {
+    title: "The House of Desdemona",
+    year: "1855",
+    originalSize: "48.5 x 39 cm",
+    artist: "Friedich Von Nerly",
+    artistLife: "1807-1878",
+    sku: "AM-FVN-002",
+    basePrice: 7018,
+    currency: "AED",
+    image: "/image/n/the house of desdemona.jpg",
+    options: [{ id: 'opt1', width: 48.5, height: 39, price: 7018, label: 'Original Size' }],
+  },
+
+  {
+    title: "X",
+    artist: "NONE",
+    sku: "AM-NON-001",
+    currency: "AED",
+    image: "/image/n/x.jpg",
+    options: [],
+  }

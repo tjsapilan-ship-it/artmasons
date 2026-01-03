@@ -1,0 +1,38 @@
+  {
+    title: "The Port Of Marseille",
+    year: "1881",
+    originalSize: "Unknown cm",
+    artist: "Johann Jongkind",
+    artistLife: "1819-1891",
+    sku: "AM-JJ-001",
+    basePrice: 1138,
+    currency: "AED",
+    image: "/image/j/the port of marseille.jpg",
+    options: [{ id: 'opt1', width: 20, height: 31, price: 1138, label: 'Original Size' }],
+  },
+
+  {
+    title: "Boatman By Windmill",
+    year: "1859",
+    originalSize: "Unknown cm",
+    artist: "Johann Jongkind",
+    artistLife: "1819-1891",
+    sku: "AM-JJ-002",
+    basePrice: 1472,
+    currency: "AED",
+    image: "/image/j/boatman by windmill.jpg",
+    options: [{ id: 'opt1', width: 26, height: 35, price: 1472, label: 'Original Size' }],
+  },
+
+  {
+    title: "Le Port De La Tounelle, Paris",
+    year: "1859",
+    originalSize: "45.4 x 73.3 cm",
+    artist: "Johann Jongkind",
+    artistLife: "1819-1891",
+    sku: "AM-JJ-003",
+    basePrice: 3115,
+    currency: "AED",
+    image: "/image/j/le port de la tounelle paris.jpg",
+    options: [{ id: 'opt1', width: 45.4, height: 73.3, price: 3115, label: 'Original Size' }],
+  }

@@ -35,7 +35,7 @@ export default function CheckoutPage() {
     setLoading(true);
     try {
       const payload = {
-        items: items.map((it) => ({ title: it.title, price: it.price, quantity: it.quantity, sku: it.sku, currency: it.currency || 'aed' })),
+        items: items.map((it) => ({ title: it.title, price: it.price, quantity: it.quantity, currency: it.currency || 'aed' })),
         customer: {
           name: form.name,
           email: form.email,

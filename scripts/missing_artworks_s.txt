@@ -1,0 +1,25 @@
+  {
+    title: "under The Bridge At Hampton Court",
+    year: "1874",
+    originalSize: "38 x 58 cm",
+    artist: "Alfred Sisley",
+    artistLife: "1839-1899",
+    sku: "AM-AS-001",
+    basePrice: 1662,
+    currency: "AED",
+    image: "/image/s/under the bridge at hampton court.jpg",
+    options: [{ id: 'opt1', width: 38, height: 58, price: 1662, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Road To Saint-Germain at Marly",
+    year: "1874",
+    originalSize: "46 x 55 cm",
+    artist: "Alfred Sisley",
+    artistLife: "1839-1899",
+    sku: "AM-AS-002",
+    basePrice: 2170,
+    currency: "AED",
+    image: "/image/s/the road to saint-germain at marly.jpg",
+    options: [{ id: 'opt1', width: 46, height: 55, price: 2170, label: 'Original Size' }],
+  }
