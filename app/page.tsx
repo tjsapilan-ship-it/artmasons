@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, useRef, useSyncExternalStore, useCallback } from "react";
+import React, { useState, useEffect, useSyncExternalStore, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Playfair_Display } from "next/font/google";
 import Link from "next/link";
 import PageTransition from "./components/PageTransition";
+import PopularArtCarousel from "./components/PopularArtCarousel";
 import {
   ChevronLeft,
   ChevronRight,
@@ -166,26 +167,6 @@ const TESTIMONIALS_DATA = [
   "Our Prestigious Hotel needed hand-painted art not flat prints to match the decor,  What started as an idea translated into a master-piece!",
 ];
 
-const POPULAR_ARTISTS = [
-  { name: "MONET", image: "/popular-art/monet.jpg" },
-  { name: "KLIMT", image: "/popular-art/klimt.jpg" },
-  { name: "MATISSE", image: "/popular-art/matisse.jpg" },
-  { name: "VAN GOGH", image: "/popular-art/gogh.webp" },
-  { name: "PICASSO", image: "/popular-art/picasso.jpg" },
-  { name: "DA VINCI", image: "/popular-art/davinci.jpg" },
-  { name: "STILL LIFES", image: "/popular-art/still-life.jpg" },
-  { name: "LANDSCAPES", image: "/popular-art/landscape.jpg" },
-  { name: "PORTRAITS", image: "/popular-art/portrait.jpg" },
-];
-
-const generateSlug = (title: string) =>
-  title
-    .toLowerCase()
-    .replace(/[^\w\s-]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-")
-    .trim();
-
 // Famous Art collection from PDF data - mapped to display format
 const ART_OF_THE_DAY = FAMOUS_ART.map((item) => {
   // Try to find matching artwork in main ARTWORKS collection for slug
@@ -254,10 +235,6 @@ export default function ArtMasonsLanding() {
     return isClient ? shuffle(indices) : indices;
   }, [isClient]);
 
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const [isCarouselPaused, setIsCarouselPaused] = useState(false);
-  const extendedArtists = [...POPULAR_ARTISTS, ...POPULAR_ARTISTS];
-
   useEffect(() => {
     const testimonialTimer = setInterval(() => {
       setTestimonialIndex((prev) => (prev + 3) % TESTIMONIALS_DATA.length);
@@ -317,80 +294,6 @@ export default function ArtMasonsLanding() {
 
     return () => clearInterval(interval);
   }, [playTop100Random, isTop100AutoPlay, triggerArtTransition]);
-
-  useEffect(() => {
-    // Only run on client side
-    if (typeof window === 'undefined') return;
-    
-    const container = scrollContainerRef.current;
-    if (!container) return;
-
-    let animationFrameId: number | null = null;
-    let lastTime = 0;
-    const speed = 40;
-    let isRunning = true;
-
-    const step = (time: number) => {
-      if (!isRunning) return;
-      
-      if (document.hidden || isCarouselPaused) {
-        lastTime = time;
-        animationFrameId = requestAnimationFrame(step);
-        return;
-      }
-
-      if (!lastTime) lastTime = time;
-      const delta = (time - lastTime) / 1000;
-      const deltaPx = speed * delta;
-
-      if (container.scrollLeft >= container.scrollWidth / 2) {
-        container.scrollLeft = 0;
-      } else {
-        container.scrollLeft += deltaPx;
-      }
-
-      lastTime = time;
-      animationFrameId = requestAnimationFrame(step);
-    };
-
-    const handleVisibility = () => {
-      if (!document.hidden && isRunning) {
-        lastTime = performance.now();
-      }
-    };
-
-    document.addEventListener('visibilitychange', handleVisibility);
-    
-    // Ensure animation starts with a slight delay for Safari compatibility
-    const startAnimation = () => {
-      lastTime = performance.now();
-      animationFrameId = requestAnimationFrame(step);
-    };
-    
-    // Use setTimeout to ensure DOM is ready, especially for Safari/macOS
-    const timeoutId = setTimeout(startAnimation, 100);
-
-    return () => {
-      isRunning = false;
-      clearTimeout(timeoutId);
-      if (animationFrameId !== null) {
-        cancelAnimationFrame(animationFrameId);
-      }
-      document.removeEventListener('visibilitychange', handleVisibility);
-    };
-  }, [isCarouselPaused]);
-
-  const handleScrollLeft = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: -200, behavior: "smooth" });
-    }
-  };
-
-  const handleScrollRight = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: 200, behavior: "smooth" });
-    }
-  };
 
   const currentTestimonials = [0, 1, 2].map((offset) => {
     const index = (testimonialIndex + offset) % TESTIMONIALS_DATA.length;
@@ -561,66 +464,7 @@ export default function ArtMasonsLanding() {
         </section>
 
         {/* --- POPULAR ART STRIP --- */}
-        <section className="bg-gray-50 py-8 border-b border-gray-200">
-          <div className="container mx-auto px-4">
-            <h3 className="font-serif text-2xl font-bold mb-6 text-center uppercase">
-              POPULAR ART
-            </h3>
-            <div className="relative w-full">
-              <button
-                onClick={handleScrollLeft}
-                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 transition-colors hover:text-[#800000]"
-                onMouseEnter={() => setIsCarouselPaused(true)}
-                onMouseLeave={() => setIsCarouselPaused(false)}
-              >
-                <ChevronLeft size={32} />
-              </button>
-
-              <div
-                ref={scrollContainerRef}
-                className="flex gap-4 overflow-x-auto pb-4 hide-scrollbar w-full"
-                style={{ WebkitOverflowScrolling: 'touch' }}
-                onMouseEnter={() => setIsCarouselPaused(true)}
-                onMouseLeave={() => setIsCarouselPaused(false)}
-                onTouchStart={() => setIsCarouselPaused(true)}
-                onTouchEnd={() => setIsCarouselPaused(false)}
-                onTouchMove={() => setIsCarouselPaused(true)}
-              >
-                {extendedArtists.map((artist, i) => (
-                  <Link
-                    key={`${artist.name}-${i}`}
-                    href={`/popular-art/${generateSlug(artist.name)}`}
-                    className="flex-shrink-0 w-40 h-40 relative rounded-lg overflow-hidden group"
-                    onMouseEnter={() => setIsCarouselPaused(true)}
-                    onMouseLeave={() => setIsCarouselPaused(false)}
-                  >
-                    <Image
-                      src={artist.image}
-                      alt={artist.name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 pointer-events-none flex flex-col justify-end pb-3">
-                      <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/60 to-transparent"></div>
-                      <span className="relative z-10 text-white font-serif font-bold tracking-wider text-sm text-center">
-                        {artist.name}
-                      </span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-
-              <button
-                onClick={handleScrollRight}
-                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 transition-colors hover:text-[#800000]"
-                onMouseEnter={() => setIsCarouselPaused(true)}
-                onMouseLeave={() => setIsCarouselPaused(false)}
-              >
-                <ChevronRight size={32} />
-              </button>
-            </div>
-          </div>
-        </section>
+        <PopularArtCarousel />
 
         {/* --- FUN FACTS & IMAGE ASPECT CALCULATOR --- */}
         <section className="container mx-auto px-4 py-20 flex flex-col md:flex-row gap-12">
