@@ -70,9 +70,9 @@ export default function Header() {
 
   return (
     <header className="relative z-50 bg-white pt-3 pb-3 md:pt-6 md:pb-4 shadow-sm border-b border-gray-100">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-end gap-4 md:gap-12">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center md:items-end gap-4 md:gap-12">
         <Link href="/" className="flex-shrink-0 flex flex-col items-center justify-end w-auto md:w-56 cursor-pointer pb-2">
-          <div className="relative w-20 h-20 sm:w-28 sm:h-28 md:w-44 md:h-44">
+          <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-44 md:h-44">
             <Image
               src="/image/icons/logo_1.png"
               alt="Art Masons Seal"
@@ -84,7 +84,7 @@ export default function Header() {
         </Link>
 
         <div className="flex-1 flex flex-col w-full justify-end">
-          <div className="flex flex-col md:flex-row items-center gap-6 relative w-full">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 relative w-full">
             <div className="flex-1 w-full relative z-20">
               <div
                 className={`flex items-center border rounded-sm overflow-hidden bg-white w-full`}
@@ -121,8 +121,8 @@ export default function Header() {
                 </div>
               </Link>
 
-              <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-                {mobileMenuOpen ? <X /> : <Menu />}
+              <button className="md:hidden text-black" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                {mobileMenuOpen ? <X color="black" /> : <Menu color="black" />}
               </button>
             </div>
           </div>
@@ -146,31 +146,41 @@ export default function Header() {
             </nav>
           </div>
 
-          {mobileMenuOpen && typeof document !== 'undefined' && createPortal(
-            <div className="fixed inset-0 z-[9999] bg-white p-6 overflow-auto md:hidden">
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center gap-4">
-                  <Link href="/" onClick={() => setMobileMenuOpen(false)} className="relative w-24 h-24 block">
-                    <Image src="/artmasons_logo.png" alt="Art Masons" fill className="object-contain" />
-                  </Link>
-                </div>
-                <button aria-label="Close menu" onClick={() => setMobileMenuOpen(false)} className="p-2">
-                  <X />
-                </button>
-              </div>
-
-              <nav>
-                <ul className="flex flex-col gap-4 text-lg font-serif uppercase">
-                  {NAV_ITEMS.map((item) => (
-                    <li key={item.label} className="py-3 border-b border-gray-100">
-                      <Link href={item.href} onClick={() => setMobileMenuOpen(false)} className="block text-black">
-                        <span className="lining-nums">{item.label}</span>
+          {typeof document !== 'undefined' && createPortal(
+            <AnimatePresence>
+              {mobileMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="fixed inset-0 z-[9999] bg-white p-6 overflow-auto md:hidden"
+                >
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center gap-4">
+                      <Link href="/" onClick={() => setMobileMenuOpen(false)} className="relative w-24 h-24 block">
+                        <Image src="/image/icons/logo_1.png" alt="Art Masons" fill className="object-contain" />
                       </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </div>,
+                    </div>
+                    <button aria-label="Close menu" onClick={() => setMobileMenuOpen(false)} className="p-2 text-black">
+                      <X color="black" />
+                    </button>
+                  </div>
+
+                  <nav>
+                    <ul className="flex flex-col gap-4 text-lg font-serif uppercase">
+                      {NAV_ITEMS.map((item) => (
+                        <li key={item.label} className="py-3 border-b border-gray-100">
+                          <Link href={item.href} onClick={() => setMobileMenuOpen(false)} className="block text-black">
+                            <span className="lining-nums">{item.label}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </nav>
+                </motion.div>
+              )}
+            </AnimatePresence>,
             document.body
           )}
         </div>

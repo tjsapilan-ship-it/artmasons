@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1a1a1a] text-white pt-20 pb-10">
+    <footer className="bg-[#1a1a1a] text-white pt-10 pb-10 md:pt-20">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div>
           <h4 className="font-serif text-xl mb-6">About Art Masons</h4>

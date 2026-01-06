@@ -346,10 +346,10 @@ export default function ArtMasonsLanding() {
       <PageTransition>
         {/* --- HERO SECTION --- */}
         <section className="flex flex-col md:flex-row w-full min-h-[600px] border-b border-gray-200 md:pr-8 lg:pr-16">
-          <div className="w-full md:w-1/3 bg-white p-8 md:py-12 md:pl-12 md:pr-1 flex flex-col justify-center items-center">
-            <div className="w-full max-w-[330px] text-left mx-auto">
-              <div className="mb-8">
-                <h2 className="font-serif text-2xl md:text-3xl font-bold leading-tight mb-2 ml-2 md:ml-4">
+          <div className="w-full order-2 md:order-1 md:w-1/3 bg-white p-8 md:py-12 md:pl-12 md:pr-1 flex flex-col justify-center items-center">
+            <div className="w-full max-w-[330px] flex flex-col items-center md:items-start mx-auto">
+              <div className="mb-8 text-center md:text-left w-full">
+                <h2 className="font-serif text-2xl md:text-3xl font-bold leading-tight mb-2 md:ml-4">
                   ART MASONS
                 </h2>
                 <h3 className="font-serif text-xl md:text-2xl text-[#800000]">
@@ -357,7 +357,7 @@ export default function ArtMasonsLanding() {
                 </h3>
               </div>
 
-              <ul className="space-y-4 font-serif text-lg text-gray-800">
+              <ul className="space-y-4 font-serif text-lg text-gray-800 text-center md:text-left w-full">
                 {ASSURANCE_POINTS.map((point, index) => (
                   <li key={index}>{point}</li>
                 ))}
@@ -365,7 +365,7 @@ export default function ArtMasonsLanding() {
             </div>
           </div>
 
-          <div className="w-full md:w-2/3 relative bg-gray-50 group overflow-hidden">
+          <div className="w-full order-1 md:order-2 md:w-2/3 relative bg-gray-50 group overflow-hidden h-[55vh] min-h-[400px] md:h-auto">
             {/* IMAGE CONTAINER */}
             <div className="absolute inset-0">
               <AnimatePresence>
@@ -456,7 +456,7 @@ export default function ArtMasonsLanding() {
               href={isClient && currentArt.slug ? `/artworks/${currentArt.slug}` : "#"}
               onClick={(e) => { e.stopPropagation(); }}
               aria-label="Buy now"
-              className="absolute z-50 inline-flex items-center justify-center bg-[#800000] text-white w-24 h-24 rounded-full font-bold uppercase tracking-wider shadow-lg hover:bg-[#9a0000] transition-all duration-300 text-sm bottom-24 right-6 md:left-1/2 md:bottom-[105px] md:transform md:-translate-x-1/2 opacity-100 scale-100"
+              className="absolute z-50 inline-flex items-center justify-center bg-[#800000] text-white w-20 h-20 md:w-24 md:h-24 rounded-full font-bold uppercase tracking-wider shadow-lg hover:bg-[#9a0000] transition-all duration-300 text-xs md:text-sm bottom-23 left-1/2 -translate-x-1/2 md:bottom-[105px] transform scale-100"
             >
               BUY NOW
             </Link>
@@ -478,11 +478,8 @@ export default function ArtMasonsLanding() {
                <div className="h-px bg-[#800000] flex-grow"></div>
             </div>
             <div className="p-8 md:p-12 min-h-[300px] flex items-center justify-center text-center relative bg-white shadow-sm border-2 border-[#800000] rounded-lg">
-              <div
-                className="absolute left-6 text-[#800000] opacity-90"
-                style={{ top: '30%', transform: 'translateY(-50%)' }}
-              >
-                <span className="font-serif text-6xl leading-none">“</span>
+              <div className="absolute top-2 left-4 md:top-8 md:left-8 text-[#800000] opacity-90 select-none">
+                <span className="font-serif text-6xl md:text-8xl leading-none">“</span>
               </div>
 
               {isClient && (
@@ -493,18 +490,15 @@ export default function ArtMasonsLanding() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -6, scale: 0.995 }}
                     transition={{ duration: 0.4 }}
-                    className="font-serif text-2xl md:text-3xl leading-relaxed text-gray-700 -mt-3"
+                    className="font-serif text-xl md:text-3xl leading-relaxed text-gray-700 relative z-10 px-2 md:px-8"
                   >
                     {FUN_FACTS_DATA[currentFactIndex]}
                   </motion.p>
                 </AnimatePresence>
               )}
 
-              <div
-                className="absolute right-6 text-[#800000] opacity-90"
-                style={{ top: '70%', transform: 'translateY(-50%)' }}
-              >
-                <span className="font-serif text-6xl leading-none">”</span>
+              <div className="absolute bottom-2 right-4 md:bottom-8 md:right-8 text-[#800000] opacity-90 select-none">
+                <span className="font-serif text-6xl md:text-8xl leading-none">”</span>
               </div>
             </div>
 
@@ -607,8 +601,8 @@ export default function ArtMasonsLanding() {
                 </div>
               </div>
 
-              <div className="flex gap-6 bg-gray-50 p-4 rounded-lg border border-gray-100">
-                <div className="w-1/2">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <div className="w-full sm:w-1/2">
                   <label className="text-base font-bold text-black block mb-2">Enter Original Height</label>
                   <input
                     type="number"
@@ -618,7 +612,7 @@ export default function ArtMasonsLanding() {
                     placeholder="60"
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-full sm:w-1/2">
                   <label className="text-base font-bold text-black block mb-2">Enter Original Width</label>
                   <input
                     type="number"
@@ -635,7 +629,7 @@ export default function ArtMasonsLanding() {
                   Enter either the new desired Height <span className="text-[#800000] font-extrabold">OR</span> Width
                 </label>
                 
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex flex-col sm:flex-row items-center gap-4 mb-4">
                    <label className="flex items-center gap-2 cursor-pointer group">
                       <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${knownDim === 'height' ? 'border-[#800000]' : 'border-gray-400'}`}>
                         {knownDim === 'height' && <div className="w-2.5 h-2.5 rounded-full bg-[#800000]" />}
@@ -665,8 +659,8 @@ export default function ArtMasonsLanding() {
                    />
                 </div>
 
-                <div className="flex items-center border border-gray-200 rounded bg-white overflow-hidden shadow-sm">
-                   <div className="px-4 py-3 text-black text-base border-r border-gray-200 bg-gray-50 min-w-[180px] font-medium">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center border border-gray-200 rounded bg-white overflow-hidden shadow-sm">
+                   <div className="px-4 py-3 text-black text-base border-b sm:border-b-0 sm:border-r border-gray-200 bg-gray-50 w-full sm:w-auto sm:min-w-[180px] font-medium">
                       Behold your new {knownDim === 'width' ? 'Height' : 'Width'}
                    </div>
                     <div className="px-4 py-3 font-bold text-[#800000] text-lg flex-grow">
