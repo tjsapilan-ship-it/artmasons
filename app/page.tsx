@@ -235,6 +235,11 @@ export default function ArtMasonsLanding() {
     return isClient ? shuffle(indices) : indices;
   }, [isClient]);
 
+  const famousArtOrder = React.useMemo(() => {
+    const indices = Array.from({ length: ART_OF_THE_DAY.length }, (_, i) => i);
+    return isClient ? shuffle(indices) : indices;
+  }, [isClient]);
+
   useEffect(() => {
     const testimonialTimer = setInterval(() => {
       setTestimonialIndex((prev) => (prev + 3) % TESTIMONIALS_DATA.length);
@@ -262,7 +267,7 @@ export default function ArtMasonsLanding() {
   const currentArray = playTop100Random ? TOP_100_ARTS : ART_OF_THE_DAY;
   const currentArt = playTop100Random
     ? TOP_100_ARTS[top100Order[currentArtIndex] ?? currentArtIndex]
-    : ART_OF_THE_DAY[currentArtIndex];
+    : ART_OF_THE_DAY[famousArtOrder[currentArtIndex] ?? currentArtIndex];
 
   // --- CENTRALIZED TRANSITION LOGIC ---
   const triggerArtTransition = useCallback((direction: 'next' | 'prev') => {

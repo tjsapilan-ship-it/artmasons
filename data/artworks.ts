@@ -2426,7 +2426,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-F-015",
     basePrice: 8633,
     currency: "AED",
-    image: "/image/f/nude-youth-sitting-by-the-sea.jpg",
+    image: '/image/famous-art/nude youth sitting by the sea.jpg',
     options: [{ id: 'opt1', width: 98, height: 124, price: 8633, label: 'Original Size' }],
   },
 
@@ -2543,7 +2543,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-F-024",
     basePrice: 3011,
     currency: "AED",
-    image: "/image/f/ship-in-the-polar-sea.jpg",
+    image: '/image/f/ship in the polar sea.jpg',
     options: [{ id: 'opt1', width: 29.6, height: 21.9, price: 3011, label: 'Original Size' }],
   },
 
@@ -2843,7 +2843,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-G-028",
     basePrice: 3145,
     currency: "AED",
-    image: "/image/g/starry night over the rhone.jpg",
+    image: '/image/famous-art/starry night.jpg',
     options: [{ id: 'opt1', width: 75.2, height: 92, price: 3145, label: 'Original Size' }],
   },
 
@@ -4871,7 +4871,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-M-043",
     basePrice: 3330,
     currency: "AED",
-    image: "/image/m/water lilies.jpg",
+    image: "/image/famous-art/water lilies.jpg",
     options: [{ id: 'opt1', width: 89.5, height: 100.3, price: 3330, label: 'Original Size' }],
   },
 
@@ -4884,7 +4884,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-M-044",
     basePrice: 3330,
     currency: "AED",
-    image: "/image/m/water lilies.jpg",
+    image: "/image/famous-art/water lilies.jpg",
     options: [{ id: 'opt1', width: 101, height: 90, price: 3330, label: 'Original Size' }],
   },
 
@@ -4897,7 +4897,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-M-045",
     basePrice: 3200,
     currency: "AED",
-    image: "/image/m/water lilies.jpg",
+    image: "/image/famous-art/water lilies.jpg",
     options: [{ id: 'opt1', width: 92.1, height: 81.2, price: 3200, label: 'Original Size' }],
   },
 
@@ -4910,7 +4910,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-M-046",
     basePrice: 3250,
     currency: "AED",
-    image: "/image/m/water lilies.jpg",
+    image: "/image/famous-art/water lilies.jpg",
     options: [{ id: 'opt1', width: 88.3, height: 99.5, price: 3250, label: 'Original Size' }],
   },
 
@@ -9175,7 +9175,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-LDV-001",
     basePrice: 8919,
     currency: "AED",
-    image: "/image/v/mona lisa la gioconda.jpg",
+    image: '/image/d/mona lisa (la gioconda).jpg',
     options: [{ id: 'opt1', width: 77, height: 53, price: 8919, label: 'Original Size' }],
   },
 
@@ -9188,7 +9188,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-LDV-002",
     basePrice: 6803,
     currency: "AED",
-    image: "/image/v/st john the baptist.jpg",
+    image: '/image/d/st john the baptist.jpg',
     options: [{ id: 'opt1', width: 69, height: 57, price: 6803, label: 'Original Size' }],
   },
 
@@ -9201,7 +9201,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-LDV-003",
     basePrice: 12800,
     currency: "AED",
-    image: "/image/v/the last supper.jpg",
+    image: '/image/d/the last supper.jpg',
     options: [{ id: 'opt1', width: 120, height: 220, price: 12800, label: 'Original Size' }],
   },
 
@@ -9214,7 +9214,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-LDV-004",
     basePrice: 16358,
     currency: "AED",
-    image: "/image/v/the virgin on the rocks.jpg",
+    image: '/image/d/the virgin on the rocks.jpg',
     options: [{ id: 'opt1', width: 94.75, height: 60, price: 16358, label: 'Original Size' }],
   },
 
@@ -9227,7 +9227,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-LDV-005",
     basePrice: 26339,
     currency: "AED",
-    image: "/image/v/virgin and child with st anne.jpg",
+    image: "/image/d/virgin and child with st anne.jpg",
     options: [{ id: 'opt1', width: 168.5, height: 130, price: 26339, label: 'Original Size' }],
   },
 
@@ -9240,7 +9240,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-LDV-006",
     basePrice: 7570,
     currency: "AED",
-    image: "/image/v/lady with an emine cecilia gallerani.jpg",
+    image: "/image/famous-art/lady with an emine (cecilia gallerani).jpg",
     options: [{ id: 'opt1', width: 53.4, height: 39.3, price: 7570, label: 'Original Size' }],
   },
 
@@ -9253,7 +9253,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-LDV-007",
     basePrice: 12000,
     currency: "AED",
-    image: "/image/v/salvator mundi.jpg",
+    image: '/image/famous-art/salvator mundi.jpg',
     options: [{ id: 'opt1', width: 65.6, height: 45.4, price: 12000, label: 'Original Size' }],
   },
 
@@ -9669,7 +9669,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CDF-001",
     basePrice: 3450,
     currency: "AED",
-    image: "/image/f/a wanderer above a sea of mist.jpg",
+    image: '/image/famous-art/a wanderer above a sea of mist.jpg',
     options: [{ id: 'opt1', width: 98.4, height: 74.8, price: 3450, label: 'Original Size' }],
   },
 
@@ -9734,7 +9734,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-001",
     basePrice: 3579,
     currency: "AED",
-    image: "/image/g/starry night.jpg",
+    image: '/image/famous-art/starry night.jpg',
     options: [{ id: 'opt1', width: 73.7, height: 92.1, price: 3579, label: 'Original Size' }],
   },
 
@@ -9747,7 +9747,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-002",
     basePrice: 4770,
     currency: "AED",
-    image: "/image/g/irises.jpg",
+    image: "/image/famous-art/irises.jpg",
     options: [{ id: 'opt1', width: 71, height: 93, price: 4770, label: 'Original Size' }],
   },
 
@@ -9773,7 +9773,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-004",
     basePrice: 3142,
     currency: "AED",
-    image: "/image/g/vincents chair with his pipe.jpg",
+    image: "/image/g/van gogh's bedroom at aries.jpg",
     options: [{ id: 'opt1', width: 91.8, height: 73, price: 3142, label: 'Original Size' }],
   },
 
@@ -9786,7 +9786,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-005",
     basePrice: 3100,
     currency: "AED",
-    image: "/image/g/still life vase with fourteen sunflowers.jpg",
+    image: "/image/famous-art/still life vase with fourteen sunflowers.jpg",
     options: [{ id: 'opt1', width: 100.5, height: 76.5, price: 3100, label: 'Original Size' }],
   },
 
@@ -9799,7 +9799,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-006",
     basePrice: 2272,
     currency: "AED",
-    image: "/image/g/self portrait with bandaged ear and pipe.jpg",
+    image: '/image/famous-art/self portrait with bandaged ear and pipe.jpg',
     options: [{ id: 'opt1', width: 51, height: 45, price: 2272, label: 'Original Size' }],
   },
 
@@ -9812,7 +9812,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-007",
     basePrice: 2710,
     currency: "AED",
-    image: "/image/g/portrait of dr felix rey.jpg",
+    image: "/image/g/postman joseph roulin.jpg",
     options: [{ id: 'opt1', width: 64, height: 53, price: 2710, label: 'Original Size' }],
   },
 
@@ -9825,7 +9825,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-008",
     basePrice: 2712,
     currency: "AED",
-    image: "/image/g/portrait of the postman joseph roulin.jpg",
+    image: "/image/famous-art/postman joseph roulin.jpg",
     options: [{ id: 'opt1', width: 65, height: 54, price: 2712, label: 'Original Size' }],
   },
 
@@ -9838,7 +9838,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-009",
     basePrice: 3167,
     currency: "AED",
-    image: "/image/g/lilac bush lilacs.jpg",
+    image: "/image/g/irises.jpg",
     options: [{ id: 'opt1', width: 73, height: 92, price: 3167, label: 'Original Size' }],
   },
 
@@ -9851,7 +9851,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-010",
     basePrice: 3105,
     currency: "AED",
-    image: "/image/g/the olive trees.jpg",
+    image: "/image/g/haystacks in provence.jpg",
     options: [{ id: 'opt1', width: 72.6, height: 91.4, price: 3105, label: 'Original Size' }],
   },
 
@@ -9864,7 +9864,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-011",
     basePrice: 3165,
     currency: "AED",
-    image: "/image/g/wheat field with cypresses.jpg",
+    image: '/image/famous-art/wheat field with cypresses.jpg',
     options: [{ id: 'opt1', width: 73, height: 93.4, price: 3165, label: 'Original Size' }],
   },
 
@@ -9877,7 +9877,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-012",
     basePrice: 3165,
     currency: "AED",
-    image: "/image/g/lanscape of wheat sheaves and rising moon.jpg",
+    image: "/image/g/wheat field with crows 1890.jpg",
     options: [{ id: 'opt1', width: 72, height: 92, price: 3165, label: 'Original Size' }],
   },
 
@@ -9890,7 +9890,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-013",
     basePrice: 1989,
     currency: "AED",
-    image: "/image/g/the reaper after millet.jpg",
+    image: "/image/g/haystacks in provence.jpg",
     options: [{ id: 'opt1', width: 43.5, height: 25, price: 1989, label: 'Original Size' }],
   },
 
@@ -9903,7 +9903,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-014",
     basePrice: 1889,
     currency: "AED",
-    image: "/image/g/vincents bedroom in airies.jpg",
+    image: "/image/famous-art/van gogh's bedroom at aries.jpg",
     options: [{ id: 'opt1', width: 73.6, height: 92, price: 1889, label: 'Original Size' }],
   },
 
@@ -9916,7 +9916,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-015",
     basePrice: 2167,
     currency: "AED",
-    image: "/image/g/the mulberry tree.jpg",
+    image: "/image/g/haystacks in provence.jpg",
     options: [{ id: 'opt1', width: 54, height: 65, price: 2167, label: 'Original Size' }],
   },
 
@@ -9929,7 +9929,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-016",
     basePrice: 2925,
     currency: "AED",
-    image: "/image/g/olive tress.jpg",
+    image: "/image/g/haystacks in provence.jpg",
     options: [{ id: 'opt1', width: 73.8, height: 92.7, price: 2925, label: 'Original Size' }],
   },
 
@@ -9942,7 +9942,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-017",
     basePrice: 4165,
     currency: "AED",
-    image: "/image/g/blossoming almomd tree.jpg",
+    image: "/image/famous-art/blossoming almod tree.jpg",
     options: [{ id: 'opt1', width: 5, height: 92, price: 4165, label: 'Original Size' }],
   },
 
@@ -9955,7 +9955,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-018",
     basePrice: 3163,
     currency: "AED",
-    image: "/image/g/vase with irises against yellow background.jpg",
+    image: "/image/famous-art/vase with irises against a yellow background.jpg",
     options: [{ id: 'opt1', width: 92, height: 73.5, price: 3163, label: 'Original Size' }],
   },
 
@@ -9968,7 +9968,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-019",
     basePrice: 3734,
     currency: "AED",
-    image: "/image/g/vase of roses.jpg",
+    image: "/image/famous-art/vase of roses.jpg",
     options: [{ id: 'opt1', width: 93, height: 74, price: 3734, label: 'Original Size' }],
   },
 
@@ -9981,7 +9981,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-020",
     basePrice: 2269,
     currency: "AED",
-    image: "/image/g/landscape couple walking crescent moon.jpg",
+    image: "/image/g/starry night over the rome.jpg",
     options: [{ id: 'opt1', width: 52, height: 47, price: 2269, label: 'Original Size' }],
   },
 
@@ -9994,7 +9994,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-021",
     basePrice: 2641,
     currency: "AED",
-    image: "/image/g/portrait of doctor gachet.jpg",
+    image: "/image/famous-art/portrait of doctor gachet.jpg",
     options: [{ id: 'opt1', width: 66, height: 57, price: 2641, label: 'Original Size' }],
   },
 
@@ -10007,7 +10007,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-VVG-022",
     basePrice: 2744,
     currency: "AED",
-    image: "/image/g/whaet field with crows 1890.jpg",
+    image: "/image/g/wheat field with crows 1890.jpg",
     options: [{ id: 'opt1', width: 50.5, height: 103, price: 2744, label: 'Original Size' }],
   },
 
@@ -10501,7 +10501,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-GK-004",
     basePrice: 9200,
     currency: "AED",
-    image: "/image/k/the dancer.jpg",
+    image: "/image/famous-art/the dancer.jpg",
     options: [{ id: 'opt1', width: 180, height: 90, price: 9200, label: 'Original Size' }],
   },
 
@@ -10514,7 +10514,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-GK-005",
     basePrice: 3635,
     currency: "AED",
-    image: "/image/k/music i.jpg",
+    image: '/image/famous-art/music I.jpg',
     options: [{ id: 'opt1', width: 27.5, height: 35.5, price: 3635, label: 'Original Size' }],
   },
 
@@ -10527,7 +10527,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-GK-006",
     basePrice: 10905,
     currency: "AED",
-    image: "/image/k/music i.jpg",
+    image: '/image/famous-art/music I.jpg',
     options: [{ id: 'opt1', width: 82.5, height: 106.5, price: 10905, label: 'Original Size' }],
   },
 
@@ -10553,7 +10553,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-GK-008",
     basePrice: 42000,
     currency: "AED",
-    image: "/image/k/university of vienna ceiling medicine detail showing hygiieia.jpg",
+    image: '/image/k/university of vienna ceiling (medicine) detail showing hygiiegia.jpg',
     options: [{ id: 'opt1', width: 430, height: 300, price: 42000, label: 'Original Size' }],
   },
 
@@ -11203,7 +11203,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-001",
     basePrice: 4100,
     currency: "AED",
-    image: "/image/m/grand canal.jpg",
+    image: "/image/famous-art/grand canal.jpg",
     options: [{ id: 'opt1', width: 73, height: 93.4, price: 4100, label: 'Original Size' }],
   },
 
@@ -11216,7 +11216,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-002",
     basePrice: 8200,
     currency: "AED",
-    image: "/image/m/grand canal.jpg",
+    image: "/image/famous-art/grand canal.jpg",
     options: [{ id: 'opt1', width: 146, height: 186.8, price: 8200, label: 'Original Size' }],
   },
 
@@ -11229,7 +11229,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-003",
     basePrice: 4800,
     currency: "AED",
-    image: "/image/m/the japanese bridge pond with water lilies.jpg",
+    image: "/image/famous-art/the japanese bridge pond with water lilies.jpg",
     options: [{ id: 'opt1', width: 89.5, height: 92.5, price: 4800, label: 'Original Size' }],
   },
 
@@ -11333,7 +11333,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-011",
     basePrice: 2711,
     currency: "AED",
-    image: "/image/m/rocks at port-goulphar belle-iie.jpg",
+    image: "/image/m/rocks at port-goulphar belle-lle.jpg",
     options: [{ id: 'opt1', width: 66, height: 81.6, price: 2711, label: 'Original Size' }],
   },
 
@@ -11346,7 +11346,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-012",
     basePrice: 2820,
     currency: "AED",
-    image: "/image/m/houses of parliament.jpg",
+    image: "/image/famous-art/the houses of parliament sunset.jpg",
     options: [{ id: 'opt1', width: 81, height: 92, price: 2820, label: 'Original Size' }],
   },
 
@@ -11359,7 +11359,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-013",
     basePrice: 2000,
     currency: "AED",
-    image: "/image/m/jar of peaches.jpg",
+    image: "/image/m/still life with melon and peaches.jpg",
     options: [{ id: 'opt1', width: 55.5, height: 46, price: 2000, label: 'Original Size' }],
   },
 
@@ -11372,7 +11372,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-014",
     basePrice: 4100,
     currency: "AED",
-    image: "/image/m/the rue montorgueil paris.jpg",
+    image: "/image/m/rafalgar square.jpg",
     options: [{ id: 'opt1', width: 81, height: 50, price: 4100, label: 'Original Size' }],
   },
 
@@ -11385,7 +11385,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-015",
     basePrice: 4500,
     currency: "AED",
-    image: "/image/m/the galettes.jpg",
+    image: "/image/m/the brioche.jpg",
     options: [{ id: 'opt1', width: 65, height: 81, price: 4500, label: 'Original Size' }],
   },
 
@@ -11398,7 +11398,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-016",
     basePrice: 16000,
     currency: "AED",
-    image: "/image/m/women in the garden.jpg",
+    image: "/image/m/the woman in the gardn.jpg",
     options: [{ id: 'opt1', width: 205, height: 255, price: 16000, label: 'Original Size' }],
   },
 
@@ -11411,7 +11411,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-017",
     basePrice: 4200,
     currency: "AED",
-    image: "/image/m/irises in monets garden.jpg",
+    image: "/image/g/irises.jpg",
     options: [{ id: 'opt1', width: 81, height: 92, price: 4200, label: 'Original Size' }],
   },
 
@@ -11424,7 +11424,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-018",
     basePrice: 2200,
     currency: "AED",
-    image: "/image/m/fishing boats calm sea.jpg",
+    image: "/image/m/sailing boats.jpg",
     options: [{ id: 'opt1', width: 46, height: 64, price: 2200, label: 'Original Size' }],
   },
 
@@ -11437,7 +11437,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-019",
     basePrice: 9800,
     currency: "AED",
-    image: "/image/m/the turkeys.jpg",
+    image: "/image/m/oysters.jpg",
     options: [{ id: 'opt1', width: 174, height: 172.5, price: 9800, label: 'Original Size' }],
   },
 
@@ -11450,7 +11450,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-020",
     basePrice: 4200,
     currency: "AED",
-    image: "/image/m/the rue montorgueil.jpg",
+    image: "/image/m/rafalgar square.jpg",
     options: [{ id: 'opt1', width: 81.1, height: 50.5, price: 4200, label: 'Original Size' }],
   },
 
@@ -11463,7 +11463,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-021",
     basePrice: 3950,
     currency: "AED",
-    image: "/image/m/gladiolus.jpg",
+    image: "/image/m/goldfish.jpg",
     options: [{ id: 'opt1', width: 100.4, height: 41.5, price: 3950, label: 'Original Size' }],
   },
 
@@ -11476,7 +11476,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-022",
     basePrice: 3900,
     currency: "AED",
-    image: "/image/m/clifftop walk at porville.jpg",
+    image: "/image/m/dieppe.jpg",
     options: [{ id: 'opt1', width: 66.5, height: 82.3, price: 3900, label: 'Original Size' }],
   },
 
@@ -11489,7 +11489,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-023",
     basePrice: 1999,
     currency: "AED",
-    image: "/image/m/christmas roses.jpg",
+    image: "/image/m/goldfish.jpg",
     options: [{ id: 'opt1', width: 47, height: 37.5, price: 1999, label: 'Original Size' }],
   },
 
@@ -11502,7 +11502,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-024",
     basePrice: 3950,
     currency: "AED",
-    image: "/image/m/landscape by montecarlo.jpg",
+    image: "/image/m/near monte carlo.jpg",
     options: [{ id: 'opt1', width: 65.1, height: 81.3, price: 3950, label: 'Original Size' }],
   },
 
@@ -11515,7 +11515,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-025",
     basePrice: 2895,
     currency: "AED",
-    image: "/image/m/branch of orange bearing fruit.jpg",
+    image: "/image/m/blossoming apple trees.jpg",
     options: [{ id: 'opt1', width: 73, height: 60, price: 2895, label: 'Original Size' }],
   },
 
@@ -11528,7 +11528,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-026",
     basePrice: 5500,
     currency: "AED",
-    image: "/image/m/the pink skiff.jpg",
+    image: "/image/m/boating.jpg",
     options: [{ id: 'opt1', width: 135, height: 148, price: 5500, label: 'Original Size' }],
   },
 
@@ -11541,7 +11541,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-027",
     basePrice: 3950,
     currency: "AED",
-    image: "/image/m/rouen cathedreal.jpg",
+    image: "/image/m/dieppe.jpg",
     options: [{ id: 'opt1', width: 100, height: 65, price: 3950, label: 'Original Size' }],
   },
 
@@ -11554,7 +11554,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-028",
     basePrice: 2900,
     currency: "AED",
-    image: "/image/m/dandelions.jpg",
+    image: "/image/m/goldfish.jpg",
     options: [{ id: 'opt1', width: 79.3, height: 38, price: 2900, label: 'Original Size' }],
   },
 
@@ -11567,7 +11567,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-029",
     basePrice: 13900,
     currency: "AED",
-    image: "/image/m/camille known as the woman in the green dress.jpg",
+    image: "/image/m/lady in green with a red carnation.jpg",
     options: [{ id: 'opt1', width: 231, height: 151, price: 13900, label: 'Original Size' }],
   },
 
@@ -11580,7 +11580,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-030",
     basePrice: 3900,
     currency: "AED",
-    image: "/image/m/path through ther forest snow effect.jpg",
+    image: "/image/m/haystacks in the sunlight midday.jpg",
     options: [{ id: 'opt1', width: 60, height: 81, price: 3900, label: 'Original Size' }],
   },
 
@@ -11593,7 +11593,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-031",
     basePrice: 4020,
     currency: "AED",
-    image: "/image/m/the ssine at argenteuil.jpg",
+    image: "/image/m/the seine in giverny.jpg",
     options: [{ id: 'opt1', width: 60, height: 80, price: 4020, label: 'Original Size' }],
   },
 
@@ -11606,7 +11606,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-032",
     basePrice: 4959,
     currency: "AED",
-    image: "/image/m/house of parliament sun.jpg",
+    image: "/image/m/the houses of parliament sunset.jpg",
     options: [{ id: 'opt1', width: 81, height: 92, price: 4959, label: 'Original Size' }],
   },
 
@@ -11619,7 +11619,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-033",
     basePrice: 13900,
     currency: "AED",
-    image: "/image/m/japans camiles monet in japanese costume.jpg",
+    image: "/image/m/woman with a hat.jpg",
     options: [{ id: 'opt1', width: 142.3, height: 231.8, price: 13900, label: 'Original Size' }],
   },
 
@@ -11632,7 +11632,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-CM-034",
     basePrice: 1250,
     currency: "AED",
-    image: "/image/m/peaches.jpg",
+    image: "/image/m/still life with melon and peaches.jpg",
     options: [{ id: 'opt1', width: 25, height: 31, price: 1250, label: 'Original Size' }],
   },
 
@@ -11957,7 +11957,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-PP-001",
     basePrice: 4400,
     currency: "AED",
-    image: "/image/p/crouching woman jacqueline.jpg",
+    image: "/image/famous-art/crouching woman (jacqueline).jpg",
     options: [{ id: 'opt1', width: 146, height: 144, price: 4400, label: 'Original Size' }],
   },
 
@@ -11970,7 +11970,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-PP-002",
     basePrice: 2200,
     currency: "AED",
-    image: "/image/p/crouching woman jacqueline.jpg",
+    image: "/image/famous-art/crouching woman (jacqueline).jpg",
     options: [{ id: 'opt1', width: 73, height: 72, price: 2200, label: 'Original Size' }],
   },
 
@@ -11983,7 +11983,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-PP-003",
     basePrice: 4365,
     currency: "AED",
-    image: "/image/p/the dream.jpg",
+    image: '/image/famous-art/the dream.jpg',
     options: [{ id: 'opt1', width: 130, height: 97, price: 4365, label: 'Original Size' }],
   },
 
@@ -11996,7 +11996,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-PP-004",
     basePrice: 8730,
     currency: "AED",
-    image: "/image/p/the dream.jpg",
+    image: '/image/famous-art/the dream.jpg',
     options: [{ id: 'opt1', width: 260, height: 194, price: 8730, label: 'Original Size' }],
   },
 
@@ -12009,7 +12009,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-PP-005",
     basePrice: 8730,
     currency: "AED",
-    image: "/image/p/the dream.jpg",
+    image: '/image/famous-art/the dream.jpg',
     options: [{ id: 'opt1', width: 260, height: 194, price: 8730, label: 'Original Size' }],
   },
 
@@ -12022,7 +12022,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-PP-006",
     basePrice: 2250,
     currency: "AED",
-    image: "/image/p/horses head.jpg",
+    image: "/image/famous-art/horse's head.jpg",
     options: [{ id: 'opt1', width: 65, height: 92, price: 2250, label: 'Original Size' }],
   },
 
@@ -12087,7 +12087,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-PP-011",
     basePrice: 7300,
     currency: "AED",
-    image: "/image/p/figures at the seaside.jpg",
+    image: '/image/famous-art/figures at the seaside.jpg',
     options: [{ id: 'opt1', width: 129.8, height: 161, price: 7300, label: 'Original Size' }],
   },
 
@@ -12139,7 +12139,7 @@ export const ARTWORKS: Artwork[] = [
     sku: "AM-PP-015",
     basePrice: 5012,
     currency: "AED",
-    image: "/image/p/garcon ala pipe.jpg",
+    image: "/image/famous-art/garcon a'la pipe.jpg",
     options: [{ id: 'opt1', width: 100, height: 81.3, price: 5012, label: 'Original Size' }],
   },
 

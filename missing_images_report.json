@@ -1,0 +1,233 @@
+[
+  {
+    "category": "monet",
+    "title": "Rocks At Port-Goulphar Belle-IIe",
+    "artist": "Claude Monet",
+    "imagePath": "/image/m/rocks at port-goulphar belle-iie.jpg",
+    "slug": "claude-monet-rocks-at-port-goulphar-belle-iie"
+  },
+  {
+    "category": "monet",
+    "title": "Women In The Garden",
+    "artist": "Claude Monet",
+    "imagePath": "/image/m/women in the garden.jpg",
+    "slug": "claude-monet-women-in-the-garden"
+  },
+  {
+    "category": "monet",
+    "title": "The Ssine At Argenteuil",
+    "artist": "Claude Monet",
+    "imagePath": "/image/m/the ssine at argenteuil.jpg",
+    "slug": "claude-monet-the-ssine-at-argenteuil"
+  },
+  {
+    "category": "matisse",
+    "title": "The Red Room, Harmony In Red",
+    "artist": "Henri Matisse",
+    "imagePath": "/image/m/the red room, harmony in red.jpg",
+    "slug": "henri-matisse-the-red-room-harmony-in-red"
+  },
+  {
+    "category": "van-gogh",
+    "title": "Whaet Field With Crows 1890",
+    "artist": "Vincent Van Gogh",
+    "imagePath": "/image/g/whaet field with crows 1890.jpg",
+    "slug": "vincent-van-gogh-whaet-field-with-crows-1890"
+  },
+  {
+    "category": "picasso",
+    "title": "Boy With A Pipe",
+    "artist": "Pablo Picasso",
+    "imagePath": "/image/p/boy with a pipe.jpg",
+    "slug": "pablo-picasso-boy-with-a-pipe"
+  },
+  {
+    "category": "picasso",
+    "title": "Child With A Dove",
+    "artist": "Pablo Picasso",
+    "imagePath": "/image/p/child with a dove.jpg",
+    "slug": "pablo-picasso-child-with-a-dove"
+  },
+  {
+    "category": "picasso",
+    "title": "Girl On The Ball",
+    "artist": "Pablo Picasso",
+    "imagePath": "/image/p/girl on the ball.jpg",
+    "slug": "pablo-picasso-girl-on-the-ball"
+  },
+  {
+    "category": "picasso",
+    "title": "Girls Of Avignon",
+    "artist": "Pablo Picasso",
+    "imagePath": "/image/p/girls of avignon.jpg",
+    "slug": "pablo-picasso-girls-of-avignon"
+  },
+  {
+    "category": "picasso",
+    "title": "Cat Catching A Bird",
+    "artist": "Pablo Picasso",
+    "imagePath": "/image/p/cat catching a bird.jpg",
+    "slug": "pablo-picasso-cat-catching-a-bird"
+  },
+  {
+    "category": "picasso",
+    "title": "Portrait Of A Woman In D'Hermine Pass",
+    "artist": "Pablo Picasso",
+    "imagePath": "/image/p/portrait of a woman in dhermine pass.jpg",
+    "slug": "pablo-picasso-portrait-of-a-woman-in-dhermine-pass"
+  },
+  {
+    "category": "picasso",
+    "title": "The Brtutal Embrace",
+    "artist": "Pablo Picasso",
+    "imagePath": "/image/p/the brtutal embrace.jpg",
+    "slug": "pablo-picasso-the-brtutal-embrace"
+  },
+  {
+    "category": "da-vinci",
+    "title": "Virgin And Child With St Anne",
+    "artist": "Leonardo Da Vinci",
+    "imagePath": "/image/v/virgin and child with st anne.jpg",
+    "slug": "leonardo-da-vinci-virgin-and-child-with-st-anne"
+  },
+  {
+    "category": "portraits",
+    "title": "Self Portrait",
+    "artist": "Anselm Feuerbach",
+    "imagePath": "/image/f/self-portrait.jpg",
+    "slug": "anselm-feuerbach-self-portrait"
+  },
+  {
+    "category": "portraits",
+    "title": "Portrait Of Princess Zinaida Yusupova With Two Sons At Arkhangelskoe",
+    "artist": "Francois Flameng",
+    "imagePath": "/image/f/portrait-of-princess-zinaida-yusupova-with-two-sons-at-arkhangelskoe.jpg",
+    "slug": "francois-flameng-portrait-of-princess-zinaida-yusupova-with-two-sons-at-arkhangelskoe"
+  },
+  {
+    "category": "portraits",
+    "title": "Family Portrait Of A Boy And His Two Sisters",
+    "artist": "Francois Flameng",
+    "imagePath": "/image/f/family-portrait-of-a-boy-and-his-two-sisters.jpg",
+    "slug": "francois-flameng-family-portrait-of-a-boy-and-his-two-sisters"
+  },
+  {
+    "category": "portraits",
+    "title": "Portrait Henri VI England",
+    "artist": "Francois Clouet",
+    "imagePath": "/image/c/portrait henri vi england.jpg",
+    "slug": "francois-clouet-portrait-henri-vi-england"
+  },
+  {
+    "category": "portraits",
+    "title": "Portrait King Charles IX Of France",
+    "artist": "Francois Clouet",
+    "imagePath": "/image/c/portrait king charles ix of france.jpg",
+    "slug": "francois-clouet-portrait-king-charles-ix-of-france"
+  },
+  {
+    "category": "portraits",
+    "title": "Portrait O A Man With Streimel",
+    "artist": "Isidor Kauffman",
+    "imagePath": "/image/k/portrait o a man with streimel.jpg",
+    "slug": "isidor-kauffman-portrait-o-a-man-with-streimel"
+  },
+  {
+    "category": "portraits",
+    "title": "Portrait Of Diego Rivera",
+    "artist": "Amedeo Modigliani",
+    "imagePath": "/image/m/portrait of diego rivera.jpg",
+    "slug": "amedeo-modigliani-portrait-of-diego-rivera"
+  },
+  {
+    "category": "portraits",
+    "title": "Portrait Of A Woman In D'Hermine Pass",
+    "artist": "Pablo Picasso",
+    "imagePath": "/image/p/portrait of a woman in dhermine pass.jpg",
+    "slug": "pablo-picasso-portrait-of-a-woman-in-dhermine-pass"
+  },
+  {
+    "category": "portraits",
+    "title": "Portrait Of LeoX, Cardinal Luigi De Rossi and Giulio De Medici",
+    "artist": "Raffaello Sanzio Raphael",
+    "imagePath": "/image/r/portrait of leox cardinal luigi de rossi and giulio de medici.jpg",
+    "slug": "raffaello-sanzio-raphael-portrait-of-leox-cardinal-luigi-de-rossi-and-giulio-de-medici"
+  },
+  {
+    "category": "still-lifes",
+    "title": "Still Life With Roses And Fruit",
+    "artist": "Henri Fantin Latour",
+    "imagePath": "/image/f/still-life-with-roses-and-fruit.jpg",
+    "slug": "henri-fantin-latour-still-life-with-roses-and-fruit"
+  },
+  {
+    "category": "still-lifes",
+    "title": "Still Life With Bread And Confectinary",
+    "artist": "Georg Flegel",
+    "imagePath": "/image/f/still-life-with-bread-and-confectinary.jpg",
+    "slug": "georg-flegel-still-life-with-bread-and-confectinary"
+  },
+  {
+    "category": "still-lifes",
+    "title": "Still Life Pretzels, Nuts and Almonds",
+    "artist": "Georg Flegel",
+    "imagePath": "/image/f/still-life-pretzels-nuts-and-almonds.jpg",
+    "slug": "georg-flegel-still-life-pretzels-nuts-and-almonds"
+  },
+  {
+    "category": "still-lifes",
+    "title": "Still Life With Large Roemer, Lemon and Grapes",
+    "artist": "Pieter Claesz",
+    "imagePath": "/image/c/still life with large roemer lemon and grapes.jpg",
+    "slug": "pieter-claesz-still-life-with-large-roemer-lemon-and-grapes"
+  },
+  {
+    "category": "still-lifes",
+    "title": "Still Life With A Violin",
+    "artist": "Kuzma Petrov Vodkin",
+    "imagePath": "/image/v/still life with a violin.jpg",
+    "slug": "kuzma-petrov-vodkin-still-life-with-a-violin"
+  },
+  {
+    "category": "landscapes",
+    "title": "Morning, Catskill Valley",
+    "artist": "George Inness",
+    "imagePath": "/image/i/morning, catskill valley.jpg",
+    "slug": "george-inness-morning-catskill-valley"
+  },
+  {
+    "category": "landscapes",
+    "title": "Winter Landscape (1)",
+    "artist": "Wassily Kandinsky",
+    "imagePath": "/image/k/winter landscape (1).jpg",
+    "slug": "wassily-kandinsky-winter-landscape-1"
+  },
+  {
+    "category": "landscapes",
+    "title": "View Of The Roofs Snow Effect",
+    "artist": "Gustave Caillebotte",
+    "imagePath": "/image/c/view of the roofs snow effect.jpg",
+    "slug": "gustave-caillebotte-view-of-the-roofs-snow-effect"
+  },
+  {
+    "category": "landscapes",
+    "title": "View Through The Trees L' Estaque",
+    "artist": "Paul Cezanne",
+    "imagePath": "/image/c/view through the trees l estaque.jpg",
+    "slug": "paul-cezanne-view-through-the-trees-l-estaque"
+  },
+  {
+    "category": "landscapes",
+    "title": "Whaet Field With Crows 1890",
+    "artist": "Vincent Van Gogh",
+    "imagePath": "/image/g/whaet field with crows 1890.jpg",
+    "slug": "vincent-van-gogh-whaet-field-with-crows-1890"
+  },
+  {
+    "category": "landscapes",
+    "title": "Portrait Of Diego Rivera",
+    "artist": "Amedeo Modigliani",
+    "imagePath": "/image/m/portrait of diego rivera.jpg",
+    "slug": "amedeo-modigliani-portrait-of-diego-rivera"
+  }
+]
