@@ -26,7 +26,22 @@ export default async function ProductDetailsPage({ params }: { params: Promise<{
   if (!artwork) {
     const famousArtwork = getFamousArtworkBySlug(slug as string);
     if (famousArtwork) {
-      artwork = famousArtwork as Artwork;
+      // Transform FamousArtwork to Artwork format
+      artwork = {
+        name: famousArtwork.title,
+        artist: famousArtwork.artist,
+        year: famousArtwork.year,
+        originalDimensions: famousArtwork.originalSize,
+        sellingDimensions: famousArtwork.originalSize,
+        price: famousArtwork.basePrice,
+        image: famousArtwork.image,
+        artistLifespan: famousArtwork.artistLife,
+        slug: slug as string,
+        letter: famousArtwork.artist.charAt(0).toUpperCase(),
+        currency: famousArtwork.currency,
+        basePrice: famousArtwork.basePrice,
+        options: famousArtwork.options,
+      };
     }
   }
   
@@ -38,7 +53,22 @@ export default async function ProductDetailsPage({ params }: { params: Promise<{
         ).map(item => enrichArtworkWithOptions({ ...item, _slug: getArtworkSlug(item) } as Artwork & { _slug: string })),
         ...FAMOUS_ART.filter(
           (item) => item.artist === artwork.artist && getFamousArtworkSlug(item) !== slug
-        ).map(item => ({ ...item as Artwork, _slug: getFamousArtworkSlug(item) }))
+        ).map(item => ({
+          name: item.title,
+          artist: item.artist,
+          year: item.year,
+          originalDimensions: item.originalSize,
+          sellingDimensions: item.originalSize,
+          price: item.basePrice,
+          image: item.image,
+          artistLifespan: item.artistLife,
+          slug: getFamousArtworkSlug(item),
+          letter: item.artist.charAt(0).toUpperCase(),
+          currency: item.currency,
+          basePrice: item.basePrice,
+          options: item.options,
+          _slug: getFamousArtworkSlug(item)
+        } as Artwork & { _slug: string }))
       ].slice(0, 4)
     : [];
 
