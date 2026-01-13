@@ -42,7 +42,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
                     return (
                       <button
                         onClick={() => window.history.back()}
-                        className="hover:text-[#800000] transition-colors"
+                        className="hover:text-[#800000] transition-colors cursor-pointer"
                       >
                         {item.label}
                       </button>

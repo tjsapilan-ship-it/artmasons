@@ -3,7 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google';
 import PageTransition from '../../components/PageTransition';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import ClientProductDetails from '../ClientProductDetails';
-import { type Artwork, ARTWORKS, generateArtistSlug, getArtworkBySlug, getArtworkSlug } from '../../../data/artworks';
+import { type Artwork, ARTWORKS, generateArtistSlug, getArtworkBySlug, getArtworkSlug, enrichArtworkWithOptions } from '../../../data/artworks';
 import { getFamousArtworkBySlug, getFamousArtworkSlug, FAMOUS_ART } from '../../../data/famousAndTop100';
 
 // --- Fonts ---
@@ -16,6 +16,11 @@ export default async function ProductDetailsPage({ params }: { params: Promise<{
   
   // First try to find in main ARTWORKS collection
   let artwork = getArtworkBySlug(slug as string) as Artwork | null;
+  
+  // Enrich with options if found in ARTWORKS
+  if (artwork) {
+    artwork = enrichArtworkWithOptions(artwork);
+  }
   
   // If not found, try to find in FAMOUS_ART collection
   if (!artwork) {
@@ -30,7 +35,7 @@ export default async function ProductDetailsPage({ params }: { params: Promise<{
     ? [
         ...ARTWORKS.filter(
           (item) => item.artist === artwork.artist && getArtworkSlug(item) !== slug
-        ).map(item => ({ ...item, _slug: getArtworkSlug(item) })),
+        ).map(item => enrichArtworkWithOptions({ ...item, _slug: getArtworkSlug(item) } as Artwork & { _slug: string })),
         ...FAMOUS_ART.filter(
           (item) => item.artist === artwork.artist && getFamousArtworkSlug(item) !== slug
         ).map(item => ({ ...item as Artwork, _slug: getFamousArtworkSlug(item) }))
@@ -42,7 +47,7 @@ export default async function ProductDetailsPage({ params }: { params: Promise<{
     ? [
         { label: 'Artists A-Z', href: '/artists-a-z' },
         { label: artwork.artist, href: `/artists-a-z/${generateArtistSlug(artwork.artist)}` },
-        { label: artwork.title, href: `/artworks/${slug}` },
+        { label: artwork.name, href: `/artworks/${slug}` },
       ]
     : [
         { label: 'Artists A-Z', href: '/artists-a-z' },

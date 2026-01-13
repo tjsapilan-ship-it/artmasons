@@ -15,7 +15,7 @@ const getPrimaryPricing = (artwork: Artwork) => {
   const minOption = hasOptions
     ? artwork.options.reduce((min, option) => (option.price < min.price ? option : min), artwork.options[0])
     : null;
-  const price = minOption?.price ?? artwork.basePrice ?? null;
+  const price = minOption?.price ?? artwork.basePrice ?? artwork.price ?? null;
   return { price, currency: artwork.currency || 'AED', label: minOption?.label || 'Original Size' };
 };
 
@@ -35,7 +35,7 @@ function humanize(slug: string) {
 function matchesCategory(artwork: Artwork, slug?: string) {
   if (!slug) return false;
   const lower = String(slug).replace(/-/g, ' ').toLowerCase();
-  const title = (artwork.title ?? '').toLowerCase();
+  const title = (artwork.name ?? '').toLowerCase();
   const artist = (artwork.artist ?? '').toLowerCase();
   const desc = (artwork.description ?? '').toLowerCase();
 
@@ -122,9 +122,9 @@ export default async function CategoryPage({ params, searchParams }: { params: P
               <div className="font-serif text-sm text-gray-600">{filtered.length} items</div>
               <div className="font-serif text-sm text-gray-600">
                 <span className="mr-2">Sort:</span>
-                <Link href={`/popular-art/${slug}`} className={`px-2 ${sort==='default'?'font-semibold text-black':''}`}>Default</Link>
-                <Link href={`/popular-art/${slug}?sort=title`} className={`px-2 ${sort==='title'?'font-semibold text-black':''}`}>Title</Link>
-                <Link href={`/popular-art/${slug}?sort=artist`} className={`px-2 ${sort==='artist'?'font-semibold text-black':''}`}>Artist</Link>
+                <Link href={`/popular-art/${slug}`} className={`px-2 cursor-pointer ${sort==='default'?'font-semibold text-black':''}`}>Default</Link>
+                <Link href={`/popular-art/${slug}?sort=title`} className={`px-2 cursor-pointer ${sort==='title'?'font-semibold text-black':''}`}>Title</Link>
+                <Link href={`/popular-art/${slug}?sort=artist`} className={`px-2 cursor-pointer ${sort==='artist'?'font-semibold text-black':''}`}>Artist</Link>
               </div>
             </div>
           </header>
@@ -146,11 +146,11 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                     className="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group hover:border-[#800000]/20 border border-transparent"
                   >
                     {/* Image */}
-                    <Link href={`/artworks/${getArtworkSlug(art)}`} className="block">
+                    <Link href={`/artworks/${getArtworkSlug(art)}`} className="block cursor-pointer">
                       <div className="relative bg-gray-50 aspect-[3/4] overflow-hidden">
                         <Image 
                           src={art.image} 
-                          alt={art.title}
+                          alt={art.name}
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-700"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
@@ -162,7 +162,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                       {/* Title - Clickable */}
                       <Link href={`/artworks/${getArtworkSlug(art)}`}>
                         <h3 className="font-serif text-base font-bold text-[#800000] mb-1.5 line-clamp-2 leading-snug min-h-[2.8rem] hover:underline cursor-pointer">
-                          {art.title}
+                          {art.name}
                         </h3>
                       </Link>
                       
@@ -189,7 +189,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
 
                       {/* Product Buttons */}
                       <div className="grid grid-cols-2 gap-2.5 mb-4">
-                        <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all">
+                        <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
                           <div className="font-serif text-xs text-gray-600 mb-1">
                             {pricing.label}
                           </div>
@@ -199,7 +199,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                               : 'Price on request'}
                           </div>
                         </button>
-                        <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all">
+                        <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
                           <div className="font-serif text-xs text-gray-600 mb-1">Custom Size</div>
                           <div className="font-serif text-base font-bold text-[#800000]">Request quote</div>
                         </button>

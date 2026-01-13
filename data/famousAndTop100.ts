@@ -266,7 +266,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
 
   {
     title: "Luncheon On The Boating Party",
-    artist: "Pierre Auguste Renoir",
+    artist: "Pierre-Auguste Renoir",
     year: "1880",
     originalSize: "130.1 x 175.5 cm",
     artistLife: "1841-1919",
@@ -279,7 +279,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
 
   {
     title: "Two Sisters On The Terrace",
-    artist: "Pierre Auguste Renoir",
+    artist: "Pierre-Auguste Renoir",
     year: "1881",
     originalSize: "100.5 x 81 cm",
     artistLife: "1841-1919",
@@ -318,7 +318,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
 
   {
     title: "The Skiff (La Yole)",
-    artist: "Pierre Auguste Renoir",
+    artist: "Pierre-Auguste Renoir",
     year: "1875",
     originalSize: "71 x 92 cm",
     artistLife: "1841-1919",
@@ -336,10 +336,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     originalSize: "92 x 73.5 cm",
     artistLife: "1853-1890",
     sku: "AM-FA-025",
-    basePrice: 4100,
+    basePrice: 3170,
     currency: "AED",
     image: "/image/famous-art/vase with irises against a yellow background.jpg",
-    options: [{ id: 'opt1', width: 92, height: 73.5, price: 4100, label: 'Original Size' }],
+    options: [{ id: 'opt1', width: 92, height: 73.5, price: 3170, label: 'Original Size' }],
   },
 
   {
@@ -349,15 +349,15 @@ export const FAMOUS_ART: FamousArtwork[] = [
     originalSize: "73 x 93.4 cm",
     artistLife: "1853-1890",
     sku: "AM-FA-026",
-    basePrice: 4200,
+    basePrice: 3200,
     currency: "AED",
     image: "/image/famous-art/wheat field with cypresses.jpg",
-    options: [{ id: 'opt1', width: 73, height: 93.4, price: 4200, label: 'Original Size' }],
+    options: [{ id: 'opt1', width: 73, height: 93.4, price: 3200, label: 'Original Size' }],
   },
 
   {
     title: "Dance At The Moulin De La Galette",
-    artist: "Pierre Auguste Renoir",
+    artist: "Pierre-Auguste Renoir",
     year: "1876",
     originalSize: "131 x 175 cm",
     artistLife: "1841-1919",
@@ -466,10 +466,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     originalSize: "32.7 x 40.6 cm",
     artistLife: "1853-1890",
     sku: "AM-FA-035",
-    basePrice: 1670,
+    basePrice: 1672,
     currency: "AED",
     image: "/image/famous-art/shoes.jpg",
-    options: [{ id: 'opt1', width: 32.7, height: 40.6, price: 1670, label: 'Original Size' }],
+    options: [{ id: 'opt1', width: 32.7, height: 40.6, price: 1672, label: 'Original Size' }],
   },
 
   {
@@ -1202,7 +1202,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
 
   {
     title: "Dance At Bougival",
-    artist: "Pierre-August Renoir",
+    artist: "Pierre-Auguste Renoir",
     year: "1883",
     originalSize: "182 x 98 cm",
     artistLife: "1841-1919",
@@ -1324,10 +1324,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     originalSize: "84 x 172 cm",
     artistLife: "1508-1575",
     sku: "AM-FA-101",
-    basePrice: 7500,
+    basePrice: 9250,
     currency: "AED",
     image: "/image/famous-art/the egg dance.jpg",
-    options: [{ id: 'opt1', width: 84, height: 172, price: 7500, label: 'Original Size' }],
+    options: [{ id: 'opt1', width: 84, height: 172, price: 9250, label: 'Original Size' }],
   },
 
   {
@@ -1363,10 +1363,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     originalSize: "129.5 x 200.7 cm",
     artistLife: "1844-1910",
     sku: "AM-FA-104",
-    basePrice: 13200,
+    basePrice: 10130,
     currency: "AED",
     image: "/image/famous-art/the sleeping gypsy.jpg",
-    options: [{ id: 'opt1', width: 129.5, height: 200.7, price: 13200, label: 'Original Size' }],
+    options: [{ id: 'opt1', width: 129.5, height: 200.7, price: 10130, label: 'Original Size' }],
   },
 
   {
@@ -1376,10 +1376,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     originalSize: "78 x 65.3 cm",
     artistLife: "1891-1942",
     sku: "AM-FA-105",
-    basePrice: 2800,
+    basePrice: 13000,
     currency: "AED",
     image: "/image/famous-art/American Gothic.jpg",
-    options: [{ id: 'opt1', width: 78, height: 65.3, price: 2800, label: 'Original Size' }],
+    options: [{ id: 'opt1', width: 78, height: 65.3, price: 13000, label: 'Original Size' }],
   },
 
   {
@@ -1454,10 +1454,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     originalSize: "67 x 92 cm",
     artistLife: "1839-1906",
     sku: "AM-FA-111",
-    basePrice: 3200,
+    basePrice: 4999,
     currency: "AED",
     image: "/image/famous-art/monte sainte-victoire.jpg",
-    options: [{ id: 'opt1', width: 67, height: 92, price: 3200, label: 'Original Size' }],
+    options: [{ id: 'opt1', width: 67, height: 92, price: 4999, label: 'Original Size' }],
   },
 
   {

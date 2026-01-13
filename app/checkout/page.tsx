@@ -125,7 +125,7 @@ export default function CheckoutPage() {
             <p className="font-serif text-lg text-gray-600 mb-8">Discover our collection of museum-quality masterpieces</p>
             <Link
               href="/artists-a-z"
-              className="inline-flex items-center gap-2 bg-[#800000] text-white px-8 py-4 rounded-lg font-serif font-bold text-lg hover:bg-[#600000] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#800000] text-white px-8 py-4 rounded-lg font-serif font-bold text-lg hover:bg-[#600000] transition-colors cursor-pointer"
             >
               Browse Collection
               <ArrowRight size={20} />
@@ -204,7 +204,7 @@ export default function CheckoutPage() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex items-center justify-center gap-2 bg-[#800000] text-white px-6 py-4 rounded-lg font-serif font-bold text-lg hover:bg-[#600000] transition-colors disabled:opacity-60"
+                  className="w-full flex items-center justify-center gap-2 bg-[#800000] text-white px-6 py-4 rounded-lg font-serif font-bold text-lg hover:bg-[#600000] transition-colors disabled:opacity-60 cursor-pointer"
                 >
                   <Lock size={20} />
                   {loading ? 'Processing…' : 'Proceed to Payment'}
@@ -254,7 +254,7 @@ export default function CheckoutPage() {
                 <div className="pt-6">
                   <Link
                     href="/cart"
-                    className="inline-flex items-center gap-2 text-[#800000] hover:underline font-serif font-semibold"
+                    className="inline-flex items-center gap-2 text-[#800000] hover:underline font-serif font-semibold cursor-pointer"
                   >
                     ← Back to cart
                   </Link>

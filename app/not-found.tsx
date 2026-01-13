@@ -20,13 +20,13 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/"
-            className="px-6 py-3 bg-[#800000] text-white font-serif font-semibold rounded-lg hover:bg-[#600000] transition-colors"
+            className="px-6 py-3 bg-[#800000] text-white font-serif font-semibold rounded-lg hover:bg-[#600000] transition-colors cursor-pointer"
           >
             Go Home
           </Link>
           <Link
             href="/artworks"
-            className="px-6 py-3 bg-gray-200 text-gray-800 font-serif font-semibold rounded-lg hover:bg-gray-300 transition-colors"
+            className="px-6 py-3 bg-gray-200 text-gray-800 font-serif font-semibold rounded-lg hover:bg-gray-300 transition-colors cursor-pointer"
           >
             Browse Artworks
           </Link>

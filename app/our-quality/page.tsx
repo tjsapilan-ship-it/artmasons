@@ -259,7 +259,7 @@ export default function OurQualityPage() {
             </p>
             <Link 
               href="/"
-              className="inline-block bg-[#800000] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#600000] transition-colors text-lg shadow-lg"
+              className="inline-block bg-[#800000] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#600000] transition-colors text-lg shadow-lg cursor-pointer"
             >
               Explore Our Collection
             </Link>

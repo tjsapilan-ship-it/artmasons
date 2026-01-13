@@ -172,7 +172,7 @@ const ART_OF_THE_DAY = FAMOUS_ART.map((item) => {
   // Try to find matching artwork in main ARTWORKS collection for slug
   const byTitleArtist = ARTWORKS.find(
     (a) =>
-      (a.title ?? "").toLowerCase() === item.title.toLowerCase() &&
+      (a.name ?? "").toLowerCase() === item.title.toLowerCase() &&
       (a.artist ?? "").toLowerCase().replace(/\s+/g, ' ') === item.artist.toLowerCase().replace(/\s+/g, ' '),
   );
 
@@ -189,7 +189,7 @@ const TOP_100_ARTS = TOP_100_PAINTINGS.map((item) => {
   // Try to find matching artwork in main ARTWORKS collection for slug
   const byTitleArtist = ARTWORKS.find(
     (a) =>
-      (a.title ?? "").toLowerCase() === item.title.toLowerCase() &&
+      (a.name ?? "").toLowerCase() === item.title.toLowerCase() &&
       (a.artist ?? "").toLowerCase().replace(/\s+/g, ' ') === item.artist.toLowerCase().replace(/\s+/g, ' '),
   );
 
@@ -424,7 +424,7 @@ export default function ArtMasonsLanding() {
                 goPrevArt();
               }}
               aria-label="Previous art"
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-40 p-2 bg-white/70 rounded-full hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-40 p-2 bg-white/70 rounded-full hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
             >
               <ChevronLeft size={28} />
             </button>
@@ -436,7 +436,7 @@ export default function ArtMasonsLanding() {
                 goNextArt();
               }}
               aria-label="Next art"
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-40 p-2 bg-white/70 rounded-full hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-40 p-2 bg-white/70 rounded-full hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
             >
               <ChevronRight size={28} />
             </button>

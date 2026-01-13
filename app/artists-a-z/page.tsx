@@ -9,30 +9,26 @@ import { ARTWORKS, generateSlug, getArtworkSlug } from '../../data/artworks';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
 
-// --- DATA: CURATED COLLECTION ---
-const COLLECTION_DATA = [
-  { artist: "John Otis Adams", birth: 1851, death: 1927, title: "In Poppyland (Poppy field)" },
-  // ... (keeping existing data) ...
-  { artist: "Vincent Van Gogh", birth: 1853, death: 1890, title: "Haystacks In Provence" }
-];
-
-// ... (existing helper logic remains same) ...
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const STORAGE_KEY = 'artistsAZSelectedLetter';
-const getSurnameChar = (fullName: string) => {
-  const parts = fullName.trim().split(' ');
-  for (let i = 0; i < parts.length; i++) {
-    if (parts[i] === 'De' || parts[i] === 'Da') { return 'D'; }
-  }
-  for (let i = 0; i < parts.length - 1; i++) {
-    if (parts[i] === 'Van') { return parts[i + 1].charAt(0).toUpperCase(); }
-  }
-  const surname = parts[parts.length - 1];
-  return surname.charAt(0).toUpperCase();
+
+const getArtistLetter = (artistName: string): string => {
+  const artwork = ARTWORKS.find(item => item.artist === artistName);
+  return artwork?.letter || 'A';
 };
+
 const getArtistDates = (artistName: string): { birth?: number; death?: number } => {
-  const artistData = COLLECTION_DATA.find(item => item.artist === artistName);
-  return { birth: artistData?.birth, death: artistData?.death };
+  const artwork = ARTWORKS.find(item => item.artist === artistName);
+  if (!artwork?.artistLifespan) return {};
+  
+  const parts = artwork.artistLifespan.split('-');
+  if (parts.length === 2) {
+    return { 
+      birth: parseInt(parts[0]) || undefined, 
+      death: parseInt(parts[1]) || undefined 
+    };
+  }
+  return {};
 };
 
 export default function ArtistsAZPage() {
@@ -117,14 +113,14 @@ export default function ArtistsAZPage() {
   const letterCounts = useMemo(() => {
     const counts: Record<string, number> = {};
     ALPHABET.forEach(letter => {
-      counts[letter] = uniqueArtists.filter(artist => getSurnameChar(artist) === letter).length;
+      counts[letter] = uniqueArtists.filter(artist => getArtistLetter(artist) === letter).length;
     });
     return counts;
   }, [uniqueArtists]);
 
   const filteredArtists = useMemo(() => {
     if (!selectedLetter) return [];
-    return uniqueArtists.filter(artist => getSurnameChar(artist) === selectedLetter);
+    return uniqueArtists.filter(artist => getArtistLetter(artist) === selectedLetter);
   }, [selectedLetter, uniqueArtists]);
 
   const getArtworksByArtist = (artist: string) => {
@@ -174,8 +170,8 @@ export default function ArtistsAZPage() {
                     ${!hasArtists 
                       ? 'bg-gray-100/50 text-gray-400 cursor-not-allowed' 
                       : isSelected 
-                        ? 'bg-[#800000] text-white shadow-lg scale-110' 
-                        : 'bg-white text-gray-700 border border-gray-200 hover:border-[#800000] hover:text-[#800000] hover:scale-105 shadow-sm'
+                        ? 'bg-[#800000] text-white shadow-lg scale-110 cursor-pointer' 
+                        : 'bg-white text-gray-700 border border-gray-200 hover:border-[#800000] hover:text-[#800000] hover:scale-105 shadow-sm cursor-pointer'
                     }
                   `}
                 >
@@ -226,7 +222,7 @@ export default function ArtistsAZPage() {
                           <h3 className="font-serif text-2xl font-bold text-[#800000] leading-tight mb-1">
                             <Link
                               href={`/artists-a-z/${generateSlug(artist)}`}
-                              className="hover:underline"
+                              className="hover:underline cursor-pointer"
                             >
                               {artist}
                             </Link>
@@ -251,10 +247,10 @@ export default function ArtistsAZPage() {
                               <li key={artIdx}>
                                 <Link 
                                   href={`/artworks/${slug}`}
-                                  className="font-serif text-gray-700 text-base flex items-start gap-2 hover:text-[#800000] transition-colors leading-relaxed group"
+                                  className="font-serif text-gray-700 text-base flex items-start gap-2 hover:text-[#800000] transition-colors leading-relaxed group cursor-pointer"
                                 >
                                   <span className="text-[#800000] mt-1">•</span>
-                                  <span className="flex-1 group-hover:underline">{artwork.title}</span>
+                                  <span className="flex-1 group-hover:underline">{artwork.name}</span>
                                 </Link>
                               </li>
                             );
@@ -268,7 +264,7 @@ export default function ArtistsAZPage() {
                               onClick={() => toggleMenu(idx, artworks.length - 4)}
                               aria-haspopup="menu"
                               aria-expanded={openIndex === idx}
-                              className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded bg-gray-50 text-sm hover:bg-white transition-colors"
+                              className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded bg-gray-50 text-sm hover:bg-white transition-colors cursor-pointer"
                             >
                               <span>View other artworks ({artworks.length - 4})</span>
                               <svg
@@ -288,10 +284,10 @@ export default function ArtistsAZPage() {
                                   <li key={oIdx} className="last:rounded-b">
                                     <Link
                                       href={`/artworks/${getArtworkSlug(other)}`}
-                                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 cursor-pointer"
                                       onClick={() => setOpenIndex(null)}
                                     >
-                                      {other.title}
+                                      {other.name}
                                     </Link>
                                   </li>
                                 ))}

@@ -66,7 +66,7 @@ const COLLECTION_PAINTINGS: CollectionPainting[] = TOP_100_PAINTINGS.map((artwor
   // Try to find matching artwork in main ARTWORKS collection for slug
   const matchingArtwork = ARTWORKS.find(
     (a) =>
-      (a.title ?? "").toLowerCase() === artwork.title.toLowerCase() ||
+      (a.name ?? "").toLowerCase() === artwork.title.toLowerCase() ||
       (a.artist ?? "").toLowerCase() === artwork.artist.toLowerCase(),
   );
   
@@ -157,7 +157,7 @@ export default function Top100Page() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <button className="p-3 hover:bg-gray-100 transition-colors">
+                <button className="p-3 hover:bg-gray-100 transition-colors cursor-pointer">
                   <Search size={22} className="text-black" />
                 </button>
               </div>
@@ -170,7 +170,7 @@ export default function Top100Page() {
               <button
                 key={period}
                 onClick={() => setSelectedPeriod(period)}
-                className={`px-4 py-2 rounded-sm font-serif text-sm transition-all ${
+                className={`px-4 py-2 rounded-sm font-serif text-sm transition-all cursor-pointer ${
                   selectedPeriod === period
                     ? 'bg-[#800000] text-white shadow-md'
                     : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
@@ -199,7 +199,7 @@ export default function Top100Page() {
                   className="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group hover:border-[#800000]/20 border border-transparent"
                 >
                   {/* Image with Rank Badge */}
-                  <Link href={`/artworks/${painting.slug}`} className="block">
+                  <Link href={`/artworks/${painting.slug}`} className="block cursor-pointer">
                     <div className="relative bg-gray-50 aspect-[3/4] overflow-hidden">
                       <Image 
                         src={painting.image} 
@@ -245,13 +245,13 @@ export default function Top100Page() {
 
                     {/* Product Buttons */}
                     <div className="grid grid-cols-2 gap-2.5 mb-4">
-                      <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all">
+                      <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
                         <div className="font-serif text-xs text-gray-600 mb-1">{painting.priceLabel}</div>
                         <div className="font-serif text-base font-bold text-[#800000]">
                           {painting.price !== null ? formatPrice(painting.price, painting.currency) : 'Price on request'}
                         </div>
                       </button>
-                      <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all">
+                      <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
                         <div className="font-serif text-xs text-gray-600 mb-1">Custom Size</div>
                         <div className="font-serif text-base font-bold text-[#800000]">Request quote</div>
                       </button>

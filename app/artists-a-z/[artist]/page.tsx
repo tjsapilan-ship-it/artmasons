@@ -17,7 +17,7 @@ const humanizeSlug = (slug: string) =>
 
 const sortArtworks = (items: Artwork[], sort: string) => {
   if (sort === 'title') {
-    return items.slice().sort((a, b) => (a.title ?? '').localeCompare(b.title ?? ''));
+    return items.slice().sort((a, b) => (a.name ?? '').localeCompare(b.name ?? ''));
   }
   if (sort === 'year') {
     return items
@@ -116,13 +116,13 @@ export default async function ArtistPage({
                     <div className="relative w-full h-56 md:h-44 lg:h-48">
                       <Image
                         src={art.image}
-                        alt={art.title}
+                        alt={art.name}
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                     <div className="p-3">
-                      <h3 className="font-serif text-sm font-semibold text-gray-900 truncate">{art.title}</h3>
+                      <h3 className="font-serif text-sm font-semibold text-gray-900 truncate">{art.name}</h3>
                       <p className="text-xs text-gray-500 mt-1 truncate">{art.artist}</p>
                       {art.year && <p className="text-[11px] text-gray-400 mt-1">{art.year}</p>}
                     </div>

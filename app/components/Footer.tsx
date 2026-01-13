@@ -20,10 +20,10 @@ export default function Footer() {
             on detail, technique, or materials.
           </p>
           <div className="flex gap-4 items-center">
-            <a href="https://instagram.com/Theartmasons" className="block">
+            <a href="https://instagram.com/Theartmasons" className="block cursor-pointer">
               <Image src="/image/icons/instagram.png" alt="Instagram" width={24} height={24} />
             </a>
-            <a href="#" className="block">
+            <a href="#" className="block cursor-pointer">
               <Image src="/image/icons/facebook.png" alt="Facebook" width={24} height={24} />
             </a>
           </div>
@@ -69,7 +69,7 @@ export default function Footer() {
           <div className="space-y-4">
             <a
               href="mailto:info@artmasons.com"
-              className="flex items-center gap-3 text-white hover:underline transition-colors font-serif font-normal"
+              className="flex items-center gap-3 text-white hover:underline transition-colors font-serif font-normal cursor-pointer"
             >
               <Mail size={18} /> info@artmasons.com
             </a>
@@ -115,7 +115,7 @@ export default function Footer() {
                 placeholder="Your email"
                 className="bg-white text-black px-4 py-2 outline-none rounded-sm w-full font-serif text-sm"
               />
-              <button className="bg-[#800000] text-white px-4 py-2 font-bold uppercase text-xs tracking-widest hover:bg-[#600000] transition-colors rounded-sm font-serif">
+              <button className="bg-[#800000] text-white px-4 py-2 font-bold uppercase text-xs tracking-widest hover:bg-[#600000] transition-colors rounded-sm font-serif cursor-pointer">
                 Subscribe*
               </button>
               <p className="text-[10px] text-gray-500 font-serif leading-tight">
@@ -135,16 +135,16 @@ export default function Footer() {
             Follow Us
           </span>
           <div className="flex items-center gap-4">
-            <a href="#" className="block">
+            <a href="#" className="block cursor-pointer">
               <Image src="/image/icons/facebook.png" alt="Facebook" width={20} height={20} />
             </a>
-            <a href="https://instagram.com/Theartmasons" className="block">
+            <a href="https://instagram.com/Theartmasons" className="block cursor-pointer">
               <Image src="/image/icons/instagram.png" alt="Instagram" width={20} height={20} />
             </a>
-            <a href="#" className="block">
+            <a href="#" className="block cursor-pointer">
               <Image src="/image/icons/whatsapp.png" alt="WhatsApp" width={20} height={20} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
               <Video size={18} />
             </a>
           </div>

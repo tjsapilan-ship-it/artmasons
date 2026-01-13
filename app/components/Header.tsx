@@ -97,7 +97,7 @@ export default function Header() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <button className="p-3 hover:bg-gray-100 transition-colors">
+                <button className="p-3 hover:bg-gray-100 transition-colors cursor-pointer">
                   <Search size={22} className="text-black" />
                 </button>
               </div>
@@ -121,7 +121,7 @@ export default function Header() {
                 </div>
               </Link>
 
-              <button className="md:hidden text-black" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+              <button className="md:hidden text-black cursor-pointer" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                 {mobileMenuOpen ? <X color="black" /> : <Menu color="black" />}
               </button>
             </div>
@@ -162,7 +162,7 @@ export default function Header() {
                         <Image src="/image/icons/logo_1.png" alt="Art Masons" fill className="object-contain" />
                       </Link>
                     </div>
-                    <button aria-label="Close menu" onClick={() => setMobileMenuOpen(false)} className="p-2 text-black">
+                    <button aria-label="Close menu" onClick={() => setMobileMenuOpen(false)} className="p-2 text-black cursor-pointer">
                       <X color="black" />
                     </button>
                   </div>

@@ -58,7 +58,7 @@ export default function CartPage() {
             </p>
             <Link
               href="/artists-a-z"
-              className="inline-flex items-center gap-2 bg-[#800000] text-white px-8 py-4 rounded-lg font-serif font-bold text-lg hover:bg-[#600000] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#800000] text-white px-8 py-4 rounded-lg font-serif font-bold text-lg hover:bg-[#600000] transition-colors cursor-pointer"
             >
               Browse Collection
               <ArrowRight size={20} />
@@ -101,7 +101,7 @@ export default function CartPage() {
                         </div>
                         <button
                           onClick={() => removeItem(item.id)}
-                          className="text-gray-400 hover:text-red-600 transition-colors p-2"
+                          className="text-gray-400 hover:text-red-600 transition-colors p-2 cursor-pointer"
                           aria-label="Remove item"
                         >
                           <Trash2 size={20} />
@@ -124,7 +124,7 @@ export default function CartPage() {
                           <div className="flex items-center border border-gray-300 rounded-lg">
                             <button
                               onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                              className="p-2 hover:bg-gray-100 transition-colors"
+                              className="p-2 hover:bg-gray-100 transition-colors cursor-pointer"
                               aria-label="Decrease quantity"
                             >
                               <Minus size={16} />
@@ -132,7 +132,7 @@ export default function CartPage() {
                             <span className="px-4 font-serif font-bold">{item.quantity}</span>
                             <button
                               onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                              className="p-2 hover:bg-gray-100 transition-colors"
+                              className="p-2 hover:bg-gray-100 transition-colors cursor-pointer"
                               aria-label="Increase quantity"
                             >
                               <Plus size={16} />
@@ -161,7 +161,7 @@ export default function CartPage() {
               <div className="pt-4">
                 <Link
                   href="/artists-a-z"
-                  className="inline-flex items-center gap-2 text-[#800000] hover:underline font-serif font-semibold"
+                  className="inline-flex items-center gap-2 text-[#800000] hover:underline font-serif font-semibold cursor-pointer"
                 >
                   ← Continue Shopping
                 </Link>
@@ -193,7 +193,7 @@ export default function CartPage() {
                       className={`px-4 py-2 rounded-lg font-serif font-bold transition-colors ${
                         promoApplied
                           ? 'bg-green-600 text-white cursor-not-allowed'
-                          : 'bg-[#800000] text-white hover:bg-[#600000]'
+                          : 'bg-[#800000] text-white hover:bg-[#600000] cursor-pointer'
                       }`}
                     >
                       {promoApplied ? '✓' : 'Apply'}
@@ -237,7 +237,7 @@ export default function CartPage() {
 
                 <Link
                   href="/checkout"
-                  className="w-full flex items-center justify-center gap-2 bg-[#800000] text-white px-6 py-4 rounded-lg font-serif font-bold text-lg hover:bg-[#600000] transition-colors mb-4"
+                  className="w-full flex items-center justify-center gap-2 bg-[#800000] text-white px-6 py-4 rounded-lg font-serif font-bold text-lg hover:bg-[#600000] transition-colors mb-4 cursor-pointer"
                 >
                   <Lock size={20} />
                   Proceed to Checkout
