@@ -92,7 +92,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
 
   // Apply sorting (server-side) — default preserves curated order
   if (sort === 'title') {
-    filtered = filtered.slice().sort((a, b) => (a.title ?? '').localeCompare(b.title ?? ''));
+    filtered = filtered.slice().sort((a, b) => (a.name ?? '').localeCompare(b.name ?? ''));
   } else if (sort === 'artist') {
     filtered = filtered.slice().sort((a, b) => (a.artist ?? '').localeCompare(b.artist ?? ''));
   }
