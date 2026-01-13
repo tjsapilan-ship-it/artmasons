@@ -37,7 +37,6 @@ function matchesCategory(artwork: Artwork, slug?: string) {
   const lower = String(slug).replace(/-/g, ' ').toLowerCase();
   const title = (artwork.name ?? '').toLowerCase();
   const artist = (artwork.artist ?? '').toLowerCase();
-  const desc = (artwork.description ?? '').toLowerCase();
 
   // Direct artist match (e.g., "monet", "van gogh")
   if (artist.includes(lower)) return true;
@@ -49,7 +48,6 @@ function matchesCategory(artwork: Artwork, slug?: string) {
 
   // Direct title match
   if (title.includes(lower)) return true;
-  if (desc.includes(lower)) return true;
 
   // Common category heuristics
   if (lower.includes('portrait')) {
