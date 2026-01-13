@@ -206,7 +206,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                       {/* Additional Info */}
                       <div className="text-xs font-serif text-gray-500 leading-relaxed space-y-1 pt-3 border-t border-gray-100">
                         <p className="line-clamp-1">{art.artist}</p>
-                        <p className="line-clamp-1">Original Size: {art.originalSize || '73.7 x 92.1 cm'}</p>
+                        <p className="line-clamp-1">Original Size: {art.originalDimensions || '73.7 x 92.1 cm'}</p>
                         <p className="line-clamp-1 text-gray-400">Hand-painted on linen canvas</p>
                       </div>
                     </div>
