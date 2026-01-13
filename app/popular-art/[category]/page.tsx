@@ -12,7 +12,7 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif'
 
 const getPrimaryPricing = (artwork: Artwork) => {
   const hasOptions = Array.isArray(artwork.options) && artwork.options.length > 0;
-  const minOption = hasOptions
+  const minOption = hasOptions && artwork.options
     ? artwork.options.reduce((min, option) => (option.price < min.price ? option : min), artwork.options[0])
     : null;
   const price = minOption?.price ?? artwork.basePrice ?? artwork.price ?? null;
