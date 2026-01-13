@@ -8,7 +8,7 @@ function byArtist(nameFragment: string) {
 function byTitleKeywords(...keywords: string[]) {
   const keys = keywords.map((k) => k.toLowerCase());
   return ARTWORKS.filter((a) => {
-    const t = (a.title || '').toLowerCase();
+    const t = (a.name || '').toLowerCase();
     return keys.some((k) => t.includes(k));
   }).map((a) => getArtworkSlug(a));
 }
