@@ -606,26 +606,29 @@ export default function ArtMasonsLanding() {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 bg-gray-50 p-4 rounded-lg border border-gray-100">
-                <div className="w-full sm:w-1/2">
-                  <label className="text-base font-bold text-black block mb-2">Enter Original Height</label>
-                  <input
-                    type="number"
-                    value={origH}
-                    onChange={(e) => setOrigH(e.target.value === '' ? '' : Number(e.target.value))}
-                    className="w-full p-3 border border-gray-300 rounded focus:border-[#800000] outline-none bg-white text-black transition-colors"
-                    placeholder="60"
-                  />
-                </div>
-                <div className="w-full sm:w-1/2">
-                  <label className="text-base font-bold text-black block mb-2">Enter Original Width</label>
-                  <input
-                    type="number"
-                    value={origW}
-                    onChange={(e) => setOrigW(e.target.value === '' ? '' : Number(e.target.value))}
-                    className="w-full p-3 border border-gray-300 rounded focus:border-[#800000] outline-none bg-white text-black transition-colors"
-                    placeholder="90"
-                  />
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <p className="text-sm text-gray-500 mb-3 italic">Example: 60 x 90 cm</p>
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="w-full sm:w-1/2">
+                    <label className="text-base font-bold text-black block mb-2">Enter Original Height</label>
+                    <input
+                      type="number"
+                      value={origH}
+                      onChange={(e) => setOrigH(e.target.value === '' ? '' : Number(e.target.value))}
+                      className="w-full p-3 border border-gray-300 rounded focus:border-[#800000] outline-none bg-white text-black transition-colors"
+                      placeholder="60"
+                    />
+                  </div>
+                  <div className="w-full sm:w-1/2">
+                    <label className="text-base font-bold text-black block mb-2">Enter Original Width</label>
+                    <input
+                      type="number"
+                      value={origW}
+                      onChange={(e) => setOrigW(e.target.value === '' ? '' : Number(e.target.value))}
+                      className="w-full p-3 border border-gray-300 rounded focus:border-[#800000] outline-none bg-white text-black transition-colors"
+                      placeholder="90"
+                    />
+                  </div>
                 </div>
               </div>
 
