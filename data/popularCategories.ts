@@ -23,7 +23,7 @@ export const POPULAR_CATEGORY_MAP: Record<string, string[]> = {
   'portraits': byTitleKeywords('portrait', 'portrait of'),
   'still-lifes': byTitleKeywords('still life', 'still-life', 'stilllife', 'still'),
   'landscapes': ARTWORKS.filter((a) => {
-    const t = (a.title || '').toLowerCase();
+    const t = (a.name || '').toLowerCase();
     const kws = ['landscape', 'valley', 'sea', 'view', 'nile', 'bay', 'river', 'field', 'sunrise', 'wheat', 'beach', 'shore', 'harbor', 'yosemite'];
     return kws.some((k) => t.includes(k));
   }).map((a) => getArtworkSlug(a)),
