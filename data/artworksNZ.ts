@@ -786,7 +786,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     price: 1950,
     image: "/image/p/self portrait.jpg",
     artistLifespan: "1881-1973",
-    slug: "self-portrait",
+    slug: "self-portrait-picasso",
     letter: "P"
   },
   {
@@ -1243,7 +1243,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     price: 2263,
     image: "/image/r/the kiss.jpg",
     artistLifespan: "1852-1909",
-    slug: "the-kiss",
+    slug: "the-kiss-ralli",
     letter: "R"
   },
   {
@@ -1576,11 +1576,17 @@ export const ARTWORKS_NZ: Artwork[] = [
     year: "1633",
     originalDimensions: "161.7 x 129.8",
     sellingDimensions: "161.7 x 129.8",
-    price: 19229,
+    price: 19231,
+    basePrice: 19231,
     image: "/image/r/storm on the sea of galilee.jpg",
     artistLifespan: "1606-1669",
     slug: "storm-on-the-sea-of-galilee",
-    letter: "R"
+    letter: "R",
+    currency: "AED",
+    options: [
+      { id: 'opt1', width: 161.7, height: 129.8, price: 19231, label: '161.7 x 129.8 cm' },
+      { id: 'opt2', width: 80.5, height: 64.9, price: 6772, label: '80.5 x 64.9 cm' }
+    ]
   },
   {
     name: "The Holy Family",

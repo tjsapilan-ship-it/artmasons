@@ -40,7 +40,11 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 12000,
     currency: "AED",
     image: "/image/famous-art/napoleon crossing the alps on 20th may 1800.jpg",
-    options: [{ id: 'opt1', width: 267, height: 223, price: 12000, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 267, height: 223, price: 12000, label: '267 x 223 cm' },
+      { id: 'opt2', width: 400.5, height: 334.5, price: 20000, label: '400.5 x 334.5 cm' },
+      { id: 'opt3', width: 133.5, height: 111.5, price: 6000, label: '133.5 x 111.5 cm' }
+    ],
   },
 
   {
@@ -53,7 +57,11 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 9000,
     currency: "AED",
     image: "/image/famous-art/the kiss.jpg",
-    options: [{ id: 'opt1', width: 181, height: 180, price: 9000, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 181, height: 180, price: 9000, label: '181 x 180 cm' },
+      { id: 'opt2', width: 270, height: 270, price: 18000, label: '270 x 270 cm' },
+      { id: 'opt3', width: 90, height: 90, price: 4500, label: '90 x 90 cm' }
+    ],
   },
 
   {
@@ -79,7 +87,12 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 3000,
     currency: "AED",
     image: "/image/famous-art/the girl with a pearl earring.jpg",
-    options: [{ id: 'opt1', width: 40, height: 46, price: 3000, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 46, height: 40, price: 3000, label: '46 x 40 cm' },
+      { id: 'opt2', width: 92, height: 80, price: 6000, label: '92 x 80 cm' },
+      { id: 'opt3', width: 138, height: 120, price: 9000, label: '138 x 120 cm' },
+      { id: 'opt4', width: 276, height: 240, price: 18000, label: '276 x 240 cm' }
+    ],
   },
 
   {
@@ -105,7 +118,11 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 2960,
     currency: "AED",
     image: "/image/famous-art/water lily pond symphony in green.jpg",
-    options: [{ id: 'opt1', width: 88.3, height: 93.1, price: 2960, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 88.3, height: 93.1, price: 2960, label: '88.3 x 93.1 cm' },
+      { id: 'opt2', width: 176.6, height: 186.2, price: 5920, label: '176.6 x 186.2 cm' },
+      { id: 'opt3', width: 264.9, height: 279.3, price: 8880, label: '264.9 x 279.3 cm' }
+    ],
   },
 
   {
@@ -131,7 +148,11 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 4000,
     currency: "AED",
     image: "/image/famous-art/the cafe terrace on the place du forum aries.jpg",
-    options: [{ id: 'opt1', width: 81, height: 65.5, price: 4000, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 81, height: 65.5, price: 4000, label: '81 x 65.5 cm' },
+      { id: 'opt2', width: 162, height: 131, price: 8000, label: '162 x 131 cm' },
+      { id: 'opt3', width: 243, height: 196.5, price: 12000, label: '243 x 196.5 cm' }
+    ],
   },
 
   {
@@ -183,7 +204,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 4900,
     currency: "AED",
     image: "/image/famous-art/woman with a parasol madame monet.jpg",
-    options: [{ id: 'opt1', width: 100, height: 81, price: 4900, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 100, height: 81, price: 4900, label: '100 x 81 cm' },
+      { id: 'opt2', width: 200, height: 162, price: 9800, label: '200 x 162 cm' }
+    ],
   },
 
   {
@@ -209,7 +233,11 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 3250,
     currency: "AED",
     image: "/image/famous-art/dancers in blue.jpg",
-    options: [{ id: 'opt1', width: 85, height: 75.5, price: 3250, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 85, height: 75.5, price: 3250, label: '85 x 75.5 cm' },
+      { id: 'opt2', width: 170, height: 151, price: 6500, label: '170 x 151 cm' },
+      { id: 'opt3', width: 195, height: 226.5, price: 9750, label: '195 x 226.5 cm' }
+    ],
   },
 
   {
@@ -222,7 +250,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 19231,
     currency: "AED",
     image: "/image/famous-art/storm on the sea of galilee.jpg",
-    options: [{ id: 'opt1', width: 161.7, height: 129.8, price: 19231, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 161.7, height: 129.8, price: 19231, label: '161.7 x 129.8 cm' },
+      { id: 'opt2', width: 80.5, height: 64.9, price: 6772, label: '80.5 x 64.9 cm' }
+    ],
   },
 
   {
@@ -235,7 +266,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 10560,
     currency: "AED",
     image: "/image/famous-art/the lady of shalotte.jpg",
-    options: [{ id: 'opt1', width: 153, height: 200, price: 10560, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 153, height: 200, price: 10560, label: '153 x 200 cm' },
+      { id: 'opt2', width: 76, height: 100, price: 5250, label: '76 x 100 cm' }
+    ],
   },
 
   {
@@ -248,7 +282,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 25500,
     currency: "AED",
     image: "/image/famous-art/the birth of venus.jpg",
-    options: [{ id: 'opt1', width: 180, height: 280, price: 25500, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 180, height: 280, price: 25500, label: '180 x 280 cm' },
+      { id: 'opt2', width: 90, height: 110, price: 12750, label: '90 x 110 cm' }
+    ],
   },
 
   {
@@ -261,7 +298,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 8900,
     currency: "AED",
     image: "/image/famous-art/mona lisa.jpg",
-    options: [{ id: 'opt1', width: 77, height: 53, price: 8900, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 77, height: 53, price: 8900, label: '77 x 53 cm' },
+      { id: 'opt2', width: 154, height: 106, price: 17800, label: '154 x 106 cm' }
+    ],
   },
 
   {
@@ -300,7 +340,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 7000,
     currency: "AED",
     image: "/image/famous-art/composition 8.jpg",
-    options: [{ id: 'opt1', width: 140, height: 201, price: 7000, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 140, height: 201, price: 7000, label: '140 x 201 cm' },
+      { id: 'opt2', width: 280, height: 402, price: 14000, label: '280 x 402 cm' }
+    ],
   },
 
   {
@@ -313,7 +356,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 9400,
     currency: "AED",
     image: "/image/famous-art/flaming june.jpg",
-    options: [{ id: 'opt1', width: 120.6, height: 120.6, price: 9400, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 120.6, height: 120.6, price: 9400, label: '120.6 x 120.6 cm' },
+      { id: 'opt2', width: 60.3, height: 60.3, price: 4700, label: '60.3 x 60.3 cm' }
+    ],
   },
 
   {
@@ -339,7 +385,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 3170,
     currency: "AED",
     image: "/image/famous-art/vase with irises against a yellow background.jpg",
-    options: [{ id: 'opt1', width: 92, height: 73.5, price: 3170, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 92, height: 73.5, price: 3170, label: '92 x 73.5 cm' },
+      { id: 'opt2', width: 184, height: 147, price: 6340, label: '184 x 147 cm' }
+    ],
   },
 
   {
@@ -365,7 +414,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 45740,
     currency: "AED",
     image: "/image/famous-art/dance at the moulin del la galette.jpg",
-    options: [{ id: 'opt1', width: 131, height: 175, price: 45740, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 131, height: 175, price: 45740, label: '131 x 175 cm' },
+      { id: 'opt2', width: 65.5, height: 87.5, price: 22870, label: '65.5 x 87.5 cm' }
+    ],
   },
 
   {
@@ -378,7 +430,11 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 2200,
     currency: "AED",
     image: "/image/famous-art/impression sunrise (soliel levante).jpg",
-    options: [{ id: 'opt1', width: 50, height: 65, price: 2200, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 50, height: 65, price: 2200, label: '50 x 65 cm' },
+      { id: 'opt2', width: 100, height: 130, price: 4400, label: '100 x 130 cm' },
+      { id: 'opt3', width: 200, height: 260, price: 8800, label: '200 x 260 cm' }
+    ],
   },
 
   {
@@ -391,7 +447,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 3780,
     currency: "AED",
     image: "/image/famous-art/the angelus.jpg",
-    options: [{ id: 'opt1', width: 56, height: 66, price: 3780, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 56, height: 66, price: 3780, label: '56 x 66 cm' },
+      { id: 'opt2', width: 112, height: 132, price: 7560, label: '112 x 132 cm' }
+    ],
   },
 
   {
@@ -404,7 +463,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 16500,
     currency: "AED",
     image: "/image/famous-art/the lunch on the grass.jpg",
-    options: [{ id: 'opt1', width: 208, height: 264, price: 16500, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 208, height: 264, price: 16500, label: '208 x 264 cm' },
+      { id: 'opt2', width: 104, height: 132, price: 8250, label: '104 x 132 cm' }
+    ],
   },
 
   {
@@ -417,7 +479,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 150000,
     currency: "AED",
     image: "/image/famous-art/primavera.jpg",
-    options: [{ id: 'opt1', width: 203, height: 314, price: 150000, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 203, height: 314, price: 150000, label: '203 x 314 cm' },
+      { id: 'opt2', width: 67.66, height: 104.66, price: 50000, label: '67.66 x 104.66 cm' }
+    ],
   },
 
   {
@@ -456,7 +521,11 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 2500,
     currency: "AED",
     image: "/image/famous-art/van gogh's bedroom at aries.jpg",
-    options: [{ id: 'opt1', width: 57.5, height: 74, price: 2500, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 57.5, height: 74, price: 2500, label: '57.5 x 74 cm' },
+      { id: 'opt2', width: 115, height: 148, price: 5000, label: '115 x 148 cm' },
+      { id: 'opt3', width: 230, height: 296, price: 10000, label: '230 x 296 cm' }
+    ],
   },
 
   {
@@ -469,7 +538,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 1672,
     currency: "AED",
     image: "/image/famous-art/shoes.jpg",
-    options: [{ id: 'opt1', width: 32.7, height: 40.6, price: 1672, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 32.7, height: 40.6, price: 1672, label: '32.7 x 40.6 cm' },
+      { id: 'opt2', width: 98.1, height: 121.8, price: 5016, label: '98.1 x 121.8 cm' }
+    ],
   },
 
   {
@@ -482,7 +554,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 2780,
     currency: "AED",
     image: "/image/famous-art/postman joseph roulin.jpg",
-    options: [{ id: 'opt1', width: 81.3, height: 65.4, price: 2780, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 81.3, height: 65.4, price: 2780, label: '81.3 x 65.4 cm' },
+      { id: 'opt2', width: 162.6, height: 130.8, price: 5560, label: '162.6 x 130.8 cm' }
+    ],
   },
 
   {
@@ -807,7 +882,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 15480,
     currency: "AED",
     image: "/image/famous-art/view of toledo.jpg",
-    options: [{ id: 'opt1', width: 121.3, height: 108.6, price: 15480, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 121.3, height: 108.6, price: 15480, label: '121.3 x 108.6 cm' },
+      { id: 'opt2', width: 60.65, height: 54.25, price: 7740, label: '60.65 x 54.25 cm' }
+    ],
   },
 
   {
@@ -872,7 +950,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 15990,
     currency: "AED",
     image: "/image/famous-art/lady godiva.jpg",
-    options: [{ id: 'opt1', width: 142.2, height: 183, price: 15990, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 142.2, height: 183, price: 15990, label: '142.2 x 183 cm' },
+      { id: 'opt2', width: 71.1, height: 91.5, price: 7995, label: '71.1 x 91.5 cm' }
+    ],
   },
 
   {
@@ -885,7 +966,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 12000,
     currency: "AED",
     image: "/image/famous-art/nude descending a staircase II.jpg",
-    options: [{ id: 'opt1', width: 147, height: 89.2, price: 12000, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 147, height: 89.2, price: 12000, label: '147 x 89.2 cm' },
+      { id: 'opt2', width: 73.5, height: 44.6, price: 6000, label: '73.5 x 44.6 cm' }
+    ],
   },
 
   {
@@ -898,7 +982,11 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 106750,
     currency: "AED",
     image: "/image/famous-art/the calling of st matthew.jpg",
-    options: [{ id: 'opt1', width: 326, height: 348, price: 106750, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 326, height: 348, price: 106750, label: '326 x 348 cm' },
+      { id: 'opt2', width: 163, height: 174, price: 53375, label: '163 x 174 cm' },
+      { id: 'opt3', width: 81.5, height: 87, price: 26687, label: '81.5 x 87 cm' }
+    ],
   },
 
   {
@@ -1366,7 +1454,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     basePrice: 10130,
     currency: "AED",
     image: "/image/famous-art/the sleeping gypsy.jpg",
-    options: [{ id: 'opt1', width: 129.5, height: 200.7, price: 10130, label: 'Original Size' }],
+    options: [
+      { id: 'opt1', width: 129.5, height: 200.7, price: 10130, label: '129.5 x 200.7 cm' },
+      { id: 'opt2', width: 64.75, height: 100.35, price: 5065, label: '64.75 x 100.35 cm' }
+    ],
   },
 
   {

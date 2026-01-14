@@ -2536,11 +2536,15 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     year: "1503",
     originalDimensions: "77 x 53",
     sellingDimensions: "77 x 53",
-    price: 8919,
+    price: 8900,
     image: "/image/d/mona lisa (la gioconda).jpg",
     artistLifespan: "1452-1519",
     slug: "mona-lisa-la-gioconda",
-    letter: "D"
+    letter: "D",
+    options: [
+      { id: "size-1", width: 77, height: 53, price: 8900, label: "77 x 53 cm" },
+      { id: "size-2", width: 154, height: 106, price: 17800, label: "154 x 106 cm" }
+    ]
   },
   {
     name: "St John The Baptist",
@@ -2756,7 +2760,12 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/napoleon crossing the alps on 20th may 1800 1803.jpg",
     artistLifespan: "1748-1825",
     slug: "napoleon-crossing-the-alps-on-20th-may-1800-1803",
-    letter: "D"
+    letter: "D",
+    options: [
+      { id: "size-1", width: 267, height: 223, price: 12000, label: "267 x 223 cm" },
+      { id: "size-2", width: 400.5, height: 334.5, price: 20000, label: "400.5 x 334.5 cm" },
+      { id: "size-3", width: 133.5, height: 111.5, price: 6000, label: "133.5 x 111.5 cm" }
+    ]
   },
   {
     name: "Dancers In Pink",
@@ -3399,7 +3408,12 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/a wanderer above a sea of mist.jpg",
     artistLifespan: "1774-1840",
     slug: "a-wanderer-above-a-sea-of-mist",
-    letter: "F"
+    letter: "F",
+    options: [
+      { id: "size-1", width: 98.4, height: 74.8, price: 3450, label: "98.4 x 74.8 cm" },
+      { id: "size-2", width: 192.8, height: 149.6, price: 6900, label: "192.8 x 149.6 cm" },
+      { id: "size-3", width: 289.2, height: 224.4, price: 10350, label: "289.2 x 224.4 cm" }
+    ]
   },
   {
     name: "Swans In The Reeds",
@@ -3695,24 +3709,34 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     artist: "Vincent Van Gogh",
     year: "1889",
     originalDimensions: "73.7 x 92.1",
-    sellingDimensions: "73.7 x 92.1",
-    price: 3579,
+    sellingDimensions: "92.1 x 73.7",
+    price: 4000,
     image: "/image/g/starry night.jpg",
     artistLifespan: "1853-1890",
     slug: "starry-night",
-    letter: "G"
+    letter: "G",
+    options: [
+      { id: "size-1", width: 92.1, height: 73.7, price: 4000, label: "92.1 x 73.7 cm" },
+      { id: "size-2", width: 184.1, height: 47.4, price: 8000, label: "184.1 x 47.4 cm" },
+      { id: "size-3", width: 276.3, height: 221.1, price: 12000, label: "276.3 x 221.1 cm" }
+    ]
   },
   {
     name: "Irises",
     artist: "Vincent Van Gogh",
-    year: "1889",
-    originalDimensions: "71 x 93",
+    year: "1989",
+    originalDimensions: "93 x 71",
     sellingDimensions: "71 x 93",
-    price: 4770,
+    price: 4700,
     image: "/image/g/irises.jpg",
     artistLifespan: "1853-1890",
     slug: "irises",
-    letter: "G"
+    letter: "G",
+    options: [
+      { id: "size-1", width: 71, height: 93, price: 4700, label: "71 x 93 cm" },
+      { id: "size-2", width: 142, height: 186, price: 9400, label: "142 x 186 cm" },
+      { id: "size-3", width: 213, height: 279, price: 14100, label: "213 x 279 cm" }
+    ]
   },
   {
     name: "Red Vineyards At Airies",
@@ -3741,14 +3765,18 @@ const ARTWORKS_A_TO_M: Artwork[] = [
   {
     name: "Still Life Vase. With Fourteen Sunflowers",
     artist: "Vincent Van Gogh",
-    year: "1889",
-    originalDimensions: "100.5 x 76.5",
-    sellingDimensions: "100.5 x 76.5",
-    price: 3100,
+    year: "1888",
+    originalDimensions: "92.1 x 73",
+    sellingDimensions: "92.1 x 73",
+    price: 3200,
     image: "/image/g/still life vase. with fourteen sunflowers.jpg",
     artistLifespan: "1853-1890",
     slug: "still-life-vase-with-fourteen-sunflowers",
-    letter: "G"
+    letter: "G",
+    options: [
+      { id: "size-1", width: 92.1, height: 73, price: 3200, label: "92.1 x 73 cm" },
+      { id: "size-2", width: 184.2, height: 146, price: 6400, label: "184.2 x 146 cm" }
+    ]
   },
   {
     name: "Self Portrait With Bandaged Ear And Pipe",
@@ -3777,14 +3805,18 @@ const ARTWORKS_A_TO_M: Artwork[] = [
   {
     name: "Portrait Of The Postman Joseph Roulin",
     artist: "Vincent Van Gogh",
-    year: "1889",
-    originalDimensions: "65 x 54",
-    sellingDimensions: "65 x 54",
-    price: 2712,
+    year: "1888",
+    originalDimensions: "81.3 x 65.4",
+    sellingDimensions: "81.3 x 65.4",
+    price: 2780,
     image: "/image/g/portrait of the postman joseph roulin.jpg",
     artistLifespan: "1853-1890",
     slug: "portrait-of-the-postman-joseph-roulin",
-    letter: "G"
+    letter: "G",
+    options: [
+      { id: "size-1", width: 81.3, height: 65.4, price: 2780, label: "81.3 x 65.4 cm" },
+      { id: "size-2", width: 162.6, height: 130.8, price: 5560, label: "162.6 x 130.8 cm" }
+    ]
   },
   {
     name: "Lilac Bush (lilacs)",
@@ -3816,11 +3848,15 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     year: "1889",
     originalDimensions: "73 x 93.4",
     sellingDimensions: "73 x 93.4",
-    price: 3165,
+    price: 3200,
     image: "/image/g/wheat field with cypresses.jpg",
     artistLifespan: "1853-1890",
     slug: "wheat-field-with-cypresses",
-    letter: "G"
+    letter: "G",
+    options: [
+      { id: "size-1", width: 73, height: 93.4, price: 3200, label: "73 x 93.4 cm" },
+      { id: "size-2", width: 146, height: 186.8, price: 6400, label: "146 x 186.8 cm" }
+    ]
   },
   {
     name: "Lanscape Of Wheat Sheaves And Rising Moon",
@@ -3862,13 +3898,18 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     name: "Vincent's Bedroom In Airies",
     artist: "Vincent Van Gogh",
     year: "1889",
-    originalDimensions: "73.6 x 92.3",
-    sellingDimensions: "73.6 x 92.3",
-    price: 1889,
+    originalDimensions: "57.5 x 74",
+    sellingDimensions: "57.5 x 74",
+    price: 2500,
     image: "/image/g/vincent's bedroom in airies.jpg",
     artistLifespan: "1853-1890",
     slug: "vincents-bedroom-in-airies",
-    letter: "G"
+    letter: "G",
+    options: [
+      { id: "size-1", width: 57.5, height: 74, price: 2500, label: "57.5 x 74 cm" },
+      { id: "size-2", width: 115, height: 148, price: 5000, label: "115 x 148 cm" },
+      { id: "size-3", width: 230, height: 296, price: 10000, label: "230 x 296 cm" }
+    ]
   },
   {
     name: "The Mulberry Tree",
@@ -3900,11 +3941,16 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     year: "1890",
     originalDimensions: "73.5 x 92",
     sellingDimensions: "73.5 x 92",
-    price: 4165,
+    price: 4150,
     image: "/image/g/blossoming almond tree.jpg",
     artistLifespan: "1853-1890",
     slug: "blossoming-almond-tree",
-    letter: "G"
+    letter: "G",
+    options: [
+      { id: "size-1", width: 73.5, height: 92, price: 4150, label: "73.5 x 92 cm" },
+      { id: "size-2", width: 146, height: 184, price: 8300, label: "146 x 184 cm" },
+      { id: "size-3", width: 220.5, height: 276, price: 12450, label: "220.5 x 276 cm" }
+    ]
   },
   {
     name: "Vase With Irises Against Yellow Background",
@@ -3912,11 +3958,15 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     year: "1890",
     originalDimensions: "92 x 73.5",
     sellingDimensions: "92 x 73.5",
-    price: 3163,
+    price: 3170,
     image: "/image/g/vase with irises against yellow background.jpg",
     artistLifespan: "1853-1890",
     slug: "vase-with-irises-against-yellow-background",
-    letter: "G"
+    letter: "G",
+    options: [
+      { id: "size-1", width: 92, height: 73.5, price: 3170, label: "92 x 73.5 cm" },
+      { id: "size-2", width: 184, height: 147, price: 6340, label: "184 x 147 cm" }
+    ]
   },
   {
     name: "Vase Of Roses",
@@ -3924,11 +3974,15 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     year: "1890",
     originalDimensions: "93 x 74",
     sellingDimensions: "93 x 74",
-    price: 3734,
+    price: 3525,
     image: "/image/g/vase of roses.jpg",
     artistLifespan: "1853-1890",
     slug: "vase-of-roses",
-    letter: "G"
+    letter: "G",
+    options: [
+      { id: "size-1", width: 93, height: 74, price: 3525, label: "93 x 74 cm" },
+      { id: "size-2", width: 186, height: 148, price: 7050, label: "186 x 148 cm" }
+    ]
   },
   {
     name: "Landscape Couple Walking Crescent Moon",
@@ -3982,13 +4036,18 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     name: "The Cafe Terrace On The Place Du Forum Airies",
     artist: "Vincent Van Gogh",
     year: "1888",
-    originalDimensions: "61 x 65.5",
-    sellingDimensions: "61 x 65.5",
-    price: 3989,
+    originalDimensions: "81 x 65.5",
+    sellingDimensions: "81 x 65.5",
+    price: 4000,
     image: "/image/g/the cafe terrace on the place du forum airies.jpg",
     artistLifespan: "1853-1890",
     slug: "the-cafe-terrace-on-the-place-du-forum-airies",
-    letter: "G"
+    letter: "G",
+    options: [
+      { id: "size-1", width: 81, height: 65.5, price: 4000, label: "81 x 65.5 cm" },
+      { id: "size-2", width: 162, height: 131, price: 8000, label: "162 x 131 cm" },
+      { id: "size-3", width: 243, height: 196.5, price: 12000, label: "243 x 196.5 cm" }
+    ]
   },
   {
     name: "Haystacks In Provence",
@@ -4816,11 +4875,17 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     year: "1923",
     originalDimensions: "140 x 201",
     sellingDimensions: "140 x 201",
-    price: 10961,
+    price: 7000,
+    basePrice: 7000,
     image: "/image/k/composition 8.jpg",
     artistLifespan: "1866-1944",
     slug: "composition-8",
-    letter: "K"
+    letter: "K",
+    currency: "AED",
+    options: [
+      { id: 'opt1', width: 140, height: 101, price: 7000, label: '140 x 101 cm' },
+      { id: 'opt2', width: 280, height: 202, price: 14000, label: '280 x 202 cm' }
+    ]
   },
   {
     name: "Group In Crinolines",
@@ -5770,10 +5835,16 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "120.6 x 120.6",
     sellingDimensions: "120.6 x 120.6",
     price: 9400,
+    basePrice: 9400,
     image: "/image/l/flaming june.jpg",
     artistLifespan: "1830-1896",
     slug: "flaming-june",
-    letter: "L"
+    letter: "L",
+    currency: "AED",
+    options: [
+      { id: 'opt1', width: 120.6, height: 120.6, price: 9400, label: '120.6 x 120.6 cm' },
+      { id: 'opt2', width: 60.3, height: 60.3, price: 4700, label: '60.3 x 60.3 cm' }
+    ]
   },
   {
     name: "Phoebe",
@@ -7463,7 +7534,12 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the scream.jpg",
     artistLifespan: "1863-1944",
     slug: "the-scream",
-    letter: "M"
+    letter: "M",
+    options: [
+      { id: "size-1", width: 91, height: 68, price: 2485, label: "91 x 68 cm" },
+      { id: "size-2", width: 182, height: 136, price: 4970, label: "182 x 136 cm" },
+      { id: "size-3", width: 273, height: 204, price: 7455, label: "273 x 204 cm" }
+    ]
   },
   {
     name: "Death In The Sick Room",

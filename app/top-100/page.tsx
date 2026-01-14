@@ -64,9 +64,10 @@ const formatPrice = (price: number, currency: string) => {
 // Use TOP_100_PAINTINGS from the PDF data file
 const COLLECTION_PAINTINGS: CollectionPainting[] = TOP_100_PAINTINGS.map((artwork: FamousArtwork, index: number) => {
   // Try to find matching artwork in main ARTWORKS collection for slug
+  // Match by title AND artist to ensure we get the correct artwork
   const matchingArtwork = ARTWORKS.find(
     (a) =>
-      (a.name ?? "").toLowerCase() === artwork.title.toLowerCase() ||
+      (a.name ?? "").toLowerCase() === artwork.title.toLowerCase() &&
       (a.artist ?? "").toLowerCase() === artwork.artist.toLowerCase(),
   );
   
