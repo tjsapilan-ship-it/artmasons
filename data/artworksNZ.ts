@@ -1156,7 +1156,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "243.8 x 121.9",
     sellingDimensions: "243.8 x 121.9",
     price: 17200,
-    image: "/image/p/no. 5.jpg",
+    image: "/image/p/no.5.jpg",
     artistLifespan: "1930-1935",
     slug: "no-5",
     letter: "P"
@@ -1168,7 +1168,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "212.1 x 488.9",
     sellingDimensions: "212.1 x 488.9",
     price: 26900,
-    image: "/image/p/blue poles no. 11.jpg",
+    image: "/image/p/blue poles no.11.jpg",
     artistLifespan: "1930-1935",
     slug: "blue-poles-no-11",
     letter: "P"
