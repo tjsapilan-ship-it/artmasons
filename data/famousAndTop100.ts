@@ -219,7 +219,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
     sku: "AM-FA-014",
     basePrice: 7165,
     currency: "AED",
-    image: "/image/famous-art/portrait of adele bloch-bauer I.jpg",
+    image: "/image/famous-art/portrait of adele bloch-bauer i.jpg",
     options: [{ id: 'opt1', width: 138, height: 138, price: 7165, label: 'Original Size' }],
   },
 
@@ -855,7 +855,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
     sku: "AM-FA-059",
     basePrice: 4988,
     currency: "AED",
-    image: "/image/famous-art/hope II.jpg",
+    image: "/image/famous-art/hope ii.jpg",
     options: [{ id: 'opt1', width: 110.5, height: 110.5, price: 4988, label: 'Original Size' }],
   },
 
@@ -965,7 +965,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
     sku: "AM-FA-067",
     basePrice: 12000,
     currency: "AED",
-    image: "/image/famous-art/nude descending a staircase II.jpg",
+    image: "/image/famous-art/nude descending a staircase ii.jpg",
     options: [
       { id: 'opt1', width: 147, height: 89.2, price: 12000, label: '147 x 89.2 cm' },
       { id: 'opt2', width: 73.5, height: 44.6, price: 6000, label: '73.5 x 44.6 cm' }
@@ -1011,7 +1011,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
     sku: "AM-FA-070",
     basePrice: 3635,
     currency: "AED",
-    image: "/image/famous-art/music I.jpg",
+    image: "/image/famous-art/music i.jpg",
     options: [{ id: 'opt1', width: 27.5, height: 35.5, price: 3635, label: 'Original Size' }],
   },
 
