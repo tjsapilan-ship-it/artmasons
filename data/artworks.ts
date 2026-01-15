@@ -3751,6 +3751,18 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     letter: "G"
   },
   {
+    name: "Starry Night Over The Rome",
+    artist: "Vincent Van Gogh",
+    year: "1888",
+    originalDimensions: "75.2 x 92",
+    sellingDimensions: "75.2 x 92",
+    price: 3145,
+    image: "/image/g/starry night over the rome.jpg",
+    artistLifespan: "1853-1890",
+    slug: "starry-night-over-the-rome",
+    letter: "G"
+  },
+  {
     name: "Vincent's Chair With His Pipe",
     artist: "Vincent Van Gogh",
     year: "1888",
@@ -4018,18 +4030,6 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/wheat field with crows 1890.jpg",
     artistLifespan: "1853-1890",
     slug: "wheat-field-with-crows-1890",
-    letter: "G"
-  },
-  {
-    name: "Starry Night Over The Rome",
-    artist: "Vincent Van Gogh",
-    year: "1888",
-    originalDimensions: "75.2 92",
-    sellingDimensions: "75.2 92",
-    price: 3145,
-    image: "/image/g/starry night over the rome.jpg",
-    artistLifespan: "1853-1890",
-    slug: "starry-night-over-the-rome",
     letter: "G"
   },
   {

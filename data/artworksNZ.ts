@@ -1925,6 +1925,18 @@ export const ARTWORKS_NZ: Artwork[] = [
     letter: "R"
   },
   {
+    name: "Self Portrait Rembrandt",
+    artist: "Rembrandt Van Rijn",
+    year: "1659",
+    originalDimensions: "84.4 x 66",
+    sellingDimensions: "84.4 x 66",
+    price: 4000,
+    image: "/image/r/self portrait rembrandt.jpg",
+    artistLifespan: "1606-1669",
+    slug: "self-portrait-rembrandt",
+    letter: "R"
+  },
+  {
     name: "Holy Family",
     artist: "Rembrandt Von Rijn",
     year: "1645",

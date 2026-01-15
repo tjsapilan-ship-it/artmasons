@@ -1,4 +1,7 @@
 import { ARTWORKS, getArtworkSlug } from './artworks';
+import { POPULAR_PORTRAITS } from './popularPortraits';
+import { POPULAR_LANDSCAPES } from './popularLandscapes';
+import { POPULAR_STILL_LIFES } from './popularStillLifes';
 
 function byArtist(nameFragment: string) {
   const frag = nameFragment.toLowerCase();
@@ -20,13 +23,10 @@ export const POPULAR_CATEGORY_MAP: Record<string, string[]> = {
   'van-gogh': byArtist('van gogh'),
   'picasso': byArtist('picasso'),
   'da-vinci': byArtist('leonardo'),
-  'portraits': byTitleKeywords('portrait', 'portrait of'),
-  'still-lifes': byTitleKeywords('still life', 'still-life', 'stilllife', 'still'),
-  'landscapes': ARTWORKS.filter((a) => {
-    const t = (a.name || '').toLowerCase();
-    const kws = ['landscape', 'valley', 'sea', 'view', 'nile', 'bay', 'river', 'field', 'sunrise', 'wheat', 'beach', 'shore', 'harbor', 'yosemite'];
-    return kws.some((k) => t.includes(k));
-  }).map((a) => getArtworkSlug(a)),
+  'degas': byArtist('degas'),
+  'portraits': POPULAR_PORTRAITS,
+  'still-lifes': POPULAR_STILL_LIFES,
+  'landscapes': POPULAR_LANDSCAPES,
 };
 
 export function getCategorySlugs(categorySlug: string) {

@@ -12,6 +12,7 @@ const POPULAR_ARTISTS = [
   { name: "VAN GOGH", image: "/popular-art/gogh.webp" },
   { name: "PICASSO", image: "/popular-art/picasso.jpg" },
   { name: "DA VINCI", image: "/popular-art/davinci.jpg" },
+  { name: "DEGAS", image: "/popular-art/degas.jpg" },
   { name: "STILL LIFES", image: "/popular-art/still-life.jpg" },
   { name: "LANDSCAPES", image: "/popular-art/landscape.jpg" },
   { name: "PORTRAITS", image: "/popular-art/portrait.jpg" },
