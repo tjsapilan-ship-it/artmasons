@@ -1469,7 +1469,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
     sku: "AM-FA-105",
     basePrice: 13000,
     currency: "AED",
-    image: "/image/famous-art/American Gothic.jpg",
+    image: "/image/famous-art/american gothic.jpg",
     options: [{ id: 'opt1', width: 78, height: 65.3, price: 13000, label: 'Original Size' }],
   },
 
@@ -1521,7 +1521,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
     sku: "AM-FA-109",
     basePrice: 3800,
     currency: "AED",
-    image: "/image/famous-art/Mistress And Maid.jpg",
+    image: "/image/famous-art/mistress and maid.jpg",
     options: [{ id: 'opt1', width: 90.2, height: 78.7, price: 3800, label: 'Original Size' }],
   },
 
@@ -1638,7 +1638,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
     sku: "AM-FA-118",
     basePrice: 1900,
     currency: "AED",
-    image: "/image/famous-art/The Milkmaid the Kitchen Maid.jpg",
+    image: "/image/famous-art/the milkmaid the kitchen maid.jpg",
     options: [{ id: 'opt1', width: 45.5, height: 41, price: 1900, label: 'Original Size' }],
   },
 
