@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Playfair_Display } from 'next/font/google';
-import { User } from 'lucide-react';
+import { User, Grid } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { ARTWORKS, generateSlug, getArtworkSlug } from '../../data/artworks';
 
@@ -11,6 +12,7 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif'
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const STORAGE_KEY = 'artistsAZSelectedLetter';
+const ITEMS_PER_PAGE = 24;
 
 const getArtistLetter = (artistName: string): string => {
   const artwork = ARTWORKS.find(item => item.artist === artistName);
@@ -33,9 +35,13 @@ const getArtistDates = (artistName: string): { birth?: number; death?: number } 
 
 export default function ArtistsAZPage() {
   const [selectedLetter, setSelectedLetter] = useState<string>('A');
+  const [showAllGallery, setShowAllGallery] = useState<boolean>(false);
+  const [displayedItems, setDisplayedItems] = useState<number>(ITEMS_PER_PAGE);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [openUp, setOpenUp] = useState(false);
   const resultsRef = useRef<HTMLDivElement | null>(null);
+  const observerRef = useRef<IntersectionObserver | null>(null);
+  const loadMoreRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     try {
@@ -72,6 +78,8 @@ export default function ArtistsAZPage() {
 
   const selectLetter = (letter: string) => {
     setSelectedLetter(letter);
+    setShowAllGallery(false);
+    setDisplayedItems(ITEMS_PER_PAGE);
     try {
       if (typeof window !== 'undefined') {
         const state = Object.assign({}, window.history.state, { selectedLetter: letter });
@@ -79,6 +87,12 @@ export default function ArtistsAZPage() {
         localStorage.setItem(STORAGE_KEY, letter);
       }
     } catch { }
+  };
+
+  const showGalleryView = () => {
+    setShowAllGallery(true);
+    setDisplayedItems(ITEMS_PER_PAGE);
+    setSelectedLetter('');
   };
 
   const toggleMenu = (idx: number, extraCount: number) => {
@@ -126,6 +140,42 @@ export default function ArtistsAZPage() {
   const getArtworksByArtist = (artist: string) => {
     return ARTWORKS.filter(item => item.artist === artist);
   };
+
+  // Infinite scroll logic
+  const allArtworks = useMemo(() => {
+    return ARTWORKS.sort((a, b) => a.name.localeCompare(b.name));
+  }, []);
+
+  const displayedArtworks = useMemo(() => {
+    return allArtworks.slice(0, displayedItems);
+  }, [allArtworks, displayedItems]);
+
+  const loadMore = useCallback(() => {
+    if (displayedItems < allArtworks.length) {
+      setDisplayedItems(prev => Math.min(prev + ITEMS_PER_PAGE, allArtworks.length));
+    }
+  }, [displayedItems, allArtworks.length]);
+
+  useEffect(() => {
+    if (!showAllGallery || !loadMoreRef.current) return;
+
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          loadMore();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observerRef.current.observe(loadMoreRef.current);
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
+  }, [showAllGallery, loadMore]);
 
   return (
     <main className={`${playfair.variable} bg-art-texture min-h-screen text-black font-serif relative`}>
@@ -190,12 +240,85 @@ export default function ArtistsAZPage() {
                 </button>
               );
             })}
+            
+            {/* View All Gallery Button */}
+            <button
+              onClick={showGalleryView}
+              className={`
+                relative w-auto h-12 md:h-14 px-4 flex items-center justify-center gap-2 transition-all duration-200 rounded font-serif text-base font-bold whitespace-nowrap
+                ${showAllGallery 
+                  ? 'bg-[#800000] text-white shadow-lg scale-110 cursor-pointer' 
+                  : 'bg-white text-gray-700 border border-gray-200 hover:border-[#800000] hover:text-[#800000] hover:scale-105 shadow-sm cursor-pointer'
+                }
+              `}
+            >
+              <Grid size={20} />
+              <span>View All Gallery</span>
+            </button>
           </div>
         </div>
 
         {/* Results Section */}
         <div className="min-h-[400px]">
-          {filteredArtists.length > 0 ? (
+          {showAllGallery ? (
+            <>
+              {/* Gallery View */}
+              <div className="mb-6">
+                <h2 className="font-serif text-2xl font-bold text-gray-800">
+                  <span className="text-4xl font-bold text-[#800000]">{allArtworks.length}</span> Artworks in Gallery
+                  <span className="ml-4 text-lg text-gray-600">
+                    (Showing {displayedArtworks.length} of {allArtworks.length})
+                  </span>
+                </h2>
+              </div>
+              
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {displayedArtworks.map((artwork, idx) => (
+                  <Link
+                    key={idx}
+                    href={`/artworks/${getArtworkSlug(artwork)}`}
+                    className="group bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:border-[#800000]/30 cursor-pointer"
+                  >
+                    <div className="relative aspect-square overflow-hidden bg-gray-100">
+                      <Image
+                        src={artwork.image}
+                        alt={artwork.name}
+                        fill
+                        sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 16vw"
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-3">
+                      <h3 className="font-serif font-bold text-sm text-gray-800 line-clamp-2 mb-1 group-hover:text-[#800000] transition-colors">
+                        {artwork.name}
+                      </h3>
+                      <p className="font-serif text-xs text-gray-600 truncate">
+                        {artwork.artist}
+                      </p>
+                      <p className="font-serif text-xs text-gray-500 mt-1">
+                        {artwork.year}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+
+              {/* Infinite Scroll Trigger */}
+              {displayedItems < allArtworks.length && (
+                <div ref={loadMoreRef} className="py-8 flex justify-center">
+                  <div className="w-12 h-12 border-4 border-[#800000] border-t-transparent rounded-full animate-spin"></div>
+                </div>
+              )}
+
+              {displayedItems >= allArtworks.length && (
+                <div className="mt-8 py-6 text-center">
+                  <p className="font-serif text-gray-600">
+                    You've reached the end of the gallery
+                  </p>
+                </div>
+              )}
+            </>
+          ) : filteredArtists.length > 0 ? (
             <>
               <div className="mb-6">
                 <h2 className="font-serif text-2xl font-bold text-gray-800">
