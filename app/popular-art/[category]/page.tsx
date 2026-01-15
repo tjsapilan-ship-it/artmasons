@@ -144,7 +144,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                     className="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group hover:border-[#800000]/20 border border-transparent"
                   >
                     {/* Image */}
-                    <Link href={`/artworks/${getArtworkSlug(art)}`} className="block cursor-pointer">
+                    <Link href={`/artworks/${getArtworkSlug(art)}?from=popular-art&category=${slug}`} className="block cursor-pointer">
                       <div className="relative bg-gray-50 aspect-[3/4] overflow-hidden">
                         <Image 
                           src={art.image} 
@@ -158,7 +158,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
 
                     <div className="p-5">
                       {/* Title - Clickable */}
-                      <Link href={`/artworks/${getArtworkSlug(art)}`}>
+                      <Link href={`/artworks/${getArtworkSlug(art)}?from=popular-art&category=${slug}`}>
                         <h3 className="font-serif text-base font-bold text-[#800000] mb-1.5 line-clamp-2 leading-snug min-h-[2.8rem] hover:underline cursor-pointer">
                           {art.name}
                         </h3>

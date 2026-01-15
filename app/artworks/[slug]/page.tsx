@@ -11,8 +11,17 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif'
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 // --- MAIN PRODUCT PAGE ---
-export default async function ProductDetailsPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ProductDetailsPage({ 
+  params, 
+  searchParams 
+}: { 
+  params: Promise<{ slug: string }>;
+  searchParams?: Promise<{ from?: string; category?: string }>;
+}) {
   const { slug } = await params;
+  const sp = searchParams ? await searchParams : {};
+  const from = sp?.from;
+  const category = sp?.category;
   
   // First try to find in main ARTWORKS collection
   let artwork = getArtworkBySlug(slug as string) as Artwork | null;
@@ -72,17 +81,39 @@ export default async function ProductDetailsPage({ params }: { params: Promise<{
       ].slice(0, 4)
     : [];
 
-  // Breadcrumbs component always prepends Home, so provide trail starting at Artists A-Z
-  const breadcrumbs = artwork
-    ? [
-        { label: 'Artists A-Z', href: '/artists-a-z' },
-        { label: artwork.artist, href: `/artists-a-z/${generateArtistSlug(artwork.artist)}` },
-        { label: artwork.name, href: `/artworks/${slug}` },
-      ]
-    : [
-        { label: 'Artists A-Z', href: '/artists-a-z' },
-        { label: 'Artwork', href: `/artworks/${slug}` },
-      ];
+  // Breadcrumbs component always prepends Home, so provide trail based on referrer
+  let breadcrumbs;
+  if (from === 'popular-art' && category) {
+    // User came from popular art category page
+    const categoryLabel = category
+      .replace(/-/g, ' ')
+      .split(' ')
+      .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
+      .join(' ');
+    breadcrumbs = artwork
+      ? [
+          { label: 'Popular Art', href: '/' },
+          { label: categoryLabel, href: `/popular-art/${category}` },
+          { label: artwork.name, href: `/artworks/${slug}` },
+        ]
+      : [
+          { label: 'Popular Art', href: '/' },
+          { label: categoryLabel, href: `/popular-art/${category}` },
+          { label: 'Artwork', href: `/artworks/${slug}` },
+        ];
+  } else {
+    // Default: Artists A-Z path
+    breadcrumbs = artwork
+      ? [
+          { label: 'Artists A-Z', href: '/artists-a-z' },
+          { label: artwork.artist, href: `/artists-a-z/${generateArtistSlug(artwork.artist)}` },
+          { label: artwork.name, href: `/artworks/${slug}` },
+        ]
+      : [
+          { label: 'Artists A-Z', href: '/artists-a-z' },
+          { label: 'Artwork', href: `/artworks/${slug}` },
+        ];
+  }
 
   return (
     <main className={`${playfair.variable} ${inter.variable} min-h-screen bg-art-texture text-black font-serif text-base`}>

@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Playfair_Display } from 'next/font/google';
 import { User, Grid } from 'lucide-react';
+import { motion } from 'framer-motion';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { ARTWORKS, generateSlug, getArtworkSlug } from '../../data/artworks';
 
@@ -34,29 +35,72 @@ const getArtistDates = (artistName: string): { birth?: number; death?: number } 
   return {};
 };
 
-export default function ArtistsAZPage() {
+const formatPrice = (price: number, currency: string = 'AED') => {
+  const formatted = new Intl.NumberFormat('en-US', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  }).format(price);
+  
+  if (currency === 'AED') {
+    return `AED ${formatted}`;
+  }
+  
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: currency,
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  }).format(price);
+};
+
+export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise<{ view?: string }> }) {
   const [selectedLetter, setSelectedLetter] = useState<string>('A');
   const [showAllGallery, setShowAllGallery] = useState<boolean>(false);
-  const [displayedItems, setDisplayedItems] = useState<number>(ITEMS_PER_PAGE);
+  const [currentPage, setCurrentPage] = useState<number>(1);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [openUp, setOpenUp] = useState(false);
   const resultsRef = useRef<HTMLDivElement | null>(null);
-  const observerRef = useRef<IntersectionObserver | null>(null);
-  const loadMoreRef = useRef<HTMLDivElement | null>(null);
+  const [urlParams, setUrlParams] = useState<{ view?: string } | null>(null);
+
+  useEffect(() => {
+    // Get URL parameters
+    Promise.resolve(searchParams).then(params => {
+      setUrlParams(params || {});
+    });
+  }, [searchParams]);
 
   useEffect(() => {
     try {
+      // Check for hash parameter (letter selection from navigation)
+      if (typeof window !== 'undefined') {
+        const hash = window.location.hash.replace('#', '');
+        if (hash && ALPHABET.includes(hash)) {
+          setSelectedLetter(hash);
+          setShowAllGallery(false);
+          setCurrentPage(1);
+          return;
+        }
+      }
+
+      // Check for view=gallery parameter
+      if (urlParams?.view === 'gallery') {
+        setShowAllGallery(true);
+        setSelectedLetter('');
+        setCurrentPage(1);
+        return;
+      }
+
       // Check if we're returning from a navigation and restore state
       const savedState = sessionStorage.getItem(PAGE_STATE_KEY);
       
       if (savedState) {
-        const { selectedLetter: savedLetter, showAllGallery: savedGallery, displayedItems: savedItems, scrollPosition } = JSON.parse(savedState);
+        const { selectedLetter: savedLetter, showAllGallery: savedGallery, currentPage: savedPage, scrollPosition } = JSON.parse(savedState);
         
         // Restore the view state
         if (savedGallery) {
           setShowAllGallery(true);
           setSelectedLetter('');
-          setDisplayedItems(savedItems || ITEMS_PER_PAGE);
+          setCurrentPage(savedPage || 1);
         } else if (savedLetter && ALPHABET.includes(savedLetter)) {
           setSelectedLetter(savedLetter);
           setShowAllGallery(false);
@@ -81,7 +125,7 @@ export default function ArtistsAZPage() {
         setTimeout(() => setSelectedLetter(stored), 0);
       }
     } catch { }
-  }, []);
+  }, [urlParams]);
 
   useEffect(() => {
     try {
@@ -105,7 +149,7 @@ export default function ArtistsAZPage() {
   const selectLetter = (letter: string) => {
     setSelectedLetter(letter);
     setShowAllGallery(false);
-    setDisplayedItems(ITEMS_PER_PAGE);
+    setCurrentPage(1);
     try {
       if (typeof window !== 'undefined') {
         const state = Object.assign({}, window.history.state, { selectedLetter: letter });
@@ -117,7 +161,7 @@ export default function ArtistsAZPage() {
 
   const showGalleryView = () => {
     setShowAllGallery(true);
-    setDisplayedItems(ITEMS_PER_PAGE);
+    setCurrentPage(1);
     setSelectedLetter('');
   };
 
@@ -126,7 +170,7 @@ export default function ArtistsAZPage() {
       const state = {
         selectedLetter,
         showAllGallery,
-        displayedItems,
+        currentPage,
         scrollPosition: window.scrollY
       };
       sessionStorage.setItem(PAGE_STATE_KEY, JSON.stringify(state));
@@ -179,41 +223,22 @@ export default function ArtistsAZPage() {
     return ARTWORKS.filter(item => item.artist === artist);
   };
 
-  // Infinite scroll logic
+  // Pagination logic
   const allArtworks = useMemo(() => {
     return ARTWORKS.sort((a, b) => a.name.localeCompare(b.name));
   }, []);
 
+  const totalPages = Math.ceil(allArtworks.length / ITEMS_PER_PAGE);
+
   const displayedArtworks = useMemo(() => {
-    return allArtworks.slice(0, displayedItems);
-  }, [allArtworks, displayedItems]);
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return allArtworks.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [allArtworks, currentPage]);
 
-  const loadMore = useCallback(() => {
-    if (displayedItems < allArtworks.length) {
-      setDisplayedItems(prev => Math.min(prev + ITEMS_PER_PAGE, allArtworks.length));
-    }
-  }, [displayedItems, allArtworks.length]);
-
-  useEffect(() => {
-    if (!showAllGallery || !loadMoreRef.current) return;
-
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          loadMore();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    observerRef.current.observe(loadMoreRef.current);
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, [showAllGallery, loadMore]);
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <main className={`${playfair.variable} bg-art-texture min-h-screen text-black font-serif relative`}>
@@ -278,20 +303,28 @@ export default function ArtistsAZPage() {
                 </button>
               );
             })}
-            
-            {/* View All Gallery Button */}
+          </div>
+
+          {/* View All Gallery Button */}
+          <div className="mt-8 flex justify-center border-t border-gray-100 pt-6">
             <button
               onClick={showGalleryView}
               className={`
-                relative w-auto h-12 md:h-14 px-4 flex items-center justify-center gap-2 transition-all duration-200 rounded font-serif text-base font-bold whitespace-nowrap
+                group relative flex items-center justify-center gap-3 px-8 py-3.5 rounded-full transition-all duration-300 font-serif text-lg font-bold cursor-pointer
                 ${showAllGallery 
-                  ? 'bg-[#800000] text-white shadow-lg scale-110 cursor-pointer' 
-                  : 'bg-white text-gray-700 border border-gray-200 hover:border-[#800000] hover:text-[#800000] hover:scale-105 shadow-sm cursor-pointer'
+                  ? 'bg-[#800000] text-white shadow-xl scale-105 ring-4 ring-[#800000]/10' 
+                  : 'bg-white text-gray-700 border-2 border-gray-100 hover:border-[#800000] hover:text-[#800000] hover:shadow-lg hover:-translate-y-0.5'
                 }
               `}
             >
-              <Grid size={20} />
+              <Grid size={22} className={`transition-transform duration-300 ${showAllGallery ? 'scale-110' : 'group-hover:scale-110'}`} />
               <span>View All Gallery</span>
+              {showAllGallery && (
+                <motion.div
+                  layoutId="gallery-indicator"
+                  className="absolute -bottom-1 w-1/4 h-1 bg-white/30 rounded-full"
+                />
+              )}
             </button>
           </div>
         </div>
@@ -310,50 +343,130 @@ export default function ArtistsAZPage() {
                 </h2>
               </div>
               
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {displayedArtworks.map((artwork, idx) => (
-                  <Link
+                  <div 
                     key={idx}
-                    href={`/artworks/${getArtworkSlug(artwork)}`}
-                    onClick={savePageState}
-                    className="group bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:border-[#800000]/30 cursor-pointer"
+                    className="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group hover:border-[#800000]/20 border border-transparent"
                   >
-                    <div className="relative aspect-square overflow-hidden bg-gray-100">
-                      <Image
-                        src={artwork.image}
-                        alt={artwork.name}
-                        fill
-                        sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 16vw"
-                        className="object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
-                    </div>
-                    <div className="p-3">
-                      <h3 className="font-serif font-bold text-sm text-gray-800 line-clamp-2 mb-1 group-hover:text-[#800000] transition-colors">
-                        {artwork.name}
-                      </h3>
-                      <p className="font-serif text-xs text-gray-600 truncate">
-                        {artwork.artist}
-                      </p>
-                      <p className="font-serif text-xs text-gray-500 mt-1">
+                    <Link href={`/artworks/${getArtworkSlug(artwork)}`} onClick={savePageState} className="block cursor-pointer">
+                      <div className="relative bg-gray-50 aspect-[3/4] overflow-hidden">
+                        <Image
+                          src={artwork.image}
+                          alt={artwork.name}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-700"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                        />
+                      </div>
+                    </Link>
+
+                    <div className="p-5">
+                      <Link href={`/artworks/${getArtworkSlug(artwork)}`} onClick={savePageState}>
+                        <h3 className="font-serif text-base font-bold text-[#800000] mb-1.5 line-clamp-2 leading-snug min-h-[2.8rem] hover:underline cursor-pointer">
+                          {artwork.name}
+                        </h3>
+                      </Link>
+                      
+                      <p className="font-serif text-sm text-gray-500 mb-1.5">
                         {artwork.year}
                       </p>
+                      
+                      <p className="font-serif text-sm text-[#4A5568] mb-3 font-medium line-clamp-1">
+                        {artwork.artist}
+                      </p>
+                      
+                      <div className="flex gap-0.5 mb-4 justify-center">
+                        {[...Array(5)].map((_, i) => (
+                          <svg key={i} className="w-5 h-5 fill-orange-400" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                          </svg>
+                        ))}
+                      </div>
+
+                      <div className="grid grid-cols-2 gap-2.5 mb-4">
+                        <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
+                          <div className="font-serif text-xs text-gray-600 mb-1">Original Size</div>
+                          <div className="font-serif text-base font-bold text-[#800000]">
+                            {artwork.price ? formatPrice(artwork.price, artwork.currency) : 'Price on request'}
+                          </div>
+                        </button>
+                        <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
+                          <div className="font-serif text-xs text-gray-600 mb-1">Custom Size</div>
+                          <div className="font-serif text-base font-bold text-[#800000]">Request quote</div>
+                        </button>
+                      </div>
+
+                      <div className="text-xs font-serif text-gray-500 leading-relaxed space-y-1 pt-3 border-t border-gray-100">
+                        <p className="line-clamp-1">{artwork.artist}</p>
+                        <p className="line-clamp-1">Year: {artwork.year}</p>
+                        <p className="line-clamp-1 text-gray-400">Hand-painted on linen canvas</p>
+                      </div>
                     </div>
-                  </Link>
+                  </div>
                 ))}
               </div>
 
-              {/* Infinite Scroll Trigger */}
-              {displayedItems < allArtworks.length && (
-                <div ref={loadMoreRef} className="py-8 flex justify-center">
-                  <div className="w-12 h-12 border-4 border-[#800000] border-t-transparent rounded-full animate-spin"></div>
-                </div>
-              )}
+              {/* Pagination Controls */}
+              {totalPages > 1 && (
+                <div className="flex justify-center items-center gap-2 py-8 mt-4 flex-wrap">
+                  <button
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                    className="px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 hover:border-[#800000] hover:text-[#800000] disabled:opacity-50 disabled:cursor-not-allowed font-serif transition-colors"
+                  >
+                    Previous
+                  </button>
 
-              {displayedItems >= allArtworks.length && (
-                <div className="mt-8 py-6 text-center">
-                  <p className="font-serif text-gray-600">
-                    You've reached the end of the gallery
-                  </p>
+                  <div className="flex gap-1 flex-wrap justify-center">
+                    {(() => {
+                      const pages = [];
+                      const maxVisiblePages = 5;
+
+                      if (totalPages <= maxVisiblePages) {
+                        for (let i = 1; i <= totalPages; i++) pages.push(i);
+                      } else {
+                        if (currentPage <= 3) {
+                          pages.push(1, 2, 3, 4, '...', totalPages);
+                        } else if (currentPage >= totalPages - 2) {
+                          pages.push(1, '...', totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+                        } else {
+                          pages.push(1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
+                        }
+                      }
+
+                      return pages.map((page, index) => {
+                        if (page === '...')
+                          return (
+                            <span key={`ellipsis-${index}`} className="px-2 py-2 text-gray-500 font-serif">
+                              ...
+                            </span>
+                          );
+
+                        return (
+                          <button
+                            key={page}
+                            onClick={() => handlePageChange(page as number)}
+                            className={`w-10 h-10 rounded border font-serif font-bold transition-all ${
+                              currentPage === page
+                                ? 'bg-[#800000] text-white border-[#800000]'
+                                : 'bg-white text-gray-700 border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                            }`}
+                          >
+                            {page}
+                          </button>
+                        );
+                      });
+                    })()}
+                  </div>
+
+                  <button
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                    className="px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 hover:border-[#800000] hover:text-[#800000] disabled:opacity-50 disabled:cursor-not-allowed font-serif transition-colors"
+                  >
+                    Next
+                  </button>
                 </div>
               )}
             </>
