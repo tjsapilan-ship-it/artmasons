@@ -4950,14 +4950,19 @@ const ARTWORKS_A_TO_M: Artwork[] = [
   {
     name: "Winter Landscape",
     artist: "Wassily Kadinsky",
-    year: "1911",
-    originalDimensions: "96 x 104.5",
-    sellingDimensions: "96 x 104.5",
-    price: 4291,
+    year: "1909-1911",
+    originalDimensions: "75.5 x 97.5",
+    sellingDimensions: "75.5 x 97.5",
+    price: 3963,
     image: "/image/k/winter landscape.jpg",
     artistLifespan: "1866-1944",
-    slug: "winter-landscape-1911",
-    letter: "K"
+    slug: "winter-landscape",
+    letter: "K",
+    basePrice: 3963,
+    options: [
+      { id: "size-1", width: 75.5, height: 97.5, price: 3963, label: "75.5 x 97.5 cm" },
+      { id: "size-2", width: 96, height: 104.5, price: 4291, label: "96 x 104.5 cm" }
+    ]
   },
   {
     name: "Moscow I",
@@ -4969,18 +4974,6 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/moscow i.jpg",
     artistLifespan: "1866-1944",
     slug: "moscow-i",
-    letter: "K"
-  },
-  {
-    name: "Winter Landscape",
-    artist: "Wassily Kadinsky",
-    year: "1909",
-    originalDimensions: "75.5 x 97.5",
-    sellingDimensions: "75.5 x 97.5",
-    price: 3963,
-    image: "/image/k/winter landscape.jpg",
-    artistLifespan: "1866-1944",
-    slug: "winter-landscape-1909",
     letter: "K"
   },
   {

@@ -2390,7 +2390,12 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/the virgin in prayer.jpg",
     artistLifespan: "1609-1685",
     slug: "the-virgin-in-prayer",
-    letter: "S"
+    letter: "S",
+    basePrice: 9674,
+    options: [
+      { id: "size-1", width: 48, height: 37, price: 9674, label: "48 x 37 cm" },
+      { id: "size-2", width: 73, height: 57.7, price: 11517, label: "73 x 57.7 cm" }
+    ]
   },
   {
     name: "The Virgin And Child Embracing",
@@ -2414,18 +2419,6 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/madonna and child.jpg",
     artistLifespan: "1609-1685",
     slug: "madonna-and-child-sassoferrato",
-    letter: "S"
-  },
-  {
-    name: "The Virgin In Prayer",
-    artist: "Giovanni Battista Salvi Sassoferrato",
-    year: "Unknown",
-    originalDimensions: "48 x 37",
-    sellingDimensions: "48 x 37",
-    price: 9674,
-    image: "/image/s/the virgin in prayer.jpg",
-    artistLifespan: "1609-1685",
-    slug: "the-virgin-in-prayer-2",
     letter: "S"
   },
   {
@@ -2654,7 +2647,12 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/flirtation.jpg",
     artistLifespan: "1825-1879",
     slug: "flirtation",
-    letter: "S"
+    letter: "S",
+    basePrice: 19422,
+    options: [
+      { id: "size-1", width: 73.6, height: 81.2, price: 19422, label: "73.6 x 81.2 cm" },
+      { id: "size-2", width: 65, height: 84, price: 20417, label: "65 x 84 cm" }
+    ]
   },
   {
     name: "Marriage Proposal",
@@ -2690,18 +2688,6 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/the afternoon visitor.jpg",
     artistLifespan: "1825-1879",
     slug: "the-afternoon-visitor",
-    letter: "S"
-  },
-  {
-    name: "Flirtation",
-    artist: "Frederick Charles Soulacroix",
-    year: "Unknown",
-    originalDimensions: "65 x 84",
-    sellingDimensions: "65 x 84",
-    price: 20417,
-    image: "/image/s/flirtation.jpg",
-    artistLifespan: "1825-1879",
-    slug: "flirtation-2",
     letter: "S"
   },
 
@@ -3476,19 +3462,12 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the eruption of vesuvius.jpg",
     artistLifespan: "1729-1802",
     slug: "the-eruption-of-vesuvius",
-    letter: "V"
-  },
-  {
-    name: "The Eruption Of Vesuvius",
-    artist: "Pierre Jacques Voliare",
-    year: "Unknown",
-    originalDimensions: "51 x 34",
-    sellingDimensions: "51 x 34",
-    price: 4271,
-    image: "/image/v/the eruption of vesuvius.jpg",
-    artistLifespan: "1729-1802",
-    slug: "the-eruption-of-vesuvius-2",
-    letter: "V"
+    letter: "V",
+    basePrice: 4271,
+    options: [
+      { id: "size-1", width: 51, height: 34, price: 4271, label: "51 x 34 cm" },
+      { id: "size-2", width: 51, height: 115, price: 7365, label: "51 x 115 cm" }
+    ]
   },
   {
     name: "Apple Bloom",
