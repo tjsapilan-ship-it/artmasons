@@ -12,6 +12,7 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif'
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const STORAGE_KEY = 'artistsAZSelectedLetter';
+const PAGE_STATE_KEY = 'artistsAZPageState';
 const ITEMS_PER_PAGE = 24;
 
 const getArtistLetter = (artistName: string): string => {
@@ -45,6 +46,31 @@ export default function ArtistsAZPage() {
 
   useEffect(() => {
     try {
+      // Check if we're returning from a navigation and restore state
+      const savedState = sessionStorage.getItem(PAGE_STATE_KEY);
+      
+      if (savedState) {
+        const { selectedLetter: savedLetter, showAllGallery: savedGallery, displayedItems: savedItems, scrollPosition } = JSON.parse(savedState);
+        
+        // Restore the view state
+        if (savedGallery) {
+          setShowAllGallery(true);
+          setSelectedLetter('');
+          setDisplayedItems(savedItems || ITEMS_PER_PAGE);
+        } else if (savedLetter && ALPHABET.includes(savedLetter)) {
+          setSelectedLetter(savedLetter);
+          setShowAllGallery(false);
+        }
+        
+        // Restore scroll position after content loads
+        setTimeout(() => {
+          window.scrollTo(0, scrollPosition || 0);
+          // Clear saved state after restoration
+          sessionStorage.removeItem(PAGE_STATE_KEY);
+        }, 150);
+        return;
+      }
+
       const fromHistory = typeof window !== 'undefined' && (window.history.state && window.history.state.selectedLetter);
       if (fromHistory && ALPHABET.includes(fromHistory)) {
         setTimeout(() => setSelectedLetter(fromHistory), 0);
@@ -93,6 +119,18 @@ export default function ArtistsAZPage() {
     setShowAllGallery(true);
     setDisplayedItems(ITEMS_PER_PAGE);
     setSelectedLetter('');
+  };
+
+  const savePageState = () => {
+    try {
+      const state = {
+        selectedLetter,
+        showAllGallery,
+        displayedItems,
+        scrollPosition: window.scrollY
+      };
+      sessionStorage.setItem(PAGE_STATE_KEY, JSON.stringify(state));
+    } catch { }
   };
 
   const toggleMenu = (idx: number, extraCount: number) => {
@@ -277,6 +315,7 @@ export default function ArtistsAZPage() {
                   <Link
                     key={idx}
                     href={`/artworks/${getArtworkSlug(artwork)}`}
+                    onClick={savePageState}
                     className="group bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:border-[#800000]/30 cursor-pointer"
                   >
                     <div className="relative aspect-square overflow-hidden bg-gray-100">
@@ -345,6 +384,7 @@ export default function ArtistsAZPage() {
                           <h3 className="font-serif text-2xl font-bold text-[#800000] leading-tight mb-1">
                             <Link
                               href={`/artists-a-z/${generateSlug(artist)}`}
+                              onClick={savePageState}
                               className="hover:underline cursor-pointer"
                             >
                               {artist}
@@ -370,6 +410,7 @@ export default function ArtistsAZPage() {
                               <li key={artIdx}>
                                 <Link 
                                   href={`/artworks/${slug}`}
+                                  onClick={savePageState}
                                   className="font-serif text-gray-700 text-base flex items-start gap-2 hover:text-[#800000] transition-colors leading-relaxed group cursor-pointer"
                                 >
                                   <span className="text-[#800000] mt-1">•</span>
@@ -408,7 +449,10 @@ export default function ArtistsAZPage() {
                                     <Link
                                       href={`/artworks/${getArtworkSlug(other)}`}
                                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 cursor-pointer"
-                                      onClick={() => setOpenIndex(null)}
+                                      onClick={() => {
+                                        savePageState();
+                                        setOpenIndex(null);
+                                      }}
                                     >
                                       {other.name}
                                     </Link>
