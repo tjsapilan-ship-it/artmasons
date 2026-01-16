@@ -8,6 +8,7 @@ import { User, Grid } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { ARTWORKS, generateSlug, getArtworkSlug } from '../../data/artworks';
+import { ARTIST_RECOMMENDED_IMAGES } from '../../data/artistRecommendedImages';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
 
@@ -55,7 +56,7 @@ const formatPrice = (price: number, currency: string = 'AED') => {
 
 export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise<{ view?: string }> }) {
   const [selectedLetter, setSelectedLetter] = useState<string>('A');
-  const [showAllGallery, setShowAllGallery] = useState<boolean>(false);
+  const [showAllGallery, setShowAllGallery] = useState<boolean>(true);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [openUp, setOpenUp] = useState(false);
@@ -223,9 +224,36 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
     return ARTWORKS.filter(item => item.artist === artist);
   };
 
+  const getArtistSurname = (artistName: string): string => {
+    // Remove parenthetical content (e.g., "Edmund Blair (Leighton)" -> "Edmund Blair Leighton")
+    const cleanedName = artistName.replace(/\([^)]*\)/g, '').trim();
+    const parts = cleanedName.trim().split(/\s+/).filter(part => part.length > 0);
+    
+    if (parts.length === 0) return artistName;
+    
+    return parts[parts.length - 1];
+  };
+
   // Pagination logic
   const allArtworks = useMemo(() => {
-    return ARTWORKS.sort((a, b) => a.name.localeCompare(b.name));
+    return [...ARTWORKS].sort((a, b) => {
+      const surnameA = getArtistSurname(a.artist);
+      const surnameB = getArtistSurname(b.artist);
+      const surnameCompare = surnameA.localeCompare(surnameB);
+      
+      if (surnameCompare !== 0) {
+        return surnameCompare;
+      }
+      
+      // If surnames are the same, sort by full artist name
+      const artistCompare = a.artist.localeCompare(b.artist);
+      if (artistCompare !== 0) {
+        return artistCompare;
+      }
+      
+      // If artists are the same, sort by artwork name
+      return a.name.localeCompare(b.name);
+    });
   }, []);
 
   const totalPages = Math.ceil(allArtworks.length / ITEMS_PER_PAGE);
@@ -264,7 +292,44 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
           </p>
         </div>
 
+        {/* View Toggle */}
+        <div className="flex justify-center mb-10">
+          <div className="bg-gray-100 p-1.5 rounded-full inline-flex relative shadow-inner">
+            <button
+              onClick={showGalleryView}
+              className={`
+                px-6 md:px-10 py-3 rounded-full text-lg font-serif font-bold transition-all duration-300 relative z-10 text-center flex items-center justify-center
+                ${showAllGallery 
+                  ? 'bg-[#800000] text-white shadow-md' 
+                  : 'text-gray-500 hover:text-[#800000] bg-transparent'
+                }
+              `}
+              style={{ minWidth: '200px' }}
+            >
+              Discover Gallery
+            </button>
+            <button
+              onClick={() => {
+                setShowAllGallery(false);
+                if (!selectedLetter) setSelectedLetter('A');
+                setCurrentPage(1);
+              }}
+              className={`
+                px-6 md:px-10 py-3 rounded-full text-lg font-serif font-bold transition-all duration-300 relative z-10 text-center flex items-center justify-center
+                ${!showAllGallery 
+                  ? 'bg-[#800000] text-white shadow-md' 
+                  : 'text-gray-500 hover:text-[#800000] bg-transparent'
+                }
+              `}
+              style={{ minWidth: '200px' }}
+            >
+              Artist Gallery A-Z
+            </button>
+          </div>
+        </div>
+
         {/* Alphabet Filter */}
+        {!showAllGallery && (
         <div className="mb-12 bg-white/90 shadow-sm p-6 rounded-lg backdrop-blur-sm border border-[#800000]/10">
           <h2 className="font-serif text-xl font-bold mb-4 text-gray-800">Browse by Letter</h2>
           <div className="flex flex-wrap justify-center gap-2">
@@ -304,30 +369,8 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
               );
             })}
           </div>
-
-          {/* View All Gallery Button */}
-          <div className="mt-8 flex justify-center border-t border-gray-100 pt-6">
-            <button
-              onClick={showGalleryView}
-              className={`
-                group relative flex items-center justify-center gap-3 px-8 py-3.5 rounded-full transition-all duration-300 font-serif text-lg font-bold cursor-pointer
-                ${showAllGallery 
-                  ? 'bg-[#800000] text-white shadow-xl scale-105 ring-4 ring-[#800000]/10' 
-                  : 'bg-white text-gray-700 border-2 border-gray-100 hover:border-[#800000] hover:text-[#800000] hover:shadow-lg hover:-translate-y-0.5'
-                }
-              `}
-            >
-              <Grid size={22} className={`transition-transform duration-300 ${showAllGallery ? 'scale-110' : 'group-hover:scale-110'}`} />
-              <span>View All Gallery</span>
-              {showAllGallery && (
-                <motion.div
-                  layoutId="gallery-indicator"
-                  className="absolute -bottom-1 w-1/4 h-1 bg-white/30 rounded-full"
-                />
-              )}
-            </button>
-          </div>
         </div>
+        )}
 
         {/* Results Section */}
         <div className="min-h-[400px]">
@@ -478,56 +521,91 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                 </h2>
               </div>
               
-              <div ref={resultsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div ref={resultsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredArtists.map((artist, idx) => {
                   const artworks = getArtworksByArtist(artist);
                   const dates = getArtistDates(artist);
                   
+                  // Determine image to show
+                  let artistImage = null;
+                  const recommendedArtworkName = ARTIST_RECOMMENDED_IMAGES[artist];
+                  
+                  if (recommendedArtworkName) {
+                    const found = artworks.find(a => a.name === recommendedArtworkName);
+                    if (found) artistImage = found.image;
+                  }
+                  
+                  if (!artistImage && artworks.length > 0) {
+                    artistImage = artworks[0].image;
+                  }
+
                   return (
                     <div 
                       key={idx} 
-                      className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:border-[#800000]/30"
+                      className="group bg-white border border-gray-100 rounded-xl p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] hover:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1)] transition-all duration-300 hover:border-[#800000]/20 flex flex-col"
                     >
-                      <div className="flex items-start gap-4 mb-5">
-                        <div className="flex-shrink-0 w-14 h-14 bg-[#800000] rounded-full flex items-center justify-center shadow-md border-2 border-[#fdfbf7]">
-                          <User className="text-white" size={26} />
-                        </div>
+                      <div className="flex items-start gap-5 mb-5">
+                        <Link
+                           href={`/artists-a-z/${generateSlug(artist)}`} 
+                           onClick={savePageState}
+                           className="flex-shrink-0 w-28 h-28 relative overflow-hidden rounded-lg shadow-md border border-gray-100 bg-gray-50 group-hover:shadow-lg transition-all duration-500 cursor-pointer block"
+                        >
+                           {artistImage ? (
+                             <Image 
+                               src={artistImage} 
+                               alt={artist} 
+                               fill 
+                               className="object-cover transition-transform duration-700 group-hover:scale-110"
+                               sizes="112px"
+                             />
+                           ) : (
+                             <div className="w-full h-full bg-gray-50 flex items-center justify-center">
+                               <User className="text-gray-300" size={32} />
+                             </div>
+                           )}
+                        </Link>
                         
-                        <div className="flex-1">
-                          <h3 className="font-serif text-2xl font-bold text-[#800000] leading-tight mb-1">
+                        <div className="flex-1 min-w-0 flex flex-col h-28 justify-center">
+                          <h3 className="font-serif text-xl font-bold text-[#800000] leading-snug mb-1.5">
                             <Link
                               href={`/artists-a-z/${generateSlug(artist)}`}
                               onClick={savePageState}
-                              className="hover:underline cursor-pointer"
+                              className="hover:underline decoration-[#800000]/30 underline-offset-4 cursor-pointer"
                             >
                               {artist}
                             </Link>
                           </h3>
                           {(dates.birth || dates.death) && (
-                            <p className="font-serif text-sm text-gray-500">
-                              ({dates.birth || '?'} - {dates.death || '?'})
+                            <p className="font-serif text-lg text-gray-500 italic mb-2">
+                              {dates.birth || '?'} - {dates.death || '?'}
                             </p>
                           )}
+                          <div>
+                            <Link 
+                                href={`/artists-a-z/${generateSlug(artist)}`}
+                                onClick={savePageState}
+                                className="inline-flex items-center text-xs font-bold tracking-wider text-[#800000] uppercase border-b border-transparent hover:border-[#800000] transition-all pb-0.5 cursor-pointer"
+                            >
+                                View full gallery
+                            </Link>
+                          </div>
                         </div>
                       </div>
                       
-                      <div className="space-y-3">
-                        <p className="font-serif text-base font-semibold text-gray-600">
-                          <span className="text-2xl font-bold text-[#800000]">{artworks.length}</span> {artworks.length === 1 ? 'Artwork' : 'Artworks'}
-                        </p>
-                        <ul className="space-y-2">
+                      <div className="border-t border-gray-100 pt-4 flex-grow flex flex-col">
+                        <ul className="space-y-2.5 mb-2">
                           {artworks.slice(0, 4).map((artwork, artIdx) => {
                             const slug = getArtworkSlug(artwork);
 
                             return (
-                              <li key={artIdx}>
+                              <li key={artIdx} className="flex items-start gap-2.5 group/item">
+                                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gray-200 group-hover/item:bg-[#800000]/60 transition-colors flex-shrink-0"></span>
                                 <Link 
                                   href={`/artworks/${slug}`}
                                   onClick={savePageState}
-                                  className="font-serif text-gray-700 text-base flex items-start gap-2 hover:text-[#800000] transition-colors leading-relaxed group cursor-pointer"
+                                  className="font-serif text-gray-600 text-[15px] leading-relaxed group-hover/item:text-[#800000] transition-colors line-clamp-1 cursor-pointer"
                                 >
-                                  <span className="text-[#800000] mt-1">•</span>
-                                  <span className="flex-1 group-hover:underline">{artwork.name}</span>
+                                  {artwork.name}
                                 </Link>
                               </li>
                             );
@@ -535,17 +613,17 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                         </ul>
 
                         {artworks.length > 4 && (
-                          <div className="mt-3 relative" onClick={(e) => e.stopPropagation()} data-menu={idx}>
+                          <div className="mt-auto pt-2 relative" onClick={(e) => e.stopPropagation()} data-menu={idx}>
                             <button
                               type="button"
                               onClick={() => toggleMenu(idx, artworks.length - 4)}
                               aria-haspopup="menu"
                               aria-expanded={openIndex === idx}
-                              className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded bg-gray-50 text-sm hover:bg-white transition-colors cursor-pointer"
+                              className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 border border-gray-200 rounded text-sm text-gray-500 hover:text-[#800000] hover:border-[#800000]/30 hover:bg-gray-50 transition-colors cursor-pointer group/btn"
                             >
-                              <span>View other artworks ({artworks.length - 4})</span>
+                              <span className="font-serif italic text-xs">View {artworks.length - 4} other artworks</span>
                               <svg
-                                className={`w-3 h-3 transition-transform ${openIndex === idx ? 'rotate-180' : ''}`}
+                                className={`w-3 h-3 transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : 'group-hover/btn:translate-y-0.5'}`}
                                 viewBox="0 0 20 20"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -556,12 +634,12 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                             </button>
 
                             {openIndex === idx && (
-                              <ul className={`absolute z-50 ${openUp ? 'bottom-full mb-2' : 'mt-2'} left-0 w-64 bg-white border border-gray-200 rounded shadow-lg overflow-hidden max-h-[56vh] md:max-h-[60vh] overflow-y-auto`}>
+                              <ul className={`absolute z-50 ${openUp ? 'bottom-full mb-2' : 'mt-2'} left-0 w-full bg-white border border-gray-200 rounded shadow-xl overflow-hidden max-h-[56vh] overflow-y-auto`}>
                                 {artworks.slice(4).map((other, oIdx) => (
-                                  <li key={oIdx} className="last:rounded-b">
+                                  <li key={oIdx} className="last:rounded-b border-b border-gray-50 last:border-0">
                                     <Link
                                       href={`/artworks/${getArtworkSlug(other)}`}
-                                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 cursor-pointer"
+                                      className="block px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-[#800000] cursor-pointer font-serif truncate"
                                       onClick={() => {
                                         savePageState();
                                         setOpenIndex(null);
