@@ -201,56 +201,9 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
     setOpenIndex(idx);
   };
 
-  const extractSurname = (fullName: string): string => {
-    let name = fullName.trim();
-    
-    // Remove honorifics
-    name = name.replace(/^(Sir|Dame|Dr|Prof|Professor)\s+/i, '');
-    
-    // Extract surname from parentheses if present (e.g., "Edmund Blair (Leighton)")
-    const parenMatch = name.match(/\(([^)]+)\)/);
-    if (parenMatch) {
-      return parenMatch[1];
-    }
-    
-    const parts = name.split(' ');
-    if (parts.length === 1) return parts[0];
-    
-    // Handle names with "De", "Van", "Del", "Von", etc.
-    const prefixes = ['van', 'de', 'del', 'von', 'da', 'di', 'le', 'la', 'den', 'der'];
-    const lowerParts = parts.map(p => p.toLowerCase());
-    
-    // Find the last name (starting from the last prefix or just the last word)
-    let surnameStartIndex = parts.length - 1;
-    for (let i = parts.length - 2; i >= 0; i--) {
-      if (prefixes.includes(lowerParts[i])) {
-        surnameStartIndex = i;
-      } else {
-        break;
-      }
-    }
-    
-    return parts.slice(surnameStartIndex).join(' ');
-  };
-
   const uniqueArtists = useMemo(() => {
-    // Get unique artists and sort alphabetically by surname (Aa, Ab, Ac, Ad, Ae... Ba, Bb, Bc...)
-    const seenArtists = new Set<string>();
-    const orderedArtists: string[] = [];
-    
-    ARTWORKS.forEach(item => {
-      if (!seenArtists.has(item.artist)) {
-        seenArtists.add(item.artist);
-        orderedArtists.push(item.artist);
-      }
-    });
-    
-    // Sort alphabetically by surname
-    return orderedArtists.sort((a, b) => {
-      const surnameA = extractSurname(a);
-      const surnameB = extractSurname(b);
-      return surnameA.localeCompare(surnameB, 'en', { sensitivity: 'base' });
-    });
+    const artists = ARTWORKS.map(item => item.artist);
+    return Array.from(new Set(artists)).sort();
   }, []);
 
   const letterCounts = useMemo(() => {
