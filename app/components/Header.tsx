@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Search, ShoppingBag, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCart } from "../context/CartContext";
@@ -13,8 +14,16 @@ const THEME_RED = "#800000";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const router = useRouter();
 
   const { count } = useCart();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
 
   const NAV_ITEMS = [
     { label: "Artists A-Z", href: "/artists-a-z" },
@@ -86,21 +95,27 @@ export default function Header() {
         <div className="flex-1 flex flex-col w-full justify-end">
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 relative w-full">
             <div className="flex-1 w-full relative z-20">
-              <div
-                className={`flex items-center border rounded-sm overflow-hidden bg-white w-full`}
-                style={{ borderColor: THEME_RED }}
-              >
-                <input
-                  type="text"
-                  placeholder="Search For Paintings"
-                  className="w-full px-4 py-2 sm:py-3 outline-none text-base placeholder-gray-400 font-serif"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-                <button className="p-3 hover:bg-gray-100 transition-colors cursor-pointer">
-                  <Search size={22} className="text-black" />
-                </button>
-              </div>
+              <form onSubmit={handleSearch}>
+                <div
+                  className={`flex items-center border rounded-sm overflow-hidden bg-white w-full`}
+                  style={{ borderColor: THEME_RED }}
+                >
+                  <input
+                    type="text"
+                    placeholder="Search For Paintings"
+                    className="w-full px-4 py-2 sm:py-3 outline-none text-base placeholder-gray-400 font-serif text-black"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    style={{ color: '#000000' }}
+                  />
+                  <button 
+                    type="submit"
+                    className="p-3 hover:bg-gray-100 transition-colors cursor-pointer"
+                  >
+                    <Search size={22} className="text-black" />
+                  </button>
+                </div>
+              </form>
             </div>
 
             <div className="flex-shrink-0 flex items-center gap-6 self-center h-full pb-1">

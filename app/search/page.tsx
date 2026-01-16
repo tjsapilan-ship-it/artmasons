@@ -1,0 +1,239 @@
+"use client";
+
+import { useState, useEffect, useMemo } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+import { ARTWORKS } from "@/data/artworks";
+import { Search, Loader2 } from "lucide-react";
+import Breadcrumbs from "../components/Breadcrumbs";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
+const THEME_RED = "#800000";
+
+export default function SearchPage() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const query = searchParams.get("q") || "";
+  const [searchQuery, setSearchQuery] = useState(query);
+  const [isSearching, setIsSearching] = useState(false);
+
+  useEffect(() => {
+    setSearchQuery(query);
+  }, [query]);
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      setIsSearching(true);
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
+
+  // Reset loading state when query changes
+  useEffect(() => {
+    setIsSearching(false);
+  }, [searchParams]);
+
+  const searchResults = useMemo(() => {
+    if (!query.trim()) return [];
+
+    const lowercaseQuery = query.toLowerCase();
+
+    return ARTWORKS.filter((artwork) => {
+      const matchesName = artwork.name.toLowerCase().includes(lowercaseQuery);
+      const matchesArtist = artwork.artist.toLowerCase().includes(lowercaseQuery);
+      const matchesYear = artwork.year.includes(lowercaseQuery);
+
+      return matchesName || matchesArtist || matchesYear;
+    });
+  }, [query]);
+
+  return (
+    <main className={`${playfair.variable} bg-art-texture min-h-screen text-black font-serif relative`}>
+      {/* Linen Canvas Background Pattern */}
+      <style jsx global>{`
+        .bg-art-texture {
+          background-color: #fdfbf7;
+          background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23800000' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+      `}</style>
+      
+      <div className="container mx-auto px-4 py-12 max-w-7xl relative z-10">
+        
+        {/* Breadcrumbs */}
+        <div className="mb-8">
+          <Breadcrumbs
+            items={[
+              { label: "Search Results", href: "/search" },
+            ]}
+          />
+        </div>
+
+        {/* Header Section */}
+        <div className="mb-12 text-center">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white border border-[#800000]/10 shadow-sm">
+              <Search className="text-[#800000]" size={24} />
+            </div>
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#800000]">
+              Search Results
+            </h1>
+          </div>
+          <p className="font-serif text-lg text-gray-600 max-w-3xl mx-auto">
+            Explore our collection of hand-painted masterpieces
+          </p>
+        </div>
+
+        {/* Search Bar Container */}
+        <div className="mb-8 bg-white/90 shadow-sm p-6 rounded-lg backdrop-blur-sm border border-[#800000]/10 max-w-4xl mx-auto">
+             <form onSubmit={handleSearch} className="relative">
+              <input
+                type="text"
+                placeholder="Search by artist, title, or year..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-6 pr-14 py-4 bg-white border border-gray-200 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-[#800000]/20 focus:border-[#800000] transition-all font-serif text-lg"
+              />
+              <button 
+                type="submit"
+                className="absolute right-2 top-1/2 -translate-y-1/2 p-2.5 bg-[#800000] text-white rounded-full hover:bg-[#600000] transition-colors"
+                disabled={isSearching}
+              >
+                {isSearching ? <Loader2 size={20} className="animate-spin" /> : <Search size={20} />}
+              </button>
+            </form>
+        </div>
+
+        {query && (
+          <div className="mb-6">
+            <p className="font-serif text-xl text-gray-700">
+              {searchResults.length > 0 ? (
+                <>
+                  Found <span className="font-bold text-[#800000] text-2xl">{searchResults.length}</span>{" "}
+                  {searchResults.length === 1 ? "result" : "results"} for "
+                  <span className="font-italic text-gray-600">{query}</span>"
+                </>
+              ) : (
+                <>
+                  No results found for "
+                  <span className="font-bold text-[#800000]">{query}</span>"
+                </>
+              )}
+            </p>
+          </div>
+        )}
+
+        {!query && (
+          <div className="text-center py-12 bg-white/50 rounded-xl border border-[#800000]/5">
+            <p className="text-xl text-gray-500 font-serif">
+              Enter a search term to find artworks by name, artist, or year
+            </p>
+          </div>
+        )}
+
+        {searchResults.length > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {searchResults.map((artwork) => {
+                // Calculate pricing
+                const hasOptions = Array.isArray(artwork.options) && artwork.options.length > 0;
+                const minPrice = hasOptions
+                  ? Math.min(...(artwork.options?.map(o => o.price) || [artwork.price]))
+                  : artwork.price;
+                const priceLabel = hasOptions ? "Starts from" : "Original Size";
+                const currency = artwork.currency || "AED";
+                
+                return (
+                  <div
+                    key={artwork.slug}
+                    className="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group hover:border-[#800000]/20 border border-transparent"
+                  >
+                    <Link href={`/artworks/${artwork.slug}`} className="block cursor-pointer">
+                      <div className="relative bg-gray-50 aspect-[3/4] overflow-hidden">
+                        <Image
+                          src={artwork.image}
+                          alt={artwork.name}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-700"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                        />
+                      </div>
+                    </Link>
+
+                    <div className="p-5">
+                      <Link href={`/artworks/${artwork.slug}`}>
+                        <h3 className="font-serif text-base font-bold text-[#800000] mb-1.5 line-clamp-2 leading-snug min-h-[2.8rem] hover:underline cursor-pointer">
+                          {artwork.name}
+                        </h3>
+                      </Link>
+
+                      <p className="font-serif text-sm text-gray-500 mb-1.5">
+                        {artwork.year}
+                      </p>
+
+                      <p className="font-serif text-sm text-[#4A5568] mb-3 font-medium line-clamp-1">
+                        {artwork.artist}
+                      </p>
+
+                      <div className="flex gap-0.5 mb-4 justify-start">
+                        {[...Array(5)].map((_, i) => (
+                          <svg key={i} className="w-4 h-4 fill-orange-400" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                          </svg>
+                        ))}
+                      </div>
+
+                      <div className="grid grid-cols-2 gap-2.5 mb-4">
+                        <div className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center group-hover:border-[#800000] group-hover:bg-gray-50 transition-all">
+                          <div className="font-serif text-xs text-gray-600 mb-1">{priceLabel}</div>
+                          <div className="font-bold text-[#800000] text-sm">
+                            {currency} {minPrice.toLocaleString()}
+                          </div>
+                        </div>
+                        <Link 
+                          href={`/artworks/${artwork.slug}`}
+                          className="flex items-center justify-center bg-[#800000] text-white rounded-md px-3 py-2.5 text-sm font-bold hover:bg-[#600000] transition-colors text-center"
+                        >
+                          View Details
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {query && searchResults.length === 0 && (
+            <div className="text-center py-16 bg-white/80 rounded-lg shadow-sm border border-gray-100">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gray-50 mb-6">
+                <Search size={40} className="text-gray-300" />
+              </div>
+              <h2 className="text-2xl font-serif text-gray-800 mb-3">
+                No Results Found
+              </h2>
+              <p className="text-gray-500 mb-8 max-w-md mx-auto">
+                We couldn't find any artworks matching your search. Try checking for typos or use broader keywords.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/artists-a-z"
+                  className="px-8 py-3 bg-[#800000] text-white font-serif rounded-full hover:bg-[#600000] transition-colors shadow-sm hover:shadow-md"
+                >
+                  Browse Artists A-Z
+                </Link>
+                <Link
+                  href="/top-100"
+                  className="px-8 py-3 bg-white border border-[#800000] text-[#800000] font-serif rounded-full hover:bg-gray-50 transition-colors"
+                >
+                  View Top 100
+                </Link>
+              </div>
+            </div>
+          )}
+      </div>
+    </main>
+  );
+}

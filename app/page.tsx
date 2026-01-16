@@ -210,8 +210,8 @@ export default function ArtMasonsLanding() {
   const [famousAutoPlay, setFamousAutoPlay] = useState(true);
 
   // --- CALCULATOR STATES ---
-  const [origW, setOrigW] = useState<number | ''>(90);
-  const [origH, setOrigH] = useState<number | ''>(60);
+  const [origW, setOrigW] = useState<number | ''>('');
+  const [origH, setOrigH] = useState<number | ''>('');
   const [knownDim, setKnownDim] = useState<'width' | 'height'>('width');
   const [newKnown, setNewKnown] = useState<number | ''>('');
 
