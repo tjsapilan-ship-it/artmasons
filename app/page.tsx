@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useSyncExternalStore, useCallback } from "react";
+import React, { useState, useEffect, useSyncExternalStore, useCallback, useMemo } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Playfair_Display } from "next/font/google";
@@ -10,8 +10,10 @@ import PopularArtCarousel from "./components/PopularArtCarousel";
 import {
   ChevronLeft,
   ChevronRight,
+  Shuffle,
+  User,
 } from "lucide-react";
-import { ARTWORKS, getArtworkSlug } from "../data/artworks";
+import { ARTWORKS, getArtworkSlug, generateSlug } from "../data/artworks";
 import { FAMOUS_ART, TOP_100_PAINTINGS, getFamousArtworkSlug } from "../data/famousAndTop100";
 
 function shuffle<T>(arr: T[]) {
@@ -208,12 +210,42 @@ export default function ArtMasonsLanding() {
   const [currentFactIndex, setCurrentFactIndex] = useState(0);
   const [testimonialIndex, setTestimonialIndex] = useState(0);
   const [famousAutoPlay, setFamousAutoPlay] = useState(true);
+  const [galleryView, setGalleryView] = useState<'discover' | 'artistAZ'>('discover');
 
   // --- CALCULATOR STATES ---
   const [origW, setOrigW] = useState<number | ''>('');
   const [origH, setOrigH] = useState<number | ''>('');
   const [knownDim, setKnownDim] = useState<'width' | 'height'>('width');
   const [newKnown, setNewKnown] = useState<number | ''>('');
+
+  // Gallery data
+  const uniqueArtists = useMemo(() => {
+    const artists = ARTWORKS.map(item => item.artist);
+    return Array.from(new Set(artists)).sort((a, b) => a.localeCompare(b));
+  }, []);
+
+  const getArtistLetter = (artistName: string): string => {
+    const artwork = ARTWORKS.find(item => item.artist === artistName);
+    return artwork?.letter || 'A';
+  };
+
+  const getArtistDates = (artistName: string): { birth?: number; death?: number } => {
+    const artwork = ARTWORKS.find(item => item.artist === artistName);
+    if (!artwork?.artistLifespan) return {};
+    
+    const parts = artwork.artistLifespan.split('-');
+    if (parts.length === 2) {
+      return { 
+        birth: parseInt(parts[0]) || undefined, 
+        death: parseInt(parts[1]) || undefined 
+      };
+    }
+    return {};
+  };
+
+  const getArtworksByArtist = (artist: string) => {
+    return ARTWORKS.filter(item => item.artist === artist);
+  };
 
   const computedOtherDim = React.useMemo<number | ''>(() => {
     if (typeof origW !== 'number' || typeof origH !== 'number') return '';
@@ -229,6 +261,12 @@ export default function ArtMasonsLanding() {
     () => true,
     () => false,
   );
+
+  // Shuffled artworks for discover gallery
+  const shuffledArtworks = useMemo(() => {
+    if (!isClient) return ARTWORKS;
+    return shuffle(ARTWORKS);
+  }, [isClient]);
 
   const top100Order = React.useMemo(() => {
     const indices = Array.from({ length: TOP_100_ARTS.length }, (_, i) => i);
@@ -350,28 +388,9 @@ export default function ArtMasonsLanding() {
 
       <PageTransition>
         {/* --- HERO SECTION --- */}
-        <section className="flex flex-col md:flex-row w-full min-h-[600px] border-b border-gray-200 md:pr-8 lg:pr-16">
-          <div className="w-full order-2 md:order-1 md:w-1/3 bg-white p-8 md:py-12 md:pl-12 md:pr-1 flex flex-col justify-center items-center">
-            <div className="w-full max-w-[330px] flex flex-col items-center md:items-start mx-auto">
-              <div className="mb-8 text-center md:text-left w-full">
-                <h2 className="font-serif text-2xl md:text-3xl font-bold leading-tight mb-2 md:ml-4">
-                  ART MASONS
-                </h2>
-                <h3 className="font-serif text-xl md:text-2xl text-[#800000]">
-                  SEAL OF ASSURANCE
-                </h3>
-              </div>
-
-              <ul className="space-y-4 font-serif text-lg text-gray-800 text-center md:text-left w-full">
-                {ASSURANCE_POINTS.map((point, index) => (
-                  <li key={index}>{point}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="w-full order-1 md:order-2 md:w-2/3 relative bg-gray-50 group overflow-hidden h-[55vh] min-h-[400px] md:h-auto">
-            {/* IMAGE CONTAINER */}
+        <section className="flex flex-col w-full min-h-[600px] border-b border-gray-200 relative bg-gray-50">
+          {/* IMAGE CONTAINER - Full Width */}
+          <div className="w-full h-[600px] md:h-[700px] relative group overflow-hidden">
             <div className="absolute inset-0">
               <AnimatePresence>
                 <motion.div
@@ -393,30 +412,37 @@ export default function ArtMasonsLanding() {
               </AnimatePresence>
             </div>
 
-            <div className="absolute bottom-0 w-full bg-white py-4 text-center z-20 border-t border-gray-200">
-              <div className="flex items-center justify-center gap-3">
-                <span className="font-serif text-xs uppercase tracking-[0.2em] block text-[#800000] mb-1">
-                  FAMOUS ART
-                </span>
-              </div>
+            {/* Centered Title and Button */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-30 pointer-events-none">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentArtIndex}
-                  initial={{ opacity: 0, y: 5 }}
+                  initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -5 }}
-                  transition={{ duration: 0.3 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-center mb-8"
                 >
-                  <h2 className="font-serif text-2xl text-black">
+                  <h2 className="font-serif text-3xl md:text-5xl text-white font-bold drop-shadow-2xl mb-2">
                     {currentArt?.title ?? ""}
                   </h2>
-                  <p className="font-serif text-sm text-gray-600 mt-1">
+                  <p className="font-serif text-xl md:text-2xl text-white drop-shadow-xl">
                     {currentArt?.artist ?? ""}
                   </p>
                 </motion.div>
               </AnimatePresence>
+
+              <Link
+                href={isClient && currentArt.slug ? `/artworks/${currentArt.slug}` : "#"}
+                onClick={(e) => { e.stopPropagation(); }}
+                aria-label="Buy now"
+                className="pointer-events-auto inline-flex items-center justify-center bg-[#800000] text-white w-28 h-28 md:w-32 md:h-32 rounded-full font-bold uppercase tracking-wider shadow-2xl hover:bg-[#9a0000] hover:scale-110 transition-all duration-300 text-base md:text-lg"
+              >
+                BUY NOW
+              </Link>
             </div>
 
+            {/* Navigation Arrows */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -424,9 +450,9 @@ export default function ArtMasonsLanding() {
                 goPrevArt();
               }}
               aria-label="Previous art"
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-40 p-2 bg-white/70 rounded-full hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-40 p-3 bg-white/80 rounded-full hover:bg-white shadow-lg disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
             >
-              <ChevronLeft size={28} />
+              <ChevronLeft size={32} />
             </button>
 
             <button
@@ -436,35 +462,211 @@ export default function ArtMasonsLanding() {
                 goNextArt();
               }}
               aria-label="Next art"
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-40 p-2 bg-white/70 rounded-full hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-40 p-3 bg-white/80 rounded-full hover:bg-white shadow-lg disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
             >
-              <ChevronRight size={28} />
+              <ChevronRight size={32} />
             </button>
 
-            <Link
-              href={isClient && currentArt.slug ? `/artworks/${currentArt.slug}` : "#"}
-              className="absolute inset-0 z-30 cursor-pointer"
-            >
-              <div className="w-full h-full flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="text-center text-white p-6 border-2 border-white">
-                  <p className="font-serif text-3xl italic mb-2">
-                    {isClient ? currentArt.title : ""}
-                  </p>
-                  <p className="font-serif text-xs uppercase tracking-widest">
-                    Click to View Details
-                  </p>
+            {/* Famous Art Badge */}
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 bg-white/90 backdrop-blur-sm px-6 py-2 rounded-full shadow-lg">
+              <span className="font-serif text-sm uppercase tracking-[0.2em] text-[#800000] font-bold">
+                FAMOUS ART
+              </span>
+            </div>
+          </div>
+
+          {/* Art Masons Seal - Below Image */}
+          <div className="w-full bg-white py-12 px-8">
+            <div className="container mx-auto max-w-6xl">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div className="text-center md:text-left">
+                  <h2 className="font-serif text-2xl md:text-3xl font-bold leading-tight mb-2">
+                    ART MASONS
+                  </h2>
+                  <h3 className="font-serif text-xl md:text-2xl text-[#800000] font-bold">
+                    SEAL OF ASSURANCE
+                  </h3>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-6">
+                  {ASSURANCE_POINTS.map((point, index) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-[#800000] rounded-full"></div>
+                      <span className="font-serif text-base md:text-lg text-gray-800">{point}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </Link>
+            </div>
+          </div>
+        </section>
 
-            <Link
-              href={isClient && currentArt.slug ? `/artworks/${currentArt.slug}` : "#"}
-              onClick={(e) => { e.stopPropagation(); }}
-              aria-label="Buy now"
-              className="absolute z-50 inline-flex items-center justify-center bg-[#800000] text-white w-20 h-20 md:w-24 md:h-24 rounded-full font-bold uppercase tracking-wider shadow-lg hover:bg-[#9a0000] transition-all duration-300 text-xs md:text-sm bottom-23 left-1/2 -translate-x-1/2 md:bottom-[105px] transform scale-100"
-            >
-              BUY NOW
-            </Link>
+        {/* --- GALLERY SECTION --- */}
+        <section className="bg-gradient-to-b from-white to-gray-50 py-16 border-b border-gray-200">
+          <div className="container mx-auto px-4 max-w-7xl">
+            {/* Title and Toggle */}
+            <div className="flex flex-col items-center justify-center mb-12">
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-center mb-8 text-[#800000]">
+                {galleryView === 'discover' ? 'Discover Gallery' : 'Artist Gallery A-Z'}
+              </h2>
+              
+              {/* Toggle Button */}
+              <div className="flex items-center gap-4 bg-white p-2 rounded-full shadow-lg border-2 border-[#800000]">
+                <button
+                  onClick={() => setGalleryView('discover')}
+                  className={`px-6 py-3 rounded-full font-serif font-bold transition-all duration-300 flex items-center gap-2 ${
+                    galleryView === 'discover'
+                      ? 'bg-[#800000] text-white shadow-md'
+                      : 'bg-transparent text-gray-700 hover:text-[#800000]'
+                  }`}
+                >
+                  <Shuffle size={20} />
+                  Discover Gallery
+                </button>
+                <button
+                  onClick={() => setGalleryView('artistAZ')}
+                  className={`px-6 py-3 rounded-full font-serif font-bold transition-all duration-300 flex items-center gap-2 ${
+                    galleryView === 'artistAZ'
+                      ? 'bg-[#800000] text-white shadow-md'
+                      : 'bg-transparent text-gray-700 hover:text-[#800000]'
+                  }`}
+                >
+                  <User size={20} />
+                  Artist Gallery A-Z
+                </button>
+              </div>
+            </div>
+
+            {/* Gallery Content */}
+            {galleryView === 'discover' ? (
+              /* Discover Gallery - Random Order */
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                {shuffledArtworks.slice(0, 20).map((artwork, idx) => {
+                  const slug = getArtworkSlug(artwork);
+                  return (
+                    <Link
+                      key={idx}
+                      href={`/artworks/${slug}`}
+                      className="group bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-[#800000] flex flex-col"
+                    >
+                      <div className="relative w-full pt-[100%] overflow-hidden bg-gray-100">
+                        <Image
+                          src={artwork.image}
+                          alt={artwork.name}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-4 flex-grow flex flex-col justify-between">
+                        <div>
+                          <h3 className="font-serif text-base font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#800000] transition-colors">
+                            {artwork.name}
+                          </h3>
+                          <p className="font-serif text-sm text-gray-600 mb-1">{artwork.artist}</p>
+                          <p className="font-serif text-xs text-gray-500">{artwork.year}</p>
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            ) : (
+              /* Artist Gallery A-Z - Chronological Order */
+              <div className="space-y-8">
+                {uniqueArtists.slice(0, 10).map((artist, idx) => {
+                  const artworks = getArtworksByArtist(artist);
+                  const dates = getArtistDates(artist);
+                  
+                  return (
+                    <div key={idx} className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow">
+                      <div className="flex items-center gap-4 mb-6 border-b border-gray-200 pb-4">
+                        <div className="flex-shrink-0 w-16 h-16 bg-[#800000] rounded-full flex items-center justify-center shadow-lg">
+                          <User className="text-white" size={32} />
+                        </div>
+                        <div>
+                          <h3 className="font-serif text-2xl md:text-3xl font-bold text-[#800000]">
+                            <Link
+                              href={`/artists-a-z/${generateSlug(artist)}`}
+                              className="hover:underline"
+                            >
+                              {artist}
+                            </Link>
+                          </h3>
+                          {(dates.birth || dates.death) && (
+                            <p className="font-serif text-sm text-gray-600">
+                              ({dates.birth || '?'} - {dates.death || '?'})
+                            </p>
+                          )}
+                          <p className="font-serif text-base text-gray-700 mt-1">
+                            <span className="font-bold text-[#800000]">{artworks.length}</span> {artworks.length === 1 ? 'Artwork' : 'Artworks'}
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+                        {artworks.slice(0, 6).map((artwork, artIdx) => {
+                          const slug = getArtworkSlug(artwork);
+                          return (
+                            <Link
+                              key={artIdx}
+                              href={`/artworks/${slug}`}
+                              className="group bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200 hover:border-[#800000] flex flex-col"
+                            >
+                              <div className="relative w-full pt-[100%] overflow-hidden bg-gray-100">
+                                <Image
+                                  src={artwork.image}
+                                  alt={artwork.name}
+                                  fill
+                                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                />
+                              </div>
+                              <div className="p-3">
+                                <h4 className="font-serif text-xs font-bold text-gray-900 line-clamp-2 group-hover:text-[#800000] transition-colors">
+                                  {artwork.name}
+                                </h4>
+                                <p className="font-serif text-xs text-gray-500 mt-1">{artwork.year}</p>
+                              </div>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                      
+                      {artworks.length > 6 && (
+                        <div className="mt-4 text-center">
+                          <Link
+                            href={`/artists-a-z/${generateSlug(artist)}`}
+                            className="inline-block px-6 py-2 bg-[#800000] text-white font-serif font-bold rounded-full hover:bg-[#9a0000] transition-colors shadow-md"
+                          >
+                            View all {artworks.length} artworks
+                          </Link>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+                
+                <div className="text-center mt-8">
+                  <Link
+                    href="/artists-a-z"
+                    className="inline-block px-8 py-4 bg-[#800000] text-white font-serif font-bold text-lg rounded-full hover:bg-[#9a0000] transition-colors shadow-xl"
+                  >
+                    View All Artists A-Z
+                  </Link>
+                </div>
+              </div>
+            )}
+
+            {/* View More Button for Discover Gallery */}
+            {galleryView === 'discover' && (
+              <div className="text-center mt-12">
+                <Link
+                  href="/search"
+                  className="inline-block px-8 py-4 bg-[#800000] text-white font-serif font-bold text-lg rounded-full hover:bg-[#9a0000] transition-colors shadow-xl"
+                >
+                  Explore Full Collection
+                </Link>
+              </div>
+            )}
           </div>
         </section>
 
