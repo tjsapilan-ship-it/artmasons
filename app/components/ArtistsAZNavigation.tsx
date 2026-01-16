@@ -68,10 +68,10 @@ export default function ArtistsAZNavigation() {
         <div className="mt-6 flex justify-center border-t border-gray-100 pt-6">
           <Link
             href="/artists-a-z?view=gallery"
-            className="group relative flex items-center justify-center gap-3 px-8 py-3.5 rounded-full transition-all duration-300 font-serif text-lg font-bold bg-white text-gray-700 border-2 border-gray-100 hover:border-[#800000] hover:text-[#800000] hover:shadow-lg hover:-translate-y-0.5"
+            className="group relative flex items-center justify-center gap-3 px-8 py-3.5 rounded-full transition-all duration-300 font-serif text-lg font-bold !bg-[#800000] !text-white border-2 !border-[#800000] hover:!bg-[#600000] hover:!border-[#600000] hover:shadow-lg hover:-translate-y-0.5"
           >
             <Grid size={22} className="transition-transform duration-300 group-hover:scale-110" />
-            <span>View All Gallery</span>
+            <span>Discover Gallery</span>
           </Link>
         </div>
       </div>
