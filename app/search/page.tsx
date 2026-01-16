@@ -5,7 +5,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { ARTWORKS } from "@/data/artworks";
-import { Search, Loader2 } from "lucide-react";
+import { Search, Loader2, ChevronLeft, ChevronRight } from "lucide-react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { Playfair_Display } from "next/font/google";
 
@@ -18,6 +18,8 @@ export default function SearchPage() {
   const query = searchParams.get("q") || "";
   const [searchQuery, setSearchQuery] = useState(query);
   const [isSearching, setIsSearching] = useState(false);
+  const ITEMS_PER_PAGE = 24;
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     setSearchQuery(query);
@@ -34,6 +36,7 @@ export default function SearchPage() {
   // Reset loading state when query changes
   useEffect(() => {
     setIsSearching(false);
+    setCurrentPage(1);
   }, [searchParams]);
 
   const searchResults = useMemo(() => {
@@ -49,6 +52,17 @@ export default function SearchPage() {
       return matchesName || matchesArtist || matchesYear;
     });
   }, [query]);
+
+  const totalPages = Math.ceil(searchResults.length / ITEMS_PER_PAGE);
+  const currentResults = searchResults.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <main className={`${playfair.variable} bg-art-texture min-h-screen text-black font-serif relative`}>
@@ -134,8 +148,9 @@ export default function SearchPage() {
         )}
 
         {searchResults.length > 0 && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {searchResults.map((artwork) => {
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
+              {currentResults.map((artwork) => {
                 // Calculate pricing
                 const hasOptions = Array.isArray(artwork.options) && artwork.options.length > 0;
                 const minPrice = hasOptions
@@ -203,7 +218,67 @@ export default function SearchPage() {
                 );
               })}
             </div>
-          )}
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center gap-2 mt-12 pb-8">
+                <button
+                  onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
+                  disabled={currentPage === 1}
+                  className="p-2 border border-[#800000]/20 rounded-full hover:bg-[#800000] hover:text-white disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-inherit transition-colors text-[#800000]"
+                  aria-label="Previous page"
+                >
+                  <ChevronLeft size={20} />
+                </button>
+
+                <div className="hidden sm:flex items-center gap-1">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
+                    // Show first, last, current, and adjacent pages
+                    if (
+                      page === 1 ||
+                      page === totalPages ||
+                      (page >= currentPage - 1 && page <= currentPage + 1)
+                    ) {
+                      return (
+                        <button
+                          key={page}
+                          onClick={() => handlePageChange(page)}
+                          className={`w-10 h-10 rounded-full font-serif text-sm transition-colors ${
+                            currentPage === page
+                              ? "bg-[#800000] text-white font-bold"
+                              : "hover:bg-[#800000]/10 text-gray-600"
+                          }`}
+                        >
+                          {page}
+                        </button>
+                      );
+                    } else if (
+                      (page === currentPage - 2 && page > 1) ||
+                      (page === currentPage + 2 && page < totalPages)
+                    ) {
+                      return <span key={page} className="text-gray-400 font-serif px-1">...</span>;
+                    }
+                    return null;
+                  })}
+                </div>
+
+                {/* Mobile page indicator */}
+                <span className="sm:hidden font-serif text-sm text-gray-600">
+                  Page {currentPage} of {totalPages}
+                </span>
+
+                <button
+                  onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
+                  disabled={currentPage === totalPages}
+                  className="p-2 border border-[#800000]/20 rounded-full hover:bg-[#800000] hover:text-white disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-inherit transition-colors text-[#800000]"
+                  aria-label="Next page"
+                >
+                  <ChevronRight size={20} />
+                </button>
+              </div>
+            )}
+          </>
+        )}
 
           {query && searchResults.length === 0 && (
             <div className="text-center py-16 bg-white/80 rounded-lg shadow-sm border border-gray-100">
