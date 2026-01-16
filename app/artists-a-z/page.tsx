@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Playfair_Display } from 'next/font/google';
@@ -58,9 +58,8 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
   const [selectedLetter, setSelectedLetter] = useState<string>('A');
   const [showAllGallery, setShowAllGallery] = useState<boolean>(true);
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [openUp, setOpenUp] = useState(false);
-  const resultsRef = useRef<HTMLDivElement | null>(null);
+
+
   const [urlParams, setUrlParams] = useState<{ view?: string } | null>(null);
 
   useEffect(() => {
@@ -136,16 +135,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
     } catch { }
   }, [selectedLetter]);
 
-  useEffect(() => {
-    const handler = (ev: MouseEvent) => {
-      const target = ev.target as Node | null;
-      if (resultsRef.current && target && !resultsRef.current.contains(target)) {
-        setOpenIndex(null);
-      }
-    };
-    document.addEventListener('mousedown', handler);
-    return () => document.removeEventListener('mousedown', handler);
-  }, []);
+
 
   const selectLetter = (letter: string) => {
     setSelectedLetter(letter);
@@ -178,29 +168,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
     } catch { }
   };
 
-  const toggleMenu = (idx: number, extraCount: number) => {
-    if (openIndex === idx) {
-      setOpenIndex(null);
-      return;
-    }
-    const container = resultsRef.current;
-    const button = container?.querySelector(`[data-menu="${idx}"] button`) as HTMLElement | null;
-    let shouldOpenUp = false;
-    if (button && typeof window !== 'undefined') {
-      const rect = button.getBoundingClientRect();
-      const viewportH = window.innerHeight;
-      const estimatedItemH = 40;
-      const items = Math.max(0, extraCount);
-      const estimatedHeight = Math.min(viewportH * 0.6, items * estimatedItemH);
-      const spaceBelow = viewportH - rect.bottom;
-      const spaceAbove = rect.top;
-      if (spaceBelow < Math.min(160, estimatedHeight) && spaceAbove > spaceBelow) {
-        shouldOpenUp = true;
-      }
-    }
-    setOpenUp(shouldOpenUp);
-    setOpenIndex(idx);
-  };
+
 
   const uniqueArtists = useMemo(() => {
     const artists = ARTWORKS.map(item => item.artist);
@@ -521,7 +489,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                 </h2>
               </div>
               
-              <div ref={resultsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredArtists.map((artist, idx) => {
                   const artworks = getArtworksByArtist(artist);
                   const dates = getArtistDates(artist);
@@ -542,9 +510,9 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                   return (
                     <div 
                       key={idx} 
-                      className="group bg-white border border-gray-100 rounded-xl p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] hover:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1)] transition-all duration-300 hover:border-[#800000]/20 flex flex-col"
+                      className="group bg-white border border-gray-100 rounded-xl p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] hover:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1)] transition-all duration-300 hover:border-[#800000]/20"
                     >
-                      <div className="flex items-start gap-5 mb-5">
+                      <div className="flex items-center gap-5">
                         <Link
                            href={`/artists-a-z/${generateSlug(artist)}`} 
                            onClick={savePageState}
@@ -565,7 +533,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                            )}
                         </Link>
                         
-                        <div className="flex-1 min-w-0 flex flex-col h-28 justify-center">
+                        <div className="flex-1 min-w-0 flex flex-col justify-center">
                           <h3 className="font-serif text-xl font-bold text-[#800000] leading-snug mb-1.5">
                             <Link
                               href={`/artists-a-z/${generateSlug(artist)}`}
@@ -590,69 +558,6 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                             </Link>
                           </div>
                         </div>
-                      </div>
-                      
-                      <div className="border-t border-gray-100 pt-4 flex-grow flex flex-col">
-                        <ul className="space-y-2.5 mb-2">
-                          {artworks.slice(0, 4).map((artwork, artIdx) => {
-                            const slug = getArtworkSlug(artwork);
-
-                            return (
-                              <li key={artIdx} className="flex items-start gap-2.5 group/item">
-                                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gray-200 group-hover/item:bg-[#800000]/60 transition-colors flex-shrink-0"></span>
-                                <Link 
-                                  href={`/artworks/${slug}`}
-                                  onClick={savePageState}
-                                  className="font-serif text-gray-600 text-[15px] leading-relaxed group-hover/item:text-[#800000] transition-colors line-clamp-1 cursor-pointer"
-                                >
-                                  {artwork.name}
-                                </Link>
-                              </li>
-                            );
-                          })}
-                        </ul>
-
-                        {artworks.length > 4 && (
-                          <div className="mt-auto pt-2 relative" onClick={(e) => e.stopPropagation()} data-menu={idx}>
-                            <button
-                              type="button"
-                              onClick={() => toggleMenu(idx, artworks.length - 4)}
-                              aria-haspopup="menu"
-                              aria-expanded={openIndex === idx}
-                              className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 border border-gray-200 rounded text-sm text-gray-500 hover:text-[#800000] hover:border-[#800000]/30 hover:bg-gray-50 transition-colors cursor-pointer group/btn"
-                            >
-                              <span className="font-serif italic text-xs">View {artworks.length - 4} other artworks</span>
-                              <svg
-                                className={`w-3 h-3 transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : 'group-hover/btn:translate-y-0.5'}`}
-                                viewBox="0 0 20 20"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden
-                              >
-                                <path d="M5 8l5 5 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                              </svg>
-                            </button>
-
-                            {openIndex === idx && (
-                              <ul className={`absolute z-50 ${openUp ? 'bottom-full mb-2' : 'mt-2'} left-0 w-full bg-white border border-gray-200 rounded shadow-xl overflow-hidden max-h-[56vh] overflow-y-auto`}>
-                                {artworks.slice(4).map((other, oIdx) => (
-                                  <li key={oIdx} className="last:rounded-b border-b border-gray-50 last:border-0">
-                                    <Link
-                                      href={`/artworks/${getArtworkSlug(other)}`}
-                                      className="block px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-[#800000] cursor-pointer font-serif truncate"
-                                      onClick={() => {
-                                        savePageState();
-                                        setOpenIndex(null);
-                                      }}
-                                    >
-                                      {other.name}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </div>
-                        )}
                       </div>
                     </div>
                   );
