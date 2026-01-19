@@ -26,12 +26,12 @@ export default function OurQualityPage() {
           <Breadcrumbs items={[{ label: 'Our Quality', href: '/our-quality' }]} />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16 items-center">
-          <div>
+        <div className="grid md:grid-cols-2 gap-12 mb-16 items-start">
+          <div className="flex flex-col h-full">
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-[#800000]">Our Quality</h1>
             
             {/* Introduction */}
-            <section className="bg-white/60 p-8 rounded-lg border border-[#800000]/10 backdrop-blur-sm">
+            <section className="bg-white/60 p-8 rounded-lg border border-[#800000]/10 backdrop-blur-sm font-serif flex-grow">
               <h2 className="font-serif text-3xl font-bold mb-6 text-[#800000]">Museum-Quality Excellence</h2>
               <p className="text-lg mb-4">
                 At ART MASONS, we are committed to delivering nothing less than museum-quality oil painting reproductions. Each piece is meticulously hand-painted by our master artists, ensuring that every brushstroke captures the essence and beauty of the original masterpiece.
@@ -40,10 +40,11 @@ export default function OurQualityPage() {
                 Our dedication to quality means using only the finest materials and employing time-honored techniques that have been perfected over centuries. When you choose ART MASONS, you&apos;re not just buying a painting—you&apos;re investing in a work of art.
               </p>
             </section>
+            <h2 className="font-serif text-3xl italic mt-8 text-[#800000] text-center">Hand-Painted. Curated. Enduring</h2>
           </div>
 
           {/* Hero Banner - Portrait Video */}
-          <div className="relative w-full max-w-sm mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white">
+          <div className="relative w-full max-w-sm mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white mt-auto">
             <video 
               src="/video/video_2.mp4" 
               className="w-full h-auto block"
@@ -99,7 +100,7 @@ export default function OurQualityPage() {
               <div className="flex items-start gap-4 p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-lg border-2 border-[#800000]">
                 <CheckCircle className="text-[#800000] flex-shrink-0 mt-1" size={24} />
                 <div>
-                  <h3 className="font-bold text-xl mb-2">Quality Control</h3>
+                  <h3 className="font-bold text-xl mb-2">Original Accuracy</h3>
                   <p>Each painting undergoes rigorous quality inspection before shipping to ensure it meets our exacting standards.</p>
                 </div>
               </div>
@@ -225,29 +226,16 @@ export default function OurQualityPage() {
                   1
                 </div>
                 <h3 className="font-bold text-xl mb-3">Linen Canvas</h3>
-                <p>100% pure Belgian linen, known for its superior texture and durability compared to cotton canvas.</p>
+                <p>100% pure linen, known for its superior texture and durability compared to cotton canvas.</p>
               </div>
               
               <div className="text-center bg-white p-6 rounded-lg shadow-sm">
                 <div className="bg-[#800000] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg border-4 border-[#fdfbf7]">
                   2
                 </div>
-                <h3 className="font-bold text-xl mb-3">Artist-Grade Oils</h3>
+                <h3 className="font-bold text-xl mb-3">Artist-Grade Oil Paints</h3>
                 <p>Professional quality oil paints with high pigment concentration for brilliant, long-lasting color.</p>
               </div>
-            </div>
-          </section>
-
-          {/* Why Choose Us */}
-          <section className="bg-white border-2 border-[#800000] p-8 rounded-lg shadow-md">
-            <h2 className="font-serif text-3xl font-bold mb-6 text-[#800000] text-center">Why Choose ART MASONS?</h2>
-            <div className="space-y-4 text-lg">
-              <p>✓ <strong>Authenticity:</strong> Each painting is 100% hand-painted—no prints, no reproductions.</p>
-              <p>✓ <strong>Expertise:</strong> Our artists have years of training in classical painting techniques.</p>
-              <p>✓ <strong>Premium Materials:</strong> We use only the finest linen, oils, and frames available.</p>
-              <p>✓ <strong>Time & Care:</strong> We never rush. Each painting receives the time it needs to be perfect.</p>
-              <p>✓ <strong>Museum Quality:</strong> Our standards match those of the world&apos;s finest art institutions.</p>
-              <p>✓ <strong>Guaranteed Satisfaction:</strong> We stand behind our work with confidence.</p>
             </div>
           </section>
 
