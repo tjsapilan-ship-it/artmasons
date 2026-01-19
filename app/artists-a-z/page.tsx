@@ -510,53 +510,53 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                   return (
                     <div 
                       key={idx} 
-                      className="group bg-white border border-gray-100 rounded-xl p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] hover:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1)] transition-all duration-300 hover:border-[#800000]/20"
+                      className="group relative h-80 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300"
                     >
-                      <div className="flex items-center gap-5">
-                        <Link
-                           href={`/artists-a-z/${generateSlug(artist)}`} 
-                           onClick={savePageState}
-                           className="flex-shrink-0 w-28 h-28 relative overflow-hidden rounded-lg shadow-md border border-gray-100 bg-gray-50 group-hover:shadow-lg transition-all duration-500 cursor-pointer block"
-                        >
-                           {artistImage ? (
-                             <Image 
-                               src={artistImage} 
-                               alt={artist} 
-                               fill 
-                               className="object-cover transition-transform duration-700 group-hover:scale-110"
-                               sizes="112px"
-                             />
-                           ) : (
-                             <div className="w-full h-full bg-gray-50 flex items-center justify-center">
-                               <User className="text-gray-300" size={32} />
-                             </div>
-                           )}
-                        </Link>
-                        
-                        <div className="flex-1 min-w-0 flex flex-col justify-center">
-                          <h3 className="font-serif text-xl font-bold text-[#800000] leading-snug mb-1.5">
-                            <Link
+                      <Link 
+                        href={`/artists-a-z/${generateSlug(artist)}`} 
+                        onClick={savePageState}
+                        className="absolute inset-0 z-0 block w-full h-full cursor-pointer"
+                      >
+                         {artistImage ? (
+                           <Image 
+                             src={artistImage} 
+                             alt={artist} 
+                             fill 
+                             className="object-cover transition-transform duration-700 group-hover:scale-110"
+                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                           />
+                         ) : (
+                           <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                             <User className="text-gray-400" size={48} />
+                           </div>
+                         )}
+                         {/* Overlay for text readability */}
+                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+                      </Link>
+                      
+                      <div className="absolute bottom-0 left-0 right-0 p-6 z-10 pointer-events-none">
+                        <h3 className="font-serif text-2xl font-bold text-white leading-snug mb-2 drop-shadow-md">
+                          <Link
+                            href={`/artists-a-z/${generateSlug(artist)}`}
+                            onClick={savePageState}
+                            className="pointer-events-auto cursor-pointer"
+                          >
+                            {artist}
+                          </Link>
+                        </h3>
+                        {(dates.birth || dates.death) && (
+                          <p className="font-serif text-lg text-white/90 italic mb-4 drop-shadow-sm">
+                            {dates.birth || '?'} - {dates.death || '?'}
+                          </p>
+                        )}
+                        <div>
+                          <Link 
                               href={`/artists-a-z/${generateSlug(artist)}`}
                               onClick={savePageState}
-                              className="hover:underline decoration-[#800000]/30 underline-offset-4 cursor-pointer"
-                            >
-                              {artist}
-                            </Link>
-                          </h3>
-                          {(dates.birth || dates.death) && (
-                            <p className="font-serif text-lg text-gray-500 italic mb-2">
-                              {dates.birth || '?'} - {dates.death || '?'}
-                            </p>
-                          )}
-                          <div>
-                            <Link 
-                                href={`/artists-a-z/${generateSlug(artist)}`}
-                                onClick={savePageState}
-                                className="inline-flex items-center text-xs font-bold tracking-wider text-[#800000] uppercase border-b border-transparent hover:border-[#800000] transition-all pb-0.5 cursor-pointer"
-                            >
-                                View full gallery
-                            </Link>
-                          </div>
+                              className="inline-flex items-center text-xs font-bold tracking-wider text-white uppercase border-b border-white/50 hover:border-white transition-all pb-0.5 pointer-events-auto cursor-pointer"
+                          >
+                              View full gallery
+                          </Link>
                         </div>
                       </div>
                     </div>
