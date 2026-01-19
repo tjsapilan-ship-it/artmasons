@@ -169,8 +169,9 @@ export default function CartPage() {
             </div>
 
             {/* Order Summary - Right Column */}
-            <div className="lg:col-span-1 space-y-6">
-              <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm sticky top-6">
+            <div className="lg:col-span-1">
+              <div className="space-y-6 sticky top-6">
+              <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
                 <h2 className="font-serif text-2xl font-bold mb-6 text-gray-800">Order Summary</h2>
 
                 {/* Promo Code */}
@@ -280,6 +281,7 @@ export default function CartPage() {
                     <span>Worldwide secure shipping</span>
                   </li>
                 </ul>
+              </div>
               </div>
             </div>
           </div>

@@ -429,46 +429,20 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                     Previous
                   </button>
 
-                  <div className="flex gap-1 flex-wrap justify-center">
-                    {(() => {
-                      const pages = [];
-                      const maxVisiblePages = 5;
-
-                      if (totalPages <= maxVisiblePages) {
-                        for (let i = 1; i <= totalPages; i++) pages.push(i);
-                      } else {
-                        if (currentPage <= 3) {
-                          pages.push(1, 2, 3, 4, '...', totalPages);
-                        } else if (currentPage >= totalPages - 2) {
-                          pages.push(1, '...', totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
-                        } else {
-                          pages.push(1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
-                        }
-                      }
-
-                      return pages.map((page, index) => {
-                        if (page === '...')
-                          return (
-                            <span key={`ellipsis-${index}`} className="px-2 py-2 text-gray-500 font-serif">
-                              ...
-                            </span>
-                          );
-
-                        return (
-                          <button
-                            key={page}
-                            onClick={() => handlePageChange(page as number)}
-                            className={`w-10 h-10 rounded border font-serif font-bold transition-all ${
-                              currentPage === page
-                                ? 'bg-[#800000] text-white border-[#800000]'
-                                : 'bg-white text-gray-700 border-gray-300 hover:border-[#800000] hover:text-[#800000]'
-                            }`}
-                          >
-                            {page}
-                          </button>
-                        );
-                      });
-                    })()}
+                  <div className="flex flex-1 overflow-x-auto gap-2 px-2 max-w-[80vw] md:max-w-[500px] pb-2">
+                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                      <button
+                        key={page}
+                        onClick={() => handlePageChange(page)}
+                        className={`flex-shrink-0 w-10 h-10 rounded border font-serif font-bold transition-all ${
+                          currentPage === page
+                            ? 'bg-[#800000] text-white border-[#800000]'
+                            : 'bg-white text-gray-700 border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                        }`}
+                      >
+                        {page}
+                      </button>
+                    ))}
                   </div>
 
                   <button
@@ -510,12 +484,12 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                   return (
                     <div 
                       key={idx} 
-                      className="group relative h-80 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300"
+                      className="group flex flex-col h-full rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 bg-white border border-gray-100"
                     >
                       <Link 
                         href={`/artists-a-z/${generateSlug(artist)}`} 
                         onClick={savePageState}
-                        className="absolute inset-0 z-0 block w-full h-full cursor-pointer"
+                        className="relative block w-full aspect-[4/3] overflow-hidden cursor-pointer bg-gray-100"
                       >
                          {artistImage ? (
                            <Image 
@@ -526,34 +500,34 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                            />
                          ) : (
-                           <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                             <User className="text-gray-400" size={48} />
+                           <div className="w-full h-full flex items-center justify-center text-gray-400">
+                             <User size={48} />
                            </div>
                          )}
-                         {/* Overlay for text readability */}
-                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
                       </Link>
                       
-                      <div className="absolute bottom-0 left-0 right-0 p-6 z-10 pointer-events-none">
-                        <h3 className="font-serif text-2xl font-bold text-white leading-snug mb-2 drop-shadow-md">
-                          <Link
-                            href={`/artists-a-z/${generateSlug(artist)}`}
-                            onClick={savePageState}
-                            className="pointer-events-auto cursor-pointer"
-                          >
-                            {artist}
-                          </Link>
-                        </h3>
-                        {(dates.birth || dates.death) && (
-                          <p className="font-serif text-lg text-white/90 italic mb-4 drop-shadow-sm">
-                            {dates.birth || '?'} - {dates.death || '?'}
-                          </p>
-                        )}
+                      <div className="flex-1 p-2 flex flex-col">
+                        <div>
+                          <h3 className="font-serif text-lg font-bold text-[#800000] leading-snug mb-0.5">
+                            <Link
+                              href={`/artists-a-z/${generateSlug(artist)}`}
+                              onClick={savePageState}
+                              className="hover:text-[#600000] transition-colors"
+                            >
+                              {artist}
+                            </Link>
+                          </h3>
+                          {(dates.birth || dates.death) && (
+                            <p className="font-serif text-sm text-gray-500 italic mb-1.5">
+                              {dates.birth || '?'} - {dates.death || '?'}
+                            </p>
+                          )}
+                        </div>
                         <div>
                           <Link 
                               href={`/artists-a-z/${generateSlug(artist)}`}
                               onClick={savePageState}
-                              className="inline-flex items-center text-xs font-bold tracking-wider text-white uppercase border-b border-white/50 hover:border-white transition-all pb-0.5 pointer-events-auto cursor-pointer"
+                              className="inline-flex items-center text-xs font-bold tracking-wider text-[#800000] uppercase border-b border-[#800000]/20 hover:border-[#800000] transition-all pb-0.5"
                           >
                               View full gallery
                           </Link>
