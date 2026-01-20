@@ -47,7 +47,7 @@ export default function FrameSizeArtPage() {
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <p className="text-xl mb-8 leading-relaxed text-gray-800">
-                  Don&apos;t guess. Use our <Link href="/resize-art-tool" className="text-[#800000] hover:underline font-bold decoration-2 underline-offset-4">Resize Art Tool</Link> to preserve proportions without distortion.
+                  Don&apos;t guess. Use our <Link href="/#resize-tool" className="text-[#800000] hover:underline font-bold decoration-2 underline-offset-4">Art Resize Tool</Link> to preserve proportions without distortion.
                 </p>
 
                 <div className="space-y-6">

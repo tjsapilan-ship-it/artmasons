@@ -879,7 +879,7 @@ export default function ArtMasonsLanding() {
           <div className="w-full md:w-1/2 flex flex-col">
             <div className="flex items-center justify-center gap-4 mb-6">
                <div className="h-px bg-[#800000] flex-grow"></div>
-               <h3 className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
+               <h3 id="resize-tool" className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
                  ART RESIZE TOOL
                </h3>
                <div className="h-px bg-[#800000] flex-grow"></div>
