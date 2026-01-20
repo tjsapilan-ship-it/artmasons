@@ -1500,7 +1500,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Jeremiah Lamenting The Destruction Of Jerusalem",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1630",
     originalDimensions: "58 x 46",
     sellingDimensions: "58 x 46",
@@ -1512,7 +1512,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Prophetess Anna (Known As Rembrandt's Mother)",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1631",
     originalDimensions: "60 x 48",
     sellingDimensions: "69 x 48",
@@ -1524,7 +1524,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Simeon In Temple",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1631",
     originalDimensions: "61 x 49",
     sellingDimensions: "61 x 49",
@@ -1536,7 +1536,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "An Old Military Costume (Man With A Plume)",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1630",
     originalDimensions: "67.5 x 51.8",
     sellingDimensions: "67.5 x 51.8",
@@ -1548,7 +1548,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Man In Oriental Costume (The Noble Slav)",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1632",
     originalDimensions: "152.7 x 111.1",
     sellingDimensions: "152.7 x 111.1",
@@ -1560,7 +1560,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Anatomy Lecture Of Dr Nicolas Tulp",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1632",
     originalDimensions: "169.5 x 216",
     sellingDimensions: "169.5 x 216",
@@ -1572,7 +1572,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Storm On The Sea Of Galilee",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1633",
     originalDimensions: "161.7 x 129.8",
     sellingDimensions: "161.7 x 129.8",
@@ -1590,7 +1590,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Holy Family",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1630",
     originalDimensions: "183.5 x 123",
     sellingDimensions: "183.5 x 123",
@@ -1602,7 +1602,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Christ And Saint Mary Magdelene At The Tomb",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1638",
     originalDimensions: "61 x 49.5",
     sellingDimensions: "61 x 49.5",
@@ -1614,7 +1614,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Danae",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1636",
     originalDimensions: "185 x 203",
     sellingDimensions: "185 x 203",
@@ -1626,7 +1626,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Rape Of Ganymede",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1635",
     originalDimensions: "177 x 129",
     sellingDimensions: "177 x 129",
@@ -1638,7 +1638,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Blinding Of Samson",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1636",
     originalDimensions: "206 x 276",
     sellingDimensions: "206 x 276",
@@ -1650,7 +1650,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Bleshazzar's Feast",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1635",
     originalDimensions: "167.6 x 209.2",
     sellingDimensions: "167.6 x 209.2",
@@ -1662,7 +1662,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Arcangel Leaving The House Of Tobias",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1637",
     originalDimensions: "66 x 52",
     sellingDimensions: "66 x 52",
@@ -1674,7 +1674,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Dead Peacocks",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1639",
     originalDimensions: "145 x 135.5",
     sellingDimensions: "145 x 135.5",
@@ -1686,7 +1686,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Self Portrait Age 34",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1640",
     originalDimensions: "102 x 80",
     sellingDimensions: "102 x 80",
@@ -1698,7 +1698,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Portrait Of Agatha Bas",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1641",
     originalDimensions: "105.2 x 83.9",
     sellingDimensions: "105.2 x 83.9",
@@ -1710,7 +1710,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Night Watch",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1642",
     originalDimensions: "363 x 437",
     sellingDimensions: "363 x 437",
@@ -1722,7 +1722,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Christ And The Women Taken In Adultery",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1644",
     originalDimensions: "83.8 x 65.4",
     sellingDimensions: "83.8 x 65.4",
@@ -1734,7 +1734,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Suzanne In The Bath",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1647",
     originalDimensions: "76.6 x 92.7",
     sellingDimensions: "76.6 x 92.7",
@@ -1746,7 +1746,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Aristotle With A Bust Of Homer",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1653",
     originalDimensions: "143.5 x 136.5",
     sellingDimensions: "143.5 x 136.5",
@@ -1758,7 +1758,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "A Woman Bathing In The Stream",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1654",
     originalDimensions: "61.8 x 47",
     sellingDimensions: "61.8 x 47",
@@ -1770,7 +1770,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Bathsheba At Her Bath",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1654",
     originalDimensions: "142 x 142",
     sellingDimensions: "142 x 142",
@@ -1782,7 +1782,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Hendrickje Stoffels In The Window",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1656",
     originalDimensions: "88.5 x 67",
     sellingDimensions: "88.5 x 67",
@@ -1794,7 +1794,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Jacob Blessing The Children Of Joseph",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1656",
     originalDimensions: "175.5 x 210.5",
     sellingDimensions: "175.5 x 210.5",
@@ -1806,7 +1806,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Self Portrait",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1658",
     originalDimensions: "133.6 x 103.8",
     sellingDimensions: "133.6 x 103.8",
@@ -1818,7 +1818,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Jewish Bride",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1669",
     originalDimensions: "121.5 x 166.5",
     sellingDimensions: "121.5 x 166.5",
@@ -1830,7 +1830,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Return Of The Prodigal Son",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1668",
     originalDimensions: "262 x 202",
     sellingDimensions: "262 x 202",
@@ -1842,7 +1842,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Flora",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1634",
     originalDimensions: "125 x 101",
     sellingDimensions: "125 x 101",
@@ -1854,7 +1854,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Old Woman Praying (Rembrandt's Mother)",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1629",
     originalDimensions: "15.5 x 12.2",
     sellingDimensions: "15.5 x 12.2",
@@ -1866,7 +1866,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Old Man Praying",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1661",
     originalDimensions: "87.3 x 72",
     sellingDimensions: "87.3 x 72",
@@ -1878,7 +1878,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Good Samaritan",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1630",
     originalDimensions: "25.4 x 20.3",
     sellingDimensions: "25.4 x 20.3",
@@ -1890,7 +1890,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Twelve Year Old Jesus In Front Of The Scribes",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1655",
     originalDimensions: "97.5 x 129",
     sellingDimensions: "97.5 x 129",
@@ -1902,7 +1902,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "An Old Woman (Rembrandt's Mother)",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1629",
     originalDimensions: "61.3 x 47.3",
     sellingDimensions: "61.3 x 47.3",
@@ -1914,7 +1914,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "The Sacrifice Of Abraham",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1635",
     originalDimensions: "193 x 132",
     sellingDimensions: "193 x 132",
@@ -1938,7 +1938,7 @@ export const ARTWORKS_NZ: Artwork[] = [
   },
   {
     name: "Holy Family",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1645",
     originalDimensions: "117 x 91",
     sellingDimensions: "117 x 91",
@@ -2268,7 +2268,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the burning of the houses of parliament.jpg",
     artistLifespan: "1775-1851",
     slug: "the-burning-of-the-houses-of-parliament",
-    letter: "R"
+    letter: "T"
   },
   {
     name: "The Shipwreck",
@@ -2280,7 +2280,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the shipwreck.jpg",
     artistLifespan: "1775-1851",
     slug: "the-shipwreck",
-    letter: "R"
+    letter: "T"
   },
   {
     name: "Interior Of Salisbury Cathedral",
@@ -2292,7 +2292,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/interior of salisbury cathedral.jpg",
     artistLifespan: "1775-1851",
     slug: "interior-of-salisbury-cathedral",
-    letter: "R"
+    letter: "T"
   },
   {
     name: "Ivy Bridge Devonshire",
@@ -2304,7 +2304,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/ivy bridge devonshire.jpg",
     artistLifespan: "1775-1851",
     slug: "ivy-bridge-devonshire",
-    letter: "R"
+    letter: "T"
   },
 
   // Letter S

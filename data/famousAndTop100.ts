@@ -1277,7 +1277,7 @@ export const FAMOUS_ART: FamousArtwork[] = [
 
   {
     title: "The Blinding Of Samson",
-    artist: "Rembrandt Von Rijn",
+    artist: "Rembrandt Van Rijn",
     year: "1636",
     originalSize: "206 x 276 cm",
     artistLife: "1606-1669",

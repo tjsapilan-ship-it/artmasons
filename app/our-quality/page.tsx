@@ -40,7 +40,7 @@ export default function OurQualityPage() {
                 Our dedication to quality means using only the finest materials and employing time-honored techniques that have been perfected over centuries. When you choose ART MASONS, you&apos;re not just buying a painting—you&apos;re investing in a work of art.
               </p>
             </section>
-            <h2 className="font-serif text-3xl italic mt-8 text-[#800000] text-center">Hand-Painted. Curated. Enduring</h2>
+            <h2 className="font-serif text-3xl font-bold italic mt-8 text-[#800000] text-center">Hand-Painted. Curated. Enduring</h2>
           </div>
 
           {/* Hero Banner - Portrait Video */}
@@ -101,7 +101,7 @@ export default function OurQualityPage() {
                 <CheckCircle className="text-[#800000] flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h3 className="font-bold text-xl mb-2">Original Accuracy</h3>
-                  <p>Each painting undergoes rigorous quality inspection before shipping to ensure it meets our exacting standards.</p>
+                  <p>Each painting is 100% original proportional, colour and image accurate.</p>
                 </div>
               </div>
               
@@ -109,7 +109,7 @@ export default function OurQualityPage() {
                 <CheckCircle className="text-[#800000] flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h3 className="font-bold text-xl mb-2">Proper Drying Time</h3>
-                  <p>We allow 8-10 weeks for paintings to properly dry and cure, ensuring longevity and preventing cracking.</p>
+                  <p>Painting takes approximately 7 weeks plus 1 week to properly dry and cure ensuring longevity and preventing cracking or smudging of paint brushstrokes.</p>
                 </div>
               </div>
             </div>
@@ -217,27 +217,7 @@ export default function OurQualityPage() {
             </div>
           </section>
 
-          {/* Materials & Techniques */}
-          <section>
-            <h2 className="font-serif text-3xl font-bold mb-8 text-[#800000]">Premium Materials</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="text-center bg-white p-6 rounded-lg shadow-sm">
-                <div className="bg-[#800000] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg border-4 border-[#fdfbf7]">
-                  1
-                </div>
-                <h3 className="font-bold text-xl mb-3">Linen Canvas</h3>
-                <p>100% pure linen, known for its superior texture and durability compared to cotton canvas.</p>
-              </div>
-              
-              <div className="text-center bg-white p-6 rounded-lg shadow-sm">
-                <div className="bg-[#800000] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg border-4 border-[#fdfbf7]">
-                  2
-                </div>
-                <h3 className="font-bold text-xl mb-3">Artist-Grade Oil Paints</h3>
-                <p>Professional quality oil paints with high pigment concentration for brilliant, long-lasting color.</p>
-              </div>
-            </div>
-          </section>
+          {/* Premium Materials section removed per request */}
 
           {/* Call to Action */}
           <section className="text-center py-12">

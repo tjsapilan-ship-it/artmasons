@@ -167,7 +167,7 @@ export const ARTIST_RECOMMENDED_IMAGES: Record<string, string> = {
   "Vittorio Reggianini": "The Flirtation",
   "Jean Baptiste Regnault": "Death Of Cleopatra",
   "Robert Reid": "Fleur De Lis",
-  "Rembrandt Von Rijn": "The Blinding Of Samson",
+  "Rembrandt Van Rijn": "The Blinding Of Samson",
   "Diego Rivera": "The Flower Vendor (Girl With Lilies)",
   "Pierre-Auguste Renoir": "The Skiff (La Yole)",
   "Sir Joshua Reynolds": "Portrait Of Lady Skipwith",
