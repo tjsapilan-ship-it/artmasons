@@ -955,8 +955,6 @@ export default function ArtMasonsLanding() {
                       <span className="text-base font-medium text-black group-hover:text-[#800000] transition-colors">New Height</span>
                    </label>
 
-                   <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shadow-sm">OR</span>
-
                    <label className="flex items-center gap-2 cursor-pointer group">
                       <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${knownDim === 'width' ? 'border-[#800000]' : 'border-gray-400'}`}>
                         {knownDim === 'width' && <div className="w-2.5 h-2.5 rounded-full bg-[#800000]" />}
