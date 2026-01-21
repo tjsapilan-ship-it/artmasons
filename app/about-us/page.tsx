@@ -2,11 +2,68 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Playfair_Display } from 'next/font/google';
 import { Heart, Palette, Users, Sparkles, CheckCircle } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
+import AboutUsGallery from '../components/AboutUsGallery';
+import ArtStyleQuiz from '../components/ArtStyleQuiz';
+import BlurCarousel from '../components/BlurCarousel';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
+
+const CAPTURING_LIGHT_IMAGES = [
+  { src: "/image/about-us/image_9.png", alt: "Art Masons Light Detail 1" },
+  { src: "/image/about-us/image_10.jpg", alt: "Art Masons Light Detail 2" },
+  { src: "/image/about-us/image_11.png", alt: "Art Masons Light Detail 3" },
+  { src: "/image/about-us/image_12.png", alt: "Art Masons Light Detail 4" },
+  { src: "/image/about-us/image_13.png", alt: "Art Masons Light Detail 5" },
+  { src: "/image/about-us/image_14.png", alt: "Art Masons Light Detail 6" },
+  { src: "/image/about-us/image_15.png", alt: "Art Masons Light Detail 7" },
+  { src: "/image/about-us/image_16.png", alt: "Art Masons Light Detail 8" },
+];
+
+const SCALE_WITHOUT_LIMITS_IMAGES = [
+  { src: "/image/about-us/image_17.png", alt: "Art Masons Scale Example 1" },
+  { src: "/image/about-us/image_18.png", alt: "Art Masons Scale Example 2" },
+  { src: "/image/about-us/image_19.png", alt: "Art Masons Scale Example 3" },
+  { src: "/image/about-us/image_20.png", alt: "Art Masons Scale Example 4" },
+  { src: "/image/about-us/image_21.jpg", alt: "Art Masons Scale Example 5" },
+];
+
+const NEW_STANDARD_IMAGES = [
+  { src: "/image/about-us/image_22.png", alt: "Art Masons Access Example 1" },
+  { src: "/image/about-us/image_23.png", alt: "Art Masons Access Example 2" },
+  { src: "/image/about-us/image_24.png", alt: "Art Masons Access Example 3" },
+  { src: "/image/about-us/image_25.png", alt: "Art Masons Access Example 4" },
+];
+
+const B2B_IMAGES = [
+  { src: "/image/about-us/image_26.png", alt: "Art Masons Commercial Project 1" },
+  { src: "/image/about-us/image_27.png", alt: "Art Masons Commercial Project 2" },
+  { src: "/image/about-us/image_28.png", alt: "Art Masons Commercial Project 3" },
+  { src: "/image/about-us/image_29.png", alt: "Art Masons Commercial Project 4" },
+  { src: "/image/about-us/image_30.png", alt: "Art Masons Commercial Project 5" },
+  { src: "/image/about-us/image_31.png", alt: "Art Masons Commercial Project 6" },
+  { src: "/image/about-us/image_32.png", alt: "Art Masons Commercial Project 7" },
+];
+
+const COMMITMENT_IMAGES = [
+  { src: "/image/about-us/image_33.png", alt: "Art Masons Commitment Detail 1" },
+  { src: "/image/about-us/image_34.png", alt: "Art Masons Commitment Detail 2" },
+  { src: "/image/about-us/image_35.png", alt: "Art Masons Commitment Detail 3" },
+  { src: "/image/about-us/image_36.png", alt: "Art Masons Commitment Detail 4" },
+];
+
+const AFTER_QUIZ_IMAGES = [
+  { src: "/image/about-us/image_37.png", alt: "Art Masons Gallery Detail 1" },
+  { src: "/image/about-us/image_38.png", alt: "Art Masons Gallery Detail 2" },
+  { src: "/image/about-us/image_39.png", alt: "Art Masons Gallery Detail 3" },
+  { src: "/image/about-us/image_40.png", alt: "Art Masons Gallery Detail 4" },
+  { src: "/image/about-us/image_41.png", alt: "Art Masons Gallery Detail 5" },
+  { src: "/image/about-us/image_42.png", alt: "Art Masons Gallery Detail 6" },
+  { src: "/image/about-us/image_43.png", alt: "Art Masons Gallery Detail 7" },
+];
 
 export default function AboutUsPage() {
 
@@ -26,56 +83,124 @@ export default function AboutUsPage() {
           <Breadcrumbs items={[{ label: 'About Us', href: '/about-us' }]} />
         </div>
 
-        <h1 className="font-serif text-4xl md:text-5xl font-bold mb-12 text-[#800000]">About Us</h1>
+        <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-[#800000]">Art Masons</h1>
+        <p className="text-2xl md:text-3xl font-serif mb-12 text-gray-700">Museum Grade Quality. Hand-Painted to Fit Your Space.</p>
 
         <div className="font-serif space-y-16 text-gray-700 leading-relaxed">
           
-          {/* Our Philosophy */}
-          <section className="bg-white/60 p-6 rounded-lg backdrop-blur-sm border border-2 border-[#800000]">
-            <div className="flex items-center gap-3 mb-6">
-              <Heart className="text-[#800000]" size={32} />
-              <h2 className="font-serif text-3xl font-bold text-[#800000]">Our Philosophy</h2>
+          {/* Our Philosophy & Gallery Combined */}
+          <section className="bg-white/60 p-6 md:p-8 rounded-lg backdrop-blur-sm border border-2 border-[#800000]">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Text Content */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <Heart className="text-[#800000]" size={32} />
+                  <h2 className="font-serif text-3xl font-bold text-[#800000]">Our Philosophy</h2>
+                </div>
+                
+                <p className="text-lg">
+                  The world's greatest masterpieces shouldn't be trapped behind velvet ropes or pixelated on cheap paper. Art Masons was founded by a collective of classically trained artists and art historians who grew tired of the flat print culture. We believe that if you love a masterpiece, you deserve to own the <em>soul</em> of it: the texture of the oil paint, the original colour accuracy, the high quality grain of the linen canvas, and the physical weight of the brushstroke.
+                </p>
+              </div>
+
+              {/* Stack Gallery */}
+              <div className="w-full flex justify-center md:justify-end">
+                <AboutUsGallery />
+              </div>
             </div>
-            
-            <div className="space-y-6">
-              <p className="text-lg">
-                At ART MASONS, we believe that art is not merely decoration—it is a profound expression of human culture, emotion, and history. Each brushstroke carries meaning, each composition tells a story, and each masterpiece reflects the genius of its creator.
-              </p>
-              
-              <p className="text-lg">
-                Our philosophy is rooted in three fundamental principles that guide everything we do:
-              </p>
+          </section>
 
-              <div className="grid md:grid-cols-3 gap-8 mt-8">
-                <div className="bg-white shadow-sm p-6 rounded-lg hover:shadow-md transition-shadow border-2 border-[#800000]">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Palette className="text-[#800000]" size={28} />
-                    <h3 className="font-serif text-xl font-bold text-gray-800">Authenticity</h3>
-                  </div>
-                  <p className="text-base">
-                    We commit to creating reproductions that honor the original masterpieces with unwavering fidelity. Every painting is meticulously hand-painted by master artists who understand the techniques, materials, and vision of the original creators.
+          {/* Educated Mastery */}
+          <section className="bg-white shadow-sm p-8 rounded-lg border-t-4 border-[#800000]">
+            <h2 className="font-serif text-3xl font-bold mb-6 text-[#800000]">Educated Mastery</h2>
+            <p className="text-lg mb-8">
+              Every Art Masons art piece is hand-painted by artists who have spent years studying the specific chemistry and techniques of the masters. We don't just copy; we deeply understand how Vermeer or Monet captured light and how Van Gogh layered emotion. Our artists speak the language of the greats.
+            </p>
+            <div className="relative w-full rounded-lg overflow-hidden border border-[#800000]/10 shadow-md">
+              <Image
+                src="/image/about-us/image_8.png"
+                alt="Art Masons Artist at Work"
+                width={1200}
+                height={800}
+                className="w-full h-auto hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 768px) 100vw, 80vw"
+              />
+            </div>
+          </section>
+
+          {/* Capturing Light In Every Brushstroke */}
+          <section className="bg-white/60 p-6 md:p-8 rounded-lg backdrop-blur-sm border border-2 border-[#800000]">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Stack Gallery (Left on desktop for alternating layout) */}
+              <div className="w-full flex justify-center md:justify-start order-2 md:order-1">
+                <AboutUsGallery images={CAPTURING_LIGHT_IMAGES} />
+              </div>
+
+              {/* Text Content */}
+              <div className="space-y-6 order-1 md:order-2">
+                <h2 className="font-serif text-3xl font-bold text-[#800000]">Capturing Light In Every Brushstroke</h2>
+                <p className="text-lg">
+                  Digital prints are flat, but our work is three-dimensional. We use only the finest pigment oil paints and professional-grade linen canvases. The result is museum-grade quality that you can feel—art that lives, breathes, and ages with your home.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Scale Without Limits */}
+          <section className="bg-white shadow-sm p-8 rounded-lg border-t-4 border-[#800000]">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Text Content */}
+              <div className="space-y-6">
+                <h2 className="font-serif text-3xl font-bold text-[#800000]">Scale Without Limits</h2>
+                <div className="space-y-4">
+                  <p className="text-lg">
+                    <strong>Big is beautiful.</strong> If you have a grand wall, we paint the masterpiece to command it.
+                  </p>
+                  <p className="text-lg">
+                    <strong>Small is intimate.</strong> If you have a quiet corner, we scale the work for a private moment to lean in. We resize the classics to fit your architecture—ensuring the composition remains perfect and proportional to the original, regardless of the dimensions.
                   </p>
                 </div>
+              </div>
 
-                <div className="bg-white shadow-sm p-6 rounded-lg hover:shadow-md transition-shadow border-2 border-[#800000]">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Users className="text-[#800000]" size={28} />
-                    <h3 className="font-serif text-xl font-bold text-gray-800">Craftsmanship</h3>
-                  </div>
-                  <p className="text-base">
-                    We are a small, highly specialized team of artists, academically trained according to European standards. We never compromise on detail, technique, or materials. Museum-quality excellence is not just our standard—it&apos;s our promise.
-                  </p>
-                </div>
+              {/* Stack Gallery (Right) */}
+              <div className="w-full flex justify-center md:justify-end">
+                <AboutUsGallery images={SCALE_WITHOUT_LIMITS_IMAGES} />
+              </div>
+            </div>
+          </section>
 
-                <div className="bg-white shadow-sm p-6 rounded-lg hover:shadow-md transition-shadow border-2 border-[#800000]">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Sparkles className="text-[#800000]" size={28} />
-                    <h3 className="font-serif text-xl font-bold text-gray-800">Accessibility</h3>
-                  </div>
-                  <p className="text-base">
-                    Great art should not be confined to museums and private collections. We believe everyone deserves to experience the beauty and inspiration of masterpieces in their own homes, offices, and spaces.
-                  </p>
-                </div>
+          {/* The New Standard of Access */}
+          <section className="bg-white/60 p-6 md:p-8 rounded-lg backdrop-blur-sm border border-2 border-[#800000]">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Stack Gallery (Left on desktop) */}
+              <div className="w-full flex justify-center md:justify-start order-2 md:order-1">
+                <AboutUsGallery images={NEW_STANDARD_IMAGES} />
+              </div>
+
+              {/* Text Content */}
+              <div className="space-y-6 order-1 md:order-2">
+                <h2 className="font-serif text-3xl font-bold text-[#800000]">The New Standard of Access</h2>
+                <p className="text-lg">
+                  We've removed the gatekeepers to make museum-level quality affordable. We believe that living with great art is a right, not a reserved luxury. We bridge the gap between historical mastery and modern accessibility.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* B2B: The Designer's Secret Weapon */}
+          <section className="bg-white shadow-sm p-8 rounded-lg border-t-4 border-[#800000]">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Text Content */}
+              <div className="space-y-6">
+                <h2 className="font-serif text-3xl font-bold text-[#800000]">B2B: The Designer's Secret Weapon</h2>
+                <p className="text-lg">
+                  We serve as the silent partner for interior designers and architects. Whether it's a single statement piece for a residential project or a curated collection, we are delighted to assist. For luxury hotels, staging homes or new development marketing, we deliver hand-painted authenticity at the scale and accessible luxury your projects demand. Remove the mass produced appearance of printed art and benefit instead from hand painted, inspiring, museum-grade art which compliments, elevates and enriches your interiors.
+                </p>
+              </div>
+
+              {/* Stack Gallery (Right) */}
+              <div className="w-full flex justify-center md:justify-end">
+                <AboutUsGallery images={B2B_IMAGES} />
               </div>
             </div>
           </section>
@@ -143,6 +268,21 @@ export default function AboutUsPage() {
                 </div>
               </div>
             </div>
+          </section>
+
+          {/* Commitment Gallery Scroll */}
+          <section className="w-full">
+            <BlurCarousel images={COMMITMENT_IMAGES} />
+          </section>
+
+          {/* Art Style Quiz */}
+          <section className="mb-8">
+            <ArtStyleQuiz />
+          </section>
+
+          {/* After Quiz Gallery Scroll */}
+          <section className="w-full">
+            <BlurCarousel images={AFTER_QUIZ_IMAGES} />
           </section>
 
 
