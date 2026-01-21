@@ -144,9 +144,6 @@ export default function Footer() {
             <a href="#" className="block cursor-pointer">
               <Image src="/image/icons/whatsapp.png" alt="WhatsApp" width={20} height={20} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-              <Video size={18} />
-            </a>
           </div>
         </div>
       </div>

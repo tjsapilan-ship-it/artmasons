@@ -29,7 +29,7 @@ export default function Header() {
     { label: "Artists A-Z", href: "/artists-a-z" },
     { label: "Top 100 Paintings", href: "/top-100" },
     { label: "Our Quality", href: "/our-quality" },
-    { label: "Frame & Size Art", href: "/frame-size-art" },
+    { label: "Frame & Art Size", href: "/frame-size-art" },
     { label: "About Us", href: "/about-us" },
   ];
 

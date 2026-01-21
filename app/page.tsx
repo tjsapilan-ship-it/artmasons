@@ -906,11 +906,11 @@ export default function ArtMasonsLanding() {
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 2</span>
-                    <p className="text-base text-black">Measure your wall to decide how large you want the piece to be.</p>
+                    <p className="text-base text-black">Measure your wall Width to decide how large you want the art to be, allowing ideally 15cm &quot;frame and breathing space&quot; around both sides of your art.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 3</span>
-                    <p className="text-base text-black">Enter either your new Height OR Width.</p>
+                    <p className="text-base text-black">Enter your new Width – 30cm (15cm space both sides).</p>
                   </div>
                 </div>
               </div>
