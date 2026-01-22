@@ -84,17 +84,16 @@ export default function AboutUsPage() {
         </div>
 
         <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-[#800000]">Art Masons</h1>
-        <p className="text-2xl md:text-3xl font-serif mb-12 text-gray-700">Museum Grade Quality. Hand-Painted to Fit Your Space.</p>
+        <p className="text-2xl md:text-3xl font-serif mb-12 text-[#800000]">Museum Grade Quality. Hand-Painted to Fit Your Space.</p>
 
         <div className="font-serif space-y-16 text-gray-700 leading-relaxed">
           
           {/* Our Philosophy & Gallery Combined */}
           <section className="bg-white/60 p-6 md:p-8 rounded-lg backdrop-blur-sm border border-2 border-[#800000]">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="w-full">
               {/* Text Content */}
               <div className="space-y-6">
                 <div className="flex items-center gap-3 mb-2">
-                  <Heart className="text-[#800000]" size={32} />
                   <h2 className="font-serif text-3xl font-bold text-[#800000]">Our Philosophy</h2>
                 </div>
                 
@@ -103,11 +102,13 @@ export default function AboutUsPage() {
                 </p>
               </div>
 
-              {/* Stack Gallery */}
-              <div className="w-full flex justify-center md:justify-end">
+            </div>
+
+             {/* Stack Gallery */}
+             <div className="w-full mt-8">
                 <AboutUsGallery />
               </div>
-            </div>
+
           </section>
 
           {/* Educated Mastery */}
@@ -130,25 +131,25 @@ export default function AboutUsPage() {
 
           {/* Capturing Light In Every Brushstroke */}
           <section className="bg-white/60 p-6 md:p-8 rounded-lg backdrop-blur-sm border border-2 border-[#800000]">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              {/* Stack Gallery (Left on desktop for alternating layout) */}
-              <div className="w-full flex justify-center md:justify-start order-2 md:order-1">
-                <AboutUsGallery images={CAPTURING_LIGHT_IMAGES} />
-              </div>
-
+            
               {/* Text Content */}
-              <div className="space-y-6 order-1 md:order-2">
+              <div className="space-y-6">
                 <h2 className="font-serif text-3xl font-bold text-[#800000]">Capturing Light In Every Brushstroke</h2>
                 <p className="text-lg">
                   Digital prints are flat, but our work is three-dimensional. We use only the finest pigment oil paints and professional-grade linen canvases. The result is museum-grade quality that you can feel—art that lives, breathes, and ages with your home.
                 </p>
               </div>
-            </div>
+
+               {/* Stack Gallery (Below) */}
+              <div className="w-full mt-8">
+                <AboutUsGallery images={CAPTURING_LIGHT_IMAGES} />
+              </div>
+
           </section>
 
           {/* Scale Without Limits */}
           <section className="bg-white shadow-sm p-8 rounded-lg border-t-4 border-[#800000]">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            
               {/* Text Content */}
               <div className="space-y-6">
                 <h2 className="font-serif text-3xl font-bold text-[#800000]">Scale Without Limits</h2>
@@ -162,34 +163,34 @@ export default function AboutUsPage() {
                 </div>
               </div>
 
-              {/* Stack Gallery (Right) */}
-              <div className="w-full flex justify-center md:justify-end">
+               {/* Stack Gallery (Right) */}
+              <div className="w-full mt-8">
                 <AboutUsGallery images={SCALE_WITHOUT_LIMITS_IMAGES} />
               </div>
-            </div>
+            
           </section>
 
           {/* The New Standard of Access */}
           <section className="bg-white/60 p-6 md:p-8 rounded-lg backdrop-blur-sm border border-2 border-[#800000]">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              {/* Stack Gallery (Left on desktop) */}
-              <div className="w-full flex justify-center md:justify-start order-2 md:order-1">
-                <AboutUsGallery images={NEW_STANDARD_IMAGES} />
-              </div>
-
+            
               {/* Text Content */}
-              <div className="space-y-6 order-1 md:order-2">
+              <div className="space-y-6">
                 <h2 className="font-serif text-3xl font-bold text-[#800000]">The New Standard of Access</h2>
                 <p className="text-lg">
                   We've removed the gatekeepers to make museum-level quality affordable. We believe that living with great art is a right, not a reserved luxury. We bridge the gap between historical mastery and modern accessibility.
                 </p>
               </div>
-            </div>
+
+               {/* Stack Gallery (Left on desktop) */}
+              <div className="w-full mt-8">
+                <AboutUsGallery images={NEW_STANDARD_IMAGES} />
+              </div>
+            
           </section>
 
           {/* B2B: The Designer's Secret Weapon */}
           <section className="bg-white shadow-sm p-8 rounded-lg border-t-4 border-[#800000]">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            
               {/* Text Content */}
               <div className="space-y-6">
                 <h2 className="font-serif text-3xl font-bold text-[#800000]">B2B: The Designer's Secret Weapon</h2>
@@ -199,10 +200,10 @@ export default function AboutUsPage() {
               </div>
 
               {/* Stack Gallery (Right) */}
-              <div className="w-full flex justify-center md:justify-end">
+              <div className="w-full mt-8">
                 <AboutUsGallery images={B2B_IMAGES} />
               </div>
-            </div>
+            
           </section>
 
           {/* Our Story */}

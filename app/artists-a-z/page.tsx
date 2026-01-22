@@ -244,6 +244,25 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
           background-color: #fdfbf7;
           background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23800000' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
         }
+        
+        /* Custom scrollbar for pagination */
+        .custom-scrollbar::-webkit-scrollbar {
+          height: 6px;
+          background-color: rgba(0,0,0,0.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #800000;
+          border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background-color: rgba(0,0,0,0.05);
+          border-radius: 10px;
+        }
+        /* Firefox */
+        .custom-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: #800000 rgba(0,0,0,0.05);
+        }
       `}</style>
 
       <div className="container mx-auto px-4 py-12 max-w-7xl relative z-10">
@@ -429,7 +448,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                     Previous
                   </button>
 
-                  <div className="flex flex-1 overflow-x-auto gap-2 px-2 max-w-[80vw] md:max-w-[500px] pb-2">
+                  <div className="flex flex-1 overflow-x-auto gap-2 px-2 max-w-[80vw] md:max-w-[500px] pb-2 custom-scrollbar">
                     {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                       <button
                         key={page}

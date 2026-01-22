@@ -906,7 +906,7 @@ export default function ArtMasonsLanding() {
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 2</span>
-                    <p className="text-base text-black">Measure your wall Width to decide how large you want the art to be, allowing ideally 15cm &quot;frame and breathing space&quot; around both sides of your art.</p>
+                    <p className="text-base text-black">Measure your wall Width to decide how large you want the art to be, allowing ideally 15cm frame and &quot;breathing space&quot; around both sides of your art.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 3</span>
@@ -943,7 +943,7 @@ export default function ArtMasonsLanding() {
 
               <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                 <label className="text-base font-bold text-black block mb-4">
-                  Enter either the new desired Height <span className="text-[#800000] font-extrabold">OR</span> Width
+                  Enter either the new desired Height <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full mx-1">OR</span> Width
                 </label>
                 
                 <div className="flex flex-col sm:flex-row items-center gap-4 mb-4">

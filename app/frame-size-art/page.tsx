@@ -52,7 +52,7 @@ export default function FrameSizeArtPage() {
 
           <div className="text-center md:text-left mb-16">
             <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#800000] mb-6">FRAME & ART SIZE</h1>
-            <p className="font-serif text-xl text-gray-700 max-w-2xl">
+            <p className="font-serif text-xl text-gray-700 w-full">
               Ensure your masterpiece fits perfectly and arrives safely. Follow our comprehensive guide to sizing, shipping, and framing.
             </p>
           </div>
@@ -60,9 +60,6 @@ export default function FrameSizeArtPage() {
           <div className="bg-white p-8 md:p-12 rounded-xl shadow-sm border-2 border-[#800000] relative">
             
             <div className="flex items-center gap-4 mb-8 border-b border-gray-100 pb-6">
-              <div className="p-3 bg-[#800000]/5 rounded-full">
-                <Ruler className="text-[#800000]" size={36} />
-              </div>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000]">FIND THE PERFECT SIZE</h2>
             </div>
             
@@ -98,7 +95,7 @@ export default function FrameSizeArtPage() {
                       </div>
                       <div className="flex items-start gap-3">
                         <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 2</span>
-                        <p className="text-base text-black">Measure your wall Width to decide how large you want the art to be, allowing ideally 15cm &quot;frame and breathing space&quot; around both sides of your art.</p>
+                        <p className="text-base text-black">Measure your wall Width to decide how large you want the art to be, allowing ideally 15cm frame and &quot;breathing space&quot; around both sides of your art.</p>
                       </div>
                       <div className="flex items-start gap-3">
                         <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full shrink-0 mt-0.5">STEP 3</span>
@@ -135,7 +132,7 @@ export default function FrameSizeArtPage() {
     
                   <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                     <label className="text-base font-bold text-black block mb-4">
-                      Enter either the new desired Height <span className="text-[#800000] font-extrabold">OR</span> Width
+                      Enter either the new desired Height <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full mx-1">OR</span> Width
                     </label>
                     
                     <div className="flex flex-col sm:flex-row items-center gap-4 mb-4">
@@ -197,7 +194,6 @@ export default function FrameSizeArtPage() {
           
           <div className="mb-12">
              <div className="flex items-center gap-3 mb-6">
-                <Truck className="text-[#800000]" size={36} />
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000]">Shipping & Care</h2>
              </div>
              <p className="text-lg text-gray-700 font-serif leading-relaxed max-w-2xl">
@@ -208,7 +204,6 @@ export default function FrameSizeArtPage() {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="bg-white shadow-sm p-6 rounded-lg border-2 border-[#800000]">
               <div className="flex gap-4">
-                <ShieldCheck className="text-[#800000] flex-shrink-0" size={32} />
                 <div>
                     <h3 className="font-serif font-bold text-xl text-gray-900 mb-3">Pristine Arrival</h3>
                     <p className="text-base text-gray-700 leading-relaxed">Shipped rolled in protective, heavy-duty tubes along with the authenticity certificate — the gold standard for fine art handling.</p>
@@ -217,7 +212,6 @@ export default function FrameSizeArtPage() {
             </div>
             <div className="bg-white shadow-sm p-6 rounded-lg border-2 border-[#800000]">
               <div className="flex gap-4">
-                 <Palette className="text-[#800000] flex-shrink-0" size={32} />
                 <div>
                      <h3 className="font-serif font-bold text-xl text-gray-900 mb-3">Safe & Flexible</h3>
                      <p className="text-base text-gray-700 leading-relaxed">Shipping unframed eliminates the risk of glass breakage or frame damage in transit, giving you full control over the final look.</p>
@@ -246,7 +240,6 @@ export default function FrameSizeArtPage() {
          <div className="container mx-auto max-w-6xl px-4">
              <div className="mb-12">
                 <div className="flex items-center gap-3 mb-6">
-                  <Palette size={36} className="text-[#800000]" />
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000]">Choose Your Style</h2>
                 </div>
                 <p className="text-lg text-gray-700 font-serif leading-relaxed max-w-2xl">
@@ -302,16 +295,17 @@ export default function FrameSizeArtPage() {
          <div className="container mx-auto max-w-6xl px-4">
             
             <div className="flex items-center gap-3 mb-10">
-               <Hammer className="text-[#800000]" size={36} />
                <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000]">The Process</h2>
             </div>
             
-            <div className="grid md:grid-cols-4 gap-6 mb-16">
+            <div className="grid md:grid-cols-3 gap-6 mb-16">
                {[
-                   { step: 1, title: "Delivery", desc: "We ship directly to your framer of choice." },
-                   { step: 2, title: "Consult", desc: "Select materials with your local expert." },
-                   { step: 3, title: "Install", desc: "They stretch and fit your canvas professionally." },
-                   { step: 4, title: "Hang", desc: "Enjoy your masterpiece in your home." }
+                   { step: 1, title: "Order", desc: "Select your artwork and choose a standard or custom size online." },
+                   { step: 2, title: "Creation", desc: "Your artwork is hand-painted by our academically trained artists. Production takes approximately 8 weeks, including proper drying time." },
+                   { step: 3, title: "Delivery", desc: "Once complete, we ship your artwork directly to your framer of choice for a seamless transition. Estimated delivery time: 1 week." },
+                   { step: 4, title: "Consult", desc: "Work with your framer to select materials that best complement your interior and artwork." },
+                   { step: 5, title: "Install", desc: "Your framer professionally stretches and frames the canvas to museum standards." },
+                   { step: 6, title: "Hang & Enjoy", desc: "Install your masterpiece and enjoy art created exclusively for your space." }
                ].map((item) => (
                    <div key={item.step} className="p-6 rounded-lg bg-white shadow-sm border-2 border-[#800000]">
                        <div className="w-10 h-10 bg-[#800000] text-white rounded-full flex items-center justify-center font-bold text-lg mb-4">
@@ -328,20 +322,20 @@ export default function FrameSizeArtPage() {
                 <div className="grid md:grid-cols-2">
                     <div className="p-10 md:p-12 flex flex-col justify-center">
                         <div className="inline-flex items-center gap-2 bg-[#800000] text-white w-fit px-3 py-1 rounded-full text-sm font-medium mb-6">
-                          <span>🇦🇪</span> <span className="uppercase tracking-wider">Dubai Exclusive</span>
+                         <span className="uppercase tracking-wider">Dubai Exclusive</span>
                         </div>
                         <h3 className="font-serif text-3xl font-bold mb-6 text-gray-900">
                            Professional Framing Service
                         </h3>
                         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                            Living in Dubai? We connect you directly with the city&apos;s top professional framers for a seamless experience. No markup, just art.
+                            Based in Dubai? We connect you directly with the city’s leading professional framers for a seamless, trusted experience. Museum standard craftmanship, handled with care from start to finish. 
                         </p>
                         
                          <div className="flex items-center gap-4 bg-gray-50 p-4 rounded-lg border border-gray-200">
                             <CheckCircle2 className="text-[#800000] flex-shrink-0" size={28} />
                             <div>
                                 <p className="font-bold text-gray-900">Direct Payment</p>
-                                <p className="text-sm text-gray-600">Pay the shop directly. Zero markup.</p>
+                                <p className="text-sm text-gray-600">Pay the framing studio directly for complete transparency and peace of mind.</p>
                             </div>
                         </div>
                     </div>
@@ -358,25 +352,14 @@ export default function FrameSizeArtPage() {
                                 className="object-cover"
                               />
                            </div>
-                           <div className="grid grid-rows-2 gap-4">
-                              <div className="relative h-full w-full rounded-lg overflow-hidden shadow-md border-4 border-white">
-                                <Image 
-                                  src="/image/frame-art-size/image_5.jpg"
-                                  alt="Dubai framing example 2"
-                                  fill
-                                  sizes="(max-width: 768px) 100vw, 50vw"
-                                  className="object-cover"
-                                />
-                              </div>
-                              <div className="relative h-full w-full rounded-lg overflow-hidden shadow-md border-4 border-white">
-                                <Image 
-                                  src="/image/frame-art-size/image_6.jpg"
-                                  alt="Dubai framing example 3"
-                                  fill
-                                  sizes="(max-width: 768px) 100vw, 50vw"
-                                  className="object-cover"
-                                />
-                              </div>
+                           <div className="relative h-full w-full rounded-lg overflow-hidden shadow-md border-4 border-white">
+                              <Image 
+                                src="/image/frame-art-size/image_7.png"
+                                alt="Dubai framing example 2"
+                                fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                className="object-cover"
+                              />
                            </div>
                         </div>
                     </div>
@@ -387,7 +370,7 @@ export default function FrameSizeArtPage() {
 
       {/* Need Assistance Section */}
       <section className="py-12 md:py-16 relative z-10">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4 max-w-6xl">
             <div className="bg-[#800000] text-white p-10 md:p-16 rounded-lg shadow-xl border-2 border-[#800000] text-center">
                 <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Need Assistance?</h2>
                 <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
