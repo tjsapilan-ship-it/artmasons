@@ -5,69 +5,98 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const DEFAULT_IMAGES = [
-  { src: "/image/about-us/image_1.png", alt: "Art Masons Masterpiece 1" },
-  { src: "/image/about-us/image_2.png", alt: "Art Masons Masterpiece 2" },
-  { src: "/image/about-us/image_3.png", alt: "Art Masons Masterpiece 3" },
   { src: "/image/about-us/image_4.png", alt: "Art Masons Masterpiece 4" },
   { src: "/image/about-us/image_5.png", alt: "Art Masons Masterpiece 5" },
-  { src: "/image/about-us/image_6.jpg", alt: "Art Masons Masterpiece 6" },
   { src: "/image/about-us/image_7.png", alt: "Art Masons Masterpiece 7" },
 ];
 
-export default function AboutUsGallery({ images = DEFAULT_IMAGES }: { images?: { src: string; alt: string }[] }) {
-  return (
-    <div className="w-full py-20 px-4 md:px-8 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto">
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 perspective-1000">
-          {images.map((image, i) => {
-            // Generate psuedo-random visual properties based on index
-            // These make the layout look "scattered" but consistent
-            const rotate = (i * 1337) % 10 - 5; // Random rotation between -5 and 5 deg
-            const translateY = ((i * 457) % 60) - 30; // Random Y offset between -30 and 30px
-            
-            return (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 100, rotate: 0 }}
-                whileInView={{ 
-                  opacity: 1, 
-                  y: translateY,
-                  rotate: rotate 
-                }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ 
-                  duration: 0.8, 
-                  delay: i * 0.1, 
-                  type: "spring", 
-                  stiffness: 70,
-                  damping: 20
-                }}
-                className="relative group"
-              >
-                {/* Frame/Matting */}
-                <div className="relative p-4 bg-white shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] transition-all duration-500 ease-out group-hover:scale-105 group-hover:shadow-[0_20px_60px_-10px_rgba(0,0,0,0.6)] group-hover:rotate-0 group-hover:z-50">
-                  {/* Image Container */}
-                  <div className="relative w-[280px] md:w-[320px] aspect-[4/5] overflow-hidden bg-white">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      className="object-contain transition-transform duration-700 group-hover:scale-110"
-                      sizes="(max-width: 768px) 280px, 320px"
-                    />
-                  </div>
-                  
-                  {/* Optional: Add a "hanging wire" hint or just rely on the rotation/shadow */}
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
-        
-        <div className="text-center mt-20">
-             <p className="text-[#800000]/60 text-sm font-serif tracking-widest uppercase">
-                A Collection of Excellence
+export default function AboutUsGallery({
+  images = DEFAULT_IMAGES,
+  variant = 'grid'
+}: {
+  images?: { src: string; alt: string }[];
+  variant?: 'grid' | 'collage';
+}) {
+  if (variant === 'collage') {
+    return (
+      <div className="w-full py-12 px-4 md:px-8">
+        <div className="max-w-[1000px] mx-auto">
+          {/* Mobile: Stack, Desktop: Row aligned at bottom */}
+          {/* Mobile: Stack, Desktop: Row aligned at bottom */}
+          <div className="flex flex-col md:flex-row justify-center items-end gap-6 md:gap-8">
+
+            {/* Left Image (Landscape) */}
+            {images[0] && (
+              <div className="relative w-[240px] md:w-[260px] aspect-[4/3]">
+                <Image
+                  src={images[0].src}
+                  alt={images[0].alt}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 240px, 260px"
+                />
+              </div>
+            )}
+
+            {/* Center Image (Portrait/Tall) - Main focal point */}
+            {images[1] && (
+              <div className="relative w-[280px] md:w-[320px] aspect-[2/3]">
+                <Image
+                  src={images[1].src}
+                  alt={images[1].alt}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 280px, 320px"
+                />
+              </div>
+            )}
+
+            {/* Right Image (Landscape) */}
+            {images[2] && (
+              <div className="relative w-[250px] md:w-[270px] aspect-[4/3]">
+                <Image
+                  src={images[2].src}
+                  alt={images[2].alt}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 250px, 270px"
+                />
+              </div>
+            )}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-[#800000]/60 text-sm font-serif tracking-widest uppercase">
+              A Collection of Excellence
             </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Default Grid Layout
+  return (
+    <div className="w-full py-20 px-4 md:px-8">
+      <div className="max-w-[1400px] mx-auto">
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+          {images.map((image, i) => (
+            <div key={i} className="relative w-[280px] md:w-[320px] aspect-[4/5]">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 280px, 320px"
+              />
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-20">
+          <p className="text-[#800000]/60 text-sm font-serif tracking-widest uppercase">
+            A Collection of Excellence
+          </p>
         </div>
       </div>
     </div>
