@@ -8,42 +8,29 @@ import { Heart, Palette, Users, Sparkles, CheckCircle } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import AboutUsGallery from '../components/AboutUsGallery';
 import ArtStyleQuiz from '../components/ArtStyleQuiz';
-import BlurCarousel from '../components/BlurCarousel';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
 
 const CAPTURING_LIGHT_IMAGES = [
   { src: "/image/about-us/image_9.png", alt: "Art Masons Light Detail 1" },
-  { src: "/image/about-us/image_10.jpg", alt: "Art Masons Light Detail 2" },
-  { src: "/image/about-us/image_11.png", alt: "Art Masons Light Detail 3" },
-  { src: "/image/about-us/image_12.png", alt: "Art Masons Light Detail 4" },
-  { src: "/image/about-us/image_13.png", alt: "Art Masons Light Detail 5" },
-  { src: "/image/about-us/image_14.png", alt: "Art Masons Light Detail 6" },
   { src: "/image/about-us/image_15.png", alt: "Art Masons Light Detail 7" },
   { src: "/image/about-us/image_16.png", alt: "Art Masons Light Detail 8" },
 ];
 
 const SCALE_WITHOUT_LIMITS_IMAGES = [
-  { src: "/image/about-us/image_17.png", alt: "Art Masons Scale Example 1" },
   { src: "/image/about-us/image_18.png", alt: "Art Masons Scale Example 2" },
   { src: "/image/about-us/image_19.png", alt: "Art Masons Scale Example 3" },
   { src: "/image/about-us/image_20.png", alt: "Art Masons Scale Example 4" },
-  { src: "/image/about-us/image_21.jpg", alt: "Art Masons Scale Example 5" },
 ];
 
 const NEW_STANDARD_IMAGES = [
   { src: "/image/about-us/image_22.png", alt: "Art Masons Access Example 1" },
-  { src: "/image/about-us/image_23.png", alt: "Art Masons Access Example 2" },
   { src: "/image/about-us/image_24.png", alt: "Art Masons Access Example 3" },
   { src: "/image/about-us/image_25.png", alt: "Art Masons Access Example 4" },
 ];
 
 const B2B_IMAGES = [
   { src: "/image/about-us/image_26.png", alt: "Art Masons Commercial Project 1" },
-  { src: "/image/about-us/image_27.png", alt: "Art Masons Commercial Project 2" },
-  { src: "/image/about-us/image_28.png", alt: "Art Masons Commercial Project 3" },
-  { src: "/image/about-us/image_29.png", alt: "Art Masons Commercial Project 4" },
-  { src: "/image/about-us/image_30.png", alt: "Art Masons Commercial Project 5" },
   { src: "/image/about-us/image_31.png", alt: "Art Masons Commercial Project 6" },
   { src: "/image/about-us/image_32.png", alt: "Art Masons Commercial Project 7" },
 ];
@@ -52,17 +39,13 @@ const COMMITMENT_IMAGES = [
   { src: "/image/about-us/image_33.png", alt: "Art Masons Commitment Detail 1" },
   { src: "/image/about-us/image_34.png", alt: "Art Masons Commitment Detail 2" },
   { src: "/image/about-us/image_35.png", alt: "Art Masons Commitment Detail 3" },
-  { src: "/image/about-us/image_36.png", alt: "Art Masons Commitment Detail 4" },
 ];
 
 const AFTER_QUIZ_IMAGES = [
   { src: "/image/about-us/image_37.png", alt: "Art Masons Gallery Detail 1" },
   { src: "/image/about-us/image_38.png", alt: "Art Masons Gallery Detail 2" },
-  { src: "/image/about-us/image_39.png", alt: "Art Masons Gallery Detail 3" },
   { src: "/image/about-us/image_40.png", alt: "Art Masons Gallery Detail 4" },
   { src: "/image/about-us/image_41.png", alt: "Art Masons Gallery Detail 5" },
-  { src: "/image/about-us/image_42.png", alt: "Art Masons Gallery Detail 6" },
-  { src: "/image/about-us/image_43.png", alt: "Art Masons Gallery Detail 7" },
 ];
 
 export default function AboutUsPage() {
@@ -142,7 +125,7 @@ export default function AboutUsPage() {
 
             {/* Stack Gallery (Below) */}
             <div className="w-full mt-8">
-              <AboutUsGallery images={CAPTURING_LIGHT_IMAGES} />
+              <AboutUsGallery images={CAPTURING_LIGHT_IMAGES} variant="grid" />
             </div>
 
           </section>
@@ -272,8 +255,20 @@ export default function AboutUsPage() {
           </section>
 
           {/* Commitment Gallery Scroll */}
-          <section className="w-full">
-            <BlurCarousel images={COMMITMENT_IMAGES} />
+          <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+            {COMMITMENT_IMAGES.map((image, index) => (
+              <div key={index} className="w-full">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={800}
+                  height={0}
+                  className="w-full h-auto"
+                  style={{ width: '100%', height: 'auto' }}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+            ))}
           </section>
 
           {/* Art Style Quiz */}
@@ -282,8 +277,20 @@ export default function AboutUsPage() {
           </section>
 
           {/* After Quiz Gallery Scroll */}
-          <section className="w-full">
-            <BlurCarousel images={AFTER_QUIZ_IMAGES} />
+          <section className="w-full grid grid-cols-2 md:grid-cols-4 gap-4">
+             {AFTER_QUIZ_IMAGES.map((image, index) => (
+              <div key={index} className="w-full">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={800}
+                  height={0}
+                  className="w-full h-auto"
+                  style={{ width: '100%', height: 'auto' }}
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              </div>
+            ))}
           </section>
 
 

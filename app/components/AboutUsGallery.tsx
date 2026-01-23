@@ -15,8 +15,63 @@ export default function AboutUsGallery({
   variant = 'grid'
 }: {
   images?: { src: string; alt: string }[];
-  variant?: 'grid' | 'collage';
+  variant?: 'grid' | 'collage' | 'layered-3';
 }) {
+  if (variant === 'layered-3') {
+    return (
+      <div className="w-full py-12 px-4 md:px-8">
+        <div className="relative w-full max-w-[900px] mx-auto aspect-[1/1] md:aspect-[5/4]">
+          
+          {/* Top Image (Monet) */}
+          {images[0] && (
+            <div className="absolute top-0 left-[5%] md:left-[10%] w-[80%] md:w-[70%] h-[55%] z-10">
+              <div className="relative w-full h-full">
+                <Image
+                  src={images[0].src}
+                  alt={images[0].alt}
+                  fill
+                  className="object-contain drop-shadow-2xl"
+                  sizes="(max-width: 768px) 80vw, 600px"
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Right Image (Matisse) - Overlapping Top Right */}
+          {images[2] && (
+            <div className="absolute top-[35%] right-0 w-[40%] md:w-[35%] h-[55%] z-20">
+              <div className="relative w-full h-full">
+                <Image
+                  src={images[2].src}
+                  alt={images[2].alt}
+                  fill
+                  className="object-contain drop-shadow-2xl"
+                  sizes="(max-width: 768px) 40vw, 300px"
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Left Image (Irises) - Below Top */}
+          {images[1] && (
+            <div className="absolute bottom-0 left-0 w-[35%] md:w-[30%] h-[45%] z-10">
+              <div className="relative w-full h-full">
+                <Image
+                  src={images[1].src}
+                  alt={images[1].alt}
+                  fill
+                  className="object-contain drop-shadow-2xl"
+                  sizes="(max-width: 768px) 35vw, 250px"
+                />
+              </div>
+            </div>
+          )}
+
+        </div>
+      </div>
+    );
+  }
+
   if (variant === 'collage') {
     return (
       <div className="w-full py-12 px-4 md:px-8">
