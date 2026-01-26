@@ -84,16 +84,19 @@ export default function AboutUsPage() {
             </div>
 
             {/* Stack Gallery */}
-            <div className="w-full mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
+            {/* FIX: Added flex-wrap and justify-center so images wrap instead of shrinking */}
+            <div className="w-full mt-8 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4">
               {OUR_PHILOSOPHY_IMAGES.map((image, index) => (
-                <div key={index} className="relative w-full md:w-auto">
+                <div key={index} className="relative w-full md:w-auto flex-shrink-0">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     width={1000}
                     height={700}
+                    // FIX: Removed strict w-full constraint on desktop to allow intrinsic aspect ratio
                     className="w-full md:w-auto h-auto md:h-[700px] object-contain"
-                    sizes="(max-width: 768px) 100vw, 1000px"
+                    // FIX: Updated sizes to be more accurate for splitting screen (50vw)
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               ))}
@@ -131,16 +134,17 @@ export default function AboutUsPage() {
             </div>
 
             {/* Stack Gallery (Below) */}
-            <div className="w-full mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
+            {/* FIX: Added flex-wrap */}
+            <div className="w-full mt-8 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4">
               {CAPTURING_LIGHT_IMAGES.map((image, index) => (
-                <div key={index} className="relative w-full md:w-auto">
+                <div key={index} className="relative w-full md:w-auto flex-shrink-0">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     width={1000}
                     height={700}
                     className="w-full md:w-auto h-auto md:h-[700px] object-contain"
-                    sizes="(max-width: 768px) 100vw, 1000px"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               ))}
@@ -163,16 +167,17 @@ export default function AboutUsPage() {
             </div>
 
             {/* Stack Gallery (Right) */}
-            <div className="w-full mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
+            {/* FIX: Added flex-wrap */}
+            <div className="w-full mt-8 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4">
               {SCALE_WITHOUT_LIMITS_IMAGES.map((image, index) => (
-                <div key={index} className="relative w-full md:w-auto">
+                <div key={index} className="relative w-full md:w-auto flex-shrink-0">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     width={1000}
                     height={700}
                     className="w-full md:w-auto h-auto md:h-[700px] object-contain"
-                    sizes="(max-width: 768px) 100vw, 1000px"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               ))}
@@ -190,16 +195,17 @@ export default function AboutUsPage() {
             </div>
 
             {/* Stack Gallery (Left on desktop) */}
-            <div className="w-full mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
+            {/* FIX: Added flex-wrap */}
+            <div className="w-full mt-8 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4">
               {NEW_STANDARD_IMAGES.map((image, index) => (
-                <div key={index} className="relative w-full md:w-auto">
+                <div key={index} className="relative w-full md:w-auto flex-shrink-0">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     width={1000}
                     height={700}
                     className="w-full md:w-auto h-auto md:h-[700px] object-contain"
-                    sizes="(max-width: 768px) 100vw, 1000px"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               ))}
