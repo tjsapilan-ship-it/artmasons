@@ -74,32 +74,26 @@ export default function AboutUsPage() {
         <div className="font-serif space-y-16 text-gray-700 leading-relaxed">
 
           {/* Our Philosophy & Gallery Combined */}
-          <section className="bg-white/60 p-6 md:p-8 rounded-lg backdrop-blur-sm border border-2 border-[#800000]">
-            <div className="w-full">
+          <section className="space-y-6">
+            <div className="bg-white p-6 md:p-8 rounded-xl border-2 border-[#800000]">
               {/* Text Content */}
-              <div className="space-y-6">
-                <div className="flex items-center gap-3 mb-2">
-                  <h2 className="font-serif text-3xl font-bold text-[#800000] inline-block border-2 border-[#800000] rounded-full px-6 py-2">Our Philosophy</h2>
-                </div>
-
-                <p className="text-lg">
-                  The world's greatest masterpieces shouldn't be trapped behind velvet ropes or pixelated on cheap paper. Art Masons was founded by a collective of classically trained artists and art historians who grew tired of the flat print culture. We believe that if you love a masterpiece, you deserve to own the <em>soul</em> of it: the texture of the oil paint, the original colour accuracy, the high quality grain of the linen canvas, and the physical weight of the brushstroke.
-                </p>
-              </div>
-
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000] mb-4">Our Philosophy</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                The world's greatest masterpieces shouldn't be trapped behind velvet ropes or pixelated on cheap paper. Art Masons was founded by a collective of classically trained artists and art historians who grew tired of the flat print culture. We believe that if you love a masterpiece, you deserve to own the <em>soul</em> of it: the texture of the oil paint, the original colour accuracy, the high quality grain of the linen canvas, and the physical weight of the brushstroke.
+              </p>
             </div>
 
             {/* Stack Gallery */}
             <div className="w-full mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
               {OUR_PHILOSOPHY_IMAGES.map((image, index) => (
-                <div key={index} className="relative">
+                <div key={index} className="relative w-full md:w-auto">
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    width={800}
-                    height={0}
-                    className="w-full md:w-auto h-auto md:h-[350px] object-contain"
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    width={1000}
+                    height={700}
+                    className="w-full md:w-auto h-auto md:h-[700px] object-contain"
+                    sizes="(max-width: 768px) 100vw, 1000px"
                   />
                 </div>
               ))}
@@ -108,11 +102,13 @@ export default function AboutUsPage() {
           </section>
 
           {/* Educated Mastery */}
-          <section className="bg-white shadow-sm p-8 rounded-lg border-t-4 border-[#800000]">
-            <h2 className="font-serif text-3xl font-bold mb-6 text-[#800000] inline-block border-2 border-[#800000] rounded-full px-6 py-2">Educated Mastery</h2>
-            <p className="text-lg mb-8">
-              Every Art Masons art piece is hand-painted by artists who have spent years studying the specific chemistry and techniques of the masters. We don't just copy; we deeply understand how Vermeer or Monet captured light and how Van Gogh layered emotion. Our artists speak the language of the greats.
-            </p>
+          <section className="space-y-6">
+            <div className="bg-white p-6 md:p-8 rounded-xl border-2 border-[#800000]">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000] mb-4">Educated Mastery</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Every Art Masons art piece is hand-painted by artists who have spent years studying the specific chemistry and techniques of the masters. We don't just copy; we deeply understand how Vermeer or Monet captured light and how Van Gogh layered emotion. Our artists speak the language of the greats.
+              </p>
+            </div>
             <div className="relative w-full rounded-lg overflow-hidden border border-[#800000]/10 shadow-md">
               <Image
                 src="/image/about-us/image_8.png"
@@ -126,12 +122,10 @@ export default function AboutUsPage() {
           </section>
 
           {/* Capturing Light In Every Brushstroke */}
-          <section className="bg-white/60 p-6 md:p-8 rounded-lg backdrop-blur-sm border border-2 border-[#800000]">
-
-            {/* Text Content */}
-            <div className="space-y-6">
-              <h2 className="font-serif text-3xl font-bold text-[#800000] inline-block border-2 border-[#800000] rounded-full px-6 py-2">Capturing Light In Every Brushstroke</h2>
-              <p className="text-lg">
+          <section className="space-y-6">
+            <div className="bg-white p-6 md:p-8 rounded-xl border-2 border-[#800000]">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000] mb-4">Capturing Light In Every Brushstroke</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
                 Digital prints are flat, but our work is three-dimensional. We use only the finest pigment oil paints and professional-grade linen canvases. The result is museum-grade quality that you can feel—art that lives, breathes, and ages with your home.
               </p>
             </div>
@@ -139,14 +133,14 @@ export default function AboutUsPage() {
             {/* Stack Gallery (Below) */}
             <div className="w-full mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
               {CAPTURING_LIGHT_IMAGES.map((image, index) => (
-                <div key={index} className="relative">
+                <div key={index} className="relative w-full md:w-auto">
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    width={800}
-                    height={0}
-                    className={`w-full md:w-auto h-auto object-contain ${index === 0 ? 'md:!h-[500px]' : 'md:h-[350px]'}`}
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    width={1000}
+                    height={700}
+                    className="w-full md:w-auto h-auto md:h-[700px] object-contain"
+                    sizes="(max-width: 768px) 100vw, 1000px"
                   />
                 </div>
               ))}
@@ -155,16 +149,14 @@ export default function AboutUsPage() {
           </section>
 
           {/* Scale Without Limits */}
-          <section className="bg-white shadow-sm p-8 rounded-lg border-t-4 border-[#800000]">
-
-            {/* Text Content */}
-            <div className="space-y-6">
-              <h2 className="font-serif text-3xl font-bold text-[#800000] inline-block border-2 border-[#800000] rounded-full px-6 py-2">Scale Without Limits</h2>
+          <section className="space-y-6">
+            <div className="bg-white p-6 md:p-8 rounded-xl border-2 border-[#800000]">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000] mb-4">Scale Without Limits</h2>
               <div className="space-y-4">
-                <p className="text-lg">
+                <p className="text-lg text-gray-700 leading-relaxed">
                   <strong>Big is beautiful.</strong> If you have a grand wall, we paint the masterpiece to command it.
                 </p>
-                <p className="text-lg">
+                <p className="text-lg text-gray-700 leading-relaxed">
                   <strong>Small is intimate.</strong> If you have a quiet corner, we scale the work for a private moment to lean in. We resize the classics to fit your architecture—ensuring the composition remains perfect and proportional to the original, regardless of the dimensions.
                 </p>
               </div>
@@ -173,14 +165,14 @@ export default function AboutUsPage() {
             {/* Stack Gallery (Right) */}
             <div className="w-full mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
               {SCALE_WITHOUT_LIMITS_IMAGES.map((image, index) => (
-                <div key={index} className="relative">
+                <div key={index} className="relative w-full md:w-auto">
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    width={800}
-                    height={0}
-                    className={`w-full md:w-auto h-auto object-contain ${index === 0 ? 'md:!h-[600px]' : 'md:h-[350px]'}`}
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    width={1000}
+                    height={700}
+                    className="w-full md:w-auto h-auto md:h-[700px] object-contain"
+                    sizes="(max-width: 768px) 100vw, 1000px"
                   />
                 </div>
               ))}
@@ -189,12 +181,10 @@ export default function AboutUsPage() {
           </section>
 
           {/* The New Standard of Access */}
-          <section className="bg-white/60 p-6 md:p-8 rounded-lg backdrop-blur-sm border border-2 border-[#800000]">
-
-            {/* Text Content */}
-            <div className="space-y-6">
-              <h2 className="font-serif text-3xl font-bold text-[#800000] inline-block border-2 border-[#800000] rounded-full px-6 py-2">The New Standard of Access</h2>
-              <p className="text-lg">
+          <section className="space-y-6">
+            <div className="bg-white p-6 md:p-8 rounded-xl border-2 border-[#800000]">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000] mb-4">The New Standard of Access</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
                 We've removed the gatekeepers to make museum-level quality affordable. We believe that living with great art is a right, not a reserved luxury. We bridge the gap between historical mastery and modern accessibility.
               </p>
             </div>
@@ -202,15 +192,14 @@ export default function AboutUsPage() {
             {/* Stack Gallery (Left on desktop) */}
             <div className="w-full mt-8 flex flex-col md:flex-row justify-center items-center gap-4">
               {NEW_STANDARD_IMAGES.map((image, index) => (
-                <div key={index} className="relative">
+                <div key={index} className="relative w-full md:w-auto">
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className={`!w-full md:!w-auto h-auto object-contain ${index === 0 ? 'md:h-[350px]' : 'md:!h-[720px]'}`}
-                    style={{ width: 'auto', height: 'auto' }}
+                    width={1000}
+                    height={700}
+                    className="w-full md:w-auto h-auto md:h-[700px] object-contain"
+                    sizes="(max-width: 768px) 100vw, 1000px"
                   />
                 </div>
               ))}
@@ -219,12 +208,10 @@ export default function AboutUsPage() {
           </section>
 
           {/* B2B: The Designer's Secret Weapon */}
-          <section className="bg-white shadow-sm p-8 rounded-lg border-t-4 border-[#800000]">
-
-            {/* Text Content */}
-            <div className="space-y-6">
-              <h2 className="font-serif text-3xl font-bold text-[#800000] inline-block border-2 border-[#800000] rounded-full px-6 py-2">B2B: The Designer's Secret Weapon</h2>
-              <p className="text-lg">
+          <section className="space-y-6">
+            <div className="bg-white p-6 md:p-8 rounded-xl border-2 border-[#800000]">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000] mb-4">B2B: The Designer's Secret Weapon</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
                 We serve as the silent partner for interior designers and architects. Whether it's a single statement piece for a residential project or a curated collection, we are delighted to assist. For luxury hotels, staging homes or new development marketing, we deliver hand-painted authenticity at the scale and accessible luxury your projects demand. Remove the mass produced appearance of printed art and benefit instead from hand painted, inspiring, museum-grade art which compliments, elevates and enriches your interiors.
               </p>
             </div>
@@ -236,10 +223,9 @@ export default function AboutUsPage() {
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    width={800}
-                    height={0}
-                    className="w-full h-auto"
-                    style={{ width: '100%', height: 'auto' }}
+                    width={1000}
+                    height={750}
+                    className="w-full h-auto object-contain"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
@@ -249,7 +235,7 @@ export default function AboutUsPage() {
           </section>
 
           {/* Our Story */}
-          <section className="bg-white shadow-sm p-8 rounded-lg border-t-4 border-[#800000]">
+          <section className="bg-white shadow-sm p-8 rounded-lg border border-2 border-[#800000]">
             <h2 className="font-serif text-3xl font-bold mb-6 text-[#800000]">Our Story</h2>
             <div className="space-y-4">
               <p className="text-lg">
@@ -321,9 +307,8 @@ export default function AboutUsPage() {
                   src={image.src}
                   alt={image.alt}
                   width={800}
-                  height={0}
+                  height={600}
                   className="w-full h-auto"
-                  style={{ width: '100%', height: 'auto' }}
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
@@ -342,10 +327,9 @@ export default function AboutUsPage() {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  width={800}
-                  height={0}
+                  width={400}
+                  height={300}
                   className="w-full h-auto"
-                  style={{ width: '100%', height: 'auto' }}
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
               </div>
