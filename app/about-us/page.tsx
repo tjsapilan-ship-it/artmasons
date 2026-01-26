@@ -206,10 +206,11 @@ export default function AboutUsPage() {
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    width={800}
+                    width={0}
                     height={0}
-                    className={`w-full md:w-auto h-auto object-contain ${index === 0 ? 'md:h-[350px]' : 'md:!h-[720px]'}`}
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="100vw"
+                    className={`!w-full md:!w-auto h-auto object-contain ${index === 0 ? 'md:h-[350px]' : 'md:!h-[720px]'}`}
+                    style={{ width: 'auto', height: 'auto' }}
                   />
                 </div>
               ))}
