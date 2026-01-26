@@ -35,6 +35,12 @@ const B2B_IMAGES = [
   { src: "/image/about-us/image_32.png", alt: "Art Masons Commercial Project 7" },
 ];
 
+const OUR_PHILOSOPHY_IMAGES = [
+  { src: "/image/about-us/image_4.png", alt: "Art Masons Masterpiece 4" },
+  { src: "/image/about-us/image_5.png", alt: "Art Masons Masterpiece 5" },
+  { src: "/image/about-us/image_7.png", alt: "Art Masons Masterpiece 7" },
+];
+
 const COMMITMENT_IMAGES = [
   { src: "/image/about-us/image_33.png", alt: "Art Masons Commitment Detail 1" },
   { src: "/image/about-us/image_34.png", alt: "Art Masons Commitment Detail 2" },
@@ -88,8 +94,20 @@ export default function AboutUsPage() {
             </div>
 
             {/* Stack Gallery */}
-            <div className="w-full mt-8">
-              <AboutUsGallery variant="collage" />
+            <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {OUR_PHILOSOPHY_IMAGES.map((image, index) => (
+                <div key={index} className="w-full">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={800}
+                    height={0}
+                    className="w-full h-auto"
+                    style={{ width: '100%', height: 'auto' }}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+              ))}
             </div>
 
           </section>
@@ -124,8 +142,20 @@ export default function AboutUsPage() {
             </div>
 
             {/* Stack Gallery (Below) */}
-            <div className="w-full mt-8">
-              <AboutUsGallery images={CAPTURING_LIGHT_IMAGES} variant="grid" />
+            <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {CAPTURING_LIGHT_IMAGES.map((image, index) => (
+                <div key={index} className="w-full">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={800}
+                    height={0}
+                    className="w-full h-auto"
+                    style={{ width: '100%', height: 'auto' }}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+              ))}
             </div>
 
           </section>
@@ -147,8 +177,20 @@ export default function AboutUsPage() {
             </div>
 
             {/* Stack Gallery (Right) */}
-            <div className="w-full mt-8">
-              <AboutUsGallery images={SCALE_WITHOUT_LIMITS_IMAGES} />
+            <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {SCALE_WITHOUT_LIMITS_IMAGES.map((image, index) => (
+                <div key={index} className="w-full">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={800}
+                    height={0}
+                    className="w-full h-auto"
+                    style={{ width: '100%', height: 'auto' }}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+              ))}
             </div>
 
           </section>
@@ -165,8 +207,20 @@ export default function AboutUsPage() {
             </div>
 
             {/* Stack Gallery (Left on desktop) */}
-            <div className="w-full mt-8">
-              <AboutUsGallery images={NEW_STANDARD_IMAGES} />
+            <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {NEW_STANDARD_IMAGES.map((image, index) => (
+                <div key={index} className="w-full">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={800}
+                    height={0}
+                    className="w-full h-auto"
+                    style={{ width: '100%', height: 'auto' }}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+              ))}
             </div>
 
           </section>
@@ -183,8 +237,20 @@ export default function AboutUsPage() {
             </div>
 
             {/* Stack Gallery (Right) */}
-            <div className="w-full mt-8">
-              <AboutUsGallery images={B2B_IMAGES} />
+            <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {B2B_IMAGES.map((image, index) => (
+                <div key={index} className="w-full">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={800}
+                    height={0}
+                    className="w-full h-auto"
+                    style={{ width: '100%', height: 'auto' }}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+              ))}
             </div>
 
           </section>
