@@ -34,7 +34,9 @@ const B2B_IMAGES = [
 
 const OUR_PHILOSOPHY_IMAGES = [
   { src: "/image/about-us/image_5.png", alt: "Art Masons Masterpiece 5" },
+  { src: "/image/about-us/image_4.png", alt: "Art Masons Masterpiece 4" },
   { src: "/image/about-us/image_7.png", alt: "Art Masons Masterpiece 7" },
+  
 ];
 
 const COMMITMENT_IMAGES = [
