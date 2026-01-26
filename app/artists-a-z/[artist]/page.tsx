@@ -54,7 +54,7 @@ export default async function ArtistPage({
       <PageTransition>
         <ArtistsAZNavigation />
         
-        <div className="container mx-auto px-4 py-8 max-w-7xl">
+        <div className="w-full px-4 py-8">
           <div className="mb-6">
             <Breadcrumbs
               items={[

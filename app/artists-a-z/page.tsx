@@ -265,7 +265,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
         }
       `}</style>
 
-      <div className="container mx-auto px-4 py-12 max-w-7xl relative z-10">
+      <div className="w-full px-4 py-12 relative z-10">
         
         {/* Breadcrumbs */}
         <div className="mb-8">

@@ -652,7 +652,7 @@ export default function ArtMasonsLanding() {
         <PopularArtCarousel />
 
         {/* --- KNOW YOUR ESSENCE QUIZ --- */}
-        <section className="container mx-auto px-4 py-20">
+        <section className="w-full px-4 py-20">
           <section 
             className="text-white p-8 md:p-12 rounded-lg shadow-xl"
             style={{
@@ -781,7 +781,7 @@ export default function ArtMasonsLanding() {
         </section>
 
         {/* --- FUN FACTS & IMAGE ASPECT CALCULATOR --- */}
-        <section className="container mx-auto px-4 py-20 flex flex-col md:flex-row gap-12">
+        <section className="w-full px-4 py-20 flex flex-col md:flex-row gap-12">
           {/* FUN FACTS */}
           <div className="w-full md:w-1/2">
             <div className="flex items-center justify-center gap-4 mb-6">
@@ -997,7 +997,7 @@ export default function ArtMasonsLanding() {
 
         {/* --- TESTIMONIALS --- */}
         <section className="bg-gray-50 py-20">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4">
             <h3 className="font-serif text-3xl text-center mb-12">
               Collector Testimonials
             </h3>

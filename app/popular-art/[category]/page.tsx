@@ -105,7 +105,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
       <PageTransition>
         <PopularArtCarousel />
         
-        <div className="container mx-auto px-4 py-8 max-w-7xl relative z-10">
+        <div className="w-full px-4 py-8 relative z-10">
           <div className="mb-6">
             <Breadcrumbs items={[{ label: 'Popular Art', href: '/' }, { label: title, href: `/popular-art/${slug}` }]} />
           </div>

@@ -158,7 +158,7 @@ export default function PopularArtCarousel() {
           }
         }
       `}</style>
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4">
         <h3 className="font-serif text-2xl font-bold mb-6 text-center uppercase">
           POPULAR ART
         </h3>

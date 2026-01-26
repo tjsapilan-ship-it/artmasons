@@ -78,17 +78,17 @@ export default function AboutUsGallery({
         <div className="max-w-[1000px] mx-auto">
           {/* Mobile: Stack, Desktop: Row aligned at bottom */}
           {/* Mobile: Stack, Desktop: Row aligned at bottom */}
-          <div className="flex flex-col md:flex-row justify-center items-end gap-6 md:gap-8">
+          <div className="flex flex-col md:flex-row justify-center items-end gap-2">
 
             {/* Left Image (Landscape) */}
             {images[0] && (
-              <div className="relative w-[240px] md:w-[260px] aspect-[4/3]">
+              <div className="relative w-[340px] md:w-[420px] aspect-[4/3]">
                 <Image
                   src={images[0].src}
                   alt={images[0].alt}
                   fill
                   className="object-contain"
-                  sizes="(max-width: 768px) 240px, 260px"
+                  sizes="(max-width: 768px) 340px, 420px"
                 />
               </div>
             )}
@@ -108,13 +108,13 @@ export default function AboutUsGallery({
 
             {/* Right Image (Landscape) */}
             {images[2] && (
-              <div className="relative w-[250px] md:w-[270px] aspect-[4/3]">
+              <div className="relative w-[340px] md:w-[420px] aspect-[4/3]">
                 <Image
                   src={images[2].src}
                   alt={images[2].alt}
                   fill
                   className="object-contain"
-                  sizes="(max-width: 768px) 250px, 270px"
+                  sizes="(max-width: 768px) 340px, 420px"
                 />
               </div>
             )}
@@ -132,9 +132,9 @@ export default function AboutUsGallery({
 
   // Default Grid Layout
   return (
-    <div className="w-full py-20 px-4 md:px-8">
+    <div className="w-full py-8 px-4 md:px-8">
       <div className="max-w-[1400px] mx-auto">
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+        <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4">
           {images.map((image, i) => (
             <div key={i} className="relative w-[280px] md:w-[320px] aspect-[4/5]">
               <Image

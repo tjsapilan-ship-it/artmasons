@@ -93,7 +93,7 @@ export default function CheckoutSuccess() {
         }
       `}</style>
 
-      <div className="container mx-auto px-4 py-12 max-w-3xl text-center relative z-10">
+      <div className="w-full px-4 py-12 text-center relative z-10">
         <div className="bg-white p-12 rounded-lg shadow-lg border-2 border-[#800000]">
           <h1 className="font-serif text-4xl font-bold text-[#800000] mb-4">Thank you — Order received</h1>
           {status === 'checking' && <p className="mb-6 text-gray-600 font-serif">Verifying payment...</p>}

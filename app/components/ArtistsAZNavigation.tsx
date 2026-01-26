@@ -29,7 +29,7 @@ export default function ArtistsAZNavigation() {
 
   return (
     <section className="bg-gray-50 py-6 border-b border-gray-200">
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className="w-full px-4">
         <h2 className="font-serif text-lg font-bold mb-4 text-gray-800">Browse by Letter</h2>
         <div className="flex flex-wrap justify-center gap-2">
           {ALPHABET.map((letter) => {

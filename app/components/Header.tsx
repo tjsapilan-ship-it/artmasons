@@ -79,7 +79,7 @@ export default function Header() {
 
   return (
     <header className="relative z-50 bg-white pt-3 pb-3 md:pt-6 md:pb-4 shadow-sm border-b border-gray-100">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center md:items-end gap-4 md:gap-12">
+      <div className="w-full px-4 flex flex-col md:flex-row items-center md:items-end gap-4 md:gap-12">
         <Link href="/" className="flex-shrink-0 flex flex-col items-center justify-end w-auto md:w-56 cursor-pointer pb-2">
           <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-44 md:h-44">
             <Image

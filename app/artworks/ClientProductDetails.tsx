@@ -377,7 +377,7 @@ export default function ClientProductDetails({
           <h3 className="font-serif text-2xl md:text-3xl font-bold text-[#800000] mb-5 uppercase text-center">
             Similar paintings by {artwork.artist}
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5 max-w-6xl mx-auto justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5 w-full justify-center">
             {similarArtworks.map((item) => {
               const itemSlug = item._slug || getArtworkSlug(item);
               const displayPrice = item.basePrice ?? item.options?.[0]?.price ?? 0;

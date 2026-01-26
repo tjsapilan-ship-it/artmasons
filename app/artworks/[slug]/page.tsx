@@ -118,7 +118,7 @@ export default async function ProductDetailsPage({
   return (
     <main className={`${playfair.variable} ${inter.variable} min-h-screen bg-art-texture text-black font-serif text-base`}>
       <PageTransition>
-        <div className="container mx-auto px-4 py-4 md:py-6 max-w-7xl relative z-10">
+        <div className="w-full px-4 py-4 md:py-6 relative z-10">
           {/* Breadcrumb */}
           <div className="mb-4 md:mb-6">
             <Breadcrumbs items={breadcrumbs} />

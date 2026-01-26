@@ -44,7 +44,7 @@ export default function FrameSizeArtPage() {
       
       {/* Hero & Find Size Section */}
       <section className="px-4 py-12 md:py-16 relative overflow-hidden">
-        <div className="container mx-auto max-w-6xl relative z-10">
+        <div className="w-full relative z-10">
           
           <div className="mb-8">
             <Breadcrumbs items={[{ label: 'Frame & Art Size', href: '/frame-size-art' }]} />
@@ -190,7 +190,7 @@ export default function FrameSizeArtPage() {
 
       {/* Shipping & Care Section */}
       <section className="py-12 md:py-16 relative z-10">
-        <div className="container mx-auto max-w-6xl px-4">
+        <div className="w-full px-4">
           
           <div className="mb-12">
              <div className="flex items-center gap-3 mb-6">
@@ -237,7 +237,7 @@ export default function FrameSizeArtPage() {
 
       {/* Style Guide Section */}
       <section className="py-12 md:py-16 relative z-10">
-         <div className="container mx-auto max-w-6xl px-4">
+         <div className="w-full px-4">
              <div className="mb-12">
                 <div className="flex items-center gap-3 mb-6">
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000]">Choose Your Style</h2>
@@ -292,7 +292,7 @@ export default function FrameSizeArtPage() {
 
       {/* Process Section */}
       <section className="py-12 md:py-16 relative z-10">
-         <div className="container mx-auto max-w-6xl px-4">
+         <div className="w-full px-4">
             
             <div className="flex items-center gap-3 mb-10">
                <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000]">The Process</h2>
@@ -370,7 +370,7 @@ export default function FrameSizeArtPage() {
 
       {/* Need Assistance Section */}
       <section className="py-12 md:py-16 relative z-10">
-        <div className="container mx-auto px-4 max-w-6xl">
+        <div className="w-full px-4">
             <div className="bg-[#800000] text-white p-10 md:p-16 rounded-lg shadow-xl border-2 border-[#800000] text-center">
                 <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Need Assistance?</h2>
                 <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">

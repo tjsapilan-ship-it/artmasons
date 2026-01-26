@@ -11,7 +11,7 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-[#1a1a1a] text-white pt-10 pb-10 md:pt-20">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="w-full px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div>
           <h4 className="font-serif text-xl mb-6">About Art Masons</h4>
           <p className="font-serif text-gray-400 text-sm leading-relaxed mb-6">
@@ -126,7 +126,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="w-full px-4 mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-xs text-gray-500 font-serif">
           Trade Mark 1990/{new Date().getFullYear()} Art Masons. All rights reserved.
         </p>
