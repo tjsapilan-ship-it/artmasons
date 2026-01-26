@@ -33,9 +33,10 @@ const B2B_IMAGES = [
 ];
 
 const OUR_PHILOSOPHY_IMAGES = [
-  { src: "/image/about-us/image_5.png", alt: "Art Masons Masterpiece 5" },
-  { src: "/image/about-us/image_4.png", alt: "Art Masons Masterpiece 4" },
-  { src: "/image/about-us/image_7.png", alt: "Art Masons Masterpiece 7" },
+  // { src: "/image/about-us/image_5.png", alt: "Art Masons Masterpiece 5" },
+  // { src: "/image/about-us/image_4.png", alt: "Art Masons Masterpiece 4" },
+  // { src: "/image/about-us/image_7.png", alt: "Art Masons Masterpiece 7" },
+    { src: "/image/about-us/collage/collage_1.png", alt: "Art Masons Masterpiece 7" },
   
 ];
 
@@ -76,35 +77,33 @@ export default function AboutUsPage() {
         <div className="font-serif space-y-16 text-gray-700 leading-relaxed">
 
           {/* Our Philosophy & Gallery Combined */}
-          <section className="space-y-6">
-            <div className="bg-white p-6 md:p-8 rounded-xl border-2 border-[#800000]">
-              {/* Text Content */}
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000] mb-4">Our Philosophy</h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                The world's greatest masterpieces shouldn't be trapped behind velvet ropes or pixelated on cheap paper. Art Masons was founded by a collective of classically trained artists and art historians who grew tired of the flat print culture. We believe that if you love a masterpiece, you deserve to own the <em>soul</em> of it: the texture of the oil paint, the original colour accuracy, the high quality grain of the linen canvas, and the physical weight of the brushstroke.
-              </p>
-            </div>
+<section className="space-y-6">
+  <div className="bg-white p-6 md:p-8 rounded-xl border-2 border-[#800000]">
+    {/* Text Content */}
+    <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#800000] mb-4">Our Philosophy</h2>
+    <p className="text-lg text-gray-700 leading-relaxed">
+      The world's greatest masterpieces shouldn't be trapped behind velvet ropes or pixelated on cheap paper. Art Masons was founded by a collective of classically trained artists and art historians who grew tired of the flat print culture. We believe that if you love a masterpiece, you deserve to own the <em>soul</em> of it: the texture of the oil paint, the original colour accuracy, the high quality grain of the linen canvas, and the physical weight of the brushstroke.
+    </p>
+  </div>
 
-            {/* Stack Gallery */}
-            {/* FIX: Added flex-wrap and justify-center so images wrap instead of shrinking */}
-            <div className="w-full mt-8 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4">
-              {OUR_PHILOSOPHY_IMAGES.map((image, index) => (
-                <div key={index} className="relative w-full md:w-auto flex-shrink-0">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={1000}
-                    height={700}
-                    // FIX: Removed strict w-full constraint on desktop to allow intrinsic aspect ratio
-                    className="w-full md:w-auto h-auto md:h-[700px] object-contain"
-                    // FIX: Updated sizes to be more accurate for splitting screen (50vw)
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
-              ))}
-            </div>
+  {/* Single Image Display */}
+  <div className="w-full flex justify-center p-[20px]">
+    <Image
+      // accessing the first image in the array
+      src={OUR_PHILOSOPHY_IMAGES[0].src} 
+      alt={OUR_PHILOSOPHY_IMAGES[0].alt}
+      width={1200}
+      height={800}
+      // Class breakdown:
+      // w-full: takes maximum available width
+      // h-auto: scales height automatically to maintain aspect ratio
+      // rounded-xl: (Optional) keeps styling consistent with the text box above
+      className="w-full h-auto object-contain rounded-xl"
+      sizes="100vw"
+    />
+  </div>
 
-          </section>
+</section>
 
           {/* Educated Mastery */}
           <section className="space-y-6">
