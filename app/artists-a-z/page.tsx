@@ -135,7 +135,23 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
     } catch { }
   }, [selectedLetter]);
 
-
+  // Safari-compatible scroll to top function
+  const scrollToTop = () => {
+    // Use setTimeout to ensure DOM has updated before scrolling
+    // This fixes issues on Safari/iOS where scroll doesn't work during state updates
+    setTimeout(() => {
+      // Try smooth scroll first
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      
+      // Fallback for Safari: also try scrolling the document element directly
+      if (document.documentElement) {
+        document.documentElement.scrollTop = 0;
+      }
+      if (document.body) {
+        document.body.scrollTop = 0; // For Safari
+      }
+    }, 10);
+  };
 
   const selectLetter = (letter: string) => {
     setSelectedLetter(letter);
@@ -233,7 +249,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop();
   };
 
   return (
@@ -537,7 +553,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                   }
                   if (prevIndex >= 0) {
                     selectLetter(ALPHABET[prevIndex]);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    scrollToTop();
                   }
                 }}
                 disabled={(() => {
@@ -563,7 +579,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                       onClick={() => {
                         if (hasArtists) {
                           selectLetter(letter);
-                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                          scrollToTop();
                         }
                       }}
                       disabled={!hasArtists}
@@ -590,7 +606,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                   }
                   if (nextIndex < ALPHABET.length) {
                     selectLetter(ALPHABET[nextIndex]);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    scrollToTop();
                   }
                 }}
                 disabled={(() => {
