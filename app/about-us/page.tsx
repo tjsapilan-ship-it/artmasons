@@ -72,7 +72,7 @@ export default function AboutUsPage() {
         </div>
 
         <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-[#800000]">Art Masons</h1>
-        <p className="text-2xl md:text-3xl font-serif mb-12 text-[#000000]">Museum-Grade Quality. Hand-Painted to Fit Your Space.</p>
+        <p className="text-2xl md:text-3xl font-serif mb-12 text-[#000000]">Museum-Grade Quality. Hand-Painted To Fit Your Space.</p>
 
         <div className="font-serif space-y-16 text-gray-700 leading-relaxed">
 
