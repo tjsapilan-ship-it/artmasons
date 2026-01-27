@@ -54,6 +54,92 @@ function readCustomer(source: unknown): Customer {
   };
 }
 
+type ParsedAddress = {
+  type: 'home' | 'local' | 'unknown';
+  homeDelivery?: {
+    country: string;
+    city: string;
+    road: string;
+    buildingName: string;
+    apartmentVilla: string;
+    area: string;
+    postalCode: string;
+  };
+  framerDelivery?: {
+    companyName: string;
+    contactFirstName: string;
+    contactLastName: string;
+    email: string;
+    mobileNumber: string;
+    shopTelephone: string;
+    country: string;
+    city: string;
+    road: string;
+    buildingName: string;
+    shopUnit: string;
+    area: string;
+    postalCode: string;
+  };
+  rawAddress?: string;
+};
+
+function parseAddress(addressString?: string): ParsedAddress {
+  if (!addressString) return { type: 'unknown' };
+  
+  const lines = addressString.split('\n').map(l => l.trim()).filter(Boolean);
+  if (lines.length === 0) return { type: 'unknown', rawAddress: addressString };
+  
+  if (lines[0] === 'HOME DELIVERY:') {
+    const data: Record<string, string> = {};
+    for (let i = 1; i < lines.length; i++) {
+      const [key, ...valueParts] = lines[i].split(':');
+      if (key && valueParts.length > 0) {
+        data[key.trim()] = valueParts.join(':').trim();
+      }
+    }
+    return {
+      type: 'home',
+      homeDelivery: {
+        country: data['Country'] || '',
+        city: data['City'] || '',
+        road: data['Road'] || '',
+        buildingName: data['Building'] || '',
+        apartmentVilla: data['Apartment/Villa'] || '',
+        area: data['Area'] || '',
+        postalCode: data['ZIP'] || '',
+      }
+    };
+  } else if (lines[0] === 'LOCAL FRAMER DELIVERY:') {
+    const data: Record<string, string> = {};
+    for (let i = 1; i < lines.length; i++) {
+      const [key, ...valueParts] = lines[i].split(':');
+      if (key && valueParts.length > 0) {
+        data[key.trim()] = valueParts.join(':').trim();
+      }
+    }
+    return {
+      type: 'local',
+      framerDelivery: {
+        companyName: data['Company'] || '',
+        contactFirstName: data['Contact']?.split(' ')[0] || '',
+        contactLastName: data['Contact']?.split(' ').slice(1).join(' ') || '',
+        email: data['Framer Email'] || '',
+        mobileNumber: data['Framer Mobile'] || '',
+        shopTelephone: data['Shop Tel'] || '',
+        country: data['Country'] || '',
+        city: data['City'] || '',
+        road: data['Road'] || '',
+        buildingName: data['Building'] || '',
+        shopUnit: data['Shop/Unit'] || '',
+        area: data['Area'] || '',
+        postalCode: data['ZIP'] || '',
+      }
+    };
+  }
+  
+  return { type: 'unknown', rawAddress: addressString };
+}
+
 function getTransporter() {
   const host = process.env.SMTP_HOST?.trim();
   const port = process.env.SMTP_PORT ? Number(String(process.env.SMTP_PORT).trim()) : 587;
@@ -99,11 +185,42 @@ function formatOrderText(order: Order) {
   lines.push(`Total: ${formatCurrency(total)}`);
   const customer = readCustomer(order.customer);
   if (customer.name || customer.email || customer.phone || customer.address) {
+    lines.push('');
     lines.push('Customer:');
-    if (customer.name) lines.push(`  ${customer.name}`);
-    if (customer.email) lines.push(`  ${customer.email}`);
-    if (customer.phone) lines.push(`  ${customer.phone}`);
-    if (customer.address) lines.push(`  ${customer.address}`);
+    if (customer.name) lines.push(`  Name: ${customer.name}`);
+    if (customer.email) lines.push(`  Email: ${customer.email}`);
+    if (customer.phone) lines.push(`  Phone: ${customer.phone}`);
+    if (customer.address) {
+      const parsed = parseAddress(customer.address);
+      if (parsed.type === 'home' && parsed.homeDelivery) {
+        lines.push('  Delivery Type: Home Delivery');
+        const h = parsed.homeDelivery;
+        if (h.buildingName) lines.push(`  Building: ${h.buildingName}`);
+        if (h.apartmentVilla) lines.push(`  Apartment/Villa: ${h.apartmentVilla}`);
+        if (h.road) lines.push(`  Road: ${h.road}`);
+        if (h.area) lines.push(`  Area: ${h.area}`);
+        if (h.city) lines.push(`  City: ${h.city}`);
+        if (h.postalCode) lines.push(`  ZIP: ${h.postalCode}`);
+        if (h.country) lines.push(`  Country: ${h.country}`);
+      } else if (parsed.type === 'local' && parsed.framerDelivery) {
+        lines.push('  Delivery Type: Local Framer Delivery');
+        const f = parsed.framerDelivery;
+        if (f.companyName) lines.push(`  Company: ${f.companyName}`);
+        if (f.contactFirstName || f.contactLastName) lines.push(`  Contact: ${f.contactFirstName} ${f.contactLastName}`.trim());
+        if (f.email) lines.push(`  Contact Email: ${f.email}`);
+        if (f.mobileNumber) lines.push(`  Mobile: ${f.mobileNumber}`);
+        if (f.shopTelephone) lines.push(`  Shop Tel: ${f.shopTelephone}`);
+        if (f.buildingName) lines.push(`  Building: ${f.buildingName}`);
+        if (f.shopUnit) lines.push(`  Shop/Unit: ${f.shopUnit}`);
+        if (f.road) lines.push(`  Road: ${f.road}`);
+        if (f.area) lines.push(`  Area: ${f.area}`);
+        if (f.city) lines.push(`  City: ${f.city}`);
+        if (f.postalCode) lines.push(`  ZIP: ${f.postalCode}`);
+        if (f.country) lines.push(`  Country: ${f.country}`);
+      } else {
+        lines.push(`  Address: ${customer.address}`);
+      }
+    }
   }
   return lines.join('\n');
 }
@@ -257,13 +374,62 @@ function formatOrderHtml(order: Order) {
       </tr>
       <tr>
         <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;">
-          <strong>Billed to</strong><br />
-          ${escapeHtml(customer.name || '')}${customer.name ? '<br />' : ''}
-          ${escapeHtml(customer.email || '')}${customer.email ? '<br />' : ''}
-          ${escapeHtml(customer.phone || '')}${customer.phone ? '<br />' : ''}
-          ${escapeHtml(customer.address || '')}
+          <strong>Customer Details</strong><br />
+          ${customer.name ? `<strong>Name:</strong> ${escapeHtml(customer.name)}<br />` : ''}
+          ${customer.email ? `<strong>Email:</strong> ${escapeHtml(customer.email)}<br />` : ''}
+          ${customer.phone ? `<strong>Phone:</strong> ${escapeHtml(customer.phone)}<br />` : ''}
         </td>
       </tr>
+      ${(() => {
+        if (!customer.address) return '';
+        const parsed = parseAddress(customer.address);
+        if (parsed.type === 'home' && parsed.homeDelivery) {
+          const h = parsed.homeDelivery;
+          return `
+      <tr>
+        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
+          <strong style="color:${BRAND_ACCENT};">Home Delivery Address</strong><br />
+          ${h.buildingName ? `<strong>Building:</strong> ${escapeHtml(h.buildingName)}<br />` : ''}
+          ${h.apartmentVilla ? `<strong>Apartment/Villa:</strong> ${escapeHtml(h.apartmentVilla)}<br />` : ''}
+          ${h.road ? `<strong>Road:</strong> ${escapeHtml(h.road)}<br />` : ''}
+          ${h.area ? `<strong>Area:</strong> ${escapeHtml(h.area)}<br />` : ''}
+          ${h.city ? `<strong>City:</strong> ${escapeHtml(h.city)}<br />` : ''}
+          ${h.postalCode ? `<strong>Postal Code:</strong> ${escapeHtml(h.postalCode)}<br />` : ''}
+          ${h.country ? `<strong>Country:</strong> ${escapeHtml(h.country)}` : ''}
+        </td>
+      </tr>`;
+        } else if (parsed.type === 'local' && parsed.framerDelivery) {
+          const f = parsed.framerDelivery;
+          return `
+      <tr>
+        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
+          <strong style="color:${BRAND_ACCENT};">Local Framer Delivery</strong><br />
+          ${f.companyName ? `<strong>Company:</strong> ${escapeHtml(f.companyName)}<br />` : ''}
+          ${(f.contactFirstName || f.contactLastName) ? `<strong>Contact:</strong> ${escapeHtml(f.contactFirstName)} ${escapeHtml(f.contactLastName)}<br />` : ''}
+          ${f.email ? `<strong>Contact Email:</strong> ${escapeHtml(f.email)}<br />` : ''}
+          ${f.mobileNumber ? `<strong>Mobile:</strong> ${escapeHtml(f.mobileNumber)}<br />` : ''}
+          ${f.shopTelephone ? `<strong>Shop Tel:</strong> ${escapeHtml(f.shopTelephone)}<br />` : ''}
+          <div style="height:6px;"></div>
+          ${f.buildingName ? `<strong>Building:</strong> ${escapeHtml(f.buildingName)}<br />` : ''}
+          ${f.shopUnit ? `<strong>Shop/Unit:</strong> ${escapeHtml(f.shopUnit)}<br />` : ''}
+          ${f.road ? `<strong>Road:</strong> ${escapeHtml(f.road)}<br />` : ''}
+          ${f.area ? `<strong>Area:</strong> ${escapeHtml(f.area)}<br />` : ''}
+          ${f.city ? `<strong>City:</strong> ${escapeHtml(f.city)}<br />` : ''}
+          ${f.postalCode ? `<strong>Postal Code:</strong> ${escapeHtml(f.postalCode)}<br />` : ''}
+          ${f.country ? `<strong>Country:</strong> ${escapeHtml(f.country)}` : ''}
+        </td>
+      </tr>`;
+        } else if (parsed.rawAddress) {
+          return `
+      <tr>
+        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
+          <strong>Delivery Address</strong><br />
+          ${escapeHtml(parsed.rawAddress).replace(/\n/g, '<br />')}
+        </td>
+      </tr>`;
+        }
+        return '';
+      })()}
     </table>
 
     <div style="margin:0 0 10px 0;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.3;color:${BRAND_TEXT};">Line items</div>
@@ -471,16 +637,83 @@ async function generateInvoicePdf(order: Order): Promise<Buffer> {
       valueSize: bodyFontSize,
     });
 
-    // Billed to
-    const billedToY = Math.min(metaYLeft, metaYRight) - 6;
-    page.drawText('Billed to', { x: margin, y: billedToY, size: smallFontSize, font: fontRegular, color: BRAND_MUTED_RGB });
-    let y = billedToY - 14;
-    const lines = [customer.name, customer.email, customer.phone, customer.address].filter(Boolean).map(String);
-    if (!lines.length) lines.push('');
-    for (const line of lines) {
-      const safe = truncateToWidth(line, fontRegular, bodyFontSize, (page.getWidth() - margin * 2) * 0.52);
+    // Customer & Delivery Details
+    const detailsStartY = Math.min(metaYLeft, metaYRight) - 6;
+    page.drawText('Customer Details', { x: margin, y: detailsStartY, size: smallFontSize, font: fontBold, color: BRAND_MUTED_RGB });
+    let y = detailsStartY - 14;
+    
+    // Customer basic info
+    if (customer.name) {
+      const nameText = `Name: ${customer.name}`;
+      const safe = truncateToWidth(nameText, fontRegular, bodyFontSize, (page.getWidth() - margin * 2) * 0.52);
       page.drawText(safe, { x: margin, y, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
       y -= 14;
+    }
+    if (customer.email) {
+      const emailText = `Email: ${customer.email}`;
+      const safe = truncateToWidth(emailText, fontRegular, bodyFontSize, (page.getWidth() - margin * 2) * 0.52);
+      page.drawText(safe, { x: margin, y, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
+      y -= 14;
+    }
+    if (customer.phone) {
+      const phoneText = `Phone: ${customer.phone}`;
+      const safe = truncateToWidth(phoneText, fontRegular, bodyFontSize, (page.getWidth() - margin * 2) * 0.52);
+      page.drawText(safe, { x: margin, y, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
+      y -= 14;
+    }
+    
+    // Delivery details
+    if (customer.address) {
+      y -= 4;
+      const parsed = parseAddress(customer.address);
+      if (parsed.type === 'home' && parsed.homeDelivery) {
+        page.drawText('Home Delivery Address', { x: margin, y, size: smallFontSize, font: fontBold, color: BRAND_ACCENT_RGB });
+        y -= 14;
+        const h = parsed.homeDelivery;
+        const homeLines = [
+          h.buildingName ? `${h.buildingName}${h.apartmentVilla ? ', ' + h.apartmentVilla : ''}` : h.apartmentVilla,
+          h.road,
+          h.area,
+          [h.city, h.postalCode].filter(Boolean).join(' '),
+          h.country
+        ].filter(Boolean).map(String);
+        for (const line of homeLines) {
+          const safe = truncateToWidth(line, fontRegular, bodyFontSize, (page.getWidth() - margin * 2) * 0.52);
+          page.drawText(safe, { x: margin, y, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
+          y -= 13;
+        }
+      } else if (parsed.type === 'local' && parsed.framerDelivery) {
+        page.drawText('Local Framer Delivery', { x: margin, y, size: smallFontSize, font: fontBold, color: BRAND_ACCENT_RGB });
+        y -= 14;
+        const f = parsed.framerDelivery;
+        const framerLines = [
+          f.companyName,
+          (f.contactFirstName || f.contactLastName) ? `Contact: ${f.contactFirstName} ${f.contactLastName}`.trim() : '',
+          f.email ? `Email: ${f.email}` : '',
+          f.mobileNumber ? `Mobile: ${f.mobileNumber}` : '',
+          f.shopTelephone ? `Tel: ${f.shopTelephone}` : '',
+          '',
+          [f.buildingName, f.shopUnit].filter(Boolean).join(', '),
+          f.road,
+          f.area,
+          [f.city, f.postalCode].filter(Boolean).join(' '),
+          f.country
+        ].filter(Boolean).map(String);
+        for (const line of framerLines) {
+          const safe = truncateToWidth(line, fontRegular, bodyFontSize, (page.getWidth() - margin * 2) * 0.52);
+          page.drawText(safe, { x: margin, y, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
+          y -= 13;
+        }
+      } else if (parsed.rawAddress) {
+        page.drawText('Delivery Address', { x: margin, y, size: smallFontSize, font: fontBold, color: BRAND_MUTED_RGB });
+        y -= 14;
+        const addressLines = parsed.rawAddress.split('\n').filter(Boolean);
+        for (const line of addressLines) {
+          const safe = truncateToWidth(line, fontRegular, bodyFontSize, (page.getWidth() - margin * 2) * 0.52);
+          page.drawText(safe, { x: margin, y, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
+          y -= 13;
+        }
+      }
     }
 
     return y - 10;
