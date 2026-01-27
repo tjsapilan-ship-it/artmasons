@@ -254,7 +254,7 @@ ZIP: ${framerDelivery.postalCode}`;
                 </div>
 
                 <div className="mt-8 border-t border-gray-200 pt-8">
-                  <label className="font-serif text-lg font-bold text-gray-800 block mb-4">SELECT HOME OR LOCAL FRAMER DELIVERY</label>
+                  <label className="font-serif text-lg font-bold text-gray-800 block mb-4">Select Home Or Local Framer Delivery</label>
                   <div className="flex flex-col sm:flex-row gap-6">
                     <label className="flex items-center gap-3 cursor-pointer p-4 border border-gray-200 rounded-lg hover:border-[#800000] transition-colors bg-gray-50/50">
                       <input type="radio" name="deliveryType" checked={deliveryType === 'home'} onChange={() => setDeliveryType('home')} className="accent-[#800000] w-5 h-5" />
