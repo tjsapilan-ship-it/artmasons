@@ -51,7 +51,7 @@ export default function FrameSizeArtPage() {
           </div>
 
           <div className="text-center md:text-left mb-16">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#800000] mb-6">FRAME & ART SIZE</h1>
+            <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#800000] mb-6">Frame & Art Size</h1>
             <p className="font-serif text-xl text-gray-700 w-full">
               Ensure your masterpiece fits perfectly and arrives safely. Follow our comprehensive guide to sizing, shipping, and framing.
             </p>

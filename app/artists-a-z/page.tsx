@@ -315,50 +315,6 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
           </div>
         </div>
 
-        {/* Alphabet Filter */}
-        {!showAllGallery && (
-        <div className="mb-12 bg-white/90 shadow-sm p-6 rounded-lg backdrop-blur-sm border border-[#800000]/10">
-          <h2 className="font-serif text-xl font-bold mb-4 text-gray-800">Browse by Letter</h2>
-          <div className="flex flex-wrap justify-center gap-2">
-            {ALPHABET.map((letter) => {
-              const count = letterCounts[letter];
-              const hasArtists = count > 0;
-              const isSelected = selectedLetter === letter;
-              
-              return (
-                <button
-                  key={letter}
-                  onClick={() => hasArtists && selectLetter(letter)}
-                  disabled={!hasArtists}
-                  className={`
-                    relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center transition-all duration-200 rounded font-serif text-lg font-bold
-                    ${!hasArtists 
-                      ? 'bg-gray-100/50 text-gray-400 cursor-not-allowed' 
-                      : isSelected 
-                        ? 'bg-[#800000] text-white shadow-lg scale-110 cursor-pointer' 
-                        : 'bg-white text-gray-700 border border-gray-200 hover:border-[#800000] hover:text-[#800000] hover:scale-105 shadow-sm cursor-pointer'
-                    }
-                  `}
-                >
-                  {letter}
-                  {hasArtists && count > 0 && (
-                    <span className={`
-                      absolute -top-1 -right-1 text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center transition-all duration-200
-                      ${isSelected 
-                        ? 'bg-white text-[#800000] border border-white' 
-                        : 'bg-white text-[#800000] border border-gray-300'
-                      }
-                    `}>
-                      {count}
-                    </span>
-                  )}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-        )}
-
         {/* Results Section */}
         <div className="min-h-[400px]">
           {showAllGallery ? (
@@ -567,6 +523,91 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
             </div>
           )}
         </div>
+
+        {/* Alphabet Pagination */}
+        {!showAllGallery && (
+          <div className="flex flex-col items-center mt-8 mb-12">
+            <div className="flex justify-center items-center gap-2 w-full max-w-6xl">
+              <button
+                onClick={() => {
+                  const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
+                  let prevIndex = currentIndex - 1;
+                  while (prevIndex >= 0 && letterCounts[ALPHABET[prevIndex]] === 0) {
+                    prevIndex--;
+                  }
+                  if (prevIndex >= 0) {
+                    selectLetter(ALPHABET[prevIndex]);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
+                disabled={(() => {
+                  const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
+                  let prevIndex = currentIndex - 1;
+                  while (prevIndex >= 0 && letterCounts[ALPHABET[prevIndex]] === 0) {
+                    prevIndex--;
+                  }
+                  return prevIndex < 0;
+                })()}
+                className="px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 hover:border-[#800000] hover:text-[#800000] disabled:opacity-50 disabled:cursor-not-allowed font-serif transition-colors"
+              >
+                Previous
+              </button>
+
+              <div className="flex overflow-x-auto gap-2 px-2 pb-2 custom-scrollbar items-center justify-start w-full">
+                {ALPHABET.map((letter) => {
+                  const count = letterCounts[letter];
+                  const hasArtists = count > 0;
+                  return (
+                    <button
+                      key={letter}
+                      onClick={() => {
+                        if (hasArtists) {
+                          selectLetter(letter);
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                      }}
+                      disabled={!hasArtists}
+                      className={`flex-shrink-0 w-10 h-10 rounded border font-serif font-bold transition-all ${
+                        selectedLetter === letter
+                          ? 'bg-[#800000] text-white border-[#800000]'
+                          : hasArtists
+                            ? 'bg-white text-gray-700 border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                            : 'bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed'
+                      }`}
+                    >
+                      {letter}
+                    </button>
+                  );
+                })}
+              </div>
+
+              <button
+                onClick={() => {
+                  const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
+                  let nextIndex = currentIndex + 1;
+                  while (nextIndex < ALPHABET.length && letterCounts[ALPHABET[nextIndex]] === 0) {
+                    nextIndex++;
+                  }
+                  if (nextIndex < ALPHABET.length) {
+                    selectLetter(ALPHABET[nextIndex]);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
+                disabled={(() => {
+                  const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
+                  let nextIndex = currentIndex + 1;
+                  while (nextIndex < ALPHABET.length && letterCounts[ALPHABET[nextIndex]] === 0) {
+                    nextIndex++;
+                  }
+                  return nextIndex >= ALPHABET.length;
+                })()}
+                className="px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 hover:border-[#800000] hover:text-[#800000] disabled:opacity-50 disabled:cursor-not-allowed font-serif transition-colors"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        )}
 
       </div>
     </main>
