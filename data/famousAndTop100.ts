@@ -21,13 +21,13 @@ export const FAMOUS_ART: FamousArtwork[] = [
     title: "Starry Night",
     artist: "Vincent Van Gogh",
     year: "1889",
-    originalSize: "73.7 x 92.1 cm",
+    originalSize: "92.1 x 73.7 cm",
     artistLife: "1853-1890",
     sku: "AM-FA-001",
     basePrice: 4000,
     currency: "AED",
     image: "/image/famous-art/starry night.jpg",
-    options: [{ id: 'opt1', width: 73.7, height: 92.1, price: 4000, label: 'Original Size' }],
+    options: [{ id: 'opt1', width: 92.1, height: 73.7, price: 4000, label: '92.1 x 73.7 cm' }],
   },
 
   {
@@ -68,13 +68,13 @@ export const FAMOUS_ART: FamousArtwork[] = [
     title: "Irises",
     artist: "Vincent Van Gogh",
     year: "1889",
-    originalSize: "93 x 71 cm",
+    originalSize: "71 x 93 cm",
     artistLife: "1853-1890",
     sku: "AM-FA-004",
     basePrice: 4700,
     currency: "AED",
     image: "/image/famous-art/irises.jpg",
-    options: [{ id: 'opt1', width: 93, height: 71, price: 4700, label: 'Original Size' }],
+    options: [{ id: 'opt1', width: 71, height: 93, price: 4700, label: '71 x 93 cm' }],
   },
 
   {
@@ -88,10 +88,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     currency: "AED",
     image: "/image/famous-art/the girl with a pearl earring.jpg",
     options: [
-      { id: 'opt1', width: 46, height: 40, price: 3000, label: '46 x 40 cm' },
-      { id: 'opt2', width: 92, height: 80, price: 6000, label: '92 x 80 cm' },
-      { id: 'opt3', width: 138, height: 120, price: 9000, label: '138 x 120 cm' },
-      { id: 'opt4', width: 276, height: 240, price: 18000, label: '276 x 240 cm' }
+      { id: 'opt1', width: 40, height: 46, price: 3000, label: '40 x 46 cm' },
+      { id: 'opt2', width: 80, height: 92, price: 6000, label: '80 x 92 cm' },
+      { id: 'opt3', width: 120, height: 138, price: 9000, label: '120 x 138 cm' },
+      { id: 'opt4', width: 240, height: 276, price: 18000, label: '240 x 276 cm' }
     ],
   },
 
