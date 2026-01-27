@@ -304,7 +304,7 @@ export default function FrameSizeArtPage() {
                    { step: 2, title: "Creation", desc: "Your artwork is hand-painted by our academically trained artists. Production takes approximately 8 weeks, including proper drying time." },
                    { step: 3, title: "Delivery", desc: "Once complete, we ship your artwork directly to your framer of choice for a seamless transition. Estimated delivery time: 1 week." },
                    { step: 4, title: "Consult", desc: "Work with your framer to select materials that best complement your interior and artwork." },
-                   { step: 5, title: "Install", desc: "Your framer professionally stretches and frames the canvas to museum standards." },
+                   { step: 5, title: "Preparation", desc: "Your framer professionally stretches and frames the canvas to museum standards." },
                    { step: 6, title: "Hang & Enjoy", desc: "Install your masterpiece and enjoy art created exclusively for your space." }
                ].map((item) => (
                    <div key={item.step} className="p-6 rounded-lg bg-white shadow-sm border-2 border-[#800000]">

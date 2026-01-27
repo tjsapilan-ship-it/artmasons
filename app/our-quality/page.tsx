@@ -40,7 +40,7 @@ export default function OurQualityPage() {
                 Our dedication to quality means using only the finest materials and employing time-honored techniques that have been perfected over centuries. When you choose ART MASONS, you&apos;re not just buying a painting—you&apos;re investing in a work of art.
               </p>
             </section>
-            <h2 className="font-serif text-3xl font-bold italic mt-8 text-[#800000] text-center">Hand-Painted. Curated. Enduring</h2>
+            <h2 className="font-serif text-3xl font-bold mt-8 text-[#800000] text-center">Hand-Painted. Curated. Enduring</h2>
           </div>
 
           {/* Hero Banner - Portrait Video */}
