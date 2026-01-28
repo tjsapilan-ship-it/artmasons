@@ -25,12 +25,12 @@ const getArtistLetter = (artistName: string): string => {
 const getArtistDates = (artistName: string): { birth?: number; death?: number } => {
   const artwork = ARTWORKS.find(item => item.artist === artistName);
   if (!artwork?.artistLifespan) return {};
-  
+
   const parts = artwork.artistLifespan.split('-');
   if (parts.length === 2) {
-    return { 
-      birth: parseInt(parts[0]) || undefined, 
-      death: parseInt(parts[1]) || undefined 
+    return {
+      birth: parseInt(parts[0]) || undefined,
+      death: parseInt(parts[1]) || undefined
     };
   }
   return {};
@@ -41,11 +41,11 @@ const formatPrice = (price: number, currency: string = 'AED') => {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   }).format(price);
-  
+
   if (currency === 'AED') {
     return `AED ${formatted}`;
   }
-  
+
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: currency,
@@ -92,10 +92,10 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
 
       // Check if we're returning from a navigation and restore state
       const savedState = sessionStorage.getItem(PAGE_STATE_KEY);
-      
+
       if (savedState) {
         const { selectedLetter: savedLetter, showAllGallery: savedGallery, currentPage: savedPage, scrollPosition } = JSON.parse(savedState);
-        
+
         // Restore the view state
         if (savedGallery) {
           setShowAllGallery(true);
@@ -105,7 +105,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
           setSelectedLetter(savedLetter);
           setShowAllGallery(false);
         }
-        
+
         // Restore scroll position after content loads
         setTimeout(() => {
           window.scrollTo(0, scrollPosition || 0);
@@ -142,7 +142,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
     setTimeout(() => {
       // Try smooth scroll first
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      
+
       // Fallback for Safari: also try scrolling the document element directly
       if (document.documentElement) {
         document.documentElement.scrollTop = 0;
@@ -212,9 +212,9 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
     // Remove parenthetical content (e.g., "Edmund Blair (Leighton)" -> "Edmund Blair Leighton")
     const cleanedName = artistName.replace(/\([^)]*\)/g, '').trim();
     const parts = cleanedName.trim().split(/\s+/).filter(part => part.length > 0);
-    
+
     if (parts.length === 0) return artistName;
-    
+
     return parts[parts.length - 1];
   };
 
@@ -224,17 +224,17 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
       const surnameA = getArtistSurname(a.artist);
       const surnameB = getArtistSurname(b.artist);
       const surnameCompare = surnameA.localeCompare(surnameB);
-      
+
       if (surnameCompare !== 0) {
         return surnameCompare;
       }
-      
+
       // If surnames are the same, sort by full artist name
       const artistCompare = a.artist.localeCompare(b.artist);
       if (artistCompare !== 0) {
         return artistCompare;
       }
-      
+
       // If artists are the same, sort by artwork name
       return a.name.localeCompare(b.name);
     });
@@ -282,7 +282,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
       `}</style>
 
       <div className="w-full px-4 py-12 relative z-10">
-        
+
         {/* Breadcrumbs */}
         <div className="mb-8">
           <Breadcrumbs items={[{ label: 'Artists A-Z', href: '/artists-a-z' }]} />
@@ -302,8 +302,8 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
               onClick={showGalleryView}
               className={`
                 px-6 md:px-10 py-3 rounded-full text-lg font-serif font-bold transition-all duration-300 relative z-10 text-center flex items-center justify-center
-                ${showAllGallery 
-                  ? 'bg-[#800000] text-white shadow-md' 
+                ${showAllGallery
+                  ? 'bg-[#800000] text-white shadow-md'
                   : 'text-gray-500 hover:text-[#800000] bg-transparent'
                 }
               `}
@@ -319,8 +319,8 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
               }}
               className={`
                 px-6 md:px-10 py-3 rounded-full text-lg font-serif font-bold transition-all duration-300 relative z-10 text-center flex items-center justify-center
-                ${!showAllGallery 
-                  ? 'bg-[#800000] text-white shadow-md' 
+                ${!showAllGallery
+                  ? 'bg-[#800000] text-white shadow-md'
                   : 'text-gray-500 hover:text-[#800000] bg-transparent'
                 }
               `}
@@ -344,10 +344,10 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                   </span>
                 </h2>
               </div>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {displayedArtworks.map((artwork, idx) => (
-                  <div 
+                  <div
                     key={idx}
                     className="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group hover:border-[#800000]/20 border border-transparent"
                   >
@@ -369,19 +369,19 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                           {artwork.name}
                         </h3>
                       </Link>
-                      
+
                       <p className="font-serif text-sm text-gray-500 mb-1.5">
                         {artwork.year}
                       </p>
-                      
+
                       <p className="font-serif text-sm text-[#4A5568] mb-3 font-medium line-clamp-1">
                         {artwork.artist}
                       </p>
-                      
+
                       <div className="flex gap-0.5 mb-4 justify-center">
                         {[...Array(5)].map((_, i) => (
                           <svg key={i} className="w-5 h-5 fill-orange-400" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                           </svg>
                         ))}
                       </div>
@@ -425,11 +425,10 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                       <button
                         key={page}
                         onClick={() => handlePageChange(page)}
-                        className={`flex-shrink-0 w-10 h-10 rounded border font-serif font-bold transition-all ${
-                          currentPage === page
-                            ? 'bg-[#800000] text-white border-[#800000]'
-                            : 'bg-white text-gray-700 border-gray-300 hover:border-[#800000] hover:text-[#800000]'
-                        }`}
+                        className={`flex-shrink-0 w-10 h-10 rounded border font-serif font-bold transition-all ${currentPage === page
+                          ? 'bg-[#800000] text-white border-[#800000]'
+                          : 'bg-white text-gray-700 border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                          }`}
                       >
                         {page}
                       </button>
@@ -453,50 +452,50 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                   <span className="text-4xl font-bold text-[#800000]">{filteredArtists.length}</span> {filteredArtists.length === 1 ? 'Artist' : 'Artists'} starting with “{selectedLetter}”
                 </h2>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredArtists.map((artist, idx) => {
                   const artworks = getArtworksByArtist(artist);
                   const dates = getArtistDates(artist);
-                  
+
                   // Determine image to show
                   let artistImage = null;
                   const recommendedArtworkName = ARTIST_RECOMMENDED_IMAGES[artist];
-                  
+
                   if (recommendedArtworkName) {
                     const found = artworks.find(a => a.name === recommendedArtworkName);
                     if (found) artistImage = found.image;
                   }
-                  
+
                   if (!artistImage && artworks.length > 0) {
                     artistImage = artworks[0].image;
                   }
 
                   return (
-                    <div 
-                      key={idx} 
+                    <div
+                      key={idx}
                       className="group flex flex-col h-full rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 bg-white border border-gray-100"
                     >
-                      <Link 
-                        href={`/artists-a-z/${generateSlug(artist)}`} 
+                      <Link
+                        href={`/artists-a-z/${generateSlug(artist)}`}
                         onClick={savePageState}
                         className="relative block w-full aspect-[4/3] overflow-hidden cursor-pointer bg-gray-100"
                       >
-                         {artistImage ? (
-                           <Image 
-                             src={artistImage} 
-                             alt={artist} 
-                             fill 
-                             className="object-cover transition-transform duration-700 group-hover:scale-110"
-                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                           />
-                         ) : (
-                           <div className="w-full h-full flex items-center justify-center text-gray-400">
-                             <User size={48} />
-                           </div>
-                         )}
+                        {artistImage ? (
+                          <Image
+                            src={artistImage}
+                            alt={artist}
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-110"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center text-gray-400">
+                            <User size={48} />
+                          </div>
+                        )}
                       </Link>
-                      
+
                       <div className="flex-1 p-2 flex flex-col">
                         <div>
                           <h3 className="font-serif text-lg font-bold text-[#800000] leading-snug mb-0.5">
@@ -515,12 +514,12 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                           )}
                         </div>
                         <div>
-                          <Link 
-                              href={`/artists-a-z/${generateSlug(artist)}`}
-                              onClick={savePageState}
-                              className="inline-flex items-center text-xs font-bold tracking-wider text-[#800000] uppercase border-b border-[#800000]/20 hover:border-[#800000] transition-all pb-0.5"
+                          <Link
+                            href={`/artists-a-z/${generateSlug(artist)}`}
+                            onClick={savePageState}
+                            className="inline-flex items-center text-xs font-bold tracking-wider text-[#800000] uppercase border-b border-[#800000]/20 hover:border-[#800000] transition-all pb-0.5"
                           >
-                              View full gallery
+                            View full gallery
                           </Link>
                         </div>
                       </div>
@@ -542,90 +541,87 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
 
         {/* Alphabet Pagination */}
         {!showAllGallery && (
-          <div className="flex flex-col items-center mt-8 mb-12">
-            <div className="flex justify-center items-center gap-2 w-full max-w-6xl">
-              <button
-                onClick={() => {
-                  const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
-                  let prevIndex = currentIndex - 1;
-                  while (prevIndex >= 0 && letterCounts[ALPHABET[prevIndex]] === 0) {
-                    prevIndex--;
-                  }
-                  if (prevIndex >= 0) {
-                    selectLetter(ALPHABET[prevIndex]);
-                    scrollToTop();
-                  }
-                }}
-                disabled={(() => {
-                  const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
-                  let prevIndex = currentIndex - 1;
-                  while (prevIndex >= 0 && letterCounts[ALPHABET[prevIndex]] === 0) {
-                    prevIndex--;
-                  }
-                  return prevIndex < 0;
-                })()}
-                className="px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 hover:border-[#800000] hover:text-[#800000] disabled:opacity-50 disabled:cursor-not-allowed font-serif transition-colors"
-              >
-                Previous
-              </button>
+          <div className="flex justify-center items-center gap-2 py-8 mt-4 flex-wrap">
+            <button
+              onClick={() => {
+                const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
+                let prevIndex = currentIndex - 1;
+                while (prevIndex >= 0 && letterCounts[ALPHABET[prevIndex]] === 0) {
+                  prevIndex--;
+                }
+                if (prevIndex >= 0) {
+                  selectLetter(ALPHABET[prevIndex]);
+                  scrollToTop();
+                }
+              }}
+              disabled={(() => {
+                const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
+                let prevIndex = currentIndex - 1;
+                while (prevIndex >= 0 && letterCounts[ALPHABET[prevIndex]] === 0) {
+                  prevIndex--;
+                }
+                return prevIndex < 0;
+              })()}
+              className="px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 hover:border-[#800000] hover:text-[#800000] disabled:opacity-50 disabled:cursor-not-allowed font-serif transition-colors"
+            >
+              Previous
+            </button>
 
-              <div className="flex overflow-x-auto gap-2 px-2 pb-2 custom-scrollbar items-center justify-start w-full">
-                {ALPHABET.map((letter) => {
-                  const count = letterCounts[letter];
-                  const hasArtists = count > 0;
-                  return (
-                    <button
-                      key={letter}
-                      onClick={() => {
-                        if (hasArtists) {
-                          selectLetter(letter);
-                          scrollToTop();
-                        }
-                      }}
-                      disabled={!hasArtists}
-                      className={`flex-shrink-0 w-10 h-10 rounded border font-serif font-bold transition-all ${
-                        selectedLetter === letter
-                          ? 'bg-[#800000] text-white border-[#800000]'
-                          : hasArtists
-                            ? 'bg-white text-gray-700 border-gray-300 hover:border-[#800000] hover:text-[#800000]'
-                            : 'bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed'
+            <div className="flex flex-1 overflow-x-auto gap-2 px-2 pb-2 custom-scrollbar items-center justify-start max-w-[80vw] md:max-w-[500px]">
+              {ALPHABET.map((letter) => {
+                const count = letterCounts[letter];
+                const hasArtists = count > 0;
+                return (
+                  <button
+                    key={letter}
+                    onClick={() => {
+                      if (hasArtists) {
+                        selectLetter(letter);
+                        scrollToTop();
+                      }
+                    }}
+                    disabled={!hasArtists}
+                    className={`flex-shrink-0 w-10 h-10 rounded border font-serif font-bold transition-all ${selectedLetter === letter
+                      ? 'bg-[#800000] text-white border-[#800000]'
+                      : hasArtists
+                        ? 'bg-white text-gray-700 border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                        : 'bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed'
                       }`}
-                    >
-                      {letter}
-                    </button>
-                  );
-                })}
-              </div>
-
-              <button
-                onClick={() => {
-                  const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
-                  let nextIndex = currentIndex + 1;
-                  while (nextIndex < ALPHABET.length && letterCounts[ALPHABET[nextIndex]] === 0) {
-                    nextIndex++;
-                  }
-                  if (nextIndex < ALPHABET.length) {
-                    selectLetter(ALPHABET[nextIndex]);
-                    scrollToTop();
-                  }
-                }}
-                disabled={(() => {
-                  const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
-                  let nextIndex = currentIndex + 1;
-                  while (nextIndex < ALPHABET.length && letterCounts[ALPHABET[nextIndex]] === 0) {
-                    nextIndex++;
-                  }
-                  return nextIndex >= ALPHABET.length;
-                })()}
-                className="px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 hover:border-[#800000] hover:text-[#800000] disabled:opacity-50 disabled:cursor-not-allowed font-serif transition-colors"
-              >
-                Next
-              </button>
+                  >
+                    {letter}
+                  </button>
+                );
+              })}
             </div>
+
+            <button
+              onClick={() => {
+                const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
+                let nextIndex = currentIndex + 1;
+                while (nextIndex < ALPHABET.length && letterCounts[ALPHABET[nextIndex]] === 0) {
+                  nextIndex++;
+                }
+                if (nextIndex < ALPHABET.length) {
+                  selectLetter(ALPHABET[nextIndex]);
+                  scrollToTop();
+                }
+              }}
+              disabled={(() => {
+                const currentIndex = ALPHABET.indexOf(selectedLetter || 'A');
+                let nextIndex = currentIndex + 1;
+                while (nextIndex < ALPHABET.length && letterCounts[ALPHABET[nextIndex]] === 0) {
+                  nextIndex++;
+                }
+                return nextIndex >= ALPHABET.length;
+              })()}
+              className="px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 hover:border-[#800000] hover:text-[#800000] disabled:opacity-50 disabled:cursor-not-allowed font-serif transition-colors"
+            >
+              Next
+            </button>
           </div>
         )}
 
       </div>
-    </main>
+    </main >
   );
 }
