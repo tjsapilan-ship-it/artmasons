@@ -85,10 +85,10 @@ type ParsedAddress = {
 
 function parseAddress(addressString?: string): ParsedAddress {
   if (!addressString) return { type: 'unknown' };
-  
+
   const lines = addressString.split('\n').map(l => l.trim()).filter(Boolean);
   if (lines.length === 0) return { type: 'unknown', rawAddress: addressString };
-  
+
   if (lines[0] === 'HOME DELIVERY:') {
     const data: Record<string, string> = {};
     for (let i = 1; i < lines.length; i++) {
@@ -136,7 +136,7 @@ function parseAddress(addressString?: string): ParsedAddress {
       }
     };
   }
-  
+
   return { type: 'unknown', rawAddress: addressString };
 }
 
@@ -163,6 +163,32 @@ function formatOrderText(order: Order) {
   const lines: string[] = [];
   const currency = safeCurrency(order);
   const formatCurrency = (value: number) => new Intl.NumberFormat('en-US', { style: 'currency', currency }).format(value);
+
+  const customer = readCustomer(order.customer);
+  const customerName = customer.name || 'Valued Customer';
+
+  // Personalized welcome message
+  lines.push(`Dear ${customerName},`);
+  lines.push('');
+  lines.push('Thank you for your order with Art Masons. We are truly honoured that you\'ve chosen us to create your masterpiece for your home.');
+  lines.push('');
+  lines.push('Your artwork is now scheduled for production. Each piece is hand-painted to order, and the process takes up to 8 weeks to complete, ensuring the highest level of craftsmanship and detail. Once finished, please allow approximately 1 week for careful packaging and delivery to your address.');
+  lines.push('');
+  lines.push('If we require any further information during the process, our team will contact you directly by email.');
+  lines.push('');
+  lines.push('We will keep you updated, and we cannot wait for you to receive your finished masterpiece!');
+  lines.push('');
+  lines.push('Warm regards,');
+  lines.push('');
+  lines.push('The Art Masons Team');
+  lines.push('info@artmasons.com');
+  lines.push('');
+  lines.push('www.artmasons.com');
+  lines.push('Instagram @theartmasons');
+  lines.push('TikTok: @theartmasons');
+  lines.push('');
+  lines.push('='.repeat(60));
+  lines.push('');
   lines.push(`Order: ${order.sessionId}`);
   lines.push(`Status: ${order.status}`);
   lines.push(`Date: ${order.createdAt}`);
@@ -183,7 +209,6 @@ function formatOrderText(order: Order) {
   }
   lines.push('');
   lines.push(`Total: ${formatCurrency(total)}`);
-  const customer = readCustomer(order.customer);
   if (customer.name || customer.email || customer.phone || customer.address) {
     lines.push('');
     lines.push('Customer:');
@@ -349,7 +374,28 @@ function formatOrderHtml(order: Order) {
 
   const total = subtotal;
 
+  const customerName = customer.name || 'Valued Customer';
+
   const bodyHtml = `
+    <div style="margin:0 0 20px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7;color:${BRAND_TEXT};">
+      <p style="margin:0 0 12px 0;">Dear ${escapeHtml(customerName)},</p>
+      
+      <p style="margin:0 0 12px 0;">Thank you for your order with Art Masons. We are truly honoured that you've chosen us to create your masterpiece for your home.</p>
+      
+      <p style="margin:0 0 12px 0;">Your artwork is now scheduled for production. Each piece is hand-painted to order, and the process takes up to 8 weeks to complete, ensuring the highest level of craftsmanship and detail. Once finished, please allow approximately 1 week for careful packaging and delivery to your address.</p>
+      
+      <p style="margin:0 0 12px 0;">If we require any further information during the process, our team will contact you directly by email.</p>
+      
+      <p style="margin:0 0 12px 0;">We will keep you updated, and we cannot wait for you to receive your finished masterpiece!</p>
+      
+      <p style="margin:0 0 4px 0;">Warm regards,</p>
+      <p style="margin:0 0 4px 0;"><strong>The Art Masons Team</strong></p>
+      <p style="margin:0 0 4px 0;"><a href="mailto:info@artmasons.com" style="color:${BRAND_ACCENT};text-decoration:none;">info@artmasons.com</a></p>
+      <p style="margin:0 0 4px 0;"><a href="https://www.artmasons.com" style="color:${BRAND_ACCENT};text-decoration:none;">www.artmasons.com</a></p>
+      <p style="margin:0 0 4px 0;">Instagram <a href="https://www.instagram.com/theartmasons" style="color:${BRAND_ACCENT};text-decoration:none;">@theartmasons</a></p>
+      <p style="margin:0 0 20px 0;">TikTok: <a href="https://www.tiktok.com/@theartmasons" style="color:${BRAND_ACCENT};text-decoration:none;">@theartmasons</a></p>
+    </div>
+
     <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:${BRAND_ACCENT};margin:0 0 8px 0;">
       Invoice
     </div>
@@ -381,11 +427,11 @@ function formatOrderHtml(order: Order) {
         </td>
       </tr>
       ${(() => {
-        if (!customer.address) return '';
-        const parsed = parseAddress(customer.address);
-        if (parsed.type === 'home' && parsed.homeDelivery) {
-          const h = parsed.homeDelivery;
-          return `
+      if (!customer.address) return '';
+      const parsed = parseAddress(customer.address);
+      if (parsed.type === 'home' && parsed.homeDelivery) {
+        const h = parsed.homeDelivery;
+        return `
       <tr>
         <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
           <strong style="color:${BRAND_ACCENT};">Home Delivery Address</strong><br />
@@ -398,9 +444,9 @@ function formatOrderHtml(order: Order) {
           ${h.country ? `<strong>Country:</strong> ${escapeHtml(h.country)}` : ''}
         </td>
       </tr>`;
-        } else if (parsed.type === 'local' && parsed.framerDelivery) {
-          const f = parsed.framerDelivery;
-          return `
+      } else if (parsed.type === 'local' && parsed.framerDelivery) {
+        const f = parsed.framerDelivery;
+        return `
       <tr>
         <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
           <strong style="color:${BRAND_ACCENT};">Local Framer Delivery</strong><br />
@@ -419,17 +465,17 @@ function formatOrderHtml(order: Order) {
           ${f.country ? `<strong>Country:</strong> ${escapeHtml(f.country)}` : ''}
         </td>
       </tr>`;
-        } else if (parsed.rawAddress) {
-          return `
+      } else if (parsed.rawAddress) {
+        return `
       <tr>
         <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
           <strong>Delivery Address</strong><br />
           ${escapeHtml(parsed.rawAddress).replace(/\n/g, '<br />')}
         </td>
       </tr>`;
-        }
-        return '';
-      })()}
+      }
+      return '';
+    })()}
     </table>
 
     <div style="margin:0 0 10px 0;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.3;color:${BRAND_TEXT};">Line items</div>
@@ -641,7 +687,7 @@ async function generateInvoicePdf(order: Order): Promise<Buffer> {
     const detailsStartY = Math.min(metaYLeft, metaYRight) - 6;
     page.drawText('Customer Details', { x: margin, y: detailsStartY, size: smallFontSize, font: fontBold, color: BRAND_MUTED_RGB });
     let y = detailsStartY - 14;
-    
+
     // Customer basic info
     if (customer.name) {
       const nameText = `Name: ${customer.name}`;
@@ -661,7 +707,7 @@ async function generateInvoicePdf(order: Order): Promise<Buffer> {
       page.drawText(safe, { x: margin, y, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
       y -= 14;
     }
-    
+
     // Delivery details
     if (customer.address) {
       y -= 4;
@@ -888,10 +934,154 @@ export async function sendOrderInvoice(order: Order, to?: string) {
   const info = await transporter.sendMail({
     from,
     to,
+    cc: 'info@artmasons.com',
+    replyTo: 'info@artmasons.com',
     subject,
     text,
     html,
     attachments,
+  });
+
+  return info;
+}
+
+// Quote Request Types
+type QuoteRequest = {
+  customerName: string;
+  email: string;
+  phone: string;
+  artworkTitle?: string;
+  artworkArtist?: string;
+  customWidth?: string;
+  customHeight?: string;
+  framePreference?: string;
+  quantity?: number;
+  additionalNotes?: string;
+  requestedAt: string;
+};
+
+function formatQuoteRequestText(quote: QuoteRequest) {
+  const lines: string[] = [];
+  lines.push('CUSTOM QUOTE REQUEST');
+  lines.push('===================');
+  lines.push('');
+  lines.push(`Request Date: ${quote.requestedAt}`);
+  lines.push('');
+  lines.push('CUSTOMER INFORMATION:');
+  lines.push(`Name: ${quote.customerName}`);
+  lines.push(`Email: ${quote.email}`);
+  lines.push(`Phone: ${quote.phone}`);
+  lines.push('');
+
+  if (quote.artworkTitle || quote.artworkArtist) {
+    lines.push('ARTWORK DETAILS:');
+    if (quote.artworkTitle) lines.push(`Title: ${quote.artworkTitle}`);
+    if (quote.artworkArtist) lines.push(`Artist: ${quote.artworkArtist}`);
+    lines.push('');
+  }
+
+  lines.push('QUOTE DETAILS:');
+  if (quote.customWidth && quote.customHeight) {
+    lines.push(`Custom Size: ${quote.customWidth} x ${quote.customHeight} cm`);
+  }
+  if (quote.framePreference) {
+    lines.push(`Frame Preference: ${quote.framePreference}`);
+  }
+  if (quote.quantity) {
+    lines.push(`Quantity: ${quote.quantity}`);
+  }
+  lines.push('');
+
+  if (quote.additionalNotes) {
+    lines.push('ADDITIONAL NOTES:');
+    lines.push(quote.additionalNotes);
+    lines.push('');
+  }
+
+  return lines.join('\n');
+}
+
+function formatQuoteRequestHtml(quote: QuoteRequest) {
+  const bodyHtml = `
+    <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:${BRAND_ACCENT};margin:0 0 8px 0;">
+      Custom Quote Request
+    </div>
+    <div style="margin:0 0 14px 0;font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1.25;color:${BRAND_TEXT};">
+      New Quote Request
+    </div>
+
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;margin:0 0 16px 0;border:1px solid ${BRAND_BORDER};">
+      <tr>
+        <td style="padding:12px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:13px;">
+          <strong>Request Date</strong><br />
+          <span style="color:${BRAND_TEXT};">${escapeHtml(formatDateLabel(quote.requestedAt))}</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
+          <strong style="color:${BRAND_ACCENT};">Customer Information</strong><br />
+          <strong>Name:</strong> ${escapeHtml(quote.customerName)}<br />
+          <strong>Email:</strong> ${escapeHtml(quote.email)}<br />
+          <strong>Phone:</strong> ${escapeHtml(quote.phone)}
+        </td>
+      </tr>
+      ${quote.artworkTitle || quote.artworkArtist ? `
+      <tr>
+        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;">
+          <strong style="color:${BRAND_ACCENT};">Artwork Details</strong><br />
+          ${quote.artworkTitle ? `<strong>Title:</strong> ${escapeHtml(quote.artworkTitle)}<br />` : ''}
+          ${quote.artworkArtist ? `<strong>Artist:</strong> ${escapeHtml(quote.artworkArtist)}<br />` : ''}
+        </td>
+      </tr>
+      ` : ''}
+      <tr>
+        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
+          <strong style="color:${BRAND_ACCENT};">Quote Details</strong><br />
+          ${quote.customWidth && quote.customHeight ? `<strong>Custom Size:</strong> ${escapeHtml(quote.customWidth)} x ${escapeHtml(quote.customHeight)} cm<br />` : ''}
+          ${quote.framePreference ? `<strong>Frame Preference:</strong> ${escapeHtml(quote.framePreference)}<br />` : ''}
+          ${quote.quantity ? `<strong>Quantity:</strong> ${escapeHtml(String(quote.quantity))}<br />` : ''}
+        </td>
+      </tr>
+      ${quote.additionalNotes ? `
+      <tr>
+        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;">
+          <strong style="color:${BRAND_ACCENT};">Additional Notes</strong><br />
+          ${escapeHtml(quote.additionalNotes).replace(/\n/g, '<br />')}
+        </td>
+      </tr>
+      ` : ''}
+    </table>
+
+    <div style="height:14px;line-height:14px;">&nbsp;</div>
+    <div style="font-size:13px;line-height:1.6;color:${BRAND_TEXT};">
+      Please respond to this customer at <a href="mailto:${escapeHtml(quote.email)}" style="color:${BRAND_ACCENT};text-decoration:underline;">${escapeHtml(quote.email)}</a> with a custom quote.
+    </div>
+  `;
+
+  return buildEmailShell({
+    title: `Custom Quote Request from ${quote.customerName}`,
+    preheader: `New quote request for ${quote.artworkTitle || 'custom artwork'}`,
+    bodyHtml,
+  });
+}
+
+export async function sendQuoteRequest(quote: QuoteRequest) {
+  const from = process.env.MAIL_FROM || process.env.SMTP_USER;
+  if (!quote.email) throw new Error('Customer email is required');
+
+  const transporter = getTransporter();
+  const subject = `Custom Quote Request — ${quote.artworkTitle || 'Artwork'} from ${quote.customerName}`;
+  const text = formatQuoteRequestText(quote);
+  const html = formatQuoteRequestHtml(quote);
+
+  const info = await transporter.sendMail({
+    from,
+    to: 'info@artmasons.com',
+    cc: quote.email,
+    replyTo: quote.email,
+    subject,
+    text,
+    html,
   });
 
   return info;

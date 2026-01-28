@@ -8,6 +8,7 @@ import { Trophy, Search } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { ARTWORKS, getArtworkSlug } from '../../data/artworks';
 import { TOP_100_PAINTINGS, getFamousArtworkSlug, FamousArtwork } from '../../data/famousAndTop100';
+import QuoteRequestModal from '../components/QuoteRequestModal';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
 
@@ -89,6 +90,8 @@ const COLLECTION_PAINTINGS: CollectionPainting[] = TOP_100_PAINTINGS.map((artwor
 export default function Top100Page() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPeriod, setSelectedPeriod] = useState<string>('All');
+  const [showQuoteModal, setShowQuoteModal] = useState(false);
+  const [selectedArtwork, setSelectedArtwork] = useState<{ title: string; artist: string } | null>(null);
 
   const periods = useMemo(() => {
     const uniquePeriods = Array.from(new Set(COLLECTION_PAINTINGS.map((p: CollectionPainting) => p.period)));
@@ -172,8 +175,8 @@ export default function Top100Page() {
                 key={period}
                 onClick={() => setSelectedPeriod(period)}
                 className={`px-4 py-2 rounded-sm font-serif text-sm transition-all cursor-pointer ${selectedPeriod === period
-                    ? 'bg-[#800000] text-white shadow-md'
-                    : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                  ? 'bg-[#800000] text-white shadow-md'
+                  : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
                   }`}
               >
                 {period}
@@ -251,7 +254,13 @@ export default function Top100Page() {
                           {painting.price !== null ? formatPrice(painting.price, painting.currency) : 'Price on request'}
                         </div>
                       </button>
-                      <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
+                      <button
+                        onClick={() => {
+                          setSelectedArtwork({ title: painting.title, artist: painting.artist });
+                          setShowQuoteModal(true);
+                        }}
+                        className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer"
+                      >
                         <div className="font-serif text-xs text-gray-600 mb-1">Custom Size</div>
                         <div className="font-serif text-base font-bold text-[#800000]">Request quote</div>
                       </button>
@@ -276,6 +285,17 @@ export default function Top100Page() {
           </div>
         )}
       </div>
+
+      {/* Quote Request Modal */}
+      <QuoteRequestModal
+        open={showQuoteModal}
+        onClose={() => {
+          setShowQuoteModal(false);
+          setSelectedArtwork(null);
+        }}
+        artworkTitle={selectedArtwork?.title}
+        artworkArtist={selectedArtwork?.artist}
+      />
     </main>
   );
 }

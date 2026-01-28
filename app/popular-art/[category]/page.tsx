@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -7,6 +9,7 @@ import PageTransition from '../../components/PageTransition';
 import PopularArtCarousel from '../../components/PopularArtCarousel';
 import { ARTWORKS, generateSlug, getArtworkBySlug, getArtworkSlug, type Artwork } from '../../../data/artworks';
 import { getCategorySlugs } from '../../../data/popularCategories';
+import QuoteRequestModal from '../../components/QuoteRequestModal';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
 
@@ -44,7 +47,7 @@ function matchesCategory(artwork: Artwork, slug?: string) {
   try {
     const artistSlug = generateSlug(artwork.artist ?? '');
     if (artistSlug.includes(lower.replace(/\s+/g, '-'))) return true;
-  } catch {}
+  } catch { }
 
   // Direct title match
   if (title.includes(lower)) return true;
@@ -70,11 +73,24 @@ function matchesCategory(artwork: Artwork, slug?: string) {
   return false;
 }
 
-export default async function CategoryPage({ params, searchParams }: { params: Promise<{ category: string }>, searchParams?: Promise<{ sort?: string }> }) {
-  const { category } = await params;
+export default function CategoryPage({ params, searchParams }: { params: Promise<{ category: string }>, searchParams?: Promise<{ sort?: string }> }) {
+  const [showQuoteModal, setShowQuoteModal] = useState(false);
+  const [selectedArtwork, setSelectedArtwork] = useState<{ title: string; artist: string } | null>(null);
+  const [resolvedParams, setResolvedParams] = React.useState<{ category: string } | null>(null);
+  const [resolvedSearchParams, setResolvedSearchParams] = React.useState<{ sort?: string }>({});
+
+  React.useEffect(() => {
+    params.then(setResolvedParams);
+    if (searchParams) {
+      searchParams.then(setResolvedSearchParams);
+    }
+  }, [params, searchParams]);
+
+  if (!resolvedParams) return null;
+
+  const { category } = resolvedParams;
   const slug = category ?? '';
-  const sp = searchParams ? await searchParams : {} as { sort?: string };
-  const sort = (sp && sp.sort) || 'default';
+  const sort = resolvedSearchParams.sort || 'default';
 
   // Try curated lists first (exact controlled lists from `data/popularCategories.ts`)
   const curatedSlugs = getCategorySlugs(slug);
@@ -104,7 +120,7 @@ export default async function CategoryPage({ params, searchParams }: { params: P
     <main className={`${playfair.variable} min-h-screen bg-art-texture text-black font-serif`}>
       <PageTransition>
         <PopularArtCarousel />
-        
+
         <div className="w-full px-4 py-8 relative z-10">
           <div className="mb-6">
             <Breadcrumbs items={[{ label: 'Popular Art', href: '/' }, { label: title, href: `/popular-art/${slug}` }]} />
@@ -120,9 +136,9 @@ export default async function CategoryPage({ params, searchParams }: { params: P
               <div className="font-serif text-sm text-gray-600">{filtered.length} items</div>
               <div className="font-serif text-sm text-gray-600">
                 <span className="mr-2">Sort:</span>
-                <Link href={`/popular-art/${slug}`} className={`px-2 cursor-pointer ${sort==='default'?'font-semibold text-black':''}`}>Default</Link>
-                <Link href={`/popular-art/${slug}?sort=title`} className={`px-2 cursor-pointer ${sort==='title'?'font-semibold text-black':''}`}>Title</Link>
-                <Link href={`/popular-art/${slug}?sort=artist`} className={`px-2 cursor-pointer ${sort==='artist'?'font-semibold text-black':''}`}>Artist</Link>
+                <Link href={`/popular-art/${slug}`} className={`px-2 cursor-pointer ${sort === 'default' ? 'font-semibold text-black' : ''}`}>Default</Link>
+                <Link href={`/popular-art/${slug}?sort=title`} className={`px-2 cursor-pointer ${sort === 'title' ? 'font-semibold text-black' : ''}`}>Title</Link>
+                <Link href={`/popular-art/${slug}?sort=artist`} className={`px-2 cursor-pointer ${sort === 'artist' ? 'font-semibold text-black' : ''}`}>Artist</Link>
               </div>
             </div>
           </header>
@@ -137,17 +153,17 @@ export default async function CategoryPage({ params, searchParams }: { params: P
               {gridItems.map((art) => {
                 // Get pricing directly from the artwork
                 const pricing = getPrimaryPricing(art);
-                
+
                 return (
-                  <div 
+                  <div
                     key={getArtworkSlug(art)}
                     className="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group hover:border-[#800000]/20 border border-transparent"
                   >
                     {/* Image */}
                     <Link href={`/artworks/${getArtworkSlug(art)}?from=popular-art&category=${slug}`} className="block cursor-pointer">
                       <div className="relative bg-gray-50 aspect-[3/4] overflow-hidden">
-                        <Image 
-                          src={art.image} 
+                        <Image
+                          src={art.image}
                           alt={art.name}
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -163,24 +179,24 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                           {art.name}
                         </h3>
                       </Link>
-                      
+
                       {/* Year */}
                       {art.year && (
                         <p className="font-serif text-sm text-gray-500 mb-1.5">
                           {art.year}
                         </p>
                       )}
-                      
+
                       {/* Artist */}
                       <p className="font-serif text-sm text-[#4A5568] mb-3 font-medium line-clamp-1">
                         {art.artist}
                       </p>
-                      
+
                       {/* Star Rating */}
                       <div className="flex gap-0.5 mb-4 justify-center">
                         {[...Array(5)].map((_, i) => (
                           <svg key={i} className="w-5 h-5 fill-orange-400" viewBox="0 0 20 20">
-                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                           </svg>
                         ))}
                       </div>
@@ -197,7 +213,13 @@ export default async function CategoryPage({ params, searchParams }: { params: P
                               : 'Price on request'}
                           </div>
                         </button>
-                        <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
+                        <button
+                          onClick={() => {
+                            setSelectedArtwork({ title: art.name, artist: art.artist });
+                            setShowQuoteModal(true);
+                          }}
+                          className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer"
+                        >
                           <div className="font-serif text-xs text-gray-600 mb-1">Custom Size</div>
                           <div className="font-serif text-base font-bold text-[#800000]">Request quote</div>
                         </button>
@@ -217,6 +239,17 @@ export default async function CategoryPage({ params, searchParams }: { params: P
           )}
         </div>
       </PageTransition>
+
+      {/* Quote Request Modal */}
+      <QuoteRequestModal
+        open={showQuoteModal}
+        onClose={() => {
+          setShowQuoteModal(false);
+          setSelectedArtwork(null);
+        }}
+        artworkTitle={selectedArtwork?.title}
+        artworkArtist={selectedArtwork?.artist}
+      />
     </main>
   );
 }

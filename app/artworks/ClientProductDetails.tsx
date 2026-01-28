@@ -16,6 +16,7 @@ import { type CartItem, useCart } from '../context/CartContext';
 import type { Artwork } from '../../data/artworks';
 import { getArtworkSlug } from '../../data/artworks';
 import { useToast } from '../context/ToastContext';
+import QuoteRequestModal from '../components/QuoteRequestModal';
 
 type ArtworkOption = NonNullable<Artwork['options']>[number];
 
@@ -54,6 +55,7 @@ export default function ClientProductDetails({
   const { addToast } = useToast();
   const [conflictItem, setConflictItem] = useState<ConflictState | null>(null);
   const [showConflictModal, setShowConflictModal] = useState(false);
+  const [showQuoteModal, setShowQuoteModal] = useState(false);
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
 
@@ -295,7 +297,10 @@ export default function ClientProductDetails({
             </span>
           </button>
 
-          <button className="w-full bg-white border border-[#800000] text-[#800000] hover:bg-red-50 font-serif font-bold text-base md:text-lg py-3 md:py-3.5 px-4 transition-colors uppercase tracking-wide cursor-pointer">
+          <button
+            onClick={() => setShowQuoteModal(true)}
+            className="w-full bg-white border border-[#800000] text-[#800000] hover:bg-red-50 font-serif font-bold text-base md:text-lg py-3 md:py-3.5 px-4 transition-colors uppercase tracking-wide cursor-pointer"
+          >
             Request Custom Size Quote
           </button>
 
@@ -374,6 +379,14 @@ export default function ClientProductDetails({
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Quote Request Modal */}
+      <QuoteRequestModal
+        open={showQuoteModal}
+        onClose={() => setShowQuoteModal(false)}
+        artworkTitle={artwork.name}
+        artworkArtist={artwork.artist}
+      />
 
       {similarArtworks.length > 0 && (
         <div className="lg:col-span-2 mt-12">

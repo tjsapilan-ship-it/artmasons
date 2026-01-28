@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Playfair_Display } from 'next/font/google';
@@ -6,6 +8,7 @@ import Breadcrumbs from '../../components/Breadcrumbs';
 import PageTransition from '../../components/PageTransition';
 import ArtistsAZNavigation from '../../components/ArtistsAZNavigation';
 import { getArtworkSlug, getArtworksByArtistSlug, getArtistNameBySlug, type Artwork } from '../../../data/artworks';
+import QuoteRequestModal from '../../components/QuoteRequestModal';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
 
@@ -33,16 +36,29 @@ const sortArtworks = (items: Artwork[], sort: string) => {
   return items;
 };
 
-export default async function ArtistPage({
+export default function ArtistPage({
   params,
   searchParams,
 }: {
   params: Promise<{ artist: string }>;
   searchParams?: Promise<{ sort?: string }>;
 }) {
-  const { artist } = await params;
-  const sp = searchParams ? await searchParams : {};
-  const sort = sp.sort ?? 'default';
+  const [showQuoteModal, setShowQuoteModal] = useState(false);
+  const [selectedArtwork, setSelectedArtwork] = useState<{ title: string; artist: string } | null>(null);
+  const [resolvedParams, setResolvedParams] = React.useState<{ artist: string } | null>(null);
+  const [resolvedSearchParams, setResolvedSearchParams] = React.useState<{ sort?: string }>({});
+
+  React.useEffect(() => {
+    params.then(setResolvedParams);
+    if (searchParams) {
+      searchParams.then(setResolvedSearchParams);
+    }
+  }, [params, searchParams]);
+
+  if (!resolvedParams) return null;
+
+  const { artist } = resolvedParams;
+  const sort = resolvedSearchParams.sort ?? 'default';
 
   const artistSlug = artist ?? '';
   const artworks = getArtworksByArtistSlug(artistSlug);
@@ -53,7 +69,7 @@ export default async function ArtistPage({
     <main className={`${playfair.variable} min-h-screen bg-white text-black font-serif`}>
       <PageTransition>
         <ArtistsAZNavigation />
-        
+
         <div className="w-full px-4 py-8">
           <div className="mb-6">
             <Breadcrumbs
@@ -154,7 +170,7 @@ export default async function ArtistPage({
                     <div className="flex gap-0.5 mb-4 justify-center">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 fill-orange-400" viewBox="0 0 20 20">
-                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                         </svg>
                       ))}
                     </div>
@@ -167,7 +183,13 @@ export default async function ArtistPage({
                           {formatPrice(art.price, art.currency || 'AED')}
                         </div>
                       </button>
-                      <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
+                      <button
+                        onClick={() => {
+                          setSelectedArtwork({ title: art.name, artist: art.artist });
+                          setShowQuoteModal(true);
+                        }}
+                        className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer"
+                      >
                         <div className="font-serif text-xs text-gray-600 mb-1">Custom Size</div>
                         <div className="font-serif text-base font-bold text-[#800000]">Request quote</div>
                       </button>
@@ -186,6 +208,17 @@ export default async function ArtistPage({
           )}
         </div>
       </PageTransition>
+
+      {/* Quote Request Modal */}
+      <QuoteRequestModal
+        open={showQuoteModal}
+        onClose={() => {
+          setShowQuoteModal(false);
+          setSelectedArtwork(null);
+        }}
+        artworkTitle={selectedArtwork?.title}
+        artworkArtist={selectedArtwork?.artist}
+      />
     </main>
   );
 }
