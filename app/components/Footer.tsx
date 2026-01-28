@@ -23,9 +23,7 @@ export default function Footer() {
             <a href="https://instagram.com/Theartmasons" className="block cursor-pointer">
               <Image src="/image/icons/instagram.png" alt="Instagram" width={24} height={24} />
             </a>
-            <a href="#" className="block cursor-pointer">
-              <Image src="/image/icons/facebook.png" alt="Facebook" width={24} height={24} />
-            </a>
+
             <a href="https://www.tiktok.com/@theartmasons" className="block cursor-pointer" target="_blank" rel="noopener noreferrer">
               <Image src="/image/icons/tiktok.png" alt="TikTok" width={24} height={24} />
             </a>
@@ -160,9 +158,7 @@ export default function Footer() {
             Follow Us
           </span>
           <div className="flex items-center gap-4">
-            <a href="#" className="block cursor-pointer">
-              <Image src="/image/icons/facebook.png" alt="Facebook" width={20} height={20} />
-            </a>
+
             <a href="https://instagram.com/Theartmasons" className="block cursor-pointer">
               <Image src="/image/icons/instagram.png" alt="Instagram" width={20} height={20} />
             </a>
