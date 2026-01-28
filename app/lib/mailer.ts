@@ -324,7 +324,7 @@ function buildEmailShell(params: { title: string; preheader?: string; bodyHtml: 
             </tr>
 
             <tr>
-              <td style="padding:16px 24px;background:${BRAND_DARK};color:${BRAND_BORDER};font-family:Arial,Helvetica,sans-serif;">
+              <td style="padding:16px 24px;background:#800000;color:${BRAND_BORDER};font-family:Arial,Helvetica,sans-serif;">
                 <div style="font-size:12px;line-height:1.6;">
                   Need help? Email <a href="mailto:info@artmasons.com" style="color:#ffffff;text-decoration:underline;">info@artmasons.com</a> or call +971 56 170 4788
                 </div>
@@ -378,23 +378,35 @@ function formatOrderHtml(order: Order) {
 
   const bodyHtml = `
     <div style="margin:0 0 20px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7;color:${BRAND_TEXT};">
-      <p style="margin:0 0 12px 0;">Dear ${escapeHtml(customerName)},</p>
-      
-      <p style="margin:0 0 12px 0;">Thank you for your order with Art Masons. We are truly honoured that you've chosen us to create your masterpiece for your home.</p>
-      
-      <p style="margin:0 0 12px 0;">Your artwork is now scheduled for production. Each piece is hand-painted to order, and the process takes up to 8 weeks to complete, ensuring the highest level of craftsmanship and detail. Once finished, please allow approximately 1 week for careful packaging and delivery to your address.</p>
-      
-      <p style="margin:0 0 12px 0;">If we require any further information during the process, our team will contact you directly by email.</p>
-      
-      <p style="margin:0 0 12px 0;">We will keep you updated, and we cannot wait for you to receive your finished masterpiece!</p>
-      
-      <p style="margin:0 0 4px 0;">Warm regards,</p>
-      <p style="margin:0 0 4px 0;"><strong>The Art Masons Team</strong></p>
-      <p style="margin:0 0 4px 0;"><a href="mailto:info@artmasons.com" style="color:${BRAND_ACCENT};text-decoration:none;">info@artmasons.com</a></p>
-      <p style="margin:0 0 4px 0;"><a href="https://www.artmasons.com" style="color:${BRAND_ACCENT};text-decoration:none;">www.artmasons.com</a></p>
-      <p style="margin:0 0 4px 0;">Instagram <a href="https://www.instagram.com/theartmasons" style="color:${BRAND_ACCENT};text-decoration:none;">@theartmasons</a></p>
-      <p style="margin:0 0 20px 0;">TikTok: <a href="https://www.tiktok.com/@theartmasons" style="color:${BRAND_ACCENT};text-decoration:none;">@theartmasons</a></p>
-    </div>
+  <p style="margin:0 0 12px 0;">Dear ${escapeHtml(customerName)},</p>
+
+  <p style="margin:0 0 12px 0;">Thank you for your order with Art Masons. We are truly honoured that you've chosen us to create your masterpiece for your home.</p>
+
+  <p style="margin:0 0 12px 0;">Your artwork is now scheduled for production. Each piece is hand-painted to order, and the process takes up to 8 weeks to complete, ensuring the highest level of craftsmanship and detail. Once finished, please allow approximately 1 week for careful packaging and delivery to your address.</p>
+
+  <p style="margin:0 0 12px 0;">If we require any further information during the process, our team will contact you directly by email.</p>
+
+  <p style="margin:0 0 12px 0;">We will keep you updated, and we cannot wait for you to receive your finished masterpiece!</p>
+
+  <p style="margin:0 0 4px 0;">Warm regards,</p>
+  <p style="margin:0 0 4px 0;"><strong>The Art Masons Team</strong></p>
+  <p style="margin:0 0 4px 0;"><a href="mailto:info@artmasons.com" style="color:${BRAND_ACCENT};text-decoration:none;">info@artmasons.com</a></p>
+  <p style="margin:0 0 4px 0;"><a href="https://www.artmasons.com" style="color:${BRAND_ACCENT};text-decoration:none;">www.artmasons.com</a></p>
+  
+  <p style="margin:0 0 4px 0;">
+    <a href="https://www.instagram.com/theartmasons" style="color:${BRAND_ACCENT};text-decoration:none;">
+      <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="IG" width="20" height="20" style="border:0; vertical-align:middle; width:20px; height:20px; margin-right:5px;">
+      <span style="vertical-align:middle;">@theartmasons</span>
+    </a>
+  </p>
+  
+  <p style="margin:0 0 20px 0;">
+    <a href="https://www.tiktok.com/@theartmasons" style="color:${BRAND_ACCENT};text-decoration:none;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" width="20" height="20" style="border:0; vertical-align:middle; width:20px; height:20px; margin-right:5px;">
+      <span style="vertical-align:middle;">@theartmasons</span>
+    </a>
+  </p>
+</div>
 
     <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:${BRAND_ACCENT};margin:0 0 8px 0;">
       Invoice
@@ -480,7 +492,7 @@ function formatOrderHtml(order: Order) {
 
     <div style="margin:0 0 10px 0;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.3;color:${BRAND_TEXT};">Line items</div>
 
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border:1px solid ${BRAND_BORDER};">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#800000;">
       <tr>
         <th align="left" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;">Description</th>
         <th align="right" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Qty</th>
