@@ -27,11 +27,11 @@ export default function OurQualityPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16 items-start">
-          <div className="flex flex-col h-full">
+          <div className="flex flex-col">
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-[#800000]">Our Quality</h1>
 
             {/* Introduction */}
-            <section className="bg-white/60 p-8 rounded-lg border border-[#800000]/10 backdrop-blur-sm font-serif flex-grow">
+            <section className="bg-white/60 p-8 rounded-lg border border-[#800000]/10 backdrop-blur-sm font-serif">
               <h2 className="font-serif text-3xl font-bold mb-6 text-[#800000]">Museum-Quality Excellence</h2>
               <p className="text-lg mb-4">
                 At ART MASONS, we are committed to delivering nothing less than museum-quality oil painting reproductions. Each piece is meticulously hand-painted by our master artists, ensuring that every brushstroke captures the essence and beauty of the original masterpiece.
