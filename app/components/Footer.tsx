@@ -26,6 +26,9 @@ export default function Footer() {
             <a href="#" className="block cursor-pointer">
               <Image src="/image/icons/facebook.png" alt="Facebook" width={24} height={24} />
             </a>
+            <a href="https://www.tiktok.com/@theartmasons" className="block cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <Image src="/image/icons/tiktok.png" alt="TikTok" width={24} height={24} />
+            </a>
           </div>
         </div>
 
@@ -78,7 +81,29 @@ export default function Footer() {
               <span>+971 56 170 4788</span>
             </div>
           </div>
+
+          <h4 className="font-serif text-xs font-bold uppercase tracking-widest text-gray-500 mb-6 mt-8">
+            Shipping Companies
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { src: 'dhl.png', alt: 'DHL' },
+              { src: 'fedex.png', alt: 'FedEx' },
+              { src: 'ups.png', alt: 'UPS' }
+            ].map((logo) => (
+              <div key={logo.src} className="bg-white rounded px-2 py-1 h-8 w-12 flex items-center justify-center shadow-md">
+                <Image
+                  src={`/image/icons/${logo.src}`}
+                  alt={logo.alt}
+                  width={40}
+                  height={25}
+                  className="object-contain w-full h-full"
+                />
+              </div>
+            ))}
+          </div>
         </div>
+
 
         <div className="flex flex-col gap-8">
           <div>
@@ -143,6 +168,9 @@ export default function Footer() {
             </a>
             <a href="#" className="block cursor-pointer">
               <Image src="/image/icons/whatsapp.png" alt="WhatsApp" width={20} height={20} />
+            </a>
+            <a href="https://www.tiktok.com/@theartmasons" className="block cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <Image src="/image/icons/tiktok.png" alt="TikTok" width={20} height={20} />
             </a>
           </div>
         </div>

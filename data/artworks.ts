@@ -948,8 +948,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     name: "Tristan And Isolade",
     artist: "Edmund Blair (Leighton)",
     year: "1902",
-    originalDimensions: "60 x 70",
-    sellingDimensions: "60 x 70",
+    originalDimensions: "60 x 73",
+    sellingDimensions: "60 x 73",
     price: 7220,
     image: "/image/b/tristan and isolade.jpg",
     artistLifespan: "1853-1922",
@@ -1382,7 +1382,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     artist: "Gustave Caillebotte",
     year: "1876",
     originalDimensions: "unknown",
-    sellingDimensions: "60 x 70",
+    sellingDimensions: "60 x 73",
     price: 3350,
     image: "/image/c/the floor scrapers.jpg",
     artistLifespan: "1848-1894",
@@ -1706,7 +1706,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     artist: "Paul Cezanne",
     year: "1890",
     originalDimensions: "60 x 73",
-    sellingDimensions: "60 x 70",
+    sellingDimensions: "60 x 73",
     price: 3014,
     image: "/image/c/the card players.jpg",
     artistLifespan: "1839-1906",
@@ -5634,7 +5634,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     artist: "Sir Edwin Henry Landseer",
     year: "Unknown",
     originalDimensions: "Unknown",
-    sellingDimensions: "60 x 70",
+    sellingDimensions: "60 x 73",
     price: 4532,
     image: "/image/l/there's no place like home.jpg",
     artistLifespan: "1802-1873",
@@ -6031,7 +6031,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     slug: "hhareem-life-constantinople",
     letter: "L"
   },
-    {
+  {
     name: "The Son Of Man",
     artist: "Rene Magritte",
     year: "1964",
@@ -7622,23 +7622,23 @@ export function getArtistNameBySlug(artistSlug: string): string | undefined {
 // Helper to enrich artwork with pricing options
 export function enrichArtworkWithOptions(artwork: Artwork): Artwork {
   if (artwork.options) return artwork; // Already has options
-  
+
   const dimensions = artwork.sellingDimensions.split('x').map(d => parseFloat(d.trim()));
   if (dimensions.length !== 2) return { ...artwork, currency: 'AED', basePrice: artwork.price };
-  
+
   const [width, height] = dimensions;
-  
+
   return {
     ...artwork,
     currency: 'AED',
     basePrice: artwork.price,
     options: [
-      { 
-        id: 'opt1', 
-        width, 
-        height, 
-        price: artwork.price, 
-        label: 'Original Size' 
+      {
+        id: 'opt1',
+        width,
+        height,
+        price: artwork.price,
+        label: 'Original Size'
       }
     ]
   };

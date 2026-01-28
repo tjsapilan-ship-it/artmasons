@@ -11,10 +11,10 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif'
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 // --- MAIN PRODUCT PAGE ---
-export default async function ProductDetailsPage({ 
-  params, 
-  searchParams 
-}: { 
+export default async function ProductDetailsPage({
+  params,
+  searchParams
+}: {
   params: Promise<{ slug: string }>;
   searchParams?: Promise<{ from?: string; category?: string }>;
 }) {
@@ -22,15 +22,15 @@ export default async function ProductDetailsPage({
   const sp = searchParams ? await searchParams : {};
   const from = sp?.from;
   const category = sp?.category;
-  
+
   // First try to find in main ARTWORKS collection
   let artwork = getArtworkBySlug(slug as string) as Artwork | null;
-  
+
   // Enrich with options if found in ARTWORKS
   if (artwork) {
     artwork = enrichArtworkWithOptions(artwork);
   }
-  
+
   // If not found, try to find in FAMOUS_ART collection
   if (!artwork) {
     const famousArtwork = getFamousArtworkBySlug(slug as string);
@@ -53,32 +53,32 @@ export default async function ProductDetailsPage({
       };
     }
   }
-  
+
   // Find similar artworks from both collections
   const similarArtworks = artwork
     ? [
-        ...ARTWORKS.filter(
-          (item) => item.artist === artwork.artist && getArtworkSlug(item) !== slug
-        ).map(item => enrichArtworkWithOptions({ ...item, _slug: getArtworkSlug(item) } as Artwork & { _slug: string })),
-        ...FAMOUS_ART.filter(
-          (item) => item.artist === artwork.artist && getFamousArtworkSlug(item) !== slug
-        ).map(item => ({
-          name: item.title,
-          artist: item.artist,
-          year: item.year,
-          originalDimensions: item.originalSize,
-          sellingDimensions: item.originalSize,
-          price: item.basePrice,
-          image: item.image,
-          artistLifespan: item.artistLife,
-          slug: getFamousArtworkSlug(item),
-          letter: item.artist.charAt(0).toUpperCase(),
-          currency: item.currency,
-          basePrice: item.basePrice,
-          options: item.options,
-          _slug: getFamousArtworkSlug(item)
-        } as Artwork & { _slug: string }))
-      ].slice(0, 4)
+      ...ARTWORKS.filter(
+        (item) => item.artist === artwork.artist && getArtworkSlug(item) !== slug
+      ).map(item => enrichArtworkWithOptions({ ...item, _slug: getArtworkSlug(item) } as Artwork & { _slug: string })),
+      ...FAMOUS_ART.filter(
+        (item) => item.artist === artwork.artist && getFamousArtworkSlug(item) !== slug
+      ).map(item => ({
+        name: item.title,
+        artist: item.artist,
+        year: item.year,
+        originalDimensions: item.originalSize,
+        sellingDimensions: item.originalSize,
+        price: item.basePrice,
+        image: item.image,
+        artistLifespan: item.artistLife,
+        slug: getFamousArtworkSlug(item),
+        letter: item.artist.charAt(0).toUpperCase(),
+        currency: item.currency,
+        basePrice: item.basePrice,
+        options: item.options,
+        _slug: getFamousArtworkSlug(item)
+      } as Artwork & { _slug: string }))
+    ].slice(0, 4)
     : [];
 
   // Breadcrumbs component always prepends Home, so provide trail based on referrer
@@ -92,27 +92,38 @@ export default async function ProductDetailsPage({
       .join(' ');
     breadcrumbs = artwork
       ? [
-          { label: 'Popular Art', href: '/' },
-          { label: categoryLabel, href: `/popular-art/${category}` },
-          { label: artwork.name, href: `/artworks/${slug}` },
-        ]
+        { label: 'Popular Art', href: '/' },
+        { label: categoryLabel, href: `/popular-art/${category}` },
+        { label: artwork.name, href: `/artworks/${slug}` },
+      ]
       : [
-          { label: 'Popular Art', href: '/' },
-          { label: categoryLabel, href: `/popular-art/${category}` },
-          { label: 'Artwork', href: `/artworks/${slug}` },
-        ];
+        { label: 'Popular Art', href: '/' },
+        { label: categoryLabel, href: `/popular-art/${category}` },
+        { label: 'Artwork', href: `/artworks/${slug}` },
+      ];
+  } else if (from === 'top-100') {
+    // User came from Top 100 Paintings page
+    breadcrumbs = artwork
+      ? [
+        { label: 'Top 100 Paintings', href: '/top-100' },
+        { label: artwork.name, href: `/artworks/${slug}` },
+      ]
+      : [
+        { label: 'Top 100 Paintings', href: '/top-100' },
+        { label: 'Artwork', href: `/artworks/${slug}` },
+      ];
   } else {
     // Default: Artists A-Z path
     breadcrumbs = artwork
       ? [
-          { label: 'Artists A-Z', href: '/artists-a-z' },
-          { label: artwork.artist, href: `/artists-a-z/${generateArtistSlug(artwork.artist)}` },
-          { label: artwork.name, href: `/artworks/${slug}` },
-        ]
+        { label: 'Artists A-Z', href: '/artists-a-z' },
+        { label: artwork.artist, href: `/artists-a-z/${generateArtistSlug(artwork.artist)}` },
+        { label: artwork.name, href: `/artworks/${slug}` },
+      ]
       : [
-          { label: 'Artists A-Z', href: '/artists-a-z' },
-          { label: 'Artwork', href: `/artworks/${slug}` },
-        ];
+        { label: 'Artists A-Z', href: '/artists-a-z' },
+        { label: 'Artwork', href: `/artworks/${slug}` },
+      ];
   }
 
   return (

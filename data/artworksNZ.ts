@@ -602,7 +602,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     artist: "Pablo Picasso",
     year: "1932",
     originalDimensions: "162 x 130",
-    sellingDimensions: "152 x 130",
+    sellingDimensions: "162 x 130",
     price: 5650,
     image: "/image/p/nude, green leaves and bust.jpg",
     artistLifespan: "1881-1973",

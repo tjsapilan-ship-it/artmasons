@@ -353,6 +353,20 @@ export default function AboutUsPage() {
             </div>
           </section>
 
+          {/* Explore Our Collection CTA */}
+          <section className="text-center py-12">
+            <h2 className="font-serif text-3xl font-bold mb-6 text-[#800000]">Experience the Difference</h2>
+            <p className="text-lg mb-8 max-w-2xl mx-auto">
+              Discover the beauty and quality that only hand-painted oil reproductions can provide. Browse our collection and find the perfect masterpiece for your space.
+            </p>
+            <Link
+              href="/"
+              className="inline-block bg-[#800000] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#600000] transition-colors text-lg shadow-lg cursor-pointer"
+            >
+              Explore Our Collection
+            </Link>
+          </section>
+
         </div>
       </div>
     </main>

@@ -70,7 +70,7 @@ const COLLECTION_PAINTINGS: CollectionPainting[] = TOP_100_PAINTINGS.map((artwor
       (a.name ?? "").toLowerCase() === artwork.title.toLowerCase() &&
       (a.artist ?? "").toLowerCase() === artwork.artist.toLowerCase(),
   );
-  
+
   return {
     rank: index + 1,
     title: artwork.title,
@@ -102,8 +102,8 @@ export default function Top100Page() {
     }
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
-      filtered = filtered.filter((p: CollectionPainting) => 
-        p.title.toLowerCase().includes(query) || 
+      filtered = filtered.filter((p: CollectionPainting) =>
+        p.title.toLowerCase().includes(query) ||
         p.artist.toLowerCase().includes(query) ||
         p.period.toLowerCase().includes(query)
       );
@@ -122,7 +122,7 @@ export default function Top100Page() {
       `}</style>
 
       <div className="w-full px-4 py-12 relative z-10">
-        
+
         {/* Breadcrumbs */}
         <div className="mb-8">
           <Breadcrumbs items={[{ label: 'Top 100 Paintings', href: '/top-100' }]} />
@@ -137,7 +137,7 @@ export default function Top100Page() {
             </h1>
           </div>
           <p className="font-serif text-lg text-gray-600 max-w-3xl mx-auto">
-            Browse our curated collection of the most celebrated masterpieces. 
+            Browse our curated collection of the most celebrated masterpieces.
             Each painting is hand-painted by certified Art Masons using museum-quality materials on 100% linen canvas.
           </p>
         </div>
@@ -147,7 +147,7 @@ export default function Top100Page() {
           <div className="mb-4">
             {/* Search Bar */}
             <div className="flex-1">
-              <div 
+              <div
                 className="flex items-center border rounded-sm overflow-hidden bg-white"
                 style={{ borderColor: THEME_RED }}
               >
@@ -171,11 +171,10 @@ export default function Top100Page() {
               <button
                 key={period}
                 onClick={() => setSelectedPeriod(period)}
-                className={`px-4 py-2 rounded-sm font-serif text-sm transition-all cursor-pointer ${
-                  selectedPeriod === period
+                className={`px-4 py-2 rounded-sm font-serif text-sm transition-all cursor-pointer ${selectedPeriod === period
                     ? 'bg-[#800000] text-white shadow-md'
                     : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
-                }`}
+                  }`}
               >
                 {period}
               </button>
@@ -195,21 +194,21 @@ export default function Top100Page() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredPaintings.map((painting: CollectionPainting) => {
               return (
-                <div 
+                <div
                   key={painting.rank}
                   className="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 group hover:border-[#800000]/20 border border-transparent"
                 >
                   {/* Image with Rank Badge */}
-                  <Link href={`/artworks/${painting.slug}`} className="block cursor-pointer">
+                  <Link href={`/artworks/${painting.slug}?from=top-100`} className="block cursor-pointer">
                     <div className="relative bg-gray-50 aspect-[3/4] overflow-hidden">
-                      <Image 
-                        src={painting.image} 
+                      <Image
+                        src={painting.image}
                         alt={painting.title}
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-700"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                       />
-                      
+
                       {/* Rank Badge - Simple white circle with black text */}
                       <div className="absolute top-3 left-3 w-11 h-11 rounded-full bg-[#800000] backdrop-blur-sm flex items-center justify-center font-bold text-sm shadow-lg border border-[#800000]">
                         <span className="text-white">{painting.rank}</span>
@@ -219,27 +218,27 @@ export default function Top100Page() {
 
                   <div className="p-5">
                     {/* Title - Clickable */}
-                    <Link href={`/artworks/${painting.slug}`}>
+                    <Link href={`/artworks/${painting.slug}?from=top-100`}>
                       <h3 className="font-serif text-base font-bold text-[#800000] mb-1.5 line-clamp-2 leading-snug min-h-[2.8rem] hover:underline cursor-pointer">
                         {painting.title}
                       </h3>
                     </Link>
-                    
+
                     {/* Year */}
                     <p className="font-serif text-sm text-gray-500 mb-1.5">
                       {painting.year}
                     </p>
-                    
+
                     {/* Artist */}
                     <p className="font-serif text-sm text-[#4A5568] mb-3 font-medium line-clamp-1">
                       {painting.artist}
                     </p>
-                    
+
                     {/* Star Rating */}
                     <div className="flex gap-0.5 mb-4 justify-center">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 fill-orange-400" viewBox="0 0 20 20">
-                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                         </svg>
                       ))}
                     </div>

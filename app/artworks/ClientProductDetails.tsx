@@ -103,7 +103,7 @@ export default function ClientProductDetails({
               </p>
               <p>
                 <span className="font-bold text-gray-900">Original Dimensions:</span>{' '}
-                {artwork.originalDimensions ?? (selectedOption ? `${selectedOption.width} x ${selectedOption.height} cm` : 'Varies')}
+                {artwork.options?.[0] ? `${artwork.options[0].width} x ${artwork.options[0].height} cm` : (artwork.originalDimensions ?? (selectedOption ? `${selectedOption.width} x ${selectedOption.height} cm` : 'Varies'))}
               </p>
             </div>
           </div>
@@ -164,16 +164,16 @@ export default function ClientProductDetails({
         </div>
 
         {/* Size Selection */}
-          <div>
+        <div>
           <h3 className="font-serif text-lg md:text-xl font-bold text-gray-900 mb-3 uppercase">Select Canvas Size</h3>
           <div className="space-y-2 md:space-y-3">
-            {availableOptions.map((option) => (
-              <label 
-                key={option.id} 
+            {availableOptions.map((option, index) => (
+              <label
+                key={option.id}
                 className={`
                   flex items-center justify-between p-3 md:p-4 border cursor-pointer transition-all duration-200
-                  ${selectedOption.id === option.id 
-                    ? 'border-[#800000] bg-red-50 shadow-sm' 
+                  ${selectedOption.id === option.id
+                    ? 'border-[#800000] bg-red-50 shadow-sm'
                     : 'border-gray-200 hover:border-gray-400 bg-white'
                   }
                 `}
@@ -194,27 +194,30 @@ export default function ClientProductDetails({
                     {option.id === 'opt1' && (
                       <span className="text-sm md:text-sm text-gray-500 italic">Original Size</span>
                     )}
+                    {(option.id !== 'opt1' && index === 0 && !availableOptions.some(o => o.id === 'opt1')) && (
+                      <span className="text-sm md:text-sm text-gray-500 italic">Original Size</span>
+                    )}
                   </div>
                 </div>
                 <span className="font-serif font-bold text-base md:text-lg text-gray-800 inline-flex items-end">
                   {formatPrice(option.price)}
                   <span className="ml-1">{artwork.currency}</span>
                 </span>
-                
-                <input 
-                  type="radio" 
-                  name="size" 
-                  value={option.id} 
-                  checked={selectedOption.id === option.id} 
-                  onChange={() => setSelectedOption(option)} 
+
+                <input
+                  type="radio"
+                  name="size"
+                  value={option.id}
+                  checked={selectedOption.id === option.id}
+                  onChange={() => setSelectedOption(option)}
                   className="hidden"
                 />
               </label>
             ))}
           </div>
-          
+
           {/* Custom Size Note */}
-            <div className="mt-3 flex items-start gap-2 text-sm md:text-sm text-gray-600 font-serif border border-gray-200 p-2.5 md:p-3 bg-gray-50">
+          <div className="mt-3 flex items-start gap-2 text-sm md:text-sm text-gray-600 font-serif border border-gray-200 p-2.5 md:p-3 bg-gray-50">
             <Info size={12} className="flex-shrink-0 mt-0.5" />
             <p>
               Need a custom size? <a href="mailto:info@artmasons.com" className="text-[#800000] hover:underline font-normal cursor-pointer">Contact us</a> for personalized dimensions.
@@ -226,20 +229,20 @@ export default function ClientProductDetails({
         <div>
           <h3 className="font-serif text-lg md:text-xl font-bold text-gray-900 mb-3 uppercase">Quantity</h3>
           <div className="flex items-center gap-2">
-            <button 
+            <button
               onClick={() => setQuantity(Math.max(1, quantity - 1))}
               className="w-9 h-9 md:w-10 md:h-10 border border-gray-300 hover:border-[#800000] flex items-center justify-center font-bold text-xl md:text-2xl transition-colors cursor-pointer"
             >
               -
             </button>
-            <input 
-              type="number" 
+            <input
+              type="number"
               value={quantity}
               onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
               className="w-16 md:w-20 h-9 md:h-10 border border-gray-300 text-center font-serif font-bold text-lg md:text-xl outline-none focus:border-[#800000]"
               min="1"
             />
-            <button 
+            <button
               onClick={() => setQuantity(quantity + 1)}
               className="w-9 h-9 md:w-10 md:h-10 border border-gray-300 hover:border-[#800000] flex items-center justify-center font-bold text-xl md:text-2xl transition-colors cursor-pointer"
             >
@@ -291,7 +294,7 @@ export default function ClientProductDetails({
               <span className="ml-1">{artwork.currency}</span>
             </span>
           </button>
-          
+
           <button className="w-full bg-white border border-[#800000] text-[#800000] hover:bg-red-50 font-serif font-bold text-base md:text-lg py-3 md:py-3.5 px-4 transition-colors uppercase tracking-wide cursor-pointer">
             Request Custom Size Quote
           </button>
@@ -300,7 +303,7 @@ export default function ClientProductDetails({
             <Phone size={14} />
             <span className="text-center">Need Help? <a href="https://wa.me/971561704788" target="_blank" rel="noopener noreferrer" className="text-[#800000] font-bold hover:underline inline-flex items-center gap-1 cursor-pointer">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
               </svg>
               +971 56 170 4788
             </a></span>

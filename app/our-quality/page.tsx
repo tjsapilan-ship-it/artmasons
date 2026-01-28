@@ -21,7 +21,7 @@ export default function OurQualityPage() {
       `}</style>
 
       <div className="w-full px-4 py-12 relative z-10">
-        
+
         <div className="mb-8">
           <Breadcrumbs items={[{ label: 'Our Quality', href: '/our-quality' }]} />
         </div>
@@ -29,7 +29,7 @@ export default function OurQualityPage() {
         <div className="grid md:grid-cols-2 gap-12 mb-16 items-start">
           <div className="flex flex-col h-full">
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-[#800000]">Our Quality</h1>
-            
+
             {/* Introduction */}
             <section className="bg-white/60 p-8 rounded-lg border border-[#800000]/10 backdrop-blur-sm font-serif flex-grow">
               <h2 className="font-serif text-3xl font-bold mb-6 text-[#800000]">Museum-Quality Excellence</h2>
@@ -44,14 +44,13 @@ export default function OurQualityPage() {
           </div>
 
           {/* Hero Banner - Portrait Video */}
-          <div className="relative w-full max-w-sm mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white mt-auto">
-            <video 
-              src="/video/video_2.mp4" 
-              className="w-full h-auto block"
-              autoPlay
-              muted
-              loop
-              playsInline
+          <div className="relative w-full max-w-sm mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white mt-auto aspect-[9/16]">
+            <iframe
+              src="https://www.youtube.com/embed/d0XnPEt2TLA"
+              title="Art Masons Quality"
+              className="absolute top-0 left-0 w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             />
           </div>
         </div>
@@ -63,7 +62,7 @@ export default function OurQualityPage() {
             <div className="flex items-center gap-4 mb-8">
               <h2 className="font-serif text-3xl font-bold text-[#800000]">Our Quality Standards</h2>
             </div>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start gap-4 p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-lg border-2 border-[#800000]">
                 <CheckCircle className="text-[#800000] flex-shrink-0 mt-1" size={24} />
@@ -72,7 +71,7 @@ export default function OurQualityPage() {
                   <p>Every painting is created entirely by hand using traditional oil painting techniques. We never use prints or digital reproduction methods.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4 p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-lg border-2 border-[#800000]">
                 <CheckCircle className="text-[#800000] flex-shrink-0 mt-1" size={24} />
                 <div>
@@ -80,7 +79,7 @@ export default function OurQualityPage() {
                   <p>We use 100% pure linen canvases that are pre-stretched and triple-primed for superior durability and paint adhesion.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4 p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-lg border-2 border-[#800000]">
                 <CheckCircle className="text-[#800000] flex-shrink-0 mt-1" size={24} />
                 <div>
@@ -88,7 +87,7 @@ export default function OurQualityPage() {
                   <p>Only the highest quality, lightfast oil paints are used to ensure vibrant colors that will last for generations.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4 p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-lg border-2 border-[#800000]">
                 <CheckCircle className="text-[#800000] flex-shrink-0 mt-1" size={24} />
                 <div>
@@ -96,7 +95,7 @@ export default function OurQualityPage() {
                   <p>Our certified art masons are highly skilled professionals with years of training in classical painting techniques.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4 p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-lg border-2 border-[#800000]">
                 <CheckCircle className="text-[#800000] flex-shrink-0 mt-1" size={24} />
                 <div>
@@ -104,7 +103,7 @@ export default function OurQualityPage() {
                   <p>Each painting is 100% original proportional, colour and image accurate.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4 p-6 bg-white shadow-sm hover:shadow-md transition-shadow rounded-lg border-2 border-[#800000]">
                 <CheckCircle className="text-[#800000] flex-shrink-0 mt-1" size={24} />
                 <div>
@@ -118,36 +117,36 @@ export default function OurQualityPage() {
           {/* Second Banner */}
           <div className="my-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-            {[
-              {
-                src: '/our-quality/quality_paint.png',
-                width: 2622,
-                height: 1824,
-              },
-              {
-                src: '/our-quality/quality_paint_2.png',
-                width: 4000,
-                height: 3584,
-              },
-              {
-                src: '/our-quality/quality_paint_3.png',
-                width: 3238,
-                height: 4000,
-              },
-            ].map((img, index) => (
-              <div
-                key={img.src}
-                className="relative w-full aspect-square rounded-lg overflow-hidden shadow-2xl border-4 border-white"
-              >
-                <Image
-                  src={img.src}
-                  alt={`Artisan at Work ${index + 1}`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (min-width: 768px) 33vw"
-                  className="object-fill"
-                />
-              </div>
-            ))}
+              {[
+                {
+                  src: '/our-quality/quality_paint.png',
+                  width: 2622,
+                  height: 1824,
+                },
+                {
+                  src: '/our-quality/quality_paint_2.png',
+                  width: 4000,
+                  height: 3584,
+                },
+                {
+                  src: '/our-quality/quality_paint_3.png',
+                  width: 3238,
+                  height: 4000,
+                },
+              ].map((img, index) => (
+                <div
+                  key={img.src}
+                  className="relative w-full aspect-square rounded-lg overflow-hidden shadow-2xl border-4 border-white"
+                >
+                  <Image
+                    src={img.src}
+                    alt={`Artisan at Work ${index + 1}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (min-width: 768px) 33vw"
+                    className="object-fill"
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
@@ -160,27 +159,27 @@ export default function OurQualityPage() {
                 <h3 className="font-bold text-xl mb-2 text-[#800000]">1. Selection & Study</h3>
                 <p>Our artists carefully study the original masterpiece, analyzing brushwork, color palette, and technique.</p>
               </div>
-              
+
               <div className="p-6 bg-white shadow-sm border-2 border-[#800000] rounded-lg">
                 <h3 className="font-bold text-xl mb-2 text-[#800000]">2. Canvas Preparation</h3>
                 <p>Premium linen canvas is stretched on wooden frames and treated with multiple layers of primer.</p>
               </div>
-              
+
               <div className="p-6 bg-white shadow-sm border-2 border-[#800000] rounded-lg">
                 <h3 className="font-bold text-xl mb-2 text-[#800000]">3. Underpainting</h3>
                 <p>The composition is sketched and an underpainting layer is applied to establish values and composition.</p>
               </div>
-              
+
               <div className="p-6 bg-white shadow-sm border-2 border-[#800000] rounded-lg">
                 <h3 className="font-bold text-xl mb-2 text-[#800000]">4. Layer by Layer Painting</h3>
                 <p>Multiple layers of oil paint are applied using traditional techniques, building depth and richness.</p>
               </div>
-              
+
               <div className="p-6 bg-white shadow-sm border-2 border-[#800000] rounded-lg">
                 <h3 className="font-bold text-xl mb-2 text-[#800000]">5. Detail Work & Finishing</h3>
                 <p>Fine details are added with precision, and the painting is allowed to dry completely.</p>
               </div>
-              
+
               <div className="p-6 bg-white shadow-sm border-2 border-[#800000] rounded-lg">
                 <h3 className="font-bold text-xl mb-2 text-[#800000]">6. Quality Inspection</h3>
                 <p>Each painting is inspected for accuracy, quality, and adherence to our museum-grade standards.</p>
@@ -194,9 +193,9 @@ export default function OurQualityPage() {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/3 flex justify-center">
                 <div className="relative w-64 h-64 drop-shadow-xl">
-                  <Image 
-                    src="/our-quality/cert_1.png" 
-                    alt="Quality Certificate" 
+                  <Image
+                    src="/our-quality/cert_1.png"
+                    alt="Quality Certificate"
                     fill
                     className="object-contain"
                   />
@@ -225,7 +224,7 @@ export default function OurQualityPage() {
             <p className="text-lg mb-8 max-w-2xl mx-auto">
               Discover the beauty and quality that only hand-painted oil reproductions can provide. Browse our collection and find the perfect masterpiece for your space.
             </p>
-            <Link 
+            <Link
               href="/"
               className="inline-block bg-[#800000] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#600000] transition-colors text-lg shadow-lg cursor-pointer"
             >
