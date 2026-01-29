@@ -498,10 +498,10 @@ function formatOrderHtml(order: Order) {
     })()}
     </table>
 
-    <div style="margin:0 0 10px 0;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.3;color:${BRAND_TEXT};background:#800000;">Line items</div>
+    <div style="margin:0 0 10px 0;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.3;color:${BRAND_TEXT};">Line items</div>
 
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#fff;">
-      <tr>
+      <tr style="background:#800000;">
         <th align="left" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;">Description</th>
         <th align="right" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Qty</th>
         <th align="right" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Unit price</th>
