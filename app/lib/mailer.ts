@@ -502,10 +502,10 @@ function formatOrderHtml(order: Order) {
 
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#fff;">
       <tr style="background:#800000;">
-        <th align="left" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;">Description</th>
-        <th align="right" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Qty</th>
-        <th align="right" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Unit price</th>
-        <th align="right" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Amount</th>
+        <th align="left" style="padding:10px 12px;background:#800000;color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;">Description</th>
+        <th align="right" style="padding:10px 12px;background:#800000;color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Qty</th>
+        <th align="right" style="padding:10px 12px;background:#800000;color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Unit price</th>
+        <th align="right" style="padding:10px 12px;background:#800000;color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Amount</th>
       </tr>
       ${rowsHtml || `
         <tr>
