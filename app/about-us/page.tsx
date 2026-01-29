@@ -8,6 +8,7 @@ import { Heart, Palette, Users, Sparkles, CheckCircle } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import AboutUsGallery from '../components/AboutUsGallery';
 import ArtStyleQuiz from '../components/ArtStyleQuiz';
+import EducatedMastery from '../components/Profile';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
 
@@ -114,17 +115,7 @@ export default function AboutUsPage() {
               </p>
             </div>
 
-            {/* Image Display - Matching "Our Philosophy" Layout */}
-            <div className="w-full flex justify-center p-[20px]">
-              <Image
-                src="/image/about-us/image_8.png"
-                alt="Art Masons Artist at Work"
-                width={1200}
-                height={800}
-                // Matches the style of the first section (Rounded XL, no extra borders/shadows)
-                className="w-[65%] h-auto object-contain rounded-xl"
-              />
-            </div>
+             <EducatedMastery />
           </section>
 
           {/* Capturing Light In Every Brushstroke */}
