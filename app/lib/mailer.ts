@@ -395,14 +395,22 @@ function formatOrderHtml(order: Order) {
   
   <p style="margin:0 0 4px 0;">
     <a href="https://www.instagram.com/theartmasons" style="color:${BRAND_ACCENT};text-decoration:none;">
-      <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="IG" width="20" height="20" style="border:0; vertical-align:middle; width:20px; height:20px; margin-right:5px;">
+      <img src="https://artmasons.vercel.app/image/icons/instagram.png" 
+           alt="Instagram" 
+           width="20" 
+           height="20" 
+           style="border:0; vertical-align:middle; width:20px; height:20px; margin-right:5px; display:inline-block; outline:none; text-decoration:none;">
       <span style="vertical-align:middle;">@theartmasons</span>
     </a>
   </p>
   
   <p style="margin:0 0 20px 0;">
     <a href="https://www.tiktok.com/@theartmasons" style="color:${BRAND_ACCENT};text-decoration:none;">
-      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" width="20" height="20" style="border:0; vertical-align:middle; width:20px; height:20px; margin-right:5px;">
+      <img src="https://artmasons.vercel.app/image/icons/tiktok.png" 
+           alt="TikTok" 
+           width="20" 
+           height="20" 
+           style="border:0; vertical-align:middle; width:20px; height:20px; margin-right:5px; display:inline-block; outline:none; text-decoration:none;">
       <span style="vertical-align:middle;">@theartmasons</span>
     </a>
   </p>
@@ -490,9 +498,9 @@ function formatOrderHtml(order: Order) {
     })()}
     </table>
 
-    <div style="margin:0 0 10px 0;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.3;color:${BRAND_TEXT};">Line items</div>
+    <div style="margin:0 0 10px 0;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.3;color:${BRAND_TEXT};background:#800000;">Line items</div>
 
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#800000;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#fff;">
       <tr>
         <th align="left" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;">Description</th>
         <th align="right" style="padding:10px 12px;background:${BRAND_DARK};color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Qty</th>
