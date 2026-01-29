@@ -376,161 +376,91 @@ function formatOrderHtml(order: Order) {
 
   const customerName = customer.name || 'Valued Customer';
 
+// Calculation Logic for the template
+  const vatAmount = subtotal * 0.05;
+  const grandTotal = subtotal + vatAmount;
+
   const bodyHtml = `
-    <div style="margin:0 0 20px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.7;color:${BRAND_TEXT};">
-  <p style="margin:0 0 12px 0;">Dear ${escapeHtml(customerName)},</p>
-
-  <p style="margin:0 0 12px 0;">Thank you for your order with Art Masons. We are truly honoured that you've chosen us to create your masterpiece for your home.</p>
-
-  <p style="margin:0 0 12px 0;">Your artwork is now scheduled for production. Each piece is hand-painted to order, and the process takes up to 8 weeks to complete, ensuring the highest level of craftsmanship and detail. Once finished, please allow approximately 1 week for careful packaging and delivery to your address.</p>
-
-  <p style="margin:0 0 12px 0;">If we require any further information during the process, our team will contact you directly by email.</p>
-
-  <p style="margin:0 0 12px 0;">We will keep you updated, and we cannot wait for you to receive your finished masterpiece!</p>
-
-  <p style="margin:0 0 4px 0;">Warm regards,</p>
-  <p style="margin:0 0 4px 0;"><strong>The Art Masons Team</strong></p>
-  <p style="margin:0 0 4px 0;"><a href="mailto:info@artmasons.com" style="color:${BRAND_ACCENT};text-decoration:none;">info@artmasons.com</a></p>
-  <p style="margin:0 0 4px 0;"><a href="https://www.artmasons.com" style="color:${BRAND_ACCENT};text-decoration:none;">www.artmasons.com</a></p>
+<div style="font-family: Arial, Helvetica, sans-serif; max-width: 600px; margin: 0 auto; color: #000000; line-height: 1.6;">
   
-  <p style="margin:0 0 4px 0;">
-    <a href="https://www.instagram.com/theartmasons" style="color:${BRAND_ACCENT};text-decoration:none;">
-      <img src="https://artmasons.vercel.app/image/icons/instagram.png" 
-           alt="Instagram" 
-           width="20" 
-           height="20" 
-           style="border:0; vertical-align:middle; width:20px; height:20px; margin-right:5px; display:inline-block; outline:none; text-decoration:none;">
-      <span style="vertical-align:middle;">@theartmasons</span>
-    </a>
-  </p>
-  
-  <p style="margin:0 0 20px 0;">
-    <a href="https://www.tiktok.com/@theartmasons" style="color:${BRAND_ACCENT};text-decoration:none;">
-      <img src="https://artmasons.vercel.app/image/icons/tiktok.png" 
-           alt="TikTok" 
-           width="20" 
-           height="20" 
-           style="border:0; vertical-align:middle; width:20px; height:20px; margin-right:5px; display:inline-block; outline:none; text-decoration:none;">
-      <span style="vertical-align:middle;">@theartmasons</span>
-    </a>
-  </p>
-</div>
+  <div style="text-align: center; margin-bottom: 40px; margin-top: 20px;">
+    <img src="https://artmasons.vercel.app/image/icons/logo_1.png" alt="Art Masons" width="180" style="display: inline-block;">
+    <h2 style="font-family: Georgia, serif; font-weight: normal; letter-spacing: 3px; text-transform: uppercase; margin-top: 30px; font-size: 18px;">Order Confirmation</h2>
+  </div>
 
-    <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:${BRAND_ACCENT};margin:0 0 8px 0;">
-      Invoice
-    </div>
-    <div style="margin:0 0 14px 0;font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1.25;color:${BRAND_TEXT};">
-      Order ${escapeHtml(order.sessionId)}
-    </div>
+  <div style="font-size: 14px; margin-bottom: 30px;">
+    <p>Dear ${escapeHtml(customerName)},</p>
+    <p>Thank you for your order with Art Masons. We are truly honoured that you've chosen us to create your masterpiece for your home.</p>
+    <p>Your order <strong>#${escapeHtml(order.sessionId)}</strong> is now scheduled for production. Each piece is hand-painted to order (up to 8 weeks), followed by 1 week for careful packaging and delivery.</p>
+  </div>
 
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;margin:0 0 16px 0;border:1px solid ${BRAND_BORDER};">
-      <tr>
-        <td style="padding:12px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:13px;">
-          <strong>Status</strong><br />
-          <span style="color:${BRAND_TEXT};">${escapeHtml(order.status)}</span>
-        </td>
-        <td style="padding:12px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:13px;">
-          <strong>Invoice date</strong><br />
-          <span style="color:${BRAND_TEXT};">${escapeHtml(formatDateLabel(order.createdAt))}</span>
-        </td>
-        <td style="padding:12px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:13px;">
-          <strong>Currency</strong><br />
-          <span style="color:${BRAND_TEXT};">${escapeHtml(currency)}</span>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;">
-          <strong>Customer Details</strong><br />
-          ${customer.name ? `<strong>Name:</strong> ${escapeHtml(customer.name)}<br />` : ''}
-          ${customer.email ? `<strong>Email:</strong> ${escapeHtml(customer.email)}<br />` : ''}
-          ${customer.phone ? `<strong>Phone:</strong> ${escapeHtml(customer.phone)}<br />` : ''}
-        </td>
-      </tr>
-      ${(() => {
-      if (!customer.address) return '';
-      const parsed = parseAddress(customer.address);
-      if (parsed.type === 'home' && parsed.homeDelivery) {
-        const h = parsed.homeDelivery;
-        return `
-      <tr>
-        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
-          <strong style="color:${BRAND_ACCENT};">Home Delivery Address</strong><br />
-          ${h.buildingName ? `<strong>Building:</strong> ${escapeHtml(h.buildingName)}<br />` : ''}
-          ${h.apartmentVilla ? `<strong>Apartment/Villa:</strong> ${escapeHtml(h.apartmentVilla)}<br />` : ''}
-          ${h.road ? `<strong>Road:</strong> ${escapeHtml(h.road)}<br />` : ''}
-          ${h.area ? `<strong>Area:</strong> ${escapeHtml(h.area)}<br />` : ''}
-          ${h.city ? `<strong>City:</strong> ${escapeHtml(h.city)}<br />` : ''}
-          ${h.postalCode ? `<strong>Postal Code:</strong> ${escapeHtml(h.postalCode)}<br />` : ''}
-          ${h.country ? `<strong>Country:</strong> ${escapeHtml(h.country)}` : ''}
-        </td>
-      </tr>`;
-      } else if (parsed.type === 'local' && parsed.framerDelivery) {
-        const f = parsed.framerDelivery;
-        return `
-      <tr>
-        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
-          <strong style="color:${BRAND_ACCENT};">Local Framer Delivery</strong><br />
-          ${f.companyName ? `<strong>Company:</strong> ${escapeHtml(f.companyName)}<br />` : ''}
-          ${(f.contactFirstName || f.contactLastName) ? `<strong>Contact:</strong> ${escapeHtml(f.contactFirstName)} ${escapeHtml(f.contactLastName)}<br />` : ''}
-          ${f.email ? `<strong>Contact Email:</strong> ${escapeHtml(f.email)}<br />` : ''}
-          ${f.mobileNumber ? `<strong>Mobile:</strong> ${escapeHtml(f.mobileNumber)}<br />` : ''}
-          ${f.shopTelephone ? `<strong>Shop Tel:</strong> ${escapeHtml(f.shopTelephone)}<br />` : ''}
-          <div style="height:6px;"></div>
-          ${f.buildingName ? `<strong>Building:</strong> ${escapeHtml(f.buildingName)}<br />` : ''}
-          ${f.shopUnit ? `<strong>Shop/Unit:</strong> ${escapeHtml(f.shopUnit)}<br />` : ''}
-          ${f.road ? `<strong>Road:</strong> ${escapeHtml(f.road)}<br />` : ''}
-          ${f.area ? `<strong>Area:</strong> ${escapeHtml(f.area)}<br />` : ''}
-          ${f.city ? `<strong>City:</strong> ${escapeHtml(f.city)}<br />` : ''}
-          ${f.postalCode ? `<strong>Postal Code:</strong> ${escapeHtml(f.postalCode)}<br />` : ''}
-          ${f.country ? `<strong>Country:</strong> ${escapeHtml(f.country)}` : ''}
-        </td>
-      </tr>`;
-      } else if (parsed.rawAddress) {
-        return `
-      <tr>
-        <td colspan="3" style="padding:12px;font-size:13px;line-height:1.6;background:#f9fafb;">
-          <strong>Delivery Address</strong><br />
-          ${escapeHtml(parsed.rawAddress).replace(/\n/g, '<br />')}
-        </td>
-      </tr>`;
-      }
-      return '';
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-bottom: 40px; border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; padding: 20px 0;">
+    <tr>
+      <td style="font-size: 12px; text-transform: uppercase; color: #666; width: 33%;">Status<br><span style="color:#000; font-weight:bold;">${escapeHtml(order.status)}</span></td>
+      <td style="font-size: 12px; text-transform: uppercase; color: #666; width: 33%;">Date<br><span style="color:#000; font-weight:bold;">${escapeHtml(formatDateLabel(order.createdAt))}</span></td>
+      <td style="font-size: 12px; text-transform: uppercase; color: #666; width: 33%;">Currency<br><span style="color:#000; font-weight:bold;">${escapeHtml(currency)}</span></td>
+    </tr>
+  </table>
+
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-bottom: 1px solid #000; margin-bottom: 10px;">
+    <tr>
+      <th align="left" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Item</th>
+      <th align="center" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Qty</th>
+      <th align="right" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Amount</th>
+    </tr>
+  </table>
+
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-bottom: 20px;">
+    ${rowsHtml || `<tr><td colspan="3" style="padding: 20px 0; text-align: center; color: #999;">No items found.</td></tr>`}
+  </table>
+
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-bottom: 40px;">
+    <tr>
+      <td style="width: 60%;"></td>
+      <td style="padding: 5px 0; font-size: 14px; color: #666;">Subtotal</td>
+      <td align="right" style="padding: 5px 0; font-size: 14px;">${escapeHtml(formatCurrency(subtotal))}</td>
+    </tr>
+    <tr>
+      <td style="width: 60%;"></td>
+      <td style="padding: 5px 0; font-size: 14px; color: #666;">VAT (5%)</td>
+      <td align="right" style="padding: 5px 0; font-size: 14px;">${escapeHtml(formatCurrency(vatAmount))}</td>
+    </tr>
+    <tr>
+      <td style="width: 60%;"></td>
+      <td style="padding: 15px 0 5px 0; font-size: 16px; font-weight: bold; border-top: 1px solid #eeeeee;">Grand Total</td>
+      <td align="right" style="padding: 15px 0 5px 0; font-size: 16px; font-weight: bold; border-top: 1px solid #eeeeee;">${escapeHtml(formatCurrency(grandTotal))}</td>
+    </tr>
+  </table>
+
+  <div style="background-color: #f9f9f9; padding: 20px; font-size: 13px; margin-bottom: 40px; border-radius: 2px;">
+    <strong style="text-transform: uppercase; letter-spacing: 1px; font-size: 11px; display: block; margin-bottom: 10px;">Delivery Address</strong>
+    ${(() => {
+        const parsed = parseAddress(customer.address);
+        if (parsed.type === 'home' && parsed.homeDelivery) {
+            const h = parsed.homeDelivery;
+            return `${h.buildingName || ''} ${h.apartmentVilla || ''}<br>${h.road || ''}, ${h.area || ''}<br>${h.city || ''}, ${h.country || ''}`;
+        }
+        return escapeHtml(parsed.rawAddress || 'Address on file').replace(/\n/g, '<br />');
     })()}
-    </table>
+  </div>
 
-    <div style="margin:0 0 10px 0;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.3;color:${BRAND_TEXT};">Line items</div>
-
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#fff;">
-      <tr style="background:#800000;">
-        <th align="left" style="padding:10px 12px;background:#800000;color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;">Description</th>
-        <th align="right" style="padding:10px 12px;background:#800000;color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Qty</th>
-        <th align="right" style="padding:10px 12px;background:#800000;color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Unit price</th>
-        <th align="right" style="padding:10px 12px;background:#800000;color:#ffffff;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;">Amount</th>
-      </tr>
-      ${rowsHtml || `
-        <tr>
-          <td colspan="4" style="padding:12px;font-size:14px;border-bottom:1px solid ${BRAND_BORDER};">No items found for this order.</td>
-        </tr>`}
-    </table>
-
-    <div style="height:12px;line-height:12px;">&nbsp;</div>
-
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border:1px solid ${BRAND_BORDER};">
-      <tr>
-        <td style="padding:10px 12px;font-size:14px;border-bottom:1px solid ${BRAND_BORDER};">Subtotal</td>
-        <td align="right" style="padding:10px 12px;font-size:14px;border-bottom:1px solid ${BRAND_BORDER};white-space:nowrap;">${escapeHtml(formatCurrency(subtotal))}</td>
-      </tr>
-      <tr>
-        <td style="padding:12px;font-size:14px;"><strong>Total</strong></td>
-        <td align="right" style="padding:12px;font-size:14px;white-space:nowrap;"><strong>${escapeHtml(formatCurrency(total))}</strong></td>
-      </tr>
-    </table>
-
-    <div style="height:14px;line-height:14px;">&nbsp;</div>
-    <div style="font-size:13px;line-height:1.6;color:${BRAND_TEXT};">
-      A PDF copy of this invoice is attached for your records.
+  <div style="text-align: center; border-top: 1px solid #eeeeee; padding-top: 30px; font-size: 12px; color: #666;">
+    <p style="margin-bottom: 20px;">
+      Warm regards,<br>
+      <strong style="color: #000;">The Art Masons Team</strong>
+    </p>
+    <div style="margin-bottom: 20px;">
+      <a href="https://www.instagram.com/theartmasons" style="text-decoration: none; margin: 0 10px;">
+        <img src="https://artmasons.vercel.app/image/icons/instagram.png" width="18" style="vertical-align: middle;">
+      </a>
+      <a href="https://www.tiktok.com/@theartmasons" style="text-decoration: none; margin: 0 10px;">
+        <img src="https://artmasons.vercel.app/image/icons/tiktok.png" width="18" style="vertical-align: middle;">
+      </a>
     </div>
-  `;
+    <p><a href="https://www.artmasons.com" style="color: #000; text-decoration: none;">www.artmasons.com</a> | <a href="mailto:info@artmasons.com" style="color: #000; text-decoration: none;">info@artmasons.com</a></p>
+  </div>
+</div>
+`;
 
   return buildEmailShell({
     title: `Invoice for order ${order.sessionId}`,
