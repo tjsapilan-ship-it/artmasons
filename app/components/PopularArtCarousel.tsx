@@ -6,16 +6,16 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const POPULAR_ARTISTS = [
-  { name: "MONET", image: "/popular-art/monet.webp" },
-  { name: "KLIMT", image: "/popular-art/klimt.webp" },
-  { name: "MATISSE", image: "/popular-art/matisse.webp" },
+  { name: "MONET", image: "/popular-art/monet.jpg" },
+  { name: "KLIMT", image: "/popular-art/klimt.jpg" },
+  { name: "MATISSE", image: "/popular-art/matisse.jpg" },
   { name: "VAN GOGH", image: "/popular-art/gogh.webp" },
-  { name: "PICASSO", image: "/popular-art/picasso.webp" },
-  { name: "DA VINCI", image: "/popular-art/davinci.webp" },
-  { name: "DEGAS", image: "/popular-art/degas.webp" },
-  { name: "STILL LIFES", image: "/popular-art/still-life.webp" },
-  { name: "LANDSCAPES", image: "/popular-art/landscape.webp" },
-  { name: "PORTRAITS", image: "/popular-art/portrait.webp" },
+  { name: "PICASSO", image: "/popular-art/picasso.jpg" },
+  { name: "DA VINCI", image: "/popular-art/davinci.jpg" },
+  { name: "DEGAS", image: "/popular-art/degas.jpg" },
+  { name: "STILL LIFES", image: "/popular-art/still-life.jpg" },
+  { name: "LANDSCAPES", image: "/popular-art/landscape.jpg" },
+  { name: "PORTRAITS", image: "/popular-art/portrait.jpg" },
 ];
 
 const generateSlug = (title: string) =>

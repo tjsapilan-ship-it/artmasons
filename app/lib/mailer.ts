@@ -381,7 +381,7 @@ function formatOrderHtml(order: Order) {
 <div style="font-family: Arial, Helvetica, sans-serif; max-width: 600px; margin: 0 auto; color: #000000; line-height: 1.6;">
   
   <div style="text-align: center; margin-bottom: 40px; margin-top: 20px;">
-    <img src="https://artmasons.vercel.app/image/icons/logo_1.webp" alt="Art Masons" width="180" style="display: inline-block;">
+    <img src="https://artmasons.vercel.app/image/icons/logo_1.png" alt="Art Masons" width="180" style="display: inline-block;">
     <h2 style="font-family: Georgia, serif; font-weight: normal; letter-spacing: 3px; text-transform: uppercase; margin-top: 30px; font-size: 18px;">Order Confirmation</h2>
   </div>
 
@@ -448,10 +448,10 @@ function formatOrderHtml(order: Order) {
     </p>
     <div style="margin-bottom: 20px;">
       <a href="https://www.instagram.com/theartmasons" style="text-decoration: none; margin: 0 10px;">
-        <img src="https://artmasons.vercel.app/image/icons/instagram.webp" width="18" style="vertical-align: middle;">
+        <img src="https://artmasons.vercel.app/image/icons/instagram.png" width="18" style="vertical-align: middle;">
       </a>
       <a href="https://www.tiktok.com/@theartmasons" style="text-decoration: none; margin: 0 10px;">
-        <img src="https://artmasons.vercel.app/image/icons/tiktok.webp" width="18" style="vertical-align: middle;">
+        <img src="https://artmasons.vercel.app/image/icons/tiktok.png" width="18" style="vertical-align: middle;">
       </a>
     </div>
     <p><a href="https://www.artmasons.com" style="color: #000; text-decoration: none;">www.artmasons.com</a> | <a href="mailto:info@artmasons.com" style="color: #000; text-decoration: none;">info@artmasons.com</a></p>

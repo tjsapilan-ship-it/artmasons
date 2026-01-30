@@ -832,7 +832,7 @@ export default function ArtMasonsLanding() {
                   <div className="flex flex-col items-center gap-4">
                     <div className="relative w-32 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56">
                       <Image
-                        src="/image/icons/logo_1.webp"
+                        src="/image/icons/logo_1.png"
                         alt="Logo 1"
                         fill
                         className="object-contain"
@@ -848,7 +848,7 @@ export default function ArtMasonsLanding() {
                   <div className="flex flex-col items-center gap-4">
                     <div className="relative w-32 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56">
                       <Image
-                        src="/image/icons/logo_5.webp"
+                        src="/image/icons/logo_5.png"
                         alt="Logo 5"
                         fill
                         className="object-contain"
@@ -861,7 +861,7 @@ export default function ArtMasonsLanding() {
                   <div className="flex flex-col items-center gap-4">
                     <div className="relative w-32 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56">
                       <Image
-                        src="/image/icons/logo_6.webp"
+                        src="/image/icons/logo_6.png"
                         alt="Logo 6"
                         fill
                         className="object-contain"

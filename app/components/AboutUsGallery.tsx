@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const DEFAULT_IMAGES = [
-  { src: "/image/about-us/image_4.webp", alt: "Art Masons Masterpiece 4" },
-  { src: "/image/about-us/image_5.webp", alt: "Art Masons Masterpiece 5" },
-  { src: "/image/about-us/image_7.webp", alt: "Art Masons Masterpiece 7" },
+  { src: "/image/about-us/image_4.png", alt: "Art Masons Masterpiece 4" },
+  { src: "/image/about-us/image_5.png", alt: "Art Masons Masterpiece 5" },
+  { src: "/image/about-us/image_7.png", alt: "Art Masons Masterpiece 7" },
 ];
 
 export default function AboutUsGallery({

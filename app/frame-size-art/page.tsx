@@ -224,7 +224,7 @@ export default function FrameSizeArtPage() {
             {[1, 2, 3].map((num) => (
               <div key={num} className="group relative rounded-lg overflow-hidden shadow-lg border-4 border-white aspect-[4/5] bg-gray-100">
                 <Image
-                  src={`/image/frame-art-size/image_${num}.webp`}
+                  src={`/image/frame-art-size/image_${num}.jpg`}
                   alt={`Shipping care step ${num}`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -345,7 +345,7 @@ export default function FrameSizeArtPage() {
                 <div className="absolute inset-0 p-4 grid grid-cols-2 gap-4">
                   <div className="relative h-full w-full rounded-lg overflow-hidden shadow-md border-4 border-white">
                     <Image
-                      src="/image/frame-art-size/image_4.webp"
+                      src="/image/frame-art-size/image_4.jpg"
                       alt="Dubai framing example 1"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -354,7 +354,7 @@ export default function FrameSizeArtPage() {
                   </div>
                   <div className="relative h-full w-full rounded-lg overflow-hidden shadow-md border-4 border-white">
                     <Image
-                      src="/image/frame-art-size/image_7.webp"
+                      src="/image/frame-art-size/image_7.png"
                       alt="Dubai framing example 2"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"

@@ -32,7 +32,7 @@ export default function PageLoader() {
             {/* Logo */}
             <div className="relative w-24 h-24 animate-pulse">
               <Image
-                src="/artmasons_logo.webp"
+                src="/artmasons_logo.png"
                 alt="Art Masons"
                 fill
                 sizes="96px"
