@@ -7,8 +7,8 @@ import { type Artwork, ARTWORKS, generateArtistSlug, getArtworkBySlug, getArtwor
 import { getFamousArtworkBySlug, getFamousArtworkSlug, FAMOUS_ART } from '../../../data/famousAndTop100';
 
 // --- Fonts ---
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
 
 // --- MAIN PRODUCT PAGE ---
 export default async function ProductDetailsPage({

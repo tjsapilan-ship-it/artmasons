@@ -10,7 +10,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { ARTWORKS, generateSlug, getArtworkSlug } from '../../data/artworks';
 import { ARTIST_RECOMMENDED_IMAGES } from '../../data/artistRecommendedImages';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const STORAGE_KEY = 'artistsAZSelectedLetter';

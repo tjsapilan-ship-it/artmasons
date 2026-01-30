@@ -10,7 +10,7 @@ import AboutUsGallery from '../components/AboutUsGallery';
 import ArtStyleQuiz from '../components/ArtStyleQuiz';
 import EducatedMastery from '../components/Profile';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
 
 const CAPTURING_LIGHT_IMAGES = [
   { src: "/image/about-us/image_9.png", alt: "Art Masons Light Detail 1" },
@@ -115,7 +115,7 @@ export default function AboutUsPage() {
               </p>
             </div>
 
-             <EducatedMastery />
+            <EducatedMastery />
           </section>
 
           {/* Capturing Light In Every Brushstroke */}

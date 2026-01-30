@@ -8,7 +8,7 @@ import { Trash2, Plus, Minus, ShoppingBag, ArrowRight, Lock, Truck, Shield } fro
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useCart } from '../context/CartContext';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
 
 const SHIPPING_COST = 0; // Free shipping
 const TAX_RATE = 0.05; // 5% tax
@@ -24,7 +24,7 @@ export default function CartPage() {
     }
   };
 
-  const discount = promoApplied ? subtotal * 0.1 : 0; 
+  const discount = promoApplied ? subtotal * 0.1 : 0;
   const tax = (subtotal - discount) * TAX_RATE;
   const total = subtotal - discount + tax + SHIPPING_COST;
 
@@ -39,7 +39,7 @@ export default function CartPage() {
       `}</style>
 
       <div className="w-full px-4 py-12 relative z-10">
-        
+
         <div className="mb-8">
           <Breadcrumbs items={[{ label: 'Shopping Cart', href: '/cart' }]} />
         </div>
@@ -67,7 +67,7 @@ export default function CartPage() {
         ) : (
           // Cart with Items
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            
+
             {/* Cart Items - Left Column */}
             <div className="lg:col-span-2 space-y-4">
               <div className="bg-white/80 p-4 rounded-lg mb-4 border border-[#800000]/10 backdrop-blur-sm">
@@ -171,117 +171,116 @@ export default function CartPage() {
             {/* Order Summary - Right Column */}
             <div className="lg:col-span-1">
               <div className="space-y-6 sticky top-6">
-              <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                <h2 className="font-serif text-2xl font-bold mb-6 text-gray-800">Order Summary</h2>
+                <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                  <h2 className="font-serif text-2xl font-bold mb-6 text-gray-800">Order Summary</h2>
 
-                {/* Promo Code */}
-                <div className="mb-6">
-                  <label className="font-serif text-sm font-semibold text-gray-700 mb-2 block">
-                    Promo Code
-                  </label>
-                  <div className="flex gap-2">
-                    <input
-                      type="text"
-                      value={promoCode}
-                      onChange={(e) => setPromoCode(e.target.value)}
-                      placeholder="Enter code"
-                      className="flex-1 px-4 py-2 border border-gray-300 rounded-lg font-serif focus:outline-none focus:border-[#800000]"
-                      disabled={promoApplied}
-                    />
-                    <button
-                      onClick={applyPromoCode}
-                      disabled={promoApplied}
-                      className={`px-4 py-2 rounded-lg font-serif font-bold transition-colors ${
-                        promoApplied
-                          ? 'bg-green-600 text-white cursor-not-allowed'
-                          : 'bg-[#800000] text-white hover:bg-[#600000] cursor-pointer'
-                      }`}
-                    >
-                      {promoApplied ? '✓' : 'Apply'}
-                    </button>
-                  </div>
-                  {promoApplied && (
-                    <p className="text-green-600 text-sm font-serif mt-2">
-                      ✓ Promo code applied successfully!
-                    </p>
-                  )}
-                </div>
-
-                <div className="space-y-3 mb-6 pb-6 border-b border-gray-300">
-                  <div className="flex justify-between items-baseline font-serif">
-                    <span className="text-gray-700">Subtotal:</span>
-                    <span className="font-semibold tabular-nums">AED {subtotal.toLocaleString()}</span>
-                  </div>
-                  
-                  {promoApplied && (
-                    <div className="flex justify-between items-baseline font-serif text-green-600">
-                      <span>Discount (10%):</span>
-                      <span className="font-semibold tabular-nums">-AED {discount.toLocaleString()}</span>
+                  {/* Promo Code */}
+                  <div className="mb-6">
+                    <label className="font-serif text-sm font-semibold text-gray-700 mb-2 block">
+                      Promo Code
+                    </label>
+                    <div className="flex gap-2">
+                      <input
+                        type="text"
+                        value={promoCode}
+                        onChange={(e) => setPromoCode(e.target.value)}
+                        placeholder="Enter code"
+                        className="flex-1 px-4 py-2 border border-gray-300 rounded-lg font-serif focus:outline-none focus:border-[#800000]"
+                        disabled={promoApplied}
+                      />
+                      <button
+                        onClick={applyPromoCode}
+                        disabled={promoApplied}
+                        className={`px-4 py-2 rounded-lg font-serif font-bold transition-colors ${promoApplied
+                            ? 'bg-green-600 text-white cursor-not-allowed'
+                            : 'bg-[#800000] text-white hover:bg-[#600000] cursor-pointer'
+                          }`}
+                      >
+                        {promoApplied ? '✓' : 'Apply'}
+                      </button>
                     </div>
-                  )}
-                  
-                  <div className="flex justify-between items-baseline font-serif">
-                    <span className="text-gray-700">Shipping:</span>
-                    <span className="font-semibold text-green-600">FREE</span>
+                    {promoApplied && (
+                      <p className="text-green-600 text-sm font-serif mt-2">
+                        ✓ Promo code applied successfully!
+                      </p>
+                    )}
                   </div>
-                  
-                  <div className="flex justify-between items-baseline font-serif">
-                    <span className="text-gray-700">Tax (5%):</span>
-                    <span className="font-semibold tabular-nums">AED {tax.toFixed(2)}</span>
+
+                  <div className="space-y-3 mb-6 pb-6 border-b border-gray-300">
+                    <div className="flex justify-between items-baseline font-serif">
+                      <span className="text-gray-700">Subtotal:</span>
+                      <span className="font-semibold tabular-nums">AED {subtotal.toLocaleString()}</span>
+                    </div>
+
+                    {promoApplied && (
+                      <div className="flex justify-between items-baseline font-serif text-green-600">
+                        <span>Discount (10%):</span>
+                        <span className="font-semibold tabular-nums">-AED {discount.toLocaleString()}</span>
+                      </div>
+                    )}
+
+                    <div className="flex justify-between items-baseline font-serif">
+                      <span className="text-gray-700">Shipping:</span>
+                      <span className="font-semibold text-green-600">FREE</span>
+                    </div>
+
+                    <div className="flex justify-between items-baseline font-serif">
+                      <span className="text-gray-700">Tax (5%):</span>
+                      <span className="font-semibold tabular-nums">AED {tax.toFixed(2)}</span>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-between items-baseline font-serif text-xl font-bold mb-6">
+                    <span className="text-gray-900">Total:</span>
+                    <span className="text-[#800000] tabular-nums">AED {total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                  </div>
+
+                  <Link
+                    href="/checkout"
+                    className="w-full flex items-center justify-center gap-2 bg-[#800000] text-white px-6 py-4 rounded-lg font-serif font-bold text-lg hover:bg-[#600000] transition-colors mb-4 cursor-pointer"
+                  >
+                    <Lock size={20} />
+                    Proceed to Checkout
+                  </Link>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-300">
+                    <div className="flex items-center gap-3 text-sm font-serif text-gray-600">
+                      <Shield size={18} className="text-[#800000]" />
+                      <span>Secure Payment</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm font-serif text-gray-600">
+                      <Truck size={18} className="text-[#800000]" />
+                      <span>Free Worldwide Shipping</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm font-serif text-gray-600">
+                      <ShoppingBag size={18} className="text-[#800000]" />
+                      <span>30-Day Return Policy</span>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex justify-between items-baseline font-serif text-xl font-bold mb-6">
-                  <span className="text-gray-900">Total:</span>
-                  <span className="text-[#800000] tabular-nums">AED {total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                {/* Trust Badges */}
+                <div className="bg-white/80 border border-gray-200 rounded-lg p-6 backdrop-blur-sm">
+                  <h3 className="font-serif text-lg font-bold mb-4 text-gray-800">Why Choose Art Masons?</h3>
+                  <ul className="space-y-3 font-serif text-sm text-gray-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#800000] mt-1">✓</span>
+                      <span>Museum-quality reproductions</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#800000] mt-1">✓</span>
+                      <span>Hand-painted by master artists</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#800000] mt-1">✓</span>
+                      <span>Premium linen canvas & oil paints</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#800000] mt-1">✓</span>
+                      <span>Worldwide secure shipping</span>
+                    </li>
+                  </ul>
                 </div>
-
-                <Link
-                  href="/checkout"
-                  className="w-full flex items-center justify-center gap-2 bg-[#800000] text-white px-6 py-4 rounded-lg font-serif font-bold text-lg hover:bg-[#600000] transition-colors mb-4 cursor-pointer"
-                >
-                  <Lock size={20} />
-                  Proceed to Checkout
-                </Link>
-
-                <div className="space-y-3 pt-4 border-t border-gray-300">
-                  <div className="flex items-center gap-3 text-sm font-serif text-gray-600">
-                    <Shield size={18} className="text-[#800000]" />
-                    <span>Secure Payment</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-sm font-serif text-gray-600">
-                    <Truck size={18} className="text-[#800000]" />
-                    <span>Free Worldwide Shipping</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-sm font-serif text-gray-600">
-                    <ShoppingBag size={18} className="text-[#800000]" />
-                    <span>30-Day Return Policy</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Trust Badges */}
-              <div className="bg-white/80 border border-gray-200 rounded-lg p-6 backdrop-blur-sm">
-                <h3 className="font-serif text-lg font-bold mb-4 text-gray-800">Why Choose Art Masons?</h3>
-                <ul className="space-y-3 font-serif text-sm text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#800000] mt-1">✓</span>
-                    <span>Museum-quality reproductions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#800000] mt-1">✓</span>
-                    <span>Hand-painted by master artists</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#800000] mt-1">✓</span>
-                    <span>Premium linen canvas & oil paints</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#800000] mt-1">✓</span>
-                    <span>Worldwide secure shipping</span>
-                  </li>
-                </ul>
-              </div>
               </div>
             </div>
           </div>

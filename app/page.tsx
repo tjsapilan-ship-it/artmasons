@@ -30,6 +30,7 @@ function shuffle<T>(arr: T[]) {
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-serif",
+  display: "swap",
 });
 
 // --- DATA ---
@@ -366,7 +367,7 @@ export default function ArtMasonsLanding() {
 
   const calculateResult = (finalAnswers: number[]) => {
     const scores = { classical: 0, impressionist: 0, modern: 0, romantic: 0 };
-    
+
     finalAnswers.forEach(answer => {
       if (answer === 0) scores.classical++;
       else if (answer === 1) scores.impressionist++;
@@ -376,7 +377,7 @@ export default function ArtMasonsLanding() {
 
     const maxScore = Math.max(...Object.values(scores));
     const essenceType = Object.keys(scores).find(key => scores[key as keyof typeof scores] === maxScore) || 'classical';
-    
+
     setResult(essenceResults[essenceType]);
     setShowResult(true);
   };
@@ -405,7 +406,7 @@ export default function ArtMasonsLanding() {
   }, [origW, origH, knownDim, newKnown]);
 
   const isClient = useSyncExternalStore(
-    () => () => {},
+    () => () => { },
     () => true,
     () => false,
   );
@@ -452,9 +453,9 @@ export default function ArtMasonsLanding() {
   // --- CENTRALIZED TRANSITION LOGIC ---
   const triggerArtTransition = useCallback((direction: 'next' | 'prev') => {
     if (direction === 'next') {
-       setCurrentArtIndex((prev) => (prev + 1) % currentArray.length);
+      setCurrentArtIndex((prev) => (prev + 1) % currentArray.length);
     } else {
-       setCurrentArtIndex((prev) => (prev - 1 + currentArray.length) % currentArray.length);
+      setCurrentArtIndex((prev) => (prev - 1 + currentArray.length) % currentArray.length);
     }
   }, [currentArray]);
 
@@ -474,7 +475,7 @@ export default function ArtMasonsLanding() {
     if (!playTop100Random || !isTop100AutoPlay) return;
 
     const interval = setInterval(() => {
-       triggerArtTransition('next');
+      triggerArtTransition('next');
     }, 6000);
 
     return () => clearInterval(interval);
@@ -653,7 +654,7 @@ export default function ArtMasonsLanding() {
 
         {/* --- KNOW YOUR ESSENCE QUIZ --- */}
         <section className="w-full px-4 py-20">
-          <section 
+          <section
             className="text-white p-8 md:p-12 rounded-lg shadow-xl"
             style={{
               background: '#800000',
@@ -785,11 +786,11 @@ export default function ArtMasonsLanding() {
           {/* FUN FACTS */}
           <div className="w-full md:w-1/2">
             <div className="flex items-center justify-center gap-4 mb-6">
-               <div className="h-px bg-[#800000] flex-grow"></div>
-               <h3 className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
-                 FUN FACTS
-               </h3>
-               <div className="h-px bg-[#800000] flex-grow"></div>
+              <div className="h-px bg-[#800000] flex-grow"></div>
+              <h3 className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
+                FUN FACTS
+              </h3>
+              <div className="h-px bg-[#800000] flex-grow"></div>
             </div>
             <div className="p-8 md:p-12 min-h-[300px] flex items-center justify-center text-center relative bg-white shadow-sm border-2 border-[#800000] rounded-lg">
               <div className="absolute top-2 left-4 md:top-8 md:left-8 text-[#800000] opacity-90 select-none">
@@ -819,11 +820,11 @@ export default function ArtMasonsLanding() {
             {/* Logos below Fun Facts */}
             <div className="mt-12">
               <div className="flex items-center justify-center gap-4 mb-6">
-                 <div className="h-px bg-[#800000] flex-grow"></div>
-                 <h3 className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
-                   SEALS OF EXCELLENCE
-                 </h3>
-                 <div className="h-px bg-[#800000] flex-grow"></div>
+                <div className="h-px bg-[#800000] flex-grow"></div>
+                <h3 className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
+                  SEALS OF EXCELLENCE
+                </h3>
+                <div className="h-px bg-[#800000] flex-grow"></div>
               </div>
               <div className="p-8 bg-white border-2 border-[#800000] rounded-lg shadow-sm flex flex-col items-center gap-6">
                 {/* First Row */}
@@ -878,15 +879,15 @@ export default function ArtMasonsLanding() {
           {/* --- IMAGE ASPECT CALCULATOR --- */}
           <div className="w-full md:w-1/2 flex flex-col">
             <div className="flex items-center justify-center gap-4 mb-6">
-               <div className="h-px bg-[#800000] flex-grow"></div>
-               <h3 id="resize-tool" className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
-                 ART RESIZE TOOL
-               </h3>
-               <div className="h-px bg-[#800000] flex-grow"></div>
+              <div className="h-px bg-[#800000] flex-grow"></div>
+              <h3 id="resize-tool" className="font-serif text-3xl font-bold text-center uppercase text-black tracking-widest">
+                ART RESIZE TOOL
+              </h3>
+              <div className="h-px bg-[#800000] flex-grow"></div>
             </div>
-            
+
             <div className="font-serif bg-white p-8 border-2 border-[#800000] rounded-lg shadow-sm flex flex-col text-black text-lg relative flex-grow justify-between gap-6">
-              
+
               <div>
                 <p className="mb-2 text-lg text-black">Keep your art perfectly proportional while fitting it to your space.</p>
                 <p className="mb-6 text-base text-black">Note: All artwork across our site is listed as Height x Width in <span className="font-bold text-black">centimeters (cm)</span></p>
@@ -945,50 +946,50 @@ export default function ArtMasonsLanding() {
                 <label className="text-base font-bold text-black block mb-4">
                   Enter either the new desired Height <span className="bg-[#800000] text-white text-sm font-bold px-3 py-1 rounded-full mx-1">OR</span> Width
                 </label>
-                
-                <div className="flex flex-col sm:flex-row items-center gap-4 mb-4">
-                   <label className="flex items-center gap-2 cursor-pointer group">
-                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${knownDim === 'height' ? 'border-[#800000]' : 'border-gray-400'}`}>
-                        {knownDim === 'height' && <div className="w-2.5 h-2.5 rounded-full bg-[#800000]" />}
-                      </div>
-                      <input type="radio" name="known" checked={knownDim === 'height'} onChange={() => setKnownDim('height')} className="hidden" />
-                      <span className="text-base font-medium text-black group-hover:text-[#800000] transition-colors">New Height</span>
-                   </label>
 
-                   <label className="flex items-center gap-2 cursor-pointer group">
-                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${knownDim === 'width' ? 'border-[#800000]' : 'border-gray-400'}`}>
-                        {knownDim === 'width' && <div className="w-2.5 h-2.5 rounded-full bg-[#800000]" />}
-                      </div>
-                      <input type="radio" name="known" checked={knownDim === 'width'} onChange={() => setKnownDim('width')} className="hidden" />
-                      <span className="text-base font-medium text-black group-hover:text-[#800000] transition-colors">New Width</span>
-                   </label>
+                <div className="flex flex-col sm:flex-row items-center gap-4 mb-4">
+                  <label className="flex items-center gap-2 cursor-pointer group">
+                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${knownDim === 'height' ? 'border-[#800000]' : 'border-gray-400'}`}>
+                      {knownDim === 'height' && <div className="w-2.5 h-2.5 rounded-full bg-[#800000]" />}
+                    </div>
+                    <input type="radio" name="known" checked={knownDim === 'height'} onChange={() => setKnownDim('height')} className="hidden" />
+                    <span className="text-base font-medium text-black group-hover:text-[#800000] transition-colors">New Height</span>
+                  </label>
+
+                  <label className="flex items-center gap-2 cursor-pointer group">
+                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${knownDim === 'width' ? 'border-[#800000]' : 'border-gray-400'}`}>
+                      {knownDim === 'width' && <div className="w-2.5 h-2.5 rounded-full bg-[#800000]" />}
+                    </div>
+                    <input type="radio" name="known" checked={knownDim === 'width'} onChange={() => setKnownDim('width')} className="hidden" />
+                    <span className="text-base font-medium text-black group-hover:text-[#800000] transition-colors">New Width</span>
+                  </label>
                 </div>
 
                 <div className="mb-4">
-                   <input
-                      type="number"
-                      value={newKnown}
-                      onChange={(e) => setNewKnown(e.target.value === '' ? '' : Number(e.target.value))}
-                      className="w-full p-3 border border-gray-300 rounded focus:border-[#800000] outline-none bg-white text-black transition-colors"
-                      placeholder={knownDim === 'width' ? 'Enter new width' : 'Enter new height'}
-                   />
+                  <input
+                    type="number"
+                    value={newKnown}
+                    onChange={(e) => setNewKnown(e.target.value === '' ? '' : Number(e.target.value))}
+                    className="w-full p-3 border border-gray-300 rounded focus:border-[#800000] outline-none bg-white text-black transition-colors"
+                    placeholder={knownDim === 'width' ? 'Enter new width' : 'Enter new height'}
+                  />
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center border border-gray-200 rounded bg-white overflow-hidden shadow-sm">
-                   <div className="px-4 py-3 text-black text-base border-b sm:border-b-0 sm:border-r border-gray-200 bg-gray-50 w-full sm:w-auto sm:min-w-[180px] font-medium">
-                      Behold your new {knownDim === 'width' ? 'Height' : 'Width'}
-                   </div>
-                    <div className="px-4 py-3 font-bold text-[#800000] text-lg flex-grow">
-                       {typeof computedOtherDim === 'number' ? `${computedOtherDim} cm` : ''}
-                    </div>
+                  <div className="px-4 py-3 text-black text-base border-b sm:border-b-0 sm:border-r border-gray-200 bg-gray-50 w-full sm:w-auto sm:min-w-[180px] font-medium">
+                    Behold your new {knownDim === 'width' ? 'Height' : 'Width'}
+                  </div>
+                  <div className="px-4 py-3 font-bold text-[#800000] text-lg flex-grow">
+                    {typeof computedOtherDim === 'number' ? `${computedOtherDim} cm` : ''}
+                  </div>
                 </div>
               </div>
 
               <div className="border-2 border-[#800000] rounded p-4">
-                 <p className="font-bold text-base mb-1 text-black">Need a hand?</p>
-                 <p className="text-base text-black">
-                   We&apos;re happy to help — contact us at <a href="mailto:info@artmasons.com" className="text-[#800000] underline font-medium">info@artmasons.com</a>
-                 </p>
+                <p className="font-bold text-base mb-1 text-black">Need a hand?</p>
+                <p className="text-base text-black">
+                  We&apos;re happy to help — contact us at <a href="mailto:info@artmasons.com" className="text-[#800000] underline font-medium">info@artmasons.com</a>
+                </p>
               </div>
 
             </div>

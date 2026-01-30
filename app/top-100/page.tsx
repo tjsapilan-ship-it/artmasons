@@ -10,7 +10,7 @@ import { ARTWORKS, getArtworkSlug } from '../../data/artworks';
 import { TOP_100_PAINTINGS, getFamousArtworkSlug, FamousArtwork } from '../../data/famousAndTop100';
 import QuoteRequestModal from '../components/QuoteRequestModal';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
 
 // --- THEME COLORS ---
 const THEME_RED = '#800000';

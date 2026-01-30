@@ -11,7 +11,7 @@ import { ARTWORKS, generateSlug, getArtworkBySlug, getArtworkSlug, type Artwork 
 import { getCategorySlugs } from '../../../data/popularCategories';
 import QuoteRequestModal from '../../components/QuoteRequestModal';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
 
 const getPrimaryPricing = (artwork: Artwork) => {
   const hasOptions = Array.isArray(artwork.options) && artwork.options.length > 0;

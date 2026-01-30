@@ -10,7 +10,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { useRouter } from 'next/navigation';
 import StripePaymentModal from './StripePaymentModal';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
 
 export default function CheckoutPage() {
   const { items, subtotal } = useCart();
@@ -66,7 +66,7 @@ export default function CheckoutPage() {
   const handleCustomerChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCustomerDetails({ ...customerDetails, [e.target.name]: e.target.value });
   };
-  
+
   const handleHomeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setHomeDelivery({ ...homeDelivery, [e.target.name]: e.target.value });
   };
@@ -87,7 +87,7 @@ export default function CheckoutPage() {
     let customerPhone = customerDetails.mobileNumber;
 
     if (deliveryType === 'home') {
-       compiledAddress = `HOME DELIVERY:
+      compiledAddress = `HOME DELIVERY:
 Country: ${homeDelivery.country}
 City: ${homeDelivery.city}
 Road: ${homeDelivery.road}
@@ -96,9 +96,9 @@ Apartment/Villa: ${homeDelivery.apartmentVilla}
 Area: ${homeDelivery.area}
 ZIP: ${homeDelivery.postalCode}`;
     } else {
-       customerPhone = customerDetails.mobileNumber; // Still use customer's mobile as primary? Or framer's? Usually stripes needs customer phone.
-       // We can append framer contact to address.
-       compiledAddress = `LOCAL FRAMER DELIVERY:
+      customerPhone = customerDetails.mobileNumber; // Still use customer's mobile as primary? Or framer's? Usually stripes needs customer phone.
+      // We can append framer contact to address.
+      compiledAddress = `LOCAL FRAMER DELIVERY:
 Company: ${framerDelivery.companyName}
 Contact: ${framerDelivery.contactFirstName} ${framerDelivery.contactLastName}
 Framer Email: ${framerDelivery.email}
@@ -121,7 +121,7 @@ ZIP: ${framerDelivery.postalCode}`;
         const itemTax = itemSubtotal * taxRate;
         const itemTotal = itemSubtotal + itemTax;
         const priceWithTax = itemTotal / it.quantity;
-        
+
         return {
           title: it.title,
           price: priceWithTax,
@@ -361,13 +361,13 @@ ZIP: ${framerDelivery.postalCode}`;
                       </div>
                       <div className="md:col-span-2">
                         <label className="font-serif text-sm font-semibold text-gray-700 mb-2 block">Upload ID of contact for customs clearance</label>
-                        <input type="file" className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[#800000]/10 file:text-[#800000] hover:file:bg-[#800000]/20 cursor-pointer"/>
+                        <input type="file" className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[#800000]/10 file:text-[#800000] hover:file:bg-[#800000]/20 cursor-pointer" />
                         <p className="mt-2 text-xs text-gray-500">Optional: You can also email this later.</p>
                       </div>
                     </div>
-                    
+
                     <div className="mt-6 p-4 bg-orange-50 border border-orange-100 rounded-lg text-sm text-gray-700 font-serif leading-relaxed">
-                        <strong>Note:</strong> Don’t have these details now? No problem you can e-mail them together with your email order number to <a href="mailto:info@artmasons.com" className="text-[#800000] underline">info@artmasons.com</a> we will need them within 5 business days of placing your online order.
+                      <strong>Note:</strong> Don’t have these details now? No problem you can e-mail them together with your email order number to <a href="mailto:info@artmasons.com" className="text-[#800000] underline">info@artmasons.com</a> we will need them within 5 business days of placing your online order.
                     </div>
                   </div>
                 )}

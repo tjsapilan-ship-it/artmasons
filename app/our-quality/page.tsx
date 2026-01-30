@@ -7,7 +7,7 @@ import { Playfair_Display } from 'next/font/google';
 import { CheckCircle } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
 
 export default function OurQualityPage() {
   return (

@@ -4,7 +4,7 @@ import React from 'react';
 import { Playfair_Display } from 'next/font/google';
 import Breadcrumbs from '../components/Breadcrumbs';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
 
 export default function FAQsPage() {
   return (
@@ -18,7 +18,7 @@ export default function FAQsPage() {
       `}</style>
 
       <div className="w-full px-4 py-12 relative z-10">
-        
+
         {/* Breadcrumb / Back */}
         <div className="mb-8">
           <Breadcrumbs items={[{ label: 'FAQs', href: '/faqs' }]} />
@@ -27,7 +27,7 @@ export default function FAQsPage() {
         <h1 className="font-serif text-4xl md:text-5xl font-bold mb-12 text-[#800000]">Frequently Asked Questions</h1>
 
         <div className="space-y-12 bg-white/80 p-8 md:p-12 rounded-lg backdrop-blur-sm border border-[#800000]/10 shadow-sm">
-          
+
           {/* Section 1 */}
           <section>
             <h2 className="font-serif text-2xl font-bold mb-4 text-[#800000]">How Do We Create Our Paintings? Hand-Painted Oil Masterpieces</h2>

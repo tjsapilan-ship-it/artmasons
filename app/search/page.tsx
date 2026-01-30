@@ -10,7 +10,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import { Playfair_Display } from "next/font/google";
 import QuoteRequestModal from "../components/QuoteRequestModal";
 
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif", display: "swap" });
 const THEME_RED = "#800000";
 
 export default function SearchPage() {
