@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/artmasons_logo.png',
-    apple: '/artmasons_logo.png',
-    shortcut: '/artmasons_logo.png',
+    icon: '/artmasons_logo.webp',
+    apple: '/artmasons_logo.webp',
+    shortcut: '/artmasons_logo.webp',
   },
 };
 

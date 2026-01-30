@@ -119,17 +119,17 @@ export default function OurQualityPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
               {[
                 {
-                  src: '/our-quality/quality_paint.png',
+                  src: '/our-quality/quality_paint.webp',
                   width: 2622,
                   height: 1824,
                 },
                 {
-                  src: '/our-quality/quality_paint_2.png',
+                  src: '/our-quality/quality_paint_2.webp',
                   width: 4000,
                   height: 3584,
                 },
                 {
-                  src: '/our-quality/quality_paint_3.png',
+                  src: '/our-quality/quality_paint_3.webp',
                   width: 3238,
                   height: 4000,
                 },
@@ -194,7 +194,7 @@ export default function OurQualityPage() {
               <div className="md:w-1/3 flex justify-center">
                 <div className="relative w-64 h-64 drop-shadow-xl">
                   <Image
-                    src="/our-quality/cert_1.png"
+                    src="/our-quality/cert_1.webp"
                     alt="Quality Certificate"
                     fill
                     className="object-contain"

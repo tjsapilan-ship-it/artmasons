@@ -7,7 +7,9 @@
     "parse:popular": "node ./scripts/parse_popular_pdf.js",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "convert:webp": "node ./scripts/convert-to-webp.js",
+    "update:refs": "node ./scripts/update-image-refs.js"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^3.2.0",
@@ -21,6 +23,7 @@
     "pdf-parse": "^1.1.4",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "sharp": "^0.33.5",
     "stripe": "^12.11.0",
     "tailwind-merge": "^3.4.0"
   },

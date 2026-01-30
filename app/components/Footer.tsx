@@ -21,11 +21,11 @@ export default function Footer() {
           </p>
           <div className="flex gap-4 items-center">
             <a href="https://instagram.com/Theartmasons" className="block cursor-pointer">
-              <Image src="/image/icons/instagram.png" alt="Instagram" width={24} height={24} />
+              <Image src="/image/icons/instagram.webp" alt="Instagram" width={24} height={24} />
             </a>
 
             <a href="https://www.tiktok.com/@theartmasons" className="block cursor-pointer" target="_blank" rel="noopener noreferrer">
-              <Image src="/image/icons/tiktok.png" alt="TikTok" width={24} height={24} />
+              <Image src="/image/icons/tiktok.webp" alt="TikTok" width={24} height={24} />
             </a>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function Footer() {
               <Mail size={18} /> info@artmasons.com
             </a>
             <div className="flex items-center gap-3 text-gray-300 font-serif">
-              <Image src="/image/icons/whatsapp.png" alt="WhatsApp" width={20} height={20} />
+              <Image src="/image/icons/whatsapp.webp" alt="WhatsApp" width={20} height={20} />
               <span>+971 56 170 4788</span>
             </div>
           </div>
@@ -85,9 +85,9 @@ export default function Footer() {
           </h4>
           <div className="flex flex-wrap gap-2">
             {[
-              { src: 'dhl.png', alt: 'DHL' },
-              { src: 'fedex.png', alt: 'FedEx' },
-              { src: 'ups.png', alt: 'UPS' }
+              { src: 'dhl.webp', alt: 'DHL' },
+              { src: 'fedex.webp', alt: 'FedEx' },
+              { src: 'ups.webp', alt: 'UPS' }
             ].map((logo) => (
               <div key={logo.src} className="bg-white rounded px-2 py-1 h-8 w-12 flex items-center justify-center shadow-md">
                 <Image
@@ -160,13 +160,13 @@ export default function Footer() {
           <div className="flex items-center gap-4">
 
             <a href="https://instagram.com/Theartmasons" className="block cursor-pointer">
-              <Image src="/image/icons/instagram.png" alt="Instagram" width={20} height={20} />
+              <Image src="/image/icons/instagram.webp" alt="Instagram" width={20} height={20} />
             </a>
             <a href="#" className="block cursor-pointer">
-              <Image src="/image/icons/whatsapp.png" alt="WhatsApp" width={20} height={20} />
+              <Image src="/image/icons/whatsapp.webp" alt="WhatsApp" width={20} height={20} />
             </a>
             <a href="https://www.tiktok.com/@theartmasons" className="block cursor-pointer" target="_blank" rel="noopener noreferrer">
-              <Image src="/image/icons/tiktok.png" alt="TikTok" width={20} height={20} />
+              <Image src="/image/icons/tiktok.webp" alt="TikTok" width={20} height={20} />
             </a>
           </div>
         </div>
