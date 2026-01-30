@@ -372,13 +372,10 @@ function formatOrderHtml(order: Order) {
     })
     .join('');
 
-  const total = subtotal;
-
+  const grandTotal = subtotal;
+  const vatAmount = grandTotal - (grandTotal / 1.05);
+  const subtotalExclVat = grandTotal - vatAmount;
   const customerName = customer.name || 'Valued Customer';
-
-// Calculation Logic for the template
-  const vatAmount = subtotal * 0.05;
-  const grandTotal = subtotal + vatAmount;
 
   const bodyHtml = `
 <div style="font-family: Arial, Helvetica, sans-serif; max-width: 600px; margin: 0 auto; color: #000000; line-height: 1.6;">
@@ -417,8 +414,8 @@ function formatOrderHtml(order: Order) {
   <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-bottom: 40px;">
     <tr>
       <td style="width: 60%;"></td>
-      <td style="padding: 5px 0; font-size: 14px; color: #666;">Subtotal</td>
-      <td align="right" style="padding: 5px 0; font-size: 14px;">${escapeHtml(formatCurrency(subtotal))}</td>
+      <td style="padding: 5px 0; font-size: 14px; color: #666;">Subtotal (Excl. VAT)</td>
+      <td align="right" style="padding: 5px 0; font-size: 14px;">${escapeHtml(formatCurrency(subtotalExclVat))}</td>
     </tr>
     <tr>
       <td style="width: 60%;"></td>
@@ -427,7 +424,7 @@ function formatOrderHtml(order: Order) {
     </tr>
     <tr>
       <td style="width: 60%;"></td>
-      <td style="padding: 15px 0 5px 0; font-size: 16px; font-weight: bold; border-top: 1px solid #eeeeee;">Grand Total</td>
+      <td style="padding: 15px 0 5px 0; font-size: 16px; font-weight: bold; border-top: 1px solid #eeeeee;">Grand Total (Incl. VAT)</td>
       <td align="right" style="padding: 15px 0 5px 0; font-size: 16px; font-weight: bold; border-top: 1px solid #eeeeee;">${escapeHtml(formatCurrency(grandTotal))}</td>
     </tr>
   </table>
@@ -435,12 +432,12 @@ function formatOrderHtml(order: Order) {
   <div style="background-color: #f9f9f9; padding: 20px; font-size: 13px; margin-bottom: 40px; border-radius: 2px;">
     <strong style="text-transform: uppercase; letter-spacing: 1px; font-size: 11px; display: block; margin-bottom: 10px;">Delivery Address</strong>
     ${(() => {
-        const parsed = parseAddress(customer.address);
-        if (parsed.type === 'home' && parsed.homeDelivery) {
-            const h = parsed.homeDelivery;
-            return `${h.buildingName || ''} ${h.apartmentVilla || ''}<br>${h.road || ''}, ${h.area || ''}<br>${h.city || ''}, ${h.country || ''}`;
-        }
-        return escapeHtml(parsed.rawAddress || 'Address on file').replace(/\n/g, '<br />');
+      const parsed = parseAddress(customer.address);
+      if (parsed.type === 'home' && parsed.homeDelivery) {
+        const h = parsed.homeDelivery;
+        return `${h.buildingName || ''} ${h.apartmentVilla || ''}<br>${h.road || ''}, ${h.area || ''}<br>${h.city || ''}, ${h.country || ''}`;
+      }
+      return escapeHtml(parsed.rawAddress || 'Address on file').replace(/\n/g, '<br />');
     })()}
   </div>
 
@@ -464,7 +461,7 @@ function formatOrderHtml(order: Order) {
 
   return buildEmailShell({
     title: `Invoice for order ${order.sessionId}`,
-    preheader: `Invoice for order ${order.sessionId}. Total ${formatCurrency(total)}.`,
+    preheader: `Invoice for order ${order.sessionId}. Total ${formatCurrency(grandTotal)}.`,
     bodyHtml,
   });
 }
@@ -539,8 +536,9 @@ async function generateInvoicePdf(order: Order): Promise<Buffer> {
     return { title, qty, unit, amount };
   });
 
-  const subtotal = computed.reduce((sum, row) => (Number.isFinite(row.amount) ? sum + row.amount : sum), 0);
-  const total = subtotal;
+  const grandTotal = computed.reduce((sum, row) => (Number.isFinite(row.amount) ? sum + row.amount : sum), 0);
+  const vatAmount = grandTotal - (grandTotal / 1.05);
+  const subtotalExclVat = grandTotal - vatAmount;
 
   const table = {
     x: margin,
@@ -754,17 +752,28 @@ async function generateInvoicePdf(order: Order): Promise<Buffer> {
     page.drawRectangle({ x, y: yTop - boxHeight, width: boxWidth, height: boxHeight, borderColor: BRAND_BORDER_RGB, borderWidth: 1 });
 
     let y = yTop - 18;
-    page.drawText('Subtotal', { x: x + 10, y, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
-    page.drawText(formatCurrency(subtotal), {
-      x: x + boxWidth - 10 - fontRegular.widthOfTextAtSize(formatCurrency(subtotal), bodyFontSize),
+    page.drawText('Subtotal (Excl. VAT)', { x: x + 10, y, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
+    const subtotalLabel = formatCurrency(subtotalExclVat);
+    page.drawText(subtotalLabel, {
+      x: x + boxWidth - 10 - fontRegular.widthOfTextAtSize(subtotalLabel, bodyFontSize),
       y,
       size: bodyFontSize,
       font: fontRegular,
       color: BRAND_TEXT_RGB,
     });
     y -= lineHeight;
-    page.drawText('Total', { x: x + 10, y, size: bodyFontSize, font: fontBold, color: BRAND_TEXT_RGB });
-    const totalLabel = formatCurrency(total);
+    page.drawText('VAT (5%)', { x: x + 10, y, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
+    const vatLabel = formatCurrency(vatAmount);
+    page.drawText(vatLabel, {
+      x: x + boxWidth - 10 - fontRegular.widthOfTextAtSize(vatLabel, bodyFontSize),
+      y,
+      size: bodyFontSize,
+      font: fontRegular,
+      color: BRAND_TEXT_RGB,
+    });
+    y -= lineHeight;
+    page.drawText('Grand Total (Incl. VAT)', { x: x + 10, y, size: bodyFontSize, font: fontBold, color: BRAND_TEXT_RGB });
+    const totalLabel = formatCurrency(grandTotal);
     page.drawText(totalLabel, {
       x: x + boxWidth - 10 - fontBold.widthOfTextAtSize(totalLabel, bodyFontSize),
       y,
