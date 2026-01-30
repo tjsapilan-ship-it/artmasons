@@ -26,6 +26,7 @@ const EducatedMastery = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
+                  style={{ transform: 'translate3d(0, 0, 0)' }}
                 ></iframe>
               </div>
             </div>
@@ -38,7 +39,7 @@ const EducatedMastery = () => {
 
         {/* Track Info */}
         <div className="mb-4 space-y-2 text-center">
-          <h2 className="text-5xl md:text-6xl font-serif text-[#880000] tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-serif font-bold text-[#880000] tracking-tight">
             The Founder's Message
           </h2>
           <p className="text-[#000000] font-bold tracking-widest uppercase text-sm">

@@ -868,7 +868,7 @@ export default function ArtMasonsLanding() {
                       />
                     </div>
                     <p className="font-serif text-base sm:text-lg font-bold text-[#800000] text-center max-w-[150px] sm:max-w-none">
-                      100% Money Guarantee
+                      Original Accuracy Guaranteed
                     </p>
                   </div>
                 </div>
