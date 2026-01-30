@@ -782,19 +782,6 @@ export const FAMOUS_ART: FamousArtwork[] = [
   },
 
   {
-    title: "Great Still On Pedestal",
-    artist: "Pablo Picasso",
-    year: "1931",
-    originalSize: "195 x 130.5 cm",
-    artistLife: "1881-1973",
-    sku: "AM-FA-054",
-    basePrice: 4100,
-    currency: "AED",
-    image: "/image/famous-art/great still on pedastal.jpg",
-    options: [{ id: 'opt1', width: 195, height: 130.5, price: 4100, label: 'Original Size' }],
-  },
-
-  {
     title: "Jacqueline With Flowers",
     artist: "Pablo Picasso",
     year: "1954",
@@ -805,19 +792,6 @@ export const FAMOUS_ART: FamousArtwork[] = [
     currency: "AED",
     image: "/image/famous-art/jacqueline with flowers.jpg",
     options: [{ id: 'opt1', width: 116, height: 88.5, price: 4100, label: 'Original Size' }],
-  },
-
-  {
-    title: "Large Red Nude In Red Armchair",
-    artist: "Pablo Picasso",
-    year: "1929",
-    originalSize: "195 x 129 cm",
-    artistLife: "1881-1973",
-    sku: "AM-FA-056",
-    basePrice: 6200,
-    currency: "AED",
-    image: "/image/famous-art/large red nude in red armchair.jpg",
-    options: [{ id: 'opt1', width: 195, height: 129, price: 6200, label: 'Original Size' }],
   },
 
   {
@@ -957,22 +931,6 @@ export const FAMOUS_ART: FamousArtwork[] = [
   },
 
   {
-    title: "Nude Descending A Staircase II",
-    artist: "Marcel Duchamp",
-    year: "1912",
-    originalSize: "147 x 89.2 cm",
-    artistLife: "1887-1968",
-    sku: "AM-FA-067",
-    basePrice: 12000,
-    currency: "AED",
-    image: "/image/famous-art/nude descending a staircase ii.jpg",
-    options: [
-      { id: 'opt1', width: 147, height: 89.2, price: 12000, label: '147 x 89.2 cm' },
-      { id: 'opt2', width: 73.5, height: 44.6, price: 6000, label: '73.5 x 44.6 cm' }
-    ],
-  },
-
-  {
     title: "The Calling Of St Matthew",
     artist: "Michaelangelo Merisi Da Caravaggio",
     year: "1599",
@@ -1026,19 +984,6 @@ export const FAMOUS_ART: FamousArtwork[] = [
     currency: "AED",
     image: "/image/famous-art/ria munk on her death bed.jpg",
     options: [{ id: 'opt1', width: 50, height: 50.5, price: 5000, label: 'Original Size' }],
-  },
-
-  {
-    title: "The Virgins",
-    artist: "Gustav Klimt",
-    year: "1913",
-    originalSize: "190 x 200 cm",
-    artistLife: "1862-1918",
-    sku: "AM-FA-072",
-    basePrice: 20000,
-    currency: "AED",
-    image: "/image/famous-art/the virgins.jpg",
-    options: [{ id: 'opt1', width: 190, height: 200, price: 20000, label: 'Original Size' }],
   },
 
   {
@@ -1172,19 +1117,6 @@ export const FAMOUS_ART: FamousArtwork[] = [
   },
 
   {
-    title: "The Great Wave Of Kanagawa",
-    artist: "Katsushika Hokusai",
-    year: "1830",
-    originalSize: "25.4 x 38 cm",
-    artistLife: "1760-1849",
-    sku: "AM-FA-083",
-    basePrice: 2350,
-    currency: "AED",
-    image: "/image/famous-art/the great wave of kanagawa.jpg",
-    options: [{ id: 'opt1', width: 25.4, height: 38, price: 2350, label: 'Original Size' }],
-  },
-
-  {
     title: "The Card Players",
     artist: "Paul Cezanne",
     year: "1890",
@@ -1250,19 +1182,6 @@ export const FAMOUS_ART: FamousArtwork[] = [
   },
 
   {
-    title: "Composition With Red Yellow Green",
-    artist: "Piet Mondrian",
-    year: "1930",
-    originalSize: "59.5 x 59.5 cm",
-    artistLife: "1872-1944",
-    sku: "AM-FA-089",
-    basePrice: 1403,
-    currency: "AED",
-    image: "/image/famous-art/composition with red yellow green.jpg",
-    options: [{ id: 'opt1', width: 59.5, height: 59.5, price: 1403, label: 'Original Size' }],
-  },
-
-  {
     title: "Figures At The Seaside",
     artist: "Pablo Picasso",
     year: "1931",
@@ -1325,71 +1244,6 @@ export const FAMOUS_ART: FamousArtwork[] = [
     currency: "AED",
     image: "/image/famous-art/the ballerina ulla poulsen in the ballet chopinana.jpg",
     options: [{ id: 'opt1', width: 76, height: 91, price: 5360, label: 'Original Size' }],
-  },
-
-  {
-    title: "Peddler",
-    artist: "Jackson Pollock",
-    year: "1930",
-    originalSize: "28.4 x 26 cm",
-    artistLife: "1930-1935",
-    sku: "AM-FA-095",
-    basePrice: 3900,
-    currency: "AED",
-    image: "/image/famous-art/peddler.jpg",
-    options: [{ id: 'opt1', width: 28.4, height: 26, price: 3900, label: 'Original Size' }],
-  },
-
-  {
-    title: "Bird",
-    artist: "Jackson Pollock",
-    year: "1941",
-    originalSize: "61.5 x 70.5 cm",
-    artistLife: "1930-1935",
-    sku: "AM-FA-096",
-    basePrice: 8100,
-    currency: "AED",
-    image: "/image/famous-art/bird.jpg",
-    options: [{ id: 'opt1', width: 61.5, height: 70.5, price: 8100, label: 'Original Size' }],
-  },
-
-  {
-    title: "Stenographic Figure",
-    artist: "Jackson Pollock",
-    year: "1942",
-    originalSize: "40 x 56 cm",
-    artistLife: "1930-1935",
-    sku: "AM-FA-097",
-    basePrice: 4950,
-    currency: "AED",
-    image: "/image/famous-art/stenographic figure.jpg",
-    options: [{ id: 'opt1', width: 40, height: 56, price: 4950, label: 'Original Size' }],
-  },
-
-  {
-    title: "Male And Female",
-    artist: "Jackson Pollock",
-    year: "1942",
-    originalSize: "73.1 x 49 cm",
-    artistLife: "1930-1935",
-    sku: "AM-FA-098",
-    basePrice: 8100,
-    currency: "AED",
-    image: "/image/famous-art/male and female.jpg",
-    options: [{ id: 'opt1', width: 73.1, height: 49, price: 8100, label: 'Original Size' }],
-  },
-
-  {
-    title: "Moon Woman",
-    artist: "Jackson Pollock",
-    year: "1942",
-    originalSize: "175.2 x 109.3 cm",
-    artistLife: "1930-1935",
-    sku: "AM-FA-099",
-    basePrice: 15900,
-    currency: "AED",
-    image: "/image/famous-art/moon woman.jpg",
-    options: [{ id: 'opt1', width: 175.2, height: 109.3, price: 15900, label: 'Original Size' }],
   },
 
   {
