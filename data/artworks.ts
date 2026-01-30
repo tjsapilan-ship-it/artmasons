@@ -25,7 +25,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "56 x 81.6",
     sellingDimensions: "56 x 81.6",
     price: 3200,
-    image: "/image/a/in poppyland (poppy field).webp",
+    image: "/image/a/in-poppyland-(poppy-field).webp",
     artistLifespan: "1851-1927",
     slug: "in-poppyland-poppy-field",
     letter: "A"
@@ -37,7 +37,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 99.1",
     sellingDimensions: "73 x 99.1",
     price: 4300,
-    image: "/image/a/gleaners at rest.webp",
+    image: "/image/a/gleaners-at-rest.webp",
     artistLifespan: "1851-1927",
     slug: "gleaners-at-rest",
     letter: "A"
@@ -49,7 +49,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "71 x 106.8",
     sellingDimensions: "71 x 106.8",
     price: 4350,
-    image: "/image/a/iridesence of a shallow stream.webp",
+    image: "/image/a/iridesence-of-a-shallow-stream.webp",
     artistLifespan: "1851-1927",
     slug: "iridesence-of-a-shallow-stream",
     letter: "A"
@@ -61,7 +61,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "62.2 x 88.9",
     sellingDimensions: "62.2 x 88.9",
     price: 4100,
-    image: "/image/a/wheatwain a field.webp",
+    image: "/image/a/wheatwain-a-field.webp",
     artistLifespan: "1851-1927",
     slug: "wheatwain-a-field",
     letter: "A"
@@ -73,7 +73,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "67.3 x 52.1",
     sellingDimensions: "67.3 x 52.1",
     price: 9080,
-    image: "/image/a/glass vase with branches bearing fruit.webp",
+    image: "/image/a/glass-vase-with-branches-bearing-fruit.webp",
     artistLifespan: "1627-1683",
     slug: "glass-vase-with-branches-bearing-fruit",
     letter: "A"
@@ -85,7 +85,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "38 x 50",
     sellingDimensions: "38 x 50",
     price: 7029,
-    image: "/image/a/still life with a basket of fruit on a marble edge.webp",
+    image: "/image/a/still-life-with-a-basket-of-fruit-on-a-marble-edge.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-with-a-basket-of-fruit-on-a-marble-edge",
     letter: "A"
@@ -97,7 +97,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 58",
     sellingDimensions: "73 x 58",
     price: 9227,
-    image: "/image/a/still life fruit and crystal vase.webp",
+    image: "/image/a/still-life-fruit-and-crystal-vase.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-fruit-and-crystal-vase",
     letter: "A"
@@ -109,7 +109,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "70.1 x 45.4",
     sellingDimensions: "70.1 x 45.4",
     price: 9930,
-    image: "/image/a/still life grapes, a roemer, a silver ewer and a plate.webp",
+    image: "/image/a/still-life-grapes,-a-roemer,-a-silver-ewer-and-a-plate.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-grapes-a-roemer-a-silver-ewer-and-a-plate",
     letter: "A"
@@ -121,7 +121,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "57.5 x 46",
     sellingDimensions: "57.5 x 46",
     price: 7325,
-    image: "/image/a/the breakfast.webp",
+    image: "/image/a/the-breakfast.webp",
     artistLifespan: "1627-1683",
     slug: "the-breakfast",
     letter: "A"
@@ -133,7 +133,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "58 x 46.5",
     sellingDimensions: "58 x 46.5",
     price: 6980,
-    image: "/image/a/still life of a silver tazza with a wine glass, crab, herring, bread and onion on pewter dishes with grapes arranged on a ledge.webp",
+    image: "/image/a/still-life-of-a-silver-tazza-with-a-wine-glass,-crab,-herring,-bread-and-onion-on-pewter-dishes-with-grapes-arranged-on-a-ledge.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-of-a-silver-tazza-with-a-wine-glass-crab-herring-bread-and-onion-on-pewter-dishes-with-grapes-arranged-on-a-ledge",
     letter: "A"
@@ -145,7 +145,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50.2 x 42.5",
     sellingDimensions: "50.2 x 42.5",
     price: 6560,
-    image: "/image/a/still life herring, cherries and glassware.webp",
+    image: "/image/a/still-life-herring,-cherries-and-glassware.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-herring-cherries-and-glassware",
     letter: "A"
@@ -157,7 +157,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "67.3 x 54",
     sellingDimensions: "67.3 x 54",
     price: 7900,
-    image: "/image/a/still life a velvet bag on a marble ledge.webp",
+    image: "/image/a/still-life-a-velvet-bag-on-a-marble-ledge.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-a-velvet-bag-on-a-marble-edge",
     letter: "A"
@@ -169,7 +169,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "45.1 x 36.8",
     sellingDimensions: "45.1 x 36.8",
     price: 7029,
-    image: "/image/a/still life with dead birds and game bag.webp",
+    image: "/image/a/still-life-with-dead-birds-and-game-bag.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-with-dead-birds-and-game-bag",
     letter: "A"
@@ -181,7 +181,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "83.5 x 169.5",
     sellingDimensions: "83.5 x 169.5",
     price: 9200,
-    image: "/image/a/the market scene.webp",
+    image: "/image/a/the-market-scene.webp",
     artistLifespan: "1508-1575",
     slug: "the-market-scene",
     letter: "A"
@@ -193,7 +193,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "84 x 172",
     sellingDimensions: "84 x 172",
     price: 9250,
-    image: "/image/a/the egg dance.webp",
+    image: "/image/a/the-egg-dance.webp",
     artistLifespan: "1508-1575",
     slug: "the-egg-dance",
     letter: "A"
@@ -205,7 +205,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "123 x 175",
     sellingDimensions: "123 x 175",
     price: 10300,
-    image: "/image/a/butches stall with the flight in to egypt.webp",
+    image: "/image/a/butches-stall-with-the-flight-in-to-egypt.webp",
     artistLifespan: "1508-1575",
     slug: "butchers-stall-with-the-flight-in-to-egypt",
     letter: "A"
@@ -217,7 +217,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66 x 32",
     sellingDimensions: "66 x 32",
     price: 3521,
-    image: "/image/a/the cook.webp",
+    image: "/image/a/the-cook.webp",
     artistLifespan: "1508-1575",
     slug: "the-cook",
     letter: "A"
@@ -229,7 +229,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "137 x 95",
     sellingDimensions: "137 x 95",
     price: 8700,
-    image: "/image/a/vendor of fowl.webp",
+    image: "/image/a/vendor-of-fowl.webp",
     artistLifespan: "1508-1575",
     slug: "vendor-of-fowl",
     letter: "A"
@@ -241,7 +241,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "111.2 x 111.6",
     sellingDimensions: "111.2 x 111.6",
     price: 7890,
-    image: "/image/a/marketwoman at a vegetable stand.webp",
+    image: "/image/a/marketwoman-at-a-vegetable-stand.webp",
     artistLifespan: "1508-1575",
     slug: "market-woman-at-a-vegetable-stand",
     letter: "A"
@@ -253,7 +253,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "127.3 x 101.7",
     sellingDimensions: "127.3 x 101.7",
     price: 10635,
-    image: "/image/a/the nubian giraffe.webp",
+    image: "/image/a/the-nubian-giraffe.webp",
     artistLifespan: "1767-1849",
     slug: "the-nubian-giraffe",
     letter: "A"
@@ -265,7 +265,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "48 x 60",
     sellingDimensions: "48 x 60",
     price: 4088,
-    image: "/image/a/a pointer in landscape.webp",
+    image: "/image/a/a-pointer-in-landscape.webp",
     artistLifespan: "1767-1849",
     slug: "a-pointer-in-landscape",
     letter: "A"
@@ -277,7 +277,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "68 x 81",
     sellingDimensions: "68 x 81",
     price: 5100,
-    image: "/image/a/deperture to the hunt.webp",
+    image: "/image/a/deperture-to-the-hunt.webp",
     artistLifespan: "1767-1849",
     slug: "deperture-to-the-hunt",
     letter: "A"
@@ -289,7 +289,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "70 x 90",
     sellingDimensions: "70 x 90",
     price: 5100,
-    image: "/image/a/the playground.webp",
+    image: "/image/a/the-playground.webp",
     artistLifespan: "1767-1849",
     slug: "the-playground",
     letter: "A"
@@ -301,7 +301,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50 x 60.5",
     sellingDimensions: "50 x 60.5",
     price: 5394,
-    image: "/image/a/a carriage horse.webp",
+    image: "/image/a/a-carriage-horse.webp",
     artistLifespan: "1767-1849",
     slug: "a-carriage-horse",
     letter: "A"
@@ -313,7 +313,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "96 x 84",
     sellingDimensions: "96 x 84",
     price: 5960,
-    image: "/image/a/lord haethfield on horseback.webp",
+    image: "/image/a/lord-haethfield-on-horseback.webp",
     artistLifespan: "1767-1849",
     slug: "lord-haethfield-on-horseback",
     letter: "A"
@@ -337,7 +337,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "102 x 132",
     sellingDimensions: "102 x 132",
     price: 4450,
-    image: "/image/a/the rainbow.webp",
+    image: "/image/a/the-rainbow.webp",
     artistLifespan: "1817-1900",
     slug: "the-rainbow",
     letter: "A"
@@ -349,7 +349,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 92",
     sellingDimensions: "73 x 92",
     price: 5335,
-    image: "/image/a/boat on the nile with pyramids of gizeh.webp",
+    image: "/image/a/boat-on-the-nile-with-pyramids-of-gizeh.webp",
     artistLifespan: "1817-1900",
     slug: "boat-on-the-nile-with-pyramids-of-gizeh",
     letter: "A"
@@ -361,7 +361,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "102 x 132",
     sellingDimensions: "102 x 132",
     price: 6590,
-    image: "/image/a/sunrise in yalta.webp",
+    image: "/image/a/sunrise-in-yalta.webp",
     artistLifespan: "1817-1900",
     slug: "sunrise-in-yalta",
     letter: "A"
@@ -373,7 +373,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "221 x 332",
     sellingDimensions: "221 x 332",
     price: 4682,
-    image: "/image/a/the ninth wave.webp",
+    image: "/image/a/the-ninth-wave.webp",
     artistLifespan: "1817-1900",
     slug: "the-ninth-wave",
     letter: "A"
@@ -385,7 +385,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "74 x 70",
     sellingDimensions: "74 x 70",
     price: 6162,
-    image: "/image/a/the battle of chesma 25-26 june 1770.webp",
+    image: "/image/a/the-battle-of-chesma-25-26-june-1770.webp",
     artistLifespan: "1817-1900",
     slug: "the-battle-of-chesma-25-26-june-1770",
     letter: "A"
@@ -409,7 +409,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "31 x 39",
     sellingDimensions: "62 x 78",
     price: 3486,
-    image: "/image/a/repose (lady reading a book).webp",
+    image: "/image/a/repose-(lady-reading-a-book).webp",
     artistLifespan: "1856-1915",
     slug: "repose-lady-reading-a-book",
     letter: "A"
@@ -421,7 +421,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "127 x 101.9",
     sellingDimensions: "127 x 101.9",
     price: 5200,
-    image: "/image/a/study in green and black.webp",
+    image: "/image/a/study-in-green-and-black.webp",
     artistLifespan: "1856-1915",
     slug: "study-in-green-and-black",
     letter: "A"
@@ -433,7 +433,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "192.09 x 91.76",
     sellingDimensions: "192.09 x 91.76",
     price: 10100,
-    image: "/image/a/isabella pot of basil.webp",
+    image: "/image/a/isabella-pot-of-basil.webp",
     artistLifespan: "1856-1915",
     slug: "isabella-pot-of-basil",
     letter: "A"
@@ -445,7 +445,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "36.9 x 49.6",
     sellingDimensions: "36.9 x 49.6",
     price: 5840,
-    image: "/image/a/the favourite poet.webp",
+    image: "/image/a/the-favourite-poet.webp",
     artistLifespan: "1836-1912",
     slug: "the-favourite-poet",
     letter: "A"
@@ -457,7 +457,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "64.2 x 45",
     sellingDimensions: "64.2 x 45",
     price: 5662,
-    image: "/image/a/the coign of vantage.webp",
+    image: "/image/a/the-coign-of-vantage.webp",
     artistLifespan: "1836-1912",
     slug: "the-coign-of-vantage",
     letter: "A"
@@ -469,7 +469,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "70 x 50",
     sellingDimensions: "70 x 50",
     price: 5600,
-    image: "/image/a/the years at spring. all's right with the world.webp",
+    image: "/image/a/the-years-at-spring.-all's right with the world.webp",
     artistLifespan: "1836-1912",
     slug: "the-years-at-spring-alls-right-with-the-world",
     letter: "A"
@@ -481,7 +481,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "55 x 120.5",
     sellingDimensions: "55 x 120.5",
     price: 7588,
-    image: "/image/a/under the roof of the blue ionion weather.webp",
+    image: "/image/a/under-the-roof-of-the-blue-ionion-weather.webp",
     artistLifespan: "1836-1912",
     slug: "under-the-roof-of-the-blue-ionion-weather",
     letter: "A"
@@ -493,7 +493,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66.1 x 45",
     sellingDimensions: "66.1 x 45",
     price: 8769,
-    image: "/image/a/the favourite custom.webp",
+    image: "/image/a/the-favourite-custom.webp",
     artistLifespan: "1836-1912",
     slug: "the-favourite-custom",
     letter: "A"
@@ -505,7 +505,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "136.7 x 213.4",
     sellingDimensions: "136.7 x 213.4",
     price: 13500,
-    image: "/image/a/the finding of moses.webp",
+    image: "/image/a/the-finding-of-moses.webp",
     artistLifespan: "1836-1912",
     slug: "the-finding-of-moses",
     letter: "A"
@@ -519,7 +519,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "95.8 x 125",
     sellingDimensions: "95.8 x 125",
     price: 5100,
-    image: "/image/b/green grocers stall with the flight into egypt boyond.webp",
+    image: "/image/b/green-grocers-stall-with-the-flight-into-egypt-boyond.webp",
     artistLifespan: "1533-1574",
     slug: "green-grocers-stall-with-the-flight-into-egypt-boyond",
     letter: "B"
@@ -531,7 +531,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "157.5 x 215.5",
     sellingDimensions: "157.5 x 215.5",
     price: 8900,
-    image: "/image/b/the four elements fire.webp",
+    image: "/image/b/the-four-elements-fire.webp",
     artistLifespan: "1533-1574",
     slug: "the-four-elements-fire",
     letter: "B"
@@ -543,7 +543,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 60.5",
     sellingDimensions: "73 x 60.5",
     price: 10200,
-    image: "/image/b/st paul.webp",
+    image: "/image/b/st-paul.webp",
     artistLifespan: "1708-1787",
     slug: "st-paul",
     letter: "B"
@@ -555,7 +555,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 60.5",
     sellingDimensions: "73 x 60.5",
     price: 10200,
-    image: "/image/b/st peter.webp",
+    image: "/image/b/st-peter.webp",
     artistLifespan: "1708-1787",
     slug: "st-peter",
     letter: "B"
@@ -579,7 +579,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 60.5",
     sellingDimensions: "73 x 60.5",
     price: 10200,
-    image: "/image/b/god the father.webp",
+    image: "/image/b/god-the-father.webp",
     artistLifespan: "1708-1787",
     slug: "god-the-father",
     letter: "B"
@@ -591,7 +591,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 46",
     sellingDimensions: "61 x 46",
     price: 6280,
-    image: "/image/b/madonna and child.webp",
+    image: "/image/b/madonna-and-child.webp",
     artistLifespan: "1708-1787",
     slug: "madonna-and-child",
     letter: "B"
@@ -603,7 +603,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "69 x 59",
     sellingDimensions: "69 x 59",
     price: 8675,
-    image: "/image/b/portrait ludwig x of bavaria.webp",
+    image: "/image/b/portrait-ludwig-x-of-bavaria.webp",
     artistLifespan: "1502-1540",
     slug: "portrait-ludwig-x-of-bavaria",
     letter: "B"
@@ -615,7 +615,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "170.2 x 188",
     sellingDimensions: "170.2 x 188",
     price: 10200,
-    image: "/image/b/feast of the gods.webp",
+    image: "/image/b/feast-of-the-gods.webp",
     artistLifespan: "1430-1560",
     slug: "feast-of-the-gods",
     letter: "B"
@@ -627,7 +627,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "41 x 33.6",
     sellingDimensions: "44 x 33.6",
     price: 2550,
-    image: "/image/b/young woman (laura).webp",
+    image: "/image/b/young-woman-(laura).webp",
     artistLifespan: "1430-1560",
     slug: "young-woman-laura",
     letter: "B"
@@ -639,7 +639,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "30 x 23",
     sellingDimensions: "30 x 23",
     price: 2100,
-    image: "/image/b/madonna and child with st john baptist.webp",
+    image: "/image/b/madonna-and-child-with-st-john-baptist.webp",
     artistLifespan: "1430-1560",
     slug: "madonna-and-child-with-st-john-baptist",
     letter: "B"
@@ -651,7 +651,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "204 x 152",
     sellingDimensions: "204 x 152",
     price: 18577,
-    image: "/image/b/saint sebastian.webp",
+    image: "/image/b/saint-sebastian.webp",
     artistLifespan: "1616-1656",
     slug: "saint-sebastian",
     letter: "B"
@@ -663,7 +663,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "129 x 97",
     sellingDimensions: "129 x 97",
     price: 12900,
-    image: "/image/b/mocking of christ.webp",
+    image: "/image/b/mocking-of-christ.webp",
     artistLifespan: "1616-1656",
     slug: "mocking-of-christ",
     letter: "B"
@@ -675,7 +675,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81 x 160",
     sellingDimensions: "81 x 160",
     price: 13900,
-    image: "/image/b/the triumph of david.webp",
+    image: "/image/b/the-triumph-of-david.webp",
     artistLifespan: "1616-1656",
     slug: "the-triumph-of-david",
     letter: "B"
@@ -699,7 +699,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "133 x 237.5",
     sellingDimensions: "133 x 237.5",
     price: 40293,
-    image: "/image/b/view of perna from the right bank of the elbe.webp",
+    image: "/image/b/view-of-perna-from-the-right-bank-of-the-elbe.webp",
     artistLifespan: "1720-1780",
     slug: "view-of-perna-from-the-right-bank-of-the-elbe",
     letter: "B"
@@ -711,7 +711,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100 x 159",
     sellingDimensions: "100 x 159",
     price: 32658,
-    image: "/image/b/the liechestein garden palace from the garden side.webp",
+    image: "/image/b/the-liechestein-garden-palace-from-the-garden-side.webp",
     artistLifespan: "1720-1780",
     slug: "the-liechestein-garden-palace-from-the-garden-side",
     letter: "B"
@@ -723,7 +723,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "197 x 187",
     sellingDimensions: "91 x 87",
     price: 23135,
-    image: "/image/b/sqaure with the kreuz in dresden.webp",
+    image: "/image/b/sqaure-with-the-kreuz-in-dresden.webp",
     artistLifespan: "1720-1780",
     slug: "square-with-the-kreuz-in-dresden",
     letter: "B"
@@ -735,7 +735,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "55.9 x 87.6",
     sellingDimensions: "55.9 x 87.6",
     price: 14535,
-    image: "/image/b/the ponte vecchio florence.webp",
+    image: "/image/b/the-ponte-vecchio-florence.webp",
     artistLifespan: "1720-1780",
     slug: "the-ponte-vecchio-florence",
     letter: "B"
@@ -747,7 +747,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66 x 91.7",
     sellingDimensions: "66 x 91.7",
     price: 4500,
-    image: "/image/b/portrait of my daughters.webp",
+    image: "/image/b/portrait-of-my-daughters.webp",
     artistLifespan: "1862-1951",
     slug: "portrait-of-my-daughters",
     letter: "B"
@@ -783,7 +783,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "101 x 61",
     price: 3416,
-    image: "/image/b/the hill top.webp",
+    image: "/image/b/the-hill-top.webp",
     artistLifespan: "1862-1951",
     slug: "the-hill-top",
     letter: "B"
@@ -795,7 +795,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "53.5 x 65",
     sellingDimensions: "53.5 x 65",
     price: 3880,
-    image: "/image/b/the cycle shop in the bois du boulogne.webp",
+    image: "/image/b/the-cycle-shop-in-the-bois-du-boulogne.webp",
     artistLifespan: "1839-1945",
     slug: "the-cycle-shop-in-the-bois-du-boulonge",
     letter: "B"
@@ -807,7 +807,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50.5 x 67.3",
     sellingDimensions: "50.7 x 67.3",
     price: 5850,
-    image: "/image/b/after the service at the church of holy trinity christmas.webp",
+    image: "/image/b/after-the-service-at-the-church-of-holy-trinity-christmas.webp",
     artistLifespan: "1839-1945",
     slug: "after-the-service-at-the-church-of-holy-trinity-christmas",
     letter: "B"
@@ -819,7 +819,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "39.3 x 46",
     sellingDimensions: "39.3 x 46",
     price: 4444,
-    image: "/image/b/pont neuf.webp",
+    image: "/image/b/pont-neuf.webp",
     artistLifespan: "1839-1945",
     slug: "pont-neuf",
     letter: "B"
@@ -831,7 +831,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "60 x 42",
     price: 4373,
-    image: "/image/b/women skiing.webp",
+    image: "/image/b/women-skiing.webp",
     artistLifespan: "1839-1945",
     slug: "women-skiing",
     letter: "B"
@@ -855,7 +855,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "30.1 x 48.9",
     sellingDimensions: "30.8 x 48.9",
     price: 6705,
-    image: "/image/b/valley of yosemite.webp",
+    image: "/image/b/valley-of-yosemite.webp",
     artistLifespan: "1830-1902",
     slug: "valley-of-yosemite",
     letter: "B"
@@ -867,7 +867,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "76 x 101",
     price: 13668,
-    image: "/image/b/kern river valley california.webp",
+    image: "/image/b/kern-river-valley-california.webp",
     artistLifespan: "1830-1902",
     slug: "kern-river-valley-california",
     letter: "B"
@@ -879,7 +879,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "105.4 x 90.2",
     sellingDimensions: "105.4 x 90.2",
     price: 22989,
-    image: "/image/b/sunlight and shadow.webp",
+    image: "/image/b/sunlight-and-shadow.webp",
     artistLifespan: "1830-1902",
     slug: "sunlight-and-shadow",
     letter: "B"
@@ -891,7 +891,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "62.2 x 90.2",
     sellingDimensions: "62.2 x 90.2",
     price: 13360,
-    image: "/image/b/philadelphia winter landscape.webp",
+    image: "/image/b/philadelphia-winter-landscape.webp",
     artistLifespan: "1779-1851",
     slug: "philadelphia-winter-landscape",
     letter: "B"
@@ -903,7 +903,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "80 x 44.5",
     sellingDimensions: "80 x 44.5",
     price: 7000,
-    image: "/image/b/the eavesdropper.webp",
+    image: "/image/b/the-eavesdropper.webp",
     artistLifespan: "1843-1931",
     slug: "the-eavesdropper",
     letter: "B"
@@ -915,7 +915,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "85 x 68.6",
     sellingDimensions: "85 x 68.6",
     price: 7648,
-    image: "/image/b/the seamstress.webp",
+    image: "/image/b/the-seamstress.webp",
     artistLifespan: "1843-1931",
     slug: "the-seamstress",
     letter: "B"
@@ -927,7 +927,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "160 x 116",
     sellingDimensions: "160 x 116",
     price: 26720,
-    image: "/image/b/god speed.webp",
+    image: "/image/b/god-speed.webp",
     artistLifespan: "1853-1922",
     slug: "god-speed",
     letter: "B"
@@ -939,7 +939,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "182.3 x 108",
     sellingDimensions: "182.3 x 108",
     price: 39785,
-    image: "/image/b/the accolade.webp",
+    image: "/image/b/the-accolade.webp",
     artistLifespan: "1853-1922",
     slug: "the-accolade",
     letter: "B"
@@ -951,7 +951,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "60 x 73",
     sellingDimensions: "60 x 73",
     price: 7220,
-    image: "/image/b/tristan and isolade.webp",
+    image: "/image/b/tristan-and-isolade.webp",
     artistLifespan: "1853-1922",
     slug: "tristan-and-isolade",
     letter: "B"
@@ -975,7 +975,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "99.1 x 162.6",
     sellingDimensions: "99.1 x 162.6",
     price: 13335,
-    image: "/image/b/how liza loved the king.webp",
+    image: "/image/b/how-liza-loved-the-king.webp",
     artistLifespan: "1853-1922",
     slug: "how-liza-loved-the-king",
     letter: "B"
@@ -987,7 +987,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "29 x 22",
     sellingDimensions: "29 x 22",
     price: 6165,
-    image: "/image/b/the golden train.webp",
+    image: "/image/b/the-golden-train.webp",
     artistLifespan: "1853-1922",
     slug: "the-golden-train",
     letter: "B"
@@ -999,7 +999,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "30 x 42.5",
     sellingDimensions: "30 x 42.5",
     price: 3175,
-    image: "/image/b/young drivers on a bear hunt.webp",
+    image: "/image/b/young-drivers-on-a-bear-hunt.webp",
     artistLifespan: "1868-1945",
     slug: "young-drivers-on-a-bear-hunt",
     letter: "B"
@@ -1011,7 +1011,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65 x 81",
     sellingDimensions: "65 x 81",
     price: 4400,
-    image: "/image/b/the two childern.webp",
+    image: "/image/b/the-two-childern.webp",
     artistLifespan: "1842-1931",
     slug: "the-two-children",
     letter: "B"
@@ -1023,7 +1023,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 57",
     sellingDimensions: "73 x 57",
     price: 4271,
-    image: "/image/b/girl reading in a salon.webp",
+    image: "/image/b/girl-reading-in-a-salon.webp",
     artistLifespan: "1842-1931",
     slug: "girl-reading-in-a-salon",
     letter: "B"
@@ -1035,7 +1035,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "171.5 x 94.5",
     sellingDimensions: "171.5 x 94.5",
     price: 6887,
-    image: "/image/b/portrait of james abbott.webp",
+    image: "/image/b/portrait-of-james-abbott.webp",
     artistLifespan: "1842-1931",
     slug: "portrait-of-james-abbott",
     letter: "B"
@@ -1059,7 +1059,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81.2 x 75.2",
     sellingDimensions: "81.2 x 75.2",
     price: 9500,
-    image: "/image/b/the love letter.webp",
+    image: "/image/b/the-love-letter.webp",
     artistLifespan: "1730-1770",
     slug: "the-love-letter",
     letter: "B"
@@ -1071,7 +1071,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "91 x 68",
     sellingDimensions: "91 x 68",
     price: 19350,
-    image: "/image/b/madame de pompadour.webp",
+    image: "/image/b/madame-de-pompadour.webp",
     artistLifespan: "1730-1770",
     slug: "madame-de-pompadour",
     letter: "B"
@@ -1083,7 +1083,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "318 x 261",
     sellingDimensions: "96 x 61",
     price: 15040,
-    image: "/image/b/the rising of the sun.webp",
+    image: "/image/b/the-rising-of-the-sun.webp",
     artistLifespan: "1730-1770",
     slug: "the-rising-of-the-sun",
     letter: "B"
@@ -1095,7 +1095,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "54.3 x 72.7",
     sellingDimensions: "54.3 x 72.7",
     price: 10650,
-    image: "/image/b/the four seasons spring.webp",
+    image: "/image/b/the-four-seasons-spring.webp",
     artistLifespan: "1730-1770",
     slug: "the-four-seasons-spring",
     letter: "B"
@@ -1119,7 +1119,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "125 x 175",
     sellingDimensions: "125 x 175",
     price: 29745,
-    image: "/image/b/the fortune teller.webp",
+    image: "/image/b/the-fortune-teller.webp",
     artistLifespan: "1594-1632",
     slug: "the-fortune-teller",
     letter: "B"
@@ -1131,7 +1131,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "131 x 103.5",
     sellingDimensions: "131 x 103.5",
     price: 17845,
-    image: "/image/b/moses with the tablets of the law.webp",
+    image: "/image/b/moses-with-the-tablets-of-the-law.webp",
     artistLifespan: "1594-1632",
     slug: "moses-with-the-tablets-of-the-law",
     letter: "B"
@@ -1143,7 +1143,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "139 x 230",
     sellingDimensions: "80 x 125",
     price: 39965,
-    image: "/image/b/last supper.webp",
+    image: "/image/b/last-supper.webp",
     artistLifespan: "1594-1632",
     slug: "last-supper",
     letter: "B"
@@ -1155,7 +1155,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "99 x 134",
     sellingDimensions: "99 x 134",
     price: 18719,
-    image: "/image/b/david with the head of goliath two soldiers.webp",
+    image: "/image/b/david-with-the-head-of-goliath-two-soldiers.webp",
     artistLifespan: "1594-1632",
     slug: "david-with-the-head-of-goliath-two-soldiers",
     letter: "B"
@@ -1179,7 +1179,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "164 x 116",
     sellingDimensions: "164 x 116",
     price: 7500,
-    image: "/image/b/dancers at bar.webp",
+    image: "/image/b/dancers-at-bar.webp",
     artistLifespan: "1932-2023",
     slug: "dancers-at-bar",
     letter: "B"
@@ -1191,7 +1191,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "168 x 111",
     sellingDimensions: "168 x 111",
     price: 7500,
-    image: "/image/b/woman stapling her bra.webp",
+    image: "/image/b/woman-stapling-her-bra.webp",
     artistLifespan: "1932-2023",
     slug: "woman-stapling-her-bra",
     letter: "B"
@@ -1203,7 +1203,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "190 x 103",
     sellingDimensions: "190 x 103",
     price: 7800,
-    image: "/image/b/walk in the hills.webp",
+    image: "/image/b/walk-in-the-hills.webp",
     artistLifespan: "1932-2023",
     slug: "walk-in-the-hills",
     letter: "B"
@@ -1215,7 +1215,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "195 x 125",
     sellingDimensions: "195 x 125",
     price: 8195,
-    image: "/image/b/bather on the beach.webp",
+    image: "/image/b/bather-on-the-beach.webp",
     artistLifespan: "1932-2023",
     slug: "bather-on-the-beach",
     letter: "B"
@@ -1227,7 +1227,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "190 x 103",
     sellingDimensions: "190 x 103",
     price: 7800,
-    image: "/image/b/priest extends.webp",
+    image: "/image/b/priest-extends.webp",
     artistLifespan: "1932-2023",
     slug: "priest-extends",
     letter: "B"
@@ -1239,7 +1239,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "28.5 x 43",
     sellingDimensions: "28.5 x 43",
     price: 2345,
-    image: "/image/b/the siesta (afternoon in dreams).webp",
+    image: "/image/b/the-siesta-(afternoon-in-dreams).webp",
     artistLifespan: "1847-1928",
     slug: "the-siesta-afternoon-in-dreams",
     letter: "B"
@@ -1251,7 +1251,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "50 x 61",
     price: 2942,
-    image: "/image/b/dolce for niente (sweet nothings).webp",
+    image: "/image/b/dolce-for-niente-(sweet-nothings).webp",
     artistLifespan: "1847-1928",
     slug: "dolce-for-niente-sweet-nothings",
     letter: "B"
@@ -1263,7 +1263,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "27 x 35",
     sellingDimensions: "54 x 70",
     price: 3400,
-    image: "/image/b/tender moments.webp",
+    image: "/image/b/tender-moments.webp",
     artistLifespan: "1847-1928",
     slug: "tender-moments",
     letter: "B"
@@ -1275,7 +1275,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "45.4 x 78",
     sellingDimensions: "45.4 x 78",
     price: 3636,
-    image: "/image/b/arab woman on a rooftop algiers.webp",
+    image: "/image/b/arab-woman-on-a-rooftop-algiers.webp",
     artistLifespan: "1847-1928",
     slug: "arab-woman-on-a-rooftop-algiers",
     letter: "B"
@@ -1287,7 +1287,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "114 x 155",
     sellingDimensions: "70 x 103",
     price: 86149,
-    image: "/image/b/the tower of babel.webp",
+    image: "/image/b/the-tower-of-babel.webp",
     artistLifespan: "1525-1569",
     slug: "the-tower-of-babel",
     letter: "B"
@@ -1299,7 +1299,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "119.4 x 157.5",
     sellingDimensions: "76 x 101",
     price: 59912,
-    image: "/image/b/the wedding dance.webp",
+    image: "/image/b/the-wedding-dance.webp",
     artistLifespan: "1525-1569",
     slug: "the-wedding-dance",
     letter: "B"
@@ -1311,7 +1311,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "117 x 162",
     sellingDimensions: "117 x 162",
     price: 9800,
-    image: "/image/b/the hunters in the snow.webp",
+    image: "/image/b/the-hunters-in-the-snow.webp",
     artistLifespan: "1525-1569",
     slug: "the-hunters-in-the-snow",
     letter: "B"
@@ -1323,7 +1323,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "52 x 78",
     sellingDimensions: "52 x 78",
     price: 14383,
-    image: "/image/b/the land of cockaigne.webp",
+    image: "/image/b/the-land-of-cockaigne.webp",
     artistLifespan: "1525-1569",
     slug: "the-land-of-cockaigne",
     letter: "B"
@@ -1335,7 +1335,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "30.5 x 23",
     sellingDimensions: "30.5 x 23",
     price: 5292,
-    image: "/image/b/two carribean women returning from the market.webp",
+    image: "/image/b/two-carribean-women-returning-from-the-market.webp",
     artistLifespan: "1730-1796",
     slug: "two-carribean-women-returning-from-the-market",
     letter: "B"
@@ -1347,7 +1347,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "49.5 x 64.8",
     sellingDimensions: "49.5 x 64.8",
     price: 14378,
-    image: "/image/b/the linen market.webp",
+    image: "/image/b/the-linen-market.webp",
     artistLifespan: "1730-1796",
     slug: "the-linen-market",
     letter: "B"
@@ -1359,7 +1359,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "31.7 x 25.4",
     sellingDimensions: "31.7 x 25.4",
     price: 5719,
-    image: "/image/b/the handkerchief dance.webp",
+    image: "/image/b/the-handkerchief-dance.webp",
     artistLifespan: "1730-1796",
     slug: "the-handkerchief-dance",
     letter: "B"
@@ -1371,7 +1371,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "28 x 81",
     sellingDimensions: "28 x 81",
     price: 13216,
-    image: "/image/b/west indian village with figures dancing.webp",
+    image: "/image/b/west-indian-village-with-figures-dancing.webp",
     artistLifespan: "1730-1796",
     slug: "west-indian-village-with-figures-dancing",
     letter: "B"
@@ -1384,7 +1384,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "unknown",
     sellingDimensions: "60 x 73",
     price: 3350,
-    image: "/image/c/the floor scrapers.webp",
+    image: "/image/c/the-floor-scrapers.webp",
     artistLifespan: "1848-1894",
     slug: "the-floor-scrapers",
     letter: "C"
@@ -1396,7 +1396,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "116 x 81",
     sellingDimensions: "116 x 81",
     price: 4685,
-    image: "/image/c/young man at his window.webp",
+    image: "/image/c/young-man-at-his-window.webp",
     artistLifespan: "1848-1894",
     slug: "young-man-at-his-window",
     letter: "C"
@@ -1408,7 +1408,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "65 x 48",
     price: 2775,
-    image: "/image/c/the yerres rain (riverbank in the rain).webp",
+    image: "/image/c/the-yerres-rain-(riverbank-in-the-rain).webp",
     artistLifespan: "1848-1894",
     slug: "the-yerres-rain-riverbank-in-the-rain",
     letter: "C"
@@ -1420,7 +1420,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "212.2 x 276.2",
     sellingDimensions: "212.2 x 276.2",
     price: 29030,
-    image: "/image/c/paris street rainy weather.webp",
+    image: "/image/c/paris-street-rainy-weather.webp",
     artistLifespan: "1848-1894",
     slug: "paris-street-rainy-weather",
     letter: "C"
@@ -1432,7 +1432,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "64 x 82",
     sellingDimensions: "64 x 82",
     price: 3351,
-    image: "/image/c/view of the roofs snow effect.webp",
+    image: "/image/c/view-of-the-roofs-snow-effect.webp",
     artistLifespan: "1848-1894",
     slug: "view-of-the-roofs-snow-effect",
     letter: "C"
@@ -1444,7 +1444,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "25 x 54.6",
     sellingDimensions: "25 x 54.6",
     price: 2527,
-    image: "/image/c/still life with oysters.webp",
+    image: "/image/c/still-life-with-oysters.webp",
     artistLifespan: "1848-1894",
     slug: "still-life-with-oysters",
     letter: "C"
@@ -1456,7 +1456,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "58 x 72",
     sellingDimensions: "58 x 72",
     price: 9900,
-    image: "/image/c/still life cray fish.webp",
+    image: "/image/c/still-life-cray-fish.webp",
     artistLifespan: "1848-1894",
     slug: "still-life-cray-fish",
     letter: "C"
@@ -1468,7 +1468,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "41 x 49",
     sellingDimensions: "41 x 49",
     price: 4218,
-    image: "/image/c/melon fruit bowl with figs.webp",
+    image: "/image/c/melon-fruit-bowl-with-figs.webp",
     artistLifespan: "1848-1894",
     slug: "melon-and-fruit-bowl-with-figs",
     letter: "C"
@@ -1480,7 +1480,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "140.5 x 204.5",
     sellingDimensions: "61 x 89",
     price: 20135,
-    image: "/image/c/view of grand canal from san vio venice.webp",
+    image: "/image/c/view-of-grand-canal-from-san-vio-venice.webp",
     artistLifespan: "1697-1768",
     slug: "view-of-grand-canal-from-san-vio-venice",
     letter: "C"
@@ -1492,7 +1492,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "61 x 89",
     price: 20135,
-    image: "/image/c/grand canal from palazzo balbi.webp",
+    image: "/image/c/grand-canal-from-palazzo-balbi.webp",
     artistLifespan: "1697-1769",
     slug: "grand-canal-from-palazzo-balbi",
     letter: "C"
@@ -1504,7 +1504,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "76.2 x 118.7",
     sellingDimensions: "61 x 96",
     price: 34951,
-    image: "/image/c/piazza san marco with the cathedral.webp",
+    image: "/image/c/piazza-san-marco-with-the-cathedral.webp",
     artistLifespan: "1697-1769",
     slug: "piazza-san-marco-with-the-cathedral",
     letter: "C"
@@ -1516,7 +1516,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "47 x 80",
     sellingDimensions: "47 x 80",
     price: 14832,
-    image: "/image/c/piazetta and the doge's palace.webp",
+    image: "/image/c/piazetta-and-the-doge's palace.webp",
     artistLifespan: "1697-1769",
     slug: "piazzetta-and-the-doges-palace",
     letter: "C"
@@ -1528,7 +1528,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "52 x 61.6",
     sellingDimensions: "52 x 61.6",
     price: 17503,
-    image: "/image/c/st paul's cathedral.webp",
+    image: "/image/c/st-paul's cathedral.webp",
     artistLifespan: "1697-1769",
     slug: "st-pauls-cathedral",
     letter: "C"
@@ -1540,7 +1540,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "51 x 68",
     price: 12126,
-    image: "/image/c/the coloseum.webp",
+    image: "/image/c/the-coloseum.webp",
     artistLifespan: "1697-1769",
     slug: "the-coloseum",
     letter: "C"
@@ -1552,7 +1552,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "45.5 x 62.5",
     sellingDimensions: "45.5 x 62.5",
     price: 15198,
-    image: "/image/c/view of rialto bridge at venice south.webp",
+    image: "/image/c/view-of-rialto-bridge-at-venice-south.webp",
     artistLifespan: "1697-1769",
     slug: "view-of-rialto-bridge-at-venice-south",
     letter: "C"
@@ -1564,7 +1564,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "121 x 152",
     sellingDimensions: "71 x 93",
     price: 16455,
-    image: "/image/c/entrance to the grand canal looking west.webp",
+    image: "/image/c/entrance-to-the-grand-canal-looking-west.webp",
     artistLifespan: "1697-1769",
     slug: "entrance-to-the-grand-canal-looking-west",
     letter: "C"
@@ -1576,7 +1576,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "49.6 x 73.6",
     sellingDimensions: "49.6 x 73.6",
     price: 18027,
-    image: "/image/c/the entrance to grand canal venice.webp",
+    image: "/image/c/the-entrance-to-grand-canal-venice.webp",
     artistLifespan: "1697-1769",
     slug: "the-entrance-to-the-grand-canal-venice",
     letter: "C"
@@ -1588,7 +1588,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "42 x 32.5",
     sellingDimensions: "42 x 32.5",
     price: 10808,
-    image: "/image/c/capriccio with colonnade in the interior of the palace.webp",
+    image: "/image/c/capriccio-with-colonnade-in-the-interior-of-the-palace.webp",
     artistLifespan: "1697-1769",
     slug: "capriccio-with-colonnade-in-the-interior-of-the-palace",
     letter: "C"
@@ -1600,7 +1600,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "31.4 x 40.3",
     sellingDimensions: "31.4 x 40.3",
     price: 8917,
-    image: "/image/c/rome a caprice view with ruins based on the forum.webp",
+    image: "/image/c/rome-a-caprice-view-with-ruins-based-on-the-forum.webp",
     artistLifespan: "1697-1769",
     slug: "rome-a-caprice-viw-with-ruins-based-on-the-forum",
     letter: "C"
@@ -1612,7 +1612,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "36.5 x 33.5",
     sellingDimensions: "36.5 x 33.5",
     price: 11751,
-    image: "/image/c/venice the ineerior of st marco by day.webp",
+    image: "/image/c/venice-the-ineerior-of-st-marco-by-day.webp",
     artistLifespan: "1697-1769",
     slug: "venice-the-interior-of-st-marco-by-day",
     letter: "C"
@@ -1624,7 +1624,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "141 x 196.2",
     sellingDimensions: "76 x 107",
     price: 19311,
-    image: "/image/c/the supper at emmaus.webp",
+    image: "/image/c/the-supper-at-emmaus.webp",
     artistLifespan: "1571-1610",
     slug: "the-supper-at-emmaus",
     letter: "C"
@@ -1648,7 +1648,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "328 x 348",
     sellingDimensions: "101 x 106",
     price: 24588,
-    image: "/image/c/the calling of saint matthew.webp",
+    image: "/image/c/the-calling-of-saint-matthew.webp",
     artistLifespan: "1571-1610",
     slug: "the-calling-of-saint-matthew",
     letter: "C"
@@ -1660,7 +1660,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "230 x 175",
     sellingDimensions: "101 x 79",
     price: 15457,
-    image: "/image/c/the conversion of saint paul.webp",
+    image: "/image/c/the-conversion-of-saint-paul.webp",
     artistLifespan: "1571-1610",
     slug: "the-conversion-of-saint-paul",
     letter: "C"
@@ -1672,7 +1672,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "145 x 195",
     sellingDimensions: "76 x 103",
     price: 18737,
-    image: "/image/c/judith beheading holofernes.webp",
+    image: "/image/c/judith-beheading-holofernes.webp",
     artistLifespan: "1571-1610",
     slug: "judith-beheading-holofernes",
     letter: "C"
@@ -1684,7 +1684,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "125 x 101",
     sellingDimensions: "91 x 72",
     price: 12306,
-    image: "/image/c/david with the head of goliath.webp",
+    image: "/image/c/david-with-the-head-of-goliath.webp",
     artistLifespan: "1571-1610",
     slug: "david-with-the-head-of-goliath",
     letter: "C"
@@ -1696,7 +1696,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "130.2 x 85",
     sellingDimensions: "67 x 56",
     price: 4974,
-    image: "/image/c/marie-anne caralus duran (the artists daughter).webp",
+    image: "/image/c/marie-anne-caralus-duran-(the-artists-daughter).webp",
     artistLifespan: "1837-1917",
     slug: "marie-anne-caralus-duran-the-artists-daughter",
     letter: "C"
@@ -1708,7 +1708,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "60 x 73",
     sellingDimensions: "60 x 73",
     price: 3014,
-    image: "/image/c/the card players.webp",
+    image: "/image/c/the-card-players.webp",
     artistLifespan: "1839-1906",
     slug: "the-card-players",
     letter: "C"
@@ -1720,7 +1720,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "51 x 88",
     price: 2763,
-    image: "/image/c/monte sainte-victoire.webp",
+    image: "/image/c/monte-sainte-victoire.webp",
     artistLifespan: "1839-1906",
     slug: "monte-sainte-victoire",
     letter: "C"
@@ -1732,7 +1732,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "35.2 x 46.2",
     sellingDimensions: "35.2 x 46.2",
     price: 1315,
-    image: "/image/c/still life with apples.webp",
+    image: "/image/c/still-life-with-apples.webp",
     artistLifespan: "1839-1906",
     slug: "still-life-with-apples",
     letter: "C"
@@ -1744,7 +1744,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "60 x 82",
     sellingDimensions: "60 x 82",
     price: 3301,
-    image: "/image/c/the bathers.webp",
+    image: "/image/c/the-bathers.webp",
     artistLifespan: "1839-1906",
     slug: "the-bathers",
     letter: "C"
@@ -1756,7 +1756,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "71 x 57.7",
     sellingDimensions: "71 x 57.7",
     price: 3164,
-    image: "/image/c/view through the trees l'estaque.webp",
+    image: "/image/c/view-through-the-trees-l'estaque.webp",
     artistLifespan: "1839-1906",
     slug: "view-through-the-trees-l-estaque",
     letter: "C"
@@ -1768,7 +1768,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "31 x 42",
     price: 2267,
-    image: "/image/c/still life leg of mutton bread.webp",
+    image: "/image/c/still-life-leg-of-mutton-bread.webp",
     artistLifespan: "1839-1906",
     slug: "still-life-leg-of-mutton-bread",
     letter: "C"
@@ -1780,7 +1780,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "59 x 76.2",
     sellingDimensions: "59 x 76.2",
     price: 2459,
-    image: "/image/c/still life bread and eggs.webp",
+    image: "/image/c/still-life-bread-and-eggs.webp",
     artistLifespan: "1839-1906",
     slug: "still-life-bread-and-eggs",
     letter: "C"
@@ -1792,7 +1792,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "46.4 x 38.4",
     sellingDimensions: "46.4 x 38.4",
     price: 2100,
-    image: "/image/c/portrait of a man.webp",
+    image: "/image/c/portrait-of-a-man.webp",
     artistLifespan: "1839-1906",
     slug: "portrait-of-a-man-cezanne",
     letter: "C"
@@ -1804,7 +1804,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "52 x 56",
     sellingDimensions: "52 x 56",
     price: 2498,
-    image: "/image/c/paul alexis reading at zola's house.webp",
+    image: "/image/c/paul-alexis-reading-at-zola's house.webp",
     artistLifespan: "1839-1906",
     slug: "paul-alexis-reading-at-zolas-house",
     letter: "C"
@@ -1816,7 +1816,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "167.6 x 114.3",
     sellingDimensions: "167.6 x 114.3",
     price: 6700,
-    image: "/image/c/father of the artist.webp",
+    image: "/image/c/father-of-the-artist.webp",
     artistLifespan: "1839-1906",
     slug: "father-of-the-artist",
     letter: "C"
@@ -1828,7 +1828,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "56 x 55",
     sellingDimensions: "56 x 55",
     price: 2670,
-    image: "/image/c/a modern olympia.webp",
+    image: "/image/c/a-modern-olympia.webp",
     artistLifespan: "1839-1906",
     slug: "a-modern-olympia",
     letter: "C"
@@ -1840,7 +1840,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 92",
     sellingDimensions: "73 x 92",
     price: 4999,
-    image: "/image/c/mount saint-victoire.webp",
+    image: "/image/c/mount-saint-victoire.webp",
     artistLifespan: "1839-1906",
     slug: "mount-saint-victoire",
     letter: "C"
@@ -1852,7 +1852,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "62 x 79",
     sellingDimensions: "62 x 79",
     price: 4320,
-    image: "/image/c/basket of apples.webp",
+    image: "/image/c/basket-of-apples.webp",
     artistLifespan: "1839-1906",
     slug: "basket-of-apples",
     letter: "C"
@@ -1864,7 +1864,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "136 x 191",
     sellingDimensions: "136 x 191",
     price: 5600,
-    image: "/image/c/large bathers.webp",
+    image: "/image/c/large-bathers.webp",
     artistLifespan: "1839-1906",
     slug: "large-bathers",
     letter: "C"
@@ -1876,7 +1876,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "45.7 x 36.8",
     sellingDimensions: "45.7 x 36.8",
     price: 3100,
-    image: "/image/c/portrait of victor chocquet.webp",
+    image: "/image/c/portrait-of-victor-chocquet.webp",
     artistLifespan: "1839-1906",
     slug: "portrait-of-victor-chocquet",
     letter: "C"
@@ -1888,7 +1888,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "72.5 x 56",
     sellingDimensions: "72.5 x 56",
     price: 4968,
-    image: "/image/c/portrait of madame cezanne.webp",
+    image: "/image/c/portrait-of-madame-cezanne.webp",
     artistLifespan: "1839-1906",
     slug: "portrait-of-madame-cezanne",
     letter: "C"
@@ -1900,7 +1900,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50 x 60",
     sellingDimensions: "50 x 60",
     price: 3562,
-    image: "/image/c/still life with a plate of cherries and peaches.webp",
+    image: "/image/c/still-life-with-a-plate-of-cherries-and-peaches.webp",
     artistLifespan: "1839-1906",
     slug: "still-life-with-a-plate-of-cherries-and-peaches",
     letter: "C"
@@ -1912,7 +1912,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "130.5 x 96.5",
     sellingDimensions: "130.5 x 96.5",
     price: 6012,
-    image: "/image/c/woman with coffee pot.webp",
+    image: "/image/c/woman-with-coffee-pot.webp",
     artistLifespan: "1839-1906",
     slug: "woman-with-a-coffee-pot",
     letter: "C"
@@ -1924,7 +1924,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "88 x 72",
     sellingDimensions: "88 x 72",
     price: 4593,
-    image: "/image/c/woman in blue madame cezanne.webp",
+    image: "/image/c/woman-in-blue-madame-cezanne.webp",
     artistLifespan: "1839-1906",
     slug: "woman-in-blue-madame-cezanne",
     letter: "C"
@@ -1936,7 +1936,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "64.5 x 54",
     sellingDimensions: "64.5 x 54",
     price: 4210,
-    image: "/image/c/portrait of the artist's son.webp",
+    image: "/image/c/portrait-of-the-artist's son.webp",
     artistLifespan: "1839-1906",
     slug: "portrait-of-the-artists-son",
     letter: "C"
@@ -1948,7 +1948,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "259.5 x 178.5",
     sellingDimensions: "105 x 71",
     price: 14766,
-    image: "/image/c/portrait of cardinal richelieu.webp",
+    image: "/image/c/portrait-of-cardinal-richelieu.webp",
     artistLifespan: "1602-1674",
     slug: "portrait-of-cardinal-richelieu",
     letter: "C"
@@ -1960,7 +1960,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "58.7 x 72.8",
     sellingDimensions: "58.7 x 72.8",
     price: 10085,
-    image: "/image/c/triple portrait of cardinal richelieu.webp",
+    image: "/image/c/triple-portrait-of-cardinal-richelieu.webp",
     artistLifespan: "1602-1674",
     slug: "triple-portrait-of-cardinal-richelieu",
     letter: "C"
@@ -1972,7 +1972,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "334 x 214.5",
     sellingDimensions: "110 x 71",
     price: 22277,
-    image: "/image/c/the annunciation.webp",
+    image: "/image/c/the-annunciation.webp",
     artistLifespan: "1602-1674",
     slug: "the-annunciation",
     letter: "C"
@@ -1984,7 +1984,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "91 x 72",
     sellingDimensions: "91 x 72",
     price: 8403,
-    image: "/image/c/portrait of a man possibly of robert arnauld of andilly.webp",
+    image: "/image/c/portrait-of-a-man-possibly-of-robert-arnauld-of-andilly.webp",
     artistLifespan: "1602-1674",
     slug: "portrait-of-a-man-possibly-of-robert-arnauld-of-andilly",
     letter: "C"
@@ -1996,7 +1996,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "38 x 46",
     price: 2976,
-    image: "/image/c/basket of wild strawberries.webp",
+    image: "/image/c/basket-of-wild-strawberries.webp",
     artistLifespan: "1699-1779",
     slug: "basket-of-wild-strawberries",
     letter: "C"
@@ -2008,7 +2008,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "32.4 x 41.2",
     sellingDimensions: "32.4 x 41.2",
     price: 1866,
-    image: "/image/c/glass of water and coffee pot.webp",
+    image: "/image/c/glass-of-water-and-coffee-pot.webp",
     artistLifespan: "1699-1779",
     slug: "glass-of-water-and-coffee-pot",
     letter: "C"
@@ -2020,7 +2020,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "150.2 x 97.8",
     sellingDimensions: "101 x 65",
     price: 8091,
-    image: "/image/c/the moorish chief.webp",
+    image: "/image/c/the-moorish-chief.webp",
     artistLifespan: "1848-1906",
     slug: "the-moorish-chief",
     letter: "C"
@@ -2044,7 +2044,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "45.7 x 66",
     sellingDimensions: "45.7 x 66",
     price: 2625,
-    image: "/image/c/fish and still life.webp",
+    image: "/image/c/fish-and-still-life.webp",
     artistLifespan: "1849-1916",
     slug: "fish-and-still-life",
     letter: "C"
@@ -2056,7 +2056,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "159 x 165.5",
     sellingDimensions: "91 x 96",
     price: 3725,
-    image: "/image/c/dora wheeler.webp",
+    image: "/image/c/dora-wheeler.webp",
     artistLifespan: "1849-1916",
     slug: "dora-wheeler",
     letter: "C"
@@ -2068,7 +2068,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61.3 x 91.4",
     sellingDimensions: "61.3 x 91.4",
     price: 3725,
-    image: "/image/c/a corner of my studio.webp",
+    image: "/image/c/a-corner-of-my-studio.webp",
     artistLifespan: "1849-1916",
     slug: "a-corner-of-my-studio",
     letter: "C"
@@ -2080,7 +2080,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "35 x 25.4",
     sellingDimensions: "35 x 25.4",
     price: 1739,
-    image: "/image/c/venice facade.webp",
+    image: "/image/c/venice-facade.webp",
     artistLifespan: "1849-1916",
     slug: "venice-facade",
     letter: "C"
@@ -2092,7 +2092,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "67.3 x 86.2",
     sellingDimensions: "67.3 x 86.2",
     price: 2875,
-    image: "/image/c/the antiquary shop.webp",
+    image: "/image/c/the-antiquary-shop.webp",
     artistLifespan: "1849-1916",
     slug: "the-antiquary-shop",
     letter: "C"
@@ -2104,7 +2104,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "82.6 x 44.5",
     sellingDimensions: "82.6 x 44.5",
     price: 2595,
-    image: "/image/c/i think i am ready now.webp",
+    image: "/image/c/i-think-i-am-ready-now.webp",
     artistLifespan: "1849-1916",
     slug: "i-think-i-am-ready-now",
     letter: "C"
@@ -2116,7 +2116,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "141 X 197",
     sellingDimensions: "141 X 197",
     price: 8500,
-    image: "/image/c/mother by the oven.webp",
+    image: "/image/c/mother-by-the-oven.webp",
     artistLifespan: "1887-1985",
     slug: "mother-by-the-oven",
     letter: "C"
@@ -2128,7 +2128,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 50",
     sellingDimensions: "51 x 50",
     price: 2900,
-    image: "/image/c/newly weds with eiffel tower in background.webp",
+    image: "/image/c/newly-weds-with-eiffel-tower-in-background.webp",
     artistLifespan: "1887-1985",
     slug: "newly-weds-with-eiffel-tower-in-background",
     letter: "C"
@@ -2140,7 +2140,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65 x 32",
     sellingDimensions: "65 x 32",
     price: 2500,
-    image: "/image/c/the acrobat.webp",
+    image: "/image/c/the-acrobat.webp",
     artistLifespan: "1887-1985",
     slug: "the-acrobat",
     letter: "C"
@@ -2152,7 +2152,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "101 x 76",
     sellingDimensions: "101 x 76",
     price: 5005,
-    image: "/image/c/lovers under lillies.webp",
+    image: "/image/c/lovers-under-lillies.webp",
     artistLifespan: "1887-1985",
     slug: "lovers-under-lillies",
     letter: "C"
@@ -2164,7 +2164,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100 x 80",
     sellingDimensions: "100 x 80",
     price: 5100,
-    image: "/image/c/the blue fidler.webp",
+    image: "/image/c/the-blue-fidler.webp",
     artistLifespan: "1887-1985",
     slug: "the-blue-fidler",
     letter: "C"
@@ -2188,7 +2188,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "55 x 53",
     sellingDimensions: "55 x 53",
     price: 6643,
-    image: "/image/c/still life with large roemer, lemon and grapes.webp",
+    image: "/image/c/still-life-with-large-roemer,-lemon-and-grapes.webp",
     artistLifespan: "1597-1660",
     slug: "still-life-with-large-roemer-lemon-and-grapes",
     letter: "C"
@@ -2200,7 +2200,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "69 x 88.3",
     sellingDimensions: "69 x 88.3",
     price: 10280,
-    image: "/image/c/still life lobster.webp",
+    image: "/image/c/still-life-lobster.webp",
     artistLifespan: "1597-1660",
     slug: "still-life-lobster",
     letter: "C"
@@ -2212,7 +2212,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50 x 73",
     sellingDimensions: "50 x 73",
     price: 13232,
-    image: "/image/c/fruit still life with basket of cheese.webp",
+    image: "/image/c/fruit-still-life-with-basket-of-cheese.webp",
     artistLifespan: "1597-1660",
     slug: "fruit-still-life-with-basket-of-cheese",
     letter: "C"
@@ -2224,7 +2224,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "36.5 x 77",
     sellingDimensions: "36.5 x 77",
     price: 7530,
-    image: "/image/c/tabletop still life pigeon pie and delfware jug.webp",
+    image: "/image/c/tabletop-still-life-pigeon-pie-and-delfware-jug.webp",
     artistLifespan: "1597-1660",
     slug: "tabletop-still-life-pigeon-pie-and-delfware-jug",
     letter: "C"
@@ -2236,7 +2236,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "26 x 37.3",
     sellingDimensions: "26 x 37.3",
     price: 4415,
-    image: "/image/c/still life books burning candle.webp",
+    image: "/image/c/still-life-books-burning-candle.webp",
     artistLifespan: "1597-1660",
     slug: "still-life-books-burning-candle",
     letter: "C"
@@ -2248,7 +2248,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "45.7 x 63.5",
     sellingDimensions: "45.7 x 63.5",
     price: 8817,
-    image: "/image/c/a breakfast still life with strawberries and cherries.webp",
+    image: "/image/c/a-breakfast-still-life-with-strawberries-and-cherries.webp",
     artistLifespan: "1597-1660",
     slug: "a-breakfast-still-life-with-strawberries-and-cherries",
     letter: "C"
@@ -2260,7 +2260,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "36 x 59",
     sellingDimensions: "36 x 59",
     price: 7321,
-    image: "/image/c/vanitas still life (violin).webp",
+    image: "/image/c/vanitas-still-life-(violin).webp",
     artistLifespan: "1597-1660",
     slug: "vanitas-still-life-violin",
     letter: "C"
@@ -2272,7 +2272,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "40 x 55.3",
     sellingDimensions: "40 x 55.3",
     price: 6643,
-    image: "/image/c/still life with crab.webp",
+    image: "/image/c/still-life-with-crab.webp",
     artistLifespan: "1597-1660",
     slug: "still-life-with-crab",
     letter: "C"
@@ -2284,7 +2284,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "250 x 200",
     sellingDimensions: "125 x 100",
     price: 6818,
-    image: "/image/c/portrait of sarah bernhardt.webp",
+    image: "/image/c/portrait-of-sarah-bernhardt.webp",
     artistLifespan: "1843-1919",
     slug: "portrait-of-sarah-bernhardt",
     letter: "C"
@@ -2296,7 +2296,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "96 x 74",
     sellingDimensions: "96 x 74",
     price: 15149,
-    image: "/image/c/portrait of francis i roi de france.webp",
+    image: "/image/c/portrait-of-francis-i-roi-de-france.webp",
     artistLifespan: "1485-1540/41",
     slug: "portrait-of-francis-i-roi-de-france",
     letter: "C"
@@ -2308,7 +2308,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "11.4 x 8.2",
     sellingDimensions: "34.2 x 24.6",
     price: 8698,
-    image: "/image/c/head of a man.webp",
+    image: "/image/c/head-of-a-man.webp",
     artistLifespan: "1510-1572",
     slug: "head-of-a-man",
     letter: "C"
@@ -2320,7 +2320,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "32 x 24",
     price: 9644,
-    image: "/image/c/portrait of charles ix.webp",
+    image: "/image/c/portrait-of-charles-ix.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-charles-ix",
     letter: "C"
@@ -2332,7 +2332,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "43 x 27",
     sellingDimensions: "43 x 27",
     price: 11080,
-    image: "/image/c/portrait of henri ii king of france.webp",
+    image: "/image/c/portrait-of-henri-ii-king-of-france.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-henri-ii-king-of-france",
     letter: "C"
@@ -2344,7 +2344,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "31 x 22",
     sellingDimensions: "31 x 22",
     price: 13603,
-    image: "/image/c/portrait of elizabeth of austria.webp",
+    image: "/image/c/portrait-of-elizabeth-of-austria.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-elizabeth-of-austria",
     letter: "C"
@@ -2356,7 +2356,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "71 x 56",
     price: 16378,
-    image: "/image/c/portrait of odet de coligny cardinal of chatillon.webp",
+    image: "/image/c/portrait-of-odet-de-coligny-cardinal-of-chatillon.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-odet-de-coligny-cardinal-of-chatillon",
     letter: "C"
@@ -2368,7 +2368,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "31.7 x 23.5",
     sellingDimensions: "31.7 x 23.5",
     price: 5519,
-    image: "/image/c/portrait of mary queen of scots.webp",
+    image: "/image/c/portrait-of-mary-queen-of-scots.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-mary-queen-of-scots",
     letter: "C"
@@ -2380,7 +2380,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "31 x 21.5",
     price: 9955,
-    image: "/image/c/portrait of henri vi england.webp",
+    image: "/image/c/portrait-of-henri-vi-england.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-henri-vi-england",
     letter: "C"
@@ -2392,7 +2392,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "31 x 24.5",
     price: 8080,
-    image: "/image/c/portrait of catherine de medici.webp",
+    image: "/image/c/portrait-of-catherine-de-medici.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-catherine-de-medici",
     letter: "C"
@@ -2404,7 +2404,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "222 x 115",
     sellingDimensions: "111 x 57.5",
     price: 22969,
-    image: "/image/c/portrait king charles ix of france.webp",
+    image: "/image/c/portrait-king-charles-ix-of-france.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-king-charles-ix-of-france",
     letter: "C"
@@ -2416,7 +2416,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "36 x 26",
     sellingDimensions: "36 x 26",
     price: 15309,
-    image: "/image/c/portrait of elizabeth of austria queen of france.webp",
+    image: "/image/c/portrait-of-elizabeth-of-austria-queen-of-france.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-elizabeth-of-austria-queen-of-france",
     letter: "C"
@@ -2428,7 +2428,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "146.4 x 113.7",
     sellingDimensions: "146.4 x 113.7",
     price: 27793,
-    image: "/image/c/portrait of louise de lorraine.webp",
+    image: "/image/c/portrait-of-louise-de-lorraine.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-louise-de-lorraine",
     letter: "C"
@@ -2440,7 +2440,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "34 x 25",
     sellingDimensions: "34 x 25",
     price: 3005,
-    image: "/image/c/still life asparagus and red currants.webp",
+    image: "/image/c/still-life-asparagus-and-red-currants.webp",
     artistLifespan: "1660-1704",
     slug: "still-life-asparagus-and-red-currants",
     letter: "C"
@@ -2452,7 +2452,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "28.8 x 21",
     sellingDimensions: "28.8 x 21",
     price: 2029,
-    image: "/image/c/four apricots on a stone plinth.webp",
+    image: "/image/c/four-apricots-on-a-stone-plinth.webp",
     artistLifespan: "1660-1704",
     slug: "four-apricots-on-a-stone-plinth",
     letter: "C"
@@ -2464,7 +2464,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "28.7 x 21.2",
     sellingDimensions: "28.7 x 21.2",
     price: 2004,
-    image: "/image/c/three peaches on a stone plinth.webp",
+    image: "/image/c/three-peaches-on-a-stone-plinth.webp",
     artistLifespan: "1660-1704",
     slug: "three-peaches-on-a-stone-plinth",
     letter: "C"
@@ -2476,7 +2476,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "29.7 x 22.8",
     sellingDimensions: "29.7 x 22.8",
     price: 2585,
-    image: "/image/c/gooseberries on a table.webp",
+    image: "/image/c/gooseberries-on-a-table.webp",
     artistLifespan: "1660-1704",
     slug: "gooseberries-on-a-table",
     letter: "C"
@@ -2488,7 +2488,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "21.6 x 33",
     sellingDimensions: "21.6 x 33",
     price: 2625,
-    image: "/image/c/quai du louvre in winter.webp",
+    image: "/image/c/quai-du-louvre-in-winter.webp",
     artistLifespan: "1882-1969",
     slug: "quai-du-louvre-in-winter",
     letter: "C"
@@ -2513,7 +2513,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "107 x 127.5",
     sellingDimensions: "53.5 x 63.75",
     price: 15356,
-    image: "/image/d/a cockrel with other birds.webp",
+    image: "/image/d/a-cockrel-with-other-birds.webp",
     artistLifespan: "1636-1695",
     slug: "a-cockrel-with-other-birds",
     letter: "D"
@@ -2525,7 +2525,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "105 x 95",
     price: 20154,
-    image: "/image/d/palace of amsterdam with exotic birds.webp",
+    image: "/image/d/palace-of-amsterdam-with-exotic-birds.webp",
     artistLifespan: "1636-1695",
     slug: "palace-of-amsterdam-with-exotic-birds",
     letter: "D"
@@ -2537,7 +2537,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "77 x 53",
     sellingDimensions: "77 x 53",
     price: 8900,
-    image: "/image/d/mona lisa (la gioconda).webp",
+    image: "/image/d/mona-lisa-(la-gioconda).webp",
     artistLifespan: "1452-1519",
     slug: "mona-lisa-la-gioconda",
     letter: "D",
@@ -2553,7 +2553,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "69 x 57",
     sellingDimensions: "69 x 57",
     price: 6803,
-    image: "/image/d/st john the baptist.webp",
+    image: "/image/d/st-john-the-baptist.webp",
     artistLifespan: "1452-1519",
     slug: "st-john-the-baptist",
     letter: "D"
@@ -2565,7 +2565,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "480 x 880",
     sellingDimensions: "120 x 220",
     price: 12800,
-    image: "/image/d/the last supper.webp",
+    image: "/image/d/the-last-supper.webp",
     artistLifespan: "1452-1519",
     slug: "the-last-supper",
     letter: "D"
@@ -2577,7 +2577,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "189.5 x 120",
     sellingDimensions: "94.75 x 60",
     price: 16358,
-    image: "/image/d/the virgin on the rocks.webp",
+    image: "/image/d/the-virgin-on-the-rocks.webp",
     artistLifespan: "1452-1519",
     slug: "the-virgin-on-the-rocks",
     letter: "D"
@@ -2589,7 +2589,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "168.5 x 130",
     sellingDimensions: "168.5 x 130",
     price: 26339,
-    image: "/image/d/virgin and child with st anne.webp",
+    image: "/image/d/virgin-and-child-with-st-anne.webp",
     artistLifespan: "1452-1519",
     slug: "virgin-and-child-with-st-anne",
     letter: "D"
@@ -2601,7 +2601,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "53.4 x 39.3",
     sellingDimensions: "53.4 x 39.3",
     price: 7570,
-    image: "/image/d/lady with an emine (cecilia gallerani).webp",
+    image: "/image/d/lady-with-an-emine-(cecilia-gallerani).webp",
     artistLifespan: "1452-1519",
     slug: "lady-with-an-emine-cecilia-gallerani",
     letter: "D"
@@ -2613,7 +2613,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65.6 x 45.4",
     sellingDimensions: "65.6 x 45.4",
     price: 12000,
-    image: "/image/d/salvator mundi.webp",
+    image: "/image/d/salvator-mundi.webp",
     artistLifespan: "1452-1519",
     slug: "salvator-mundi",
     letter: "D"
@@ -2625,7 +2625,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "62 x 47.5",
     sellingDimensions: "62 x 47.5",
     price: 6500,
-    image: "/image/d/madonna of the carnation.webp",
+    image: "/image/d/madonna-of-the-carnation.webp",
     artistLifespan: "1452-1519",
     slug: "madonna-of-the-carnation",
     letter: "D"
@@ -2637,7 +2637,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "33.3 x 21.6",
     sellingDimensions: "33.3 x 21.6",
     price: 6000,
-    image: "/image/d/self portrait.webp",
+    image: "/image/d/self-portrait.webp",
     artistLifespan: "1452-1519",
     slug: "self-portrait-da-vinci",
     letter: "D"
@@ -2649,7 +2649,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "39 x 42",
     sellingDimensions: "39 x 42",
     price: 5800,
-    image: "/image/d/madonna litta (madonna and the child).webp",
+    image: "/image/d/madonna-litta-(madonna-and-the-child).webp",
     artistLifespan: "1452-1519",
     slug: "madonna-litta-madonna-and-the-child",
     letter: "D"
@@ -2661,7 +2661,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "268 x 347",
     sellingDimensions: "90 x 117",
     price: 20081,
-    image: "/image/d/the 3rd of may 1808 in madrid.webp",
+    image: "/image/d/the-3rd-of-may-1808-in-madrid.webp",
     artistLifespan: "1746-1828",
     slug: "the-3rd-of-may-1808-in-madrid",
     letter: "D"
@@ -2673,7 +2673,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "165 x 128",
     sellingDimensions: "85 x 66",
     price: 6905,
-    image: "/image/d/death of marat.webp",
+    image: "/image/d/death-of-marat.webp",
     artistLifespan: "1748-1825",
     slug: "death-of-marat",
     letter: "D"
@@ -2685,7 +2685,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "323 x 422",
     sellingDimensions: "101 x 132",
     price: 12284,
-    image: "/image/d/lictors bearing to brutus the bodies of his sons.webp",
+    image: "/image/d/lictors-bearing-to-brutus-the-bodies-of-his-sons.webp",
     artistLifespan: "1748-1825",
     slug: "lictors-bearing-to-brutus-the-bodies-of-his-sons",
     letter: "D"
@@ -2697,7 +2697,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "129.5 x 196.2",
     sellingDimensions: "129.5 x 196.2",
     price: 35812,
-    image: "/image/d/the death of socrates.webp",
+    image: "/image/d/the-death-of-socrates.webp",
     artistLifespan: "1748-1825",
     slug: "the-death-of-socrates",
     letter: "D"
@@ -2709,7 +2709,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "203.8 x 125.1",
     sellingDimensions: "116 x 71",
     price: 13172,
-    image: "/image/d/the emporer napoleon in his study at the tuileries.webp",
+    image: "/image/d/the-emporer-napoleon-in-his-study-at-the-tuileries.webp",
     artistLifespan: "1748-1825",
     slug: "the-emporer-napoleon-in-his-study-at-the-tuileries",
     letter: "D"
@@ -2721,7 +2721,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "101 x 89",
     price: 15823,
-    image: "/image/d/mars disarmed by venus and the three graces.webp",
+    image: "/image/d/mars-disarmed-by-venus-and-the-three-graces.webp",
     artistLifespan: "1748-1825",
     slug: "mars-disarmed-by-venus-and-the-three-graces",
     letter: "D"
@@ -2733,7 +2733,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "621 x 979",
     sellingDimensions: "115 x 183",
     price: 68475,
-    image: "/image/d/the coronation of napoleon.webp",
+    image: "/image/d/the-coronation-of-napoleon.webp",
     artistLifespan: "1748-1825",
     slug: "the-coronation-of-napoleon",
     letter: "D"
@@ -2745,7 +2745,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "88.2 x 59.3",
     sellingDimensions: "88.2 x 59.3",
     price: 11892,
-    image: "/image/d/emporer napoleon i.webp",
+    image: "/image/d/emporer-napoleon-i.webp",
     artistLifespan: "1748-1825",
     slug: "emporer-napoleon-i",
     letter: "D"
@@ -2757,7 +2757,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "267 x 223",
     sellingDimensions: "267 x 223",
     price: 12000,
-    image: "/image/d/napoleon crossing the alps on 20th may 1800 1803.webp",
+    image: "/image/d/napoleon-crossing-the-alps-on-20th-may-1800-1803.webp",
     artistLifespan: "1748-1825",
     slug: "napoleon-crossing-the-alps-on-20th-may-1800-1803",
     letter: "D",
@@ -2774,7 +2774,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "59 x 74.3",
     sellingDimensions: "59 x 74.3",
     price: 2790,
-    image: "/image/d/dancers in pink.webp",
+    image: "/image/d/dancers-in-pink.webp",
     artistLifespan: "1834-1917",
     slug: "dancers-in-pink",
     letter: "D"
@@ -2786,7 +2786,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "57 x 45",
     sellingDimensions: "57 x 45",
     price: 3446,
-    image: "/image/d/dancer adjusting her sandel.webp",
+    image: "/image/d/dancer-adjusting-her-sandel.webp",
     artistLifespan: "1834-1917",
     slug: "dancer-adjusting-her-sandel",
     letter: "D"
@@ -2798,7 +2798,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66 x 36",
     sellingDimensions: "66 x 36",
     price: 3455,
-    image: "/image/d/dancer in green.webp",
+    image: "/image/d/dancer-in-green.webp",
     artistLifespan: "1834-1917",
     slug: "dancer-in-green",
     letter: "D"
@@ -2810,7 +2810,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61.5 x 46",
     sellingDimensions: "61.5 x 46",
     price: 3447,
-    image: "/image/d/two dancers on a stage.webp",
+    image: "/image/d/two-dancers-on-a-stage.webp",
     artistLifespan: "1834-1917",
     slug: "two-dancers-on-a-stage",
     letter: "D"
@@ -2822,7 +2822,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "85 x 87",
     sellingDimensions: "85 x 87",
     price: 4590,
-    image: "/image/d/the ballet class.webp",
+    image: "/image/d/the-ballet-class.webp",
     artistLifespan: "1834-1917",
     slug: "the-ballet-class",
     letter: "D"
@@ -2834,7 +2834,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "32 x 46",
     sellingDimensions: "32 x 46",
     price: 1790,
-    image: "/image/d/dance opera.webp",
+    image: "/image/d/dance-opera.webp",
     artistLifespan: "1834-1917",
     slug: "dance-opera",
     letter: "D"
@@ -2846,7 +2846,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "75.6 x 81.3",
     sellingDimensions: "75.6 x 81.3",
     price: 4400,
-    image: "/image/d/dancers practicing at the barre.webp",
+    image: "/image/d/dancers-practicing-at-the-barre.webp",
     artistLifespan: "1834-1917",
     slug: "dancers-practising-at-the-barre",
     letter: "D"
@@ -2858,7 +2858,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "56.5 x 46",
     sellingDimensions: "56.5 x 46",
     price: 7953,
-    image: "/image/d/the opera orchestra.webp",
+    image: "/image/d/the-opera-orchestra.webp",
     artistLifespan: "1834-1917",
     slug: "the-opera-orchestra",
     letter: "D"
@@ -2870,7 +2870,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "35 x 31",
     price: 1621,
-    image: "/image/d/portrait of emma dobigny.webp",
+    image: "/image/d/portrait-of-emma-dobigny.webp",
     artistLifespan: "1834-1917",
     slug: "portrait-of-emma-dobigny",
     letter: "D"
@@ -2882,7 +2882,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "117.2 x 77.5",
     sellingDimensions: "93 x 61",
     price: 3105,
-    image: "/image/d/miss la la at the cirque fernando.webp",
+    image: "/image/d/miss-la-la-at-the-cirque-fernando.webp",
     artistLifespan: "1834-1917",
     slug: "miss-la-la-at-the-cirque-fernando",
     letter: "D"
@@ -2894,7 +2894,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "62.2 x 65",
     sellingDimensions: "62.2 x 65",
     price: 2950,
-    image: "/image/d/after the bath woman drying her neck.webp",
+    image: "/image/d/after-the-bath-woman-drying-her-neck.webp",
     artistLifespan: "1834-1917",
     slug: "after-the-bath-woman-drying-her-neck",
     letter: "D"
@@ -2906,7 +2906,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65 x 65",
     sellingDimensions: "65 x 65",
     price: 3108,
-    image: "/image/d/blue dancers.webp",
+    image: "/image/d/blue-dancers.webp",
     artistLifespan: "1834-1917",
     slug: "blue-dancers",
     letter: "D"
@@ -2918,7 +2918,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "168 x 140",
     sellingDimensions: "101 x 85",
     price: 4983,
-    image: "/image/d/pompee and florissant the dogs of lois xv.webp",
+    image: "/image/d/pompee-and-florissant-the-dogs-of-lois-xv.webp",
     artistLifespan: "1661-1743",
     slug: "pompee-and-florissant-the-dogs-of-lois-xv",
     letter: "D"
@@ -2930,7 +2930,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "84 x 101",
     price: 7640,
-    image: "/image/d/diane and blondie.webp",
+    image: "/image/d/diane-and-blondie.webp",
     artistLifespan: "1661-1743",
     slug: "diane-and-blondie",
     letter: "D"
@@ -2942,7 +2942,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61.9 x 50.8",
     sellingDimensions: "61.9 x 50.8",
     price: 2950,
-    image: "/image/d/parisian lady.webp",
+    image: "/image/d/parisian-lady.webp",
     artistLifespan: "1877-1968",
     slug: "parisian-lady",
     letter: "D"
@@ -2954,7 +2954,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "92 x 73.3",
     sellingDimensions: "92 x 73.3",
     price: 4250,
-    image: "/image/d/dolly sisters.webp",
+    image: "/image/d/dolly-sisters.webp",
     artistLifespan: "1877-1968",
     slug: "dolly-sisters",
     letter: "D"
@@ -2966,7 +2966,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "54 x 65.1",
     sellingDimensions: "54 x 65.1",
     price: 3950,
-    image: "/image/d/woman on the sofa.webp",
+    image: "/image/d/woman-on-the-sofa.webp",
     artistLifespan: "1877-1968",
     slug: "woman-on-the-sofa",
     letter: "D"
@@ -2978,7 +2978,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "54.5 x 45.7",
     sellingDimensions: "54.5 x 45.7",
     price: 2890,
-    image: "/image/d/the corn poppy.webp",
+    image: "/image/d/the-corn-poppy.webp",
     artistLifespan: "1877-1968",
     slug: "the-corn-poppy",
     letter: "D"
@@ -2990,7 +2990,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "196.8 x 131.4",
     sellingDimensions: "196.8 x 131.4",
     price: 9270,
-    image: "/image/d/portrait of lily damita the actress.webp",
+    image: "/image/d/portrait-of-lily-damita-the-actress.webp",
     artistLifespan: "1877-1968",
     slug: "portrait-of-lily-damita-the-actress",
     letter: "D"
@@ -3002,7 +3002,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "76.3 x 37.1",
     sellingDimensions: "76.3 x 37.1",
     price: 3920,
-    image: "/image/d/mademoiselle genevieve vix dans le role de salome.webp",
+    image: "/image/d/mademoiselle-genevieve-vix-dans-le-role-de-salome.webp",
     artistLifespan: "1877-1968",
     slug: "mademoiselle-genevieve-vix-dans-le-role-de-salome",
     letter: "D"
@@ -3026,7 +3026,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65 x 54",
     sellingDimensions: "65 x 54",
     price: 5005,
-    image: "/image/d/boats at martigues.webp",
+    image: "/image/d/boats-at-martigues.webp",
     artistLifespan: "1977-1953",
     slug: "boats-at-martigues",
     letter: "D"
@@ -3038,7 +3038,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65 x 73",
     sellingDimensions: "65 x 73",
     price: 5200,
-    image: "/image/d/hommage to claude debussy.webp",
+    image: "/image/d/hommage-to-claude-debussy.webp",
     artistLifespan: "1977-1953",
     slug: "hommage-to-claude-debussy",
     letter: "D"
@@ -3050,7 +3050,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65 x 81",
     sellingDimensions: "65 x 81",
     price: 5700,
-    image: "/image/d/open window.webp",
+    image: "/image/d/open-window.webp",
     artistLifespan: "1977-1953",
     slug: "open-window",
     letter: "D"
@@ -3062,7 +3062,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81.2 x 100.3",
     sellingDimensions: "81.2 x 100.3",
     price: 5900,
-    image: "/image/d/the yellow console with a violin.webp",
+    image: "/image/d/the-yellow-console-with-a-violin.webp",
     artistLifespan: "1977-1953",
     slug: "the-yellow-console-with-a-violin",
     letter: "D"
@@ -3074,7 +3074,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "33 x 41",
     sellingDimensions: "33 x 41",
     price: 3900,
-    image: "/image/d/the red concert.webp",
+    image: "/image/d/the-red-concert.webp",
     artistLifespan: "1977-1953",
     slug: "the-red-concert",
     letter: "D"
@@ -3086,7 +3086,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "49 x 65",
     sellingDimensions: "49 x 65",
     price: 4800,
-    image: "/image/d/red quartet.webp",
+    image: "/image/d/red-quartet.webp",
     artistLifespan: "1977-1953",
     slug: "red-quartet",
     letter: "D"
@@ -3099,7 +3099,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 91.4",
     sellingDimensions: "61 x 91.4",
     price: 4429,
-    image: "/image/e/sailboats racing on the delaware.webp",
+    image: "/image/e/sailboats-racing-on-the-delaware.webp",
     artistLifespan: "1844-1916",
     slug: "sailboats-racing-on-the-delaware",
     letter: "E"
@@ -3111,7 +3111,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61.2 x 91.6",
     sellingDimensions: "61.2 x 91.6",
     price: 4431,
-    image: "/image/e/the belgin brothers racing.webp",
+    image: "/image/e/the-belgin-brothers-racing.webp",
     artistLifespan: "1844-1916",
     slug: "the-belgin-brothers-racing",
     letter: "E"
@@ -3123,7 +3123,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 91.5",
     sellingDimensions: "61 x 91.5",
     price: 2540,
-    image: "/image/e/borzoi heads.webp",
+    image: "/image/e/borzoi-heads.webp",
     artistLifespan: "1864-1943",
     slug: "borzoi-heads",
     letter: "E"
@@ -3136,7 +3136,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "33.4 x 22.8",
     sellingDimensions: "33.4 x 22.8",
     price: 1671,
-    image: "/image/f/the goldfinch.webp",
+    image: "/image/f/the-goldfinch.webp",
     artistLifespan: "1622-1654",
     slug: "the-goldfinch",
     letter: "F"
@@ -3148,7 +3148,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "149 x 121",
     sellingDimensions: "149 x 121",
     price: 16841,
-    image: "/image/f/the beheading of saint john the baptist.webp",
+    image: "/image/f/the-beheading-of-saint-john-the-baptist.webp",
     artistLifespan: "1622-1654",
     slug: "the-beheading-of-saint-john-the-baptist",
     letter: "F"
@@ -3160,7 +3160,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "67 x 58",
     sellingDimensions: "67 x 58",
     price: 1654,
-    image: "/image/f/the sentry.webp",
+    image: "/image/f/the-sentry.webp",
     artistLifespan: "1622-1654",
     slug: "the-sentry",
     letter: "F"
@@ -3172,7 +3172,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "59.7 x 45.7",
     sellingDimensions: "59.7 x 45.7",
     price: 4122,
-    image: "/image/f/roses and lilies.webp",
+    image: "/image/f/roses-and-lilies.webp",
     artistLifespan: "1836-1904",
     slug: "roses-and-lilies",
     letter: "F"
@@ -3184,7 +3184,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "34.6 x 41.6",
     sellingDimensions: "34.6 x 41.6",
     price: 3276,
-    image: "/image/f/still life with roses and fruit.webp",
+    image: "/image/f/still-life-with-roses-and-fruit.webp",
     artistLifespan: "1836-1904",
     slug: "still-life-with-roses-and-fruit",
     letter: "F"
@@ -3196,7 +3196,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100 x 83",
     sellingDimensions: "100 x 83",
     price: 4964,
-    image: "/image/f/the reader.webp",
+    image: "/image/f/the-reader.webp",
     artistLifespan: "1836-1904",
     slug: "the-reader",
     letter: "F"
@@ -3208,7 +3208,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "60 x 74",
     sellingDimensions: "60 x 74",
     price: 6065,
-    image: "/image/f/the dressed table.webp",
+    image: "/image/f/the-dressed-table.webp",
     artistLifespan: "1836-1904",
     slug: "the-dressed-table",
     letter: "F"
@@ -3220,7 +3220,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "27.3 x 36.4",
     sellingDimensions: "27.3 x 36.4",
     price: 2875,
-    image: "/image/f/peaches and grapes.webp",
+    image: "/image/f/peaches-and-grapes.webp",
     artistLifespan: "1836-1904",
     slug: "peaches-and-grapes",
     letter: "F"
@@ -3256,7 +3256,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "92 x 73",
     sellingDimensions: "92 x 73",
     price: 5612,
-    image: "/image/f/self portrait.webp",
+    image: "/image/f/self-portrait.webp",
     artistLifespan: "1829-1880",
     slug: "self-portrait-feuerbach",
     letter: "F"
@@ -3268,7 +3268,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "137 x 98.5",
     sellingDimensions: "137 x 98.5",
     price: 8568,
-    image: "/image/f/mandolin player.webp",
+    image: "/image/f/mandolin-player.webp",
     artistLifespan: "1829-1880",
     slug: "mandolin-player",
     letter: "F"
@@ -3280,7 +3280,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "75 x 59",
     sellingDimensions: "75 x 59",
     price: 6988,
-    image: "/image/f/portrait of princess zinaida yusupova with two sons at arkhangelskoe.webp",
+    image: "/image/f/portrait-of-princess-zinaida-yusupova-with-two-sons-at-arkhangelskoe.webp",
     artistLifespan: "1856-1923",
     slug: "portrait-of-princess-zinaida-yusupova-with-two-sons-at-arkhangelskoe",
     letter: "F"
@@ -3292,7 +3292,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65 x 54",
     sellingDimensions: "65 x 54",
     price: 3854,
-    image: "/image/f/family portrait of a boy and his two sisters.webp",
+    image: "/image/f/family-portrait-of-a-boy-and-his-two-sisters.webp",
     artistLifespan: "1856-1923",
     slug: "family-portrait-of-a-boy-and-his-two-sisters",
     letter: "F"
@@ -3304,7 +3304,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "98 x 124",
     sellingDimensions: "98 x 124",
     price: 8633,
-    image: "/image/f/nude youth sitting by the sea.webp",
+    image: "/image/f/nude-youth-sitting-by-the-sea.webp",
     artistLifespan: "1809-1864",
     slug: "nude-youth-sitting-by-the-sea",
     letter: "F"
@@ -3316,7 +3316,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "83 x 66",
     sellingDimensions: "83 x 66",
     price: 7800,
-    image: "/image/f/madam hippolyte flandrin.webp",
+    image: "/image/f/madam-hippolyte-flandrin.webp",
     artistLifespan: "1809-1864",
     slug: "madam-hippolyte-flandrin",
     letter: "F"
@@ -3328,7 +3328,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "77 x 59",
     sellingDimensions: "77 x 59",
     price: 8113,
-    image: "/image/f/marie-anne de bourbon duchesse de vendome.webp",
+    image: "/image/f/marie-anne-de-bourbon-duchesse-de-vendome.webp",
     artistLifespan: "1809-1864",
     slug: "marie-anne-de-bourbon-duchesse-de-vendome",
     letter: "F"
@@ -3340,7 +3340,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "21.9 x 17.1",
     sellingDimensions: "21.9 x 17.1",
     price: 6026,
-    image: "/image/f/still life with bread and confectinary.webp",
+    image: "/image/f/still-life-with-bread-and-confectinary.webp",
     artistLifespan: "1566-1638",
     slug: "still-life-with-bread-and-confectinary",
     letter: "F"
@@ -3352,7 +3352,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "19.3 x 14.6",
     sellingDimensions: "19.3 x 14.6",
     price: 9348,
-    image: "/image/f/still life pretzels, nuts and almonds.webp",
+    image: "/image/f/still-life-pretzels,-nuts-and-almonds.webp",
     artistLifespan: "1566-1638",
     slug: "still-life-pretzels-nuts-and-almonds",
     letter: "F"
@@ -3364,7 +3364,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "23.6 x 20.2",
     sellingDimensions: "23.6 x 20.2",
     price: 9845,
-    image: "/image/f/snack with fried eggs.webp",
+    image: "/image/f/snack-with-fried-eggs.webp",
     artistLifespan: "1566-1638",
     slug: "snack-with-fried-eggs",
     letter: "F"
@@ -3376,7 +3376,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "31.4 x 40",
     sellingDimensions: "31.4 x 40",
     price: 17932,
-    image: "/image/f/meal with pike head.webp",
+    image: "/image/f/meal-with-pike-head.webp",
     artistLifespan: "1566-1638",
     slug: "meal-with-pike-head",
     letter: "F"
@@ -3388,7 +3388,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81 x 64.2",
     sellingDimensions: "81 x 64.2",
     price: 11900,
-    image: "/image/f/the swing.webp",
+    image: "/image/f/the-swing.webp",
     artistLifespan: "1732-1806",
     slug: "the-swing",
     letter: "F",
@@ -3405,7 +3405,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "98.4 x 74.8",
     sellingDimensions: "98.4 x 74.8",
     price: 3450,
-    image: "/image/f/a wanderer above a sea of mist.webp",
+    image: "/image/f/a-wanderer-above-a-sea-of-mist.webp",
     artistLifespan: "1774-1840",
     slug: "a-wanderer-above-a-sea-of-mist",
     letter: "F",
@@ -3422,7 +3422,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "34 x 44",
     sellingDimensions: "34 x 44",
     price: 3698,
-    image: "/image/f/swans in the reeds.webp",
+    image: "/image/f/swans-in-the-reeds.webp",
     artistLifespan: "1774-1840",
     slug: "swans-in-the-reeds",
     letter: "F"
@@ -3434,7 +3434,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73.6 x 52",
     sellingDimensions: "73.6 x 52",
     price: 3844,
-    image: "/image/f/caroline on the stairs.webp",
+    image: "/image/f/caroline-on-the-stairs.webp",
     artistLifespan: "1774-1840",
     slug: "caroline-on-the-stairs",
     letter: "F"
@@ -3446,7 +3446,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "29.6 x 21.9",
     sellingDimensions: "29.6 x 21.9",
     price: 3011,
-    image: "/image/f/ship in the polar sea.webp",
+    image: "/image/f/ship-in-the-polar-sea.webp",
     artistLifespan: "1774-1840",
     slug: "ship-in-the-polar-sea",
     letter: "F"
@@ -3459,7 +3459,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "74.3 x 95",
     sellingDimensions: "74.3 x 95",
     price: 3050,
-    image: "/image/g/the pond october.webp",
+    image: "/image/g/the-pond-october.webp",
     artistLifespan: "1881-1921",
     slug: "the-pond-october",
     letter: "G"
@@ -3471,7 +3471,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "16 x 23.5",
     sellingDimensions: "16 x 23.5",
     price: 1412,
-    image: "/image/g/after the storm.webp",
+    image: "/image/g/after-the-storm.webp",
     artistLifespan: "1881-1921",
     slug: "after-the-storm",
     letter: "G"
@@ -3483,7 +3483,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "89.2 x 130.7",
     sellingDimensions: "89.2 x 130.7",
     price: 6597,
-    image: "/image/g/village in the laurentian mountains.webp",
+    image: "/image/g/village-in-the-laurentian-mountains.webp",
     artistLifespan: "1881-1921",
     slug: "village-in-the-laurentian-mountains",
     letter: "G"
@@ -3495,7 +3495,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "56.4 x 74.4",
     sellingDimensions: "56.4 x 74.4",
     price: 1987,
-    image: "/image/g/street scene quebec at night.webp",
+    image: "/image/g/street-scene-quebec-at-night.webp",
     artistLifespan: "1881-1921",
     slug: "street-scene-quebec-at-night",
     letter: "G"
@@ -3507,7 +3507,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "76 x 64",
     sellingDimensions: "76 x 64",
     price: 5556,
-    image: "/image/g/the woman in blue (portrait of duchess of beaufort).webp",
+    image: "/image/g/the-woman-in-blue-(portrait-of-duchess-of-beaufort).webp",
     artistLifespan: "1727-1788",
     slug: "the-woman-in-blue-portrait-of-duchess-of-beaufort",
     letter: "G"
@@ -3519,7 +3519,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "120.6 x 147",
     sellingDimensions: "120.6 x 147",
     price: 16413,
-    image: "/image/g/the mall in st james park.webp",
+    image: "/image/g/the-mall-in-st-james-park.webp",
     artistLifespan: "1727-1788",
     slug: "the-mall-in-st-james-park",
     letter: "G"
@@ -3531,7 +3531,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 68",
     sellingDimensions: "73 x 68",
     price: 5500,
-    image: "/image/g/conversation in a park.webp",
+    image: "/image/g/conversation-in-a-park.webp",
     artistLifespan: "1727-1788",
     slug: "conversation-in-a-park",
     letter: "G"
@@ -3543,7 +3543,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "48.5 x 59",
     sellingDimensions: "48.5 x 59",
     price: 4225,
-    image: "/image/g/a pug.webp",
+    image: "/image/g/a-pug.webp",
     artistLifespan: "1727-1788",
     slug: "a-pug",
     letter: "G"
@@ -3555,7 +3555,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "74.5 x 94.5",
     sellingDimensions: "74.5 x 94.5",
     price: 3137,
-    image: "/image/g/idyll in tahiti.webp",
+    image: "/image/g/idyll-in-tahiti.webp",
     artistLifespan: "1848-1903",
     slug: "idyll-in-tahiti",
     letter: "G"
@@ -3567,7 +3567,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "68 x 75.5",
     sellingDimensions: "68 x 75.5",
     price: 2991,
-    image: "/image/g/still life sunflowers on an armchair.webp",
+    image: "/image/g/still-life-sunflowers-on-an-armchair.webp",
     artistLifespan: "1848-1903",
     slug: "still-life-sunflowers-on-an-armchair",
     letter: "G"
@@ -3579,7 +3579,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 94",
     sellingDimensions: "73 x 94",
     price: 2625,
-    image: "/image/g/three tahitians.webp",
+    image: "/image/g/three-tahitians.webp",
     artistLifespan: "1848-1903",
     slug: "three-tahitians",
     letter: "G"
@@ -3591,7 +3591,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "94 x 72.4",
     sellingDimensions: "94 x 72.4",
     price: 2798,
-    image: "/image/g/two tahitian woman.webp",
+    image: "/image/g/two-tahitian-woman.webp",
     artistLifespan: "1848-1903",
     slug: "two-tahitian-woman",
     letter: "G"
@@ -3603,7 +3603,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "101 x 77",
     sellingDimensions: "101 x 77",
     price: 4900,
-    image: "/image/g/nefea faa lpoipo (when will you marry).webp",
+    image: "/image/g/nefea-faa-lpoipo-(when-will-you-marry).webp",
     artistLifespan: "1848-1903",
     slug: "nefea-faa-lpoipo-when-will-you-marry",
     letter: "G"
@@ -3615,7 +3615,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "68.6 x 101",
     sellingDimensions: "68.6 x 101",
     price: 12163,
-    image: "/image/g/the grey cardinal.webp",
+    image: "/image/g/the-grey-cardinal.webp",
     artistLifespan: "1824-1904",
     slug: "the-grey-cardinal",
     letter: "G"
@@ -3627,7 +3627,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61.5 x 50.2",
     sellingDimensions: "61.5 x 50.2",
     price: 5912,
-    image: "/image/g/pelt merchant of cairo.webp",
+    image: "/image/g/pelt-merchant-of-cairo.webp",
     artistLifespan: "1824-1904",
     slug: "pelt-merchant-of-cairo",
     letter: "G"
@@ -3639,7 +3639,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100 x 149.2",
     sellingDimensions: "100 x 149.2",
     price: 20762,
-    image: "/image/g/pollice verso (thumbs down).webp",
+    image: "/image/g/pollice-verso-(thumbs-down).webp",
     artistLifespan: "1824-1904",
     slug: "pollice-verso-thumbs-down",
     letter: "G"
@@ -3651,7 +3651,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "49.9 x 81.2",
     sellingDimensions: "49.9 x 81.2",
     price: 7643,
-    image: "/image/g/prayer in cairo on the rooftops.webp",
+    image: "/image/g/prayer-in-cairo-on-the-rooftops.webp",
     artistLifespan: "1824-1904",
     slug: "prayer-in-cairo-on-the-rooftops",
     letter: "G"
@@ -3663,7 +3663,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "207 x 267",
     sellingDimensions: "207 x 267",
     price: 21000,
-    image: "/image/g/the entombment of atala (the burial of atala).webp",
+    image: "/image/g/the-entombment-of-atala-(the-burial-of-atala).webp",
     artistLifespan: "1767-1824",
     slug: "the-entombment-of-atala-the-burial-of-atala",
     letter: "G"
@@ -3675,7 +3675,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "256 x 183.3",
     sellingDimensions: "256 x 183.3",
     price: 47561,
-    image: "/image/g/napoleon in coronation robes.webp",
+    image: "/image/g/napoleon-in-coronation-robes.webp",
     artistLifespan: "1767-1824",
     slug: "napoleon-in-coronation-robes",
     letter: "G"
@@ -3687,7 +3687,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65 x 54.5",
     sellingDimensions: "65 x 54.5",
     price: 7160,
-    image: "/image/g/portrait of young man as a hunter.webp",
+    image: "/image/g/portrait-of-young-man-as-a-hunter.webp",
     artistLifespan: "1767-1824",
     slug: "portrait-of-young-man-as-a-hunter",
     letter: "G"
@@ -3699,7 +3699,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "253 x 202",
     sellingDimensions: "253 x 202",
     price: 28104,
-    image: "/image/g/pygmalion and galatea.webp",
+    image: "/image/g/pygmalion-and-galatea.webp",
     artistLifespan: "1767-1824",
     slug: "pygmalion-and-galatea",
     letter: "G"
@@ -3711,7 +3711,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73.7 x 92.1",
     sellingDimensions: "92.1 x 73.7",
     price: 4000,
-    image: "/image/g/starry night.webp",
+    image: "/image/g/starry-night.webp",
     artistLifespan: "1853-1890",
     slug: "starry-night",
     letter: "G",
@@ -3745,7 +3745,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 91",
     sellingDimensions: "73 x 91",
     price: 3142,
-    image: "/image/g/red vineyards at airies.webp",
+    image: "/image/g/red-vineyards-at-airies.webp",
     artistLifespan: "1853-1890",
     slug: "red-vineyards-at-airies",
     letter: "G"
@@ -3757,7 +3757,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "75.2 x 92",
     sellingDimensions: "75.2 x 92",
     price: 3145,
-    image: "/image/g/starry night over the rome.webp",
+    image: "/image/g/starry-night-over-the-rome.webp",
     artistLifespan: "1853-1890",
     slug: "starry-night-over-the-rome",
     letter: "G"
@@ -3781,7 +3781,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "92.1 x 73",
     sellingDimensions: "92.1 x 73",
     price: 3200,
-    image: "/image/g/still life vase. with fourteen sunflowers.webp",
+    image: "/image/g/still-life-vase.-with-fourteen-sunflowers.webp",
     artistLifespan: "1853-1890",
     slug: "still-life-vase-with-fourteen-sunflowers",
     letter: "G",
@@ -3797,7 +3797,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "51 x 45",
     sellingDimensions: "51 x 45",
     price: 2272,
-    image: "/image/g/self portrait with bandaged ear and pipe.webp",
+    image: "/image/g/self-portrait-with-bandaged-ear-and-pipe.webp",
     artistLifespan: "1853-1890",
     slug: "self-portrait-with-bandaged-ear-and-pipe",
     letter: "G"
@@ -3809,7 +3809,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "64 x 53",
     sellingDimensions: "64 x 53",
     price: 2710,
-    image: "/image/g/portrait of dr felix rey.webp",
+    image: "/image/g/portrait-of-dr-felix-rey.webp",
     artistLifespan: "1853-1890",
     slug: "portrait-of-dr-felix-rey",
     letter: "G"
@@ -3821,7 +3821,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81.3 x 65.4",
     sellingDimensions: "81.3 x 65.4",
     price: 2780,
-    image: "/image/g/portrait of the postman joseph roulin.webp",
+    image: "/image/g/portrait-of-the-postman-joseph-roulin.webp",
     artistLifespan: "1853-1890",
     slug: "portrait-of-the-postman-joseph-roulin",
     letter: "G",
@@ -3837,7 +3837,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 92",
     sellingDimensions: "73 x 92",
     price: 3167,
-    image: "/image/g/lilac bush (lilacs).webp",
+    image: "/image/g/lilac-bush-(lilacs).webp",
     artistLifespan: "1853-1890",
     slug: "lilac-bush-lilacs",
     letter: "G"
@@ -3849,7 +3849,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "72.6 x 91.4",
     sellingDimensions: "72.6 x 91.4",
     price: 3105,
-    image: "/image/g/the olive trees.webp",
+    image: "/image/g/the-olive-trees.webp",
     artistLifespan: "1853-1890",
     slug: "the-olive-trees",
     letter: "G"
@@ -3861,7 +3861,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 93.4",
     sellingDimensions: "73 x 93.4",
     price: 3200,
-    image: "/image/g/wheat field with cypresses.webp",
+    image: "/image/g/wheat-field-with-cypresses.webp",
     artistLifespan: "1853-1890",
     slug: "wheat-field-with-cypresses",
     letter: "G",
@@ -3877,7 +3877,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "72 x 92",
     sellingDimensions: "72 x 92",
     price: 3165,
-    image: "/image/g/landscape of wheat sheaves and rising moon.webp",
+    image: "/image/g/landscape-of-wheat-sheaves-and-rising-moon.webp",
     artistLifespan: "1853-1890",
     slug: "lanscape-of-wheat-sheaves-and-rising-moon",
     letter: "G"
@@ -3889,7 +3889,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "57 x 43.5",
     sellingDimensions: "57 x 43.5",
     price: 2666,
-    image: "/image/g/self portrait.webp",
+    image: "/image/g/self-portrait.webp",
     artistLifespan: "1853-1890",
     slug: "self-portrait-van-gogh",
     letter: "G"
@@ -3901,7 +3901,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "43.5 x 25",
     sellingDimensions: "43.5 x 25",
     price: 1989,
-    image: "/image/g/the reaper (after millet).webp",
+    image: "/image/g/the-reaper-(after-millet).webp",
     artistLifespan: "1853-1890",
     slug: "the-reaper-after-millet",
     letter: "G"
@@ -3930,7 +3930,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "54 x 65",
     sellingDimensions: "54 x 65",
     price: 2167,
-    image: "/image/g/the mulberry tree.webp",
+    image: "/image/g/the-mulberry-tree.webp",
     artistLifespan: "1853-1890",
     slug: "the-mulberry-tree",
     letter: "G"
@@ -3942,7 +3942,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73.8 x 92.7",
     sellingDimensions: "73.8 x 92.7",
     price: 2925,
-    image: "/image/g/olive tree.webp",
+    image: "/image/g/olive-tree.webp",
     artistLifespan: "1853-1890",
     slug: "olive-trees",
     letter: "G"
@@ -3954,7 +3954,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73.5 x 92",
     sellingDimensions: "73.5 x 92",
     price: 4150,
-    image: "/image/g/blossoming almond tree.webp",
+    image: "/image/g/blossoming-almond-tree.webp",
     artistLifespan: "1853-1890",
     slug: "blossoming-almond-tree",
     letter: "G",
@@ -3971,7 +3971,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "92 x 73.5",
     sellingDimensions: "92 x 73.5",
     price: 3170,
-    image: "/image/g/vase with irises against yellow background.webp",
+    image: "/image/g/vase-with-irises-against-yellow-background.webp",
     artistLifespan: "1853-1890",
     slug: "vase-with-irises-against-yellow-background",
     letter: "G",
@@ -3987,7 +3987,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "93 x 74",
     sellingDimensions: "93 x 74",
     price: 3525,
-    image: "/image/g/vase of roses.webp",
+    image: "/image/g/vase-of-roses.webp",
     artistLifespan: "1853-1890",
     slug: "vase-of-roses",
     letter: "G",
@@ -4003,7 +4003,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "52 x 47",
     sellingDimensions: "52 x 47",
     price: 2269,
-    image: "/image/g/landscape couple walking crescent moon.webp",
+    image: "/image/g/landscape-couple-walking-crescent-moon.webp",
     artistLifespan: "1853-1890",
     slug: "landscape-couple-walking-crescent-moon",
     letter: "G"
@@ -4015,7 +4015,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66 x 57",
     sellingDimensions: "66 x 57",
     price: 2641,
-    image: "/image/g/portrait of doctor gachet.webp",
+    image: "/image/g/portrait-of-doctor-gachet.webp",
     artistLifespan: "1853-1890",
     slug: "portrait-of-doctor-gachet",
     letter: "G"
@@ -4027,7 +4027,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50.5 x 103",
     sellingDimensions: "50.5 x 103",
     price: 2744,
-    image: "/image/g/wheat field with crows 1890.webp",
+    image: "/image/g/wheat-field-with-crows-1890.webp",
     artistLifespan: "1853-1890",
     slug: "wheat-field-with-crows-1890",
     letter: "G"
@@ -4039,7 +4039,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81 x 65.5",
     sellingDimensions: "81 x 65.5",
     price: 4000,
-    image: "/image/g/the cafe terrace on the place du forum airies.webp",
+    image: "/image/g/the-cafe-terrace-on-the-place-du-forum-airies.webp",
     artistLifespan: "1853-1890",
     slug: "the-cafe-terrace-on-the-place-du-forum-airies",
     letter: "G",
@@ -4056,7 +4056,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 92.5",
     sellingDimensions: "73 x 92.5",
     price: 3145,
-    image: "/image/g/haystacks in provence.webp",
+    image: "/image/g/haystacks-in-provence.webp",
     artistLifespan: "1853-1890",
     slug: "haystacks-in-provence",
     letter: "G"
@@ -4069,7 +4069,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "64.5 x 96",
     sellingDimensions: "64.5 x 96",
     price: 9091,
-    image: "/image/h/italian landscape.webp",
+    image: "/image/h/italian-landscape.webp",
     artistLifespan: "1737-1807",
     slug: "italian-landscape",
     letter: "H"
@@ -4081,7 +4081,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "64 x 87",
     sellingDimensions: "64 x 87",
     price: 9156,
-    image: "/image/h/view of copper mill in vietri.webp",
+    image: "/image/h/view-of-copper-mill-in-vietri.webp",
     artistLifespan: "1737-1807",
     slug: "view-of-copper-mill-in-vietri",
     letter: "H"
@@ -4093,7 +4093,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "89 x 66.5",
     sellingDimensions: "80 x 66.5",
     price: 5454,
-    image: "/image/h/portrait of a young man holding a glove.webp",
+    image: "/image/h/portrait-of-a-young-man-holding-a-glove.webp",
     artistLifespan: "1582-1666",
     slug: "portrait-of-a-young-man-holding-a-glove",
     letter: "H"
@@ -4105,7 +4105,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "140 x 166.5",
     sellingDimensions: "70 x 83.25",
     price: 21423,
-    image: "/image/h/married couple in a garden.webp",
+    image: "/image/h/married-couple-in-a-garden.webp",
     artistLifespan: "1582-1666",
     slug: "married-couple-in-a-garden",
     letter: "H"
@@ -4117,7 +4117,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "83 x 67",
     sellingDimensions: "83 x 67",
     price: 6741,
-    image: "/image/h/laughing cavallier.webp",
+    image: "/image/h/laughing-cavallier.webp",
     artistLifespan: "1582-1666",
     slug: "laughing-cavallier",
     letter: "H"
@@ -4129,7 +4129,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "113 x 82",
     sellingDimensions: "91 x 66",
     price: 6565,
-    image: "/image/h/portrait of a man.webp",
+    image: "/image/h/portrait-of-a-man.webp",
     artistLifespan: "1582-1666",
     slug: "portrait-of-a-man-hals",
     letter: "H"
@@ -4141,7 +4141,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "116.5 x 93.3",
     sellingDimensions: "88 x 71",
     price: 6938,
-    image: "/image/h/portrait of a woman.webp",
+    image: "/image/h/portrait-of-a-woman.webp",
     artistLifespan: "1582-1666",
     slug: "portrait-of-a-woman",
     letter: "H"
@@ -4153,7 +4153,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "115.6 x 91.2",
     sellingDimensions: "81 x 71",
     price: 6741,
-    image: "/image/h/portrait of a elderly man.webp",
+    image: "/image/h/portrait-of-a-elderly-man.webp",
     artistLifespan: "1582-1666",
     slug: "portrait-of-a-elderly-man",
     letter: "H"
@@ -4165,7 +4165,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "78.5 x 66.2",
     sellingDimensions: "78.5 x 66.2",
     price: 4054,
-    image: "/image/h/malle babbe.webp",
+    image: "/image/h/malle-babbe.webp",
     artistLifespan: "1582-1666",
     slug: "malle-babbe",
     letter: "H"
@@ -4177,7 +4177,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "260 x 211",
     sellingDimensions: "101 x 81",
     price: 8031,
-    image: "/image/h/the piebald stallion at the eisgruber stud.webp",
+    image: "/image/h/the-piebald-stallion-at-the-eisgruber-stud.webp",
     artistLifespan: "1672-1737",
     slug: "the-piebald-stallion-at-the-eisgruber-stud",
     letter: "H"
@@ -4189,7 +4189,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "81 x 96",
     price: 8597,
-    image: "/image/h/a black horse performing the courbette.webp",
+    image: "/image/h/a-black-horse-performing-the-courbette.webp",
     artistLifespan: "1672-1737",
     slug: "a-black-horse-performing-the-courbette",
     letter: "H"
@@ -4201,7 +4201,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50 x 40",
     sellingDimensions: "50 x 40",
     price: 10835,
-    image: "/image/h/rosslyn chapel near edingburgh.webp",
+    image: "/image/h/rosslyn-chapel-near-edingburgh.webp",
     artistLifespan: "1821-1890",
     slug: "rosslyn-chapel-near-edingburgh",
     letter: "H"
@@ -4213,7 +4213,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "80 x 63",
     price: 5518,
-    image: "/image/h/george glennie putting at blackheath with putting cleek.webp",
+    image: "/image/h/george-glennie-putting-at-blackheath-with-putting-cleek.webp",
     artistLifespan: "1843-1933",
     slug: "george-glennie-putting-at-blackheath-with-putting-cleek",
     letter: "H"
@@ -4225,7 +4225,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "51 x 79",
     sellingDimensions: "51 x 79",
     price: 6260,
-    image: "/image/h/the meet.webp",
+    image: "/image/h/the-meet.webp",
     artistLifespan: "1843-1933",
     slug: "the-meet",
     letter: "H"
@@ -4237,7 +4237,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "71 x 64",
     sellingDimensions: "71 x 64",
     price: 2195,
-    image: "/image/h/moonlight on the river.webp",
+    image: "/image/h/moonlight-on-the-river.webp",
     artistLifespan: "1854-1929",
     slug: "moonlight-on-the-river",
     letter: "H"
@@ -4249,7 +4249,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "33.5 x 59",
     sellingDimensions: "33.5 x 59",
     price: 2272,
-    image: "/image/h/summer in the catskills.webp",
+    image: "/image/h/summer-in-the-catskills.webp",
     artistLifespan: "1828-1901",
     slug: "summer-in-the-catskills",
     letter: "H"
@@ -4261,7 +4261,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "45.7 x 61",
     sellingDimensions: "45.7 x 61",
     price: 2581,
-    image: "/image/h/new england sea view fish house.webp",
+    image: "/image/h/new-england-sea-view-fish-house.webp",
     artistLifespan: "1877-1934",
     slug: "new-england-sea-view-fish-house",
     letter: "H"
@@ -4273,7 +4273,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100.3 x 81.2",
     sellingDimensions: "100.3 x 81.2",
     price: 4365,
-    image: "/image/h/the aero.webp",
+    image: "/image/h/the-aero.webp",
     artistLifespan: "1877-1934",
     slug: "the-aero",
     letter: "H"
@@ -4285,7 +4285,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "70 x 90",
     price: 4687,
-    image: "/image/h/the summer camp blue mountain.webp",
+    image: "/image/h/the-summer-camp-blue-mountain.webp",
     artistLifespan: "1877-1934",
     slug: "the-summer-camp-blue-mountain",
     letter: "H"
@@ -4297,7 +4297,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66.6 x 61.4",
     sellingDimensions: "66.6 x 61.4",
     price: 2727,
-    image: "/image/h/newport waterfront.webp",
+    image: "/image/h/newport-waterfront.webp",
     artistLifespan: "1851-1935",
     slug: "newport-waterfront",
     letter: "H"
@@ -4309,7 +4309,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "96.5 x 96.5",
     sellingDimensions: "96.5 x 96.5",
     price: 3128,
-    image: "/image/h/an outdoor portrait of miss weir.webp",
+    image: "/image/h/an-outdoor-portrait-of-miss-weir.webp",
     artistLifespan: "1851-1935",
     slug: "an-outdoor-portrait-of-miss-weir",
     letter: "H"
@@ -4321,7 +4321,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50.8 x 76.2",
     sellingDimensions: "50.8 x 76.2",
     price: 2534,
-    image: "/image/h/surf and rocks.webp",
+    image: "/image/h/surf-and-rocks.webp",
     artistLifespan: "1851-1935",
     slug: "surf-and-rocks",
     letter: "H"
@@ -4333,7 +4333,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "54 x 44.5",
     sellingDimensions: "54 x 44.5",
     price: 1998,
-    image: "/image/h/the smelt fishers, cos cob.webp",
+    image: "/image/h/the-smelt-fishers,-cos-cob.webp",
     artistLifespan: "1851-1935",
     slug: "the-smelt-fishers-cos-cob",
     letter: "H"
@@ -4345,7 +4345,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100.3 x 75.6",
     sellingDimensions: "100.3 x 75.6",
     price: 3674,
-    image: "/image/h/the table garden.webp",
+    image: "/image/h/the-table-garden.webp",
     artistLifespan: "1851-1935",
     slug: "the-table-garden",
     letter: "H"
@@ -4357,7 +4357,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "62 x 56.8",
     sellingDimensions: "62 x 56.8",
     price: 2388,
-    image: "/image/h/oyster sloop, cos cob.webp",
+    image: "/image/h/oyster-sloop,-cos-cob.webp",
     artistLifespan: "1851-1935",
     slug: "oyster-sloop-cos-cob",
     letter: "H"
@@ -4369,7 +4369,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "76.5 x 63.5",
     sellingDimensions: "76.5 x 63.5",
     price: 3331,
-    image: "/image/h/the victorian chair.webp",
+    image: "/image/h/the-victorian-chair.webp",
     artistLifespan: "1851-1935",
     slug: "the-victorian-chair",
     letter: "H"
@@ -4381,7 +4381,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "80.6 x 62.2",
     sellingDimensions: "80.6 x 62.2",
     price: 3519,
-    image: "/image/h/twenty sixth june old lyme.webp",
+    image: "/image/h/twenty-sixth-june-old-lyme.webp",
     artistLifespan: "1851-1935",
     slug: "twenty-sixth-june-old-lyme",
     letter: "H"
@@ -4393,7 +4393,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "92 x 82",
     sellingDimensions: "92 x 82",
     price: 3768,
-    image: "/image/h/church at old lyme.webp",
+    image: "/image/h/church-at-old-lyme.webp",
     artistLifespan: "1851-1935",
     slug: "church-at-old-lyme",
     letter: "H"
@@ -4405,7 +4405,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "38 x 56",
     sellingDimensions: "38 x 56",
     price: 1817,
-    image: "/image/h/the west wind isles of shoals.webp",
+    image: "/image/h/the-west-wind-isles-of-shoals.webp",
     artistLifespan: "1851-1935",
     slug: "the-west-wind-isles-of-shoals",
     letter: "H"
@@ -4417,7 +4417,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "71.8 x 90.8",
     sellingDimensions: "71.8 x 90.8",
     price: 3620,
-    image: "/image/h/duck island from appledore.webp",
+    image: "/image/h/duck-island-from-appledore.webp",
     artistLifespan: "1851-1935",
     slug: "duck-island-from-appledore",
     letter: "H"
@@ -4429,7 +4429,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "45.7 x 57.2",
     sellingDimensions: "45.7 x 57.2",
     price: 2900,
-    image: "/image/h/central park.webp",
+    image: "/image/h/central-park.webp",
     artistLifespan: "1851-1935",
     slug: "central-park",
     letter: "H"
@@ -4441,7 +4441,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "46 x 38.4",
     sellingDimensions: "46 x 38.4",
     price: 2382,
-    image: "/image/h/promenade at sunset paris.webp",
+    image: "/image/h/promenade-at-sunset-paris.webp",
     artistLifespan: "1851-1935",
     slug: "promenade-at-sunset-paris",
     letter: "H"
@@ -4453,7 +4453,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "74.4 x 59.3",
     sellingDimensions: "74.4 x 59.3",
     price: 3423,
-    image: "/image/h/the spanish stairs rome.webp",
+    image: "/image/h/the-spanish-stairs-rome.webp",
     artistLifespan: "1851-1935",
     slug: "the-spanish-stairs-rome",
     letter: "H"
@@ -4465,7 +4465,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "187.3 x 141.3",
     sellingDimensions: "100 x 76",
     price: 5424,
-    image: "/image/h/abraham lincoln.webp",
+    image: "/image/h/abraham-lincoln.webp",
     artistLifespan: "1813-1894",
     slug: "abraham-lincoln",
     letter: "H"
@@ -4477,7 +4477,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50.8 x 80",
     sellingDimensions: "50.8 x 80",
     price: 4695,
-    image: "/image/h/the three masted merchantman.webp",
+    image: "/image/h/the-three-masted-merchantman.webp",
     artistLifespan: "1799-1859",
     slug: "the-three-masted-merchantman",
     letter: "H"
@@ -4489,7 +4489,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "25.4 x 38",
     sellingDimensions: "25.4 x 38",
     price: 2350,
-    image: "/image/h/the great wave of kanagawa.webp",
+    image: "/image/h/the-great-wave-of-kanagawa.webp",
     artistLifespan: "1760-1849",
     slug: "the-great-wave-of-kanagawa",
     letter: "H"
@@ -4502,7 +4502,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "131.7 x 92",
     sellingDimensions: "131.7 x 92",
     price: 14992,
-    image: "/image/i/domtesse d'haussonville.webp",
+    image: "/image/i/domtesse-d'haussonville.webp",
     artistLifespan: "1780-1867",
     slug: "domtesse-dhaussonville",
     letter: "I"
@@ -4514,7 +4514,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "76.2 x 114.3",
     sellingDimensions: "76.2 x 114.3",
     price: 5996,
-    image: "/image/i/the clouded sun.webp",
+    image: "/image/i/the-clouded-sun.webp",
     artistLifespan: "1825-1894",
     slug: "the-clouded-sun",
     letter: "I"
@@ -4526,7 +4526,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "72.7 x 114.3",
     sellingDimensions: "72.7 x 114.3",
     price: 5920,
-    image: "/image/i/the home at montclair.webp",
+    image: "/image/i/the-home-at-montclair.webp",
     artistLifespan: "1825-1894",
     slug: "the-home-at-montclair",
     letter: "I"
@@ -4538,7 +4538,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "91 x 122",
     price: 4476,
-    image: "/image/i/morning, catskill valley.webp",
+    image: "/image/i/morning,-catskill-valley.webp",
     artistLifespan: "1825-1894",
     slug: "morning-catskill-valley",
     letter: "I"
@@ -4550,7 +4550,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "51 x 66",
     price: 2068,
-    image: "/image/i/sundown near montclair.webp",
+    image: "/image/i/sundown-near-montclair.webp",
     artistLifespan: "1825-1894",
     slug: "sundown-near-montclair",
     letter: "I"
@@ -4562,7 +4562,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66 x 97.8",
     sellingDimensions: "66 x 97.8",
     price: 2302,
-    image: "/image/i/the coming storm.webp",
+    image: "/image/i/the-coming-storm.webp",
     artistLifespan: "1825-1894",
     slug: "the-coming-storm",
     letter: "I"
@@ -4574,7 +4574,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "99 x 135",
     sellingDimensions: "20.3 x 25.4",
     price: 2440,
-    image: "/image/i/a bit of roman aqueduct.webp",
+    image: "/image/i/a-bit-of-roman-aqueduct.webp",
     artistLifespan: "1825-1894",
     slug: "a-bit-of-roman-aqueduct",
     letter: "I"
@@ -4586,7 +4586,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50 x 60.6",
     sellingDimensions: "50 x 60.6",
     price: 2607,
-    image: "/image/i/the wood chopper.webp",
+    image: "/image/i/the-wood-chopper.webp",
     artistLifespan: "1825-1894",
     slug: "the-wood-chopper",
     letter: "I"
@@ -4598,7 +4598,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "57.2 x 62.2",
     sellingDimensions: "57.2 x 62.2",
     price: 2852,
-    image: "/image/i/crossing the ford.webp",
+    image: "/image/i/crossing-the-ford.webp",
     artistLifespan: "1825-1894",
     slug: "crossing-the-ford",
     letter: "I"
@@ -4610,7 +4610,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 87.6",
     sellingDimensions: "61 x 87.6",
     price: 2650,
-    image: "/image/i/hudson river valley.webp",
+    image: "/image/i/hudson-river-valley.webp",
     artistLifespan: "1825-1894",
     slug: "hudson-river-valley",
     letter: "I"
@@ -4622,7 +4622,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "56.3 x 91.8",
     sellingDimensions: "56.3 x 91.8",
     price: 2685,
-    image: "/image/i/landscape sunset.webp",
+    image: "/image/i/landscape-sunset.webp",
     artistLifespan: "1825-1894",
     slug: "landscape-sunset",
     letter: "I"
@@ -4646,7 +4646,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "54.3 x 76.5",
     sellingDimensions: "54.3 x 76.5",
     price: 2500,
-    image: "/image/i/autumn oaks.webp",
+    image: "/image/i/autumn-oaks.webp",
     artistLifespan: "1825-1894",
     slug: "autumn-oaks",
     letter: "I"
@@ -4658,7 +4658,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "10.8 x 17.8",
     sellingDimensions: "10.8 x 17.8",
     price: 2500,
-    image: "/image/i/villa borgese, rome.webp",
+    image: "/image/i/villa-borgese,-rome.webp",
     artistLifespan: "1825-1894",
     slug: "villa-borgese-rome",
     letter: "I"
@@ -4670,7 +4670,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 91.4",
     sellingDimensions: "61 x 91.4",
     price: 2440,
-    image: "/image/i/golden glow (the golden sun).webp",
+    image: "/image/i/golden-glow-(the-golden-sun).webp",
     artistLifespan: "1825-1894",
     slug: "golden-glow-the-golden-sun",
     letter: "I"
@@ -4694,7 +4694,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "76.2 x 113",
     sellingDimensions: "76.2 x 113",
     price: 2736,
-    image: "/image/i/summer foliage.webp",
+    image: "/image/i/summer-foliage.webp",
     artistLifespan: "1825-1894",
     slug: "summer-foliage",
     letter: "I"
@@ -4706,7 +4706,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "90.3 x 125.5",
     sellingDimensions: "90.3 x 125.5",
     price: 5724,
-    image: "/image/i/the shepherds prayer.webp",
+    image: "/image/i/the-shepherds-prayer.webp",
     artistLifespan: "1824-1911",
     slug: "the-shepherds-prayer",
     letter: "I"
@@ -4718,7 +4718,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "48.5 x 93.5",
     sellingDimensions: "48.5 x 93.5",
     price: 3322,
-    image: "/image/i/children of the sea.webp",
+    image: "/image/i/children-of-the-sea.webp",
     artistLifespan: "1824-1911",
     slug: "children-of-the-sea",
     letter: "I"
@@ -4731,7 +4731,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "37.5 x 32.5",
     sellingDimensions: "37.5 x 32.5",
     price: 2340,
-    image: "/image/j/banquet in the thames tunnel.webp",
+    image: "/image/j/banquet-in-the-thames-tunnel.webp",
     artistLifespan: "1786-1869",
     slug: "banquet-in-the-thames-tunnel",
     letter: "J"
@@ -4743,7 +4743,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "32 x 52",
     price: 1728,
-    image: "/image/j/the port of dordrecht.webp",
+    image: "/image/j/the-port-of-dordrecht.webp",
     artistLifespan: "1819-1891",
     slug: "the-port-of-dordrecht",
     letter: "J"
@@ -4767,7 +4767,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "20 x 31",
     price: 1138,
-    image: "/image/j/the port of marseille.webp",
+    image: "/image/j/the-port-of-marseille.webp",
     artistLifespan: "1819-1891",
     slug: "the-port-of-marseille",
     letter: "J"
@@ -4779,7 +4779,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "26 x 35",
     price: 1472,
-    image: "/image/j/boatman by windmill.webp",
+    image: "/image/j/boatman-by-windmill.webp",
     artistLifespan: "1819-1891",
     slug: "boatman-by-windmill",
     letter: "J"
@@ -4791,7 +4791,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "45.4 x 73.3",
     sellingDimensions: "45.4 x 73.3",
     price: 3115,
-    image: "/image/j/le port de la tounelle, paris.webp",
+    image: "/image/j/le-port-de-la-tounelle,-paris.webp",
     artistLifespan: "1819-1891",
     slug: "le-port-de-la-tounelle-paris",
     letter: "J"
@@ -4803,7 +4803,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "85 x 75",
     sellingDimensions: "85 x 75",
     price: 8624,
-    image: "/image/j/portrait of louis xv.webp",
+    image: "/image/j/portrait-of-louis-xv.webp",
     artistLifespan: "Unknown-1743",
     slug: "portrait-of-louis-xv",
     letter: "J"
@@ -4816,7 +4816,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61.9 x 50.8",
     sellingDimensions: "61.9 x 50.8",
     price: 9399,
-    image: "/image/k/the promernade.webp",
+    image: "/image/k/the-promernade.webp",
     artistLifespan: "1839-1902",
     slug: "the-promernade",
     letter: "K"
@@ -4828,7 +4828,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "86.4 x 102.2",
     sellingDimensions: "86.4 x 102.2",
     price: 10105,
-    image: "/image/k/still life with drinking horn.webp",
+    image: "/image/k/still-life-with-drinking-horn.webp",
     artistLifespan: "1619-1693",
     slug: "still-life-with-drinking-horn",
     letter: "K"
@@ -4840,7 +4840,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "53 x 46",
     sellingDimensions: "53 x 46",
     price: 4667,
-    image: "/image/k/still life with fruit in a wan-li bowl.webp",
+    image: "/image/k/still-life-with-fruit-in-a-wan-li-bowl.webp",
     artistLifespan: "1619-1693",
     slug: "still-life-with-fruit-in-a-wan-li-bowl",
     letter: "K"
@@ -4864,7 +4864,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "102 x 128",
     price: 3794,
-    image: "/image/k/concentric circles.webp",
+    image: "/image/k/concentric-circles.webp",
     artistLifespan: "1866-1944",
     slug: "concentric-circles",
     letter: "K"
@@ -4877,7 +4877,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     sellingDimensions: "140 x 201",
     price: 7000,
     basePrice: 7000,
-    image: "/image/k/composition 8.webp",
+    image: "/image/k/composition-8.webp",
     artistLifespan: "1866-1944",
     slug: "composition-8",
     letter: "K",
@@ -4894,7 +4894,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "95.2 x 150",
     sellingDimensions: "95.2 x 150",
     price: 8734,
-    image: "/image/k/group in crinolines.webp",
+    image: "/image/k/group-in-crinolines.webp",
     artistLifespan: "1866-1944",
     slug: "group-in-crinolines",
     letter: "K"
@@ -4906,7 +4906,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100.5 x 110.6",
     sellingDimensions: "110.5 x 110.6",
     price: 5133,
-    image: "/image/k/white cross.webp",
+    image: "/image/k/white-cross.webp",
     artistLifespan: "1866-1944",
     slug: "white-cross",
     letter: "K"
@@ -4918,7 +4918,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "140.3 x 140.7",
     sellingDimensions: "140.3 x 140.7",
     price: 5825,
-    image: "/image/k/several circles.webp",
+    image: "/image/k/several-circles.webp",
     artistLifespan: "1866-1944",
     slug: "several-circles",
     letter: "K"
@@ -4942,7 +4942,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "98.7 x 95.6",
     sellingDimensions: "98.7 x 95.6",
     price: 4419,
-    image: "/image/k/circles in a circle.webp",
+    image: "/image/k/circles-in-a-circle.webp",
     artistLifespan: "1866-1944",
     slug: "circles-in-a-circle",
     letter: "K"
@@ -4954,7 +4954,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "75.5 x 97.5",
     sellingDimensions: "75.5 x 97.5",
     price: 3963,
-    image: "/image/k/winter landscape.webp",
+    image: "/image/k/winter-landscape.webp",
     artistLifespan: "1866-1944",
     slug: "winter-landscape",
     letter: "K",
@@ -4971,7 +4971,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "51.5 x 49.5",
     sellingDimensions: "51.5 x 49.5",
     price: 3689,
-    image: "/image/k/moscow i.webp",
+    image: "/image/k/moscow-i.webp",
     artistLifespan: "1866-1944",
     slug: "moscow-i",
     letter: "K"
@@ -4983,7 +4983,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "49 x 66",
     sellingDimensions: "49 x 66",
     price: 4031,
-    image: "/image/k/song of the volga.webp",
+    image: "/image/k/song-of-the-volga.webp",
     artistLifespan: "1866-1944",
     slug: "song-of-the-volga",
     letter: "K"
@@ -4995,7 +4995,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "55 x 74",
     price: 2533,
-    image: "/image/k/bavarian landscape with a church.webp",
+    image: "/image/k/bavarian-landscape-with-a-church.webp",
     artistLifespan: "1866-1944",
     slug: "bavarian-landscape-with-a-church",
     letter: "K"
@@ -5007,7 +5007,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "159.5 x 250.5",
     sellingDimensions: "159.5 x 250.5",
     price: 8132,
-    image: "/image/k/composition 4.webp",
+    image: "/image/k/composition-4.webp",
     artistLifespan: "1866-1944",
     slug: "composition-4",
     letter: "K"
@@ -5019,7 +5019,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "33 x 45",
     sellingDimensions: "33 x 45",
     price: 2191,
-    image: "/image/k/summer landscape.webp",
+    image: "/image/k/summer-landscape.webp",
     artistLifespan: "1866-1944",
     slug: "summer-landscape",
     letter: "K"
@@ -5031,7 +5031,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100 x 73",
     sellingDimensions: "100 x 73",
     price: 4121,
-    image: "/image/k/blue sky.webp",
+    image: "/image/k/blue-sky.webp",
     artistLifespan: "1866-1944",
     slug: "blue-sky",
     letter: "K"
@@ -5043,7 +5043,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "113.5 x 195",
     sellingDimensions: "113.5 x 195",
     price: 4810,
-    image: "/image/k/composition ix.webp",
+    image: "/image/k/composition-ix.webp",
     artistLifespan: "1866-1944",
     slug: "composition-ix",
     letter: "K"
@@ -5055,7 +5055,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "34 x 27.5",
     sellingDimensions: "34 x 27.5",
     price: 5959,
-    image: "/image/k/portrait of a rabbi.webp",
+    image: "/image/k/portrait-of-a-rabbi.webp",
     artistLifespan: "1854-1912",
     slug: "portrait-of-a-rabbi",
     letter: "K"
@@ -5067,7 +5067,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "9.6 x 8.8",
     sellingDimensions: "9.6 x 8.8",
     price: 4288,
-    image: "/image/k/portrait of a young boy with peyot.webp",
+    image: "/image/k/portrait-of-a-young-boy-with-peyot.webp",
     artistLifespan: "1854-1912",
     slug: "portrait-of-a-young-boy-with-peyot",
     letter: "K"
@@ -5079,7 +5079,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "18.8 x 13",
     sellingDimensions: "15.8 x 13",
     price: 4535,
-    image: "/image/k/portrait of a man with streimel.webp",
+    image: "/image/k/portrait-of-a-man-with-streimel.webp",
     artistLifespan: "1854-1912",
     slug: "portrait-of-a-man-with-streimel",
     letter: "K"
@@ -5091,7 +5091,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "16.5 x 12.5",
     sellingDimensions: "16.5 x 12.5",
     price: 567,
-    image: "/image/k/untitled (transition).webp",
+    image: "/image/k/untitled-(transition).webp",
     artistLifespan: "b.1976",
     slug: "untitled-transition",
     letter: "K"
@@ -5103,7 +5103,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "16.9 x 11.5",
     sellingDimensions: "16.9 x 11.5",
     price: 2649,
-    image: "/image/k/untitled (the edge of tomorrow).webp",
+    image: "/image/k/untitled-(the-edge-of-tomorrow).webp",
     artistLifespan: "b.1976",
     slug: "untitled-the-edge-of-tomorrow",
     letter: "K"
@@ -5115,7 +5115,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "22.8 x 17.4",
     sellingDimensions: "22.8 x 17.4",
     price: 2995,
-    image: "/image/k/untitled v (resurection).webp",
+    image: "/image/k/untitled-v-(resurection).webp",
     artistLifespan: "b.1976",
     slug: "untitled-v-resurection",
     letter: "K"
@@ -5127,7 +5127,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "79 x 58",
     sellingDimensions: "79 x 58",
     price: 4500,
-    image: "/image/k/self portrait in velvet.webp",
+    image: "/image/k/self-portrait-in-velvet.webp",
     artistLifespan: "1907-1954",
     slug: "self-portrait-in-velvet",
     letter: "K"
@@ -5139,7 +5139,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "30 x 40",
     sellingDimensions: "30 x 40",
     price: 2200,
-    image: "/image/k/a few small nips (passionately in love).webp",
+    image: "/image/k/a-few-small-nips-(passionately-in-love).webp",
     artistLifespan: "1907-1954",
     slug: "a-few-small-nips-passionately-in-love",
     letter: "K"
@@ -5163,7 +5163,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "60.4 x 48.6",
     sellingDimensions: "60.4 x 48.6",
     price: 4700,
-    image: "/image/k/the suicide of dorothy hale.webp",
+    image: "/image/k/the-suicide-of-dorothy-hale.webp",
     artistLifespan: "1907-1954",
     slug: "the-suicide-of-dorothy-hale",
     letter: "K"
@@ -5175,7 +5175,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "40.6 x 30.5",
     sellingDimensions: "40.6 x 30.5",
     price: 3500,
-    image: "/image/k/self portrait with a monkey.webp",
+    image: "/image/k/self-portrait-with-a-monkey.webp",
     artistLifespan: "1907-1954",
     slug: "self-portrait-with-a-monkey",
     letter: "K"
@@ -5187,7 +5187,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "76 x 61",
     sellingDimensions: "76 x 61",
     price: 7000,
-    image: "/image/k/marxism will give health to the sick.webp",
+    image: "/image/k/marxism-will-give-health-to-the-sick.webp",
     artistLifespan: "1907-1954",
     slug: "marxism-will-give-health-to-the-sick",
     letter: "K"
@@ -5199,7 +5199,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "29 x 15.8",
     sellingDimensions: "29 x 15.8",
     price: 3200,
-    image: "/image/k/flower myth.webp",
+    image: "/image/k/flower-myth.webp",
     artistLifespan: "1903-1940",
     slug: "flower-myth",
     letter: "K"
@@ -5223,7 +5223,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "31.5 x 24",
     sellingDimensions: "31.5 x 24",
     price: 3350,
-    image: "/image/k/struck from the list.webp",
+    image: "/image/k/struck-from-the-list.webp",
     artistLifespan: "1903-1940",
     slug: "struck-from-the-list",
     letter: "K"
@@ -5235,7 +5235,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "42.9 x 48.9",
     sellingDimensions: "42.9 x 48.9",
     price: 4500,
-    image: "/image/k/with the setting sun.webp",
+    image: "/image/k/with-the-setting-sun.webp",
     artistLifespan: "1903-1940",
     slug: "with-the-setting-sun",
     letter: "K"
@@ -5247,7 +5247,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "40.6 x 29.8",
     sellingDimensions: "40.6 x 29.8",
     price: 3500,
-    image: "/image/k/landscape with sunset.webp",
+    image: "/image/k/landscape-with-sunset.webp",
     artistLifespan: "1903-1940",
     slug: "landscape-with-sunset",
     letter: "K"
@@ -5259,7 +5259,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "138 x 138",
     sellingDimensions: "138 x 138",
     price: 7165,
-    image: "/image/k/portrait of adele bloch-bauer i.webp",
+    image: "/image/k/portrait-of-adele-bloch-bauer-i.webp",
     artistLifespan: "1862-1916",
     slug: "portrait-of-adele-bloch-bauer-i",
     letter: "K",
@@ -5277,7 +5277,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "70 x 50",
     sellingDimensions: "70 x 50",
     price: 3800,
-    image: "/image/k/portrait of johanna straude.webp",
+    image: "/image/k/portrait-of-johanna-straude.webp",
     artistLifespan: "1862-1916",
     slug: "portrait-of-johanna-straude",
     letter: "K"
@@ -5289,7 +5289,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "86 x 148",
     sellingDimensions: "86 x 148",
     price: 10125,
-    image: "/image/k/the tree of life.webp",
+    image: "/image/k/the-tree-of-life.webp",
     artistLifespan: "1862-1916",
     slug: "the-tree-of-life",
     letter: "K"
@@ -5301,7 +5301,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "110.5 x 110.5",
     sellingDimensions: "110.5 x 110.5",
     price: 4988,
-    image: "/image/k/hope ii.webp",
+    image: "/image/k/hope-ii.webp",
     artistLifespan: "1862-1916",
     slug: "hope-ii",
     letter: "K"
@@ -5313,7 +5313,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "84 x 92",
     sellingDimensions: "84 x 92",
     price: 3985,
-    image: "/image/k/judith i.webp",
+    image: "/image/k/judith-i.webp",
     artistLifespan: "1862-1916",
     slug: "judith-i",
     letter: "K",
@@ -5330,7 +5330,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "180 x 90",
     sellingDimensions: "180 x 90",
     price: 9200,
-    image: "/image/k/the dancer.webp",
+    image: "/image/k/the-dancer.webp",
     artistLifespan: "1862-1916",
     slug: "the-dancer",
     letter: "K"
@@ -5342,7 +5342,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "27.5 x 35.5",
     sellingDimensions: "27.5 x 35.5",
     price: 3635,
-    image: "/image/k/music i.webp",
+    image: "/image/k/music-i.webp",
     artistLifespan: "1862-1916",
     slug: "music-i",
     letter: "K",
@@ -5359,7 +5359,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "60 x 49",
     sellingDimensions: "60 x 49",
     price: 2780,
-    image: "/image/k/portrait of a young woman.webp",
+    image: "/image/k/portrait-of-a-young-woman.webp",
     artistLifespan: "1862-1916",
     slug: "portrait-of-a-young-woman",
     letter: "K"
@@ -5371,7 +5371,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "178 x 196",
     sellingDimensions: "178 x 196",
     price: 6035,
-    image: "/image/k/the three ages of women.webp",
+    image: "/image/k/the-three-ages-of-women.webp",
     artistLifespan: "1862-1916",
     slug: "the-three-ages-of-women",
     letter: "K"
@@ -5383,7 +5383,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50 x 20",
     sellingDimensions: "100 x 40",
     price: 5315,
-    image: "/image/k/water serpents.webp",
+    image: "/image/k/water-serpents.webp",
     artistLifespan: "1862-1916",
     slug: "water-serpents",
     letter: "K"
@@ -5395,7 +5395,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "181 x 66.5",
     sellingDimensions: "181 x 66.5",
     price: 7710,
-    image: "/image/k/gold fish.webp",
+    image: "/image/k/gold-fish.webp",
     artistLifespan: "1862-1916",
     slug: "gold-fish",
     letter: "K"
@@ -5419,7 +5419,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100 x 87",
     sellingDimensions: "100 x 87",
     price: 8035,
-    image: "/image/k/portrait of fritza riedlar.webp",
+    image: "/image/k/portrait-of-fritza-riedlar.webp",
     artistLifespan: "1862-1916",
     slug: "portrait-of-fritza-riedlar",
     letter: "K"
@@ -5431,7 +5431,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "140 x 84",
     sellingDimensions: "140 x 84",
     price: 8135,
-    image: "/image/k/portrait of eugeina primavesi.webp",
+    image: "/image/k/portrait-of-eugeina-primavesi.webp",
     artistLifespan: "1862-1916",
     slug: "portrait-of-eugeina-primavesi",
     letter: "K"
@@ -5443,7 +5443,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "99 x 99",
     sellingDimensions: "99 x 99",
     price: 5127,
-    image: "/image/k/girl friends.webp",
+    image: "/image/k/girl-friends.webp",
     artistLifespan: "1862-1916",
     slug: "girl-friends",
     letter: "K"
@@ -5455,7 +5455,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "150 x 200",
     sellingDimensions: "150 x 200",
     price: 18120,
-    image: "/image/k/shubert at the piano.webp",
+    image: "/image/k/shubert-at-the-piano.webp",
     artistLifespan: "1862-1916",
     slug: "shubert-at-the-piano",
     letter: "K"
@@ -5467,7 +5467,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "430 x 300",
     sellingDimensions: "430 x 300",
     price: 42000,
-    image: "/image/k/university of vienna ceiling (medicine) detail showing hygiieia.webp",
+    image: "/image/k/university-of-vienna-ceiling-(medicine)-detail-showing-hygiieia.webp",
     artistLifespan: "1862-1918",
     slug: "university-of-vienna-ceiling-medicine-detail-showing-hygiieia",
     letter: "K"
@@ -5479,7 +5479,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "240 x 64.5",
     sellingDimensions: "240 x 64.5",
     price: 15100,
-    image: "/image/k/nuda veritas.webp",
+    image: "/image/k/nuda-veritas.webp",
     artistLifespan: "1862-1918",
     slug: "nuda-veritas",
     letter: "K"
@@ -5491,7 +5491,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50 x 50.5",
     sellingDimensions: "50 x 50.5",
     price: 5000,
-    image: "/image/k/ria munk on her death bed.webp",
+    image: "/image/k/ria-munk-on-her-death-bed.webp",
     artistLifespan: "1862-1918",
     slug: "ria-munk-on-her-death-bed",
     letter: "K"
@@ -5503,7 +5503,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "190 x 200",
     sellingDimensions: "190 x 200",
     price: 20000,
-    image: "/image/k/the virgins.webp",
+    image: "/image/k/the-virgins.webp",
     artistLifespan: "1862-1918",
     slug: "the-virgins",
     letter: "K"
@@ -5515,7 +5515,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100 x 100",
     sellingDimensions: "100 x 100",
     price: 10000,
-    image: "/image/k/lady with a fan.webp",
+    image: "/image/k/lady-with-a-fan.webp",
     artistLifespan: "1862-1918",
     slug: "lady-with-a-fan",
     letter: "K"
@@ -5527,7 +5527,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "128 x 90",
     sellingDimensions: "128 x 90",
     price: 11200,
-    image: "/image/k/the polecat fur.webp",
+    image: "/image/k/the-polecat-fur.webp",
     artistLifespan: "1862-1918",
     slug: "the-polecat-fur",
     letter: "K"
@@ -5539,7 +5539,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "190 x 120",
     sellingDimensions: "190 x 120",
     price: 17200,
-    image: "/image/k/portrait of adele bloch-bauer ii.webp",
+    image: "/image/k/portrait-of-adele-bloch-bauer-ii.webp",
     artistLifespan: "1862-1918",
     slug: "portrait-of-adele-bloch-bauer-ii",
     letter: "K"
@@ -5551,7 +5551,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "69 x 55",
     sellingDimensions: "69 x 55",
     price: 2800,
-    image: "/image/k/lady with a hat and featherboa.webp",
+    image: "/image/k/lady-with-a-hat-and-featherboa.webp",
     artistLifespan: "1862-1918",
     slug: "lady-with-a-hat-and-featherboa",
     letter: "K"
@@ -5575,7 +5575,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "110 x 110",
     sellingDimensions: "110 x 110",
     price: 5500,
-    image: "/image/k/the sunflower.webp",
+    image: "/image/k/the-sunflower.webp",
     artistLifespan: "1862-1918",
     slug: "the-sunflower",
     letter: "K"
@@ -5587,7 +5587,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "124.5 x 100.3",
     sellingDimensions: "124.5 x 100.3",
     price: 9031,
-    image: "/image/k/sir christopher wren.webp",
+    image: "/image/k/sir-christopher-wren.webp",
     artistLifespan: "1646-1723",
     slug: "sir-christopher-wren",
     letter: "K"
@@ -5599,7 +5599,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "60 x 36",
     price: 4815,
-    image: "/image/k/portrait of wolfang amadeus mozart.webp",
+    image: "/image/k/portrait-of-wolfang-amadeus-mozart.webp",
     artistLifespan: "1764-1825",
     slug: "portrait-of-wolfang-amadeus-mozart",
     letter: "K"
@@ -5611,7 +5611,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "134.4 x 165.5",
     sellingDimensions: "75 x 95",
     price: 19809,
-    image: "/image/k/hip hip hooray, artist festival at skagen.webp",
+    image: "/image/k/hip-hip-hooray,-artist-festival-at-skagen.webp",
     artistLifespan: "1851-1909",
     slug: "hip-hip-hooray-artist-festival-at-skagen",
     letter: "K"
@@ -5624,7 +5624,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "11.8 x 142.9",
     sellingDimensions: "11.8 x 142.9",
     price: 8125,
-    image: "/image/l/a favorite greyhound of prince albert.webp",
+    image: "/image/l/a-favorite-greyhound-of-prince-albert.webp",
     artistLifespan: "1802-1873",
     slug: "a-favorite-greyhound-of-prince-albert",
     letter: "L"
@@ -5648,7 +5648,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "163.8 x 169",
     sellingDimensions: "163.8 x 169",
     price: 10451,
-    image: "/image/l/monarch of the glen.webp",
+    image: "/image/l/monarch-of-the-glen.webp",
     artistLifespan: "1802-1873",
     slug: "monarch-of-the-glen",
     letter: "L"
@@ -5660,7 +5660,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "75 x 63.5",
     sellingDimensions: "75 x 63.5",
     price: 4245,
-    image: "/image/l/the gold turban.webp",
+    image: "/image/l/the-gold-turban.webp",
     artistLifespan: "1856-1941",
     slug: "the-gold-turban",
     letter: "L"
@@ -5672,7 +5672,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "183 x 92.3",
     sellingDimensions: "183 x 92.3",
     price: 5383,
-    image: "/image/l/hazel in black and gold.webp",
+    image: "/image/l/hazel-in-black-and-gold.webp",
     artistLifespan: "1856-1941",
     slug: "hazel-in-black-and-gold",
     letter: "L"
@@ -5684,7 +5684,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "198.4 x 107.8",
     sellingDimensions: "198.4 x 107.8",
     price: 22043,
-    image: "/image/l/the green coat.webp",
+    image: "/image/l/the-green-coat.webp",
     artistLifespan: "1856-1941",
     slug: "the-green-coat",
     letter: "L"
@@ -5696,7 +5696,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "54 x 65.5",
     sellingDimensions: "54 x 65.5",
     price: 2099,
-    image: "/image/l/children in the meadow.webp",
+    image: "/image/l/children-in-the-meadow.webp",
     artistLifespan: "1865-1937",
     slug: "children-in-the-meadow",
     letter: "L"
@@ -5708,7 +5708,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "88.8 x 115.8",
     sellingDimensions: "88.8 x 115.8",
     price: 3500,
-    image: "/image/l/the resting in saint tropez.webp",
+    image: "/image/l/the-resting-in-saint-tropez.webp",
     artistLifespan: "1865-1937",
     slug: "the-resting-in-saint-tropez",
     letter: "L"
@@ -5720,7 +5720,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65.2 x 92",
     sellingDimensions: "65.2 x 92",
     price: 2809,
-    image: "/image/l/a boat on the marne.webp",
+    image: "/image/l/a-boat-on-the-marne.webp",
     artistLifespan: "1865-1937",
     slug: "a-boat-on-the-marne",
     letter: "L"
@@ -5732,7 +5732,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 50.3",
     sellingDimensions: "61 x 50.3",
     price: 2019,
-    image: "/image/l/the japanese bathrobe.webp",
+    image: "/image/l/the-japanese-bathrobe.webp",
     artistLifespan: "1865-1937",
     slug: "the-japanese-bathrobe",
     letter: "L"
@@ -5744,7 +5744,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "46.5 x 73",
     sellingDimensions: "46.5 x 73",
     price: 2634,
-    image: "/image/l/nude lying.webp",
+    image: "/image/l/nude-lying.webp",
     artistLifespan: "1865-1937",
     slug: "nude-lying",
     letter: "L"
@@ -5756,7 +5756,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 46",
     sellingDimensions: "61 x 46",
     price: 3748,
-    image: "/image/l/portrait of eugine-louis-napoleon bonaparte.webp",
+    image: "/image/l/portrait-of-eugine-louis-napoleon-bonaparte.webp",
     artistLifespan: "1836-1911",
     slug: "portrait-of-eugine-louis-napoleon-bonaparte",
     letter: "L"
@@ -5768,7 +5768,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "71.5 x 113.5",
     sellingDimensions: "71.5 x 113.5",
     price: 5986,
-    image: "/image/l/mary magdelene in the cave.webp",
+    image: "/image/l/mary-magdelene-in-the-cave.webp",
     artistLifespan: "1836-1911",
     slug: "mary-magdelene-in-the-cave",
     letter: "L"
@@ -5780,7 +5780,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "56 x 46.5",
     sellingDimensions: "56 x 46.5",
     price: 4272,
-    image: "/image/l/portrait of imperial prince.webp",
+    image: "/image/l/portrait-of-imperial-prince.webp",
     artistLifespan: "1836-1911",
     slug: "portrait-of-imperial-prince",
     letter: "L"
@@ -5804,7 +5804,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "186.7 x 123.8",
     sellingDimensions: "100 x 50",
     price: 6303,
-    image: "/image/l/the grasshopper.webp",
+    image: "/image/l/the-grasshopper.webp",
     artistLifespan: "1836-1911",
     slug: "the-grasshopper",
     letter: "L"
@@ -5829,7 +5829,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     sellingDimensions: "120.6 x 120.6",
     price: 9400,
     basePrice: 9400,
-    image: "/image/l/flaming june.webp",
+    image: "/image/l/flaming-june.webp",
     artistLifespan: "1830-1896",
     slug: "flaming-june",
     letter: "L",
@@ -5858,7 +5858,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "92.7 x 95.2",
     sellingDimensions: "92.7 x 95.2",
     price: 9703,
-    image: "/image/l/music lesson.webp",
+    image: "/image/l/music-lesson.webp",
     artistLifespan: "1830-1896",
     slug: "music-lesson",
     letter: "L"
@@ -5870,7 +5870,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "132.4 x 265.4",
     sellingDimensions: "66.2 x 132.7",
     price: 13256,
-    image: "/image/l/hercules wrestling with death for the body of alcestis.webp",
+    image: "/image/l/hercules-wrestling-with-death-for-the-body-of-alcestis.webp",
     artistLifespan: "1830-1896",
     slug: "hercules-wrestling-with-death-for-the-body-of-alcestis",
     letter: "L"
@@ -5882,7 +5882,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "48 x 82",
     sellingDimensions: "48 x 82",
     price: 9831,
-    image: "/image/l/mother and child.webp",
+    image: "/image/l/mother-and-child.webp",
     artistLifespan: "1830-1896",
     slug: "mother-and-child",
     letter: "L"
@@ -5894,7 +5894,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "83.8 x 76.8",
     sellingDimensions: "83.8 x 76.8",
     price: 5259,
-    image: "/image/l/the painters honeymoon.webp",
+    image: "/image/l/the-painters-honeymoon.webp",
     artistLifespan: "1830-1896",
     slug: "the-painters-honeymoon",
     letter: "L"
@@ -5918,7 +5918,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "210.7 x 138.5",
     sellingDimensions: "105.3 x 68.25",
     price: 7676,
-    image: "/image/l/mrs james guthrie.webp",
+    image: "/image/l/mrs-james-guthrie.webp",
     artistLifespan: "1830-1896",
     slug: "mrs-james-guthrie",
     letter: "L"
@@ -5930,7 +5930,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "80 x 52.1",
     sellingDimensions: "80 x 52.1",
     price: 5118,
-    image: "/image/l/the roman lady (la nana).webp",
+    image: "/image/l/the-roman-lady-(la-nana).webp",
     artistLifespan: "1830-1896",
     slug: "the-roman-lady-la-nana",
     letter: "L"
@@ -5954,7 +5954,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66.4 x 49",
     sellingDimensions: "66.4 x 49",
     price: 4691,
-    image: "/image/l/the fisherman and the syren.webp",
+    image: "/image/l/the-fisherman-and-the-syren.webp",
     artistLifespan: "1830-1896",
     slug: "the-fisherman-and-the-syren",
     letter: "L"
@@ -5966,7 +5966,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "76.8 x 27.2",
     sellingDimensions: "76.8 x 27.2",
     price: 4387,
-    image: "/image/l/the nymph of the river.webp",
+    image: "/image/l/the-nymph-of-the-river.webp",
     artistLifespan: "1830-1896",
     slug: "the-nymph-of-the-river",
     letter: "L"
@@ -6014,7 +6014,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "63 x 45",
     sellingDimensions: "63 x 45",
     price: 3724,
-    image: "/image/l/the vestal.webp",
+    image: "/image/l/the-vestal.webp",
     artistLifespan: "1830-1896",
     slug: "the-vestal",
     letter: "L"
@@ -6026,7 +6026,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "47.5 x 30.5",
     sellingDimensions: "66 x 51",
     price: 5773,
-    image: "/image/l/hhareem life constantinople.webp",
+    image: "/image/l/hhareem-life-constantinople.webp",
     artistLifespan: "1805-1876",
     slug: "hhareem-life-constantinople",
     letter: "L"
@@ -6038,7 +6038,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "116 x 89",
     sellingDimensions: "116 x 89",
     price: 3985,
-    image: "/image/m/the son of man.webp",
+    image: "/image/m/the-son-of-man.webp",
     artistLifespan: "1898-1964",
     slug: "the-son-of-man",
     letter: "M"
@@ -6050,7 +6050,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "63.5 x 48",
     sellingDimensions: "63.5 x 48",
     price: 2920,
-    image: "/image/m/man in a bowler hat.webp",
+    image: "/image/m/man-in-a-bowler-hat.webp",
     artistLifespan: "1898-1964",
     slug: "man-in-a-bowler-hat",
     letter: "M"
@@ -6062,7 +6062,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "81.5 x 67.5",
     price: 12277,
-    image: "/image/m/the gold weigher.webp",
+    image: "/image/m/the-gold-weigher.webp",
     artistLifespan: "1861-1706",
     slug: "the-gold-weigher",
     letter: "M"
@@ -6086,7 +6086,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "208 x 264",
     sellingDimensions: "79 x 101",
     price: 7535,
-    image: "/image/m/lunch on the grass.webp",
+    image: "/image/m/lunch-on-the-grass.webp",
     artistLifespan: "1868-69",
     slug: "lunch-on-the-grass",
     letter: "M"
@@ -6098,7 +6098,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "98 x 130",
     sellingDimensions: "96 x 130",
     price: 6270,
-    image: "/image/m/a bar at the folies-begere.webp",
+    image: "/image/m/a-bar-at-the-folies-begere.webp",
     artistLifespan: "1868-69",
     slug: "a-bar-at-the-folies-begere",
     letter: "M"
@@ -6110,7 +6110,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "170 x 124.5",
     sellingDimensions: "170 x 1124.5",
     price: 9835,
-    image: "/image/m/the balcony.webp",
+    image: "/image/m/the-balcony.webp",
     artistLifespan: "1868-69",
     slug: "the-balcony",
     letter: "M"
@@ -6122,7 +6122,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "187.4 x 248.2",
     sellingDimensions: "93.7 x 124.1",
     price: 13256,
-    image: "/image/m/the vieux musician.webp",
+    image: "/image/m/the-vieux-musician.webp",
     artistLifespan: "1868-69",
     slug: "the-vieux-musician",
     letter: "M"
@@ -6146,7 +6146,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "69 x 92.2",
     sellingDimensions: "69 x 92.2",
     price: 4075,
-    image: "/image/m/still life with melon and peaches.webp",
+    image: "/image/m/still-life-with-melon-and-peaches.webp",
     artistLifespan: "1868-69",
     slug: "still-life-with-melon-and-peaches",
     letter: "M"
@@ -6158,7 +6158,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73.6 x 50.2",
     sellingDimensions: "73.6 x 50.2",
     price: 3096,
-    image: "/image/m/plum brandy.webp",
+    image: "/image/m/plum-brandy.webp",
     artistLifespan: "1868-69",
     slug: "plum-brandy",
     letter: "M"
@@ -6170,7 +6170,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "59 x 72.5",
     sellingDimensions: "59 x 72.5",
     price: 7824,
-    image: "/image/m/masked ball at the opera.webp",
+    image: "/image/m/masked-ball-at-the-opera.webp",
     artistLifespan: "1868-69",
     slug: "masked-ball-at-the-opera",
     letter: "M"
@@ -6182,7 +6182,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "120 x 154",
     sellingDimensions: "120 x 154",
     price: 11546,
-    image: "/image/m/the luncheon at the studio.webp",
+    image: "/image/m/the-luncheon-at-the-studio.webp",
     artistLifespan: "1868-69",
     slug: "the-luncheon-at-the-studio",
     letter: "M"
@@ -6194,7 +6194,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "71 x 92.3",
     sellingDimensions: "71 x 92.3",
     price: 3955,
-    image: "/image/m/the house at rueil.webp",
+    image: "/image/m/the-house-at-rueil.webp",
     artistLifespan: "1868-69",
     slug: "the-house-at-rueil",
     letter: "M"
@@ -6206,7 +6206,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "92 x 112",
     sellingDimensions: "92 x 112",
     price: 6414,
-    image: "/image/m/the garden of pere lathuille.webp",
+    image: "/image/m/the-garden-of-pere-lathuille.webp",
     artistLifespan: "1868-69",
     slug: "the-garden-of-pere-lathuille",
     letter: "M"
@@ -6218,7 +6218,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "74 x 56",
     price: 3699,
-    image: "/image/m/the woman in the garden.webp",
+    image: "/image/m/the-woman-in-the-garden.webp",
     artistLifespan: "1868-69",
     slug: "the-woman-in-the-garden",
     letter: "M"
@@ -6242,7 +6242,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 99.7",
     sellingDimensions: "61 x 99.7",
     price: 3716,
-    image: "/image/m/the monet family in their garden at argenteuil.webp",
+    image: "/image/m/the-monet-family-in-their-garden-at-argenteuil.webp",
     artistLifespan: "1868-69",
     slug: "the-monet-family-in-their-garden-at-argenteuil",
     letter: "M"
@@ -6254,7 +6254,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "57 x 48",
     sellingDimensions: "57 x 48",
     price: 3908,
-    image: "/image/m/the grand canal venice.webp",
+    image: "/image/m/the-grand-canal-venice.webp",
     artistLifespan: "1868-69",
     slug: "the-grand-canal-venice",
     letter: "M"
@@ -6266,7 +6266,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "50 x 71",
     sellingDimensions: "50 x 71",
     price: 3301,
-    image: "/image/m/the grand canal (blue venice).webp",
+    image: "/image/m/the-grand-canal-(blue-venice).webp",
     artistLifespan: "1868-69",
     slug: "the-grand-canal-blue-venice",
     letter: "M"
@@ -6278,7 +6278,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65.1 x 81",
     sellingDimensions: "65.1 x 81",
     price: 4366,
-    image: "/image/m/the brioche.webp",
+    image: "/image/m/the-brioche.webp",
     artistLifespan: "1868-69",
     slug: "the-brioche",
     letter: "M"
@@ -6302,7 +6302,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "192 x 125",
     sellingDimensions: "192 x 125",
     price: 8659,
-    image: "/image/m/a parisian lady.webp",
+    image: "/image/m/a-parisian-lady.webp",
     artistLifespan: "1868-69",
     slug: "a-parisian-lady",
     letter: "M"
@@ -6326,7 +6326,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "unknown",
     sellingDimensions: "150 x 230",
     price: 7150,
-    image: "/image/m/the dance.webp",
+    image: "/image/m/the-dance.webp",
     artistLifespan: "1869-1954",
     slug: "the-dance",
     letter: "M"
@@ -6338,7 +6338,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "180 x 220",
     sellingDimensions: "180 x 220",
     price: 8120,
-    image: "/image/m/the red room, harmony in red.webp",
+    image: "/image/m/the-red-room,-harmony-in-red.webp",
     artistLifespan: "1869-1954",
     slug: "the-red-room-harmony-in-red",
     letter: "M"
@@ -6362,7 +6362,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "55.2 x 45",
     sellingDimensions: "55.2 x 45",
     price: 2150,
-    image: "/image/m/open window colloure.webp",
+    image: "/image/m/open-window-colloure.webp",
     artistLifespan: "1869-1954",
     slug: "open-window-colloure",
     letter: "M"
@@ -6374,7 +6374,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100.5 x 80",
     sellingDimensions: "100.5 x 80",
     price: 3028,
-    image: "/image/m/interior with phonograph.webp",
+    image: "/image/m/interior-with-phonograph.webp",
     artistLifespan: "1869-1954",
     slug: "interior-with-phonograph",
     letter: "M"
@@ -6386,7 +6386,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "176 x 210",
     sellingDimensions: "176 x 210",
     price: 2270,
-    image: "/image/m/arabian coffee house.webp",
+    image: "/image/m/arabian-coffee-house.webp",
     artistLifespan: "1869-1954",
     slug: "arabian-coffee-house",
     letter: "M"
@@ -6398,7 +6398,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "90 x 117",
     price: 3290,
-    image: "/image/m/pink statuette on the red chest.webp",
+    image: "/image/m/pink-statuette-on-the-red-chest.webp",
     artistLifespan: "1869-1954",
     slug: "pink-statuette-on-the-red-chest",
     letter: "M"
@@ -6410,7 +6410,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "89.5 x 116",
     price: 4500,
-    image: "/image/m/spanish still life.webp",
+    image: "/image/m/spanish-still-life.webp",
     artistLifespan: "1869-1954",
     slug: "spanish-still-life",
     letter: "M"
@@ -6422,7 +6422,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "91 x 118.3",
     sellingDimensions: "91 x 118.3",
     price: 4200,
-    image: "/image/m/still life of fruit and bronze statue.webp",
+    image: "/image/m/still-life-of-fruit-and-bronze-statue.webp",
     artistLifespan: "1869-1954",
     slug: "still-life-of-fruit-and-bronze-statue",
     letter: "M"
@@ -6446,7 +6446,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "Unknown",
     sellingDimensions: "115 x 147",
     price: 4092,
-    image: "/image/m/a game of bowls.webp",
+    image: "/image/m/a-game-of-bowls.webp",
     artistLifespan: "1869-1954",
     slug: "a-game-of-bowls",
     letter: "M"
@@ -6458,7 +6458,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81 x 65.2",
     sellingDimensions: "81 x 65.2",
     price: 12829,
-    image: "/image/m/woman in purple coat print.webp",
+    image: "/image/m/woman-in-purple-coat-print.webp",
     artistLifespan: "1869-1954",
     slug: "woman-in-purple-coat-print",
     letter: "M"
@@ -6470,7 +6470,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "176.5 x 240.7",
     sellingDimensions: "176.5 x 240.7",
     price: 16704,
-    image: "/image/m/the joy of life.webp",
+    image: "/image/m/the-joy-of-life.webp",
     artistLifespan: "1869-1954",
     slug: "the-joy-of-life",
     letter: "M"
@@ -6482,7 +6482,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "88.5 x 116",
     sellingDimensions: "88.5 x 116",
     price: 3328,
-    image: "/image/m/still life with blue tablecloth.webp",
+    image: "/image/m/still-life-with-blue-tablecloth.webp",
     artistLifespan: "1869-1954",
     slug: "still-life-with-blue-tablecloth",
     letter: "M"
@@ -6494,7 +6494,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "89 x 117",
     sellingDimensions: "89 x 117",
     price: 3563,
-    image: "/image/m/nymph and satyr.webp",
+    image: "/image/m/nymph-and-satyr.webp",
     artistLifespan: "1869-1954",
     slug: "nymph-and-satyr",
     letter: "M"
@@ -6506,7 +6506,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "115 x 80",
     sellingDimensions: "115 x 80",
     price: 3565,
-    image: "/image/m/landscape viewed from a window.webp",
+    image: "/image/m/landscape-viewed-from-a-window.webp",
     artistLifespan: "1869-1954",
     slug: "landscape-viewed-from-a-window",
     letter: "M"
@@ -6518,7 +6518,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65 x 54",
     sellingDimensions: "130 x 108",
     price: 2741,
-    image: "/image/m/lady in green with a red carnation.webp",
+    image: "/image/m/lady-in-green-with-a-red-carnation.webp",
     artistLifespan: "1869-1954",
     slug: "lady-in-green-with-a-red-carnation",
     letter: "M"
@@ -6530,7 +6530,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "80.6 x 59.7",
     sellingDimensions: "80.6 x 59.7",
     price: 2835,
-    image: "/image/m/woman with a hat.webp",
+    image: "/image/m/woman-with-a-hat.webp",
     artistLifespan: "1869-1954",
     slug: "woman-with-a-hat",
     letter: "M"
@@ -6542,7 +6542,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "146.1 x 116.8",
     sellingDimensions: "146.1 x 116.8",
     price: 4099,
-    image: "/image/m/the window.webp",
+    image: "/image/m/the-window.webp",
     artistLifespan: "1869-1954",
     slug: "the-window",
     letter: "M"
@@ -6554,7 +6554,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "46 x 60",
     sellingDimensions: "92 x 120",
     price: 3895,
-    image: "/image/m/nude in the studio.webp",
+    image: "/image/m/nude-in-the-studio.webp",
     artistLifespan: "1869-1954",
     slug: "nude-in-the-studio",
     letter: "M"
@@ -6566,7 +6566,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "40.5 x 32.5",
     sellingDimensions: "81 x 65",
     price: 2920,
-    image: "/image/m/the green line.webp",
+    image: "/image/m/the-green-line.webp",
     artistLifespan: "1869-1954",
     slug: "the-green-line",
     letter: "M"
@@ -6578,7 +6578,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "191.5 x 114",
     sellingDimensions: "191.5 x 114",
     price: 17142,
-    image: "/image/m/corner of the artists studio.webp",
+    image: "/image/m/corner-of-the-artists-studio.webp",
     artistLifespan: "1869-1954",
     slug: "corner-of-the-artists-studio",
     letter: "M"
@@ -6590,7 +6590,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "294 x 350",
     sellingDimensions: "294 x 350",
     price: 14950,
-    image: "/image/m/la gerbe.webp",
+    image: "/image/m/la-gerbe.webp",
     artistLifespan: "1869-1954",
     slug: "la-gerbe",
     letter: "M"
@@ -6602,7 +6602,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "39 x 47",
     sellingDimensions: "39 x 47",
     price: 1520,
-    image: "/image/m/countryside at collioure.webp",
+    image: "/image/m/countryside-at-collioure.webp",
     artistLifespan: "1869-1954",
     slug: "countryside-at-collioure",
     letter: "M"
@@ -6614,7 +6614,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "98.3 x 118.5",
     sellingDimensions: "98.3 x 118.5",
     price: 3902,
-    image: "/image/m/the gulf of st tropez.webp",
+    image: "/image/m/the-gulf-of-st-tropez.webp",
     artistLifespan: "1869-1954",
     slug: "the-gulf-of-st-tropez",
     letter: "M"
@@ -6626,7 +6626,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "210 x 245",
     sellingDimensions: "210 x 245",
     price: 8500,
-    image: "/image/m/still life with aubergines.webp",
+    image: "/image/m/still-life-with-aubergines.webp",
     artistLifespan: "1869-1954",
     slug: "still-life-with-aubergines",
     letter: "M"
@@ -6638,7 +6638,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "55 x 46",
     sellingDimensions: "55 x 46",
     price: 2220,
-    image: "/image/m/woman at the window.webp",
+    image: "/image/m/woman-at-the-window.webp",
     artistLifespan: "1869-1954",
     slug: "woman-at-the-window",
     letter: "M"
@@ -6650,7 +6650,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "280 x 570",
     sellingDimensions: "56 x 114",
     price: 6800,
-    image: "/image/m/the creation of adam.webp",
+    image: "/image/m/the-creation-of-adam.webp",
     artistLifespan: "1475-1564",
     slug: "the-creation-of-adam",
     letter: "M"
@@ -6662,7 +6662,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "120cm Diameter",
     sellingDimensions: "120cm Diameter",
     price: 7000,
-    image: "/image/m/the holy family of st john.webp",
+    image: "/image/m/the-holy-family-of-st-john.webp",
     artistLifespan: "1475-1564",
     slug: "the-holy-family-of-st-john",
     letter: "M"
@@ -6674,7 +6674,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "280 x 570",
     sellingDimensions: "56 x 114",
     price: 6800,
-    image: "/image/m/adam and eve.webp",
+    image: "/image/m/adam-and-eve.webp",
     artistLifespan: "1475-1564",
     slug: "adam-and-eve",
     letter: "M"
@@ -6686,7 +6686,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "1370 x 1120",
     sellingDimensions: "137 x 112",
     price: 15200,
-    image: "/image/m/the last judgement.webp",
+    image: "/image/m/the-last-judgement.webp",
     artistLifespan: "1475-1564",
     slug: "the-last-judgement",
     letter: "M"
@@ -6698,7 +6698,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "47 x 35",
     sellingDimensions: "47 x 35",
     price: 3800,
-    image: "/image/m/the torment of saint anthony.webp",
+    image: "/image/m/the-torment-of-saint-anthony.webp",
     artistLifespan: "1475-1564",
     slug: "the-torment-of-saint-anthony",
     letter: "M"
@@ -6710,7 +6710,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81 x 54",
     sellingDimensions: "81 x 54",
     price: 4900,
-    image: "/image/m/woman with blue eyes.webp",
+    image: "/image/m/woman-with-blue-eyes.webp",
     artistLifespan: "1884-1920",
     slug: "woman-with-blue-eyes",
     letter: "M"
@@ -6722,7 +6722,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "60 x 92",
     sellingDimensions: "60 x 92",
     price: 3790,
-    image: "/image/m/red nude on a cushion.webp",
+    image: "/image/m/red-nude-on-a-cushion.webp",
     artistLifespan: "1884-1920",
     slug: "red-nude-on-a-cushion",
     letter: "M"
@@ -6734,7 +6734,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100 x 81",
     sellingDimensions: "100 x 81",
     price: 4800,
-    image: "/image/m/portrait of diego rivera.webp",
+    image: "/image/m/portrait-of-diego-rivera.webp",
     artistLifespan: "1884-1920",
     slug: "portrait-of-diego-rivera",
     letter: "M"
@@ -6746,7 +6746,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 116",
     sellingDimensions: "73 x 116",
     price: 5210,
-    image: "/image/m/le grand nu.webp",
+    image: "/image/m/le-grand-nu.webp",
     artistLifespan: "1884-1920",
     slug: "le-grand-nu",
     letter: "M"
@@ -6758,7 +6758,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "59.5 x 59.5",
     sellingDimensions: "59.5 x 59.5",
     price: 1403,
-    image: "/image/m/composition with red yellow green.webp",
+    image: "/image/m/composition-with-red-yellow-green.webp",
     artistLifespan: "1872-1944",
     slug: "composition-with-red-yellow-green",
     letter: "M"
@@ -6770,7 +6770,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "78.5 x 107.5",
     sellingDimensions: "78.5 x 107.5",
     price: 3281,
-    image: "/image/m/blossoming apple trees.webp",
+    image: "/image/m/blossoming-apple-trees.webp",
     artistLifespan: "1872-1944",
     slug: "blossoming-apple-trees",
     letter: "M"
@@ -6782,7 +6782,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "59.5 x 59.5",
     sellingDimensions: "59.5 x 59.5",
     price: 2301,
-    image: "/image/m/composition with large red yellow plane, yellow, black grey and blue.webp",
+    image: "/image/m/composition-with-large-red-yellow-plane,-yellow,-black-grey-and-blue.webp",
     artistLifespan: "1872-1944",
     slug: "composition-with-large-red-yellow-plane-yellow-black-grey-and-blue",
     letter: "M"
@@ -6794,7 +6794,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "88 x 61",
     sellingDimensions: "88 x 61",
     price: 3272,
-    image: "/image/m/composition no iv.webp",
+    image: "/image/m/composition-no-iv.webp",
     artistLifespan: "1872-1944",
     slug: "composition-no-iv",
     letter: "M"
@@ -6806,7 +6806,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "145.2 x 120",
     sellingDimensions: "145.2 x 120",
     price: 3606,
-    image: "/image/m/trafalgar square.webp",
+    image: "/image/m/trafalgar-square.webp",
     artistLifespan: "1872-1944",
     slug: "trafalgar-square",
     letter: "M"
@@ -6818,7 +6818,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "85 x 110",
     sellingDimensions: "85 x 110",
     price: 3182,
-    image: "/image/m/composition in black and white.webp",
+    image: "/image/m/composition-in-black-and-white.webp",
     artistLifespan: "1872-1944",
     slug: "composition-in-black-and-white",
     letter: "M"
@@ -6830,7 +6830,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "88 x 115",
     sellingDimensions: "88 x 115",
     price: 4512,
-    image: "/image/m/composition no ii.webp",
+    image: "/image/m/composition-no-ii.webp",
     artistLifespan: "1872-1944",
     slug: "composition-no-ii",
     letter: "M"
@@ -6842,7 +6842,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "96 x 64",
     sellingDimensions: "96 x 64",
     price: 4166,
-    image: "/image/m/tableau no i.webp",
+    image: "/image/m/tableau-no-i.webp",
     artistLifespan: "1872-1944",
     slug: "tableau-no-i",
     letter: "M"
@@ -6854,7 +6854,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "40 x 52",
     sellingDimensions: "40 x 52",
     price: 1373,
-    image: "/image/m/composition red, yellow and blue.webp",
+    image: "/image/m/composition-red,-yellow-and-blue.webp",
     artistLifespan: "1872-1944",
     slug: "composition-red-yellow-and-blue",
     letter: "M"
@@ -6866,7 +6866,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100.3 x 99",
     sellingDimensions: "100.3 x 99",
     price: 3482,
-    image: "/image/m/composition of red and white.webp",
+    image: "/image/m/composition-of-red-and-white.webp",
     artistLifespan: "1872-1944",
     slug: "composition-of-red-and-white",
     letter: "M"
@@ -6878,7 +6878,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "88.5 x 100",
     sellingDimensions: "88.5 x 100",
     price: 4800,
-    image: "/image/m/water lilies.webp",
+    image: "/image/m/water-lilies.webp",
     artistLifespan: "1840-1926",
     slug: "water-lilies-1906",
     letter: "M",
@@ -6895,7 +6895,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73.7 x 93.4",
     sellingDimensions: "73 x 93.4",
     price: 4100,
-    image: "/image/m/grand canal.webp",
+    image: "/image/m/grand-canal.webp",
     artistLifespan: "1840-1926",
     slug: "grand-canal",
     letter: "M",
@@ -6912,7 +6912,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "89.5 x 92.5",
     sellingDimensions: "89.5 x 92.5",
     price: 4800,
-    image: "/image/m/the japanese bridge, pond with water lilies.webp",
+    image: "/image/m/the-japanese-bridge,-pond-with-water-lilies.webp",
     artistLifespan: "1840-1926",
     slug: "the-japanese-bridge-pond-with-water-lilies",
     letter: "M"
@@ -6924,7 +6924,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "60 x 100.3",
     sellingDimensions: "60 x 100.3",
     price: 3000,
-    image: "/image/m/hay stacks, sun in the mist.webp",
+    image: "/image/m/hay-stacks,-sun-in-the-mist.webp",
     artistLifespan: "1840-1926",
     slug: "hay-stacks-sun-in-the-mist",
     letter: "M"
@@ -6936,7 +6936,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "170 x 137",
     sellingDimensions: "170 x 137",
     price: 8500,
-    image: "/image/m/the hunt.webp",
+    image: "/image/m/the-hunt.webp",
     artistLifespan: "1840-1926",
     slug: "the-hunt",
     letter: "M"
@@ -6948,7 +6948,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81.2 x 92",
     sellingDimensions: "81.2 x 92",
     price: 4600,
-    image: "/image/m/the houses of parliament sunset.webp",
+    image: "/image/m/the-houses-of-parliament-sunset.webp",
     artistLifespan: "1840-1926",
     slug: "the-houses-of-parliament-sunset",
     letter: "M"
@@ -6960,7 +6960,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65.6 x 82",
     sellingDimensions: "65.6 x 82",
     price: 2759,
-    image: "/image/m/near monte carlo.webp",
+    image: "/image/m/near-monte-carlo.webp",
     artistLifespan: "1840-1926",
     slug: "near-monte-carlo",
     letter: "M"
@@ -6972,7 +6972,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "90 x 92",
     sellingDimensions: "90 x 92",
     price: 3278,
-    image: "/image/m/the water lily pond.webp",
+    image: "/image/m/the-water-lily-pond.webp",
     artistLifespan: "1840-1926",
     slug: "the-water-lily-pond",
     letter: "M"
@@ -6984,7 +6984,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "89.5 x 100.3",
     sellingDimensions: "89.5 x 100.3",
     price: 3330,
-    image: "/image/m/water lilies (1).webp",
+    image: "/image/m/water-lilies-(1).webp",
     artistLifespan: "1840-1926",
     slug: "water-lilies-1905",
     letter: "M"
@@ -6996,7 +6996,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "101 x 90",
     sellingDimensions: "101 x 90",
     price: 3330,
-    image: "/image/m/water lilies (2).webp",
+    image: "/image/m/water-lilies-(2).webp",
     artistLifespan: "1840-1926",
     slug: "water-lilies-1908",
     letter: "M"
@@ -7008,7 +7008,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "92.1 x 81.2",
     sellingDimensions: "92.1 x 81.2",
     price: 3200,
-    image: "/image/m/water lilies (3).webp",
+    image: "/image/m/water-lilies-(3).webp",
     artistLifespan: "1840-1926",
     slug: "water-lilies-1907",
     letter: "M"
@@ -7020,7 +7020,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "88.3 x 99.5",
     sellingDimensions: "88.3 x 99.5",
     price: 3250,
-    image: "/image/m/water lilies (4).webp",
+    image: "/image/m/water-lilies-(4).webp",
     artistLifespan: "1840-1926",
     slug: "water-lilies-1905-2",
     letter: "M"
@@ -7032,7 +7032,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65.1 x 100",
     sellingDimensions: "65.1 x 100",
     price: 3021,
-    image: "/image/m/waterloo bridge gray day.webp",
+    image: "/image/m/waterloo-bridge-gray-day.webp",
     artistLifespan: "1840-1926",
     slug: "waterloo-bridge-gray-day",
     letter: "M"
@@ -7044,7 +7044,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 80.5",
     sellingDimensions: "61 x 80.5",
     price: 3062,
-    image: "/image/m/palazza da mula venice.webp",
+    image: "/image/m/palazza-da-mula-venice.webp",
     artistLifespan: "1840-1926",
     slug: "palazza-da-mula-venice",
     letter: "M"
@@ -7056,7 +7056,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81.5 x 100.5",
     sellingDimensions: "81.5 x 100.5",
     price: 2385,
-    image: "/image/m/the seine in giverny.webp",
+    image: "/image/m/the-seine-in-giverny.webp",
     artistLifespan: "1840-1926",
     slug: "the-seine-in-giverny",
     letter: "M"
@@ -7068,7 +7068,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81.8 x 81.3",
     sellingDimensions: "81.8 x 81.3",
     price: 2960,
-    image: "/image/m/poplars on the epte.webp",
+    image: "/image/m/poplars-on-the-epte.webp",
     artistLifespan: "1840-1926",
     slug: "poplars-on-the-epte",
     letter: "M"
@@ -7080,7 +7080,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73.3 x 92.7",
     sellingDimensions: "73.3 x 92.7",
     price: 2381,
-    image: "/image/m/haystack at sunset.webp",
+    image: "/image/m/haystack-at-sunset.webp",
     artistLifespan: "1840-1926",
     slug: "haystack-at-sunset",
     letter: "M"
@@ -7092,7 +7092,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66.6 x 100.6",
     sellingDimensions: "66.6 x 100.6",
     price: 2857,
-    image: "/image/m/haystacks in the sunlight midday.webp",
+    image: "/image/m/haystacks-in-the-sunlight-midday.webp",
     artistLifespan: "1840-1926",
     slug: "haystacks-in-the-sunlight-midday",
     letter: "M"
@@ -7104,7 +7104,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66 x 81.6",
     sellingDimensions: "66 x 81.6",
     price: 2711,
-    image: "/image/m/rocks at port-goulphar belle-lle.webp",
+    image: "/image/m/rocks-at-port-goulphar-belle-lle.webp",
     artistLifespan: "1840-1926",
     slug: "rocks-at-port-goulphar-belle-lle",
     letter: "M"
@@ -7116,7 +7116,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81 x 92",
     sellingDimensions: "81 x 92",
     price: 2820,
-    image: "/image/m/houses of parliament.webp",
+    image: "/image/m/houses-of-parliament.webp",
     artistLifespan: "1840-1926",
     slug: "houses-of-parliament",
     letter: "M"
@@ -7128,7 +7128,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "55.5 x 46",
     sellingDimensions: "55.5 x 46",
     price: 2000,
-    image: "/image/m/jar of peaches.webp",
+    image: "/image/m/jar-of-peaches.webp",
     artistLifespan: "1840-1926",
     slug: "jar-of-peaches",
     letter: "M"
@@ -7140,7 +7140,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81 x 50",
     sellingDimensions: "81 x 50",
     price: 4100,
-    image: "/image/m/the rue montorgueil paris.webp",
+    image: "/image/m/the-rue-montorgueil-paris.webp",
     artistLifespan: "1840-1926",
     slug: "the-rue-montorgueil-paris",
     letter: "M"
@@ -7152,7 +7152,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65 x 81",
     sellingDimensions: "65 x 81",
     price: 4500,
-    image: "/image/m/the galettes.webp",
+    image: "/image/m/the-galettes.webp",
     artistLifespan: "1840-1926",
     slug: "the-galettes",
     letter: "M"
@@ -7164,7 +7164,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "205 x 255",
     sellingDimensions: "205 x 255",
     price: 16000,
-    image: "/image/m/women in the garden.webp",
+    image: "/image/m/women-in-the-garden.webp",
     artistLifespan: "1840-1926",
     slug: "women-in-the-garden",
     letter: "M"
@@ -7176,7 +7176,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81 x 92",
     sellingDimensions: "81 x92",
     price: 4200,
-    image: "/image/m/irises in monet's garden.webp",
+    image: "/image/m/irises-in-monet's garden.webp",
     artistLifespan: "1840-1926",
     slug: "irises-in-monets-garden",
     letter: "M"
@@ -7188,7 +7188,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "46 x 64",
     sellingDimensions: "46 x 64",
     price: 2200,
-    image: "/image/m/fishing boats calm sea.webp",
+    image: "/image/m/fishing-boats-calm-sea.webp",
     artistLifespan: "1840-1926",
     slug: "fishing-boats-calm-sea",
     letter: "M"
@@ -7200,7 +7200,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "174 x 172.5",
     sellingDimensions: "174 x 172.5",
     price: 9800,
-    image: "/image/m/the turkeys.webp",
+    image: "/image/m/the-turkeys.webp",
     artistLifespan: "1840-1926",
     slug: "the-turkeys",
     letter: "M"
@@ -7212,7 +7212,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81.1 x 50.5",
     sellingDimensions: "81.1 x 50.5",
     price: 4200,
-    image: "/image/m/the rue montorgueil.webp",
+    image: "/image/m/the-rue-montorgueil.webp",
     artistLifespan: "1840-1926",
     slug: "the-rue-montorgueil",
     letter: "M"
@@ -7236,7 +7236,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "66.5 x 82.3",
     sellingDimensions: "66.5 x 82.3",
     price: 3900,
-    image: "/image/m/clifftop walk at porville.webp",
+    image: "/image/m/clifftop-walk-at-porville.webp",
     artistLifespan: "1840-1926",
     slug: "clifftop-walk-at-porville",
     letter: "M"
@@ -7248,7 +7248,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "47 x 37.5",
     sellingDimensions: "47 x 37.5",
     price: 1999,
-    image: "/image/m/christmas roses.webp",
+    image: "/image/m/christmas-roses.webp",
     artistLifespan: "1840-1926",
     slug: "christmas-roses",
     letter: "M"
@@ -7260,7 +7260,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65.1 x 81.3",
     sellingDimensions: "65.1 x 81.3",
     price: 3950,
-    image: "/image/m/landscape by montecarlo.webp",
+    image: "/image/m/landscape-by-montecarlo.webp",
     artistLifespan: "1840-1926",
     slug: "landscape-by-montecarlo",
     letter: "M"
@@ -7272,7 +7272,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "73 x 60",
     sellingDimensions: "73 x 60",
     price: 2895,
-    image: "/image/m/branch of orange bearing fruit.webp",
+    image: "/image/m/branch-of-orange-bearing-fruit.webp",
     artistLifespan: "1840-1926",
     slug: "branch-of-orange-bearing-fruit",
     letter: "M"
@@ -7284,7 +7284,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "135 x 148",
     sellingDimensions: "135 x 148",
     price: 5500,
-    image: "/image/m/the pink skiff.webp",
+    image: "/image/m/the-pink-skiff.webp",
     artistLifespan: "1840-1926",
     slug: "the-pink-skiff",
     letter: "M"
@@ -7296,7 +7296,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "100 x 65",
     sellingDimensions: "100 x 65",
     price: 3950,
-    image: "/image/m/rouen cathedreal.webp",
+    image: "/image/m/rouen-cathedreal.webp",
     artistLifespan: "1840-1926",
     slug: "rouen-cathedreal",
     letter: "M"
@@ -7320,7 +7320,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "231 x 151",
     sellingDimensions: "231 x 151",
     price: 13900,
-    image: "/image/m/camille known as the woman in the green dress.webp",
+    image: "/image/m/camille-known-as-the-woman-in-the-green-dress.webp",
     artistLifespan: "1840-1926",
     slug: "camille-known-as-the-woman-in-the-green-dress",
     letter: "M"
@@ -7332,7 +7332,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "80 x 81",
     sellingDimensions: "60 x 81",
     price: 3900,
-    image: "/image/m/path through ther forest snow effect.webp",
+    image: "/image/m/path-through-ther-forest-snow-effect.webp",
     artistLifespan: "1840-1926",
     slug: "path-through-ther-forest-snow-effect",
     letter: "M"
@@ -7344,7 +7344,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "60 x 80",
     sellingDimensions: "60 x 80",
     price: 4020,
-    image: "/image/m/the seine at argenteuil.webp",
+    image: "/image/m/the-seine-at-argenteuil.webp",
     artistLifespan: "1840-1926",
     slug: "the-seine-at-argenteuil",
     letter: "M"
@@ -7356,7 +7356,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81 x 92",
     sellingDimensions: "81 x 92",
     price: 4959,
-    image: "/image/m/house of parliament sun.webp",
+    image: "/image/m/house-of-parliament-sun.webp",
     artistLifespan: "1840-1926",
     slug: "house-of-parliament-sun",
     letter: "M"
@@ -7392,7 +7392,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "79 x 114.3",
     sellingDimensions: "61 x 90",
     price: 5601,
-    image: "/image/m/a stream through the glen, deer in the distance.webp",
+    image: "/image/m/a-stream-through-the-glen,-deer-in-the-distance.webp",
     artistLifespan: "18040-1926",
     slug: "a-stream-through-the-glen-deer-in-the-distance",
     letter: "M"
@@ -7404,7 +7404,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "46 x 38",
     sellingDimensions: "46 x 38",
     price: 1584,
-    image: "/image/m/the left arm of the seineln front of the place dauphine.webp",
+    image: "/image/m/the-left-arm-of-the-seineln-front-of-the-place-dauphine.webp",
     artistLifespan: "1865-1924",
     slug: "the-left-arm-of-the-seineln-front-of-the-place-dauphine",
     letter: "M"
@@ -7428,7 +7428,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "54 x 65",
     sellingDimensions: "54 x 65",
     price: 2156,
-    image: "/image/m/a street in the suburbs of havana.webp",
+    image: "/image/m/a-street-in-the-suburbs-of-havana.webp",
     artistLifespan: "1865-1924",
     slug: "a-street-in-the-suburbs-of-havana",
     letter: "M"
@@ -7440,7 +7440,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65.8 x 81",
     sellingDimensions: "65.8 x 81",
     price: 2161,
-    image: "/image/m/landscape trinidad.webp",
+    image: "/image/m/landscape-trinidad.webp",
     artistLifespan: "1865-1924",
     slug: "landscape-trinidad",
     letter: "M"
@@ -7452,7 +7452,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "65.8 x 67.5",
     sellingDimensions: "65.8 x 67.5",
     price: 2242,
-    image: "/image/m/cafe pasaje havana.webp",
+    image: "/image/m/cafe-pasaje-havana.webp",
     artistLifespan: "1865-1924",
     slug: "cafe-pasaje-havana",
     letter: "M"
@@ -7464,7 +7464,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "81.2 x 54.5",
     sellingDimensions: "81.2 x 54.5",
     price: 3047,
-    image: "/image/m/woman in red bathrobe.webp",
+    image: "/image/m/woman-in-red-bathrobe.webp",
     artistLifespan: "1865-1924",
     slug: "woman-in-red-bathrobe",
     letter: "M"
@@ -7476,7 +7476,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "54 x 64.8",
     sellingDimensions: "54 x 64.8",
     price: 2024,
-    image: "/image/m/house in santiago.webp",
+    image: "/image/m/house-in-santiago.webp",
     artistLifespan: "1865-1924",
     slug: "house-in-santiago",
     letter: "M"
@@ -7488,7 +7488,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "61 x 81.3",
     sellingDimensions: "61 x 81.3",
     price: 2302,
-    image: "/image/m/sailing boats.webp",
+    image: "/image/m/sailing-boats.webp",
     artistLifespan: "1865-1924",
     slug: "sailing-boats",
     letter: "M"
@@ -7500,7 +7500,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "90.8 x 73",
     sellingDimensions: "90.8 x 73",
     price: 6929,
-    image: "/image/m/the banjo player.webp",
+    image: "/image/m/the-banjo-player.webp",
     artistLifespan: "1807-1868",
     slug: "the-banjo-player",
     letter: "M"
@@ -7512,7 +7512,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "91.7 x 73.9",
     sellingDimensions: "91.7 x 73.9",
     price: 7302,
-    image: "/image/m/the bone player.webp",
+    image: "/image/m/the-bone-player.webp",
     artistLifespan: "1807-1868",
     slug: "the-bone-player",
     letter: "M"
@@ -7524,7 +7524,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "91 x 68.",
     sellingDimensions: "91 x 68",
     price: 2485,
-    image: "/image/m/the scream.webp",
+    image: "/image/m/the-scream.webp",
     artistLifespan: "1863-1944",
     slug: "the-scream",
     letter: "M",
@@ -7541,7 +7541,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "134.5 x 160",
     sellingDimensions: "134.5 x 160",
     price: 7200,
-    image: "/image/m/death in the sick room.webp",
+    image: "/image/m/death-in-the-sick-room.webp",
     artistLifespan: "1863-1944",
     slug: "death-in-the-sick-room",
     letter: "M"
