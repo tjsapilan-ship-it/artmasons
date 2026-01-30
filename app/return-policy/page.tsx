@@ -28,7 +28,7 @@ export default function ReturnPolicyPage() {
         <div className="font-serif space-y-8 text-gray-700 leading-relaxed bg-white/80 p-8 md:p-12 rounded-lg backdrop-blur-sm border border-[#800000]/10 shadow-sm">
 
           <p>
-            At ART MASONS, we are committed to quality and your satisfaction is 100% guaranteed. If for reasonable reason you are not satisfied with your order, you may return it within 30 days of receipt for corrections or a full refund.
+            At ART MASONS, we are committed to quality and your satisfaction is 100% guaranteed. If for reasonable reason you are not satisfied with your order, you may return it within 30 days of receipt for corrections.
           </p>
 
           <p>
@@ -46,7 +46,7 @@ export default function ReturnPolicyPage() {
                   <li>Your order number</li>
                   <li>Painting name</li>
                   <li>A brief description of the issue</li>
-                  <li>Whether you would like a correction, free replacement, or refund</li>
+                  <li>Whether you would like a correction or free replacement.</li>
                 </ul>
               </li>
             </ol>
