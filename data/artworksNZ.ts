@@ -9,7 +9,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "48.5 x 39",
     sellingDimensions: "48.5 x 39",
     price: 6972,
-    image: "/image/n/the-palazzo-contarini.webp",
+    image: "/image/n/the palazzo contarini.webp",
     artistLifespan: "1807-1878",
     slug: "the-palazzo-contarini",
     letter: "N"
@@ -21,7 +21,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "48.5 x 39",
     sellingDimensions: "48.5 x 39",
     price: 7018,
-    image: "/image/n/the-house-of-desdemona.webp",
+    image: "/image/n/the house of desdemona.webp",
     artistLifespan: "1807-1878",
     slug: "the-house-of-desdemona",
     letter: "N"
@@ -33,7 +33,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "126 x 96.5",
     sellingDimensions: "126 x 96.5",
     price: 10012,
-    image: "/image/n/tunnel-in-possilipo-naples.webp",
+    image: "/image/n/tunnel in possilipo naples.webp",
     artistLifespan: "1807-1878",
     slug: "tunnel-in-possilipo-naples",
     letter: "N"
@@ -45,7 +45,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "99 x 137.5",
     sellingDimensions: "99 x 137.5",
     price: 8900,
-    image: "/image/n/view-of-terracina-and-monte-circeo.webp",
+    image: "/image/n/view of terracina and monte circeo.webp",
     artistLifespan: "1807-1878",
     slug: "view-of-terracina-and-monte-circeo",
     letter: "N"
@@ -59,7 +59,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "63.8 x 76.5",
     sellingDimensions: "63.8 x 76.5",
     price: 3313,
-    image: "/image/o/a-cloudy-day,-bluebonnets-near-san-antonio,-texas.webp",
+    image: "/image/o/a cloudy day, bluebonnets near san antonio, texas.webp",
     artistLifespan: "1882-1922",
     slug: "a-cloudy-day-bluebonnets-near-san-antonio-texas",
     letter: "O"
@@ -71,7 +71,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "22.8 x 30.5",
     sellingDimensions: "22.8 x 30.5",
     price: 1723,
-    image: "/image/o/october-sunlight.webp",
+    image: "/image/o/october sunlight.webp",
     artistLifespan: "1882-1922",
     slug: "october-sunlight",
     letter: "O"
@@ -83,7 +83,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "23 x 30.5",
     sellingDimensions: "23 x 30.5",
     price: 1728,
-    image: "/image/o/fall-landscape.webp",
+    image: "/image/o/fall landscape.webp",
     artistLifespan: "1882-1922",
     slug: "fall-landscape",
     letter: "O"
@@ -95,7 +95,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "78 x 104",
     sellingDimensions: "78 x 104",
     price: 3400,
-    image: "/image/o/near-san-antonio.webp",
+    image: "/image/o/near san antonio.webp",
     artistLifespan: "1882-1922",
     slug: "near-san-antonio",
     letter: "O"
@@ -107,7 +107,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "102 x 81",
     sellingDimensions: "102 x 81",
     price: 7049,
-    image: "/image/o/david-bearing-the-head-of-goliath.webp",
+    image: "/image/o/david bearing the head of goliath.webp",
     artistLifespan: "1601-1671",
     slug: "david-bearing-the-head-of-goliath",
     letter: "O"
@@ -119,7 +119,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "71.2 x 56.5",
     sellingDimensions: "71.2 x 56.5",
     price: 5010,
-    image: "/image/o/old-woman-praying.webp",
+    image: "/image/o/old woman praying.webp",
     artistLifespan: "1601-1671",
     slug: "old-woman-praying",
     letter: "O"
@@ -131,7 +131,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "74.3 x 56.8",
     sellingDimensions: "74.3 x 56.8",
     price: 4855,
-    image: "/image/o/female-martyr.webp",
+    image: "/image/o/female martyr.webp",
     artistLifespan: "1601-1671",
     slug: "female-martyr",
     letter: "O"
@@ -143,7 +143,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "176 x 104",
     sellingDimensions: "176 x 104",
     price: 8581,
-    image: "/image/o/saint-anthony-raising-man-from-the-dead.webp",
+    image: "/image/o/saint anthony raising man from the dead.webp",
     artistLifespan: "1601-1671",
     slug: "saint-anthony-raising-man-from-the-dead",
     letter: "O"
@@ -155,7 +155,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "148 x 102.5",
     sellingDimensions: "148 x 102.5",
     price: 6048,
-    image: "/image/o/winston-churchill.webp",
+    image: "/image/o/winston churchill.webp",
     artistLifespan: "1878-1931",
     slug: "winston-churchill",
     letter: "O"
@@ -167,7 +167,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "91.8 x 71.5",
     sellingDimensions: "91.8 x 71.5",
     price: 4709,
-    image: "/image/o/lieutenant-general-sir-arthur-currie.webp",
+    image: "/image/o/lieutenant general sir arthur currie.webp",
     artistLifespan: "1878-1931",
     slug: "lieutenant-general-sir-arthur-currie",
     letter: "O"
@@ -179,7 +179,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "94.5 x 104.7",
     sellingDimensions: "94.5 x 104.7",
     price: 15030,
-    image: "/image/o/italia-and-germania.webp",
+    image: "/image/o/italia and germania.webp",
     artistLifespan: "1789-1869",
     slug: "italia-and-germania",
     letter: "O"
@@ -191,7 +191,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "89 x 71",
     sellingDimensions: "89 x 71",
     price: 25173,
-    image: "/image/o/the-marriage-of-the-virgin.webp",
+    image: "/image/o/the marriage of the virgin.webp",
     artistLifespan: "1789-1869",
     slug: "the-marriage-of-the-virgin",
     letter: "O"
@@ -203,7 +203,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "89.5 x 65.8",
     sellingDimensions: "89.5 x 65.8",
     price: 13495,
-    image: "/image/o/vittoria-caldoni.webp",
+    image: "/image/o/vittoria caldoni.webp",
     artistLifespan: "1789-1869",
     slug: "vittoria-caldoni",
     letter: "O"
@@ -215,7 +215,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "41 x 53",
     sellingDimensions: "41 x 53",
     price: 21726,
-    image: "/image/o/the-raising-of-lazarus.webp",
+    image: "/image/o/the raising of lazarus.webp",
     artistLifespan: "1789-1869",
     slug: "the-raising-of-lazarus",
     letter: "O"
@@ -229,7 +229,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "91 x 69",
     sellingDimensions: "91 x 69",
     price: 17083,
-    image: "/image/p/hesperus,-the-evening-star,-sacred-to-lovers.webp",
+    image: "/image/p/hesperus, the evening star, sacred to lovers.webp",
     artistLifespan: "1821-1901",
     slug: "hesperus-the-evening-star-sacred-to-lovers",
     letter: "P"
@@ -241,7 +241,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "68 x 61",
     sellingDimensions: "68 x 61",
     price: 8287,
-    image: "/image/p/dantes-dream-from-the-divine-comedy.webp",
+    image: "/image/p/dantes dream from the divine comedy.webp",
     artistLifespan: "1821-1901",
     slug: "dantes-dream-from-the-divine-comedy",
     letter: "P"
@@ -253,7 +253,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "30.6 x 41",
     sellingDimensions: "30.6 x 41",
     price: 5982,
-    image: "/image/p/how-an-angel-rowed-sir-galahad-across-dern-mere.webp",
+    image: "/image/p/how an angel rowed sir galahad across dern mere.webp",
     artistLifespan: "1821-1901",
     slug: "how-an-angel-rowed-sir-galahad-across-dern-mere",
     letter: "P"
@@ -265,7 +265,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "26.4 x 31.2",
     sellingDimensions: "26.4 x 31.2",
     price: 6469,
-    image: "/image/p/puck-and-fairies-from-mid-summer's night dream.webp",
+    image: "/image/p/puck and fairies from mid-summer's night dream.webp",
     artistLifespan: "1821-1901",
     slug: "puck-and-fairies-from-mid-summers-night-dream",
     letter: "P"
@@ -277,7 +277,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "63.5 x 76.2",
     sellingDimensions: "63.5 x 76.2",
     price: 2403,
-    image: "/image/p/south-rim-grand-canyon.webp",
+    image: "/image/p/south rim grand canyon.webp",
     artistLifespan: "1882-1947",
     slug: "south-rim-grand-canyon",
     letter: "P"
@@ -289,7 +289,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "64.1 x 76.8",
     sellingDimensions: "64.1 x 76.8",
     price: 2638,
-    image: "/image/p/monument-valley-riverbed.webp",
+    image: "/image/p/monument valley riverbed.webp",
     artistLifespan: "1882-1947",
     slug: "monument-valley-riverbed",
     letter: "P"
@@ -301,7 +301,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61 x 71.1",
     sellingDimensions: "61 x 71.1",
     price: 2856,
-    image: "/image/p/the-sierra-divide.webp",
+    image: "/image/p/the sierra divide.webp",
     artistLifespan: "1882-1947",
     slug: "the-sierra-divide",
     letter: "P"
@@ -313,7 +313,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "50.8 x 61.6",
     sellingDimensions: "50.8 x 61.6",
     price: 3489,
-    image: "/image/p/high-surf-along-the-laguna-coast.webp",
+    image: "/image/p/high surf along the laguna coast.webp",
     artistLifespan: "1882-1947",
     slug: "high-surf-along-the-laguna-coast",
     letter: "P"
@@ -337,7 +337,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "37.5 x 48",
     sellingDimensions: "37.5 x 48",
     price: 2621,
-    image: "/image/p/still-life-with-a-violin.webp",
+    image: "/image/p/still life with a violin.webp",
     artistLifespan: "1878-1939",
     slug: "still-life-with-a-violin",
     letter: "P"
@@ -361,7 +361,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "122.4 x 84.7",
     sellingDimensions: "122.4 x 84.7",
     price: 4272,
-    image: "/image/p/the-worker.webp",
+    image: "/image/p/the worker.webp",
     artistLifespan: "1878-1939",
     slug: "the-worker",
     letter: "P"
@@ -373,7 +373,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "146 x 114",
     sellingDimensions: "146 x 144",
     price: 4400,
-    image: "/image/p/crouching-woman-(jacqueline).webp",
+    image: "/image/p/crouching woman (jacqueline).webp",
     artistLifespan: "1881-1973",
     slug: "crouching-woman-jacqueline",
     letter: "P",
@@ -390,7 +390,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "162 x 130",
     sellingDimensions: "162 x 130",
     price: 4800,
-    image: "/image/p/a-blue-acrobat.webp",
+    image: "/image/p/a blue acrobat.webp",
     artistLifespan: "1881-1973",
     slug: "a-blue-acrobat",
     letter: "P"
@@ -402,7 +402,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "72 x 60",
     sellingDimensions: "72 x 60",
     price: 2650,
-    image: "/image/p/a-hat-with-flowers.webp",
+    image: "/image/p/a hat with flowers.webp",
     artistLifespan: "1881-1973",
     slug: "a-hat-with-flowers",
     letter: "P"
@@ -414,7 +414,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "195 x 130.5",
     sellingDimensions: "195 x 130.5",
     price: 4100,
-    image: "/image/p/great-still-on-pedastal.webp",
+    image: "/image/p/great still on pedastal.webp",
     artistLifespan: "1881-1973",
     slug: "great-still-on-pedastal",
     letter: "P"
@@ -426,7 +426,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "77.5 x 54",
     sellingDimensions: "77.5 x 54",
     price: 2600,
-    image: "/image/p/a-rooster.webp",
+    image: "/image/p/a rooster.webp",
     artistLifespan: "1881-1973",
     slug: "a-rooster",
     letter: "P"
@@ -438,7 +438,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "91.8 x 72.8",
     sellingDimensions: "91.8 x 72.8",
     price: 3590,
-    image: "/image/p/an-artiste.webp",
+    image: "/image/p/an artiste.webp",
     artistLifespan: "1881-1973",
     slug: "an-artiste",
     letter: "P"
@@ -462,7 +462,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "32.8 x 22",
     sellingDimensions: "32.8 x 22",
     price: 2000,
-    image: "/image/p/bather-opening-a-cabin.webp",
+    image: "/image/p/bather opening a cabin.webp",
     artistLifespan: "1881-1973",
     slug: "bather-opening-a-cabin",
     letter: "P"
@@ -474,7 +474,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "146.2 x 114.6",
     sellingDimensions: "146.2 x 114.6",
     price: 4100,
-    image: "/image/p/bather-with-a-beach-ball.webp",
+    image: "/image/p/bather with a beach ball.webp",
     artistLifespan: "1881-1973",
     slug: "bather-with-a-beach-ball",
     letter: "P"
@@ -486,7 +486,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "75 x 62",
     sellingDimensions: "75 x 62",
     price: 2650,
-    image: "/image/p/bust-of-a-woman-and-self-portrait.webp",
+    image: "/image/p/bust of a woman and self portrait.webp",
     artistLifespan: "1881-1973",
     slug: "bust-of-a-woman-and-self-portrait",
     letter: "P"
@@ -498,7 +498,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "60 x 49",
     sellingDimensions: "60 x 49",
     price: 2590,
-    image: "/image/p/weeping-woman.webp",
+    image: "/image/p/weeping woman.webp",
     artistLifespan: "1881-1973",
     slug: "weeping-woman",
     letter: "P"
@@ -510,7 +510,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "44.7 x 34",
     sellingDimensions: "44.7 x 34",
     price: 2520,
-    image: "/image/p/dora-maar.webp",
+    image: "/image/p/dora maar.webp",
     artistLifespan: "1881-1973",
     slug: "dora-maar",
     letter: "P"
@@ -534,7 +534,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "36 x 40",
     sellingDimensions: "36 x 40",
     price: 2521,
-    image: "/image/p/farmers-wife-on-a-step-ladder.webp",
+    image: "/image/p/farmers wife on a step ladder.webp",
     artistLifespan: "1881-1973",
     slug: "farmers-wife-on-a-step-ladder",
     letter: "P"
@@ -546,7 +546,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "162 x 130",
     sellingDimensions: "162 x 130",
     price: 5400,
-    image: "/image/p/female-nude-in-the-garden.webp",
+    image: "/image/p/female nude in the garden.webp",
     artistLifespan: "1881-1973",
     slug: "female-nude-in-the-garden",
     letter: "P"
@@ -558,7 +558,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "130.2 x 97.2",
     sellingDimensions: "130.2 x 97.2",
     price: 4365,
-    image: "/image/p/female-nude-on-a-red-chair.webp",
+    image: "/image/p/female nude on a red chair.webp",
     artistLifespan: "1881-1973",
     slug: "female-nude-on-a-red-chair",
     letter: "P"
@@ -570,7 +570,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "81 x 64.7",
     sellingDimensions: "81 x 64.7",
     price: 2724,
-    image: "/image/p/writing-woman.webp",
+    image: "/image/p/writing woman.webp",
     artistLifespan: "1881-1973",
     slug: "writing-woman",
     letter: "P",
@@ -587,7 +587,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "130 x 97",
     sellingDimensions: "130 x 97",
     price: 4365,
-    image: "/image/p/the-dream.webp",
+    image: "/image/p/the dream.webp",
     artistLifespan: "1881-1973",
     slug: "the-dream",
     letter: "P",
@@ -604,7 +604,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "162 x 130",
     sellingDimensions: "162 x 130",
     price: 5650,
-    image: "/image/p/nude,-green-leaves-and-bust.webp",
+    image: "/image/p/nude, green leaves and bust.webp",
     artistLifespan: "1881-1973",
     slug: "nude-green-leaves-and-bust",
     letter: "P"
@@ -628,7 +628,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "100 x 81",
     sellingDimensions: "100 x 81",
     price: 4207,
-    image: "/image/p/boy-with-a-pipe.webp",
+    image: "/image/p/boy with a pipe.webp",
     artistLifespan: "1881-1973",
     slug: "boy-with-a-pipe",
     letter: "P"
@@ -652,7 +652,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "86 x 56",
     sellingDimensions: "86 x 56",
     price: 3737,
-    image: "/image/p/the-tragedy.webp",
+    image: "/image/p/the tragedy.webp",
     artistLifespan: "1881-1973",
     slug: "the-tragedy",
     letter: "P"
@@ -664,7 +664,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "123 x 82.6",
     sellingDimensions: "123 x 82.6",
     price: 4809,
-    image: "/image/p/the-old-guitarist.webp",
+    image: "/image/p/the old guitarist.webp",
     artistLifespan: "1881-1973",
     slug: "the-old-guitarist",
     letter: "P"
@@ -676,7 +676,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "128 x 95",
     sellingDimensions: "128 x 95",
     price: 4559,
-    image: "/image/p/dora-mar-with-cat.webp",
+    image: "/image/p/dora mar with cat.webp",
     artistLifespan: "1881-1973",
     slug: "dora-mar-with-cat",
     letter: "P"
@@ -688,7 +688,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "162.3 x 130.2",
     sellingDimensions: "162.3 x 130.2",
     price: 6690,
-    image: "/image/p/a-girl-before-a-mirror.webp",
+    image: "/image/p/a girl before a mirror.webp",
     artistLifespan: "1881-1973",
     slug: "a-girl-before-a-mirror",
     letter: "P"
@@ -700,7 +700,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "114 x 146.4",
     sellingDimensions: "114 x 146.4",
     price: 10499,
-    image: "/image/p/women-of-algiers.webp",
+    image: "/image/p/women of algiers.webp",
     artistLifespan: "1881-1973",
     slug: "women-of-algiers",
     letter: "P"
@@ -712,7 +712,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "73 x 54",
     sellingDimensions: "73 x 54",
     price: 2100,
-    image: "/image/p/child-with-a-dove.webp",
+    image: "/image/p/child with a dove.webp",
     artistLifespan: "1881-1973",
     slug: "child-with-a-dove",
     letter: "P"
@@ -724,7 +724,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "147x 95",
     sellingDimensions: "147x 95",
     price: 5200,
-    image: "/image/p/girl-on-the-ball.webp",
+    image: "/image/p/girl on the ball.webp",
     artistLifespan: "1881-1973",
     slug: "girl-on-the-ball",
     letter: "P"
@@ -736,7 +736,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "243.9 x 233.7",
     sellingDimensions: "243.9 x 233.7",
     price: 10800,
-    image: "/image/p/girls-of-avignon.webp",
+    image: "/image/p/girls of avignon.webp",
     artistLifespan: "1881-1973",
     slug: "girls-of-avignon",
     letter: "P"
@@ -748,7 +748,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "129.8 x 161.0",
     sellingDimensions: "129.8 x 161.0",
     price: 7300,
-    image: "/image/p/figures-at-the-seaside.webp",
+    image: "/image/p/figures at the seaside.webp",
     artistLifespan: "1881-1973",
     slug: "figures-at-the-seaside",
     letter: "P"
@@ -760,7 +760,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "81 x 100",
     sellingDimensions: "81 x 100",
     price: 3900,
-    image: "/image/p/cat-catching-a-bird.webp",
+    image: "/image/p/cat catching a bird.webp",
     artistLifespan: "1881-1973",
     slug: "cat-catching-a-bird",
     letter: "P"
@@ -772,7 +772,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61 x 50",
     sellingDimensions: "61 x 50",
     price: 2590,
-    image: "/image/p/portrait-of-a-woman-in-d'hermine pass.webp",
+    image: "/image/p/portrait of a woman in d'hermine pass.webp",
     artistLifespan: "1881-1973",
     slug: "portrait-of-a-woman-in-dhermine-pass",
     letter: "P"
@@ -784,7 +784,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "22.5 x 16.5",
     sellingDimensions: "22.5 x 16.5",
     price: 1950,
-    image: "/image/p/self-portrait.webp",
+    image: "/image/p/self portrait.webp",
     artistLifespan: "1881-1973",
     slug: "self-portrait-picasso",
     letter: "P"
@@ -796,7 +796,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "47 x 38",
     sellingDimensions: "47 x 38",
     price: 2980,
-    image: "/image/p/the-brutal-embrace.webp",
+    image: "/image/p/the brutal embrace.webp",
     artistLifespan: "1881-1973",
     slug: "the-brutal-embrace",
     letter: "P"
@@ -808,7 +808,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "116 x 88.5",
     sellingDimensions: "116 x 88.5",
     price: 4100,
-    image: "/image/p/jacqueline-with-flowers.webp",
+    image: "/image/p/jacqueline with flowers.webp",
     artistLifespan: "1881-1973",
     slug: "jacqueline-with-flowers",
     letter: "P"
@@ -820,7 +820,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "195 x 129",
     sellingDimensions: "195 x 129",
     price: 6200,
-    image: "/image/p/large-red-nude-in-red-armchair.webp",
+    image: "/image/p/large red nude in red armchair.webp",
     artistLifespan: "1881-1973",
     slug: "large-red-nude-in-red-armchair",
     letter: "P"
@@ -832,7 +832,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "65.3 x 81.5",
     sellingDimensions: "65.3 x 81.5",
     price: 3274,
-    image: "/image/p/quai-malaquais,-sunny-afternoon.webp",
+    image: "/image/p/quai malaquais, sunny afternoon.webp",
     artistLifespan: "1830-1903",
     slug: "quai-malaquais-sunny-afternoon",
     letter: "P"
@@ -844,7 +844,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "54 x 65",
     sellingDimensions: "54 x 65",
     price: 2637,
-    image: "/image/p/the-pont-royal-and-pavillion-de-flore.webp",
+    image: "/image/p/the pont royal and pavillion de flore.webp",
     artistLifespan: "1830-1903",
     slug: "the-pont-royal-and-pavillion-de-flore",
     letter: "P"
@@ -856,7 +856,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "56 x 68",
     sellingDimensions: "56 x 68",
     price: 2411,
-    image: "/image/p/the-louvre-and-the-siene-from-pont-neuf.webp",
+    image: "/image/p/the louvre and the siene from pont neuf.webp",
     artistLifespan: "1830-1903",
     slug: "the-louvre-and-the-siene-from-pont-neuf",
     letter: "P"
@@ -880,7 +880,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61 x 75",
     sellingDimensions: "61 x 75",
     price: 4993,
-    image: "/image/p/boulevard-montemarte-afternoon-in-the-rain.webp",
+    image: "/image/p/boulevard montemarte afternoon in the rain.webp",
     artistLifespan: "1830-1903",
     slug: "boulevard-montemarte-afternoon-in-the-rain",
     letter: "P"
@@ -892,7 +892,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61.3 x 51",
     sellingDimensions: "61.3 x 51",
     price: 3445,
-    image: "/image/p/brother-and-sister.webp",
+    image: "/image/p/brother and sister.webp",
     artistLifespan: "1857-1927",
     slug: "brother-and-sister",
     letter: "P"
@@ -904,7 +904,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76.7 x 101.8",
     sellingDimensions: "76.7 x 101.8",
     price: 3770,
-    image: "/image/p/a-sailing-party.webp",
+    image: "/image/p/a sailing party.webp",
     artistLifespan: "1857-1927",
     slug: "a-sailing-party",
     letter: "P"
@@ -916,7 +916,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "65 x 81",
     sellingDimensions: "65 x 81",
     price: 2535,
-    image: "/image/p/holland-peasant-with-cow.webp",
+    image: "/image/p/holland peasant with cow.webp",
     artistLifespan: "1857-1927",
     slug: "holland-peasant-with-cow",
     letter: "P"
@@ -928,7 +928,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "50 x 64.8",
     sellingDimensions: "50 x 64.8",
     price: 3364,
-    image: "/image/p/dutch-interior.webp",
+    image: "/image/p/dutch interior.webp",
     artistLifespan: "1857-1927",
     slug: "dutch-interior",
     letter: "P"
@@ -952,7 +952,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "230 x 309",
     sellingDimensions: "230 x 309",
     price: 32035,
-    image: "/image/p/the-queen-of-sheba-before-solomon.webp",
+    image: "/image/p/the queen of sheba before solomon.webp",
     artistLifespan: "1613-1699",
     slug: "the-queen-of-sheba-before-solomon",
     letter: "P"
@@ -964,7 +964,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "217.2 x 170.2",
     sellingDimensions: "217.2 x 170.2",
     price: 20559,
-    image: "/image/p/john-the-baptist-preaching.webp",
+    image: "/image/p/john the baptist preaching.webp",
     artistLifespan: "1613-1699",
     slug: "john-the-baptist-preaching",
     letter: "P"
@@ -976,7 +976,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "125 x 101",
     sellingDimensions: "125 x 101",
     price: 13643,
-    image: "/image/p/st-paul-the-hermit.webp",
+    image: "/image/p/st paul the hermit.webp",
     artistLifespan: "1613-1699",
     slug: "st-paul-the-hermit",
     letter: "P"
@@ -988,7 +988,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "91 x 64",
     sellingDimensions: "91 x 64",
     price: 12091,
-    image: "/image/p/interior-of-st-george's chapel.webp",
+    image: "/image/p/interior of st george's chapel.webp",
     artistLifespan: "1800-1870",
     slug: "interior-of-st-georges-chapel",
     letter: "P"
@@ -1000,7 +1000,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "70 x 91",
     sellingDimensions: "70 x 91",
     price: 11138,
-    image: "/image/p/south-coridoor-windsor-castle.webp",
+    image: "/image/p/south coridoor windsor castle.webp",
     artistLifespan: "1800-1870",
     slug: "south-coridoor-windsor-castle",
     letter: "P"
@@ -1012,7 +1012,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "63 x 91",
     sellingDimensions: "63 x 91",
     price: 10737,
-    image: "/image/p/the-queen's private sitting room windsor castle.webp",
+    image: "/image/p/the queen's private sitting room windsor castle.webp",
     artistLifespan: "1800-1870",
     slug: "the-queens-private-sitting-room-windsor-castle",
     letter: "P"
@@ -1024,7 +1024,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "68 x 91",
     sellingDimensions: "68 x 91",
     price: 10000,
-    image: "/image/p/the-library-windsor-castle.webp",
+    image: "/image/p/the library windsor castle.webp",
     artistLifespan: "1800-1870",
     slug: "the-library-windsor-castle",
     letter: "P"
@@ -1060,7 +1060,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "40 x 56",
     sellingDimensions: "40 x 56",
     price: 4950,
-    image: "/image/p/stenographic-figure.webp",
+    image: "/image/p/stenographic figure.webp",
     artistLifespan: "1930-1935",
     slug: "stenographic-figure",
     letter: "P"
@@ -1072,7 +1072,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "73.1 x 49",
     sellingDimensions: "73.1 x 49",
     price: 8100,
-    image: "/image/p/male-and-female.webp",
+    image: "/image/p/male and female.webp",
     artistLifespan: "1930-1935",
     slug: "male-and-female",
     letter: "P"
@@ -1084,7 +1084,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "175.2 x 109.3",
     sellingDimensions: "175.2 x 109.3",
     price: 15900,
-    image: "/image/p/moon-woman.webp",
+    image: "/image/p/moon woman.webp",
     artistLifespan: "1930-1935",
     slug: "moon-woman",
     letter: "P"
@@ -1096,7 +1096,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "47.6 x 60.6",
     sellingDimensions: "47.6 x 60.6",
     price: 8000,
-    image: "/image/p/blue-moby-dick.webp",
+    image: "/image/p/blue moby dick.webp",
     artistLifespan: "1930-1935",
     slug: "blue-moby-dick",
     letter: "P"
@@ -1108,7 +1108,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "40 x 28",
     sellingDimensions: "40 x 28",
     price: 4210,
-    image: "/image/p/the-tea-cup.webp",
+    image: "/image/p/the tea cup.webp",
     artistLifespan: "1930-1935",
     slug: "the-tea-cup",
     letter: "P"
@@ -1120,7 +1120,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "149.8 x 208.3",
     sellingDimensions: "149.8 x 208.3",
     price: 18900,
-    image: "/image/p/the-key.webp",
+    image: "/image/p/the key.webp",
     artistLifespan: "1930-1935",
     slug: "the-key",
     letter: "P"
@@ -1132,7 +1132,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "129.2 x 76.5",
     sellingDimensions: "129.2 x 76.5",
     price: 12200,
-    image: "/image/p/full-fathom-five.webp",
+    image: "/image/p/full fathom five.webp",
     artistLifespan: "1930-1935",
     slug: "full-fathom-five",
     letter: "P"
@@ -1168,7 +1168,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "212.1 x 488.9",
     sellingDimensions: "212.1 x 488.9",
     price: 26900,
-    image: "/image/p/blue-poles-no.11.webp",
+    image: "/image/p/blue poles no.11.webp",
     artistLifespan: "1930-1935",
     slug: "blue-poles-no-11",
     letter: "P"
@@ -1180,7 +1180,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "223.5 x 302.3",
     sellingDimensions: "223.5 x 302.3",
     price: 22000,
-    image: "/image/p/number-one-(lavender-mist).webp",
+    image: "/image/p/number one (lavender mist).webp",
     artistLifespan: "1930-1935",
     slug: "number-one-lavender-mist",
     letter: "P"
@@ -1204,7 +1204,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "220.4 x 150.2",
     sellingDimensions: "220.4 x 150.2",
     price: 18100,
-    image: "/image/p/the-deep.webp",
+    image: "/image/p/the deep.webp",
     artistLifespan: "1930-1935",
     slug: "the-deep",
     letter: "P"
@@ -1216,7 +1216,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "44.5 x 56.2",
     sellingDimensions: "44.5 x 56.2",
     price: 7200,
-    image: "/image/p/ink-on-paper.webp",
+    image: "/image/p/ink on paper.webp",
     artistLifespan: "1930-1935",
     slug: "ink-on-paper",
     letter: "P"
@@ -1228,7 +1228,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "112 x 85.5",
     sellingDimensions: "112 x 86.5",
     price: 5112,
-    image: "/image/p/number-17-a.webp",
+    image: "/image/p/number 17 a.webp",
     artistLifespan: "1930-1935",
     slug: "number-17-a",
     letter: "P"
@@ -1241,7 +1241,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "24.2 x 33",
     sellingDimensions: "24.2 x 33",
     price: 2263,
-    image: "/image/r/the-kiss.webp",
+    image: "/image/r/the kiss.webp",
     artistLifespan: "1852-1909",
     slug: "the-kiss-ralli",
     letter: "R"
@@ -1253,7 +1253,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "35 x 27.5",
     sellingDimensions: "35 x 27.5",
     price: 2823,
-    image: "/image/r/the-laundress.webp",
+    image: "/image/r/the laundress.webp",
     artistLifespan: "1852-1909",
     slug: "the-laundress",
     letter: "R"
@@ -1265,7 +1265,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "22 x 16",
     sellingDimensions: "22 x 16",
     price: 2250,
-    image: "/image/r/turkish-woman.webp",
+    image: "/image/r/turkish woman.webp",
     artistLifespan: "1852-1909",
     slug: "turkish-woman",
     letter: "R"
@@ -1277,7 +1277,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "26.7 x 35",
     sellingDimensions: "26.7 x 35",
     price: 2682,
-    image: "/image/r/a-moments-rest.webp",
+    image: "/image/r/a moments rest.webp",
     artistLifespan: "1852-1909",
     slug: "a-moments-rest",
     letter: "R"
@@ -1289,7 +1289,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "85 x 60",
     sellingDimensions: "85 x 60",
     price: 6218,
-    image: "/image/r/portrait-of-a-young-woman.webp",
+    image: "/image/r/portrait of a young woman.webp",
     artistLifespan: "1483-1510",
     slug: "portrait-of-a-young-woman-raphael",
     letter: "R"
@@ -1301,7 +1301,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "155 x 119.5",
     sellingDimensions: "155 x 119.5",
     price: 16241,
-    image: "/image/r/portrait-of-leox,-cardinal-luigi-de-rossi-and-giulio-de-medici.webp",
+    image: "/image/r/portrait of leox, cardinal luigi de rossi and giulio de medici.webp",
     artistLifespan: "1483-1510",
     slug: "portrait-of-leox-cardinal-luigi-de-rossi-and-giulio-de-medici",
     letter: "R"
@@ -1313,7 +1313,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "85 x 64",
     sellingDimensions: "85 x 64",
     price: 9860,
-    image: "/image/r/la-donna-lavatta.webp",
+    image: "/image/r/la donna lavatta.webp",
     artistLifespan: "1483-1510",
     slug: "la-donna-lavatta",
     letter: "R"
@@ -1325,7 +1325,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "547 x 770",
     sellingDimensions: "100 x 142",
     price: 43615,
-    image: "/image/r/school-of-athens.webp",
+    image: "/image/r/school of athens.webp",
     artistLifespan: "1483-1510",
     slug: "school-of-athens",
     letter: "R"
@@ -1337,7 +1337,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "102.2 x 153",
     sellingDimensions: "102.2 x 153",
     price: 4872,
-    image: "/image/r/california-poppy-fields.webp",
+    image: "/image/r/california poppy fields.webp",
     artistLifespan: "1871-1935",
     slug: "california-poppy-fields",
     letter: "R"
@@ -1361,7 +1361,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76.2 x 101.6",
     sellingDimensions: "76.2 x 101.6",
     price: 3624,
-    image: "/image/r/spring-antelope-valley.webp",
+    image: "/image/r/spring antelope valley.webp",
     artistLifespan: "1871-1935",
     slug: "spring-antelope-valley",
     letter: "R"
@@ -1373,7 +1373,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "66 x 91.4",
     sellingDimensions: "66 x 91.4",
     price: 3299,
-    image: "/image/r/a-field-of-californian-poppies.webp",
+    image: "/image/r/a field of californian poppies.webp",
     artistLifespan: "1871-1935",
     slug: "a-field-of-californian-poppies",
     letter: "R"
@@ -1385,7 +1385,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "62.2 x 76.2",
     sellingDimensions: "62.2 x 76.2",
     price: 11795,
-    image: "/image/r/the-flirtation.webp",
+    image: "/image/r/the flirtation.webp",
     artistLifespan: "1858-1938",
     slug: "the-flirtation",
     letter: "R"
@@ -1397,7 +1397,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "64 x 80",
     sellingDimensions: "64 x 80",
     price: 12879,
-    image: "/image/r/death-of-cleopatra.webp",
+    image: "/image/r/death of cleopatra.webp",
     artistLifespan: "1754-1829",
     slug: "death-of-cleopatra",
     letter: "R"
@@ -1409,7 +1409,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "204 x 153.5",
     sellingDimensions: "101 x 77",
     price: 14835,
-    image: "/image/r/the-three-graces.webp",
+    image: "/image/r/the three graces.webp",
     artistLifespan: "1754-1829",
     slug: "the-three-graces",
     letter: "R"
@@ -1421,7 +1421,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76 x 63",
     sellingDimensions: "76 x 63",
     price: 10670,
-    image: "/image/r/portrait-of-a-officer-from-the-napoleonic-wars.webp",
+    image: "/image/r/portrait of a officer from the napoleonic wars.webp",
     artistLifespan: "1754-1829",
     slug: "portrait-of-a-officer-from-the-napoleonic-wars",
     letter: "R"
@@ -1433,7 +1433,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "221 x 176.2",
     sellingDimensions: "110.5 x 88",
     price: 31683,
-    image: "/image/r/the-judgement-of-paris.webp",
+    image: "/image/r/the judgement of paris.webp",
     artistLifespan: "1754-1829",
     slug: "the-judgement-of-paris",
     letter: "R"
@@ -1445,7 +1445,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "112 x 108.6",
     sellingDimensions: "112 x 108.6",
     price: 5766,
-    image: "/image/r/fleur-de-lis.webp",
+    image: "/image/r/fleur de lis.webp",
     artistLifespan: "1862-1929",
     slug: "fleur-de-lis",
     letter: "R"
@@ -1457,7 +1457,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "95 x 77",
     sellingDimensions: "95 x 77",
     price: 4570,
-    image: "/image/r/the-mirror.webp",
+    image: "/image/r/the mirror.webp",
     artistLifespan: "1862-1929",
     slug: "the-mirror",
     letter: "R"
@@ -1469,7 +1469,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "91 x 76.2",
     sellingDimensions: "91 x 76.2",
     price: 4664,
-    image: "/image/r/the-white-parasol.webp",
+    image: "/image/r/the white parasol.webp",
     artistLifespan: "1862-1929",
     slug: "the-white-parasol",
     letter: "R"
@@ -1481,7 +1481,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "73.6 x 68",
     sellingDimensions: "73.6 x 68",
     price: 4425,
-    image: "/image/r/the-violet-kimono.webp",
+    image: "/image/r/the violet kimono.webp",
     artistLifespan: "1862-1929",
     slug: "the-violet-kimono",
     letter: "R"
@@ -1493,7 +1493,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "103 x 102.8",
     sellingDimensions: "103 x 102.8",
     price: 4857,
-    image: "/image/r/the-bathers.webp",
+    image: "/image/r/the bathers.webp",
     artistLifespan: "1862-1929",
     slug: "the-bathers-reid",
     letter: "R"
@@ -1505,7 +1505,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "58 x 46",
     sellingDimensions: "58 x 46",
     price: 5643,
-    image: "/image/r/jeremiah-lamenting-the-destruction-of-jerusalem.webp",
+    image: "/image/r/jeremiah lamenting the destruction of jerusalem.webp",
     artistLifespan: "1606-1669",
     slug: "jeremiah-lamenting-the-destruction-of-jerusalem",
     letter: "R"
@@ -1517,7 +1517,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "60 x 48",
     sellingDimensions: "69 x 48",
     price: 5344,
-    image: "/image/r/the-prophetess-anna-(known-as-rembrandt's mother).webp",
+    image: "/image/r/the prophetess anna (known as rembrandt's mother).webp",
     artistLifespan: "1606-1669",
     slug: "the-prophetess-anna-known-as-rembrandts-mother",
     letter: "R"
@@ -1529,7 +1529,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61 x 49",
     sellingDimensions: "61 x 49",
     price: 7061,
-    image: "/image/r/simeon-in-temple.webp",
+    image: "/image/r/simeon in temple.webp",
     artistLifespan: "1606-1669",
     slug: "simeon-in-temple",
     letter: "R"
@@ -1541,7 +1541,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "67.5 x 51.8",
     sellingDimensions: "67.5 x 51.8",
     price: 5788,
-    image: "/image/r/an-old-military-costume-(man-with-a-plume).webp",
+    image: "/image/r/an old military costume (man with a plume).webp",
     artistLifespan: "1606-1669",
     slug: "an-old-military-costume-man-with-a-plume",
     letter: "R"
@@ -1553,7 +1553,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "152.7 x 111.1",
     sellingDimensions: "152.7 x 111.1",
     price: 7168,
-    image: "/image/r/man-in-oriental-costume-(the-noble-slav).webp",
+    image: "/image/r/man in oriental costume (the noble slav).webp",
     artistLifespan: "1606-1669",
     slug: "man-in-oriental-costume-the-noble-slav",
     letter: "R"
@@ -1565,7 +1565,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "169.5 x 216",
     sellingDimensions: "169.5 x 216",
     price: 26107,
-    image: "/image/r/the-anatomy-lecture-of-dr-nicolas-tulp.webp",
+    image: "/image/r/the anatomy lecture of dr nicolas tulp.webp",
     artistLifespan: "1606-1669",
     slug: "the-anatomy-lecture-of-dr-nicolas-tulp",
     letter: "R"
@@ -1578,7 +1578,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     sellingDimensions: "161.7 x 129.8",
     price: 19231,
     basePrice: 19231,
-    image: "/image/r/storm-on-the-sea-of-galilee.webp",
+    image: "/image/r/storm on the sea of galilee.webp",
     artistLifespan: "1606-1669",
     slug: "storm-on-the-sea-of-galilee",
     letter: "R",
@@ -1595,7 +1595,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "183.5 x 123",
     sellingDimensions: "183.5 x 123",
     price: 15841,
-    image: "/image/r/the-holy-family.webp",
+    image: "/image/r/the holy family.webp",
     artistLifespan: "1606-1669",
     slug: "the-holy-family",
     letter: "R"
@@ -1607,7 +1607,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61 x 49.5",
     sellingDimensions: "61 x 49.5",
     price: 6720,
-    image: "/image/r/christ-and-saint-mary-magdelene-at-the-tomb.webp",
+    image: "/image/r/christ and saint mary magdelene at the tomb.webp",
     artistLifespan: "1606-1669",
     slug: "christ-and-saint-mary-magdelene-at-the-tomb",
     letter: "R"
@@ -1631,7 +1631,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "177 x 129",
     sellingDimensions: "177 x 129",
     price: 13834,
-    image: "/image/r/rape-of-ganymede.webp",
+    image: "/image/r/rape of ganymede.webp",
     artistLifespan: "1606-1669",
     slug: "rape-of-ganymede",
     letter: "R"
@@ -1643,7 +1643,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "206 x 276",
     sellingDimensions: "206 x 276",
     price: 30485,
-    image: "/image/r/the-blinding-of-samson.webp",
+    image: "/image/r/the blinding of samson.webp",
     artistLifespan: "1606-1669",
     slug: "the-blinding-of-samson",
     letter: "R"
@@ -1667,7 +1667,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "66 x 52",
     sellingDimensions: "66 x 52",
     price: 6545,
-    image: "/image/r/the-arcangel-leaving-the-house-of-tobias.webp",
+    image: "/image/r/the arcangel leaving the house of tobias.webp",
     artistLifespan: "1606-1669",
     slug: "the-arcangel-leaving-the-house-of-tobias",
     letter: "R"
@@ -1679,7 +1679,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "145 x 135.5",
     sellingDimensions: "145 x 135.5",
     price: 13270,
-    image: "/image/r/dead-peacocks.webp",
+    image: "/image/r/dead peacocks.webp",
     artistLifespan: "1606-1669",
     slug: "dead-peacocks",
     letter: "R"
@@ -1691,7 +1691,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "102 x 80",
     sellingDimensions: "102 x 80",
     price: 7720,
-    image: "/image/r/self-portrait-age-34.webp",
+    image: "/image/r/self portrait age 34.webp",
     artistLifespan: "1606-1669",
     slug: "self-portrait-age-34",
     letter: "R"
@@ -1703,7 +1703,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "105.2 x 83.9",
     sellingDimensions: "105.2 x 83.9",
     price: 9442,
-    image: "/image/r/portrait-of-agatha-bas.webp",
+    image: "/image/r/portrait of agatha bas.webp",
     artistLifespan: "1606-1669",
     slug: "portrait-of-agatha-bas",
     letter: "R"
@@ -1715,7 +1715,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "363 x 437",
     sellingDimensions: "363 x 437",
     price: 29800,
-    image: "/image/r/the-night-watch.webp",
+    image: "/image/r/the night watch.webp",
     artistLifespan: "1606-1669",
     slug: "the-night-watch",
     letter: "R"
@@ -1727,7 +1727,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "83.8 x 65.4",
     sellingDimensions: "83.8 x 65.4",
     price: 9933,
-    image: "/image/r/christ-and-the-women-taken-in-adultery.webp",
+    image: "/image/r/christ and the women taken in adultery.webp",
     artistLifespan: "1606-1669",
     slug: "christ-and-the-women-taken-in-adultery",
     letter: "R"
@@ -1739,7 +1739,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76.6 x 92.7",
     sellingDimensions: "76.6 x 92.7",
     price: 8677,
-    image: "/image/r/suzanne-in-the-bath.webp",
+    image: "/image/r/suzanne in the bath.webp",
     artistLifespan: "1606-1669",
     slug: "suzanne-in-the-bath",
     letter: "R"
@@ -1751,7 +1751,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "143.5 x 136.5",
     sellingDimensions: "143.5 x 136.5",
     price: 16354,
-    image: "/image/r/aristotle-with-a-bust-of-homer.webp",
+    image: "/image/r/aristotle with a bust of homer.webp",
     artistLifespan: "1606-1669",
     slug: "aristotle-with-a-bust-of-homer",
     letter: "R"
@@ -1763,7 +1763,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61.8 x 47",
     sellingDimensions: "61.8 x 47",
     price: 5646,
-    image: "/image/r/a-woman-bathing-in-the-stream.webp",
+    image: "/image/r/a woman bathing in the stream.webp",
     artistLifespan: "1606-1669",
     slug: "a-woman-bathing-in-the-stream",
     letter: "R"
@@ -1775,7 +1775,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "142 x 142",
     sellingDimensions: "142 x 142",
     price: 13840,
-    image: "/image/r/bathsheba-at-her-bath.webp",
+    image: "/image/r/bathsheba at her bath.webp",
     artistLifespan: "1606-1669",
     slug: "bathsheba-at-her-bath",
     letter: "R"
@@ -1787,7 +1787,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "88.5 x 67",
     sellingDimensions: "88.5 x 67",
     price: 6638,
-    image: "/image/r/hendrickje-stoffels-in-the-window.webp",
+    image: "/image/r/hendrickje stoffels in the window.webp",
     artistLifespan: "1606-1669",
     slug: "hendrickje-stoffels-in-the-window",
     letter: "R"
@@ -1799,7 +1799,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "175.5 x 210.5",
     sellingDimensions: "175.5 x 210.5",
     price: 15294,
-    image: "/image/r/jacob-blessing-the-children-of-joseph.webp",
+    image: "/image/r/jacob blessing the children of joseph.webp",
     artistLifespan: "1606-1669",
     slug: "jacob-blessing-the-children-of-joseph",
     letter: "R"
@@ -1811,7 +1811,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "133.6 x 103.8",
     sellingDimensions: "133.6 x 103.8",
     price: 8867,
-    image: "/image/r/self-portrait.webp",
+    image: "/image/r/self portrait.webp",
     artistLifespan: "1606-1669",
     slug: "self-portrait-rembrandt-von-rijn",
     letter: "R"
@@ -1823,7 +1823,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "121.5 x 166.5",
     sellingDimensions: "121.5 x 166.5",
     price: 15271,
-    image: "/image/r/the-jewish-bride.webp",
+    image: "/image/r/the jewish bride.webp",
     artistLifespan: "1606-1669",
     slug: "the-jewish-bride",
     letter: "R"
@@ -1835,7 +1835,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "262 x 202",
     sellingDimensions: "262 x 202",
     price: 22655,
-    image: "/image/r/the-return-of-the-prodigal-son.webp",
+    image: "/image/r/the return of the prodigal son.webp",
     artistLifespan: "1606-1669",
     slug: "the-return-of-the-prodigal-son",
     letter: "R"
@@ -1859,7 +1859,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "15.5 x 12.2",
     sellingDimensions: "15.5 x 12.2",
     price: 2569,
-    image: "/image/r/old-woman-praying-(rembrandt's mother).webp",
+    image: "/image/r/old woman praying (rembrandt's mother).webp",
     artistLifespan: "1606-1669",
     slug: "old-woman-praying-rembrandts-mother",
     letter: "R"
@@ -1871,7 +1871,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "87.3 x 72",
     sellingDimensions: "87.3 x 72",
     price: 4851,
-    image: "/image/r/old-man-praying.webp",
+    image: "/image/r/old man praying.webp",
     artistLifespan: "1606-1669",
     slug: "old-man-praying",
     letter: "R"
@@ -1883,7 +1883,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "25.4 x 20.3",
     sellingDimensions: "25.4 x 20.3",
     price: 5783,
-    image: "/image/r/the-good-samaritan.webp",
+    image: "/image/r/the good samaritan.webp",
     artistLifespan: "1606-1669",
     slug: "the-good-samaritan",
     letter: "R"
@@ -1895,7 +1895,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "97.5 x 129",
     sellingDimensions: "97.5 x 129",
     price: 11781,
-    image: "/image/r/the-twelve-year-old-jesus-in-front-of-the-scribes.webp",
+    image: "/image/r/the twelve year old jesus in front of the scribes.webp",
     artistLifespan: "1606-1669",
     slug: "the-twelve-year-old-jesus-in-front-of-the-scribes",
     letter: "R"
@@ -1907,7 +1907,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61.3 x 47.3",
     sellingDimensions: "61.3 x 47.3",
     price: 6330,
-    image: "/image/r/an-old-woman-(rembrandt's mother).webp",
+    image: "/image/r/an old woman (rembrandt's mother).webp",
     artistLifespan: "1606-1669",
     slug: "an-old-woman-rembrandts-mother",
     letter: "R"
@@ -1919,7 +1919,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "193 x 132",
     sellingDimensions: "193 x 132",
     price: 10259,
-    image: "/image/r/the-sacrifice-of-abraham.webp",
+    image: "/image/r/the sacrifice of abraham.webp",
     artistLifespan: "1606-1669",
     slug: "the-sacrifice-of-abraham",
     letter: "R"
@@ -1931,7 +1931,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "84.4 x 66",
     sellingDimensions: "84.4 x 66",
     price: 4000,
-    image: "/image/r/self-portrait-rembrandt.webp",
+    image: "/image/r/self portrait rembrandt.webp",
     artistLifespan: "1606-1669",
     slug: "self-portrait-rembrandt",
     letter: "R"
@@ -1943,7 +1943,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "117 x 91",
     sellingDimensions: "117 x 91",
     price: 8442,
-    image: "/image/r/holy-family.webp",
+    image: "/image/r/holy family.webp",
     artistLifespan: "1606-1669",
     slug: "holy-family",
     letter: "R"
@@ -1955,7 +1955,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "50 x 40",
     sellingDimensions: "50 x 40",
     price: 3500,
-    image: "/image/r/the-banana-leaf-loader.webp",
+    image: "/image/r/the banana leaf loader.webp",
     artistLifespan: "1886-1957",
     slug: "the-banana-leaf-loader",
     letter: "R"
@@ -1967,7 +1967,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "147.3 x 120.7",
     sellingDimensions: "147.3 x 120.7",
     price: 9200,
-    image: "/image/r/flower-festival.webp",
+    image: "/image/r/flower festival.webp",
     artistLifespan: "1886-1957",
     slug: "flower-festival",
     letter: "R"
@@ -1979,7 +1979,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "121.9 x 121.3",
     sellingDimensions: "121.9 x 121.4",
     price: 8700,
-    image: "/image/r/the-flower-carrier.webp",
+    image: "/image/r/the flower carrier.webp",
     artistLifespan: "1886-1957",
     slug: "the-flower-carrier",
     letter: "R"
@@ -1991,7 +1991,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "106.7 x 121.9",
     sellingDimensions: "106.7 x 121.9",
     price: 8625,
-    image: "/image/r/the-woman-grinding-maiize.webp",
+    image: "/image/r/the woman grinding maiize.webp",
     artistLifespan: "1886-1957",
     slug: "the-woman-grinding-maiize",
     letter: "R"
@@ -2003,7 +2003,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "157 x 124",
     sellingDimensions: "157x 124",
     price: 12800,
-    image: "/image/r/nude-with-calla-lilies.webp",
+    image: "/image/r/nude with calla lilies.webp",
     artistLifespan: "1886-1957",
     slug: "nude-with-calla-lilies",
     letter: "R"
@@ -2015,7 +2015,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "121.9 x 121.9",
     sellingDimensions: "121.9 x 121.9",
     price: 12200,
-    image: "/image/r/the-flower-vendor-(girl-with-lilies).webp",
+    image: "/image/r/the flower vendor (girl with lilies).webp",
     artistLifespan: "1886-1957",
     slug: "the-flower-vendor-girl-with-lilies",
     letter: "R"
@@ -2027,7 +2027,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "56 x 81",
     sellingDimensions: "56 x 81",
     price: 3600,
-    image: "/image/r/la-grenouillere.webp",
+    image: "/image/r/la grenouillere.webp",
     artistLifespan: "1841-1919",
     slug: "la-grenouillere",
     letter: "R"
@@ -2039,7 +2039,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "71 x 92",
     sellingDimensions: "142 x 184",
     price: 6600,
-    image: "/image/r/the-skiff-(la-yole).webp",
+    image: "/image/r/the skiff (la yole).webp",
     artistLifespan: "1841-1919",
     slug: "the-skiff-la-yole",
     letter: "R",
@@ -2056,7 +2056,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "80 x 63.5",
     sellingDimensions: "80 x 63.5",
     price: 4238,
-    image: "/image/r/the-box-at-the-opera-(la-loge).webp",
+    image: "/image/r/the box at the opera (la loge).webp",
     artistLifespan: "1841-1919",
     slug: "the-box-at-the-opera-la-loge",
     letter: "R"
@@ -2068,7 +2068,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "131 x 175",
     sellingDimensions: "131 x 175",
     price: 25500,
-    image: "/image/r/dance-at-the-moulin-del-la-galette.webp",
+    image: "/image/r/dance at the moulin del la galette.webp",
     artistLifespan: "1841-1919",
     slug: "dance-at-the-moulin-del-la-galette",
     letter: "R"
@@ -2080,7 +2080,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "130.1 x 175.5",
     sellingDimensions: "65 x 87.75",
     price: 23250,
-    image: "/image/r/luncheon-on-the-boating-party.webp",
+    image: "/image/r/luncheon on the boating party.webp",
     artistLifespan: "1841-1919",
     slug: "luncheon-on-the-boating-party",
     letter: "R",
@@ -2097,7 +2097,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "100.5 x 81",
     sellingDimensions: "100.5 x 81",
     price: 4650,
-    image: "/image/r/two-sisters-on-the-terrace.webp",
+    image: "/image/r/two sisters on the terrace.webp",
     artistLifespan: "1841-1919",
     slug: "two-sisters-on-the-terrace",
     letter: "R"
@@ -2109,7 +2109,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "180.3 x 114.9",
     sellingDimensions: "180.3 x 114.9",
     price: 4716,
-    image: "/image/r/the-umbrellas.webp",
+    image: "/image/r/the umbrellas.webp",
     artistLifespan: "1841-1919",
     slug: "the-umbrellas",
     letter: "R"
@@ -2121,7 +2121,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "92.1 x 72.4",
     sellingDimensions: "92.1 x 72.4",
     price: 4311,
-    image: "/image/r/by-the-seashore.webp",
+    image: "/image/r/by the seashore.webp",
     artistLifespan: "1841-1919",
     slug: "by-the-seashore",
     letter: "R"
@@ -2133,7 +2133,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "182 x 98",
     sellingDimensions: "182 x 98",
     price: 9467,
-    image: "/image/r/dance-at-bougival.webp",
+    image: "/image/r/dance at bougival.webp",
     artistLifespan: "1841-1919",
     slug: "dance-at-bougival",
     letter: "R"
@@ -2145,7 +2145,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "111.8 x 86.4",
     sellingDimensions: "111.8 x 86.4",
     price: 6461,
-    image: "/image/r/young-girls-at-the-piano.webp",
+    image: "/image/r/young girls at the piano.webp",
     artistLifespan: "1841-1919",
     slug: "young-girls-at-the-piano",
     letter: "R"
@@ -2157,7 +2157,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "128.3 x 102.2",
     sellingDimensions: "128.3 x 102.2",
     price: 7680,
-    image: "/image/r/portrait-of-lady-skipwith.webp",
+    image: "/image/r/portrait of lady skipwith.webp",
     artistLifespan: "1723-1792",
     slug: "portrait-of-lady-skipwith",
     letter: "R"
@@ -2169,7 +2169,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "62 x 47",
     sellingDimensions: "62 x 47",
     price: 6138,
-    image: "/image/r/frances-countess-of-lincoln.webp",
+    image: "/image/r/frances countess of lincoln.webp",
     artistLifespan: "1723-1792",
     slug: "frances-countess-of-lincoln",
     letter: "R"
@@ -2181,7 +2181,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "239.4 x 147.5",
     sellingDimensions: "239.4 x 147.5",
     price: 9110,
-    image: "/image/r/jane-fleming-later-countess-of-harrington.webp",
+    image: "/image/r/jane fleming later countess of harrington.webp",
     artistLifespan: "1723-1792",
     slug: "jane-fleming-later-countess-of-harrington",
     letter: "R"
@@ -2193,7 +2193,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "236 x 144",
     sellingDimensions: "236 x 144",
     price: 17358,
-    image: "/image/r/portrait-of-lady-worsely.webp",
+    image: "/image/r/portrait of lady worsely.webp",
     artistLifespan: "1723-1792",
     slug: "portrait-of-lady-worsely",
     letter: "R"
@@ -2205,7 +2205,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "149 x 196",
     sellingDimensions: "149 x 196",
     price: 25123,
-    image: "/image/r/the-murder-of-abel.webp",
+    image: "/image/r/the murder of abel.webp",
     artistLifespan: "1518-1594",
     slug: "the-murder-of-abel",
     letter: "R"
@@ -2217,7 +2217,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "181 x 226",
     sellingDimensions: "181 x 226",
     price: 22500,
-    image: "/image/r/the-birth-of-john-the-baptist.webp",
+    image: "/image/r/the birth of john the baptist.webp",
     artistLifespan: "1518-1594",
     slug: "the-birth-of-john-the-baptist",
     letter: "R"
@@ -2229,7 +2229,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "150 x 220",
     sellingDimensions: "150 x 220",
     price: 25758,
-    image: "/image/r/the-temptation-of-adam.webp",
+    image: "/image/r/the temptation of adam.webp",
     artistLifespan: "1518-1594",
     slug: "the-temptation-of-adam",
     letter: "R"
@@ -2241,7 +2241,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "71 x 67.5",
     sellingDimensions: "71 x 67.5",
     price: 15025,
-    image: "/image/r/moses-striking-water-from-the-rock.webp",
+    image: "/image/r/moses striking water from the rock.webp",
     artistLifespan: "1518-1594",
     slug: "moses-striking-water-from-the-rock",
     letter: "R"
@@ -2253,7 +2253,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "92.7 x 72.7",
     sellingDimensions: "92.7 x 72.7",
     price: 13817,
-    image: "/image/r/the-madonna-of-the-stars.webp",
+    image: "/image/r/the madonna of the stars.webp",
     artistLifespan: "1518-1594",
     slug: "the-madonna-of-the-stars",
     letter: "R"
@@ -2265,7 +2265,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "92 x 123.2",
     sellingDimensions: "92 x 123.2",
     price: 4800,
-    image: "/image/r/the-burning-of-the-houses-of-parliament.webp",
+    image: "/image/r/the burning of the houses of parliament.webp",
     artistLifespan: "1775-1851",
     slug: "the-burning-of-the-houses-of-parliament",
     letter: "T"
@@ -2277,7 +2277,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "171 x 250",
     sellingDimensions: "171 x 250",
     price: 22000,
-    image: "/image/r/the-shipwreck.webp",
+    image: "/image/r/the shipwreck.webp",
     artistLifespan: "1775-1851",
     slug: "the-shipwreck",
     letter: "T"
@@ -2289,7 +2289,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "50.8 x 66",
     sellingDimensions: "50.8 x 66",
     price: 4800,
-    image: "/image/r/interior-of-salisbury-cathedral.webp",
+    image: "/image/r/interior of salisbury cathedral.webp",
     artistLifespan: "1775-1851",
     slug: "interior-of-salisbury-cathedral",
     letter: "T"
@@ -2301,7 +2301,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "89 x 119.4",
     sellingDimensions: "89 x 119.4",
     price: 7500,
-    image: "/image/r/ivy-bridge-devonshire.webp",
+    image: "/image/r/ivy bridge devonshire.webp",
     artistLifespan: "1775-1851",
     slug: "ivy-bridge-devonshire",
     letter: "T"
@@ -2315,7 +2315,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "33.5 x 28",
     sellingDimensions: "33.5 x 28",
     price: 4449,
-    image: "/image/s/lady-magdelene.webp",
+    image: "/image/s/lady magdelene.webp",
     artistLifespan: "1829-1904",
     slug: "lady-magdelene",
     letter: "S"
@@ -2339,7 +2339,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "92 x 122.6",
     sellingDimensions: "92 x 122.6",
     price: 3695,
-    image: "/image/s/late-moon-rising-(wild-horse-creek).webp",
+    image: "/image/s/late moon rising (wild horse creek).webp",
     artistLifespan: "1871-1954",
     slug: "late-moon-rising-wild-horse-creek",
     letter: "S"
@@ -2351,7 +2351,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "91.4 x 122",
     sellingDimensions: "91.4 x 122",
     price: 3682,
-    image: "/image/s/summer-sunset.webp",
+    image: "/image/s/summer sunset.webp",
     artistLifespan: "1871-1954",
     slug: "summer-sunset",
     letter: "S"
@@ -2363,7 +2363,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "40.6 x 33",
     sellingDimensions: "40.6 x 34",
     price: 2377,
-    image: "/image/s/still-life-with-roses.webp",
+    image: "/image/s/still life with roses.webp",
     artistLifespan: "1871-1954",
     slug: "still-life-with-roses",
     letter: "S"
@@ -2375,7 +2375,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "94 x 124.4",
     sellingDimensions: "94 x 124.4",
     price: 3717,
-    image: "/image/s/twilight-cotton-wood-grove-and-pond.webp",
+    image: "/image/s/twilight cotton wood grove and pond.webp",
     artistLifespan: "1871-1954",
     slug: "twilight-cotton-wood-grove-and-pond",
     letter: "S"
@@ -2387,7 +2387,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "73 x 57.7",
     sellingDimensions: "73 x 57.7",
     price: 11517,
-    image: "/image/s/the-virgin-in-prayer.webp",
+    image: "/image/s/the virgin in prayer.webp",
     artistLifespan: "1609-1685",
     slug: "the-virgin-in-prayer",
     letter: "S",
@@ -2404,7 +2404,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "97.2 x 74",
     sellingDimensions: "97.2 x 74",
     price: 15153,
-    image: "/image/s/the-virgin-and-child-embracing.webp",
+    image: "/image/s/the virgin and child embracing.webp",
     artistLifespan: "1609-1685",
     slug: "the-virgin-and-child-embracing",
     letter: "S"
@@ -2416,7 +2416,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "78 x 76",
     sellingDimensions: "78 x 76",
     price: 11996,
-    image: "/image/s/madonna-and-child.webp",
+    image: "/image/s/madonna and child.webp",
     artistLifespan: "1609-1685",
     slug: "madonna-and-child-sassoferrato",
     letter: "S"
@@ -2428,7 +2428,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "147 x 233",
     sellingDimensions: "147 x 233",
     price: 1289,
-    image: "/image/s/portrait-of-ida-rubenstein.webp",
+    image: "/image/s/portrait of ida rubenstein.webp",
     artistLifespan: "1865-1911",
     slug: "portrait-of-ida-rubenstein",
     letter: "S"
@@ -2440,7 +2440,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "62.3 x 70.6",
     sellingDimensions: "62.3 x 70.6",
     price: 2696,
-    image: "/image/s/portrait-of-mika-morozov.webp",
+    image: "/image/s/portrait of mika morozov.webp",
     artistLifespan: "1865-1911",
     slug: "portrait-of-mika-morozov",
     letter: "S"
@@ -2452,7 +2452,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "237.5 x 160",
     sellingDimensions: "237.5 x 160",
     price: 7535,
-    image: "/image/s/portrait-of-princess-olga-orlova.webp",
+    image: "/image/s/portrait of princess olga orlova.webp",
     artistLifespan: "1865-1911",
     slug: "portrait-of-princess-olga-orlova",
     letter: "S"
@@ -2464,7 +2464,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "88.3 x 120",
     sellingDimensions: "88.3 x 120",
     price: 9390,
-    image: "/image/s/now-is-the-pilrim-year-fair-autumn's charge.webp",
+    image: "/image/s/now is the pilrim year fair autumn's charge.webp",
     artistLifespan: "1872-1919",
     slug: "now-is-the-pilrim-year-fair-autumns-charge",
     letter: "S"
@@ -2476,7 +2476,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "101 x 138",
     sellingDimensions: "101 x 138",
     price: 15722,
-    image: "/image/s/portia-wounding-her-thigh.webp",
+    image: "/image/s/portia wounding her thigh.webp",
     artistLifespan: "1638-1665",
     slug: "portia-wounding-her-thigh",
     letter: "S"
@@ -2488,7 +2488,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76 x 61",
     sellingDimensions: "75 x 61",
     price: 5190,
-    image: "/image/s/penitent-magdalene.webp",
+    image: "/image/s/penitent magdalene.webp",
     artistLifespan: "1638-1665",
     slug: "penitent-magdalene",
     letter: "S"
@@ -2500,7 +2500,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "50 x 65",
     sellingDimensions: "50 x 65",
     price: 2416,
-    image: "/image/s/view-of-the-canal-st-martin.webp",
+    image: "/image/s/view of the canal st martin.webp",
     artistLifespan: "1839-1899",
     slug: "view-of-the-canal-st-martin",
     letter: "S"
@@ -2512,7 +2512,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "38 x 58",
     sellingDimensions: "38 x 58",
     price: 1662,
-    image: "/image/s/under-the-bridge-at-hampton-court.webp",
+    image: "/image/s/under the bridge at hampton court.webp",
     artistLifespan: "1839-1899",
     slug: "under-the-bridge-at-hampton-court",
     letter: "S"
@@ -2524,7 +2524,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "46 x 55",
     sellingDimensions: "46 x 55",
     price: 2170,
-    image: "/image/s/the-road-to-saint-germain-at-marly.webp",
+    image: "/image/s/the road to saint-germain at marly.webp",
     artistLifespan: "1839-1899",
     slug: "the-road-to-saint-germain-at-marly",
     letter: "S"
@@ -2536,7 +2536,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "51 x 69",
     sellingDimensions: "51 x 69",
     price: 2649,
-    image: "/image/s/near-the-banks-of-seine-at-by.webp",
+    image: "/image/s/near the banks of seine at by.webp",
     artistLifespan: "1839-1899",
     slug: "near-the-banks-of-seine-at-by",
     letter: "S"
@@ -2548,7 +2548,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "82.6 x 105.4",
     sellingDimensions: "82.6 x 105.4",
     price: 3618,
-    image: "/image/s/on-the-beach.webp",
+    image: "/image/s/on the beach.webp",
     artistLifespan: "1863-1923",
     slug: "on-the-beach",
     letter: "S"
@@ -2560,7 +2560,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "80 x 50",
     sellingDimensions: "80 x 50",
     price: 2808,
-    image: "/image/s/two-sisters-valencia.webp",
+    image: "/image/s/two sisters valencia.webp",
     artistLifespan: "1863-1923",
     slug: "two-sisters-valencia",
     letter: "S"
@@ -2572,7 +2572,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61.5 x 103.2",
     sellingDimensions: "61.5 x 103.2",
     price: 3489,
-    image: "/image/s/beach-scene.webp",
+    image: "/image/s/beach scene.webp",
     artistLifespan: "1863-1923",
     slug: "beach-scene",
     letter: "S"
@@ -2584,7 +2584,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "77 x 105",
     sellingDimensions: "77 x 105",
     price: 3489,
-    image: "/image/s/bathing-on-the-beach.webp",
+    image: "/image/s/bathing on the beach.webp",
     artistLifespan: "1863-1923",
     slug: "bathing-on-the-beach",
     letter: "S"
@@ -2596,7 +2596,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "112 x 76",
     sellingDimensions: "112 x 76",
     price: 4023,
-    image: "/image/s/clotllde-in-a-evening-dress.webp",
+    image: "/image/s/clotllde in a evening dress.webp",
     artistLifespan: "1863-1923",
     slug: "clotllde-in-a-evening-dress",
     letter: "S"
@@ -2608,7 +2608,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "46.3 x 31",
     sellingDimensions: "46.3 x 31",
     price: 9889,
-    image: "/image/s/lady-reading.webp",
+    image: "/image/s/lady reading.webp",
     artistLifespan: "1825-1879",
     slug: "lady-reading",
     letter: "S"
@@ -2620,7 +2620,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "51 x 43",
     sellingDimensions: "51 x 43",
     price: 8705,
-    image: "/image/s/a-shared-confidence.webp",
+    image: "/image/s/a shared confidence.webp",
     artistLifespan: "1825-1879",
     slug: "a-shared-confidence",
     letter: "S"
@@ -2661,7 +2661,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "90.8 x 74.3",
     sellingDimensions: "90.8 x 74.3",
     price: 21605,
-    image: "/image/s/marriage-proposal.webp",
+    image: "/image/s/marriage proposal.webp",
     artistLifespan: "1825-1879",
     slug: "marriage-proposal",
     letter: "S"
@@ -2673,7 +2673,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "90.2 x 68.6",
     sellingDimensions: "90.2 x 68.6",
     price: 23160,
-    image: "/image/s/the-three-connoisseuers.webp",
+    image: "/image/s/the three connoisseuers.webp",
     artistLifespan: "1825-1879",
     slug: "the-three-connoisseuers",
     letter: "S"
@@ -2685,7 +2685,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "80 x 68.5",
     sellingDimensions: "80 x 68.5",
     price: 21584,
-    image: "/image/s/the-afternoon-visitor.webp",
+    image: "/image/s/the afternoon visitor.webp",
     artistLifespan: "1825-1879",
     slug: "the-afternoon-visitor",
     letter: "S"
@@ -2699,7 +2699,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "89.2 x 102",
     sellingDimensions: "89.2 x 102",
     price: 5384,
-    image: "/image/t/three-sisters-a-study-in-june-sunlight.webp",
+    image: "/image/t/three sisters a study in june sunlight.webp",
     artistLifespan: "1862-1938",
     slug: "three-sisters-a-study-in-june-sunlight",
     letter: "T"
@@ -2711,7 +2711,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "86.3 x 61",
     sellingDimensions: "86.3 x 61",
     price: 3493,
-    image: "/image/t/portrait-of-a-lady.webp",
+    image: "/image/t/portrait of a lady.webp",
     artistLifespan: "1862-1938",
     slug: "portrait-of-a-lady",
     letter: "T"
@@ -2723,7 +2723,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "73.7 x 61",
     sellingDimensions: "73.7 x 61",
     price: 3079,
-    image: "/image/t/the-blue-veil.webp",
+    image: "/image/t/the blue veil.webp",
     artistLifespan: "1862-1938",
     slug: "the-blue-veil",
     letter: "T"
@@ -2735,7 +2735,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76.5 x 89",
     sellingDimensions: "76.5 x 89",
     price: 3497,
-    image: "/image/t/mother-and-child-in-a-boat.webp",
+    image: "/image/t/mother and child in a boat.webp",
     artistLifespan: "1862-1938",
     slug: "mother-and-child-in-a-boat",
     letter: "T"
@@ -2747,7 +2747,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "127.3 x 86.7",
     sellingDimensions: "127.3 x 86.7",
     price: 4522,
-    image: "/image/t/reverie-(kathering-finn).webp",
+    image: "/image/t/reverie (kathering finn).webp",
     artistLifespan: "1862-1938",
     slug: "reverie-kathering-finn",
     letter: "T"
@@ -2759,7 +2759,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "46 x 40",
     sellingDimensions: "46 x 40",
     price: 5671,
-    image: "/image/t/woman-drinking-with-sleeping-soldier.webp",
+    image: "/image/t/woman drinking with sleeping soldier.webp",
     artistLifespan: "1617-1681",
     slug: "woman-drinking-with-sleeping-soldier",
     letter: "T"
@@ -2771,7 +2771,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "36.3 x 30.7",
     sellingDimensions: "36.3 x 30.7",
     price: 6667,
-    image: "/image/t/woman-peeling-apples.webp",
+    image: "/image/t/woman peeling apples.webp",
     artistLifespan: "1617-1681",
     slug: "woman-peeling-apples",
     letter: "T"
@@ -2783,7 +2783,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "68 x 65",
     sellingDimensions: "68 x 65",
     price: 7680,
-    image: "/image/t/man-offering-a-woman-coins.webp",
+    image: "/image/t/man offering a woman coins.webp",
     artistLifespan: "1617-1681",
     slug: "man-offering-a-woman-coins",
     letter: "T"
@@ -2795,7 +2795,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "80 x 75",
     sellingDimensions: "80 x 75",
     price: 11913,
-    image: "/image/t/the-suitor's visit.webp",
+    image: "/image/t/the suitor's visit.webp",
     artistLifespan: "1617-1681",
     slug: "the-suitors-visit",
     letter: "T"
@@ -2807,7 +2807,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76.2 x 58.4",
     sellingDimensions: "76.2 x 58.4",
     price: 8976,
-    image: "/image/t/a-lady-at-her-toilet.webp",
+    image: "/image/t/a lady at her toilet.webp",
     artistLifespan: "1617-1681",
     slug: "a-lady-at-her-toilet",
     letter: "T"
@@ -2819,7 +2819,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "50.1 x 64.7",
     sellingDimensions: "50.1 x 64.7",
     price: 1870,
-    image: "/image/t/young-woman-in-a-boat.webp",
+    image: "/image/t/young woman in a boat.webp",
     artistLifespan: "1836-1902",
     slug: "young-woman-in-a-boat",
     letter: "T"
@@ -2843,7 +2843,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "71.4 x 107.1",
     sellingDimensions: "71.4 x 107.1",
     price: 9315,
-    image: "/image/t/the-letter.webp",
+    image: "/image/t/the letter.webp",
     artistLifespan: "1836-1902",
     slug: "the-letter",
     letter: "T"
@@ -2855,7 +2855,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "68.6 x 91.8",
     sellingDimensions: "68.6 x 91.8",
     price: 8611,
-    image: "/image/t/the-gallery-of-h-m-s-calcutta.webp",
+    image: "/image/t/the gallery of h m s calcutta.webp",
     artistLifespan: "1836-1902",
     slug: "the-gallery-of-h-m-s-calcutta",
     letter: "T"
@@ -2867,7 +2867,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "72.5 x 118",
     sellingDimensions: "72.5 x 118",
     price: 9401,
-    image: "/image/t/the-thames.webp",
+    image: "/image/t/the thames.webp",
     artistLifespan: "1836-1902",
     slug: "the-thames",
     letter: "T"
@@ -2879,7 +2879,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61 x 78",
     sellingDimensions: "61 x 78",
     price: 9152,
-    image: "/image/t/the-convalescent.webp",
+    image: "/image/t/the convalescent.webp",
     artistLifespan: "1836-1902",
     slug: "the-convalescent",
     letter: "T"
@@ -2891,7 +2891,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "91.4 x 50.8",
     sellingDimensions: "91.4 x 50.8",
     price: 6667,
-    image: "/image/t/the-portrait-(miss-lloyd).webp",
+    image: "/image/t/the portrait (miss lloyd).webp",
     artistLifespan: "1836-1902",
     slug: "the-portrait-miss-lloyd",
     letter: "T"
@@ -2903,7 +2903,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "142.2 x 101.6",
     sellingDimensions: "142.2 x 101.6",
     price: 15025,
-    image: "/image/t/the-political-lady.webp",
+    image: "/image/t/the political lady.webp",
     artistLifespan: "1836-1902",
     slug: "the-political-lady",
     letter: "T"
@@ -2915,7 +2915,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "146 x 101.6",
     sellingDimensions: "146 x 101.6",
     price: 15025,
-    image: "/image/t/the-shop-girl-(the-millner's shop).webp",
+    image: "/image/t/the shop girl (the millner's shop).webp",
     artistLifespan: "1836-1902",
     slug: "the-shop-girl-the-millners-shop",
     letter: "T"
@@ -2927,7 +2927,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "81 x 56",
     sellingDimensions: "81 x 56",
     price: 10711,
-    image: "/image/t/on-the-thames.webp",
+    image: "/image/t/on the thames.webp",
     artistLifespan: "1836-1902",
     slug: "on-the-thames",
     letter: "T"
@@ -2939,7 +2939,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "37 x 23.5",
     sellingDimensions: "37 x 23.5",
     price: 4293,
-    image: "/image/t/richmond-bridge.webp",
+    image: "/image/t/richmond bridge.webp",
     artistLifespan: "1836-1902",
     slug: "richmond-bridge",
     letter: "T"
@@ -2951,7 +2951,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "150 x 115.5",
     sellingDimensions: "150 x 115.5",
     price: 6976,
-    image: "/image/t/at-the-moulin-rouge,-the-dance.webp",
+    image: "/image/t/at the moulin rouge, the dance.webp",
     artistLifespan: "1864-1901",
     slug: "at-the-moulin-rouge-the-dance",
     letter: "T"
@@ -2963,7 +2963,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "145 x 149",
     sellingDimensions: "145 x 149",
     price: 5842,
-    image: "/image/t/marcelle-lender-dancing-the-bolero-in-chilperic.webp",
+    image: "/image/t/marcelle lender dancing the bolero in chilperic.webp",
     artistLifespan: "1864-1901",
     slug: "marcelle-lender-dancing-the-bolero-in-chilperic",
     letter: "T"
@@ -2975,7 +2975,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "116.8 x 86.3",
     sellingDimensions: "116.8 x 86.3",
     price: 6010,
-    image: "/image/t/the-bathers.webp",
+    image: "/image/t/the bathers.webp",
     artistLifespan: "1858-1929",
     slug: "the-bathers-henry-scott-tuke",
     letter: "T"
@@ -2987,7 +2987,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61 x 45.7",
     sellingDimensions: "61 x 45.7",
     price: 4473,
-    image: "/image/t/boys-bathing.webp",
+    image: "/image/t/boys bathing.webp",
     artistLifespan: "1858-1929",
     slug: "boys-bathing",
     letter: "T"
@@ -3025,7 +3025,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "82.5 x 70.5",
     sellingDimensions: "82.5 x 70.5",
     price: 4936,
-    image: "/image/u/a-view-of-venice-rio-s-marina.webp",
+    image: "/image/u/a view of venice rio s marina.webp",
     artistLifespan: "1838-1902",
     slug: "a-view-of-venice-rio-s-marina",
     letter: "U"
@@ -3037,7 +3037,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "46.7 x 34.6",
     sellingDimensions: "46.7 x 34.6",
     price: 4316,
-    image: "/image/u/the-grand-canal,-venice.webp",
+    image: "/image/u/the grand canal, venice.webp",
     artistLifespan: "1838-1902",
     slug: "the-grand-canal-venice-unterberger",
     letter: "U"
@@ -3049,7 +3049,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "80 x 71",
     sellingDimensions: "80 x 71",
     price: 4374,
-    image: "/image/u/venice-view-from-the-zattere-with-san-giorgio-maggiore-in-the-distance.webp",
+    image: "/image/u/venice view from the zattere with san giorgio maggiore in the distance.webp",
     artistLifespan: "1838-1902",
     slug: "venice-view-from-the-zattere-with-san-giorgio-maggiore-in-the-distance",
     letter: "U"
@@ -3061,7 +3061,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "79.3 x 119.4",
     sellingDimensions: "79.3 x 119.4",
     price: 6000,
-    image: "/image/u/canal-in-venice.webp",
+    image: "/image/u/canal in venice.webp",
     artistLifespan: "1838-1902",
     slug: "canal-in-venice",
     letter: "U"
@@ -3073,7 +3073,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "185 x 242.5",
     sellingDimensions: "185 x 242.5",
     price: 16428,
-    image: "/image/u/banquet-still-life.webp",
+    image: "/image/u/banquet still life.webp",
     artistLifespan: "1599-1652",
     slug: "banquet-still-life",
     letter: "U"
@@ -3087,7 +3087,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "46 x 55",
     sellingDimensions: "46 x 55",
     price: 9131,
-    image: "/image/v/still-life-with-peaches-and-grapes.webp",
+    image: "/image/v/still life with peaches and grapes.webp",
     artistLifespan: "1744-1818",
     slug: "still-life-with-peaches-and-grapes",
     letter: "V"
@@ -3099,7 +3099,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "46 x 55",
     sellingDimensions: "46 x 55",
     price: 4443,
-    image: "/image/v/still-life-with-ham.webp",
+    image: "/image/v/still life with ham.webp",
     artistLifespan: "1744-1818",
     slug: "still-life-with-ham",
     letter: "V"
@@ -3111,7 +3111,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "36 x 47.5",
     sellingDimensions: "36 x 47.5",
     price: 6787,
-    image: "/image/v/still-life-with-peaches-and-silver-mugs.webp",
+    image: "/image/v/still life with peaches and silver mugs.webp",
     artistLifespan: "1744-1818",
     slug: "still-life-with-peaches-and-silver-mugs",
     letter: "V"
@@ -3123,7 +3123,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "27.5 x 32.5",
     sellingDimensions: "27.5 x 32.5",
     price: 2751,
-    image: "/image/v/still-life-with-bulbous-bottle.webp",
+    image: "/image/v/still life with bulbous bottle.webp",
     artistLifespan: "1744-1818",
     slug: "still-life-with-bulbous-bottle",
     letter: "V"
@@ -3135,7 +3135,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "49.5 x 61",
     sellingDimensions: "49.5 x 61",
     price: 13282,
-    image: "/image/v/still-life-with-mackrell.webp",
+    image: "/image/v/still life with mackrell.webp",
     artistLifespan: "1744-1818",
     slug: "still-life-with-mackrell",
     letter: "V"
@@ -3147,7 +3147,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "101 x 88",
     sellingDimensions: "101 x 88",
     price: 13409,
-    image: "/image/v/las-meninas.webp",
+    image: "/image/v/las meninas.webp",
     artistLifespan: "1599-1660",
     slug: "las-meninas",
     letter: "V"
@@ -3159,7 +3159,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "129.8 x 99.3",
     sellingDimensions: "129.8 x 99.3",
     price: 10925,
-    image: "/image/v/king-philip-iv-of-spain.webp",
+    image: "/image/v/king philip iv of spain.webp",
     artistLifespan: "1599-1660",
     slug: "king-philip-iv-of-spain",
     letter: "V"
@@ -3171,7 +3171,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "106 x 82",
     sellingDimensions: "106 x 82",
     price: 11084,
-    image: "/image/v/the-waterseller-of-seville.webp",
+    image: "/image/v/the waterseller of seville.webp",
     artistLifespan: "1599-1660",
     slug: "the-waterseller-of-seville",
     letter: "V"
@@ -3183,7 +3183,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "100.5 x 119.5",
     sellingDimensions: "100.5 x 119.5",
     price: 17172,
-    image: "/image/v/an-old-woman-cooking-eggs.webp",
+    image: "/image/v/an old woman cooking eggs.webp",
     artistLifespan: "1599-1660",
     slug: "an-old-woman-cooking-eggs",
     letter: "V"
@@ -3195,7 +3195,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "48.5 x 43",
     sellingDimensions: "48.5 x 43",
     price: 3241,
-    image: "/image/v/villa-medici-in-rome-(pavillion-of-ariadne).webp",
+    image: "/image/v/villa medici in rome (pavillion of ariadne).webp",
     artistLifespan: "1599-1660",
     slug: "villa-medici-in-rome-pavillion-of-ariadne",
     letter: "V"
@@ -3207,7 +3207,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "44 x 38",
     sellingDimensions: "44 x 38",
     price: 2970,
-    image: "/image/v/villa-medici-in-rome-(facade-of-grotto-logia).webp",
+    image: "/image/v/villa medici in rome (facade of grotto logia).webp",
     artistLifespan: "1599-1660",
     slug: "villa-medici-in-rome-facade-of-grotto-logia",
     letter: "V"
@@ -3219,7 +3219,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "46.5 x 40",
     sellingDimensions: "46.5 x 40",
     price: 3039,
-    image: "/image/v/the-girl-with-the-pearl-earring.webp",
+    image: "/image/v/the girl with the pearl earring.webp",
     artistLifespan: "1632-1675",
     slug: "the-girl-with-the-pearl-earring",
     letter: "V"
@@ -3231,7 +3231,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "45.5 x 41",
     sellingDimensions: "45.5 x 41",
     price: 8216,
-    image: "/image/v/the-milkmaid-the-kitchen-maid.webp",
+    image: "/image/v/the milkmaid the kitchen maid.webp",
     artistLifespan: "1632-1675",
     slug: "the-milkmaid-the-kitchen-maid",
     letter: "V"
@@ -3243,7 +3243,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "90.2 x 78.7",
     sellingDimensions: "90.2 x 78.7",
     price: 10058,
-    image: "/image/v/mistress-and-maid.webp",
+    image: "/image/v/mistress and maid.webp",
     artistLifespan: "1632-1675",
     slug: "mistress-and-maid",
     letter: "V"
@@ -3255,7 +3255,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "83 x 64.5",
     sellingDimensions: "83 x 64.5",
     price: 10346,
-    image: "/image/v/girl-reading-a-letter-at-a-open-window.webp",
+    image: "/image/v/girl reading a letter at a open window.webp",
     artistLifespan: "1632-1675",
     slug: "girl-reading-a-letter-at-a-open-window",
     letter: "V"
@@ -3267,7 +3267,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "88 x 101",
     sellingDimensions: "88 x 101",
     price: 21910,
-    image: "/image/v/pope-julius-i-ordering-bramante,-michelangelo-and-raphael-to-construct-the-vatican-and-st-peter's.webp",
+    image: "/image/v/pope julius i ordering bramante, michelangelo and raphael to construct the vatican and st peter's.webp",
     artistLifespan: "1789-1863",
     slug: "pope-julius-i-ordering-bramante-michelangelo-and-raphael-to-construct-the-vatican-and-st-peters",
     letter: "V"
@@ -3279,7 +3279,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "99 x 136.5",
     sellingDimensions: "99 x 136.6",
     price: 26266,
-    image: "/image/v/the-arab-tale-teller.webp",
+    image: "/image/v/the arab tale teller.webp",
     artistLifespan: "1789-1863",
     slug: "the-arab-tale-teller",
     letter: "V"
@@ -3291,7 +3291,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "100 x 137",
     sellingDimensions: "100 x 137",
     price: 10317,
-    image: "/image/v/hunting-in-the-pontine-marshes.webp",
+    image: "/image/v/hunting in the pontine marshes.webp",
     artistLifespan: "1789-1863",
     slug: "hunting-in-the-pontine-marshes",
     letter: "V"
@@ -3303,7 +3303,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "100 x 150.7",
     sellingDimensions: "100 x 150.7",
     price: 8272,
-    image: "/image/v/departure-for-the-hunt-in-the-pontine-marshes.webp",
+    image: "/image/v/departure for the hunt in the pontine marshes.webp",
     artistLifespan: "1789-1863",
     slug: "departure-for-the-hunt-in-the-pontine-marshes",
     letter: "V"
@@ -3315,7 +3315,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "214.6 x 167",
     sellingDimensions: "214.6 x 167",
     price: 36168,
-    image: "/image/v/allegory-of-wisdom-and-strength.webp",
+    image: "/image/v/allegory of wisdom and strength.webp",
     artistLifespan: "1528-1588",
     slug: "allegory-of-wisdom-and-strength",
     letter: "V"
@@ -3327,7 +3327,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "205.7 x 161",
     sellingDimensions: "205.7 x 161",
     price: 36142,
-    image: "/image/v/mars-and-venus-united-by-love.webp",
+    image: "/image/v/mars and venus united by love.webp",
     artistLifespan: "1528-1588",
     slug: "mars-and-venus-united-by-love",
     letter: "V"
@@ -3339,7 +3339,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "57 x 43",
     sellingDimensions: "57 x 43",
     price: 15903,
-    image: "/image/v/moses-saved-from-the-waters.webp",
+    image: "/image/v/moses saved from the waters.webp",
     artistLifespan: "1528-1588",
     slug: "moses-saved-from-the-waters",
     letter: "V"
@@ -3363,7 +3363,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "236.2 x 475",
     sellingDimensions: "236.2 x 475",
     price: 52000,
-    image: "/image/v/the-family-of-darius-before-alexander.webp",
+    image: "/image/v/the family of darius before alexander.webp",
     artistLifespan: "1528-1588",
     slug: "the-family-of-darius-before-alexander",
     letter: "V"
@@ -3375,7 +3375,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "64 x 81",
     sellingDimensions: "64 x 81",
     price: 8202,
-    image: "/image/v/the-marvellous-sauce.webp",
+    image: "/image/v/the marvellous sauce.webp",
     artistLifespan: "1840-1902",
     slug: "the-marvellous-sauce",
     letter: "V"
@@ -3387,7 +3387,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "26 x 36",
     sellingDimensions: "26 x 36",
     price: 6473,
-    image: "/image/v/la-sieste.webp",
+    image: "/image/v/la sieste.webp",
     artistLifespan: "1840-1902",
     slug: "la-sieste",
     letter: "V"
@@ -3399,7 +3399,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "73.7 x 58.4",
     sellingDimensions: "73.7 x 58.4",
     price: 13758,
-    image: "/image/v/the-church-in-danger.webp",
+    image: "/image/v/the church in danger.webp",
     artistLifespan: "1840-1902",
     slug: "the-church-in-danger",
     letter: "V"
@@ -3411,7 +3411,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "36 x 27.7",
     sellingDimensions: "35 x 27.7",
     price: 5353,
-    image: "/image/v/the-view.webp",
+    image: "/image/v/the view.webp",
     artistLifespan: "1840-1902",
     slug: "the-view",
     letter: "V"
@@ -3423,7 +3423,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "37.5 x 46.4",
     sellingDimensions: "37.5 x 46.4",
     price: 11382,
-    image: "/image/v/the-convent-choir.webp",
+    image: "/image/v/the convent choir.webp",
     artistLifespan: "1840-1902",
     slug: "the-convent-choir",
     letter: "V"
@@ -3435,7 +3435,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61 x 45.7",
     sellingDimensions: "61 x 45.7",
     price: 12464,
-    image: "/image/v/tea-for-the-bishop.webp",
+    image: "/image/v/tea for the bishop.webp",
     artistLifespan: "1840-1902",
     slug: "tea-for-the-bishop",
     letter: "V"
@@ -3447,7 +3447,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "71 x 124",
     sellingDimensions: "71 x 124",
     price: 17239,
-    image: "/image/v/eruption-in-vesuvius.webp",
+    image: "/image/v/eruption in vesuvius.webp",
     artistLifespan: "1729-1802",
     slug: "eruption-in-vesuvius",
     letter: "V"
@@ -3459,7 +3459,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "51 x 115",
     sellingDimensions: "51 x 115",
     price: 7365,
-    image: "/image/v/the-eruption-of-vesuvius.webp",
+    image: "/image/v/the eruption of vesuvius.webp",
     artistLifespan: "1729-1802",
     slug: "the-eruption-of-vesuvius",
     letter: "V",
@@ -3476,7 +3476,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76.8 x 92",
     sellingDimensions: "76.8 x 92",
     price: 3004,
-    image: "/image/v/apple-bloom.webp",
+    image: "/image/v/apple bloom.webp",
     artistLifespan: "1858-1930",
     slug: "apple-bloom",
     letter: "V"
@@ -3488,7 +3488,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61 x 110",
     sellingDimensions: "61 x 110",
     price: 3357,
-    image: "/image/v/the-flanders-field-where-soldiers-sleep-and-poppies-grow.webp",
+    image: "/image/v/the flanders field where soldiers sleep and poppies grow.webp",
     artistLifespan: "1858-1930",
     slug: "the-flanders-field-where-soldiers-sleep-and-poppies-grow",
     letter: "V"
@@ -3500,7 +3500,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "61 x 86",
     sellingDimensions: "61 x 86",
     price: 2853,
-    image: "/image/v/the-bridge-at-grez.webp",
+    image: "/image/v/the bridge at grez.webp",
     artistLifespan: "1858-1930",
     slug: "the-bridge-at-grez",
     letter: "V"
@@ -3512,7 +3512,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "65.7 x 50.2",
     sellingDimensions: "65.7 x 50.2",
     price: 2801,
-    image: "/image/v/jardin-de-paysanne.webp",
+    image: "/image/v/jardin de paysanne.webp",
     artistLifespan: "1858-1930",
     slug: "jardin-de-paysanne",
     letter: "V"
@@ -3524,7 +3524,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "30.8 x 51",
     sellingDimensions: "30.8 x 51",
     price: 2766,
-    image: "/image/v/poppies-in-france.webp",
+    image: "/image/v/poppies in france.webp",
     artistLifespan: "1858-1930",
     slug: "poppies-in-france",
     letter: "V"
@@ -3536,7 +3536,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "66 x 56",
     sellingDimensions: "66 x 56",
     price: 6197,
-    image: "/image/v/sleeping-venus.webp",
+    image: "/image/v/sleeping venus.webp",
     artistLifespan: "1590-1649",
     slug: "sleeping-venus",
     letter: "V"
@@ -3560,7 +3560,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "40.6 x 61.6",
     sellingDimensions: "40.6 x 61.6",
     price: 5445,
-    image: "/image/v/model-for-alterpiece-in-st-peter's.webp",
+    image: "/image/v/model for alterpiece in st peter's.webp",
     artistLifespan: "1590-1649",
     slug: "model-for-alterpiece-in-st-peters",
     letter: "V"
@@ -3572,7 +3572,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "88 x 79.5",
     sellingDimensions: "88 x 79.5",
     price: 3787,
-    image: "/image/v/the-voiles-de-genes' boudoir.webp",
+    image: "/image/v/the voiles de genes' boudoir.webp",
     artistLifespan: "1868-1940",
     slug: "the-voiles-de-genes-boudoir",
     letter: "V"
@@ -3584,7 +3584,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "52 x 79",
     sellingDimensions: "52 x 79",
     price: 2697,
-    image: "/image/v/in-a-room.webp",
+    image: "/image/v/in a room.webp",
     artistLifespan: "1868-1940",
     slug: "in-a-room",
     letter: "V"
@@ -3596,7 +3596,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "33 x 27",
     sellingDimensions: "33 x 27",
     price: 1038,
-    image: "/image/v/the-guinguette.webp",
+    image: "/image/v/the guinguette.webp",
     artistLifespan: "1868-1940",
     slug: "the-guinguette",
     letter: "V"
@@ -3608,7 +3608,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "65.7 x 58.7",
     sellingDimensions: "65.7 x 58.7",
     price: 3003,
-    image: "/image/v/woman-in-a-striped-dress.webp",
+    image: "/image/v/woman in a striped dress.webp",
     artistLifespan: "1868-1940",
     slug: "woman-in-a-striped-dress",
     letter: "V"
@@ -3620,7 +3620,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "29.2 x 17.5",
     sellingDimensions: "29.2 x 17.5",
     price: 887,
-    image: "/image/v/child-wearing-a-red-scarf.webp",
+    image: "/image/v/child wearing a red scarf.webp",
     artistLifespan: "1868-1940",
     slug: "child-wearing-a-red-scarf",
     letter: "V"
@@ -3632,7 +3632,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "35 x 27",
     sellingDimensions: "35 x 27",
     price: 982,
-    image: "/image/v/le-vase-bleu.webp",
+    image: "/image/v/le vase bleu.webp",
     artistLifespan: "1868-1940",
     slug: "le-vase-bleu",
     letter: "V"
@@ -3644,7 +3644,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "84.5 x 77.7",
     sellingDimensions: "84.5 x 77.7",
     price: 2916,
-    image: "/image/v/children-in-a-room.webp",
+    image: "/image/v/children in a room.webp",
     artistLifespan: "1868-1940",
     slug: "children-in-a-room",
     letter: "V"
@@ -3658,7 +3658,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "153 x 200",
     sellingDimensions: "153 x 200",
     price: 10560,
-    image: "/image/w/the-lady-of-shalotte.webp",
+    image: "/image/w/the lady of shalotte.webp",
     artistLifespan: "1849-1917",
     slug: "the-lady-of-shalotte",
     letter: "W"
@@ -3670,7 +3670,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "132.1 x 197.5",
     sellingDimensions: "132.1 x 197.5",
     price: 20675,
-    image: "/image/w/hylas-and-nymphs.webp",
+    image: "/image/w/hylas and nymphs.webp",
     artistLifespan: "1849-1917",
     slug: "hylas-and-nymphs",
     letter: "W"
@@ -3694,7 +3694,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "101 x 159",
     sellingDimensions: "101 x 159",
     price: 14429,
-    image: "/image/w/the-tale-of-decameron.webp",
+    image: "/image/w/the tale of decameron.webp",
     artistLifespan: "1849-1917",
     slug: "the-tale-of-decameron",
     letter: "W"
@@ -3706,7 +3706,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "100.3 x 73.6",
     sellingDimensions: "100.3 x 73.6",
     price: 8106,
-    image: "/image/w/i-am-half-sick-of-the-shadows-said-the-lady-of-shallot.webp",
+    image: "/image/w/i am half sick of the shadows said the lady of shallot.webp",
     artistLifespan: "1849-1917",
     slug: "i-am-half-sick-of-the-shadows-said-the-lady-of-shallot",
     letter: "W"
@@ -3730,7 +3730,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "20 x 25",
     sellingDimensions: "20 x 25",
     price: 8818,
-    image: "/image/w/actors-of-the-comedie-francais.webp",
+    image: "/image/w/actors of the comedie-francais.webp",
     artistLifespan: "1684-1721",
     slug: "actors-of-the-comedie-francais",
     letter: "W"
@@ -3742,7 +3742,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "33.1 x 42.6",
     sellingDimensions: "33.1 x 42.6",
     price: 11092,
-    image: "/image/w/les-champs-elisees.webp",
+    image: "/image/w/les champs elisees.webp",
     artistLifespan: "1684-1721",
     slug: "les-champs-elisees",
     letter: "W"
@@ -3754,7 +3754,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "81 x 75",
     sellingDimensions: "81 x 75",
     price: 8910,
-    image: "/image/w/the-festival-of-love-(the-pleasures-of-love).webp",
+    image: "/image/w/the festival of love (the pleasures of love).webp",
     artistLifespan: "1684-1721",
     slug: "the-festival-of-love-the-pleasures-of-love",
     letter: "W"
@@ -3766,7 +3766,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "37.1 x 27.9",
     sellingDimensions: "37.1 x 27.9",
     price: 9932,
-    image: "/image/w/the-fortune-teller.webp",
+    image: "/image/w/the fortune teller.webp",
     artistLifespan: "1684-1721",
     slug: "the-fortune-teller-watteau",
     letter: "W"
@@ -3778,7 +3778,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "80 x 101",
     sellingDimensions: "80 x 101",
     price: 9138,
-    image: "/image/w/dianna-bathing.webp",
+    image: "/image/w/dianna bathing.webp",
     artistLifespan: "1684-1721",
     slug: "dianna-bathing",
     letter: "W"
@@ -3790,7 +3790,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "52.6 x 65.4",
     sellingDimensions: "52.6 x 65.4",
     price: 22124,
-    image: "/image/w/pleasures-of-the-ball.webp",
+    image: "/image/w/pleasures of the ball.webp",
     artistLifespan: "1684-1721",
     slug: "pleasures-of-the-ball",
     letter: "W"
@@ -3802,7 +3802,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "45.2 x 37.8",
     sellingDimensions: "45.2 x 37.8",
     price: 8444,
-    image: "/image/w/a-lady-at-her-toilet.webp",
+    image: "/image/w/a lady at her toilet.webp",
     artistLifespan: "1684-1721",
     slug: "a-lady-at-her-toilet-jean-antoine-watteau",
     letter: "W"
@@ -3814,7 +3814,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "55 x 43",
     sellingDimensions: "55 x 43",
     price: 9048,
-    image: "/image/w/the-shy-lover.webp",
+    image: "/image/w/the shy lover.webp",
     artistLifespan: "1684-1721",
     slug: "the-shy-lover",
     letter: "W"
@@ -3826,7 +3826,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "32.4 x 45.7",
     sellingDimensions: "32.4 x 45.7",
     price: 12048,
-    image: "/image/w/the-spring-fete-champetre-in-a-water-garden-with-figures-in-a-boat.webp",
+    image: "/image/w/the spring fete champetre in a water garden with figures in a boat.webp",
     artistLifespan: "1684-1721",
     slug: "the-spring-fete-champetre-in-a-water-garden-with-figures-in-a-boat",
     letter: "W"
@@ -3838,7 +3838,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "78.8 x 99",
     sellingDimensions: "78.8 x 99",
     price: 4439,
-    image: "/image/w/along-the-ghats-malhuta.webp",
+    image: "/image/w/along the ghats malhuta.webp",
     artistLifespan: "1849-1903",
     slug: "along-the-ghats-malhuta",
     letter: "W"
@@ -3850,7 +3850,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "100.5 x 127",
     sellingDimensions: "100.5 x 127",
     price: 24157,
-    image: "/image/w/the-nautch.webp",
+    image: "/image/w/the nautch.webp",
     artistLifespan: "1849-1903",
     slug: "the-nautch",
     letter: "W"
@@ -3862,7 +3862,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "87.3 x 122",
     sellingDimensions: "87.3 x 122",
     price: 18549,
-    image: "/image/w/departure-for-the-hunt.webp",
+    image: "/image/w/departure for the hunt.webp",
     artistLifespan: "1849-1903",
     slug: "departure-for-the-hunt",
     letter: "W"
@@ -3874,7 +3874,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "99 x 132",
     sellingDimensions: "99 x 132",
     price: 19412,
-    image: "/image/w/the-arrival-of-prince-humbert,-the-rajah-at-the-palace-of-amber.webp",
+    image: "/image/w/the arrival of prince humbert, the rajah at the palace of amber.webp",
     artistLifespan: "1849-1903",
     slug: "the-arrival-of-prince-humbert-the-rajah-at-the-palace-of-amber",
     letter: "W"
@@ -3886,7 +3886,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "87.3 x 70.5",
     sellingDimensions: "87.3 x 70.5",
     price: 9257,
-    image: "/image/w/dead-hare-and-partridges.webp",
+    image: "/image/w/dead hare and partridges.webp",
     artistLifespan: "1621-1660",
     slug: "dead-hare-and-partridges",
     letter: "W"
@@ -3898,7 +3898,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "191 x 166",
     sellingDimensions: "191 x 166",
     price: 22100,
-    image: "/image/w/the-white-peacock.webp",
+    image: "/image/w/the white peacock.webp",
     artistLifespan: "1621-1660",
     slug: "the-white-peacock",
     letter: "W"
@@ -3910,7 +3910,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "84 x 103",
     sellingDimensions: "84 x 103",
     price: 6902,
-    image: "/image/w/portrait-of-a-hazewindhoud-and-a-young-partridge-dog.webp",
+    image: "/image/w/portrait of a hazewindhoud and a young partridge dog.webp",
     artistLifespan: "1621-1660",
     slug: "portrait-of-a-hazewindhoud-and-a-young-partridge-dog",
     letter: "W"
@@ -3922,7 +3922,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76 x 91",
     sellingDimensions: "76 x 91",
     price: 5360,
-    image: "/image/w/the-ballerina-ulla-poulsen-in-the-ballet-chopinana.webp",
+    image: "/image/w/the ballerina ulla poulsen in the ballet chopinana.webp",
     artistLifespan: "1886-1940",
     slug: "the-ballerina-ulla-poulsen-in-the-ballet-chopinana",
     letter: "W"
@@ -3934,7 +3934,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "82 x 61",
     sellingDimensions: "82 x 61",
     price: 4734,
-    image: "/image/w/lili-with-a-feathered-fan.webp",
+    image: "/image/w/lili with a feathered fan.webp",
     artistLifespan: "1886-1940",
     slug: "lili-with-a-feathered-fan",
     letter: "W"
@@ -3946,7 +3946,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "56 x 41",
     sellingDimensions: "56 x 41",
     price: 4587,
-    image: "/image/w/two-cocottes-with-hats-(lili-and-friend).webp",
+    image: "/image/w/two cocottes with hats (lili and friend).webp",
     artistLifespan: "1886-1940",
     slug: "two-cocottes-with-hats-lili-and-friend",
     letter: "W"
@@ -3958,7 +3958,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "98 x 81",
     sellingDimensions: "98 x 81",
     price: 4501,
-    image: "/image/w/the-mask.webp",
+    image: "/image/w/the mask.webp",
     artistLifespan: "1886-1940",
     slug: "the-mask",
     letter: "W"
@@ -3970,7 +3970,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "96 x 85",
     sellingDimensions: "96 x 85",
     price: 5502,
-    image: "/image/w/on-the-anacapri-road.webp",
+    image: "/image/w/on the anacapri road.webp",
     artistLifespan: "1886-1940",
     slug: "on-the-anacapri-road",
     letter: "W"
@@ -3982,7 +3982,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "50 x 40",
     sellingDimensions: "50 x 40",
     price: 6885,
-    image: "/image/w/the-conservatory-at-carlton-house.webp",
+    image: "/image/w/the conservatory at carlton house.webp",
     artistLifespan: "1871-1835",
     slug: "the-conservatory-at-carlton-house",
     letter: "W"
@@ -3994,7 +3994,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "50 x 40",
     sellingDimensions: "50 x 40",
     price: 7658,
-    image: "/image/w/the-conservatory-at-carlton-house-pyne's private residence.webp",
+    image: "/image/w/the conservatory at carlton house pyne's private residence.webp",
     artistLifespan: "1871-1835",
     slug: "the-conservatory-at-carlton-house-pynes-private-residence",
     letter: "W"
@@ -4006,7 +4006,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "71 x 56",
     sellingDimensions: "71 x 56",
     price: 9410,
-    image: "/image/w/interior-of-st-georges-chapel-windsor.webp",
+    image: "/image/w/interior of st georges chapel windsor.webp",
     artistLifespan: "1871-1835",
     slug: "interior-of-st-georges-chapel-windsor",
     letter: "W"
@@ -4018,7 +4018,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "63.5 x 53.5",
     sellingDimensions: "63.5 x 53.5",
     price: 6885,
-    image: "/image/w/an-elegant-beauty.webp",
+    image: "/image/w/an elegant beauty.webp",
     artistLifespan: "1857-1930",
     slug: "an-elegant-beauty",
     letter: "W"
@@ -4030,7 +4030,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "152.4 x 104",
     sellingDimensions: "152.4 x 104",
     price: 10498,
-    image: "/image/w/the-jade-necklace.webp",
+    image: "/image/w/the jade necklace.webp",
     artistLifespan: "1857-1930",
     slug: "the-jade-necklace",
     letter: "W"
@@ -4042,7 +4042,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "130 x 51",
     sellingDimensions: "130 x 51",
     price: 7558,
-    image: "/image/w/the-basket-of-anemones.webp",
+    image: "/image/w/the basket of anemones.webp",
     artistLifespan: "1857-1930",
     slug: "the-basket-of-anemones",
     letter: "W"
@@ -4054,7 +4054,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76.2 x 63.5",
     sellingDimensions: "76.2 x 63.5",
     price: 5944,
-    image: "/image/w/the-false-god.webp",
+    image: "/image/w/the false god.webp",
     artistLifespan: "1857-1930",
     slug: "the-false-god",
     letter: "W"
@@ -4066,7 +4066,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "78 x 65.3",
     sellingDimensions: "78 x 65.3",
     price: 13000,
-    image: "/image/w/american-gothic.webp",
+    image: "/image/w/american gothic.webp",
     artistLifespan: "1891-1942",
     slug: "american-gothic",
     letter: "W"
@@ -4078,7 +4078,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "76.8 x 101.8",
     sellingDimensions: "76.8 x 101.8",
     price: 5076,
-    image: "/image/w/stone-city-iowa.webp",
+    image: "/image/w/stone city iowa.webp",
     artistLifespan: "1891-1942",
     slug: "stone-city-iowa",
     letter: "W"
@@ -4090,7 +4090,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "91.5 x 71",
     sellingDimensions: "91.5 x 71",
     price: 8503,
-    image: "/image/w/a-girl-reading-a-letter-with-an-old-man.webp",
+    image: "/image/w/a girl reading a letter with an old man.webp",
     artistLifespan: "1734-1797",
     slug: "a-girl-reading-a-letter-with-an-old-man",
     letter: "W"
@@ -4102,7 +4102,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "89 x 69.8",
     sellingDimensions: "89 x 69.8",
     price: 7337,
-    image: "/image/w/a-girl-reading-a-letter-by-candle-light-with-a-young-man.webp",
+    image: "/image/w/a girl reading a letter by candle light with a young man.webp",
     artistLifespan: "1734-1797",
     slug: "a-girl-reading-a-letter-by-candle-light-with-a-young-man",
     letter: "W"
@@ -4114,7 +4114,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "103 x 81",
     sellingDimensions: "103 x 81",
     price: 12262,
-    image: "/image/w/miravan-breaking-open-the-tomb-of-his-ancestors.webp",
+    image: "/image/w/miravan breaking open the tomb of his ancestors.webp",
     artistLifespan: "1734-1797",
     slug: "miravan-breaking-open-the-tomb-of-his-ancestors",
     letter: "W"
@@ -4126,7 +4126,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "91 x 112",
     sellingDimensions: "91 x 112",
     price: 6261,
-    image: "/image/w/an-eruption-of-vesuvius-seen-from-portici.webp",
+    image: "/image/w/an eruption of vesuvius seen from portici.webp",
     artistLifespan: "1734-1797",
     slug: "an-eruption-of-vesuvius-seen-from-portici",
     letter: "W"
@@ -4140,7 +4140,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "212 x 112",
     sellingDimensions: "212 x 112",
     price: 13200,
-    image: "/image/y/saint-catherine.webp",
+    image: "/image/y/saint catherine.webp",
     artistLifespan: "1506-1526",
     slug: "saint-catherine",
     letter: "Y"
@@ -4152,7 +4152,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "47 x 55.5",
     sellingDimensions: "47 x 55.5",
     price: 3021,
-    image: "/image/y/in-the-harem.webp",
+    image: "/image/y/in the harem.webp",
     artistLifespan: "1817-1893",
     slug: "in-the-harem",
     letter: "Y"
@@ -4164,7 +4164,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "55.7 x 46.7",
     sellingDimensions: "55.7 x 46.7",
     price: 3021,
-    image: "/image/y/napoleon-iii.webp",
+    image: "/image/y/napoleon iii.webp",
     artistLifespan: "1817-1893",
     slug: "napoleon-iii",
     letter: "Y"
@@ -4178,7 +4178,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "56 x 45",
     sellingDimensions: "56 x 45",
     price: 23511,
-    image: "/image/z/the-favourite-of-the-king.webp",
+    image: "/image/z/the favourite of the king.webp",
     artistLifespan: "1842-1871",
     slug: "the-favourite-of-the-king",
     letter: "Z"
@@ -4190,7 +4190,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "35.5 x 27",
     sellingDimensions: "35.5 x 27",
     price: 11590,
-    image: "/image/z/a-momentary-diversion.webp",
+    image: "/image/z/a momentary diversion.webp",
     artistLifespan: "1842-1871",
     slug: "a-momentary-diversion",
     letter: "Z"
@@ -4202,7 +4202,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "82 x 51",
     sellingDimensions: "82 x 51",
     price: 4083,
-    image: "/image/z/in-werners-rowing-boat.webp",
+    image: "/image/z/in werners rowing boat.webp",
     artistLifespan: "1860-1920",
     slug: "in-werners-rowing-boat",
     letter: "Z"
@@ -4214,7 +4214,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "60 x 36",
     sellingDimensions: "60 x 36",
     price: 2961,
-    image: "/image/z/morning-toilet-with-his-mother.webp",
+    image: "/image/z/morning toilet with his mother.webp",
     artistLifespan: "1860-1920",
     slug: "morning-toilet-with-his-mother",
     letter: "Z"
@@ -4226,7 +4226,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "101 x 66",
     sellingDimensions: "101 x 66",
     price: 4813,
-    image: "/image/z/night-effect.webp",
+    image: "/image/z/night effect.webp",
     artistLifespan: "1860-1920",
     slug: "night-effect",
     letter: "Z"
@@ -4250,7 +4250,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "66 x 53",
     sellingDimensions: "66 x 53",
     price: 4368,
-    image: "/image/z/st-francis-in-ecstacy.webp",
+    image: "/image/z/st francis in ecstacy.webp",
     artistLifespan: "1598-1664",
     slug: "st-francis-in-ecstacy",
     letter: "Z"
@@ -4262,7 +4262,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "37.3 x 62",
     sellingDimensions: "37.3 x 62",
     price: 4666,
-    image: "/image/z/agnus-dei.webp",
+    image: "/image/z/agnus dei.webp",
     artistLifespan: "1598-1664",
     slug: "agnus-dei",
     letter: "Z"
@@ -4274,7 +4274,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "162 x 137",
     sellingDimensions: "162 x 137",
     price: 10360,
-    image: "/image/z/st-francis-in-meditation.webp",
+    image: "/image/z/st francis in meditation.webp",
     artistLifespan: "1598-1664",
     slug: "st-francis-in-meditation",
     letter: "Z"
@@ -4286,7 +4286,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "91 x 71",
     sellingDimensions: "91 x 71",
     price: 7360,
-    image: "/image/z/the-immaculate-conception.webp",
+    image: "/image/z/the immaculate conception.webp",
     artistLifespan: "1598-1664",
     slug: "the-immaculate-conception",
     letter: "Z"
@@ -4298,7 +4298,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     originalDimensions: "21.2 x 30.1",
     sellingDimensions: "21.2 x 30.1",
     price: 3932,
-    image: "/image/z/a-cup-of-water-and-a-rose-on-a-silver-plate.webp",
+    image: "/image/z/a cup of water and a rose on a silver plate.webp",
     artistLifespan: "1598-1664",
     slug: "a-cup-of-water-and-a-rose-on-a-silver-plate",
     letter: "Z"
