@@ -10,7 +10,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import { Playfair_Display } from "next/font/google";
 import QuoteRequestModal from "../components/QuoteRequestModal";
 
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif", display: "swap" });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif", display: "swap", preload: false });
 const THEME_RED = "#800000";
 
 export default function SearchPage() {
@@ -175,6 +175,8 @@ export default function SearchPage() {
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-700"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                          style={{ aspectRatio: '3/4' }}
+                          loading="lazy"
                         />
                       </div>
                     </Link>

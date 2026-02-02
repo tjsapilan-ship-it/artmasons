@@ -86,8 +86,11 @@ export default function Header() {
               src="/image/icons/logo_1.png"
               alt="Art Masons Seal"
               fill
+              sizes="(max-width: 640px) 96px, (max-width: 768px) 112px, 176px"
               className="object-contain"
+              style={{ aspectRatio: '1/1' }}
               priority
+              quality={90}
             />
           </div>
         </Link>

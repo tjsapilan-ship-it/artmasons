@@ -20,7 +20,7 @@ const EducatedMastery = () => {
               <div className="relative aspect-video shadow-inner border border-gray-200 bg-black overflow-hidden">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/LeSahWVASss"
+                  src="https://www.youtube.com/embed/O2TDVrsQIAo"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

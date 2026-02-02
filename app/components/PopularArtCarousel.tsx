@@ -196,7 +196,9 @@ export default function PopularArtCarousel() {
                     fill
                     sizes="160px"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    priority={i < 9}
+                    style={{ aspectRatio: '1/1' }}
+                    priority={i < 10}
+                    quality={85}
                   />
                   <div className="absolute inset-0 pointer-events-none flex flex-col justify-end pb-3">
                     <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/60 to-transparent"></div>

@@ -10,7 +10,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { ARTWORKS, generateSlug, getArtworkSlug } from '../../data/artworks';
 import { ARTIST_RECOMMENDED_IMAGES } from '../../data/artistRecommendedImages';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const STORAGE_KEY = 'artistsAZSelectedLetter';
@@ -359,6 +359,8 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-700"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                          style={{ aspectRatio: '3/4' }}
+                          loading="lazy"
                         />
                       </div>
                     </Link>
@@ -488,6 +490,8 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                             fill
                             className="object-cover transition-transform duration-700 group-hover:scale-110"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            style={{ aspectRatio: '4/3' }}
+                            loading="lazy"
                           />
                         ) : (
                           <div className="w-full h-full flex items-center justify-center text-gray-400">

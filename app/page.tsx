@@ -31,6 +31,7 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
+  preload: false,
 });
 
 // --- DATA ---
@@ -412,13 +413,13 @@ export default function ArtMasonsLanding() {
   );
 
   const top100Order = React.useMemo(() => {
-    const indices = Array.from({ length: TOP_100_ARTS.length }, (_, i) => i);
-    return isClient ? shuffle(indices) : indices;
+    if (!isClient) return Array.from({ length: TOP_100_ARTS.length }, (_, i) => i);
+    return shuffle(Array.from({ length: TOP_100_ARTS.length }, (_, i) => i));
   }, [isClient]);
 
   const famousArtOrder = React.useMemo(() => {
-    const indices = Array.from({ length: ART_OF_THE_DAY.length }, (_, i) => i);
-    return isClient ? shuffle(indices) : indices;
+    if (!isClient) return Array.from({ length: ART_OF_THE_DAY.length }, (_, i) => i);
+    return shuffle(Array.from({ length: ART_OF_THE_DAY.length }, (_, i) => i));
   }, [isClient]);
 
   useEffect(() => {
@@ -567,8 +568,11 @@ export default function ArtMasonsLanding() {
                     src={currentArt.image}
                     alt={currentArt.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 66vw"
                     className="object-contain z-10 drop-shadow-2xl"
+                    style={{ aspectRatio: '3/4' }}
                     priority
+                    quality={90}
                   />
                 </motion.div>
               </AnimatePresence>
@@ -835,7 +839,9 @@ export default function ArtMasonsLanding() {
                         src="/image/icons/logo_1.png"
                         alt="Logo 1"
                         fill
+                        sizes="(max-width: 640px) 128px, (max-width: 768px) 176px, 224px"
                         className="object-contain"
+                        style={{ aspectRatio: '1/1' }}
                       />
                     </div>
                     <p className="font-serif text-lg sm:text-xl font-bold text-[#800000] text-center">
@@ -851,7 +857,9 @@ export default function ArtMasonsLanding() {
                         src="/image/icons/logo_5.png"
                         alt="Logo 5"
                         fill
+                        sizes="(max-width: 640px) 128px, (max-width: 768px) 176px, 224px"
                         className="object-contain"
+                        style={{ aspectRatio: '1/1' }}
                       />
                     </div>
                     <p className="font-serif text-base sm:text-lg font-bold text-[#800000] text-center max-w-[150px] sm:max-w-none">
@@ -864,7 +872,9 @@ export default function ArtMasonsLanding() {
                         src="/image/icons/logo_6.png"
                         alt="Logo 6"
                         fill
+                        sizes="(max-width: 640px) 128px, (max-width: 768px) 176px, 224px"
                         className="object-contain"
+                        style={{ aspectRatio: '1/1' }}
                       />
                     </div>
                     <p className="font-serif text-base sm:text-lg font-bold text-[#800000] text-center max-w-[150px] sm:max-w-none">

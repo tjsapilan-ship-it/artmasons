@@ -6,7 +6,7 @@ import { useToast } from '../context/ToastContext';
 import { Playfair_Display } from 'next/font/google';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 type QuoteRequestModalProps = {
     open: boolean;

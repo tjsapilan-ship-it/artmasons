@@ -10,7 +10,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { useRouter } from 'next/navigation';
 import StripePaymentModal from './StripePaymentModal';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 export default function CheckoutPage() {
   const { items, subtotal } = useCart();

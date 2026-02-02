@@ -35,6 +35,14 @@ body {
   font-feature-settings: 'lnum' 1, 'tnum' 1;
 }
 
+.font-serif {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+}
+
+.font-sans {
+  font-family: var(--font-geist-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
 /* Responsive helpers and global improvements for mobile */
 img,
 picture,

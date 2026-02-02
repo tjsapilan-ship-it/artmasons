@@ -16,11 +16,16 @@ const nextConfig: NextConfig = {
   compress: true,
   // Image optimization
   images: {
-    formats: ['image/webp'],
+    formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 60, // Cache images for 60 seconds in development
-    unoptimized: true, // Disable Image Optimization API to bypass Vercel limits
+    minimumCacheTTL: 60,
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    qualities: [75, 85, 90],
+    // Set unoptimized to false to enable Next.js image optimization with WebP/AVIF
+    unoptimized: false,
   },
   // Security headers
   async headers() {

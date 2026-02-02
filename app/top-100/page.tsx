@@ -6,11 +6,11 @@ import Image from 'next/image';
 import { Playfair_Display } from 'next/font/google';
 import { Trophy, Search } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { ARTWORKS, getArtworkSlug } from '../../data/artworks';
+import { type Artwork, ARTWORKS, getArtworkSlug } from '../../data/artworks';
 import { TOP_100_PAINTINGS, getFamousArtworkSlug, FamousArtwork } from '../../data/famousAndTop100';
 import QuoteRequestModal from '../components/QuoteRequestModal';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 // --- THEME COLORS ---
 const THEME_RED = '#800000';
@@ -57,6 +57,15 @@ const getPrimaryPricing = (artwork: FamousArtwork) => {
   return { price, currency: artwork.currency || 'AED', label: minOption?.label || 'Original Size' };
 };
 
+const getPrimaryPricingFromArtwork = (artwork: Artwork) => {
+  const hasOptions = Array.isArray(artwork.options) && artwork.options.length > 0;
+  const minOption = hasOptions && artwork.options
+    ? artwork.options.reduce((min, option) => (option.price < min.price ? option : min), artwork.options[0])
+    : null;
+  const price = minOption?.price ?? artwork.basePrice ?? artwork.price ?? null;
+  return { price, currency: artwork.currency || 'AED', label: minOption?.label || 'Original Size' };
+};
+
 const formatPrice = (price: number, currency: string) => {
   const formatted = new Intl.NumberFormat('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(price);
   return `${currency} ${formatted}`;
@@ -81,7 +90,7 @@ const COLLECTION_PAINTINGS: CollectionPainting[] = TOP_100_PAINTINGS.map((artwor
     image: artwork.image,
     slug: matchingArtwork ? getArtworkSlug(matchingArtwork) : getFamousArtworkSlug(artwork),
     ...(() => {
-      const pricing = getPrimaryPricing(artwork);
+      const pricing = matchingArtwork ? getPrimaryPricingFromArtwork(matchingArtwork) : getPrimaryPricing(artwork);
       return { price: pricing.price, currency: pricing.currency, priceLabel: pricing.label };
     })()
   };
@@ -210,6 +219,8 @@ export default function Top100Page() {
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-700"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                        style={{ aspectRatio: '3/4' }}
+                        loading="lazy"
                       />
 
                       {/* Rank Badge - Simple white circle with black text */}

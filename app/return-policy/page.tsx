@@ -4,7 +4,7 @@ import React from 'react';
 import { Playfair_Display } from 'next/font/google';
 import Breadcrumbs from '../components/Breadcrumbs';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 export default function ReturnPolicyPage() {
   return (

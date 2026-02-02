@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { Ruler, Truck, ShieldCheck, Palette, Hammer, Mail, CheckCircle2 } from 'lucide-react';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 export default function FrameSizeArtPage() {
   const [origW, setOrigW] = useState<number | ''>('');

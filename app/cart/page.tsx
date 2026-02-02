@@ -8,7 +8,7 @@ import { Trash2, Plus, Minus, ShoppingBag, ArrowRight, Lock, Truck, Shield } fro
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useCart } from '../context/CartContext';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 const SHIPPING_COST = 0; // Free shipping
 const TAX_RATE = 0.05; // 5% tax

@@ -10,7 +10,7 @@ import ArtistsAZNavigation from '../../components/ArtistsAZNavigation';
 import { getArtworkSlug, getArtworksByArtistSlug, getArtistNameBySlug, type Artwork } from '../../../data/artworks';
 import QuoteRequestModal from '../../components/QuoteRequestModal';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 const humanizeSlug = (slug: string) =>
   slug

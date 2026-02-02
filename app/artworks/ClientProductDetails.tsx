@@ -69,13 +69,16 @@ export default function ClientProductDetails({
                 src={artwork.image}
                 alt={artwork.name}
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 onLoadingComplete={(img) => {
                   if (img && img.naturalWidth && img.naturalHeight) {
                     setImageIsPortrait(img.naturalWidth < img.naturalHeight);
                   }
                 }}
                 className="object-contain w-full h-full max-h-[70vh] shadow-xl"
+                style={{ aspectRatio: isPortrait ? '3/4' : '4/3' }}
                 priority
+                quality={90}
               />
             </div>
 
@@ -411,6 +414,8 @@ export default function ClientProductDetails({
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 100vw"
+                      style={{ aspectRatio: '4/3' }}
+                      loading="lazy"
                     />
                   </div>
                   <div className="p-3 space-y-1">

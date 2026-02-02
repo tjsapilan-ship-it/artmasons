@@ -10,7 +10,7 @@ import AboutUsGallery from '../components/AboutUsGallery';
 import ArtStyleQuiz from '../components/ArtStyleQuiz';
 import EducatedMastery from '../components/Profile';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 const CAPTURING_LIGHT_IMAGES = [
   { src: "/image/about-us/image_9.png", alt: "Art Masons Light Detail 1" },
@@ -95,6 +95,8 @@ export default function AboutUsPage() {
                 alt={OUR_PHILOSOPHY_IMAGES[0].alt}
                 width={1200}
                 height={800}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+                style={{ aspectRatio: '3/2' }}
                 // Class breakdown:
                 // w-full: takes maximum available width
                 // h-auto: scales height automatically to maintain aspect ratio
@@ -134,9 +136,10 @@ export default function AboutUsPage() {
                 alt="Art Masons Artist at Work"
                 width={1200}
                 height={800}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+                style={{ aspectRatio: '3/2' }}
                 // Matches the style of the first section (Rounded XL, no extra borders/shadows)
                 className="w-full h-auto object-contain rounded-xl"
-                sizes="100vw"
               />
             </div>
 
@@ -163,9 +166,10 @@ export default function AboutUsPage() {
                 alt="Art Masons Artist at Work"
                 width={1200}
                 height={800}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+                style={{ aspectRatio: '3/2' }}
                 // Matches the style of the first section (Rounded XL, no extra borders/shadows)
                 className="w-full h-auto object-contain rounded-xl"
-                sizes="100vw"
               />
             </div>
 
@@ -187,9 +191,10 @@ export default function AboutUsPage() {
                 alt="Art Masons Artist at Work"
                 width={1200}
                 height={800}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+                style={{ aspectRatio: '3/2' }}
                 // Matches the style of the first section (Rounded XL, no extra borders/shadows)
                 className="w-full h-auto object-contain rounded-xl"
-                sizes="100vw"
               />
             </div>
 
