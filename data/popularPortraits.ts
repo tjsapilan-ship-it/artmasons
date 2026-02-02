@@ -113,7 +113,4 @@ export const POPULAR_PORTRAITS = [
   
   // James Jacques Joseph Tissot
   'the-portrait-miss-lloyd',
-  
-  // Jan Weenix
-  'dead-hare-and-partridges',
 ];

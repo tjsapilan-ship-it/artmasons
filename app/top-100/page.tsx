@@ -71,15 +71,39 @@ const formatPrice = (price: number, currency: string) => {
   return `${currency} ${formatted}`;
 };
 
+  // Helper to normalize names for better matching
+  const normalizeName = (name: string): string => {
+    return name
+      .toLowerCase()
+      .normalize('NFD') // Decompose accented characters
+      .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
+      .replace(/[()]/g, '') // Remove parentheses
+      .replace(/\s+/g, ' ') // Normalize whitespace
+      .trim();
+  };
+
 // Use TOP_100_PAINTINGS from the PDF data file
 const COLLECTION_PAINTINGS: CollectionPainting[] = TOP_100_PAINTINGS.map((artwork: FamousArtwork, index: number) => {
-  // Try to find matching artwork in main ARTWORKS collection for slug
-  // Match by title AND artist to ensure we get the correct artwork
-  const matchingArtwork = ARTWORKS.find(
-    (a) =>
-      (a.name ?? "").toLowerCase() === artwork.title.toLowerCase() &&
-      (a.artist ?? "").toLowerCase() === artwork.artist.toLowerCase(),
-  );
+    // Try to find matching artwork in main ARTWORKS collection for slug and pricing
+    // Match by title AND artist with normalized comparison
+    const normalizedTitle = normalizeName(artwork.title);
+    const normalizedArtist = normalizeName(artwork.artist);
+  
+    const matchingArtwork = ARTWORKS.find((a) => {
+      const artworkTitle = normalizeName(a.name ?? "");
+      const artworkArtist = normalizeName(a.artist ?? "");
+    
+      // Check for exact match or title contains/is contained
+      const titleMatch = artworkTitle === normalizedTitle || 
+                         artworkTitle.includes(normalizedTitle) || 
+                         normalizedTitle.includes(artworkTitle);
+    
+      // Check for artist match with name order flexibility
+      const artistMatch = artworkArtist === normalizedArtist ||
+                         artworkArtist.split(' ').reverse().join(' ') === normalizedArtist;
+    
+      return titleMatch && artistMatch;
+    });
 
   return {
     rank: index + 1,

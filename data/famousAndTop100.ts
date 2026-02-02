@@ -311,10 +311,13 @@ export const FAMOUS_ART: FamousArtwork[] = [
     originalSize: "130.1 x 175.5 cm",
     artistLife: "1841-1919",
     sku: "AM-FA-020",
-    basePrice: 46500,
+      basePrice: 23250,
     currency: "AED",
     image: "/image/famous-art/luncheon on the boating party.webp",
-    options: [{ id: 'opt1', width: 130.1, height: 175.5, price: 46500, label: 'Original Size' }],
+      options: [
+        { id: 'opt1', width: 65, height: 87.75, price: 23250, label: '65 x 87.75 cm' },
+        { id: 'opt2', width: 130.1, height: 175.5, price: 46500, label: '130.1 x 175.5 cm' }
+      ],
   },
 
   {
@@ -1412,23 +1415,23 @@ export const FAMOUS_ART: FamousArtwork[] = [
     originalSize: "621 x 979 cm",
     artistLife: "1748-1825",
     sku: "AM-FA-112",
-    basePrice: 185000,
+      basePrice: 68475,
     currency: "AED",
     image: "/image/famous-art/the coronation of napoleon.webp",
-    options: [{ id: 'opt1', width: 621, height: 979, price: 185000, label: 'Original Size' }],
+      options: [{ id: 'opt1', width: 621, height: 979, price: 68475, label: 'Original Size' }],
   },
 
   {
     title: "The 3rd Of May 1808 In Madrid",
-    artist: "Francisco Goya",
+    artist: "Francisco de Goya",
     year: "1814",
     originalSize: "268 x 347 cm",
     artistLife: "1746-1828",
     sku: "AM-FA-113",
-    basePrice: 45000,
+    basePrice: 20081,
     currency: "AED",
     image: "/image/famous-art/the 3rd day of may 1808 in madrid.webp",
-    options: [{ id: 'opt1', width: 268, height: 347, price: 45000, label: 'Original Size' }],
+    options: [{ id: 'opt1', width: 268, height: 347, price: 20081, label: 'Original Size' }],
   },
 
   {
@@ -1529,10 +1532,10 @@ export const FAMOUS_ART: FamousArtwork[] = [
     originalSize: "363 x 437 cm",
     artistLife: "1606-1669",
     sku: "AM-FA-121",
-    basePrice: 76500,
+      basePrice: 29800,
     currency: "AED",
     image: "/image/famous-art/the night watch.webp",
-    options: [{ id: 'opt1', width: 363, height: 437, price: 76500, label: 'Original Size' }],
+      options: [{ id: 'opt1', width: 363, height: 437, price: 29800, label: 'Original Size' }],
   },
 ];
 
