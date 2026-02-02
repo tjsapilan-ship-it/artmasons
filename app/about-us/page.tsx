@@ -96,12 +96,11 @@ export default function AboutUsPage() {
                 width={1200}
                 height={800}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-                style={{ aspectRatio: '3/2' }}
                 // Class breakdown:
                 // w-full: takes maximum available width
                 // h-auto: scales height automatically to maintain aspect ratio
                 // rounded-xl: (Optional) keeps styling consistent with the text box above
-                className="w-full h-auto object-contain rounded-xl"
+                className="w-full h-auto object-cover rounded-xl"
               />
             </div>
 
@@ -136,9 +135,8 @@ export default function AboutUsPage() {
                 width={1200}
                 height={800}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-                style={{ aspectRatio: '3/2' }}
                 // Matches the style of the first section (Rounded XL, no extra borders/shadows)
-                className="w-full h-auto object-contain rounded-xl"
+                className="w-full h-auto object-cover rounded-xl"
               />
             </div>
 
@@ -166,9 +164,8 @@ export default function AboutUsPage() {
                 width={1200}
                 height={800}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-                style={{ aspectRatio: '3/2' }}
                 // Matches the style of the first section (Rounded XL, no extra borders/shadows)
-                className="w-full h-auto object-contain rounded-xl"
+                className="w-full h-auto object-cover rounded-xl"
               />
             </div>
 
@@ -191,9 +188,8 @@ export default function AboutUsPage() {
                 width={1200}
                 height={800}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-                style={{ aspectRatio: '3/2' }}
                 // Matches the style of the first section (Rounded XL, no extra borders/shadows)
-                className="w-full h-auto object-contain rounded-xl"
+                className="w-full h-auto object-cover rounded-xl"
               />
             </div>
 
@@ -216,7 +212,7 @@ export default function AboutUsPage() {
                 width={1200}
                 height={800}
                 // Matches the style of the first section (Rounded XL, no extra borders/shadows)
-                className="w-full h-auto object-contain rounded-xl"
+                className="w-full h-auto object-cover rounded-xl"
                 sizes="100vw"
               />
             </div>
