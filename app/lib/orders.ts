@@ -10,6 +10,8 @@ export type OrderItem = {
   quantity?: number;
   sku?: string;
   currency?: string;
+  size?: string;
+  dimensions?: string;
 };
 
 export type Customer = {
@@ -24,6 +26,8 @@ export type StoredOrder = {
   status: 'pending' | 'paid' | 'failed';
   createdAt: string;
   invoiceSentAt?: string;
+  orderConfirmationSentAt?: string;
+  shipmentConfirmationSentAt?: string;
   items: OrderItem[];
   customer?: Customer | Record<string, unknown> | unknown;
   raw?: Record<string, unknown> | unknown;
@@ -102,5 +106,37 @@ export function markInvoiceSent(sessionId: string, sentAt = new Date().toISOStri
   return null;
 }
 
-const ordersLib = { readOrders, writeOrders, saveOrder, findOrderBySession, markOrderPaid, markOrderFailed, markInvoiceSent };
+export function markOrderConfirmationSent(sessionId: string, sentAt = new Date().toISOString()) {
+  const orders = readOrders();
+  const idx = orders.findIndex((o) => o.sessionId === sessionId);
+  if (idx >= 0) {
+    orders[idx].orderConfirmationSentAt = sentAt;
+    writeOrders(orders);
+    return orders[idx];
+  }
+  return null;
+}
+
+export function markShipmentConfirmationSent(sessionId: string, sentAt = new Date().toISOString()) {
+  const orders = readOrders();
+  const idx = orders.findIndex((o) => o.sessionId === sessionId);
+  if (idx >= 0) {
+    orders[idx].shipmentConfirmationSentAt = sentAt;
+    writeOrders(orders);
+    return orders[idx];
+  }
+  return null;
+}
+
+const ordersLib = {
+  readOrders,
+  writeOrders,
+  saveOrder,
+  findOrderBySession,
+  markOrderPaid,
+  markOrderFailed,
+  markInvoiceSent,
+  markOrderConfirmationSent,
+  markShipmentConfirmationSent,
+};
 export default ordersLib;

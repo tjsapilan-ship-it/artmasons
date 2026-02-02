@@ -10,6 +10,8 @@ type CheckoutItem = {
   quantity: number;
   sku?: string;
   currency?: string;
+  size?: string;
+  dimensions?: string;
 };
 
 type CheckoutRequestBody = {
@@ -46,6 +48,8 @@ export async function POST(req: Request) {
       quantity: Number(it.quantity),
       sku: it.sku ? String(it.sku) : undefined,
       currency: (it.currency || 'aed').toLowerCase(),
+      size: it.size ? String(it.size) : undefined,
+      dimensions: it.dimensions ? String(it.dimensions) : undefined,
     }))
     .filter((it) => it.title && Number.isFinite(it.price) && Number.isFinite(it.quantity));
 

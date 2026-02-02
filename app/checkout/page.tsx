@@ -126,7 +126,9 @@ ZIP: ${framerDelivery.postalCode}`;
           title: it.title,
           price: priceWithTax,
           quantity: it.quantity,
-          currency: it.currency || 'aed'
+          currency: it.currency || 'aed',
+          size: it.size || it.dimensions || undefined,
+          dimensions: it.dimensions || undefined,
         };
       });
 

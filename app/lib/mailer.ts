@@ -17,6 +17,8 @@ type OrderItem = {
   price?: number;
   quantity?: number;
   currency?: string;
+  size?: string;
+  dimensions?: string;
 };
 
 type Customer = {
@@ -43,6 +45,12 @@ function readString(source: unknown, key: string): string | undefined {
   if (!isRecord(source)) return undefined;
   const value = source[key];
   return typeof value === 'string' ? value : undefined;
+}
+
+function readSizeOfArt(item: OrderItem): string | undefined {
+  if (item.size && String(item.size).trim()) return String(item.size).trim();
+  if (item.dimensions && String(item.dimensions).trim()) return String(item.dimensions).trim();
+  return undefined;
 }
 
 function readCustomer(source: unknown): Customer {
@@ -200,11 +208,13 @@ function formatOrderText(order: Order) {
     const qty = Number(it.quantity || 1);
     const price = typeof it.price === 'number' ? it.price : NaN;
     const lineTotal = Number.isFinite(price) ? price * qty : NaN;
+    const sizeLabel = readSizeOfArt(it);
+    const sizeSuffix = sizeLabel ? ` (Size of Art: ${sizeLabel})` : '';
     if (Number.isFinite(lineTotal)) {
-      lines.push(`- ${title} x${qty} @ ${formatCurrency(price)} = ${formatCurrency(lineTotal)}`);
+      lines.push(`- ${title}${sizeSuffix} x${qty} @ ${formatCurrency(price)} = ${formatCurrency(lineTotal)}`);
       total += lineTotal;
     } else {
-      lines.push(`- ${title} x${qty}`);
+      lines.push(`- ${title}${sizeSuffix} x${qty}`);
     }
   }
   lines.push('');
@@ -341,7 +351,14 @@ function buildEmailShell(params: { title: string; preheader?: string; bodyHtml: 
 </html>`;
 }
 
-function formatOrderHtml(order: Order) {
+function formatOrderHtml(
+  order: Order,
+  options?: {
+    heading?: string;
+    title?: string;
+    preheader?: string;
+  }
+) {
   const currency = safeCurrency(order);
   const formatCurrency = (value: number) => {
     try {
@@ -361,10 +378,13 @@ function formatOrderHtml(order: Order) {
       const price = typeof it.price === 'number' ? it.price : NaN;
       const hasPrice = Number.isFinite(price);
       const lineTotal = hasPrice ? price * qty : NaN;
+      const sizeLabel = readSizeOfArt(it);
+      const sizeCell = sizeLabel ? escapeHtml(sizeLabel) : '&mdash;';
       if (Number.isFinite(lineTotal)) subtotal += lineTotal;
       return `
         <tr>
           <td style="padding:10px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:14px;line-height:1.4;">${title}</td>
+          <td align="right" style="padding:10px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:14px;white-space:nowrap;">${sizeCell}</td>
           <td align="right" style="padding:10px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:14px;">${escapeHtml(qty)}</td>
           <td align="right" style="padding:10px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:14px;white-space:nowrap;">${hasPrice ? escapeHtml(formatCurrency(price)) : '&mdash;'}</td>
           <td align="right" style="padding:10px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:14px;white-space:nowrap;">${Number.isFinite(lineTotal) ? escapeHtml(formatCurrency(lineTotal)) : '&mdash;'}</td>
@@ -382,7 +402,7 @@ function formatOrderHtml(order: Order) {
   
   <div style="text-align: center; margin-bottom: 40px; margin-top: 20px;">
     <img src="https://artmasons.vercel.app/image/icons/logo_1.png" alt="Art Masons" width="180" style="display: inline-block;">
-    <h2 style="font-family: Georgia, serif; font-weight: normal; letter-spacing: 3px; text-transform: uppercase; margin-top: 30px; font-size: 18px;">Order Confirmation</h2>
+    <h2 style="font-family: Georgia, serif; font-weight: normal; letter-spacing: 3px; text-transform: uppercase; margin-top: 30px; font-size: 18px;">${escapeHtml(options?.heading || 'Order Confirmation')}</h2>
   </div>
 
   <div style="font-size: 14px; margin-bottom: 30px;">
@@ -402,7 +422,9 @@ function formatOrderHtml(order: Order) {
   <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-bottom: 1px solid #000; margin-bottom: 10px;">
     <tr>
       <th align="left" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Item</th>
+      <th align="right" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Size of Art</th>
       <th align="center" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Qty</th>
+      <th align="right" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Unit</th>
       <th align="right" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Amount</th>
     </tr>
   </table>
@@ -459,9 +481,12 @@ function formatOrderHtml(order: Order) {
 </div>
 `;
 
+  const defaultTitle = `Order Confirmation — Order ${order.sessionId}`;
+  const defaultPreheader = `Order confirmation for order ${order.sessionId}. Total ${formatCurrency(grandTotal)}.`;
+
   return buildEmailShell({
-    title: `Invoice for order ${order.sessionId}`,
-    preheader: `Invoice for order ${order.sessionId}. Total ${formatCurrency(grandTotal)}.`,
+    title: options?.title || defaultTitle,
+    preheader: options?.preheader || defaultPreheader,
     bodyHtml,
   });
 }
@@ -533,7 +558,8 @@ async function generateInvoicePdf(order: Order): Promise<Buffer> {
     const qty = Number(it.quantity || 1);
     const unit = typeof it.price === 'number' ? it.price : NaN;
     const amount = Number.isFinite(unit) ? unit * qty : NaN;
-    return { title, qty, unit, amount };
+    const size = readSizeOfArt(it) || '';
+    return { title, size, qty, unit, amount };
   });
 
   const grandTotal = computed.reduce((sum, row) => (Number.isFinite(row.amount) ? sum + row.amount : sum), 0);
@@ -551,9 +577,10 @@ async function generateInvoicePdf(order: Order): Promise<Buffer> {
 
   const col = {
     item: table.x,
-    qty: table.x + table.width * 0.60,
-    unit: table.x + table.width * 0.72,
-    amount: table.x + table.width * 0.86,
+    size: table.x + table.width * 0.50,
+    qty: table.x + table.width * 0.70,
+    unit: table.x + table.width * 0.80,
+    amount: table.x + table.width * 0.90,
     right: table.x + table.width,
   };
 
@@ -719,6 +746,13 @@ async function generateInvoicePdf(order: Order): Promise<Buffer> {
 
     const headerY = yTop - table.headerHeight + 6;
     page.drawText('Description', { x: col.item + table.paddingX, y: headerY, size: smallFontSize, font: fontBold, color: rgb(1, 1, 1) });
+    page.drawText('Size of Art', {
+      x: col.size + table.paddingX,
+      y: headerY,
+      size: smallFontSize,
+      font: fontBold,
+      color: rgb(1, 1, 1),
+    });
     page.drawText('Qty', {
       x: col.unit - 8 - fontBold.widthOfTextAtSize('Qty', smallFontSize),
       y: headerY,
@@ -806,7 +840,8 @@ async function generateInvoicePdf(order: Order): Promise<Buffer> {
   y -= 6;
 
   for (const row of computed) {
-    const safeTitle = truncateToWidth(row.title, fontRegular, bodyFontSize, col.qty - col.item - table.paddingX * 2);
+    const safeTitle = truncateToWidth(row.title, fontRegular, bodyFontSize, col.size - col.item - table.paddingX * 2);
+    const safeSize = row.size ? truncateToWidth(row.size, fontRegular, bodyFontSize, col.qty - col.size - table.paddingX * 2) : '—';
     const qtyText = String(row.qty);
     const unitText = Number.isFinite(row.unit) ? formatCurrency(row.unit) : '—';
     const amountText = Number.isFinite(row.amount) ? formatCurrency(row.amount) : '—';
@@ -827,6 +862,7 @@ async function generateInvoicePdf(order: Order): Promise<Buffer> {
 
     const textY = y - table.paddingY - bodyFontSize;
     page.drawText(safeTitle, { x: col.item + table.paddingX, y: textY, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
+    page.drawText(safeSize, { x: col.size + table.paddingX, y: textY, size: bodyFontSize, font: fontRegular, color: BRAND_TEXT_RGB });
     page.drawText(qtyText, {
       x: col.unit - table.paddingX - fontRegular.widthOfTextAtSize(qtyText, bodyFontSize),
       y: textY,
@@ -877,7 +913,17 @@ export async function sendOrderInvoice(order: Order, to?: string) {
   const transporter = getTransporter();
   const subject = `Invoice — Order ${order.sessionId} (${order.status})`;
   const text = formatOrderText(order);
-  const html = formatOrderHtml(order);
+  const total = order.items?.reduce((sum, it) => {
+    const qty = Number(it.quantity || 1);
+    const price = typeof it.price === 'number' ? it.price : NaN;
+    const line = Number.isFinite(price) ? price * qty : 0;
+    return sum + line;
+  }, 0) || 0;
+  const html = formatOrderHtml(order, {
+    heading: 'Invoice',
+    title: `Invoice — Order ${order.sessionId}`,
+    preheader: `Invoice for order ${order.sessionId}. Total ${new Intl.NumberFormat('en-US', { style: 'currency', currency: safeCurrency(order) }).format(total)}.`,
+  });
 
   // generate PDF invoice and attach
   type MailAttachment = NonNullable<SendMailOptions['attachments']>[number];
@@ -899,6 +945,167 @@ export async function sendOrderInvoice(order: Order, to?: string) {
     text,
     html,
     attachments,
+  });
+
+  return info;
+}
+
+export async function sendOrderConfirmation(order: Order, to?: string) {
+  const from = process.env.MAIL_FROM || process.env.SMTP_USER;
+  if (!to) throw new Error('No recipient specified');
+  const transporter = getTransporter();
+  const subject = `Order Confirmation — Order ${order.sessionId}`;
+  const text = formatOrderText(order);
+  const html = formatOrderHtml(order, {
+    heading: 'Order Confirmation',
+    title: `Order Confirmation — Order ${order.sessionId}`,
+  });
+
+  const info = await transporter.sendMail({
+    from,
+    to,
+    cc: 'info@artmasons.com',
+    replyTo: 'info@artmasons.com',
+    subject,
+    text,
+    html,
+  });
+
+  return info;
+}
+
+type ShipmentDetails = {
+  carrier?: string;
+  trackingNumber?: string;
+  trackingUrl?: string;
+  shippedAt?: string;
+};
+
+function formatShipmentText(order: Order, shipment: ShipmentDetails) {
+  const lines: string[] = [];
+  const customer = readCustomer(order.customer);
+  const customerName = customer.name || 'Valued Customer';
+
+  lines.push(`Dear ${customerName},`);
+  lines.push('');
+  lines.push('Great news! Your Art Masons order has shipped.');
+  lines.push('');
+  lines.push(`Order: ${order.sessionId}`);
+  if (shipment.carrier) lines.push(`Carrier: ${shipment.carrier}`);
+  if (shipment.trackingNumber) lines.push(`Tracking Number: ${shipment.trackingNumber}`);
+  if (shipment.trackingUrl) lines.push(`Tracking Link: ${shipment.trackingUrl}`);
+  if (shipment.shippedAt) lines.push(`Shipped: ${formatDateLabel(shipment.shippedAt)}`);
+  lines.push('');
+  lines.push('Items:');
+
+  for (const it of order.items || []) {
+    const title = it.title || 'Item';
+    const qty = Number(it.quantity || 1);
+    const sizeLabel = readSizeOfArt(it);
+    const sizeSuffix = sizeLabel ? ` (Size of Art: ${sizeLabel})` : '';
+    lines.push(`- ${title}${sizeSuffix} x${qty}`);
+  }
+
+  lines.push('');
+  lines.push('Thank you for choosing Art Masons.');
+  lines.push('');
+  lines.push('Warm regards,');
+  lines.push('The Art Masons Team');
+  return lines.join('\n');
+}
+
+function formatShipmentHtml(order: Order, shipment: ShipmentDetails) {
+  const customer = readCustomer(order.customer);
+  const customerName = customer.name || 'Valued Customer';
+  const trackingLink = shipment.trackingUrl
+    ? `<a href="${escapeHtml(shipment.trackingUrl)}" style="color:${BRAND_ACCENT};text-decoration:underline;">Track your shipment</a>`
+    : '';
+
+  const rowsHtml = (order.items || [])
+    .map((it) => {
+      const title = escapeHtml(it.title || 'Item');
+      const qty = Number(it.quantity || 1);
+      const sizeLabel = readSizeOfArt(it);
+      const sizeCell = sizeLabel ? escapeHtml(sizeLabel) : '&mdash;';
+      return `
+        <tr>
+          <td style="padding:10px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:14px;line-height:1.4;">${title}</td>
+          <td align="right" style="padding:10px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:14px;white-space:nowrap;">${sizeCell}</td>
+          <td align="right" style="padding:10px 12px;border-bottom:1px solid ${BRAND_BORDER};font-size:14px;">${escapeHtml(qty)}</td>
+        </tr>`;
+    })
+    .join('');
+
+  const bodyHtml = `
+<div style="font-family: Arial, Helvetica, sans-serif; max-width: 600px; margin: 0 auto; color: #000000; line-height: 1.6;">
+  <div style="text-align: center; margin-bottom: 36px; margin-top: 20px;">
+    <img src="https://artmasons.vercel.app/image/icons/logo_1.png" alt="Art Masons" width="180" style="display: inline-block;">
+    <h2 style="font-family: Georgia, serif; font-weight: normal; letter-spacing: 3px; text-transform: uppercase; margin-top: 30px; font-size: 18px;">Shipment Confirmation</h2>
+  </div>
+
+  <div style="font-size: 14px; margin-bottom: 24px;">
+    <p>Dear ${escapeHtml(customerName)},</p>
+    <p>Great news! Your Art Masons order has shipped.</p>
+  </div>
+
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-bottom: 28px; border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; padding: 16px 0;">
+    <tr>
+      <td style="font-size: 12px; text-transform: uppercase; color: #666; width: 33%;">Order<br><span style="color:#000; font-weight:bold;">${escapeHtml(order.sessionId)}</span></td>
+      <td style="font-size: 12px; text-transform: uppercase; color: #666; width: 33%;">Shipped<br><span style="color:#000; font-weight:bold;">${escapeHtml(formatDateLabel(shipment.shippedAt || new Date().toISOString()))}</span></td>
+      <td style="font-size: 12px; text-transform: uppercase; color: #666; width: 33%;">Carrier<br><span style="color:#000; font-weight:bold;">${escapeHtml(shipment.carrier || 'Pending')}</span></td>
+    </tr>
+  </table>
+
+  <div style="margin-bottom: 18px; font-size: 14px;">
+    ${shipment.trackingNumber ? `<p><strong>Tracking Number:</strong> ${escapeHtml(shipment.trackingNumber)}</p>` : ''}
+    ${trackingLink ? `<p>${trackingLink}</p>` : ''}
+  </div>
+
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-bottom: 1px solid #000; margin-bottom: 10px;">
+    <tr>
+      <th align="left" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Item</th>
+      <th align="right" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Size of Art</th>
+      <th align="right" style="padding: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Qty</th>
+    </tr>
+  </table>
+
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-bottom: 20px;">
+    ${rowsHtml || `<tr><td colspan="3" style="padding: 20px 0; text-align: center; color: #999;">No items found.</td></tr>`}
+  </table>
+
+  <div style="text-align: center; border-top: 1px solid #eeeeee; padding-top: 24px; font-size: 12px; color: #666;">
+    <p style="margin-bottom: 16px;">
+      Warm regards,<br>
+      <strong style="color: #000;">The Art Masons Team</strong>
+    </p>
+    <p><a href="https://www.artmasons.com" style="color: #000; text-decoration: none;">www.artmasons.com</a> | <a href="mailto:info@artmasons.com" style="color: #000; text-decoration: none;">info@artmasons.com</a></p>
+  </div>
+</div>
+`;
+
+  return buildEmailShell({
+    title: `Shipment Confirmation — Order ${order.sessionId}`,
+    preheader: `Your order ${order.sessionId} is on the way.`,
+    bodyHtml,
+  });
+}
+
+export async function sendShipmentConfirmation(order: Order, shipment: ShipmentDetails, to?: string) {
+  const from = process.env.MAIL_FROM || process.env.SMTP_USER;
+  if (!to) throw new Error('No recipient specified');
+  const transporter = getTransporter();
+  const subject = `Shipment Confirmation — Order ${order.sessionId}`;
+  const text = formatShipmentText(order, shipment);
+  const html = formatShipmentHtml(order, shipment);
+
+  const info = await transporter.sendMail({
+    from,
+    to,
+    cc: 'info@artmasons.com',
+    replyTo: 'info@artmasons.com',
+    subject,
+    text,
+    html,
   });
 
   return info;

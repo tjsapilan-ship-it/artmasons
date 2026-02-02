@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import ordersLib from '../../lib/orders';
 import { getStripe } from '../../lib/stripe';
-import { sendOrderInvoice } from '../../lib/mailer';
+import { sendOrderConfirmation, sendOrderInvoice } from '../../lib/mailer';
 import type { StoredOrder } from '../../lib/orders';
 
 export const runtime = 'nodejs';
@@ -38,14 +38,24 @@ export async function GET(req: Request) {
   }
 
   // If already paid but invoice hasn't been sent (e.g. SMTP was configured later), try once here.
-  if (order.status === 'paid' && !order.invoiceSentAt) {
+  if (order.status === 'paid') {
     const recipient = getRecipientFromOrder(order);
     if (recipient) {
-      try {
-        await sendOrderInvoice(order, recipient);
-        ordersLib.markInvoiceSent(id);
-      } catch (e) {
-        console.error('Failed to send invoice email for already-paid order', e);
+      if (!order.orderConfirmationSentAt) {
+        try {
+          await sendOrderConfirmation(order, recipient);
+          ordersLib.markOrderConfirmationSent(id);
+        } catch (e) {
+          console.error('Failed to send order confirmation email for already-paid order', e);
+        }
+      }
+      if (!order.invoiceSentAt) {
+        try {
+          await sendOrderInvoice(order, recipient);
+          ordersLib.markInvoiceSent(id);
+        } catch (e) {
+          console.error('Failed to send invoice email for already-paid order', e);
+        }
       }
     }
   }
@@ -71,6 +81,10 @@ export async function GET(req: Request) {
             const recipient = readString(updated.customer, 'email') || pi.receipt_email || readString(updated.raw, 'receipt_email') || null;
             if (recipient) {
               try {
+                if (!updated.orderConfirmationSentAt) {
+                  await sendOrderConfirmation(updated, recipient);
+                  ordersLib.markOrderConfirmationSent(id);
+                }
                 await sendOrderInvoice(updated, recipient);
                 ordersLib.markInvoiceSent(id);
               } catch (e) {
@@ -104,6 +118,10 @@ export async function GET(req: Request) {
               null;
             if (recipient) {
               try {
+                if (!updated.orderConfirmationSentAt) {
+                  await sendOrderConfirmation(updated, recipient);
+                  ordersLib.markOrderConfirmationSent(id);
+                }
                 await sendOrderInvoice(updated, recipient);
                 ordersLib.markInvoiceSent(id);
               } catch (e) {

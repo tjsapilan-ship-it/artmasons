@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import ordersLib from '../../lib/orders';
-import { sendOrderInvoice } from '../../lib/mailer';
+import { sendOrderConfirmation, sendOrderInvoice } from '../../lib/mailer';
 // import { firestore } from '../../lib/firebaseAdmin';
 import type { StoredOrder } from '../../lib/orders';
 
@@ -70,6 +70,10 @@ export async function POST(req: Request) {
                 (sessionObj.customer_details && sessionObj.customer_details.email) ||
                 null;
               if (recipient) {
+                if (!result.orderConfirmationSentAt) {
+                  await sendOrderConfirmation(result, recipient);
+                  ordersLib.markOrderConfirmationSent(sessionId);
+                }
                 await sendOrderInvoice(result, recipient);
                 ordersLib.markInvoiceSent(sessionId);
                 console.log('Sent invoice email for', sessionId, 'to', recipient);
@@ -97,6 +101,10 @@ export async function POST(req: Request) {
                 pi.receipt_email ||
                 null;
               if (recipient) {
+                if (!result.orderConfirmationSentAt) {
+                  await sendOrderConfirmation(result, recipient);
+                  ordersLib.markOrderConfirmationSent(pi.id);
+                }
                 await sendOrderInvoice(result, recipient);
                 ordersLib.markInvoiceSent(pi.id);
                 console.log('Sent invoice email for', pi.id, 'to', recipient);

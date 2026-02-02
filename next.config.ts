@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     qualities: [75, 85, 90],
     // Set unoptimized to false to enable Next.js image optimization with WebP/AVIF
-    unoptimized: false,
+    unoptimized: true,
   },
   // Security headers
   async headers() {
