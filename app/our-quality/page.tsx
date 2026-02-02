@@ -27,11 +27,11 @@ export default function OurQualityPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16 items-start">
-          <div className="flex flex-col">
+          <div className="flex flex-col h-full">
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-[#800000]">Our Quality</h1>
 
             {/* Introduction */}
-            <section className="bg-white/60 p-8 rounded-lg border border-[#800000]/10 backdrop-blur-sm font-serif">
+            <section className="bg-white/60 backdrop-blur-sm p-8 rounded-lg border-2 border-[#800000] font-serif flex-grow flex flex-col justify-center">
               <h2 className="font-serif text-3xl font-bold mb-6 text-[#800000]">Museum-Quality Excellence</h2>
               <p className="text-lg mb-4">
                 At ART MASONS, we are committed to delivering nothing less than museum-quality oil painting reproductions. Each piece is meticulously hand-painted by our master artists, ensuring that every brushstroke captures the essence and beauty of the original masterpiece.
@@ -40,11 +40,11 @@ export default function OurQualityPage() {
                 Our dedication to quality means using only the finest materials and employing time-honored techniques that have been perfected over centuries. When you choose ART MASONS, you&apos;re not just buying a painting—you&apos;re investing in a work of art.
               </p>
             </section>
-            <h2 className="font-serif text-3xl font-bold mt-8 text-[#800000] text-center">Hand-Painted. Curated. Enduring</h2>
+            <h2 className="font-serif text-3xl font-bold mt-6 text-[#800000] text-center">Hand-Painted. Curated. Enduring</h2>
           </div>
 
           {/* Hero Banner - Portrait Video */}
-          <div className="relative w-full max-w-sm mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white mt-auto aspect-[9/16]">
+          <div className="relative w-full max-w-sm mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white aspect-[9/16]">
             <iframe
               src="https://www.youtube.com/embed/d0XnPEt2TLA"
               title="Art Masons Quality"
