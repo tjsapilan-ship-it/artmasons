@@ -102,7 +102,6 @@ export default function AboutUsPage() {
                 // h-auto: scales height automatically to maintain aspect ratio
                 // rounded-xl: (Optional) keeps styling consistent with the text box above
                 className="w-full h-auto object-contain rounded-xl"
-                sizes="100vw"
               />
             </div>
 
