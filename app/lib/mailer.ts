@@ -311,7 +311,7 @@ function buildEmailShell(params: { title: string; preheader?: string; bodyHtml: 
                     Art Masons
                   </div>
                   <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.5;color:${BRAND_TEXT};opacity:0.9;">
-                    Museum-quality oil painting reproductions
+                    Museum-quality oil painting
                   </div>
                 </div>
               </td>

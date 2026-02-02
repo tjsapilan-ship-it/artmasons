@@ -51,7 +51,7 @@ export default function TermsConditionsPage() {
                <section>
                   <h3 className="font-serif text-2xl font-bold mb-2 text-[#800000]">Product Descriptions</h3>
                   <p>
-                     We strive to describe our products accurately and completely. If a purchased product does not match its description, your sole remedy is to return it in unused condition for a replacement or refund.
+                     We strive to describe our products accurately and completely. If a purchased product does not match its description, your sole remedy is to return it in unused condition for a replacement.
                   </p>
                </section>
 
