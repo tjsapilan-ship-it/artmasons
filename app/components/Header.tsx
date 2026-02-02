@@ -83,7 +83,7 @@ export default function Header() {
         <Link href="/" className="flex-shrink-0 flex flex-col items-center justify-end w-auto md:w-56 cursor-pointer pb-2">
           <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-44 md:h-44">
             <Image
-              src="/image/icons/logo_1.png"
+              src="/image/icons/logo_1.webp"
               alt="Art Masons Seal"
               fill
               sizes="(max-width: 640px) 96px, (max-width: 768px) 112px, 176px"
@@ -177,7 +177,7 @@ export default function Header() {
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center gap-4">
                       <Link href="/" onClick={() => setMobileMenuOpen(false)} className="relative w-24 h-24 block">
-                        <Image src="/image/icons/logo_1.png" alt="Art Masons" fill className="object-contain" />
+                        <Image src="/image/icons/logo_1.webp" alt="Art Masons" fill className="object-contain" />
                       </Link>
                     </div>
                     <button aria-label="Close menu" onClick={() => setMobileMenuOpen(false)} className="p-2 text-black cursor-pointer">

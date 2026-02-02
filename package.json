@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "parse:popular": "node ./scripts/parse_popular_pdf.js",
+    "convert:images": "tsx ./scripts/convert-images-to-webp.ts",
+    "scan:images": "tsx ./scripts/scan-image-references.ts",
+    "update:image-refs": "tsx ./scripts/update-image-refs.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -21,6 +24,7 @@
     "pdf-parse": "^1.1.4",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "sharp": "^0.33.4",
     "stripe": "^12.11.0",
     "tailwind-merge": "^3.4.0"
   },
@@ -34,6 +38,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.6",
     "tailwindcss": "^4",
+    "tsx": "^4.7.0",
     "typescript": "^5"
   }
 }

@@ -1,0 +1,1562 @@
+// Famous Art and Top 100 Paintings data
+// Extracted from: famous art & top 100 paintings.pdf
+// Generated on: 2025-12-29
+
+export interface FamousArtwork {
+  title: string;
+  artist: string;
+  year: string;
+  originalSize: string;
+  artistLife: string;
+  sku: string;
+  basePrice: number;
+  currency: string;
+  image: string;
+  options: Array<{ id: string; width: number; height: number; price: number; label: string }>;
+}
+
+// Famous Art Collection
+export const FAMOUS_ART: FamousArtwork[] = [
+  {
+    title: "Starry Night",
+    artist: "Vincent Van Gogh",
+    year: "1889",
+    originalSize: "92.1 x 73.7 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-001",
+    basePrice: 4000,
+    currency: "AED",
+    image: "/image/famous-art/starry night.jpg",
+    options: [{ id: 'opt1', width: 92.1, height: 73.7, price: 4000, label: '92.1 x 73.7 cm' }],
+  },
+
+  {
+    title: "Napoleon Crossing The Alps",
+    artist: "Jacques-Louis David",
+    year: "1801",
+    originalSize: "267 x 223 cm",
+    artistLife: "1748-1825",
+    sku: "AM-FA-002",
+    basePrice: 12000,
+    currency: "AED",
+    image: "/image/famous-art/napoleon crossing the alps on 20th may 1800.jpg",
+    options: [
+      { id: 'opt1', width: 267, height: 223, price: 12000, label: '267 x 223 cm' },
+      { id: 'opt2', width: 400.5, height: 334.5, price: 20000, label: '400.5 x 334.5 cm' },
+      { id: 'opt3', width: 133.5, height: 111.5, price: 6000, label: '133.5 x 111.5 cm' }
+    ],
+  },
+
+  {
+    title: "The Kiss",
+    artist: "Gustav Klimt",
+    year: "1907",
+    originalSize: "181 x 180 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-003",
+    basePrice: 9000,
+    currency: "AED",
+    image: "/image/famous-art/the kiss.jpg",
+    options: [
+      { id: 'opt1', width: 181, height: 180, price: 9000, label: '181 x 180 cm' },
+      { id: 'opt2', width: 270, height: 270, price: 18000, label: '270 x 270 cm' },
+      { id: 'opt3', width: 90, height: 90, price: 4500, label: '90 x 90 cm' }
+    ],
+  },
+
+  {
+    title: "Irises",
+    artist: "Vincent Van Gogh",
+    year: "1889",
+    originalSize: "71 x 93 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-004",
+    basePrice: 4700,
+    currency: "AED",
+    image: "/image/famous-art/irises.jpg",
+    options: [{ id: 'opt1', width: 71, height: 93, price: 4700, label: '71 x 93 cm' }],
+  },
+
+  {
+    title: "The Girl With A Pearl Earring",
+    artist: "Johannes Vermeer Van Delft",
+    year: "1665",
+    originalSize: "40 x 46 cm",
+    artistLife: "1632-1675",
+    sku: "AM-FA-005",
+    basePrice: 3000,
+    currency: "AED",
+    image: "/image/famous-art/the girl with a pearl earring.jpg",
+    options: [
+      { id: 'opt1', width: 40, height: 46, price: 3000, label: '40 x 46 cm' },
+      { id: 'opt2', width: 80, height: 92, price: 6000, label: '80 x 92 cm' },
+      { id: 'opt3', width: 120, height: 138, price: 9000, label: '120 x 138 cm' },
+      { id: 'opt4', width: 240, height: 276, price: 18000, label: '240 x 276 cm' }
+    ],
+  },
+
+  {
+    title: "A Wanderer Above A Sea Of Mist",
+    artist: "Caspar David Friedrich",
+    year: "1818",
+    originalSize: "98.4 x 74.8 cm",
+    artistLife: "1774-1840",
+    sku: "AM-FA-006",
+    basePrice: 3450,
+    currency: "AED",
+    image: "/image/famous-art/a wanderer above a sea of mist.jpg",
+    options: [{ id: 'opt1', width: 98.4, height: 74.8, price: 3450, label: 'Original Size' }],
+  },
+
+  {
+    title: "Water Lily Pond Symphony In Green",
+    artist: "Claude Monet",
+    year: "1899",
+    originalSize: "88.3 x 93.1 cm",
+    artistLife: "1840-1926",
+    sku: "AM-FA-007",
+    basePrice: 2960,
+    currency: "AED",
+    image: "/image/famous-art/water lily pond symphony in green.jpg",
+    options: [
+      { id: 'opt1', width: 88.3, height: 93.1, price: 2960, label: '88.3 x 93.1 cm' },
+      { id: 'opt2', width: 176.6, height: 186.2, price: 5920, label: '176.6 x 186.2 cm' },
+      { id: 'opt3', width: 264.9, height: 279.3, price: 8880, label: '264.9 x 279.3 cm' }
+    ],
+  },
+
+  {
+    title: "The Garden Of Earthly Delights",
+    artist: "Hieronymus Bosch",
+    year: "1490",
+    originalSize: "183 x 171 cm",
+    artistLife: "1450-1516",
+    sku: "AM-FA-008",
+    basePrice: 62500,
+    currency: "AED",
+    image: "/image/famous-art/the garden of earthly delights.jpg",
+    options: [{ id: 'opt1', width: 183, height: 171, price: 62500, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Cafe Terrace On The Place Du Forum",
+    artist: "Vincent Van Gogh",
+    year: "1888",
+    originalSize: "81 x 65.5 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-009",
+    basePrice: 4000,
+    currency: "AED",
+    image: "/image/famous-art/the cafe terrace on the place du forum aries.jpg",
+    options: [
+      { id: 'opt1', width: 81, height: 65.5, price: 4000, label: '81 x 65.5 cm' },
+      { id: 'opt2', width: 162, height: 131, price: 8000, label: '162 x 131 cm' },
+      { id: 'opt3', width: 243, height: 196.5, price: 12000, label: '243 x 196.5 cm' }
+    ],
+  },
+
+  {
+    title: "The Scream",
+    artist: "Edvard Munch",
+    year: "1893",
+    originalSize: "91 x 68 cm",
+    artistLife: "1863-1944",
+    sku: "AM-FA-010",
+    basePrice: 2485,
+    currency: "AED",
+    image: "/image/famous-art/the scream.jpg",
+    options: [{ id: 'opt1', width: 91, height: 68, price: 2485, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Swing",
+    artist: "Jean Honore Fragonard",
+    year: "1767",
+    originalSize: "81 x 64.2 cm",
+    artistLife: "1732-1806",
+    sku: "AM-FA-011",
+    basePrice: 11900,
+    currency: "AED",
+    image: "/image/famous-art/the swing.jpg",
+    options: [{ id: 'opt1', width: 81, height: 64.2, price: 11900, label: 'Original Size' }],
+  },
+
+  {
+    title: "Blossoming Almond Tree",
+    artist: "Vincent Van Gogh",
+    year: "1890",
+    originalSize: "73.5 x 92 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-012",
+    basePrice: 4150,
+    currency: "AED",
+    image: "/image/famous-art/blossoming almod tree.jpg",
+    options: [{ id: 'opt1', width: 73.5, height: 92, price: 4150, label: 'Original Size' }],
+  },
+
+  {
+    title: "Woman With A Parasol Madame Monet",
+    artist: "Claude Monet",
+    year: "1875",
+    originalSize: "100 x 81 cm",
+    artistLife: "1840-1926",
+    sku: "AM-FA-013",
+    basePrice: 4900,
+    currency: "AED",
+    image: "/image/famous-art/woman with a parasol madame monet.jpg",
+    options: [
+      { id: 'opt1', width: 100, height: 81, price: 4900, label: '100 x 81 cm' },
+      { id: 'opt2', width: 200, height: 162, price: 9800, label: '200 x 162 cm' }
+    ],
+  },
+
+  {
+    title: "Portrait Of Adele Bloch-Bauer I",
+    artist: "Gustav Klimt",
+    year: "1907",
+    originalSize: "138 x 138 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-014",
+    basePrice: 7165,
+    currency: "AED",
+    image: "/image/famous-art/portrait of adele bloch-bauer i.jpg",
+    options: [{ id: 'opt1', width: 138, height: 138, price: 7165, label: 'Original Size' }],
+  },
+
+  {
+    title: "Dancers In Blue",
+    artist: "Hilaire Germain Edgar Degas",
+    year: "1890",
+    originalSize: "85 x 75.5 cm",
+    artistLife: "1834-1917",
+    sku: "AM-FA-015",
+    basePrice: 3250,
+    currency: "AED",
+    image: "/image/famous-art/dancers in blue.jpg",
+    options: [
+      { id: 'opt1', width: 85, height: 75.5, price: 3250, label: '85 x 75.5 cm' },
+      { id: 'opt2', width: 170, height: 151, price: 6500, label: '170 x 151 cm' },
+      { id: 'opt3', width: 195, height: 226.5, price: 9750, label: '195 x 226.5 cm' }
+    ],
+  },
+
+  {
+    title: "Storm On The Sea Of Galilee",
+    artist: "Van Rijn Rembrandt",
+    year: "1663",
+    originalSize: "161.7 x 129.8 cm",
+    artistLife: "1606-1669",
+    sku: "AM-FA-016",
+    basePrice: 19231,
+    currency: "AED",
+    image: "/image/famous-art/storm on the sea of galilee.jpg",
+    options: [
+      { id: 'opt1', width: 161.7, height: 129.8, price: 19231, label: '161.7 x 129.8 cm' },
+      { id: 'opt2', width: 80.5, height: 64.9, price: 6772, label: '80.5 x 64.9 cm' }
+    ],
+  },
+
+  {
+    title: "The Lady Of Shalott",
+    artist: "John William Waterhouse",
+    year: "1888",
+    originalSize: "153 x 200 cm",
+    artistLife: "1849-1917",
+    sku: "AM-FA-017",
+    basePrice: 10560,
+    currency: "AED",
+    image: "/image/famous-art/the lady of shalotte.jpg",
+    options: [
+      { id: 'opt1', width: 153, height: 200, price: 10560, label: '153 x 200 cm' },
+      { id: 'opt2', width: 76, height: 100, price: 5250, label: '76 x 100 cm' }
+    ],
+  },
+
+  {
+    title: "The Birth Of Venus",
+    artist: "Sandro Botticelli",
+    year: "1485",
+    originalSize: "180 x 280 cm",
+    artistLife: "1445-1510",
+    sku: "AM-FA-018",
+    basePrice: 25500,
+    currency: "AED",
+    image: "/image/famous-art/the birth of venus.jpg",
+    options: [
+      { id: 'opt1', width: 180, height: 280, price: 25500, label: '180 x 280 cm' },
+      { id: 'opt2', width: 90, height: 110, price: 12750, label: '90 x 110 cm' }
+    ],
+  },
+
+  {
+    title: "Mona Lisa",
+    artist: "Leonardo Da Vinci",
+    year: "1503",
+    originalSize: "77 x 53 cm",
+    artistLife: "1452-1519",
+    sku: "AM-FA-019",
+    basePrice: 8900,
+    currency: "AED",
+    image: "/image/famous-art/mona lisa.jpg",
+    options: [
+      { id: 'opt1', width: 77, height: 53, price: 8900, label: '77 x 53 cm' },
+      { id: 'opt2', width: 154, height: 106, price: 17800, label: '154 x 106 cm' }
+    ],
+  },
+
+  {
+    title: "Luncheon On The Boating Party",
+    artist: "Pierre-Auguste Renoir",
+    year: "1880",
+    originalSize: "130.1 x 175.5 cm",
+    artistLife: "1841-1919",
+    sku: "AM-FA-020",
+    basePrice: 46500,
+    currency: "AED",
+    image: "/image/famous-art/luncheon on the boating party.jpg",
+    options: [{ id: 'opt1', width: 130.1, height: 175.5, price: 46500, label: 'Original Size' }],
+  },
+
+  {
+    title: "Two Sisters On The Terrace",
+    artist: "Pierre-Auguste Renoir",
+    year: "1881",
+    originalSize: "100.5 x 81 cm",
+    artistLife: "1841-1919",
+    sku: "AM-FA-021",
+    basePrice: 4650,
+    currency: "AED",
+    image: "/image/famous-art/two sisters on the terrace.jpg",
+    options: [{ id: 'opt1', width: 100.5, height: 81, price: 4650, label: 'Original Size' }],
+  },
+
+  {
+    title: "Composition 8",
+    artist: "Wasilly Kadinsky",
+    year: "1923",
+    originalSize: "140 x 201 cm",
+    artistLife: "1866-1944",
+    sku: "AM-FA-022",
+    basePrice: 7000,
+    currency: "AED",
+    image: "/image/famous-art/composition 8.jpg",
+    options: [
+      { id: 'opt1', width: 140, height: 201, price: 7000, label: '140 x 201 cm' },
+      { id: 'opt2', width: 280, height: 402, price: 14000, label: '280 x 402 cm' }
+    ],
+  },
+
+  {
+    title: "Flaming June",
+    artist: "Lord Frederick Leighton",
+    year: "1895",
+    originalSize: "120.6 x 120.6 cm",
+    artistLife: "1830-1896",
+    sku: "AM-FA-023",
+    basePrice: 9400,
+    currency: "AED",
+    image: "/image/famous-art/flaming june.jpg",
+    options: [
+      { id: 'opt1', width: 120.6, height: 120.6, price: 9400, label: '120.6 x 120.6 cm' },
+      { id: 'opt2', width: 60.3, height: 60.3, price: 4700, label: '60.3 x 60.3 cm' }
+    ],
+  },
+
+  {
+    title: "The Skiff (La Yole)",
+    artist: "Pierre-Auguste Renoir",
+    year: "1875",
+    originalSize: "71 x 92 cm",
+    artistLife: "1841-1919",
+    sku: "AM-FA-024",
+    basePrice: 3300,
+    currency: "AED",
+    image: "/image/famous-art/the skiff (la yole).jpg",
+    options: [{ id: 'opt1', width: 71, height: 92, price: 3300, label: 'Original Size' }],
+  },
+
+  {
+    title: "Vase With Irises Against A Yellow Background",
+    artist: "Vincent Van Gogh",
+    year: "1890",
+    originalSize: "92 x 73.5 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-025",
+    basePrice: 3170,
+    currency: "AED",
+    image: "/image/famous-art/vase with irises against a yellow background.jpg",
+    options: [
+      { id: 'opt1', width: 92, height: 73.5, price: 3170, label: '92 x 73.5 cm' },
+      { id: 'opt2', width: 184, height: 147, price: 6340, label: '184 x 147 cm' }
+    ],
+  },
+
+  {
+    title: "Wheat Field With Cypresses",
+    artist: "Vincent Van Gogh",
+    year: "1889",
+    originalSize: "73 x 93.4 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-026",
+    basePrice: 3200,
+    currency: "AED",
+    image: "/image/famous-art/wheat field with cypresses.jpg",
+    options: [{ id: 'opt1', width: 73, height: 93.4, price: 3200, label: 'Original Size' }],
+  },
+
+  {
+    title: "Dance At The Moulin De La Galette",
+    artist: "Pierre-Auguste Renoir",
+    year: "1876",
+    originalSize: "131 x 175 cm",
+    artistLife: "1841-1919",
+    sku: "AM-FA-027",
+    basePrice: 45740,
+    currency: "AED",
+    image: "/image/famous-art/dance at the moulin del la galette.jpg",
+    options: [
+      { id: 'opt1', width: 131, height: 175, price: 45740, label: '131 x 175 cm' },
+      { id: 'opt2', width: 65.5, height: 87.5, price: 22870, label: '65.5 x 87.5 cm' }
+    ],
+  },
+
+  {
+    title: "Impression Sunrise",
+    artist: "Claude Monet",
+    year: "1872",
+    originalSize: "50 x 65 cm",
+    artistLife: "1840-1926",
+    sku: "AM-FA-028",
+    basePrice: 2200,
+    currency: "AED",
+    image: "/image/famous-art/impression sunrise (soliel levante).jpg",
+    options: [
+      { id: 'opt1', width: 50, height: 65, price: 2200, label: '50 x 65 cm' },
+      { id: 'opt2', width: 100, height: 130, price: 4400, label: '100 x 130 cm' },
+      { id: 'opt3', width: 200, height: 260, price: 8800, label: '200 x 260 cm' }
+    ],
+  },
+
+  {
+    title: "The Angelus",
+    artist: "Jean-Froncois Millet",
+    year: "1857",
+    originalSize: "56 x 66 cm",
+    artistLife: "1814-1875",
+    sku: "AM-FA-029",
+    basePrice: 3780,
+    currency: "AED",
+    image: "/image/famous-art/the angelus.jpg",
+    options: [
+      { id: 'opt1', width: 56, height: 66, price: 3780, label: '56 x 66 cm' },
+      { id: 'opt2', width: 112, height: 132, price: 7560, label: '112 x 132 cm' }
+    ],
+  },
+
+  {
+    title: "The Lunch On The Grass",
+    artist: "Edouard Manet",
+    year: "1863",
+    originalSize: "208 x 264 cm",
+    artistLife: "1832-1883",
+    sku: "AM-FA-030",
+    basePrice: 16500,
+    currency: "AED",
+    image: "/image/famous-art/the lunch on the grass.jpg",
+    options: [
+      { id: 'opt1', width: 208, height: 264, price: 16500, label: '208 x 264 cm' },
+      { id: 'opt2', width: 104, height: 132, price: 8250, label: '104 x 132 cm' }
+    ],
+  },
+
+  {
+    title: "Primavera",
+    artist: "Sandro Botticelli",
+    year: "1482",
+    originalSize: "203 x 314 cm",
+    artistLife: "1445-1510",
+    sku: "AM-FA-031",
+    basePrice: 150000,
+    currency: "AED",
+    image: "/image/famous-art/primavera.jpg",
+    options: [
+      { id: 'opt1', width: 203, height: 314, price: 150000, label: '203 x 314 cm' },
+      { id: 'opt2', width: 67.66, height: 104.66, price: 50000, label: '67.66 x 104.66 cm' }
+    ],
+  },
+
+  {
+    title: "A Bar At The Folies-Bergere",
+    artist: "Edouard Manet",
+    year: "1881",
+    originalSize: "98 x 130 cm",
+    artistLife: "1832-1883",
+    sku: "AM-FA-032",
+    basePrice: 6270,
+    currency: "AED",
+    image: "/image/famous-art/a bar at the folies-begere.jpg",
+    options: [{ id: 'opt1', width: 98, height: 130, price: 6270, label: 'Original Size' }],
+  },
+
+  {
+    title: "Red Nude On A Cushion",
+    artist: "Amedeo Modigliani",
+    year: "1917",
+    originalSize: "60 x 92 cm",
+    artistLife: "1884-1920",
+    sku: "AM-FA-033",
+    basePrice: 3790,
+    currency: "AED",
+    image: "/image/famous-art/red nude on a cushion.jpg",
+    options: [{ id: 'opt1', width: 60, height: 92, price: 3790, label: 'Original Size' }],
+  },
+
+  {
+    title: "Van Gogh's Bedroom At Arles",
+    artist: "Vincent Van Gogh",
+    year: "1889",
+    originalSize: "57.5 x 74 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-034",
+    basePrice: 2500,
+    currency: "AED",
+    image: "/image/famous-art/van gogh's bedroom at aries.jpg",
+    options: [
+      { id: 'opt1', width: 57.5, height: 74, price: 2500, label: '57.5 x 74 cm' },
+      { id: 'opt2', width: 115, height: 148, price: 5000, label: '115 x 148 cm' },
+      { id: 'opt3', width: 230, height: 296, price: 10000, label: '230 x 296 cm' }
+    ],
+  },
+
+  {
+    title: "Shoes",
+    artist: "Vincent Van Gogh",
+    year: "1887",
+    originalSize: "32.7 x 40.6 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-035",
+    basePrice: 1672,
+    currency: "AED",
+    image: "/image/famous-art/shoes.jpg",
+    options: [
+      { id: 'opt1', width: 32.7, height: 40.6, price: 1672, label: '32.7 x 40.6 cm' },
+      { id: 'opt2', width: 98.1, height: 121.8, price: 5016, label: '98.1 x 121.8 cm' }
+    ],
+  },
+
+  {
+    title: "Postman Joseph Roulin",
+    artist: "Vincent Van Gogh",
+    year: "1888",
+    originalSize: "81.3 x 65.4 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-036",
+    basePrice: 2780,
+    currency: "AED",
+    image: "/image/famous-art/postman joseph roulin.jpg",
+    options: [
+      { id: 'opt1', width: 81.3, height: 65.4, price: 2780, label: '81.3 x 65.4 cm' },
+      { id: 'opt2', width: 162.6, height: 130.8, price: 5560, label: '162.6 x 130.8 cm' }
+    ],
+  },
+
+  {
+    title: "Vase Of Roses",
+    artist: "Vincent Van Gogh",
+    year: "1890",
+    originalSize: "93 x 74 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-037",
+    basePrice: 3525,
+    currency: "AED",
+    image: "/image/famous-art/vase of roses.jpg",
+    options: [{ id: 'opt1', width: 93, height: 74, price: 3525, label: 'Original Size' }],
+  },
+
+  {
+    title: "Water Lilies",
+    artist: "Claude Monet",
+    year: "1906",
+    originalSize: "88.5 x 100 cm",
+    artistLife: "1840-1926",
+    sku: "AM-FA-038",
+    basePrice: 4800,
+    currency: "AED",
+    image: "/image/famous-art/water lilies.jpg",
+    options: [{ id: 'opt1', width: 88.5, height: 100, price: 4800, label: 'Original Size' }],
+  },
+
+  {
+    title: "Grand Canal",
+    artist: "Claude Monet",
+    year: "1908",
+    originalSize: "73.7 x 93.4 cm",
+    artistLife: "1840-1926",
+    sku: "AM-FA-039",
+    basePrice: 4100,
+    currency: "AED",
+    image: "/image/famous-art/grand canal.jpg",
+    options: [{ id: 'opt1', width: 73.7, height: 93.4, price: 4100, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Japanese Bridge Pond With Water Lilies",
+    artist: "Claude Monet",
+    year: "1900",
+    originalSize: "89.5 x 92.5 cm",
+    artistLife: "1840-1926",
+    sku: "AM-FA-040",
+    basePrice: 4800,
+    currency: "AED",
+    image: "/image/famous-art/the japanese bridge pond with water lilies.jpg",
+    options: [{ id: 'opt1', width: 89.5, height: 92.5, price: 4800, label: 'Original Size' }],
+  },
+
+  {
+    title: "Hay Stacks Sun In The Mist",
+    artist: "Claude Monet",
+    year: "1891",
+    originalSize: "60 x 100.3 cm",
+    artistLife: "1840-1926",
+    sku: "AM-FA-041",
+    basePrice: 3000,
+    currency: "AED",
+    image: "/image/famous-art/hay stacks, sun in the mist.jpg",
+    options: [{ id: 'opt1', width: 60, height: 100.3, price: 3000, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Hunt",
+    artist: "Claude Monet",
+    year: "1876",
+    originalSize: "170 x 137 cm",
+    artistLife: "1840-1926",
+    sku: "AM-FA-042",
+    basePrice: 8500,
+    currency: "AED",
+    image: "/image/famous-art/the hunt.jpg",
+    options: [{ id: 'opt1', width: 170, height: 137, price: 8500, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Houses Of Parliament Sunset",
+    artist: "Claude Monet",
+    year: "1903",
+    originalSize: "81.2 x 92 cm",
+    artistLife: "1840-1926",
+    sku: "AM-FA-043",
+    basePrice: 4600,
+    currency: "AED",
+    image: "/image/famous-art/the houses of parliament sunset.jpg",
+    options: [{ id: 'opt1', width: 81.2, height: 92, price: 4600, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Dance",
+    artist: "Henri Matisse",
+    year: "1909",
+    originalSize: "150 x 230 cm",
+    artistLife: "1869-1954",
+    sku: "AM-FA-044",
+    basePrice: 7150,
+    currency: "AED",
+    image: "/image/famous-art/the dance.jpg",
+    options: [{ id: 'opt1', width: 150, height: 230, price: 7150, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Red Room Harmony In Red",
+    artist: "Henri Matisse",
+    year: "1908",
+    originalSize: "180 x 220 cm",
+    artistLife: "1869-1954",
+    sku: "AM-FA-045",
+    basePrice: 8120,
+    currency: "AED",
+    image: "/image/famous-art/the red room, harmony in red.jpg",
+    options: [{ id: 'opt1', width: 180, height: 220, price: 8120, label: 'Original Size' }],
+  },
+
+  {
+    title: "Goldfish",
+    artist: "Henri Matisse",
+    year: "1912",
+    originalSize: "147 x 98 cm",
+    artistLife: "1869-1954",
+    sku: "AM-FA-046",
+    basePrice: 4500,
+    currency: "AED",
+    image: "/image/famous-art/goldfish.jpg",
+    options: [{ id: 'opt1', width: 147, height: 98, price: 4500, label: 'Original Size' }],
+  },
+
+  {
+    title: "Open Window Collioure",
+    artist: "Henri Matisse",
+    year: "1905",
+    originalSize: "55.2 x 45 cm",
+    artistLife: "1869-1954",
+    sku: "AM-FA-047",
+    basePrice: 2150,
+    currency: "AED",
+    image: "/image/famous-art/open window colloure.jpg",
+    options: [{ id: 'opt1', width: 55.2, height: 45, price: 2150, label: 'Original Size' }],
+  },
+
+  {
+    title: "Woman In Purple Coat",
+    artist: "Henri Matisse",
+    year: "1937",
+    originalSize: "81 x 65.2 cm",
+    artistLife: "1869-1954",
+    sku: "AM-FA-048",
+    basePrice: 12829,
+    currency: "AED",
+    image: "/image/famous-art/woman in purple coat paint.jpg",
+    options: [{ id: 'opt1', width: 81, height: 65.2, price: 12829, label: 'Original Size' }],
+  },
+
+  {
+    title: "Crouching Woman (Jacqueline)",
+    artist: "Pablo Picasso",
+    year: "1954",
+    originalSize: "146 x 114 cm",
+    artistLife: "1881-1973",
+    sku: "AM-FA-049",
+    basePrice: 4400,
+    currency: "AED",
+    image: "/image/famous-art/crouching woman (jacqueline).jpg",
+    options: [{ id: 'opt1', width: 146, height: 114, price: 4400, label: 'Original Size' }],
+  },
+
+  {
+    title: "Writing Woman",
+    artist: "Pablo Picasso",
+    year: "1934",
+    originalSize: "81 x 64.7 cm",
+    artistLife: "1881-1973",
+    sku: "AM-FA-050",
+    basePrice: 2724,
+    currency: "AED",
+    image: "/image/famous-art/writing woman.jpg",
+    options: [{ id: 'opt1', width: 81, height: 64.7, price: 2724, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Dream",
+    artist: "Pablo Picasso",
+    year: "1932",
+    originalSize: "130 x 97 cm",
+    artistLife: "1881-1973",
+    sku: "AM-FA-051",
+    basePrice: 4365,
+    currency: "AED",
+    image: "/image/famous-art/the dream.jpg",
+    options: [{ id: 'opt1', width: 130, height: 97, price: 4365, label: 'Original Size' }],
+  },
+
+  {
+    title: "Nude Green Leaves And Bust",
+    artist: "Pablo Picasso",
+    year: "1932",
+    originalSize: "162 x 130 cm",
+    artistLife: "1881-1973",
+    sku: "AM-FA-052",
+    basePrice: 5650,
+    currency: "AED",
+    image: "/image/famous-art/nude, green leaves and bust.jpg",
+    options: [{ id: 'opt1', width: 162, height: 130, price: 5650, label: 'Original Size' }],
+  },
+
+  {
+    title: "Horse's Head",
+    artist: "Pablo Picasso",
+    year: "1937",
+    originalSize: "65 x 92 cm",
+    artistLife: "1881-1973",
+    sku: "AM-FA-053",
+    basePrice: 2250,
+    currency: "AED",
+    image: "/image/famous-art/horse's head.jpg",
+    options: [{ id: 'opt1', width: 65, height: 92, price: 2250, label: 'Original Size' }],
+  },
+
+  {
+    title: "Jacqueline With Flowers",
+    artist: "Pablo Picasso",
+    year: "1954",
+    originalSize: "116 x 88.5 cm",
+    artistLife: "1881-1973",
+    sku: "AM-FA-055",
+    basePrice: 4100,
+    currency: "AED",
+    image: "/image/famous-art/jacqueline with flowers.jpg",
+    options: [{ id: 'opt1', width: 116, height: 88.5, price: 4100, label: 'Original Size' }],
+  },
+
+  {
+    title: "Portrait Of Johanna Staude",
+    artist: "Gustav Klimt",
+    year: "1917",
+    originalSize: "70 x 50 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-057",
+    basePrice: 3800,
+    currency: "AED",
+    image: "/image/famous-art/portrait of johanna straude.jpg",
+    options: [{ id: 'opt1', width: 70, height: 50, price: 3800, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Tree Of Life",
+    artist: "Gustav Klimt",
+    year: "1905",
+    originalSize: "86 x 148 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-058",
+    basePrice: 10125,
+    currency: "AED",
+    image: "/image/famous-art/the tree of life.jpg",
+    options: [{ id: 'opt1', width: 86, height: 148, price: 10125, label: 'Original Size' }],
+  },
+
+  {
+    title: "Hope II",
+    artist: "Gustav Klimt",
+    year: "1907",
+    originalSize: "110.5 x 110.5 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-059",
+    basePrice: 4988,
+    currency: "AED",
+    image: "/image/famous-art/hope ii.jpg",
+    options: [{ id: 'opt1', width: 110.5, height: 110.5, price: 4988, label: 'Original Size' }],
+  },
+
+  {
+    title: "Judith I",
+    artist: "Gustav Klimt",
+    year: "1901",
+    originalSize: "84 x 92 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-060",
+    basePrice: 3985,
+    currency: "AED",
+    image: "/image/famous-art/judith i.jpg",
+    options: [{ id: 'opt1', width: 84, height: 92, price: 3985, label: 'Original Size' }],
+  },
+
+  {
+    title: "View Of Toledo",
+    artist: "Domenikos Theotokopoulos El Greco",
+    year: "1599",
+    originalSize: "121.3 x 108.6 cm",
+    artistLife: "1541-1614",
+    sku: "AM-FA-061",
+    basePrice: 15480,
+    currency: "AED",
+    image: "/image/famous-art/view of toledo.jpg",
+    options: [
+      { id: 'opt1', width: 121.3, height: 108.6, price: 15480, label: '121.3 x 108.6 cm' },
+      { id: 'opt2', width: 60.65, height: 54.25, price: 7740, label: '60.65 x 54.25 cm' }
+    ],
+  },
+
+  {
+    title: "Still Life Vase With Fourteen Sunflowers",
+    artist: "Vincent Van Gogh",
+    year: "1888",
+    originalSize: "92.1 x 73 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-062",
+    basePrice: 3200,
+    currency: "AED",
+    image: "/image/famous-art/still life vase with fourteen sunflowers.jpg",
+    options: [{ id: 'opt1', width: 92.1, height: 73, price: 3200, label: 'Original Size' }],
+  },
+
+  {
+    title: "Ophelia",
+    artist: "Sir John Elliot Millaise",
+    year: "1851",
+    originalSize: "76.2 x 11.8 cm",
+    artistLife: "Unknown",
+    sku: "AM-FA-063",
+    basePrice: 23800,
+    currency: "AED",
+    image: "/image/famous-art/ophelia.jpg",
+    options: [{ id: 'opt1', width: 76.2, height: 11.8, price: 23800, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Sistine Madonna",
+    artist: "Raphaello Sanzio Rahael",
+    year: "1513",
+    originalSize: "269.5 x 201 cm",
+    artistLife: "1483-1520",
+    sku: "AM-FA-064",
+    basePrice: 14500,
+    currency: "AED",
+    image: "/image/famous-art/the sistine madonna.jpg",
+    options: [{ id: 'opt1', width: 269.5, height: 201, price: 14500, label: 'Original Size' }],
+  },
+
+  {
+    title: "Madame X",
+    artist: "John Singer Sargent",
+    year: "1884",
+    originalSize: "208.6 x 110 cm",
+    artistLife: "1856-1925",
+    sku: "AM-FA-065",
+    basePrice: 13060,
+    currency: "AED",
+    image: "/image/famous-art/madame x.jpg",
+    options: [{ id: 'opt1', width: 208.6, height: 110, price: 13060, label: 'Original Size' }],
+  },
+
+  {
+    title: "Lady Godiva",
+    artist: "John Collier",
+    year: "1898",
+    originalSize: "142.2 x 183 cm",
+    artistLife: "1850-1934",
+    sku: "AM-FA-066",
+    basePrice: 15990,
+    currency: "AED",
+    image: "/image/famous-art/lady godiva.jpg",
+    options: [
+      { id: 'opt1', width: 142.2, height: 183, price: 15990, label: '142.2 x 183 cm' },
+      { id: 'opt2', width: 71.1, height: 91.5, price: 7995, label: '71.1 x 91.5 cm' }
+    ],
+  },
+
+  {
+    title: "The Calling Of St Matthew",
+    artist: "Michaelangelo Merisi Da Caravaggio",
+    year: "1599",
+    originalSize: "326 x 348 cm",
+    artistLife: "1571-1610",
+    sku: "AM-FA-068",
+    basePrice: 106750,
+    currency: "AED",
+    image: "/image/famous-art/the calling of st matthew.jpg",
+    options: [
+      { id: 'opt1', width: 326, height: 348, price: 106750, label: '326 x 348 cm' },
+      { id: 'opt2', width: 163, height: 174, price: 53375, label: '163 x 174 cm' },
+      { id: 'opt3', width: 81.5, height: 87, price: 26687, label: '81.5 x 87 cm' }
+    ],
+  },
+
+  {
+    title: "The Dancer",
+    artist: "Gustav Klimt",
+    year: "1916",
+    originalSize: "180 x 90 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-069",
+    basePrice: 9200,
+    currency: "AED",
+    image: "/image/famous-art/the dancer.jpg",
+    options: [{ id: 'opt1', width: 180, height: 90, price: 9200, label: 'Original Size' }],
+  },
+
+  {
+    title: "Music I",
+    artist: "Gustav Klimt",
+    year: "1895",
+    originalSize: "27.5 x 35.5 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-070",
+    basePrice: 3635,
+    currency: "AED",
+    image: "/image/famous-art/music i.jpg",
+    options: [{ id: 'opt1', width: 27.5, height: 35.5, price: 3635, label: 'Original Size' }],
+  },
+
+  {
+    title: "Ria Munk On Her Death Bed",
+    artist: "Gustav Klimt",
+    year: "1912",
+    originalSize: "50 x 50.5 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-071",
+    basePrice: 5000,
+    currency: "AED",
+    image: "/image/famous-art/ria munk on her death bed.jpg",
+    options: [{ id: 'opt1', width: 50, height: 50.5, price: 5000, label: 'Original Size' }],
+  },
+
+  {
+    title: "Lady With A Fan",
+    artist: "Gustav Klimt",
+    year: "1917",
+    originalSize: "100 x 100 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-073",
+    basePrice: 10000,
+    currency: "AED",
+    image: "/image/famous-art/lady with a fan.jpg",
+    options: [{ id: 'opt1', width: 100, height: 100, price: 10000, label: 'Original Size' }],
+  },
+
+  {
+    title: "Portrait Of Eugenia Primavesi",
+    artist: "Gustav Klimt",
+    year: "1913",
+    originalSize: "140 x 84 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-074",
+    basePrice: 8135,
+    currency: "AED",
+    image: "/image/famous-art/portrait of eugeina primavesi.jpg",
+    options: [{ id: 'opt1', width: 140, height: 84, price: 8135, label: 'Original Size' }],
+  },
+
+  {
+    title: "Girl Friends",
+    artist: "Gustav Klimt",
+    year: "1916",
+    originalSize: "99 x 99 cm",
+    artistLife: "1862-1918",
+    sku: "AM-FA-075",
+    basePrice: 5127,
+    currency: "AED",
+    image: "/image/famous-art/girl friends.jpg",
+    options: [{ id: 'opt1', width: 99, height: 99, price: 5127, label: 'Original Size' }],
+  },
+
+  {
+    title: "Lady With An Ermine (Cecilia Gallerani)",
+    artist: "Leonardo Da Vinci",
+    year: "1496",
+    originalSize: "53.4 x 39.3 cm",
+    artistLife: "1452-1519",
+    sku: "AM-FA-076",
+    basePrice: 7570,
+    currency: "AED",
+    image: "/image/famous-art/lady with an emine (cecilia gallerani).jpg",
+    options: [{ id: 'opt1', width: 53.4, height: 39.3, price: 7570, label: 'Original Size' }],
+  },
+
+  {
+    title: "Olympia",
+    artist: "Edouard Manet",
+    year: "1863",
+    originalSize: "130 x 190 cm",
+    artistLife: "1832-1883",
+    sku: "AM-FA-077",
+    basePrice: 11895,
+    currency: "AED",
+    image: "/image/famous-art/olympia.jpg",
+    options: [{ id: 'opt1', width: 130, height: 190, price: 11895, label: 'Original Size' }],
+  },
+
+  {
+    title: "Dancers In Pink",
+    artist: "Hilaire Germaine Edgar Degas",
+    year: "1876",
+    originalSize: "59 x 74.3 cm",
+    artistLife: "1834-1917",
+    sku: "AM-FA-078",
+    basePrice: 2790,
+    currency: "AED",
+    image: "/image/famous-art/dancers in pink.jpg",
+    options: [{ id: 'opt1', width: 59, height: 74.3, price: 2790, label: 'Original Size' }],
+  },
+
+  {
+    title: "Laughing Cavalier",
+    artist: "Frans Halls",
+    year: "1624",
+    originalSize: "83 x 67 cm",
+    artistLife: "1582-1666",
+    sku: "AM-FA-079",
+    basePrice: 6741,
+    currency: "AED",
+    image: "/image/famous-art/laughing cavalier.jpg",
+    options: [{ id: 'opt1', width: 83, height: 67, price: 6741, label: 'Original Size' }],
+  },
+
+  {
+    title: "Portrait Of Doctor Gachet",
+    artist: "Vincent Van Gogh",
+    year: "1890",
+    originalSize: "66 x 57 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-080",
+    basePrice: 2641,
+    currency: "AED",
+    image: "/image/famous-art/portrait of doctor gachet.jpg",
+    options: [{ id: 'opt1', width: 66, height: 57, price: 2641, label: 'Original Size' }],
+  },
+
+  {
+    title: "Dance At The Opera",
+    artist: "Hilaire Germaine Edgar Degas",
+    year: "1872",
+    originalSize: "32 x 46 cm",
+    artistLife: "1834-1917",
+    sku: "AM-FA-081",
+    basePrice: 1790,
+    currency: "AED",
+    image: "/image/famous-art/dance opera.jpg",
+    options: [{ id: 'opt1', width: 32, height: 46, price: 1790, label: 'Original Size' }],
+  },
+
+  {
+    title: "Nude Youth Sitting By The Sea",
+    artist: "Hippolyte Flandrin",
+    year: "1836",
+    originalSize: "98 x 124 cm",
+    artistLife: "1809-1864",
+    sku: "AM-FA-082",
+    basePrice: 8633,
+    currency: "AED",
+    image: "/image/famous-art/nude youth sitting by the sea.jpg",
+    options: [{ id: 'opt1', width: 98, height: 124, price: 8633, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Card Players",
+    artist: "Paul Cezanne",
+    year: "1890",
+    originalSize: "60 x 73 cm",
+    artistLife: "1839-1906",
+    sku: "AM-FA-084",
+    basePrice: 3014,
+    currency: "AED",
+    image: "/image/famous-art/the card players.jpg",
+    options: [{ id: 'opt1', width: 60, height: 73, price: 3014, label: 'Original Size' }],
+  },
+
+  {
+    title: "Still Life With Apples",
+    artist: "Paul Cezanne",
+    year: "1890",
+    originalSize: "35.2 x 46.2 cm",
+    artistLife: "1839-1906",
+    sku: "AM-FA-085",
+    basePrice: 1315,
+    currency: "AED",
+    image: "/image/famous-art/still life with apples.jpg",
+    options: [{ id: 'opt1', width: 35.2, height: 46.2, price: 1315, label: 'Original Size' }],
+  },
+
+  {
+    title: "Triple Portrait Of Cardinal Richelieu",
+    artist: "Philippe De Champaigne",
+    year: "1642",
+    originalSize: "58.7 x 72.8 cm",
+    artistLife: "1602-1674",
+    sku: "AM-FA-086",
+    basePrice: 10085,
+    currency: "AED",
+    image: "/image/famous-art/triple portraif of cardinal richelieu.jpg",
+    options: [{ id: 'opt1', width: 58.7, height: 72.8, price: 10085, label: 'Original Size' }],
+  },
+
+  {
+    title: "Dora Wheeler",
+    artist: "William Merrit Chase",
+    year: "1882",
+    originalSize: "159 x 165.5 cm",
+    artistLife: "1849-1916",
+    sku: "AM-FA-087",
+    basePrice: 3725,
+    currency: "AED",
+    image: "/image/famous-art/dora wheeler.jpg",
+    options: [{ id: 'opt1', width: 159, height: 165.5, price: 3725, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Son Of Man",
+    artist: "Rene Magritte",
+    year: "1964",
+    originalSize: "116 x 89 cm",
+    artistLife: "1898-1964",
+    sku: "AM-FA-088",
+    basePrice: 3985,
+    currency: "AED",
+    image: "/image/famous-art/the son of man.jpg",
+    options: [{ id: 'opt1', width: 116, height: 89, price: 3985, label: 'Original Size' }],
+  },
+
+  {
+    title: "Figures At The Seaside",
+    artist: "Pablo Picasso",
+    year: "1931",
+    originalSize: "129.8 x 161 cm",
+    artistLife: "1881-1973",
+    sku: "AM-FA-090",
+    basePrice: 7300,
+    currency: "AED",
+    image: "/image/famous-art/figures at the seaside.jpg",
+    options: [{ id: 'opt1', width: 129.8, height: 161, price: 7300, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Blinding Of Samson",
+    artist: "Rembrandt Van Rijn",
+    year: "1636",
+    originalSize: "206 x 276 cm",
+    artistLife: "1606-1669",
+    sku: "AM-FA-091",
+    basePrice: 30485,
+    currency: "AED",
+    image: "/image/famous-art/the blinding of samson.jpg",
+    options: [{ id: 'opt1', width: 206, height: 276, price: 30485, label: 'Original Size' }],
+  },
+
+  {
+    title: "Dance At Bougival",
+    artist: "Pierre-Auguste Renoir",
+    year: "1883",
+    originalSize: "182 x 98 cm",
+    artistLife: "1841-1919",
+    sku: "AM-FA-092",
+    basePrice: 9467,
+    currency: "AED",
+    image: "/image/famous-art/dance at bougival.jpg",
+    options: [{ id: 'opt1', width: 182, height: 98, price: 9467, label: 'Original Size' }],
+  },
+
+  {
+    title: "La Sieste",
+    artist: "Jehan Georges Vibert",
+    year: "Unknown",
+    originalSize: "26 x 36 cm",
+    artistLife: "1840-1902",
+    sku: "AM-FA-093",
+    basePrice: 6473,
+    currency: "AED",
+    image: "/image/famous-art/la sieste.jpg",
+    options: [{ id: 'opt1', width: 26, height: 36, price: 6473, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Ballerina Ulla Poulsen In The Ballet Chopinana",
+    artist: "Gerder Wegener",
+    year: "1927",
+    originalSize: "76 x 91 cm",
+    artistLife: "1886-1940",
+    sku: "AM-FA-094",
+    basePrice: 5360,
+    currency: "AED",
+    image: "/image/famous-art/the ballerina ulla poulsen in the ballet chopinana.jpg",
+    options: [{ id: 'opt1', width: 76, height: 91, price: 5360, label: 'Original Size' }],
+  },
+
+  {
+    title: "Death Of Marat",
+    artist: "Jacques-Louis David",
+    year: "1793",
+    originalSize: "165 x 128 cm",
+    artistLife: "1748-1825",
+    sku: "AM-FA-100",
+    basePrice: 9500,
+    currency: "AED",
+    image: "/image/famous-art/death of marat.jpg",
+    options: [{ id: 'opt1', width: 165, height: 128, price: 9500, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Egg Dance",
+    artist: "Pieter Aertsen",
+    year: "1557",
+    originalSize: "84 x 172 cm",
+    artistLife: "1508-1575",
+    sku: "AM-FA-101",
+    basePrice: 9250,
+    currency: "AED",
+    image: "/image/famous-art/the egg dance.jpg",
+    options: [{ id: 'opt1', width: 84, height: 172, price: 9250, label: 'Original Size' }],
+  },
+
+  {
+    title: "St Paul",
+    artist: "El Greco",
+    year: "1610",
+    originalSize: "97 x 77 cm",
+    artistLife: "1541-1614",
+    sku: "AM-FA-102",
+    basePrice: 4200,
+    currency: "AED",
+    image: "/image/famous-art/st paul.jpg",
+    options: [{ id: 'opt1', width: 97, height: 77, price: 4200, label: 'Original Size' }],
+  },
+
+  {
+    title: "Self Portrait With Bandaged Ear",
+    artist: "Vincent Van Gogh",
+    year: "1889",
+    originalSize: "60 x 49 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-103",
+    basePrice: 2500,
+    currency: "AED",
+    image: "/image/famous-art/self portrait with bandaged ear.jpg",
+    options: [{ id: 'opt1', width: 60, height: 49, price: 2500, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Sleeping Gypsy",
+    artist: "Henri Rousseau",
+    year: "1897",
+    originalSize: "129.5 x 200.7 cm",
+    artistLife: "1844-1910",
+    sku: "AM-FA-104",
+    basePrice: 10130,
+    currency: "AED",
+    image: "/image/famous-art/the sleeping gypsy.jpg",
+    options: [
+      { id: 'opt1', width: 129.5, height: 200.7, price: 10130, label: '129.5 x 200.7 cm' },
+      { id: 'opt2', width: 64.75, height: 100.35, price: 5065, label: '64.75 x 100.35 cm' }
+    ],
+  },
+
+  {
+    title: "American Gothic",
+    artist: "Grant Wood",
+    year: "1930",
+    originalSize: "78 x 65.3 cm",
+    artistLife: "1891-1942",
+    sku: "AM-FA-105",
+    basePrice: 13000,
+    currency: "AED",
+    image: "/image/famous-art/american gothic.jpg",
+    options: [{ id: 'opt1', width: 78, height: 65.3, price: 13000, label: 'Original Size' }],
+  },
+
+  {
+    title: "Las Meninas",
+    artist: "Diego Velázquez",
+    year: "1656",
+    originalSize: "318 x 276 cm",
+    artistLife: "1599-1660",
+    sku: "AM-FA-106",
+    basePrice: 42500,
+    currency: "AED",
+    image: "/image/famous-art/las meninas.jpg",
+    options: [{ id: 'opt1', width: 318, height: 276, price: 42500, label: 'Original Size' }],
+  },
+
+  {
+    title: "Self Portrait With Bandaged Ear And Pipe",
+    artist: "Vincent Van Gogh",
+    year: "1889",
+    originalSize: "51 x 45 cm",
+    artistLife: "1853-1890",
+    sku: "AM-FA-107",
+    basePrice: 2100,
+    currency: "AED",
+    image: "/image/famous-art/self portrait with bandaged ear and pipe.jpg",
+    options: [{ id: 'opt1', width: 51, height: 45, price: 2100, label: 'Original Size' }],
+  },
+
+  {
+    title: "Salvator Mundi",
+    artist: "Leonardo Da Vinci",
+    year: "1500",
+    originalSize: "66 x 45.4 cm",
+    artistLife: "1452-1519",
+    sku: "AM-FA-108",
+    basePrice: 12500,
+    currency: "AED",
+    image: "/image/famous-art/salvator mundi.jpg",
+    options: [{ id: 'opt1', width: 66, height: 45.4, price: 12500, label: 'Original Size' }],
+  },
+
+  {
+    title: "Mistress And Maid",
+    artist: "Johannes Vermeer",
+    year: "1667",
+    originalSize: "90.2 x 78.7 cm",
+    artistLife: "1632-1675",
+    sku: "AM-FA-109",
+    basePrice: 3800,
+    currency: "AED",
+    image: "/image/famous-art/mistress and maid.jpg",
+    options: [{ id: 'opt1', width: 90.2, height: 78.7, price: 3800, label: 'Original Size' }],
+  },
+
+  {
+    title: "Still Life With A Plate Of Cherries",
+    artist: "Louise Moillon",
+    year: "1633",
+    originalSize: "48 x 65 cm",
+    artistLife: "1610-1696",
+    sku: "AM-FA-110",
+    basePrice: 2400,
+    currency: "AED",
+    image: "/image/famous-art/still life with a plate of cherries.jpg",
+    options: [{ id: 'opt1', width: 48, height: 65, price: 2400, label: 'Original Size' }],
+  },
+
+  {
+    title: "Mount Saint-Victoire",
+    artist: "Paul Cézanne",
+    year: "1887",
+    originalSize: "67 x 92 cm",
+    artistLife: "1839-1906",
+    sku: "AM-FA-111",
+    basePrice: 4999,
+    currency: "AED",
+    image: "/image/famous-art/monte sainte-victoire.jpg",
+    options: [{ id: 'opt1', width: 67, height: 92, price: 4999, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Coronation Of Napoleon",
+    artist: "Jacques-Louis David",
+    year: "1807",
+    originalSize: "621 x 979 cm",
+    artistLife: "1748-1825",
+    sku: "AM-FA-112",
+    basePrice: 185000,
+    currency: "AED",
+    image: "/image/famous-art/the coronation of napoleon.jpg",
+    options: [{ id: 'opt1', width: 621, height: 979, price: 185000, label: 'Original Size' }],
+  },
+
+  {
+    title: "The 3rd Of May 1808 In Madrid",
+    artist: "Francisco Goya",
+    year: "1814",
+    originalSize: "268 x 347 cm",
+    artistLife: "1746-1828",
+    sku: "AM-FA-113",
+    basePrice: 45000,
+    currency: "AED",
+    image: "/image/famous-art/the 3rd day of may 1808 in madrid.jpg",
+    options: [{ id: 'opt1', width: 268, height: 347, price: 45000, label: 'Original Size' }],
+  },
+
+  {
+    title: "Dancer In Green",
+    artist: "Edgar Degas",
+    year: "1879",
+    originalSize: "66 x 36 cm",
+    artistLife: "1834-1917",
+    sku: "AM-FA-114",
+    basePrice: 1850,
+    currency: "AED",
+    image: "/image/famous-art/dancer in green.jpg",
+    options: [{ id: 'opt1', width: 66, height: 36, price: 1850, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Sacrifice Of Abraham",
+    artist: "Rembrandt Van Rijn",
+    year: "1635",
+    originalSize: "193 x 133 cm",
+    artistLife: "1606-1669",
+    sku: "AM-FA-115",
+    basePrice: 12800,
+    currency: "AED",
+    image: "/image/famous-art/the sacrifice of abraham.jpg",
+    options: [{ id: 'opt1', width: 193, height: 133, price: 12800, label: 'Original Size' }],
+  },
+
+  {
+    title: "Old Woman Praying (Rembrandt's Mother)",
+    artist: "Rembrandt Van Rijn",
+    year: "1629",
+    originalSize: "79.5 x 55.5 cm",
+    artistLife: "1606-1669",
+    sku: "AM-FA-116",
+    basePrice: 2950,
+    currency: "AED",
+    image: "/image/famous-art/old woman praying (rembrandt's mother).jpg",
+    options: [{ id: 'opt1', width: 79.5, height: 55.5, price: 2950, label: 'Original Size' }],
+  },
+
+  {
+    title: "Nafea Faa Ipoipo (When Will You Marry?)",
+    artist: "Paul Gauguin",
+    year: "1892",
+    originalSize: "101 x 77 cm",
+    artistLife: "1848-1903",
+    sku: "AM-FA-117",
+    basePrice: 4100,
+    currency: "AED",
+    image: "/image/famous-art/nefea faa lpoipo (when will you marry).jpg",
+    options: [{ id: 'opt1', width: 101, height: 77, price: 4100, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Milkmaid (The Kitchen Maid)",
+    artist: "Johannes Vermeer",
+    year: "1658",
+    originalSize: "45.5 x 41 cm",
+    artistLife: "1632-1675",
+    sku: "AM-FA-118",
+    basePrice: 1900,
+    currency: "AED",
+    image: "/image/famous-art/the milkmaid the kitchen maid.jpg",
+    options: [{ id: 'opt1', width: 45.5, height: 41, price: 1900, label: 'Original Size' }],
+  },
+
+  {
+    title: "Garçon À La Pipe",
+    artist: "Pablo Picasso",
+    year: "1905",
+    originalSize: "100 x 81.3 cm",
+    artistLife: "1881-1973",
+    sku: "AM-FA-119",
+    basePrice: 4850,
+    currency: "AED",
+    image: "/image/famous-art/garcon a'la pipe.jpg",
+    options: [{ id: 'opt1', width: 100, height: 81.3, price: 4850, label: 'Original Size' }],
+  },
+
+  {
+    title: "After The Bath Woman Drying Her Neck",
+    artist: "Edgar Degas",
+    year: "1898",
+    originalSize: "62.2 x 65 cm",
+    artistLife: "1834-1917",
+    sku: "AM-FA-120",
+    basePrice: 2700,
+    currency: "AED",
+    image: "/image/famous-art/after the bath woman drying her neck.jpg",
+    options: [{ id: 'opt1', width: 62.2, height: 65, price: 2700, label: 'Original Size' }],
+  },
+
+  {
+    title: "The Night Watch",
+    artist: "Rembrandt Van Rijn",
+    year: "1642",
+    originalSize: "363 x 437 cm",
+    artistLife: "1606-1669",
+    sku: "AM-FA-121",
+    basePrice: 76500,
+    currency: "AED",
+    image: "/image/famous-art/the night watch.jpg",
+    options: [{ id: 'opt1', width: 363, height: 437, price: 76500, label: 'Original Size' }],
+  },
+];
+
+// Top 100 Paintings Collection (Same as FAMOUS_ART)
+export const TOP_100_PAINTINGS: FamousArtwork[] = FAMOUS_ART;
+
+// Helper to generate slug from title
+export function getFamousArtworkSlug(artwork: FamousArtwork): string {
+  return artwork.title
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .trim();
+}
+
+// Helper to get artwork by slug from FAMOUS_ART collection
+export function getFamousArtworkBySlug(slug: string): FamousArtwork | null {
+  return FAMOUS_ART.find(artwork => getFamousArtworkSlug(artwork) === slug) || null;
+}
+
+// Combined collection
+export const ALL_FAMOUS_AND_TOP_100 = FAMOUS_ART;
+
+// Default export
+const famousAndTop100Data = { FAMOUS_ART, TOP_100_PAINTINGS, ALL_FAMOUS_AND_TOP_100, getFamousArtworkSlug, getFamousArtworkBySlug };
+export default famousAndTop100Data;

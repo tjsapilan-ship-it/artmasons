@@ -13,45 +13,45 @@ import EducatedMastery from '../components/Profile';
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 const CAPTURING_LIGHT_IMAGES = [
-  { src: "/image/about-us/image_9.png", alt: "Art Masons Light Detail 1" },
-  { src: "/image/about-us/image_15.png", alt: "Art Masons Light Detail 7" },
+  { src: "/image/about-us/image_9.webp", alt: "Art Masons Light Detail 1" },
+  { src: "/image/about-us/image_15.webp", alt: "Art Masons Light Detail 7" },
 ];
 
 const SCALE_WITHOUT_LIMITS_IMAGES = [
-  { src: "/image/about-us/image_18.png", alt: "Art Masons Scale Example 2" },
-  { src: "/image/about-us/image_19.png", alt: "Art Masons Scale Example 3" },
+  { src: "/image/about-us/image_18.webp", alt: "Art Masons Scale Example 2" },
+  { src: "/image/about-us/image_19.webp", alt: "Art Masons Scale Example 3" },
 ];
 
 const NEW_STANDARD_IMAGES = [
-  { src: "/image/about-us/image_24.png", alt: "Art Masons Access Example 3" },
-  { src: "/image/about-us/image_25.png", alt: "Art Masons Access Example 4" },
+  { src: "/image/about-us/image_24.webp", alt: "Art Masons Access Example 3" },
+  { src: "/image/about-us/image_25.webp", alt: "Art Masons Access Example 4" },
 ];
 
 const B2B_IMAGES = [
-  { src: "/image/about-us/image_32.png", alt: "Art Masons Commercial Project 7" },
-  { src: "/image/about-us/image_31.png", alt: "Art Masons Commercial Project 6" },
-  { src: "/image/about-us/image_22.png", alt: "Art Masons Commercial Project" },
+  { src: "/image/about-us/image_32.webp", alt: "Art Masons Commercial Project 7" },
+  { src: "/image/about-us/image_31.webp", alt: "Art Masons Commercial Project 6" },
+  { src: "/image/about-us/image_22.webp", alt: "Art Masons Commercial Project" },
 ];
 
 const OUR_PHILOSOPHY_IMAGES = [
-  // { src: "/image/about-us/image_5.png", alt: "Art Masons Masterpiece 5" },
-  // { src: "/image/about-us/image_4.png", alt: "Art Masons Masterpiece 4" },
-  // { src: "/image/about-us/image_7.png", alt: "Art Masons Masterpiece 7" },
-  { src: "/image/about-us/collage/collage_1.png", alt: "Art Masons Masterpiece 7" },
+  // { src: "/image/about-us/image_5.webp", alt: "Art Masons Masterpiece 5" },
+  // { src: "/image/about-us/image_4.webp", alt: "Art Masons Masterpiece 4" },
+  // { src: "/image/about-us/image_7.webp", alt: "Art Masons Masterpiece 7" },
+  { src: "/image/about-us/collage/collage_1.webp", alt: "Art Masons Masterpiece 7" },
 
 ];
 
 const COMMITMENT_IMAGES = [
-  { src: "/image/about-us/image_34.png", alt: "Art Masons Commitment Detail 2" },
-  { src: "/image/about-us/image_33.png", alt: "Art Masons Commitment Detail 1" },
-  { src: "/image/about-us/image_35.png", alt: "Art Masons Commitment Detail 3" },
+  { src: "/image/about-us/image_34.webp", alt: "Art Masons Commitment Detail 2" },
+  { src: "/image/about-us/image_33.webp", alt: "Art Masons Commitment Detail 1" },
+  { src: "/image/about-us/image_35.webp", alt: "Art Masons Commitment Detail 3" },
 ];
 
 const AFTER_QUIZ_IMAGES = [
-  { src: "/image/about-us/image_40.png", alt: "Art Masons Gallery Detail 4" },
-  { src: "/image/about-us/image_37.png", alt: "Art Masons Gallery Detail 1" },
-  { src: "/image/about-us/image_38.png", alt: "Art Masons Gallery Detail 2" },
-  { src: "/image/about-us/image_41.png", alt: "Art Masons Gallery Detail 5" },
+  { src: "/image/about-us/image_40.webp", alt: "Art Masons Gallery Detail 4" },
+  { src: "/image/about-us/image_37.webp", alt: "Art Masons Gallery Detail 1" },
+  { src: "/image/about-us/image_38.webp", alt: "Art Masons Gallery Detail 2" },
+  { src: "/image/about-us/image_41.webp", alt: "Art Masons Gallery Detail 5" },
 ];
 
 export default function AboutUsPage() {
@@ -131,7 +131,7 @@ export default function AboutUsPage() {
             {/* Image Display - Matching "Our Philosophy" Layout */}
             <div className="w-full flex justify-center p-[20px]">
               <Image
-                src="/image/about-us/collage/collage_2.png"
+                src="/image/about-us/collage/collage_2.webp"
                 alt="Art Masons Artist at Work"
                 width={1200}
                 height={800}
@@ -161,7 +161,7 @@ export default function AboutUsPage() {
             {/* Image Display - Matching "Our Philosophy" Layout */}
             <div className="w-full flex justify-center p-[20px]">
               <Image
-                src="/image/about-us/collage/collage_3.png"
+                src="/image/about-us/collage/collage_3.webp"
                 alt="Art Masons Artist at Work"
                 width={1200}
                 height={800}
@@ -186,7 +186,7 @@ export default function AboutUsPage() {
             {/* Image Display - Matching "Our Philosophy" Layout */}
             <div className="w-full flex justify-center p-[20px]">
               <Image
-                src="/image/about-us/collage/collage_4.png"
+                src="/image/about-us/collage/collage_4.webp"
                 alt="Art Masons Artist at Work"
                 width={1200}
                 height={800}
@@ -211,7 +211,7 @@ export default function AboutUsPage() {
             {/* Image Display - Matching "Our Philosophy" Layout */}
             <div className="w-full flex justify-center p-[20px]">
               <Image
-                src="/image/about-us/collage/collage_5.png"
+                src="/image/about-us/collage/collage_5.webp"
                 alt="Art Masons Artist at Work"
                 width={1200}
                 height={800}
