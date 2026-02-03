@@ -1,14 +1,14 @@
 # Art Masons - Museum-Quality Oil Painting Reproductions
 
-A Next.js e-commerce platform for hand-painted art reproductions with integrated Stripe payments and email functionality.
+A Next.js 16 App Router e-commerce platform for hand-painted art reproductions with Stripe payments, SMTP email automation, and PDF invoicing.
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Node.js 18.x or higher
 - npm or yarn package manager
-- Stripe account (for payments)
-- SMTP server (for emails)
+- Stripe account (payments)
+- SMTP server (transactional emails)
 
 ### Installation
 
@@ -32,20 +32,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ```
 artmasons/
-├── app/                    # Next.js app directory
+├── app/                    # Next.js App Router
 │   ├── api/               # API routes (Stripe, email, orders)
-│   ├── components/        # Reusable React components
-│   ├── context/           # React context providers
-│   ├── lib/               # Utility functions and helpers
+│   ├── components/        # Reusable UI components
+│   ├── context/           # Cart + toast providers
+│   ├── lib/               # Stripe, mailer, orders helpers
 │   ├── artworks/          # Dynamic artwork pages
-│   ├── checkout/          # Checkout and payment flow
+│   ├── checkout/          # Checkout + Stripe Elements modal
 │   └── ...                # Other routes
-├── data/                  # Static data files
-│   └── artworks.ts        # Artwork catalog (5600+ artworks)
-├── public/                # Static assets
-│   ├── image/             # Artwork images (670+ images)
-│   └── robots.txt         # SEO configuration
-├── scripts/               # Data processing scripts
+├── data/                  # Static data + local order storage
+│   ├── artworks.ts        # Artwork catalog (5600+ artworks)
+│   └── orders.json        # Local order persistence
+├── public/                # Static assets and images
+├── scripts/               # Data + image processing scripts
 └── ...config files
 ```
 
@@ -53,15 +52,17 @@ artmasons/
 
 ### Environment Variables
 
-Create a `.env.local` file with the following variables:
+Create a .env.local file with the following variables:
 
 ```env
 # Stripe (Required)
 STRIPE_SECRET_KEY=sk_test_...
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
+
+# Stripe Webhooks (Recommended)
 STRIPE_WEBHOOK_SECRET=whsec_...
 
-# SMTP Email (Required)
+# SMTP Email (Required for order emails)
 SMTP_HOST=smtp.example.com
 SMTP_PORT=587
 SMTP_USER=your-email@example.com
@@ -76,22 +77,26 @@ See [.env.example](.env.example) for complete configuration options.
 
 ## 🛠️ Available Scripts
 
-- `npm run dev` - Start development server with Turbopack
-- `npm run build` - Create production build
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint code quality checks
+- npm run dev - Start development server
+- npm run build - Create production build
+- npm run start - Start production server
+- npm run lint - Run ESLint checks
+- npm run parse:popular - Parse popular art data from PDF
+- npm run convert:images - Convert images to WebP
+- npm run scan:images - Scan for missing image references
+- npm run update:image-refs - Update image references after conversion
 
 ## 🎨 Features
 
-- **5600+ Artworks** - Comprehensive catalog of famous paintings
-- **Secure Payments** - Stripe integration with webhook support
-- **Email Invoices** - Automated order confirmation emails with PDF invoices
-- **Responsive Design** - Mobile-first, optimized for all devices
-- **Shopping Cart** - Persistent cart with localStorage
-- **Dynamic Routing** - Artist pages, artwork details, categories
-- **Error Handling** - Global error boundaries and custom error pages
-- **SEO Optimized** - Meta tags, robots.txt, sitemap ready
-- **Security Headers** - XSS protection, content security policy
+- 5600+ artworks with artist and category routes
+- Stripe Payment Intents with embedded Stripe Elements modal checkout
+- Order status verification endpoint with Stripe fallbacks for dev
+- Automated order confirmation and PDF invoice emails
+- Shipment confirmation emails
+- Quote request workflow for custom sizing
+- Persistent cart with localStorage
+- SEO-ready routes, sitemap, and robots.txt
+- Security headers and image optimization settings
 
 ## 📦 Deployment
 
@@ -105,8 +110,8 @@ See [.env.example](.env.example) for complete configuration options.
 ### Alternative Platforms
 
 For other platforms (Netlify, AWS, etc.):
-- Build command: `npm run build`
-- Output directory: `.next`
+- Build command: npm run build
+- Output directory: .next
 - Node.js version: 18.x or higher
 
 See [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md) for detailed deployment instructions.
@@ -121,7 +126,7 @@ See [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md) for detailed deployment i
 
 ## 📧 Email Configuration
 
-The application sends order confirmation emails with PDF invoices. Configure your SMTP settings:
+The application sends order confirmation, invoice, and shipment emails with a PDF invoice attachment. Configure your SMTP settings:
 
 1. Use a reliable SMTP service (Gmail, SendGrid, AWS SES)
 2. Set SMTP credentials in environment variables
@@ -129,10 +134,9 @@ The application sends order confirmation emails with PDF invoices. Configure you
 
 ## 🐛 Known Issues & Limitations
 
-1. **Firebase Disabled**: Authentication and Firestore features are currently commented out
-2. **Local Orders Storage**: Orders stored in `data/orders.json` (not scalable for high volume)
-3. **Admin Panel**: Requires Firebase re-enablement
-4. **No Database**: Consider adding PostgreSQL/MongoDB for production
+1. Firebase authentication and Firestore are currently disabled
+2. Orders are stored locally in data/orders.json (not scalable)
+3. No database configured for production scale
 
 See [FIREBASE_REMOVAL_SUMMARY.md](FIREBASE_REMOVAL_SUMMARY.md) for details on re-enabling Firebase.
 
@@ -143,6 +147,17 @@ This is a private project. For issues or questions, contact the development team
 ## 📄 License
 
 All rights reserved - Art Masons
+
+## 💳 Payments & Order Flow
+
+- Checkout uses Stripe Payment Intents and a Stripe Elements modal.
+- Orders are saved locally and updated via webhooks or the order-status endpoint.
+- Webhooks are recommended for reliable fulfillment in production.
+
+Webhook endpoint: /api/stripe-webhook
+Order status endpoint: /api/order-status
+
+Optional legacy endpoint: /api/create-checkout-session
 
 ## 🆘 Support
 
@@ -155,29 +170,5 @@ For technical issues:
 ---
 
 **Version:** 1.0.0  
-**Last Updated:** December 28, 2025  
-**Framework:** Next.js 16.0.10 with Turbopack
-
-```
-STRIPE_SECRET_KEY=sk_test_...
-```
-
-- Start dev server:
-
-```bash
-npm run dev
-```
-
-- Add items to the cart and use the Checkout page. The app will call the API to create a Checkout Session and redirect you to Stripe's hosted test checkout.
-
-Note: This is a minimal integration for testing purposes. For production, follow Stripe's security and webhook guidance.
-
-### Webhook (optional)
-
-To receive server-side confirmation of payment and fulfill orders, set up a webhook endpoint and configure the `STRIPE_WEBHOOK_SECRET` environment variable. Example endpoint in this repo: `/api/stripe-webhook`.
-
-```
-STRIPE_WEBHOOK_SECRET=whsec_...
-```
-
-When running locally you can use `stripe listen --forward-to localhost:3000/api/stripe-webhook` to forward test events to your local dev server.
+**Last Updated:** February 4, 2026  
+**Framework:** Next.js 16.0.10 with React 19 and Tailwind CSS 4
