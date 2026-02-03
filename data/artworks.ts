@@ -4803,7 +4803,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     originalDimensions: "85 x 75",
     sellingDimensions: "85 x 75",
     price: 8624,
-    image: "/image/j/portrait of louis xv.webp",
+    image: "/image/j/portrait of louis XV.webp",
     artistLifespan: "1692-1743",
     slug: "portrait-of-louis-xv",
     letter: "J"
