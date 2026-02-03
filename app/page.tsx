@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useSyncExternalStore, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Playfair_Display } from "next/font/google";
 import Link from "next/link";
 import PageTransition from "./components/PageTransition";
 import PopularArtCarousel from "./components/PopularArtCarousel";
@@ -27,12 +26,6 @@ function shuffle<T>(arr: T[]) {
 }
 
 // --- Fonts ---
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-  preload: false,
-});
 
 // --- DATA ---
 const ASSURANCE_POINTS = [
@@ -501,7 +494,7 @@ export default function ArtMasonsLanding() {
 
   return (
     <main
-      className={`${playfair.variable} min-h-screen bg-white text-black font-serif lining-nums`}
+      className="min-h-screen bg-white text-black font-serif lining-nums"
     >
       <style jsx global>{`
         .hide-scrollbar::-webkit-scrollbar {

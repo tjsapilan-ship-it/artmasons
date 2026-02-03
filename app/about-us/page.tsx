@@ -3,14 +3,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Playfair_Display } from 'next/font/google';
 import { Heart, Palette, Users, Sparkles, CheckCircle } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import AboutUsGallery from '../components/AboutUsGallery';
 import ArtStyleQuiz from '../components/ArtStyleQuiz';
 import EducatedMastery from '../components/Profile';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 const CAPTURING_LIGHT_IMAGES = [
   { src: "/image/about-us/image_9.webp", alt: "Art Masons Light Detail 1" },
@@ -57,7 +55,7 @@ const AFTER_QUIZ_IMAGES = [
 export default function AboutUsPage() {
 
   return (
-    <main className={`${playfair.variable} bg-art-texture min-h-screen text-black relative`}>
+    <main className="bg-art-texture min-h-screen text-black relative">
       {/* Linen Canvas Background Pattern */}
       <style jsx global>{`
         .bg-art-texture {

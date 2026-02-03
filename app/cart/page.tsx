@@ -3,12 +3,10 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Playfair_Display } from 'next/font/google';
 import { Trash2, Plus, Minus, ShoppingBag, ArrowRight, Lock, Truck, Shield } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useCart } from '../context/CartContext';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 const SHIPPING_COST = 0; // Free shipping
 const TAX_RATE = 0.05; // 5% tax
@@ -29,7 +27,7 @@ export default function CartPage() {
   const total = subtotal - discount + tax + SHIPPING_COST;
 
   return (
-    <main className={`${playfair.variable} min-h-screen bg-art-texture text-black`}>
+    <main className="min-h-screen bg-art-texture text-black">
       {/* Linen Canvas Background Pattern */}
       <style jsx global>{`
         .bg-art-texture {

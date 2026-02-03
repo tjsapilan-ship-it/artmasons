@@ -1,5 +1,5 @@
 import React from 'react';
-import { Playfair_Display, Inter } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import PageTransition from '../../components/PageTransition';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import ClientProductDetails from '../ClientProductDetails';
@@ -7,7 +7,6 @@ import { type Artwork, ARTWORKS, generateArtistSlug, getArtworkBySlug, getArtwor
 import { getFamousArtworkBySlug, getFamousArtworkSlug, FAMOUS_ART } from '../../../data/famousAndTop100';
 
 // --- Fonts ---
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
 
 // --- MAIN PRODUCT PAGE ---
@@ -127,7 +126,7 @@ export default async function ProductDetailsPage({
   }
 
   return (
-    <main className={`${playfair.variable} ${inter.variable} min-h-screen bg-art-texture text-black font-serif text-base`}>
+    <main className={`${inter.variable} min-h-screen bg-art-texture text-black font-serif text-base`}>
       <PageTransition>
         <div className="w-full px-4 py-4 md:py-6 relative z-10">
           {/* Breadcrumb */}

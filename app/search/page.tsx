@@ -7,10 +7,8 @@ import Link from "next/link";
 import { ARTWORKS } from "@/data/artworks";
 import { Search, Loader2, ChevronLeft, ChevronRight } from "lucide-react";
 import Breadcrumbs from "../components/Breadcrumbs";
-import { Playfair_Display } from "next/font/google";
 import QuoteRequestModal from "../components/QuoteRequestModal";
 
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif", display: "swap", preload: false });
 const THEME_RED = "#800000";
 
 export default function SearchPage() {
@@ -68,7 +66,7 @@ export default function SearchPage() {
   };
 
   return (
-    <main className={`${playfair.variable} bg-art-texture min-h-screen text-black font-serif relative`}>
+    <main className="bg-art-texture min-h-screen text-black font-serif relative">
       {/* Linen Canvas Background Pattern */}
       <style jsx global>{`
         .bg-art-texture {

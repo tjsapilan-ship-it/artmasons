@@ -3,15 +3,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Playfair_Display } from 'next/font/google';
 import { CheckCircle } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 export default function OurQualityPage() {
   return (
-    <main className={`${playfair.variable} bg-art-texture min-h-screen text-black relative`}>
+    <main className="bg-art-texture min-h-screen text-black relative">
       {/* Linen Canvas Background Pattern */}
       <style jsx global>{`
         .bg-art-texture {

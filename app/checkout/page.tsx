@@ -4,13 +4,11 @@ import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { useToast } from '../context/ToastContext';
 import Link from 'next/link';
-import { Playfair_Display } from 'next/font/google';
 import { ArrowRight, Lock, ShoppingBag } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useRouter } from 'next/navigation';
 import StripePaymentModal from './StripePaymentModal';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 export default function CheckoutPage() {
   const { items, subtotal } = useCart();
@@ -187,7 +185,7 @@ ZIP: ${framerDelivery.postalCode}`;
   };
 
   return (
-    <main className={`${playfair.variable} min-h-screen bg-art-texture text-black`}>
+    <main className="min-h-screen bg-art-texture text-black">
       {/* Linen Canvas Background Pattern */}
       <style jsx global>{`
         .bg-art-texture {

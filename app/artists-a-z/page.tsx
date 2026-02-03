@@ -3,14 +3,12 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Playfair_Display } from 'next/font/google';
 import { User, Grid } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { ARTWORKS, generateSlug, getArtworkSlug } from '../../data/artworks';
 import { ARTIST_RECOMMENDED_IMAGES } from '../../data/artistRecommendedImages';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const STORAGE_KEY = 'artistsAZSelectedLetter';
@@ -253,7 +251,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
   };
 
   return (
-    <main className={`${playfair.variable} bg-art-texture min-h-screen text-black font-serif relative`}>
+    <main className="bg-art-texture min-h-screen text-black font-serif relative">
       {/* Linen Canvas Background Pattern */}
       <style jsx global>{`
         .bg-art-texture {

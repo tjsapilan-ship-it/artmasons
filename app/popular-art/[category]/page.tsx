@@ -4,14 +4,12 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import { Playfair_Display } from 'next/font/google';
 import PageTransition from '../../components/PageTransition';
 import PopularArtCarousel from '../../components/PopularArtCarousel';
 import { ARTWORKS, generateSlug, getArtworkBySlug, getArtworkSlug, type Artwork } from '../../../data/artworks';
 import { getCategorySlugs } from '../../../data/popularCategories';
 import QuoteRequestModal from '../../components/QuoteRequestModal';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 const getPrimaryPricing = (artwork: Artwork) => {
   const hasOptions = Array.isArray(artwork.options) && artwork.options.length > 0;
@@ -117,7 +115,7 @@ export default function CategoryPage({ params, searchParams }: { params: Promise
   const gridItems = filtered;
 
   return (
-    <main className={`${playfair.variable} min-h-screen bg-art-texture text-black font-serif`}>
+    <main className="min-h-screen bg-art-texture text-black font-serif">
       <PageTransition>
         <PopularArtCarousel />
 

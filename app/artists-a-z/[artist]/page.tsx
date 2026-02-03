@@ -3,14 +3,12 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Playfair_Display } from 'next/font/google';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import PageTransition from '../../components/PageTransition';
 import ArtistsAZNavigation from '../../components/ArtistsAZNavigation';
 import { getArtworkSlug, getArtworksByArtistSlug, getArtistNameBySlug, type Artwork } from '../../../data/artworks';
 import QuoteRequestModal from '../../components/QuoteRequestModal';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 const humanizeSlug = (slug: string) =>
   slug
@@ -66,7 +64,7 @@ export default function ArtistPage({
   const sortedArtworks = sortArtworks(artworks, sort);
 
   return (
-    <main className={`${playfair.variable} min-h-screen bg-white text-black font-serif`}>
+    <main className="min-h-screen bg-white text-black font-serif">
       <PageTransition>
         <ArtistsAZNavigation />
 

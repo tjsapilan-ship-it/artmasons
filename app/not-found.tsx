@@ -1,16 +1,8 @@
 import Link from "next/link";
-import { Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-  preload: false,
-});
 
 export default function NotFound() {
   return (
-    <div className={`min-h-screen flex items-center justify-center bg-gray-50 px-4 ${playfair.variable}`}>
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
       <div className="max-w-md w-full text-center">
         <h1 className="text-6xl font-serif font-bold text-[#800000] mb-4">404</h1>
         <h2 className="text-2xl font-serif font-semibold text-gray-900 mb-4">

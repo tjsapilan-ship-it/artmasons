@@ -1,14 +1,12 @@
 'use client';
 
 import React from 'react';
-import { Playfair_Display } from 'next/font/google';
 import Breadcrumbs from '../components/Breadcrumbs';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className={`${playfair.variable} min-h-screen bg-art-texture text-black`}>
+    <main className="min-h-screen bg-art-texture text-black">
       {/* Linen Canvas Background Pattern */}
       <style jsx global>{`
         .bg-art-texture {

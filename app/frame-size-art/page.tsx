@@ -1,13 +1,11 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Playfair_Display } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { Ruler, Truck, ShieldCheck, Palette, Hammer, Mail, CheckCircle2 } from 'lucide-react';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 export default function FrameSizeArtPage() {
   const [origW, setOrigW] = useState<number | ''>('');
@@ -25,7 +23,7 @@ export default function FrameSizeArtPage() {
   }, [origW, origH, knownDim, newKnown]);
 
   return (
-    <main className={`${playfair.variable} bg-art-texture min-h-screen text-black relative`}>
+    <main className="bg-art-texture min-h-screen text-black relative">
       {/* Linen Canvas Background Pattern */}
       <style jsx global>{`
         .bg-art-texture {

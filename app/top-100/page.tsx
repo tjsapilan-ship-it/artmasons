@@ -3,14 +3,12 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Playfair_Display } from 'next/font/google';
 import { Trophy, Search } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { type Artwork, ARTWORKS, getArtworkSlug } from '../../data/artworks';
 import { TOP_100_PAINTINGS, getFamousArtworkSlug, FamousArtwork } from '../../data/famousAndTop100';
 import QuoteRequestModal from '../components/QuoteRequestModal';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 // --- THEME COLORS ---
 const THEME_RED = '#800000';
@@ -148,7 +146,7 @@ export default function Top100Page() {
   }, [searchQuery, selectedPeriod]);
 
   return (
-    <main className={`${playfair.variable} bg-art-texture min-h-screen text-black font-serif relative`}>
+    <main className="bg-art-texture min-h-screen text-black font-serif relative">
       {/* Linen Canvas Background Pattern */}
       <style jsx global>{`
         .bg-art-texture {

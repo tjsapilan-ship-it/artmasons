@@ -3,10 +3,8 @@
 import React, { useState } from 'react';
 import { X, Loader2 } from 'lucide-react';
 import { useToast } from '../context/ToastContext';
-import { Playfair_Display } from 'next/font/google';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', preload: false });
 
 type QuoteRequestModalProps = {
     open: boolean;
@@ -136,7 +134,7 @@ export default function QuoteRequestModal({
     return (
         <AnimatePresence>
             {open && (
-                <div className={`${playfair.variable} fixed inset-0 z-[9999] flex items-center justify-center p-4`}>
+                <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
                     {/* Backdrop */}
                     <motion.div
                         initial={{ opacity: 0 }}
