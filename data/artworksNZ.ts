@@ -92,6 +92,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/fall landscape.webp",
     artistLifespan: "1882-1922",
     slug: "fall-landscape",
+    location: "Private Collection",
     letter: "O"
   },
   {
@@ -860,6 +861,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the brutal embrace.webp",
     artistLifespan: "1881-1973",
     slug: "the-brutal-embrace",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -1930,6 +1932,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/self portrait.webp",
     artistLifespan: "1606-1669",
     slug: "self-portrait-rembrandt-von-rijn",
+    location: "The Frick Collection New York City New York USA",
     letter: "R"
   },
   {
@@ -2050,6 +2053,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/self portrait rembrandt.webp",
     artistLifespan: "1606-1669",
     slug: "self-portrait-rembrandt",
+    location: "Museum National Gallery Of Art Washington DC USA",
     letter: "R"
   },
   {

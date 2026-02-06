@@ -13,7 +13,7 @@ export interface Artwork {
   letter: string;
   currency?: string;
   basePrice?: number;
-  options?: Array<{ id: string; width: number; height: number; price: number; label: string }>; 
+  options?: Array<{ id: string; width: number; height: number; price: number; label: string }>;
   location?: string;
 }
 
@@ -1863,7 +1863,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     artistLifespan: "1839-1906",
     slug: "monte-sainte-victoire",
     letter: "C",
-    location: "Unknown"
+    location: "Private Collection",
   },
   {
     name: "Still Life With Apples",
@@ -2966,6 +2966,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/emporer napoleon i.webp",
     artistLifespan: "1748-1825",
     slug: "emporer-napoleon-i",
+    location: "Fogg Art Museum at Harvard University Massachusetts USA",
     letter: "D"
   },
   {
@@ -4019,7 +4020,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
   {
     name: "Irises",
     artist: "Vincent Van Gogh",
-    year: "1989",
+    year: "1889",
     originalDimensions: "93 x 71",
     sellingDimensions: "71 x 93",
     price: 4700,
@@ -4057,6 +4058,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/starry night over the rome.webp",
     artistLifespan: "1853-1890",
     slug: "starry-night-over-the-rome",
+    location: "Musee d'Orsay Paris France",
     letter: "G"
   },
   {
@@ -4255,6 +4257,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/olive tree.webp",
     artistLifespan: "1853-1890",
     slug: "olive-trees",
+    location: "Museum of Modern Art New York USA",
     letter: "G"
   },
   {
@@ -4344,6 +4347,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/wheat field with crows 1890.webp",
     artistLifespan: "1853-1890",
     slug: "wheat-field-with-crows-1890",
+    location: "Van Gogh Museum Amsterdam Netherlands",
     letter: "G"
   },
   {
@@ -4414,6 +4418,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/portrait of a young man holding a glove.webp",
     artistLifespan: "1582-1666",
     slug: "portrait-of-a-young-man-holding-a-glove",
+    location: "The State Hermitage Museum St. Petersburg Russia",
     letter: "H"
   },
   {
@@ -4438,6 +4443,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/laughing cavallier.webp",
     artistLifespan: "1582-1666",
     slug: "laughing-cavallier",
+    location: "The Wallace Collection London UK",
     letter: "H"
   },
   {
@@ -4450,6 +4456,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/portrait of a man.webp",
     artistLifespan: "1582-1666",
     slug: "portrait-of-a-man-hals",
+    location: "Frick Collection New York USA",
     letter: "H"
   },
   {
@@ -4462,6 +4469,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/portrait of a woman.webp",
     artistLifespan: "1582-1666",
     slug: "portrait-of-a-woman",
+    location: "Frick Collection New York USA",
     letter: "H"
   },
   {
@@ -4474,6 +4482,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/portrait of a elderly man.webp",
     artistLifespan: "1582-1666",
     slug: "portrait-of-a-elderly-man",
+    location: "Frick Collection New York USA",
     letter: "H"
   },
   {
@@ -4486,6 +4495,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/malle babbe.webp",
     artistLifespan: "1582-1666",
     slug: "malle-babbe",
+    location: "Gemaldegalerie Berlin Germany",
     letter: "H"
   },
   {
@@ -7657,6 +7667,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/rocks at port-goulphar belle-lle.webp",
     artistLifespan: "1840-1926",
     slug: "rocks-at-port-goulphar-belle-lle",
+    location: "Art Institute of Chicago Illinois USA",
     letter: "M"
   },
   {

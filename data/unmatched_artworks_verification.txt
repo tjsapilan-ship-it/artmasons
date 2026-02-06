@@ -1,0 +1,473 @@
+Summary:
+Total locations in source files: 992
+Unmatched: 117
+
+--- UNMATCHED ARTWORKS ---
+Artwork: ART NAME
+Artist:  ARTIST  NAME
+Location: Location Of Art
+---
+Artwork: Two Carribean Women Returning From The Market
+Artist:  Agostino Brunias
+Location: Museo Carmen Thyssen M�laga Spain
+---
+Artwork: The Linen Market
+Artist:  Agostino Brunias
+Location: Museo Carmen Thyssen M�laga Spain
+---
+Artwork: The Handkerchief Dance
+Artist:  Agostino Brunias
+Location: Museo Carmen Thyssen M�laga Spain
+---
+Artwork: West Indian Village With Figures Dancing
+Artist:  Agostino Brunias
+Location: Museo Carmen Thyssen M�laga Spain
+---
+Artwork: Marie-Anne Caralus Duran ( The Artists Daughter)
+Artist:  Charles Emile August Caralus -Duran
+Location: Fine Arts Museums of San Francisco California USA
+---
+Artwork: Mona Lisa (La Gioconda)
+Artist:  Leonardo Da Vinci
+Location: Louvre Museum Paris France
+---
+Artwork: The Emperor Napoleon In His Study At The Tuileries
+Artist:  Jacques-Louis David
+Location: National Gallery of Art Washington USA
+---
+Artwork: Emperor Napoleon I
+Artist:  Jacques-Louis David
+Location: Fogg Art Museum at Harvard University Massachusetts USA
+---
+Artwork: Napoleon Crossing The Alps On 20th May 1800 1803
+Artist:  Jacques-Louis David
+Location: Schloss Charlottenburg Berlin Germany
+---
+Artwork: Nude Descending A Staircase II
+Artist:  Marcel Duchamp
+Location: Philadelphia Museum of Art Pennsylvania USA
+---
+Artwork: Nude Descending A Staircase II
+Artist:  Marcel Duchamp
+Location: Philadelphia Museum of Art Pennsylvania USA
+---
+Artwork: The Swing
+Artist:  Jean Honore Fragonard
+Location: The Wallace Collection London UK
+---
+Artwork: The Swing
+Artist:  Jean Honore Fragonard
+Location: The Wallace Collection London UK
+---
+Artwork: A Wanderer Above A Sea Of Mist
+Artist:  Caspar David Friedrich
+Location: Hamburger Kunsthalle Hamburg Germany
+---
+Artwork: Starry Night
+Artist:  Vincent Van Gogh
+Location: Museum of Modern Art New York USA
+---
+Artwork: Irises
+Artist:  Vincent Van Gogh
+Location: J. Paul Getty Museum Los Angeles USA
+---
+Artwork: Still Life  Vase. With Fourteen Sunflowers
+Artist:  Vincent Van Gogh
+Location: Van Gogh Museum Amsterdam Netherlands
+---
+Artwork: Portrait Of The Postman Joseph Roulin
+Artist:  Vincent Van Gogh
+Location: Kroller-Mueller Museum Otterlo Netherlands
+---
+Artwork: Wheat Field With Cypresses
+Artist:  Vincent Van Gogh
+Location: Metropolitan Museum of Art New York USA
+---
+Artwork: Vincent's Bedroom In Airies
+Artist:  Vincent Van Gogh
+Location: Art Institute of Chicago Illinois USA
+---
+Artwork: Blossoming Almond Tree
+Artist:  Vincent Van Gogh
+Location: Van Gogh Museum Amsterdam Netherlands
+---
+Artwork: Vase With Irises Against Yellow Background
+Artist:  Vincent Van Gogh
+Location: Van Gogh Museum Amsterdam Netherlands
+---
+Artwork: Vase Of Roses
+Artist:  Vincent Van Gogh
+Location: Metropolitan Museum of Art New York USA
+---
+Artwork: Starry Night Over The Rhone
+Artist:  Vincent Van Gogh
+Location: Musee d'Orsay Paris France
+---
+Artwork: The Cafe Terrace On The Place Du Forum Airies
+Artist:  Vincent Van Gogh
+Location: Kroller-Mueller Museum Otterlo Netherlands
+---
+Artwork: Rosslyn Chapel Near Edinburgh
+Artist:  Hienrich Hansen
+Location: Public Collection
+---
+Artwork: Upward
+Artist:  Wassily Kandinsky
+Location: Solomon R. Guggenheim Museum New York USA
+---
+Artwork: Concentric Circles
+Artist:  Wassily Kandinsky
+Location: Private Collection
+---
+Artwork: Composition 8
+Artist:  Wassily Kandinsky
+Location: Solomon R. Guggenheim Museum New York USA
+---
+Artwork: Group In Crinolines
+Artist:  Wassily Kandinsky
+Location: Solomon R. Guggenheim Museum New York USA
+---
+Artwork: White Cross
+Artist:  Wassily Kandinsky
+Location: Peggy Guggenheim Collection Venice Italy
+---
+Artwork: Several Circles
+Artist:  Wassily Kandinsky
+Location: Solomon R. Guggenheim Museum New York USA
+---
+Artwork: Oriental
+Artist:  Wassily Kandinsky
+Location: Stadusche Galarie Munich Germany
+---
+Artwork: Circles In A Circle
+Artist:  Wassily Kandinsky
+Location: Museum Of Art Philadelphia
+---
+Artwork: Winter Landscape
+Artist:  Wassily Kandinsky
+Location: The State Hermitage Museum St Peterburg Russia
+---
+Artwork: Moscow I
+Artist:  Wassily Kandinsky
+Location: The State Gallery Moscow Russia
+---
+Artwork: Winter Landscape
+Artist:  Wassily Kandinsky
+Location: The State Hermitage Museum St Peterburg Russia
+---
+Artwork: Song Of The Volga
+Artist:  Wassily Kandinsky
+Location: Musee D'Arte Moderne
+---
+Artwork: Bavarian Lanscape With A Church
+Artist:  Wassily Kandinsky
+Location: Museum Folkwang Essen
+---
+Artwork: Composition 4
+Artist:  Wassily Kandinsky
+Location: Dusseldorf Germany Museum
+---
+Artwork: Summer Landscape
+Artist:  Wassily Kandinsky
+Location: The State Hermitage Museum St Peterburg Russia
+---
+Artwork: Blue Sky
+Artist:  Wassily Kandinsky
+Location: Musee D'Arte Moderne, Paris France
+---
+Artwork: Composition IX
+Artist:  Wassily Kandinsky
+Location: Musee D'Arte Moderne, Paris France
+---
+Artwork: Portrait Of A Man With Schtreimel
+Artist:  Isidor Kauffman
+Location: Private Collection
+---
+Artwork: Portrait Of Adele Bloch-Bauer I
+Artist:  Portrait Of Adele Bloch-Bauer I
+Location: Gustav Klimt
+---
+Artwork: Neue Galerie New York USA
+Artist:  Gustav Klimt
+Location: Neue Galerie New York USA
+---
+Artwork: Portrait of Johanna Straude
+Artist:  The Tree Of Life
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  Gustav Klimt
+Location: MAK Museum Vienna Austria
+---
+Artwork: Hope II
+Artist:  Judith I
+Location: Gustav Klimt
+---
+Artwork: Museum of Modern Art New York USA
+Artist:  Gustav Klimt
+Location: Galerie Belvedere Vienna Austria
+---
+Artwork: Judith I
+Artist:  The Dancer
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  Gustav Klimt
+Location: Private Collection
+---
+Artwork: Music I
+Artist:  Music I
+Location: Gustav Klimt
+---
+Artwork: Neue Pinakothek Munich Germany
+Artist:  Gustav Klimt
+Location: Neue Pinakothek Munich Germany
+---
+Artwork: Portrait Of Adele Bloch-Bauer I
+Artist:  Portrait Of A Young Woman
+Location: Gustav Klimt
+---
+Artwork: Neue Galerie New York USA
+Artist:  Gustav Klimt
+Location: Galleria d'arte moderna Piacenza Italy
+---
+Artwork: The Three Ages Of Women
+Artist:  Water Serpents
+Location: Gustav Klimt
+---
+Artwork: Galleria Nazionale d'Arte Moderna Rome Italy
+Artist:  Gustav Klimt
+Location: Galerie Belvedere Vienna Austria
+---
+Artwork: Gold Fish
+Artist:  Danae
+Location: Gustav Klimt
+---
+Artwork: Dubi-Muller Foundation Solothurn Switzerland
+Artist:  Gustav Klimt
+Location: Universalmuseum Joanneum Graz Austria
+---
+Artwork: Portrait Of Fritza Riedlar
+Artist:  Portrait of Eugeina Primavesi
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  Gustav Klimt
+Location: Private Collection
+---
+Artwork: Girl Friends
+Artist:  Shubert At The Piano
+Location: Gustav Klimt
+---
+Artwork: Destroyed by Fire at Immendorf Palace in 1945
+Artist:  Gustav Klimt
+Location: Destroyed by Fire at Immendorf Palace in 1945
+---
+Artwork: University Of Vienna Ceiling (Medicine) Detail Showing Hygiieia
+Artist:  Nuda Veritas
+Location: Gustav Klimt
+---
+Artwork: Gustav Klimt
+Artist:  Theatre Collection of the National Library Vienna Austria
+Location: Ria Munk On Her Death Bed
+---
+Artwork: Gustav Klimt
+Artist:  National Gallery Of Prague Czech Republic
+Location: Lady With A Fan
+---
+Artwork: Gustav Klimt
+Artist:  Private Collection
+Location: Portrait Of Adele Bloch-Bauer II
+---
+Artwork: Gustav Klimt
+Artist:  Galerie Belvedere Vienna Austria
+Location: Expectation
+---
+Artwork: Gustav Klimt
+Artist:  Galerie Belvedere Vienna Austria
+Location: Sir Christopher Wren
+---
+Artwork: Portrait Of Wolfang Amadeus Mozart
+Artist:  Godfrey Kneller
+Location: National Portrait Gallery London UK
+---
+Artwork: Hip Hip Hooray, Artist Festival At Skagen
+Artist:  Barbara Kraftt
+Location: Private Collection
+---
+Artwork: Peter Severin Kroyer
+Artist:  Museum of Art Gothenburg Sweden
+Location: L
+---
+Artwork: Flaming June
+Artist:  Lord Frederick Leighton
+Location: Museo de Arte Ponce
+---
+Artwork: Phoebe
+Artist:  Lord Frederick Leighton
+Location: Collection of Fred and Sherry Ross New Jersey USA
+---
+Artwork: Composition With Red Yellow And Blue
+Artist:  Piet Mondrian
+Location: Kroller-Mueller Museum Otterlo Netherlands
+---
+Artwork: Grand Canal
+Artist:  Claude Monet
+Location: National Gallery London UK
+---
+Artwork: Grand Canal
+Artist:  Claude Monet
+Location: National Gallery London UK
+---
+Artwork: Rocks At Port-Goulphar Belle-IIe
+Artist:  Claude Monet
+Location: Art Institute of Chicago Illinois USA
+---
+Artwork: The Left Arm Of The SeineIn Front Of The Place Dauphine
+Artist:  James Wilson Morrice
+Location: Musee d'Orsay Paris France
+---
+Artwork: Lanscape Trinidad
+Artist:  James Wilson Morrice
+Location: National Gallery of Art Ottawa Canada
+---
+Artwork: The Scream
+Artist:  Edvard Munch
+Location: Nasjonalgalleriet Oslo Norway
+---
+Artwork: Fall Landscaape
+Artist:  Julian Onderdonk
+Location: Private Collection
+---
+Artwork: Crouching woman (Jacqueline)
+Artist:  Pablo Picasso
+Location: Art Gallery Of Ontario Canada
+---
+Artwork: Crouching woman (Jacqueline)
+Artist:  Pablo Picasso
+Location: Art Gallery Of Ontario Canada
+---
+Artwork: Writing Woman
+Artist:  Pablo Picasso
+Location: Private Collection
+---
+Artwork: Writing Woman
+Artist:  Pablo Picasso
+Location: Private Collection
+---
+Artwork: The Dream
+Artist:  Pablo Picasso
+Location: Private Collection
+---
+Artwork: The Dream
+Artist:  Pablo Picasso
+Location: Private Collection
+---
+Artwork: The Dream
+Artist:  Pablo Picasso
+Location: Private Collection
+---
+Artwork: Portrait Of A Young Woman
+Artist:  Raphael (Raffaello Sanzio)
+Location: Galleria Nazionale d'Arte Antica a Palazzo Corsini Rome Italy
+---
+Artwork: Portrait Of Leo X, Cardinal Luigi De Rossi and Giulio De Medici
+Artist:  Raphael (Raffaello Sanzio)
+Location: Galleria degli Uffizi Florence Italy
+---
+Artwork: La Donna Lavatta
+Artist:  Raphael (Raffaello Sanzio)
+Location: Palazzo Pitti Florence Italy
+---
+Artwork: School Of Athens
+Artist:  Raphael (Raffaello Sanzio)
+Location: Pinacoteca Vatican Vatican City
+---
+Artwork: Storm On The Sea Of Galilee
+Artist:  Rembrandt van Rijn
+Location: Isabella Stewart Gardner Museum Boston USA
+---
+Artwork: The Holy Family
+Artist:  Rembrandt van Rijn
+Location: Alte Pinakothek Munich Germany
+---
+Artwork: Susannah In The Bath
+Artist:  Rembrandt van Rijn
+Location: Gemaldegalerie Berlin Germany
+---
+Artwork: The Skiff (La Yole)
+Artist:  Pierre-Auguste Renoir
+Location: National Gallery London UK
+---
+Artwork: The Skiff (La Yole)
+Artist:  Pierre-Auguste Renoir
+Location: National Gallery London UK
+---
+Artwork: Luncheon On The Boating Party
+Artist:  Pierre-Auguste Renoir
+Location: Phillips Collection Washington USA
+---
+Artwork: Luncheon On The Boating Party
+Artist:  Pierre-Auguste Renoir
+Location: Phillips Collection Washington USA
+---
+Artwork: The Virgin In Prayer
+Artist:  Giovanni Battista Salvi Sassoferrato
+Location: National Gallery London UK
+---
+Artwork: The Virgin In Prayer
+Artist:  Giovanni Battista Salvi Sassoferrato
+Location: Private Collection
+---
+Artwork: Flirtation
+Artist:  Frederick Charles Soulacroix
+Location: Private Collection
+---
+Artwork: Flirtation
+Artist:  Frederick Charles Soulacroix
+Location: Private Collection
+---
+Artwork: The Murder Of Abel
+Artist:  Jacopo Robusti Tintoretto
+Location: Gallerie dell'Accademia Venice Italy
+---
+Artwork: The Birth of John the Baptist
+Artist:  Jacopo Robusti Tintoretto
+Location: The State Hermitage Museum St. Petersburg Russia
+---
+Artwork: The Temptation Of Adam
+Artist:  Jacopo Robusti Tintoretto
+Location: Gallerie dell'Accademia Venice Italy
+---
+Artwork: Moses Striking Water From The Rock
+Artist:  Jacopo Robusti Tintoretto
+Location: National Gallery London UK
+---
+Artwork: The Madonna Of The Stars
+Artist:  Jacopo Robusti Tintoretto
+Location: National Gallery of Art Washington USA
+---
+Artwork: The Eruption Of Vesuvius
+Artist:  Pierre Jacques Voliare
+Location: Musee des Beaux-Arts Andre Malraux Le Havre France
+---
+Artwork: The Eruption Of Vesuvius
+Artist:  Pierre Jacques Voliare
+Location: Private Collection
+---
+Artwork: A Girl Reading a Letter by Candlelight with a Young Man
+Artist:  Joseph Wright Of Derby
+Location: Private Collection
+---
+Artwork: NONE
+Artist:  Y
+Location: Saint Catherine
+---
+Artwork: Fernando Yanez De La Almedina
+Artist:  Prado Museum Madrid Spain
+Location: In The Harem
+---
+Artwork: Adolphe Yvon
+Artist:  The Walters Art Museum Baltimore USA
+Location: Z
+---
