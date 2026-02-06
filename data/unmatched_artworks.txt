@@ -1,0 +1,473 @@
+Summary:
+Total locations in text file: 992
+Unmatched: 117
+
+--- UNMATCHED ARTWORKS ---
+Artwork: ART NAME
+Artist:  ARTIST  NAME
+Location: Location Of Art
+---
+Artwork: Still Life A Velvet Bag On A Marble Edge
+Artist:  Wilem Van Aelst
+Location: Museum Of Fine Arts Houston
+---
+Artwork: The Handkechief Dance
+Artist:  Augostino Brunias
+Location: Museo Carmen Thyssen M�laga Spain
+---
+Artwork: Marie-Anne Caralus Duran ( The Artists Daughter)
+Artist:  Charles Emile August Caralus -Duran
+Location: Fine Arts Museums of San Francisco California USA
+---
+Artwork: Death Of Marat
+Artist:  Jaques-Louis David
+Location: Royal Museums of Fine Arts Brussels Belgium
+---
+Artwork: Lictors Bearing To Brutus The Bodies Of His Sons
+Artist:  Jaques-Louis David
+Location: Louvre Museum Paris France
+---
+Artwork: The Death Of Socrates
+Artist:  Jaques-Louis David
+Location: Metropolitan Museum of Art New York USA
+---
+Artwork: The Emporer Napoleon In His Study At The Tuileries
+Artist:  Jaques-Louis David
+Location: National Gallery of Art Washington USA
+---
+Artwork: Mars Disarmed By Venus And The Three Graces
+Artist:  Jaques-Louis David
+Location: Royal Museums of Fine Arts Brussels Belgium
+---
+Artwork: The Coronation Of Napoleon
+Artist:  Jaques-Louis David
+Location: Louvre Museum Paris France
+---
+Artwork: Emporer Napoleon I
+Artist:  Jaques-Louis David
+Location: Fogg Art Museum at Harvard University Massachusetts USA
+---
+Artwork: Open Windw
+Artist:  Raoul Dufy
+Location: The Art Institute Of Chicago
+---
+Artwork: Nude Descending A Staircase II
+Artist:  Marcel Duchamp
+Location: Philadelphia Museum of Art Pennsylvania USA
+---
+Artwork: Nude Descending A Staircase II
+Artist:  Marcel Duchamp
+Location: Philadelphia Museum of Art Pennsylvania USA
+---
+Artwork: Stll Life Sunflowers On An Armchair
+Artist:  Paul Gauguin
+Location: E.G. Buehrle Zurich Switzerland
+---
+Artwork: Olive Tress
+Artist:  Vincent Van Gogh
+Location: Minneapolis Institute of Arts Minnesota USA
+---
+Artwork: Blossoming Almomd Tree
+Artist:  Vincent Van Gogh
+Location: Van Gogh Museum Amsterdam Netherlands
+---
+Artwork: Whaet Field With Crows 1890
+Artist:  Vincent Van Gogh
+Location: Van Gogh Museum Amsterdam Netherlands
+---
+Artwork: Starry Night Over The Rhone
+Artist:  Vincent Van Gogh
+Location: Musee d'Orsay Paris France
+---
+Artwork: Portrait Of A Young Man Holding A Glove
+Artist:  Frans Halls
+Location: The State Hermitage Museum St. Petersburg Russia
+---
+Artwork: Married Couple In A Garden
+Artist:  Frans Halls
+Location: Rijksmuseum Amsterdam Netherlands
+---
+Artwork: Laughing Cavallier
+Artist:  Frans Halls
+Location: The Wallace Collection London UK
+---
+Artwork: Portrait Of A Man
+Artist:  Frans Halls
+Location: Frick Collection New York USA
+---
+Artwork: Portrait Of A Woman
+Artist:  Frans Halls
+Location: Frick Collection New York USA
+---
+Artwork: Portrait Of A Elderly Man
+Artist:  Frans Halls
+Location: Frick Collection New York USA
+---
+Artwork: Malle Babbe
+Artist:  Frans Halls
+Location: Gemaldegalerie Berlin Germany
+---
+Artwork: Rosslyn Chapel Near Edingburgh
+Artist:  Hienrich Hansen
+Location: Public Collection
+---
+Artwork: Bavarian Lanscape With A Church
+Artist:  Wassily Kadinsky
+Location: Museum Folkwang Essen
+---
+Artwork: Portrait O A Man With Streimel
+Artist:  Isidor Kauffman
+Location: Private Collection
+---
+Artwork: Self Portrair In Velvet
+Artist:  Frida Khalo
+Location: Private Collection
+---
+Artwork: Gustav Klimt
+Artist:  Theatre Collection of the National Librady Vienna Austria
+Location: Ria Munk On Her Death Bed
+---
+Artwork: Gustav Klimt
+Artist:  Private Collectiom
+Location: The Virgins
+---
+Artwork: Gustav Klimt
+Artist:  National Gallery Of Prague Czech Republic
+Location: Lady With A Fan
+---
+Artwork: Gustav Klimt
+Artist:  Private Collectiom
+Location: The Polecat Fur
+---
+Artwork: Gustav Klimt
+Artist:  Private Collectiom
+Location: Portrait Of Adele Bloch-Bauer II
+---
+Artwork: Gustav Klimt
+Artist:  Galerie Belvedere Vienna Austria
+Location: Lady With A Hat And Featherboa
+---
+Artwork: Gustav Klimt
+Artist:  Galerie Belvedere Vienna Austria
+Location: Expectation
+---
+Artwork: Gustav Klimt
+Artist:  MAK Museum Vienna Austria
+Location: The Sunflower
+---
+Artwork: Gustav Klimt
+Artist:  Galerie Belvedere Vienna Austria
+Location: Sir Christopher Wren
+---
+Artwork: Godfrey Kneller
+Artist:  National Portrait Gallery London UK
+Location: Portrait Of Wolfang Amadeus Mozart
+---
+Artwork: Barbara Kraftt
+Artist:  Private Collectiom
+Location: Hip Hip Hooray, Artist Festival At Skagen
+---
+Artwork: Peter Severin Kroyer
+Artist:  Museum of Art Gothenburg Sweden
+Location: L
+---
+Artwork: The Painters Honeymoonn
+Artist:  Lord Frederick Leighton
+Location: Boston Museum of Fine Arts Massachusetts USA
+---
+Artwork: Stil Life With Melon And Peaches
+Artist:  Edouard Manet
+Location: National Gallery Of Art Washington
+---
+Artwork: Blossoming Apple Tress
+Artist:  Piet Mondrian
+Location: Haags Gemeentemuseum The Hague Netherlands
+---
+Artwork: Composition Red, Yelow and Blue
+Artist:  Piet Mondrian
+Location: Kroller-Mueller Museum Otterlo Netherlands
+---
+Artwork: Rocks At Port-Goulphar Belle-IIe
+Artist:  Claude Monet
+Location: Art Institute of Chicago Illinois USA
+---
+Artwork: The Left Arm Of The SeineIn Front Of The Place Dauphine
+Artist:  James Wilson Morrice
+Location: Musee d'Orsay Paris France
+---
+Artwork: Lanscape Trinidad
+Artist:  James Wilson Morrice
+Location: National Gallery of Art Ottawa Canada
+---
+Artwork: Fall Landscaape
+Artist:  Julian Onderdonk
+Location: Private Collection
+---
+Artwork: Winston Churchill
+Artist:  Sir Wiilam Orpen
+Location: National Portrait Gallery London UK
+---
+Artwork: Lieutenant General Sir Arthur Currie
+Artist:  Sir Wiilam Orpen
+Location: Public Collection
+---
+Artwork: The Brtutal Embrace
+Artist:  Pablo Picasso
+Location: Private Collection
+---
+Artwork: John The Baaptist Preaching
+Artist:  Mattia Preti
+Location: Fine Arts Museums of San Francisco California USA
+---
+Artwork: Number One (Lavendar Mist)
+Artist:  Jackson Pollock
+Location: National Gallery Of Art Washington DC USA
+---
+Artwork: Portrait Of Leo X, Cardinal Luigi De Rossi and Giulio De Medici
+Artist:  Raffaello Sanzio Raphael
+Location: Galleria degli Uffizi Florence Italy
+---
+Artwork: Jeremiah Lamenting The Destruction Of Jerusalem
+Artist:  Rembrandt Von Rijn
+Location: Rijksmuseum Amsterdam Netherlands
+---
+Artwork: The Prophetess Anna (Known As Rembrandt's Mother)
+Artist:  Rembrandt Von Rijn
+Location: Rijksmuseum Amsterdam Netherlands
+---
+Artwork: Simeon In Temple
+Artist:  Rembrandt Von Rijn
+Location: Mauritshuis Royal Picture Gallery The Hague Netherlands
+---
+Artwork: An Old Military Costume (Man With A Plume)
+Artist:  Rembrandt Von Rijn
+Location: J. Paul Getty Museum Los Angeles USA
+---
+Artwork: Man In Oriental Costume (The Noble Slav)
+Artist:  Rembrandt Von Rijn
+Location: Metropolitan Museum of Art New York USA
+---
+Artwork: The Anatomy Lecture Of Dr Nicolas Tulp
+Artist:  Rembrandt Von Rijn
+Location: Mauritshuis Royal Picture Gallery The Hague Netherlands
+---
+Artwork: Storm On The Sea Of Galilee
+Artist:  Rembrandt Von Rijn
+Location: Isabella Stewart Gardner Museum Boston USA
+---
+Artwork: The Holy Family
+Artist:  Rembrandt Von Rijn
+Location: Alte Pinakothek Munich Germany
+---
+Artwork: Christ And Saint Mary Magdelene At The Tomb
+Artist:  Rembrandt Von Rijn
+Location: The Royal Collection London UK
+---
+Artwork: Danae
+Artist:  Rembrandt Von Rijn
+Location: The State Hermitage Museum St. Petersburg Russia
+---
+Artwork: Rape Of Ganymede
+Artist:  Rembrandt Von Rijn
+Location: Gemaldegalerie Alte Meister Dresden Germany
+---
+Artwork: The Blinding Of Samson
+Artist:  Rembrandt Von Rijn
+Location: Stadel Museum Frankfurt Germany
+---
+Artwork: Bleshazzar's Feast
+Artist:  Rembrandt Von Rijn
+Location: National Gallery London UK
+---
+Artwork: The Arcangel Leaving The House Of Tobias
+Artist:  Rembrandt Von Rijn
+Location: Louvre Museum Paris France
+---
+Artwork: Dead Peacocks
+Artist:  Rembrandt Von Rijn
+Location: Rijksmuseum Amsterdam Netherlands
+---
+Artwork: Self Portrait Age 34
+Artist:  Rembrandt Von Rijn
+Location: National Gallery London UK
+---
+Artwork: Portrait Of Agatha Bas
+Artist:  Rembrandt Von Rijn
+Location: The Royal Collection London UK
+---
+Artwork: The Night Watch
+Artist:  Rembrandt Von Rijn
+Location: Rijksmuseum Amsterdam Netherlands
+---
+Artwork: Christ And The Women Taken In Adultery
+Artist:  Rembrandt Von Rijn
+Location: National Gallery London UK
+---
+Artwork: Suzanne In The Bath
+Artist:  Rembrandt Von Rijn
+Location: Gemaldegalerie Berlin Germany
+---
+Artwork: Aristotle With A Bust Of Homer
+Artist:  Rembrandt Von Rijn
+Location: Metropolitan Museum of Art New York USA
+---
+Artwork: A Woman Bathing In The Stream
+Artist:  Rembrandt Von Rijn
+Location: National Gallery London UK
+---
+Artwork: Bathsheba At Her Bath
+Artist:  Rembrandt Von Rijn
+Location: Louvre Museum Paris France
+---
+Artwork: Hendrickje Stoffels In The Window
+Artist:  Rembrandt Von Rijn
+Location: Gemaldegalerie Berlin Germany
+---
+Artwork: Jacob Blessing The Children Of Joseph
+Artist:  Rembrandt Von Rijn
+Location: Gemaldegalerie Alte Meister Kassel Germany
+---
+Artwork: Self Portrait
+Artist:  Rembrandt Von Rijn
+Location: Frick Collection New York USA
+---
+Artwork: The Jewish Bride
+Artist:  Rembrandt Von Rijn
+Location: Rijksmuseum Amsterdam Netherlands
+---
+Artwork: The Return Of The Prodigal Son
+Artist:  Rembrandt Von Rijn
+Location: The State Hermitage Museum St. Petersburg Russia
+---
+Artwork: Flora
+Artist:  Rembrandt Von Rijn
+Location: The State Hermitage Museum St. Petersburg Russia
+---
+Artwork: Old Woman Praying (Rembrandt's Mother)
+Artist:  Rembrandt Von Rijn
+Location: Liechtenstein Museum Vienna Austria
+---
+Artwork: Old Man Praying
+Artist:  Rembrandt Von Rijn
+Location: Cleveland Museum of Art Ohio USA
+---
+Artwork: The Good Samaritan
+Artist:  Rembrandt Von Rijn
+Location: The Wallace Collection London UK
+---
+Artwork: The Twelve Year Old Jesus In Front Of The Scribes
+Artist:  Rembrandt Von Rijn
+Location: Hamburger Kunsthalle Hamburg Germany
+---
+Artwork: An Old Woman (Rembrandt's Mother)
+Artist:  Rembrandt Von Rijn
+Location: The Royal Collection London UK
+---
+Artwork: The Sacrafice Of Abraham
+Artist:  Rembrandt Von Rijn
+Location: The State Hermitage Museum St. Petersburg Russia
+---
+Artwork: Holy Family
+Artist:  Rembrandt Von Rijn
+Location: The State Hermitage Museum St. Petersburg Russia
+---
+Artwork: la Grenouillere
+Artist:  Pierre-August Renoir
+Location: Pushkin Museum of Fine Arts Moscow Russia
+---
+Artwork: The Skiff (La Yole)
+Artist:  Pierre Auguste Renoir
+Location: National Gallery London UK
+---
+Artwork: The Skiff (La Yole)
+Artist:  Pierre Auguste Renoir
+Location: National Gallery London UK
+---
+Artwork: The Box At The Opera (La Loge)
+Artist:  Pierre-August Renoir
+Location: Courtauld Institute of Art London UK
+---
+Artwork: Dance At The Moulin Del La Galette
+Artist:  Pierre-August Renoir
+Location: Musee d'Orsay Paris France
+---
+Artwork: Luncheon On The Boating Party
+Artist:  Pierre Auguste Renoir
+Location: Phillips Collection Washington USA
+---
+Artwork: Luncheon On The Boating Party
+Artist:  Pierre Auguste Renoir
+Location: Phillips Collection Washington USA
+---
+Artwork: Two Sisters On The Terrace
+Artist:  Pierre Auguste Renoir
+Location: Art Institute of Chicago Illinois USA
+---
+Artwork: The Umberellas
+Artist:  Pierre-August Renoir
+Location: National Gallery London UK
+---
+Artwork: By The Seashore
+Artist:  Pierre-August Renoir
+Location: Metropolitan Museum of Art New York USA
+---
+Artwork: Dance At Bougival
+Artist:  Pierre-August Renoir
+Location: Boston Museum of Fine Arts Massachusetts USA
+---
+Artwork: Young Girls At The Piano
+Artist:  Pierre-August Renoir
+Location: Musee d'Orsay Paris France
+---
+Artwork: Woman Drinking With Sleeping Soldier
+Artist:  Gerard Ter Boch
+Location: Private Collection
+---
+Artwork: Woman Peeling Apples
+Artist:  Gerard Ter Boch
+Location: Kunsthistorisches Museum Vienna Austria
+---
+Artwork: Man Offering A Woman Coins
+Artist:  Gerard Ter Boch
+Location: Louvre Museum Paris France
+---
+Artwork: The Suitor's Visit
+Artist:  Gerard Ter Boch
+Location: National Gallery of Art Washington USA
+---
+Artwork: A Lady At Her Toilet
+Artist:  Gerard Ter Boch
+Location: Detroit Institute of Arts Michigan USA
+---
+Artwork: At The Moulin Rouge, The Dance
+Artist:  Henri De Toulouse- Lautrec
+Location: Philadelphia Museum of Art Pennsylvania USA
+---
+Artwork: Marcelle Lender Dancing The Bolero In Chilperic
+Artist:  Henri De Toulouse- Lautrec
+Location: National Gallery of Art Washington USA
+---
+Artwork: The Birth Of John The Baptisst
+Artist:  Jacopa Robusti Tintoretto
+Location: The State Hermitage Museum St. Petersburg Russia
+---
+Artwork: A Girl Reading A Letter By Candle Light WWith A Young Man
+Artist:  Joseph Wright Of Derby
+Location: Private Collection
+---
+Artwork: NONE
+Artist:  Y
+Location: Saint Catherine
+---
+Artwork: Fernando Yanez De La Almedina
+Artist:  Prado Museum Madrid Spain
+Location: In The Harem
+---
+Artwork: Adolphe Yvon
+Artist:  Private Collection
+Location: Napoleon III
+---
+Artwork: Adolphe Yvon
+Artist:  The Walters Art Museum Baltimore USA
+Location: Z
+---

@@ -110,6 +110,12 @@ export default function ClientProductDetails({
                 <span className="font-bold text-gray-900">Original Dimensions:</span>{' '}
                 {artwork.options?.[0] ? `${artwork.options[0].width} x ${artwork.options[0].height} cm` : (artwork.originalDimensions ?? (selectedOption ? `${selectedOption.width} x ${selectedOption.height} cm` : 'Varies'))}
               </p>
+              {artwork.location && (
+                <p>
+                  <span className="font-bold text-gray-900">Art Location:</span>{' '}
+                  {artwork.location}
+                </p>
+              )}
             </div>
           </div>
 

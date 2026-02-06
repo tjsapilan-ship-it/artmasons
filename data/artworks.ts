@@ -13,7 +13,8 @@ export interface Artwork {
   letter: string;
   currency?: string;
   basePrice?: number;
-  options?: Array<{ id: string; width: number; height: number; price: number; label: string }>;
+  options?: Array<{ id: string; width: number; height: number; price: number; label: string }>; 
+  location?: string;
 }
 
 const ARTWORKS_A_TO_M: Artwork[] = [
@@ -28,7 +29,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/in poppyland (poppy field).webp",
     artistLifespan: "1851-1927",
     slug: "in-poppyland-poppy-field",
-    letter: "A"
+    letter: "A",
+    location: "Ball State University Museum of Art Indiana USA"
   },
   {
     name: "Gleaners at Rest",
@@ -40,7 +42,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/gleaners at rest.webp",
     artistLifespan: "1851-1927",
     slug: "gleaners-at-rest",
-    letter: "A"
+    letter: "A",
+    location: "Ball State University Museum of Art Indiana USA"
   },
   {
     name: "Iridesence Of A Shallow Stream",
@@ -52,7 +55,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/iridesence of a shallow stream.webp",
     artistLifespan: "1851-1927",
     slug: "iridesence-of-a-shallow-stream",
-    letter: "A"
+    letter: "A",
+    location: "Private collection"
   },
   {
     name: "Wheatwain A Field",
@@ -64,7 +68,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/wheatwain a field.webp",
     artistLifespan: "1851-1927",
     slug: "wheatwain-a-field",
-    letter: "A"
+    letter: "A",
+    location: "Indianapolis Museum ofArt (Newfields)"
   },
   {
     name: "Glass Vase With Branches Bearing Fruit",
@@ -76,7 +81,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/glass vase with branches bearing fruit.webp",
     artistLifespan: "1627-1683",
     slug: "glass-vase-with-branches-bearing-fruit",
-    letter: "A"
+    letter: "A",
+    location: "Thyssen-Bornemisza Museum Madrid Spain"
   },
   {
     name: "Still Life With A Basket Of Fruit On A Marble Edge",
@@ -88,7 +94,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/still life with a basket of fruit on a marble edge.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-with-a-basket-of-fruit-on-a-marble-edge",
-    letter: "A"
+    letter: "A",
+    location: "Private collection"
   },
   {
     name: "Still Life Fruit And Crystal Vase",
@@ -100,7 +107,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/still life fruit and crystal vase.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-fruit-and-crystal-vase",
-    letter: "A"
+    letter: "A",
+    location: "Palazzo Pitti Florence Italy"
   },
   {
     name: "Still Life Grapes, A Roemer, A Silver Ewer And A Plate",
@@ -112,7 +120,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/still life grapes, a roemer, a silver ewer and a plate.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-grapes-a-roemer-a-silver-ewer-and-a-plate",
-    letter: "A"
+    letter: "A",
+    location: "Private collection"
   },
   {
     name: "The Breakfast",
@@ -124,7 +133,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the breakfast.webp",
     artistLifespan: "1627-1683",
     slug: "the-breakfast",
-    letter: "A"
+    letter: "A",
+    location: "Kunstmuseum Basel Switzerland"
   },
   {
     name: "Still Life of a Silver Tazza with a Wine Glass, Crab, Herring, Bread and Onion on Pewter Dishes with Grapes Arranged on a Ledge",
@@ -136,7 +146,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/still life of a silver tazza with a wine glass, crab, herring, bread and onion on pewter dishes with grapes arranged on a ledge.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-of-a-silver-tazza-with-a-wine-glass-crab-herring-bread-and-onion-on-pewter-dishes-with-grapes-arranged-on-a-ledge",
-    letter: "A"
+    letter: "A",
+    location: "Private collection"
   },
   {
     name: "Still Life Herring, Cherries And Glassware",
@@ -148,7 +159,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/still life herring, cherries and glassware.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-herring-cherries-and-glassware",
-    letter: "A"
+    letter: "A",
+    location: "Kelvingrove Art Gallery & Museum, Galsgow Scotland"
   },
   {
     name: "Still Life A Velvet Bag On A Marble Ledge",
@@ -172,7 +184,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/still life with dead birds and game bag.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-with-dead-birds-and-game-bag",
-    letter: "A"
+    letter: "A",
+    location: "The Getty Center North Pavillion Gallery"
   },
   {
     name: "The Market Scene",
@@ -184,7 +197,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the market scene.webp",
     artistLifespan: "1508-1575",
     slug: "the-market-scene",
-    letter: "A"
+    letter: "A",
+    location: "Hallwyl Museum Stockholm Sweden"
   },
   {
     name: "The Egg Dance",
@@ -196,7 +210,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the egg dance.webp",
     artistLifespan: "1508-1575",
     slug: "the-egg-dance",
-    letter: "A"
+    letter: "A",
+    location: "The Rijksmuseum Amsterdam, Netherlands"
   },
   {
     name: "Butchers Stall With The Flight In To Egypt",
@@ -208,7 +223,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/butches stall with the flight in to egypt.webp",
     artistLifespan: "1508-1575",
     slug: "butchers-stall-with-the-flight-in-to-egypt",
-    letter: "A"
+    letter: "A",
+    location: "Raleigh North Carolina USA"
   },
   {
     name: "The Cook",
@@ -220,7 +236,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the cook.webp",
     artistLifespan: "1508-1575",
     slug: "the-cook",
-    letter: "A"
+    letter: "A",
+    location: "The National Gallery London"
   },
   {
     name: "Vendor Of Fowl",
@@ -232,7 +249,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/vendor of fowl.webp",
     artistLifespan: "1508-1575",
     slug: "vendor-of-fowl",
-    letter: "A"
+    letter: "A",
+    location: "The State Hemitage Museum Russia"
   },
   {
     name: "Market Woman At A Vegetable Stand",
@@ -244,7 +262,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/marketwoman at a vegetable stand.webp",
     artistLifespan: "1508-1575",
     slug: "market-woman-at-a-vegetable-stand",
-    letter: "A"
+    letter: "A",
+    location: "The Gamaldegalerie  Berlin Germany"
   },
   {
     name: "The Nubian Giraffe",
@@ -256,7 +275,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the nubian giraffe.webp",
     artistLifespan: "1767-1849",
     slug: "the-nubian-giraffe",
-    letter: "A"
+    letter: "A",
+    location: "Windsor Castle United Kingdom Royal Collection"
   },
   {
     name: "A Pointer In Landscape",
@@ -268,7 +288,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/a pointer in landscape.webp",
     artistLifespan: "1767-1849",
     slug: "a-pointer-in-landscape",
-    letter: "A"
+    letter: "A",
+    location: "Private collection"
   },
   {
     name: "Deperture To The Hunt",
@@ -280,7 +301,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/deperture to the hunt.webp",
     artistLifespan: "1767-1849",
     slug: "deperture-to-the-hunt",
-    letter: "A"
+    letter: "A",
+    location: "Musee D'Art Et D'Histoire Geneva, Switzerland"
   },
   {
     name: "The Playground",
@@ -292,7 +314,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the playground.webp",
     artistLifespan: "1767-1849",
     slug: "the-playground",
-    letter: "A"
+    letter: "A",
+    location: "Kunstmuseum Winterthur Reinhartam Stadtgarten"
   },
   {
     name: "A Carriage Horse",
@@ -304,7 +327,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/a carriage horse.webp",
     artistLifespan: "1767-1849",
     slug: "a-carriage-horse",
-    letter: "A"
+    letter: "A",
+    location: "Private collection"
   },
   {
     name: "Lord Haethfield On Horseback",
@@ -316,7 +340,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/lord haethfield on horseback.webp",
     artistLifespan: "1767-1849",
     slug: "lord-haethfield-on-horseback",
-    letter: "A"
+    letter: "A",
+    location: "Kunstmuseum Lucerne Switzerland"
   },
   {
     name: "Zebra",
@@ -328,7 +353,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/zebra.webp",
     artistLifespan: "1767-1849",
     slug: "zebra",
-    letter: "A"
+    letter: "A",
+    location: "Yale Center for British Art Connecticut USA"
   },
   {
     name: "The Rainbow",
@@ -340,7 +366,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the rainbow.webp",
     artistLifespan: "1817-1900",
     slug: "the-rainbow",
-    letter: "A"
+    letter: "A",
+    location: "The State Tretyakov Gallery Moscow Russia"
   },
   {
     name: "Boat On The Nile With Pyramids Of Gizeh",
@@ -352,7 +379,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/boat on the nile with pyramids of gizeh.webp",
     artistLifespan: "1817-1900",
     slug: "boat-on-the-nile-with-pyramids-of-gizeh",
-    letter: "A"
+    letter: "A",
+    location: "The State Tretyakov Gallery Moscow Russia"
   },
   {
     name: "Sunrise In Yalta",
@@ -364,7 +392,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/sunrise in yalta.webp",
     artistLifespan: "1817-1900",
     slug: "sunrise-in-yalta",
-    letter: "A"
+    letter: "A",
+    location: "Aivazovsky National Art Gallery Crimea"
   },
   {
     name: "The Ninth Wave",
@@ -376,7 +405,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the ninth wave.webp",
     artistLifespan: "1817-1900",
     slug: "the-ninth-wave",
-    letter: "A"
+    letter: "A",
+    location: "The State Russain Museum St Petersbourg Russia"
   },
   {
     name: "The Battle Of Chesma 25-26 June 1770",
@@ -388,7 +418,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the battle of chesma 25-26 june 1770.webp",
     artistLifespan: "1817-1900",
     slug: "the-battle-of-chesma-25-26-june-1770",
-    letter: "A"
+    letter: "A",
+    location: "I. K. Aivazovsky Museum Feodosia Ukraine"
   },
   {
     name: "Repose",
@@ -400,7 +431,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/repose.webp",
     artistLifespan: "1856-1915",
     slug: "repose",
-    letter: "A"
+    letter: "A",
+    location: "The Metropolitan Museum Of Art (The Met) New York"
   },
   {
     name: "Repose (Lady Reading A Book)",
@@ -412,7 +444,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/repose (lady reading a book).webp",
     artistLifespan: "1856-1915",
     slug: "repose-lady-reading-a-book",
-    letter: "A"
+    letter: "A",
+    location: "The Metropolitan Museum Of Art (The Met) New York"
   },
   {
     name: "Study In Green And Black",
@@ -424,7 +457,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/study in green and black.webp",
     artistLifespan: "1856-1915",
     slug: "study-in-green-and-black",
-    letter: "A"
+    letter: "A",
+    location: "The Metropolitan Museum Of Art (The Met) New York"
   },
   {
     name: "Isabella Pot Of Basil",
@@ -436,7 +470,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/isabella pot of basil.webp",
     artistLifespan: "1856-1915",
     slug: "isabella-pot-of-basil",
-    letter: "A"
+    letter: "A",
+    location: "Museum Of Fine Arts Boston"
   },
   {
     name: "The favourite Poet",
@@ -448,7 +483,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the favourite poet.webp",
     artistLifespan: "1836-1912",
     slug: "the-favourite-poet",
-    letter: "A"
+    letter: "A",
+    location: "Lady Lever Art Gallery Liverpool UK"
   },
   {
     name: "The Coign Of Vantage",
@@ -460,7 +496,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the coign of vantage.webp",
     artistLifespan: "1836-1912",
     slug: "the-coign-of-vantage",
-    letter: "A"
+    letter: "A",
+    location: "Private collection"
   },
   {
     name: "The Years At Spring. All's Right With The World",
@@ -472,7 +509,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the years at spring. all's right with the world.webp",
     artistLifespan: "1836-1912",
     slug: "the-years-at-spring-alls-right-with-the-world",
-    letter: "A"
+    letter: "A",
+    location: "Private collection"
   },
   {
     name: "Under The Roof Of The Blue Ionion Weather",
@@ -484,7 +522,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/under the roof of the blue ionion weather.webp",
     artistLifespan: "1836-1912",
     slug: "under-the-roof-of-the-blue-ionion-weather",
-    letter: "A"
+    letter: "A",
+    location: "Private collection"
   },
   {
     name: "The favourite Custom",
@@ -496,7 +535,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the favourite custom.webp",
     artistLifespan: "1836-1912",
     slug: "the-favourite-custom",
-    letter: "A"
+    letter: "A",
+    location: "Tate Gallery London UK"
   },
   {
     name: "The finding of Moses",
@@ -508,7 +548,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/the finding of moses.webp",
     artistLifespan: "1836-1912",
     slug: "the-finding-of-moses",
-    letter: "A"
+    letter: "A",
+    location: "Private collection"
   },
 
   // Letter B
@@ -522,7 +563,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/green grocers stall with the flight into egypt boyond.webp",
     artistLifespan: "1533-1574",
     slug: "green-grocers-stall-with-the-flight-into-egypt-boyond",
-    letter: "B"
+    letter: "B",
+    location: "Gemaldegalerie State Museum Of Berlin"
   },
   {
     name: "The Four Elements: Fire",
@@ -534,7 +576,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the four elements fire.webp",
     artistLifespan: "1533-1574",
     slug: "the-four-elements-fire",
-    letter: "B"
+    letter: "B",
+    location: "The National Gallery London UK"
   },
   {
     name: "St Paul",
@@ -546,7 +589,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/st paul.webp",
     artistLifespan: "1708-1787",
     slug: "st-paul",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "St Peter",
@@ -558,7 +602,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/st peter.webp",
     artistLifespan: "1708-1787",
     slug: "st-peter",
-    letter: "B"
+    letter: "B",
+    location: "Basildon Park Berkshire, UK"
   },
   {
     name: "Matthew",
@@ -570,7 +615,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/matthew.webp",
     artistLifespan: "1708-1787",
     slug: "matthew",
-    letter: "B"
+    letter: "B",
+    location: "Basildon Park Berkshire, UK"
   },
   {
     name: "God The Father",
@@ -582,7 +628,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/god the father.webp",
     artistLifespan: "1708-1787",
     slug: "god-the-father",
-    letter: "B"
+    letter: "B",
+    location: "Basildon Park Berkshire, UK"
   },
   {
     name: "Madonna and Child",
@@ -594,7 +641,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/madonna and child.webp",
     artistLifespan: "1708-1787",
     slug: "madonna-and-child",
-    letter: "B"
+    letter: "B",
+    location: "Gallerie Borghese Rome Italy"
   },
   {
     name: "Portrait Ludwig X Of Bavaria",
@@ -606,7 +654,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/portrait ludwig x of bavaria.webp",
     artistLifespan: "1502-1540",
     slug: "portrait-ludwig-x-of-bavaria",
-    letter: "B"
+    letter: "B",
+    location: "Lietchtenstein Museum Vienna Austria"
   },
   {
     name: "Feast Of The Gods",
@@ -618,7 +667,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/feast of the gods.webp",
     artistLifespan: "1430-1560",
     slug: "feast-of-the-gods",
-    letter: "B"
+    letter: "B",
+    location: "National Gallery Of Art Washington DC USA"
   },
   {
     name: "Young Woman (Laura)",
@@ -630,7 +680,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/young woman (laura).webp",
     artistLifespan: "1430-1560",
     slug: "young-woman-laura",
-    letter: "B"
+    letter: "B",
+    location: "Kunsthistorisches Museum Vienna Austria"
   },
   {
     name: "Madonna and Child with St John Baptist",
@@ -642,7 +693,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/madonna and child with st john baptist.webp",
     artistLifespan: "1430-1560",
     slug: "madonna-and-child-with-st-john-baptist",
-    letter: "B"
+    letter: "B",
+    location: "Indianapolis Museum Of Art At Newfields USA"
   },
   {
     name: "Saint Sebastian",
@@ -654,7 +706,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/saint sebastian.webp",
     artistLifespan: "1616-1656",
     slug: "saint-sebastian",
-    letter: "B"
+    letter: "B",
+    location: "Crocker Art Museum Sacramento California"
   },
   {
     name: "Mocking Of Christ",
@@ -666,7 +719,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/mocking of christ.webp",
     artistLifespan: "1616-1656",
     slug: "mocking-of-christ",
-    letter: "B"
+    letter: "B",
+    location: "Princeton University Art Museum New Jersey"
   },
   {
     name: "The Triumph Of David",
@@ -678,7 +732,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the triumph of david.webp",
     artistLifespan: "1616-1656",
     slug: "the-triumph-of-david",
-    letter: "B"
+    letter: "B",
+    location: "Musee D'Art Et D'Histoire Geneva, Switzerland"
   },
   {
     name: "Zechariah",
@@ -690,7 +745,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/zechariah.webp",
     artistLifespan: "1616-1656",
     slug: "zechariah",
-    letter: "B"
+    letter: "B",
+    location: "Unknown"
   },
   {
     name: "View Of. Perna From The Right Bank Of The Elbe",
@@ -702,7 +758,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/view of perna from the right bank of the elbe.webp",
     artistLifespan: "1720-1780",
     slug: "view-of-perna-from-the-right-bank-of-the-elbe",
-    letter: "B"
+    letter: "B",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "The Liechestein Garden Palace From The Garden Side",
@@ -714,7 +771,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the liechestein garden palace from the garden side.webp",
     artistLifespan: "1720-1780",
     slug: "the-liechestein-garden-palace-from-the-garden-side",
-    letter: "B"
+    letter: "B",
+    location: "Collection of the Prince of Liechtenstein Vaduz Liechtenstein"
   },
   {
     name: "Square With The Kreuz In Dresden",
@@ -726,7 +784,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/sqaure with the kreuz in dresden.webp",
     artistLifespan: "1720-1780",
     slug: "square-with-the-kreuz-in-dresden",
-    letter: "B"
+    letter: "B",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "The Ponte Vecchio Florence",
@@ -738,7 +797,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the ponte vecchio florence.webp",
     artistLifespan: "1720-1780",
     slug: "the-ponte-vecchio-florence",
-    letter: "B"
+    letter: "B",
+    location: "Boston Museum of Fine Arts Massachusetts USA"
   },
   {
     name: "Portrait of My Daughters",
@@ -750,7 +810,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/portrait of my daughters.webp",
     artistLifespan: "1862-1951",
     slug: "portrait-of-my-daughters",
-    letter: "B"
+    letter: "B",
+    location: "Worcester Art Museum Massachusetts USA"
   },
   {
     name: "Summer",
@@ -762,7 +823,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/summer.webp",
     artistLifespan: "1862-1951",
     slug: "summer",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Eleanor",
@@ -774,7 +836,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/eleanor.webp",
     artistLifespan: "1862-1951",
     slug: "eleanor",
-    letter: "B"
+    letter: "B",
+    location: "Boston Museum of Fine Arts Massachusetts USA"
   },
   {
     name: "The Hill Top",
@@ -786,7 +849,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the hill top.webp",
     artistLifespan: "1862-1951",
     slug: "the-hill-top",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "The Cycle Shop In The Bois Du Boulonge",
@@ -798,7 +862,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the cycle shop in the bois du boulogne.webp",
     artistLifespan: "1839-1945",
     slug: "the-cycle-shop-in-the-bois-du-boulonge",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "After The Service At The Church Of Holy Trinity Christmas",
@@ -810,7 +875,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/after the service at the church of holy trinity christmas.webp",
     artistLifespan: "1839-1945",
     slug: "after-the-service-at-the-church-of-holy-trinity-christmas",
-    letter: "B"
+    letter: "B",
+    location: "Musee National de la Cooperation Franco-Americaine Chateau de Blerancourt France"
   },
   {
     name: "Pont Neuf",
@@ -822,7 +888,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/pont neuf.webp",
     artistLifespan: "1839-1945",
     slug: "pont-neuf",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Women Skiing",
@@ -834,7 +901,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/women skiing.webp",
     artistLifespan: "1839-1945",
     slug: "women-skiing",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Moose",
@@ -846,7 +914,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/moose.webp",
     artistLifespan: "1830-1902",
     slug: "moose",
-    letter: "B"
+    letter: "B",
+    location: "The Haggin Museum California USA"
   },
   {
     name: "Valley of Yosemite",
@@ -858,7 +927,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/valley of yosemite.webp",
     artistLifespan: "1830-1902",
     slug: "valley-of-yosemite",
-    letter: "B"
+    letter: "B",
+    location: "Boston Museum of Fine Arts Massachusetts USA"
   },
   {
     name: "Kern River Valley California",
@@ -870,7 +940,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/kern river valley california.webp",
     artistLifespan: "1830-1902",
     slug: "kern-river-valley-california",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Sunlight And Shadow",
@@ -882,7 +953,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/sunlight and shadow.webp",
     artistLifespan: "1830-1902",
     slug: "sunlight-and-shadow",
-    letter: "B"
+    letter: "B",
+    location: "Fine Arts Museums of San Francisco California USA"
   },
   {
     name: "Philadelphia Winter Landscape",
@@ -894,7 +966,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/philadelphia winter landscape.webp",
     artistLifespan: "1779-1851",
     slug: "philadelphia-winter-landscape",
-    letter: "B"
+    letter: "B",
+    location: "Thyssen-Bornemisza Museum Madrid Spain"
   },
   {
     name: "The Eavesdropper",
@@ -906,7 +979,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the eavesdropper.webp",
     artistLifespan: "1843-1931",
     slug: "the-eavesdropper",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "The Seamstress",
@@ -918,7 +992,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the seamstress.webp",
     artistLifespan: "1843-1931",
     slug: "the-seamstress",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "God Speed",
@@ -930,7 +1005,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/god speed.webp",
     artistLifespan: "1853-1922",
     slug: "god-speed",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "The Accolade",
@@ -942,7 +1018,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the accolade.webp",
     artistLifespan: "1853-1922",
     slug: "the-accolade",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Tristan And Isolade",
@@ -954,7 +1031,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/tristan and isolade.webp",
     artistLifespan: "1853-1922",
     slug: "tristan-and-isolade",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Lilac",
@@ -966,7 +1044,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/lilac.webp",
     artistLifespan: "1853-1922",
     slug: "lilac",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "How Liza Loved The King",
@@ -978,7 +1057,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/how liza loved the king.webp",
     artistLifespan: "1853-1922",
     slug: "how-liza-loved-the-king",
-    letter: "B"
+    letter: "B",
+    location: "Towneley Hall Art Gallery and Museum Burnley UK"
   },
   {
     name: "The Golden Train",
@@ -990,7 +1070,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the golden train.webp",
     artistLifespan: "1853-1922",
     slug: "the-golden-train",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Young Drivers On A Bear Hunt",
@@ -1002,7 +1083,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/young drivers on a bear hunt.webp",
     artistLifespan: "1868-1945",
     slug: "young-drivers-on-a-bear-hunt",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "The Two Children",
@@ -1014,7 +1096,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the two childern.webp",
     artistLifespan: "1842-1931",
     slug: "the-two-children",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Girl Reading In A Salon",
@@ -1026,7 +1109,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/girl reading in a salon.webp",
     artistLifespan: "1842-1931",
     slug: "girl-reading-in-a-salon",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Portrait Of James Abbott",
@@ -1038,7 +1122,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/portrait of james abbott.webp",
     artistLifespan: "1842-1931",
     slug: "portrait-of-james-abbott",
-    letter: "B"
+    letter: "B",
+    location: "Brooklyn Museum of Art New York USA"
   },
   {
     name: "Washerwomen",
@@ -1050,7 +1135,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/washerwomen.webp",
     artistLifespan: "1842-1931",
     slug: "washerwomen",
-    letter: "B"
+    letter: "B",
+    location: "The Clark Art Institute Massachusetts USA"
   },
   {
     name: "The Love Letter",
@@ -1062,7 +1148,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the love letter.webp",
     artistLifespan: "1730-1770",
     slug: "the-love-letter",
-    letter: "B"
+    letter: "B",
+    location: "National Gallery of Art Washington USA"
   },
   {
     name: "Madame De Pompadour",
@@ -1074,7 +1161,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/madame de pompadour.webp",
     artistLifespan: "1730-1770",
     slug: "madame-de-pompadour",
-    letter: "B"
+    letter: "B",
+    location: "National Galleries of Scotland Edinburgh UK"
   },
   {
     name: "The Rising Of The Sun",
@@ -1086,7 +1174,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the rising of the sun.webp",
     artistLifespan: "1730-1770",
     slug: "the-rising-of-the-sun",
-    letter: "B"
+    letter: "B",
+    location: "The Wallace Collection London UK"
   },
   {
     name: "The Four Seasons Spring",
@@ -1098,7 +1187,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the four seasons spring.webp",
     artistLifespan: "1730-1770",
     slug: "the-four-seasons-spring",
-    letter: "B"
+    letter: "B",
+    location: "Frick Collection New York USA"
   },
   {
     name: "Samson",
@@ -1110,7 +1200,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/samson.webp",
     artistLifespan: "1594-1632",
     slug: "samson",
-    letter: "B"
+    letter: "B",
+    location: "Cleveland Museum of Art Ohio USA"
   },
   {
     name: "The Fortune Teller",
@@ -1122,7 +1213,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the fortune teller.webp",
     artistLifespan: "1594-1632",
     slug: "the-fortune-teller",
-    letter: "B"
+    letter: "B",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "Moses With The Tablets Of The Law",
@@ -1134,7 +1226,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/moses with the tablets of the law.webp",
     artistLifespan: "1594-1632",
     slug: "moses-with-the-tablets-of-the-law",
-    letter: "B"
+    letter: "B",
+    location: "Kunsthistorisches Museum Vienna Austria"
   },
   {
     name: "Last Supper",
@@ -1146,7 +1239,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/last supper.webp",
     artistLifespan: "1594-1632",
     slug: "last-supper",
-    letter: "B"
+    letter: "B",
+    location: "Galleria Nazionale d'Arte Antica a Palazzo Corsini Rome Italy"
   },
   {
     name: "David With The Head Of Goliath Two Soldiers",
@@ -1158,7 +1252,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/david with the head of goliath two soldiers.webp",
     artistLifespan: "1594-1632",
     slug: "david-with-the-head-of-goliath-two-soldiers",
-    letter: "B"
+    letter: "B",
+    location: "Thyssen-Bornemisza Museum Madrid Spain"
   },
   {
     name: "Lovers",
@@ -1170,7 +1265,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/lovers.webp",
     artistLifespan: "1932-2023",
     slug: "lovers",
-    letter: "B"
+    letter: "B",
+    location: "Museo Batero Bogota Columbia"
   },
   {
     name: "Dancers At Bar",
@@ -1182,7 +1278,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/dancers at bar.webp",
     artistLifespan: "1932-2023",
     slug: "dancers-at-bar",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Woman Stapling Her Bra",
@@ -1194,7 +1291,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/woman stapling her bra.webp",
     artistLifespan: "1932-2023",
     slug: "woman-stapling-her-bra",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Walk In The Hills",
@@ -1206,7 +1304,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/walk in the hills.webp",
     artistLifespan: "1932-2023",
     slug: "walk-in-the-hills",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Bather On The Beach",
@@ -1218,7 +1317,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/bather on the beach.webp",
     artistLifespan: "1932-2023",
     slug: "bather-on-the-beach",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Priest Extends",
@@ -1230,7 +1330,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/priest extends.webp",
     artistLifespan: "1932-2023",
     slug: "priest-extends",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "The Siesta (Afternoon In Dreams)",
@@ -1242,7 +1343,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the siesta (afternoon in dreams).webp",
     artistLifespan: "1847-1928",
     slug: "the-siesta-afternoon-in-dreams",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Dolce For Niente (Sweet Nothings)",
@@ -1254,7 +1356,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/dolce for niente (sweet nothings).webp",
     artistLifespan: "1847-1928",
     slug: "dolce-for-niente-sweet-nothings",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Tender Moments",
@@ -1266,7 +1369,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/tender moments.webp",
     artistLifespan: "1847-1928",
     slug: "tender-moments",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "Arab Woman On A Rooftop Algiers",
@@ -1278,7 +1382,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/arab woman on a rooftop algiers.webp",
     artistLifespan: "1847-1928",
     slug: "arab-woman-on-a-rooftop-algiers",
-    letter: "B"
+    letter: "B",
+    location: "Private Collection"
   },
   {
     name: "The Tower Of Babel",
@@ -1290,7 +1395,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the tower of babel.webp",
     artistLifespan: "1525-1569",
     slug: "the-tower-of-babel",
-    letter: "B"
+    letter: "B",
+    location: "Kunsthistorisches Museum Vienna Austria & Louvre Abu Dhabi"
   },
   {
     name: "The Wedding Dance",
@@ -1302,7 +1408,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the wedding dance.webp",
     artistLifespan: "1525-1569",
     slug: "the-wedding-dance",
-    letter: "B"
+    letter: "B",
+    location: "Detroit Institute of Arts Michigan USA"
   },
   {
     name: "The Hunters In The Snow",
@@ -1314,7 +1421,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the hunters in the snow.webp",
     artistLifespan: "1525-1569",
     slug: "the-hunters-in-the-snow",
-    letter: "B"
+    letter: "B",
+    location: "Kunsthistorisches Museum Vienna Austria"
   },
   {
     name: "The Land Of Cockaigne",
@@ -1326,7 +1434,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the land of cockaigne.webp",
     artistLifespan: "1525-1569",
     slug: "the-land-of-cockaigne",
-    letter: "B"
+    letter: "B",
+    location: "Alte Pinakothek Munich Germany"
   },
   {
     name: "Two Carribean Women Returning From The Market",
@@ -1338,7 +1447,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/two carribean women returning from the market.webp",
     artistLifespan: "1730-1796",
     slug: "two-carribean-women-returning-from-the-market",
-    letter: "B"
+    letter: "B",
+    location: "Museo Carmen Thyssen M�laga Spain"
   },
   {
     name: "The Linen Market",
@@ -1350,7 +1460,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the linen market.webp",
     artistLifespan: "1730-1796",
     slug: "the-linen-market",
-    letter: "B"
+    letter: "B",
+    location: "Museo Carmen Thyssen M�laga Spain"
   },
   {
     name: "The Handkerchief Dance",
@@ -1374,7 +1485,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/west indian village with figures dancing.webp",
     artistLifespan: "1730-1796",
     slug: "west-indian-village-with-figures-dancing",
-    letter: "B"
+    letter: "B",
+    location: "Museo Carmen Thyssen M�laga Spain"
   },
   // Letter C
   {
@@ -1387,7 +1499,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the floor scrapers.webp",
     artistLifespan: "1848-1894",
     slug: "the-floor-scrapers",
-    letter: "C"
+    letter: "C",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Young Man At His Window",
@@ -1399,7 +1512,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/young man at his window.webp",
     artistLifespan: "1848-1894",
     slug: "young-man-at-his-window",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "The Yerres Rain (Riverbank In The Rain)",
@@ -1411,7 +1525,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the yerres rain (riverbank in the rain).webp",
     artistLifespan: "1848-1894",
     slug: "the-yerres-rain-riverbank-in-the-rain",
-    letter: "C"
+    letter: "C",
+    location: "Indiana University Art Museum Bloomington USA"
   },
   {
     name: "Paris Street Rainy Weather",
@@ -1423,7 +1538,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/paris street rainy weather.webp",
     artistLifespan: "1848-1894",
     slug: "paris-street-rainy-weather",
-    letter: "C"
+    letter: "C",
+    location: "Art Institute of Chicago Illinois USA"
   },
   {
     name: "View Of The Roofs Snow Effect",
@@ -1435,7 +1551,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/view of the roofs snow effect.webp",
     artistLifespan: "1848-1894",
     slug: "view-of-the-roofs-snow-effect",
-    letter: "C"
+    letter: "C",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Still Life With Oysters",
@@ -1447,7 +1564,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life with oysters.webp",
     artistLifespan: "1848-1894",
     slug: "still-life-with-oysters",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Still Life Cray Fish",
@@ -1459,7 +1577,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life cray fish.webp",
     artistLifespan: "1848-1894",
     slug: "still-life-cray-fish",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Melon and Fruit Bowl With Figs",
@@ -1471,7 +1590,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/melon fruit bowl with figs.webp",
     artistLifespan: "1848-1894",
     slug: "melon-and-fruit-bowl-with-figs",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "View Of Grand Canal From San Vio Venice",
@@ -1483,7 +1603,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/view of grand canal from san vio venice.webp",
     artistLifespan: "1697-1768",
     slug: "view-of-grand-canal-from-san-vio-venice",
-    letter: "C"
+    letter: "C",
+    location: "Thyssen-Bornemisza Museum Madrid Spain"
   },
   {
     name: "Grand Canal From Palazzo Balbi",
@@ -1495,7 +1616,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/grand canal from palazzo balbi.webp",
     artistLifespan: "1697-1769",
     slug: "grand-canal-from-palazzo-balbi",
-    letter: "C"
+    letter: "C",
+    location: "Palazzo Ca' Rezzonico Venice Italy"
   },
   {
     name: "Piazza San Marco With The Cathedral",
@@ -1507,7 +1629,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/piazza san marco with the cathedral.webp",
     artistLifespan: "1697-1769",
     slug: "piazza-san-marco-with-the-cathedral",
-    letter: "C"
+    letter: "C",
+    location: "Fogg Art Museum at Harvard University Massachusetts USA"
   },
   {
     name: "Piazzetta And The Doge's Palace",
@@ -1519,7 +1642,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/piazetta and the doge's palace.webp",
     artistLifespan: "1697-1769",
     slug: "piazzetta-and-the-doges-palace",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "St Paul's Cathedral",
@@ -1531,7 +1655,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/st paul's cathedral.webp",
     artistLifespan: "1697-1769",
     slug: "st-pauls-cathedral",
-    letter: "C"
+    letter: "C",
+    location: "Yale Center for British Art Connecticut USA"
   },
   {
     name: "The Coloseum",
@@ -1543,7 +1668,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the coloseum.webp",
     artistLifespan: "1697-1769",
     slug: "the-coloseum",
-    letter: "C"
+    letter: "C",
+    location: "Galleria Borghese Rome Italy"
   },
   {
     name: "View Of Rialto Bridge At Venice South",
@@ -1555,7 +1681,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/view of rialto bridge at venice south.webp",
     artistLifespan: "1697-1769",
     slug: "view-of-rialto-bridge-at-venice-south",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Entrance To The Grand Canal Looking West",
@@ -1567,7 +1694,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/entrance to the grand canal looking west.webp",
     artistLifespan: "1697-1769",
     slug: "entrance-to-the-grand-canal-looking-west",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "The Entrance To The Grand Canal Venice",
@@ -1579,7 +1707,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the entrance to grand canal venice.webp",
     artistLifespan: "1697-1769",
     slug: "the-entrance-to-the-grand-canal-venice",
-    letter: "C"
+    letter: "C",
+    location: "Museum of Fine Arts Houston USA"
   },
   {
     name: "Capriccio With Colonnade In The Interior Of The Palace",
@@ -1591,7 +1720,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/capriccio with colonnade in the interior of the palace.webp",
     artistLifespan: "1697-1769",
     slug: "capriccio-with-colonnade-in-the-interior-of-the-palace",
-    letter: "C"
+    letter: "C",
+    location: "Thyssen-Bornemisza Museum Madrid Spain"
   },
   {
     name: "Rome A Caprice Viw With Ruins Based On The Forum",
@@ -1603,7 +1733,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/rome a caprice view with ruins based on the forum.webp",
     artistLifespan: "1697-1769",
     slug: "rome-a-caprice-viw-with-ruins-based-on-the-forum",
-    letter: "C"
+    letter: "C",
+    location: "The Royal Collection London UK"
   },
   {
     name: "Venice The Interior Of St Marco By Day",
@@ -1615,7 +1746,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/venice the ineerior of st marco by day.webp",
     artistLifespan: "1697-1769",
     slug: "venice-the-interior-of-st-marco-by-day",
-    letter: "C"
+    letter: "C",
+    location: "The Royal Collection London UK"
   },
   {
     name: "The Supper at Emmaus",
@@ -1627,7 +1759,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the supper at emmaus.webp",
     artistLifespan: "1571-1610",
     slug: "the-supper-at-emmaus",
-    letter: "C"
+    letter: "C",
+    location: "Pinacoteca di Brera Milan Italy"
   },
   {
     name: "Bacchus",
@@ -1639,7 +1772,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/bacchus.webp",
     artistLifespan: "1571-1610",
     slug: "bacchus",
-    letter: "C"
+    letter: "C",
+    location: "Galleria degli Uffizi Florence Italy"
   },
   {
     name: "The Calling Of Saint Matthew",
@@ -1651,7 +1785,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the calling of saint matthew.webp",
     artistLifespan: "1571-1610",
     slug: "the-calling-of-saint-matthew",
-    letter: "C"
+    letter: "C",
+    location: "San Luigi dei Francesi Rome Italy"
   },
   {
     name: "The Conversion Of Saint Paul",
@@ -1663,7 +1798,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the conversion of saint paul.webp",
     artistLifespan: "1571-1610",
     slug: "the-conversion-of-saint-paul",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Judith Beheading Holofernes",
@@ -1675,7 +1811,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/judith beheading holofernes.webp",
     artistLifespan: "1571-1610",
     slug: "judith-beheading-holofernes",
-    letter: "C"
+    letter: "C",
+    location: "Palazzo Barberini Rome Italy"
   },
   {
     name: "David With The Head Of Goliath",
@@ -1687,7 +1824,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/david with the head of goliath.webp",
     artistLifespan: "1571-1610",
     slug: "david-with-the-head-of-goliath",
-    letter: "C"
+    letter: "C",
+    location: "Galleria Borghese Rome Italy"
   },
   {
     name: "Marie-Anne Caralus Duran ( The Artists Daughter)",
@@ -1711,7 +1849,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the card players.webp",
     artistLifespan: "1839-1906",
     slug: "the-card-players",
-    letter: "C"
+    letter: "C",
+    location: "Courtauld Institute of Art London UK"
   },
   {
     name: "Monte Sainte-Victoire",
@@ -1723,7 +1862,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/monte sainte-victoire.webp",
     artistLifespan: "1839-1906",
     slug: "monte-sainte-victoire",
-    letter: "C"
+    letter: "C",
+    location: "Unknown"
   },
   {
     name: "Still Life With Apples",
@@ -1735,7 +1875,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life with apples.webp",
     artistLifespan: "1839-1906",
     slug: "still-life-with-apples",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "The Bathers",
@@ -1747,7 +1888,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the bathers.webp",
     artistLifespan: "1839-1906",
     slug: "the-bathers",
-    letter: "C"
+    letter: "C",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "View Through The Trees L' Estaque",
@@ -1759,7 +1901,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/view through the trees l'estaque.webp",
     artistLifespan: "1839-1906",
     slug: "view-through-the-trees-l-estaque",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Still Life Leg Of Mutton Bread",
@@ -1771,7 +1914,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life leg of mutton bread.webp",
     artistLifespan: "1839-1906",
     slug: "still-life-leg-of-mutton-bread",
-    letter: "C"
+    letter: "C",
+    location: "Kunsthaus Zurich Switzerland"
   },
   {
     name: "Still Life Bread And Eggs",
@@ -1783,7 +1927,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life bread and eggs.webp",
     artistLifespan: "1839-1906",
     slug: "still-life-bread-and-eggs",
-    letter: "C"
+    letter: "C",
+    location: "Cincinnati Art Museum Ohio USA"
   },
   {
     name: "Portrait Of A Man",
@@ -1795,7 +1940,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of a man.webp",
     artistLifespan: "1839-1906",
     slug: "portrait-of-a-man-cezanne",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Paul Alexis Reading At Zola's House",
@@ -1807,7 +1953,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/paul alexis reading at zola's house.webp",
     artistLifespan: "1839-1906",
     slug: "paul-alexis-reading-at-zolas-house",
-    letter: "C"
+    letter: "C",
+    location: "Museu de Arte de Sao Paulo"
   },
   {
     name: "Father Of The Artist",
@@ -1819,7 +1966,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/father of the artist.webp",
     artistLifespan: "1839-1906",
     slug: "father-of-the-artist",
-    letter: "C"
+    letter: "C",
+    location: "The National Gallery London UK"
   },
   {
     name: "A Modern Olympia",
@@ -1831,7 +1979,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/a modern olympia.webp",
     artistLifespan: "1839-1906",
     slug: "a-modern-olympia",
-    letter: "C"
+    letter: "C",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Mount Saint-Victoire",
@@ -1843,7 +1992,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/mount saint-victoire.webp",
     artistLifespan: "1839-1906",
     slug: "mount-saint-victoire",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Basket Of Apples",
@@ -1855,7 +2005,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/basket of apples.webp",
     artistLifespan: "1839-1906",
     slug: "basket-of-apples",
-    letter: "C"
+    letter: "C",
+    location: "Art Institute of Chicago Illinois USA"
   },
   {
     name: "Large Bathers",
@@ -1867,7 +2018,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/large bathers.webp",
     artistLifespan: "1839-1906",
     slug: "large-bathers",
-    letter: "C"
+    letter: "C",
+    location: "Philadelphia Museum Of Art"
   },
   {
     name: "Portrait Of Victor Chocquet",
@@ -1879,7 +2031,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of victor chocquet.webp",
     artistLifespan: "1839-1906",
     slug: "portrait-of-victor-chocquet",
-    letter: "C"
+    letter: "C",
+    location: "Columbus Museum Of Art Ohio"
   },
   {
     name: "Portrait Of Madame Cezanne",
@@ -1891,7 +2044,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of madame cezanne.webp",
     artistLifespan: "1839-1906",
     slug: "portrait-of-madame-cezanne",
-    letter: "C"
+    letter: "C",
+    location: "Museum Of Fine Arts Boston USA"
   },
   {
     name: "Still Life With A Plate Of Cherries and Peaches",
@@ -1903,7 +2057,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life with a plate of cherries and peaches.webp",
     artistLifespan: "1839-1906",
     slug: "still-life-with-a-plate-of-cherries-and-peaches",
-    letter: "C"
+    letter: "C",
+    location: "Los Angeles County Museum of Art California USA"
   },
   {
     name: "Woman With A Coffee Pot",
@@ -1915,7 +2070,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/woman with coffee pot.webp",
     artistLifespan: "1839-1906",
     slug: "woman-with-a-coffee-pot",
-    letter: "C"
+    letter: "C",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Woman In Blue Madame Cezanne",
@@ -1927,7 +2083,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/woman in blue madame cezanne.webp",
     artistLifespan: "1839-1906",
     slug: "woman-in-blue-madame-cezanne",
-    letter: "C"
+    letter: "C",
+    location: "Museum of Fine Arts Houston USA"
   },
   {
     name: "Portrait Of The Artist's Son",
@@ -1939,7 +2096,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of the artist's son.webp",
     artistLifespan: "1839-1906",
     slug: "portrait-of-the-artists-son",
-    letter: "C"
+    letter: "C",
+    location: "National Gallery Of Art Washington DC"
   },
   {
     name: "Portrait Of Cardinal Richelieu",
@@ -1951,7 +2109,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of cardinal richelieu.webp",
     artistLifespan: "1602-1674",
     slug: "portrait-of-cardinal-richelieu",
-    letter: "C"
+    letter: "C",
+    location: "National Gallery London UK"
   },
   {
     name: "Triple Portrait Of Cardinal Richelieu",
@@ -1963,7 +2122,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/triple portrait of cardinal richelieu.webp",
     artistLifespan: "1602-1674",
     slug: "triple-portrait-of-cardinal-richelieu",
-    letter: "C"
+    letter: "C",
+    location: "National Gallery London UK"
   },
   {
     name: "The Annunciation",
@@ -1975,7 +2135,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the annunciation.webp",
     artistLifespan: "1602-1674",
     slug: "the-annunciation",
-    letter: "C"
+    letter: "C",
+    location: "The Wallace Collection London UK"
   },
   {
     name: "Portrait Of A Man Possibly Of Robert Arnauld Of Andilly",
@@ -1987,7 +2148,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of a man possibly of robert arnauld of andilly.webp",
     artistLifespan: "1602-1674",
     slug: "portrait-of-a-man-possibly-of-robert-arnauld-of-andilly",
-    letter: "C"
+    letter: "C",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "Basket Of Wild Strawberries",
@@ -1999,7 +2161,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/basket of wild strawberries.webp",
     artistLifespan: "1699-1779",
     slug: "basket-of-wild-strawberries",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Glass Of Water And Coffee Pot",
@@ -2011,7 +2174,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/glass of water and coffee pot.webp",
     artistLifespan: "1699-1779",
     slug: "glass-of-water-and-coffee-pot",
-    letter: "C"
+    letter: "C",
+    location: "Carnegie Museum of Art Pittsburgh USA"
   },
   {
     name: "The Moorish Chief",
@@ -2023,7 +2187,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the moorish chief.webp",
     artistLifespan: "1848-1906",
     slug: "the-moorish-chief",
-    letter: "C"
+    letter: "C",
+    location: "Philadelphia Museum of Art Pennsylvania USA"
   },
   {
     name: "Austrian",
@@ -2035,7 +2200,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/austrian.webp",
     artistLifespan: "1848-1906",
     slug: "austrian",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Fish And Still Life",
@@ -2047,7 +2213,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/fish and still life.webp",
     artistLifespan: "1849-1916",
     slug: "fish-and-still-life",
-    letter: "C"
+    letter: "C",
+    location: "Dallas Museum of Art Texas USA"
   },
   {
     name: "Dora Wheeler",
@@ -2059,7 +2226,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/dora wheeler.webp",
     artistLifespan: "1849-1916",
     slug: "dora-wheeler",
-    letter: "C"
+    letter: "C",
+    location: "Cleveland Museum of Art Ohio USA"
   },
   {
     name: "A Corner Of My Studio",
@@ -2071,7 +2239,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/a corner of my studio.webp",
     artistLifespan: "1849-1916",
     slug: "a-corner-of-my-studio",
-    letter: "C"
+    letter: "C",
+    location: "Fine Arts Museums of San Francisco California USA"
   },
   {
     name: "Venice Façade",
@@ -2083,6 +2252,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/venice facade.webp",
     artistLifespan: "1849-1916",
     slug: "venice-facade",
+    location: "Colby College Museum of Art Maine USA",
     letter: "C"
   },
   {
@@ -2095,7 +2265,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the antiquary shop.webp",
     artistLifespan: "1849-1916",
     slug: "the-antiquary-shop",
-    letter: "C"
+    letter: "C",
+    location: "Brooklyn Museum of Art New York USA"
   },
   {
     name: "I think I am Ready Now",
@@ -2107,7 +2278,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/i think i am ready now.webp",
     artistLifespan: "1849-1916",
     slug: "i-think-i-am-ready-now",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Mother By The Oven",
@@ -2119,7 +2291,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/mother by the oven.webp",
     artistLifespan: "1887-1985",
     slug: "mother-by-the-oven",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Newly Weds With Eiffel Tower In Background",
@@ -2131,7 +2304,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/newly weds with eiffel tower in background.webp",
     artistLifespan: "1887-1985",
     slug: "newly-weds-with-eiffel-tower-in-background",
-    letter: "C"
+    letter: "C",
+    location: "Musee National D'Art Moderne"
   },
   {
     name: "The acrobat",
@@ -2143,7 +2317,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the acrobat.webp",
     artistLifespan: "1887-1985",
     slug: "the-acrobat",
-    letter: "C"
+    letter: "C",
+    location: "Musee National D'Art Moderne"
   },
   {
     name: "Lovers Under Lillies",
@@ -2155,7 +2330,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/lovers under lillies.webp",
     artistLifespan: "1887-1985",
     slug: "lovers-under-lillies",
-    letter: "C"
+    letter: "C",
+    location: "Metropolitan Museum Of Art (New York)"
   },
   {
     name: "The Blue Fidler",
@@ -2167,7 +2343,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/the blue fidler.webp",
     artistLifespan: "1887-1985",
     slug: "the-blue-fidler",
-    letter: "C"
+    letter: "C",
+    location: "Stedelijk Museum"
   },
   {
     name: "Bathsheba",
@@ -2179,7 +2356,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/bathsheba.webp",
     artistLifespan: "1887-1985",
     slug: "bathsheba",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Still Life With Large Roemer, Lemon and Grapes",
@@ -2191,7 +2369,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life with large roemer, lemon and grapes.webp",
     artistLifespan: "1597-1660",
     slug: "still-life-with-large-roemer-lemon-and-grapes",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Still Life Lobster",
@@ -2203,7 +2382,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life lobster.webp",
     artistLifespan: "1597-1660",
     slug: "still-life-lobster",
-    letter: "C"
+    letter: "C",
+    location: "Minneappolis Insititute Of Art  USA"
   },
   {
     name: "Fruit Still Life With Basket Of Cheese",
@@ -2215,7 +2395,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/fruit still life with basket of cheese.webp",
     artistLifespan: "1597-1660",
     slug: "fruit-still-life-with-basket-of-cheese",
-    letter: "C"
+    letter: "C",
+    location: "Frans Hals Museum Haarlem Netherlands"
   },
   {
     name: "Tabletop Still Life Pigeon Pie and Delfware Jug",
@@ -2227,7 +2408,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/tabletop still life pigeon pie and delfware jug.webp",
     artistLifespan: "1597-1660",
     slug: "tabletop-still-life-pigeon-pie-and-delfware-jug",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Still Life Books Burning Candle",
@@ -2239,7 +2421,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life books burning candle.webp",
     artistLifespan: "1597-1660",
     slug: "still-life-books-burning-candle",
-    letter: "C"
+    letter: "C",
+    location: "Mauritshuis Royal Picture Gallery The Hague Netherlands"
   },
   {
     name: "A Breakfast Still Life With Strawberries and Cherries",
@@ -2251,7 +2434,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/a breakfast still life with strawberries and cherries.webp",
     artistLifespan: "1597-1660",
     slug: "a-breakfast-still-life-with-strawberries-and-cherries",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Vanitas Still Life (Violin)",
@@ -2263,7 +2447,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/vanitas still life (violin).webp",
     artistLifespan: "1597-1660",
     slug: "vanitas-still-life-violin",
-    letter: "C"
+    letter: "C",
+    location: "Germanisches Nationalmuseum Nuremberg Germany"
   },
   {
     name: "Still Life With Crab",
@@ -2275,7 +2460,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life with crab.webp",
     artistLifespan: "1597-1660",
     slug: "still-life-with-crab",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   {
     name: "Portrait Of Sarah Bernhardt",
@@ -2287,7 +2473,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of sarah bernhardt.webp",
     artistLifespan: "1843-1919",
     slug: "portrait-of-sarah-bernhardt",
-    letter: "C"
+    letter: "C",
+    location: "Modern Art Museum of the City of Paris Paris France"
   },
   {
     name: "Portrait Of Francis I Roi De France",
@@ -2299,7 +2486,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of francis i roi de france.webp",
     artistLifespan: "1485-1540/41",
     slug: "portrait-of-francis-i-roi-de-france",
-    letter: "C"
+    letter: "C",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "Head Of A Man",
@@ -2311,7 +2499,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/head of a man.webp",
     artistLifespan: "1510-1572",
     slug: "head-of-a-man",
-    letter: "C"
+    letter: "C",
+    location: "Boston Museum of Fine Arts Massachusetts USA"
   },
   {
     name: "Portrait Of Charles IX",
@@ -2323,7 +2512,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of charles ix.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-charles-ix",
-    letter: "C"
+    letter: "C",
+    location: "Musee Conde Chantilly France"
   },
   {
     name: "Portrait of Henri II King Of France",
@@ -2335,7 +2525,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of henri ii king of france.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-henri-ii-king-of-france",
-    letter: "C"
+    letter: "C",
+    location: "Musee Conde Chantilly France"
   },
   {
     name: "Portrait Of Elizabeth Of Austria",
@@ -2347,7 +2538,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of elizabeth of austria.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-elizabeth-of-austria",
-    letter: "C"
+    letter: "C",
+    location: "Musee Conde Chantilly France"
   },
   {
     name: "Portrait Of Odet De Coligny Cardinal Of Chatillon",
@@ -2359,7 +2551,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of odet de coligny cardinal of chatillon.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-odet-de-coligny-cardinal-of-chatillon",
-    letter: "C"
+    letter: "C",
+    location: "Musee Conde Chantilly France"
   },
   {
     name: "Portrait Of Mary Queen Of Scots",
@@ -2371,7 +2564,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of mary queen of scots.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-mary-queen-of-scots",
-    letter: "C"
+    letter: "C",
+    location: "Victoria and Albert Museum London UK"
   },
   {
     name: "Portrait Henri VI England",
@@ -2383,7 +2577,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of henri vi england.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-henri-vi-england",
-    letter: "C"
+    letter: "C",
+    location: "Victoria and Albert Museum London UK"
   },
   {
     name: "Portrait Of Catherine De Medici",
@@ -2395,7 +2590,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of catherine de medici.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-catherine-de-medici",
-    letter: "C"
+    letter: "C",
+    location: "Musee Carnavalet Paris France"
   },
   {
     name: "Portrait King Charles IX Of France",
@@ -2407,7 +2603,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait king charles ix of france.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-king-charles-ix-of-france",
-    letter: "C"
+    letter: "C",
+    location: "Musee Conde Chantilly France"
   },
   {
     name: "Portrait Of Elizabeth Of Austria Queen Of France",
@@ -2419,7 +2616,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of elizabeth of austria queen of france.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-elizabeth-of-austria-queen-of-france",
-    letter: "C"
+    letter: "C",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "Portrait Of Louise De Lorraine",
@@ -2431,7 +2629,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/portrait of louise de lorraine.webp",
     artistLifespan: "1510-1572",
     slug: "portrait-of-louise-de-lorraine",
-    letter: "C"
+    letter: "C",
+    location: "Museum of Fine Arts Houston USA"
   },
   {
     name: "Still Life Asparagus and Red Currants",
@@ -2443,7 +2642,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/still life asparagus and red currants.webp",
     artistLifespan: "1660-1704",
     slug: "still-life-asparagus-and-red-currants",
-    letter: "C"
+    letter: "C",
+    location: "National Gallery of Art Washington USA"
   },
   {
     name: "Four Apricots On A Stone Plinth",
@@ -2455,7 +2655,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/four apricots on a stone plinth.webp",
     artistLifespan: "1660-1704",
     slug: "four-apricots-on-a-stone-plinth",
-    letter: "C"
+    letter: "C",
+    location: "Rijksmuseum Amsterdam Netherlands"
   },
   {
     name: "Three Peaches On A Stone Plinth",
@@ -2467,7 +2668,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/three peaches on a stone plinth.webp",
     artistLifespan: "1660-1704",
     slug: "three-peaches-on-a-stone-plinth",
-    letter: "C"
+    letter: "C",
+    location: "Rijksmuseum Amsterdam Netherlands"
   },
   {
     name: "Gooseberries On A Table",
@@ -2479,7 +2681,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/gooseberries on a table.webp",
     artistLifespan: "1660-1704",
     slug: "gooseberries-on-a-table",
-    letter: "C"
+    letter: "C",
+    location: "Cleveland Museum of Art Ohio USA"
   },
   {
     name: "Quai Du Louvre In Winter",
@@ -2491,7 +2694,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/quai du louvre in winter.webp",
     artistLifespan: "1882-1969",
     slug: "quai-du-louvre-in-winter",
-    letter: "C"
+    letter: "C",
+    location: "Private Collection"
   },
   // Letter D
   {
@@ -2504,7 +2708,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/peacocks.webp",
     artistLifespan: "1636-1695",
     slug: "peacocks",
-    letter: "D"
+    letter: "D",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "A Cockrel With Other Birds",
@@ -2516,7 +2721,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/a cockrel with other birds.webp",
     artistLifespan: "1636-1695",
     slug: "a-cockrel-with-other-birds",
-    letter: "D"
+    letter: "D",
+    location: "The Wallace Collection London UK"
   },
   {
     name: "Palace Of Amsterdam With Exotic Birds",
@@ -2528,7 +2734,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/palace of amsterdam with exotic birds.webp",
     artistLifespan: "1636-1695",
     slug: "palace-of-amsterdam-with-exotic-birds",
-    letter: "D"
+    letter: "D",
+    location: "Public Collection"
   },
   {
     name: "Mona Lisa (La Gioconda)",
@@ -2540,6 +2747,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/mona lisa (la gioconda).webp",
     artistLifespan: "1452-1519",
     slug: "mona-lisa-la-gioconda",
+    location: "Louvre Museum Paris France",
     letter: "D",
     options: [
       { id: "size-1", width: 77, height: 53, price: 8900, label: "77 x 53 cm" },
@@ -2556,7 +2764,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/st john the baptist.webp",
     artistLifespan: "1452-1519",
     slug: "st-john-the-baptist",
-    letter: "D"
+    letter: "D",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "The Last Supper",
@@ -2568,7 +2777,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the last supper.webp",
     artistLifespan: "1452-1519",
     slug: "the-last-supper",
-    letter: "D"
+    letter: "D",
+    location: "Santa Maria delle Grazie, Milan, Italy"
   },
   {
     name: "The Virgin On The Rocks",
@@ -2580,7 +2790,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the virgin on the rocks.webp",
     artistLifespan: "1452-1519",
     slug: "the-virgin-on-the-rocks",
-    letter: "D"
+    letter: "D",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "Virgin And Child With St Anne",
@@ -2592,7 +2803,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/virgin and child with st anne.webp",
     artistLifespan: "1452-1519",
     slug: "virgin-and-child-with-st-anne",
-    letter: "D"
+    letter: "D",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "Lady With An Emine (Cecilia Gallerani)",
@@ -2604,7 +2816,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/lady with an emine (cecilia gallerani).webp",
     artistLifespan: "1452-1519",
     slug: "lady-with-an-emine-cecilia-gallerani",
-    letter: "D"
+    letter: "D",
+    location: "Czartoryski Museum Krakow Poland"
   },
   {
     name: "Salvator Mundi",
@@ -2616,7 +2829,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/salvator mundi.webp",
     artistLifespan: "1452-1519",
     slug: "salvator-mundi",
-    letter: "D"
+    letter: "D",
+    location: "Public Collection"
   },
   {
     name: "Madonna Of The Carnation",
@@ -2628,7 +2842,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/madonna of the carnation.webp",
     artistLifespan: "1452-1519",
     slug: "madonna-of-the-carnation",
-    letter: "D"
+    letter: "D",
+    location: "Museum Alte Pinakothek Munich Germany"
   },
   {
     name: "Self Portrait",
@@ -2640,7 +2855,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/self portrait.webp",
     artistLifespan: "1452-1519",
     slug: "self-portrait-da-vinci",
-    letter: "D"
+    letter: "D",
+    location: "Biblioteca Reale Turin Italy"
   },
   {
     name: "Madonna Litta (Madonna And The Child)",
@@ -2652,7 +2868,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/madonna litta (madonna and the child).webp",
     artistLifespan: "1452-1519",
     slug: "madonna-litta-madonna-and-the-child",
-    letter: "D"
+    letter: "D",
+    location: "The Heritage St Petersburg"
   },
   {
     name: "The 3rd Of May 1808 In Madrid",
@@ -2664,7 +2881,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the 3rd of may 1808 in madrid.webp",
     artistLifespan: "1746-1828",
     slug: "the-3rd-of-may-1808-in-madrid",
-    letter: "D"
+    letter: "D",
+    location: "Prado Museum Madrid Spain"
   },
   {
     name: "Death Of Marat",
@@ -2760,6 +2978,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/napoleon crossing the alps on 20th may 1800 1803.webp",
     artistLifespan: "1748-1825",
     slug: "napoleon-crossing-the-alps-on-20th-may-1800-1803",
+    location: "Schloss Charlottenburg Berlin Germany",
     letter: "D",
     options: [
       { id: "size-1", width: 267, height: 223, price: 12000, label: "267 x 223 cm" },
@@ -2777,7 +2996,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/dancers in pink.webp",
     artistLifespan: "1834-1917",
     slug: "dancers-in-pink",
-    letter: "D"
+    letter: "D",
+    location: "Hill-Stead Museum Farmington USA"
   },
   {
     name: "Dancer Adjusting Her Sandel",
@@ -2789,7 +3009,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/dancer adjusting her sandel.webp",
     artistLifespan: "1834-1917",
     slug: "dancer-adjusting-her-sandel",
-    letter: "D"
+    letter: "D",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "Dancer In Green",
@@ -2801,7 +3022,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/dancer in green.webp",
     artistLifespan: "1834-1917",
     slug: "dancer-in-green",
-    letter: "D"
+    letter: "D",
+    location: "Museo Nacional Thyssen-Bornemisza Madrid Spain"
   },
   {
     name: "Two Dancers On A Stage",
@@ -2813,7 +3035,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/two dancers on a stage.webp",
     artistLifespan: "1834-1917",
     slug: "two-dancers-on-a-stage",
-    letter: "D"
+    letter: "D",
+    location: "The Courtauld Gallery UK"
   },
   {
     name: "The Ballet Class",
@@ -2825,7 +3048,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the ballet class.webp",
     artistLifespan: "1834-1917",
     slug: "the-ballet-class",
-    letter: "D"
+    letter: "D",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "Dance Opera",
@@ -2837,7 +3061,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/dance opera.webp",
     artistLifespan: "1834-1917",
     slug: "dance-opera",
-    letter: "D"
+    letter: "D",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Dancers Practising At The Barre",
@@ -2849,7 +3074,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/dancers practicing at the barre.webp",
     artistLifespan: "1834-1917",
     slug: "dancers-practising-at-the-barre",
-    letter: "D"
+    letter: "D",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "The Opera Orchestra",
@@ -2861,7 +3087,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the opera orchestra.webp",
     artistLifespan: "1834-1917",
     slug: "the-opera-orchestra",
-    letter: "D"
+    letter: "D",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Portrait Of Emma Dobigny",
@@ -2873,7 +3100,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/portrait of emma dobigny.webp",
     artistLifespan: "1834-1917",
     slug: "portrait-of-emma-dobigny",
-    letter: "D"
+    letter: "D",
+    location: "National Gallery Of Victoria Melbourne Australia"
   },
   {
     name: "Miss La La At The Cirque Fernando",
@@ -2885,7 +3113,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/miss la la at the cirque fernando.webp",
     artistLifespan: "1834-1917",
     slug: "miss-la-la-at-the-cirque-fernando",
-    letter: "D"
+    letter: "D",
+    location: "The National Gallery London UK"
   },
   {
     name: "After The Bath Woman Drying Her Neck",
@@ -2897,7 +3126,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/after the bath woman drying her neck.webp",
     artistLifespan: "1834-1917",
     slug: "after-the-bath-woman-drying-her-neck",
-    letter: "D"
+    letter: "D",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Blue Dancers",
@@ -2909,7 +3139,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/blue dancers.webp",
     artistLifespan: "1834-1917",
     slug: "blue-dancers",
-    letter: "D"
+    letter: "D",
+    location: "Pushkin State Museum Of Fine Arts Moscow Russia"
   },
   {
     name: "Pompee And Florissant The Dogs Of Lois XV",
@@ -2921,7 +3152,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/pompee and florissant the dogs of lois xv.webp",
     artistLifespan: "1661-1743",
     slug: "pompee-and-florissant-the-dogs-of-lois-xv",
-    letter: "D"
+    letter: "D",
+    location: "National Museum of Chateau de Compiegne Compiegne France"
   },
   {
     name: "Diane And Blondie",
@@ -2933,7 +3165,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/diane and blondie.webp",
     artistLifespan: "1661-1743",
     slug: "diane-and-blondie",
-    letter: "D"
+    letter: "D",
+    location: "Public Collection"
   },
   {
     name: "Parisian Lady",
@@ -2945,7 +3178,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/parisian lady.webp",
     artistLifespan: "1877-1968",
     slug: "parisian-lady",
-    letter: "D"
+    letter: "D",
+    location: "Musee d'art Modern Andre France"
   },
   {
     name: "Dolly Sisters",
@@ -2957,7 +3191,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/dolly sisters.webp",
     artistLifespan: "1877-1968",
     slug: "dolly-sisters",
-    letter: "D"
+    letter: "D",
+    location: "Private Collection"
   },
   {
     name: "Woman On The Sofa",
@@ -2969,7 +3204,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/woman on the sofa.webp",
     artistLifespan: "1877-1968",
     slug: "woman-on-the-sofa",
-    letter: "D"
+    letter: "D",
+    location: "Museum Montreal Museum Of Fine Art"
   },
   {
     name: "The Corn Poppy",
@@ -2981,7 +3217,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the corn poppy.webp",
     artistLifespan: "1877-1968",
     slug: "the-corn-poppy",
-    letter: "D"
+    letter: "D",
+    location: "Museum of Fine Arts Houston (MFAH), Houston, TX, US"
   },
   {
     name: "Portrait Of Lily Damita The Actress",
@@ -2993,7 +3230,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/portrait of lily damita the actress.webp",
     artistLifespan: "1877-1968",
     slug: "portrait-of-lily-damita-the-actress",
-    letter: "D"
+    letter: "D",
+    location: "Private Collection"
   },
   {
     name: "Mademoiselle Genevieve Vix Dans Le Role De Salome",
@@ -3005,7 +3243,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/mademoiselle genevieve vix dans le role de salome.webp",
     artistLifespan: "1877-1968",
     slug: "mademoiselle-genevieve-vix-dans-le-role-de-salome",
-    letter: "D"
+    letter: "D",
+    location: "Private Collection"
   },
   {
     name: "Bathers",
@@ -3017,7 +3256,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/bathers.webp",
     artistLifespan: "1977-1953",
     slug: "bathers",
-    letter: "D"
+    letter: "D",
+    location: "Musee D'Art Moderne de Paris"
   },
   {
     name: "Boats At Martigues",
@@ -3029,7 +3269,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/boats at martigues.webp",
     artistLifespan: "1977-1953",
     slug: "boats-at-martigues",
-    letter: "D"
+    letter: "D",
+    location: "Private Collection"
   },
   {
     name: "Hommage To Claude Debussy",
@@ -3041,7 +3282,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/hommage to claude debussy.webp",
     artistLifespan: "1977-1953",
     slug: "hommage-to-claude-debussy",
-    letter: "D"
+    letter: "D",
+    location: "Musee D'Arte ~Moderne Andre Malraux"
   },
   {
     name: "Open Window",
@@ -3065,7 +3307,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the yellow console with a violin.webp",
     artistLifespan: "1977-1953",
     slug: "the-yellow-console-with-a-violin",
-    letter: "D"
+    letter: "D",
+    location: "Art Gallery Of Antario Toronto Canada"
   },
   {
     name: "The Red Concert",
@@ -3077,7 +3320,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the red concert.webp",
     artistLifespan: "1977-1953",
     slug: "the-red-concert",
-    letter: "D"
+    letter: "D",
+    location: "Milwaukee Art Museum USA"
   },
   {
     name: "Red Quartet",
@@ -3089,7 +3333,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/red quartet.webp",
     artistLifespan: "1977-1953",
     slug: "red-quartet",
-    letter: "D"
+    letter: "D",
+    location: "Private Collection"
   },
   // Letter E
   {
@@ -3102,7 +3347,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/e/sailboats racing on the delaware.webp",
     artistLifespan: "1844-1916",
     slug: "sailboats-racing-on-the-delaware",
-    letter: "E"
+    letter: "E",
+    location: "Philadelphia Museum of Art Pennsylvania USA"
   },
   {
     name: "The Belgin Brothers Racing",
@@ -3114,7 +3360,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/e/the belgin brothers racing.webp",
     artistLifespan: "1844-1916",
     slug: "the-belgin-brothers-racing",
-    letter: "E"
+    letter: "E",
+    location: "National Gallery of Art Washington USA"
   },
   {
     name: "Borzoi Heads",
@@ -3126,7 +3373,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/e/borzoi heads.webp",
     artistLifespan: "1864-1943",
     slug: "borzoi-heads",
-    letter: "E"
+    letter: "E",
+    location: "Private Collection"
   },
   // Letter F
   {
@@ -3139,7 +3387,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/the goldfinch.webp",
     artistLifespan: "1622-1654",
     slug: "the-goldfinch",
-    letter: "F"
+    letter: "F",
+    location: "Mauritshuis Royal Picture Gallery The Hague Netherlands"
   },
   {
     name: "The Beheading Of Saint John The Baptist",
@@ -3151,7 +3400,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/the beheading of saint john the baptist.webp",
     artistLifespan: "1622-1654",
     slug: "the-beheading-of-saint-john-the-baptist",
-    letter: "F"
+    letter: "F",
+    location: "Rijksmuseum Amsterdam Netherlands"
   },
   {
     name: "The Sentry",
@@ -3163,7 +3413,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/the sentry.webp",
     artistLifespan: "1622-1654",
     slug: "the-sentry",
-    letter: "F"
+    letter: "F",
+    location: "Staatliche Museum Schwerin Germany"
   },
   {
     name: "Roses And Lilies",
@@ -3175,7 +3426,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/roses and lilies.webp",
     artistLifespan: "1836-1904",
     slug: "roses-and-lilies",
-    letter: "F"
+    letter: "F",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "Still Life With Roses And Fruit",
@@ -3187,7 +3439,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/still life with roses and fruit.webp",
     artistLifespan: "1836-1904",
     slug: "still-life-with-roses-and-fruit",
-    letter: "F"
+    letter: "F",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "The Reader",
@@ -3199,7 +3452,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/the reader.webp",
     artistLifespan: "1836-1904",
     slug: "the-reader",
-    letter: "F"
+    letter: "F",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "The Dressed Table",
@@ -3211,7 +3465,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/the dressed table.webp",
     artistLifespan: "1836-1904",
     slug: "the-dressed-table",
-    letter: "F"
+    letter: "F",
+    location: "Museu Calouste Gulbenkian Lisbon Portugal"
   },
   {
     name: "Peaches And Grapes",
@@ -3223,7 +3478,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/peaches and grapes.webp",
     artistLifespan: "1836-1904",
     slug: "peaches-and-grapes",
-    letter: "F"
+    letter: "F",
+    location: "The Clark Art Institute Massachusetts USA"
   },
   {
     name: "Nanna",
@@ -3235,7 +3491,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/nanna.webp",
     artistLifespan: "1829-1880",
     slug: "nanna",
-    letter: "F"
+    letter: "F",
+    location: "Staatliche Kunsthalle Karlsruhe Germany"
   },
   {
     name: "Nanna",
@@ -3247,7 +3504,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/nanna_1.webp",
     artistLifespan: "1829-1880",
     slug: "nanna-2",
-    letter: "F"
+    letter: "F",
+    location: "Staatliche Kunsthalle Karlsruhe Germany"
   },
   {
     name: "Self Portrait",
@@ -3259,7 +3517,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/self portrait.webp",
     artistLifespan: "1829-1880",
     slug: "self-portrait-feuerbach",
-    letter: "F"
+    letter: "F",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Mandolin Player",
@@ -3271,7 +3530,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/mandolin player.webp",
     artistLifespan: "1829-1880",
     slug: "mandolin-player",
-    letter: "F"
+    letter: "F",
+    location: "Kunsthalle Bremen Germany"
   },
   {
     name: "Portrait Of Princess Zinaida Yusupova With Two Sons At Arkhangelskoe",
@@ -3283,7 +3543,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/portrait of princess zinaida yusupova with two sons at arkhangelskoe.webp",
     artistLifespan: "1856-1923",
     slug: "portrait-of-princess-zinaida-yusupova-with-two-sons-at-arkhangelskoe",
-    letter: "F"
+    letter: "F",
+    location: "Private Collection"
   },
   {
     name: "Family Portrait Of A Boy And His Two Sisters",
@@ -3295,7 +3556,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/family portrait of a boy and his two sisters.webp",
     artistLifespan: "1856-1923",
     slug: "family-portrait-of-a-boy-and-his-two-sisters",
-    letter: "F"
+    letter: "F",
+    location: "Private Collection"
   },
   {
     name: "Nude Youth Sitting By The Sea",
@@ -3307,7 +3569,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/nude youth sitting by the sea.webp",
     artistLifespan: "1809-1864",
     slug: "nude-youth-sitting-by-the-sea",
-    letter: "F"
+    letter: "F",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "Madam Hippolyte Flandrin",
@@ -3319,7 +3582,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/madam hippolyte flandrin.webp",
     artistLifespan: "1809-1864",
     slug: "madam-hippolyte-flandrin",
-    letter: "F"
+    letter: "F",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "Marie-Anne De Bourbon Duchesse De Vendome",
@@ -3331,7 +3595,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/marie-anne de bourbon duchesse de vendome.webp",
     artistLifespan: "1809-1864",
     slug: "marie-anne-de-bourbon-duchesse-de-vendome",
-    letter: "F"
+    letter: "F",
+    location: "Museum of Palace of Versailles Paris France"
   },
   {
     name: "Still Life With Bread And Confectinary",
@@ -3343,7 +3608,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/still life with bread and confectinary.webp",
     artistLifespan: "1566-1638",
     slug: "still-life-with-bread-and-confectinary",
-    letter: "F"
+    letter: "F",
+    location: "Stadel Museum Frankfurt Germany"
   },
   {
     name: "Still Life Pretzels, Nuts and Almonds",
@@ -3355,7 +3621,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/still life pretzels, nuts and almonds.webp",
     artistLifespan: "1566-1638",
     slug: "still-life-pretzels-nuts-and-almonds",
-    letter: "F"
+    letter: "F",
+    location: "Westphalian State Museum of Art & Cultural History Munster Germany"
   },
   {
     name: "Snack With Fried Eggs",
@@ -3367,7 +3634,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/snack with fried eggs.webp",
     artistLifespan: "1566-1638",
     slug: "snack-with-fried-eggs",
-    letter: "F"
+    letter: "F",
+    location: "Alte Pinakothek Munich Germany"
   },
   {
     name: "Meal With Pike Head",
@@ -3379,7 +3647,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/meal with pike head.webp",
     artistLifespan: "1566-1638",
     slug: "meal-with-pike-head",
-    letter: "F"
+    letter: "F",
+    location: "Stadel Museum Frankfurt Germany"
   },
   {
     name: "The Swing",
@@ -3391,6 +3660,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/the swing.webp",
     artistLifespan: "1732-1806",
     slug: "the-swing",
+    location: "The Wallace Collection London UK",
     letter: "F",
     basePrice: 11900,
     options: [
@@ -3408,6 +3678,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/a wanderer above a sea of mist.webp",
     artistLifespan: "1774-1840",
     slug: "a-wanderer-above-a-sea-of-mist",
+    location: "Hamburger Kunsthalle Hamburg Germany",
     letter: "F",
     options: [
       { id: "size-1", width: 98.4, height: 74.8, price: 3450, label: "98.4 x 74.8 cm" },
@@ -3425,7 +3696,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/swans in the reeds.webp",
     artistLifespan: "1774-1840",
     slug: "swans-in-the-reeds",
-    letter: "F"
+    letter: "F",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Caroline On The Stairs",
@@ -3437,7 +3709,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/caroline on the stairs.webp",
     artistLifespan: "1774-1840",
     slug: "caroline-on-the-stairs",
-    letter: "F"
+    letter: "F",
+    location: "Private Collection"
   },
   {
     name: "Ship In The Polar Sea",
@@ -3449,7 +3722,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/f/ship in the polar sea.webp",
     artistLifespan: "1774-1840",
     slug: "ship-in-the-polar-sea",
-    letter: "F"
+    letter: "F",
+    location: "Hamburger Kunsthalle Hamburg Germany"
   },
   // Letter G
   {
@@ -3462,7 +3736,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/the pond october.webp",
     artistLifespan: "1881-1921",
     slug: "the-pond-october",
-    letter: "G"
+    letter: "G",
+    location: "National Gallery of Art Ottawa Canada"
   },
   {
     name: "After The Storm",
@@ -3474,7 +3749,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/after the storm.webp",
     artistLifespan: "1881-1921",
     slug: "after-the-storm",
-    letter: "G"
+    letter: "G",
+    location: "Private Collection"
   },
   {
     name: "Village In The Laurentian Mountains",
@@ -3486,7 +3762,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/village in the laurentian mountains.webp",
     artistLifespan: "1881-1921",
     slug: "village-in-the-laurentian-mountains",
-    letter: "G"
+    letter: "G",
+    location: "National Gallery of Art Ottawa Canada"
   },
   {
     name: "Street Scene Quebec At Night",
@@ -3498,7 +3775,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/street scene quebec at night.webp",
     artistLifespan: "1881-1921",
     slug: "street-scene-quebec-at-night",
-    letter: "G"
+    letter: "G",
+    location: "Private Collection"
   },
   {
     name: "The Woman In Blue (Portrait Of Duchess Of Beaufort)",
@@ -3510,7 +3788,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/the woman in blue (portrait of duchess of beaufort).webp",
     artistLifespan: "1727-1788",
     slug: "the-woman-in-blue-portrait-of-duchess-of-beaufort",
-    letter: "G"
+    letter: "G",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "The Mall In St James Park",
@@ -3522,7 +3801,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/the mall in st james park.webp",
     artistLifespan: "1727-1788",
     slug: "the-mall-in-st-james-park",
-    letter: "G"
+    letter: "G",
+    location: "Frick Collection New York USA"
   },
   {
     name: "Conversation In A Park",
@@ -3534,7 +3814,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/conversation in a park.webp",
     artistLifespan: "1727-1788",
     slug: "conversation-in-a-park",
-    letter: "G"
+    letter: "G",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "A Pug",
@@ -3546,7 +3827,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/a pug.webp",
     artistLifespan: "1727-1788",
     slug: "a-pug",
-    letter: "G"
+    letter: "G",
+    location: "Private Collection"
   },
   {
     name: "Idyll In Tahiti",
@@ -3558,7 +3840,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/idyll in tahiti.webp",
     artistLifespan: "1848-1903",
     slug: "idyll-in-tahiti",
-    letter: "G"
+    letter: "G",
+    location: "E.G. Buehrle Zurich Switzerland"
   },
   {
     name: "Still Life Sunflowers On An Armchair",
@@ -3582,7 +3865,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/three tahitians.webp",
     artistLifespan: "1848-1903",
     slug: "three-tahitians",
-    letter: "G"
+    letter: "G",
+    location: "National Galleries of Scotland Edinburgh UK"
   },
   {
     name: "Two Tahitian Woman",
@@ -3594,7 +3878,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/two tahitian woman.webp",
     artistLifespan: "1848-1903",
     slug: "two-tahitian-woman",
-    letter: "G"
+    letter: "G",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "Nefea Faa Lpoipo (when Will You Marry?)",
@@ -3606,7 +3891,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/nefea faa lpoipo (when will you marry).webp",
     artistLifespan: "1848-1903",
     slug: "nefea-faa-lpoipo-when-will-you-marry",
-    letter: "G"
+    letter: "G",
+    location: "Kunstmuseum Basel Switzerland"
   },
   {
     name: "The Grey Cardinal",
@@ -3618,7 +3904,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/the grey cardinal.webp",
     artistLifespan: "1824-1904",
     slug: "the-grey-cardinal",
-    letter: "G"
+    letter: "G",
+    location: "Boston Museum of Fine Arts Massachusetts USA"
   },
   {
     name: "Pelt Merchant Of Cairo",
@@ -3630,7 +3917,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/pelt merchant of cairo.webp",
     artistLifespan: "1824-1904",
     slug: "pelt-merchant-of-cairo",
-    letter: "G"
+    letter: "G",
+    location: "Private Collection"
   },
   {
     name: "Pollice Verso (thumbs Down)",
@@ -3642,7 +3930,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/pollice verso (thumbs down).webp",
     artistLifespan: "1824-1904",
     slug: "pollice-verso-thumbs-down",
-    letter: "G"
+    letter: "G",
+    location: "Phoenix Art Museum Arizona USA"
   },
   {
     name: "Prayer In Cairo On The Rooftops",
@@ -3654,7 +3943,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/prayer in cairo on the rooftops.webp",
     artistLifespan: "1824-1904",
     slug: "prayer-in-cairo-on-the-rooftops",
-    letter: "G"
+    letter: "G",
+    location: "Hamburger Kunsthalle Hamburg Germany"
   },
   {
     name: "The Entombment Of Atala (The Burial Of Atala)",
@@ -3666,6 +3956,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/the entombment of atala (the burial of atala).webp",
     artistLifespan: "1767-1824",
     slug: "the-entombment-of-atala-the-burial-of-atala",
+    location: "Private Collection",
     letter: "G"
   },
   {
@@ -3678,7 +3969,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/napoleon in coronation robes.webp",
     artistLifespan: "1767-1824",
     slug: "napoleon-in-coronation-robes",
-    letter: "G"
+    letter: "G",
+    location: "Private Collection"
   },
   {
     name: "Portrait Of Young Man As A Hunter",
@@ -3690,7 +3982,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/portrait of young man as a hunter.webp",
     artistLifespan: "1767-1824",
     slug: "portrait-of-young-man-as-a-hunter",
-    letter: "G"
+    letter: "G",
+    location: "Private Collection"
   },
   {
     name: "Pygmalion And Galatea",
@@ -3702,7 +3995,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/pygmalion and galatea.webp",
     artistLifespan: "1767-1824",
     slug: "pygmalion-and-galatea",
-    letter: "G"
+    letter: "G",
+    location: "Private Collection"
   },
   {
     name: "Starry Night",
@@ -3714,6 +4008,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/starry night.webp",
     artistLifespan: "1853-1890",
     slug: "starry-night",
+    location: "Museum of Modern Art New York USA",
     letter: "G",
     options: [
       { id: "size-1", width: 92.1, height: 73.7, price: 4000, label: "92.1 x 73.7 cm" },
@@ -3731,6 +4026,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/irises.webp",
     artistLifespan: "1853-1890",
     slug: "irises",
+    location: "J. Paul Getty Museum Los Angeles USA",
     letter: "G",
     options: [
       { id: "size-1", width: 71, height: 93, price: 4700, label: "71 x 93 cm" },
@@ -3748,7 +4044,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/red vineyards at airies.webp",
     artistLifespan: "1853-1890",
     slug: "red-vineyards-at-airies",
-    letter: "G"
+    letter: "G",
+    location: "Pushkin Museum of Fine Arts Moscow Russia"
   },
   {
     name: "Starry Night Over The Rome",
@@ -3772,7 +4069,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/vincent's chair with his pipe.webp",
     artistLifespan: "1853-1890",
     slug: "vincents-chair-with-his-pipe",
-    letter: "G"
+    letter: "G",
+    location: "National Gallery London UK"
   },
   {
     name: "Still Life Vase. With Fourteen Sunflowers",
@@ -3784,6 +4082,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/still life vase. with fourteen sunflowers.webp",
     artistLifespan: "1853-1890",
     slug: "still-life-vase-with-fourteen-sunflowers",
+    location: "Van Gogh Museum Amsterdam Netherlands",
     letter: "G",
     options: [
       { id: "size-1", width: 92.1, height: 73, price: 3200, label: "92.1 x 73 cm" },
@@ -3800,7 +4099,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/self portrait with bandaged ear and pipe.webp",
     artistLifespan: "1853-1890",
     slug: "self-portrait-with-bandaged-ear-and-pipe",
-    letter: "G"
+    letter: "G",
+    location: "Private Collection"
   },
   {
     name: "Portrait Of Dr Felix Rey",
@@ -3812,7 +4112,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/portrait of dr felix rey.webp",
     artistLifespan: "1853-1890",
     slug: "portrait-of-dr-felix-rey",
-    letter: "G"
+    letter: "G",
+    location: "Pushkin Museum of Fine Arts Moscow Russia"
   },
   {
     name: "Portrait Of The Postman Joseph Roulin",
@@ -3824,6 +4125,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/portrait of the postman joseph roulin.webp",
     artistLifespan: "1853-1890",
     slug: "portrait-of-the-postman-joseph-roulin",
+    location: "Kroller-Mueller Museum Otterlo Netherlands",
     letter: "G",
     options: [
       { id: "size-1", width: 81.3, height: 65.4, price: 2780, label: "81.3 x 65.4 cm" },
@@ -3840,7 +4142,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/lilac bush (lilacs).webp",
     artistLifespan: "1853-1890",
     slug: "lilac-bush-lilacs",
-    letter: "G"
+    letter: "G",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "The Olive Trees",
@@ -3852,7 +4155,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/the olive trees.webp",
     artistLifespan: "1853-1890",
     slug: "the-olive-trees",
-    letter: "G"
+    letter: "G",
+    location: "Museum of Modern Art New York USA"
   },
   {
     name: "Wheat Field With Cypresses",
@@ -3864,6 +4168,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/wheat field with cypresses.webp",
     artistLifespan: "1853-1890",
     slug: "wheat-field-with-cypresses",
+    location: "Metropolitan Museum of Art New York USA",
     letter: "G",
     options: [
       { id: "size-1", width: 73, height: 93.4, price: 3200, label: "73 x 93.4 cm" },
@@ -3880,7 +4185,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/landscape of wheat sheaves and rising moon.webp",
     artistLifespan: "1853-1890",
     slug: "lanscape-of-wheat-sheaves-and-rising-moon",
-    letter: "G"
+    letter: "G",
+    location: "Kroller-Mueller Museum Otterlo Netherlands"
   },
   {
     name: "Self Portrait",
@@ -3892,7 +4198,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/self portrait.webp",
     artistLifespan: "1853-1890",
     slug: "self-portrait-van-gogh",
-    letter: "G"
+    letter: "G",
+    location: "National Gallery of Art Washington USA"
   },
   {
     name: "The Reaper (after Millet)",
@@ -3904,7 +4211,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/the reaper (after millet).webp",
     artistLifespan: "1853-1890",
     slug: "the-reaper-after-millet",
-    letter: "G"
+    letter: "G",
+    location: "Memorial Art Gallery at the University of Rochester New York USA"
   },
   {
     name: "Vincent's Bedroom In Airies",
@@ -3916,6 +4224,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/vincent's bedroom in airies.webp",
     artistLifespan: "1853-1890",
     slug: "vincents-bedroom-in-airies",
+    location: "Art Institute of Chicago Illinois USA",
     letter: "G",
     options: [
       { id: "size-1", width: 57.5, height: 74, price: 2500, label: "57.5 x 74 cm" },
@@ -3933,7 +4242,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/the mulberry tree.webp",
     artistLifespan: "1853-1890",
     slug: "the-mulberry-tree",
-    letter: "G"
+    letter: "G",
+    location: "Norton Simon Museum of Art Pasadena USA"
   },
   {
     name: "Olive Trees",
@@ -3974,6 +4284,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/vase with irises against yellow background.webp",
     artistLifespan: "1853-1890",
     slug: "vase-with-irises-against-yellow-background",
+    location: "Van Gogh Museum Amsterdam Netherlands",
     letter: "G",
     options: [
       { id: "size-1", width: 92, height: 73.5, price: 3170, label: "92 x 73.5 cm" },
@@ -3990,6 +4301,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/vase of roses.webp",
     artistLifespan: "1853-1890",
     slug: "vase-of-roses",
+    location: "Metropolitan Museum of Art New York USA",
     letter: "G",
     options: [
       { id: "size-1", width: 93, height: 74, price: 3525, label: "93 x 74 cm" },
@@ -4006,7 +4318,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/landscape couple walking crescent moon.webp",
     artistLifespan: "1853-1890",
     slug: "landscape-couple-walking-crescent-moon",
-    letter: "G"
+    letter: "G",
+    location: "Museu de Arte Sao Paulo Brazil"
   },
   {
     name: "Portrait Of Doctor Gachet",
@@ -4018,7 +4331,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/portrait of doctor gachet.webp",
     artistLifespan: "1853-1890",
     slug: "portrait-of-doctor-gachet",
-    letter: "G"
+    letter: "G",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Wheat Field With Crows 1890",
@@ -4042,6 +4356,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/the cafe terrace on the place du forum airies.webp",
     artistLifespan: "1853-1890",
     slug: "the-cafe-terrace-on-the-place-du-forum-airies",
+    location: "Kroller-Mueller Museum Otterlo Netherlands",
     letter: "G",
     options: [
       { id: "size-1", width: 81, height: 65.5, price: 4000, label: "81 x 65.5 cm" },
@@ -4059,7 +4374,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/haystacks in provence.webp",
     artistLifespan: "1853-1890",
     slug: "haystacks-in-provence",
-    letter: "G"
+    letter: "G",
+    location: "Kroller-Mueller Museum Otterlo Netherlands"
   },
   // Letter H
   {
@@ -4072,7 +4388,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/italian landscape.webp",
     artistLifespan: "1737-1807",
     slug: "italian-landscape",
-    letter: "H"
+    letter: "H",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "View Of Copper Mill In Vietri",
@@ -4084,7 +4401,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/view of copper mill in vietri.webp",
     artistLifespan: "1737-1807",
     slug: "view-of-copper-mill-in-vietri",
-    letter: "H"
+    letter: "H",
+    location: "Private Collection"
   },
   {
     name: "Portrait Of A Young Man Holding A Glove",
@@ -4180,7 +4498,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the piebald stallion at the eisgruber stud.webp",
     artistLifespan: "1672-1737",
     slug: "the-piebald-stallion-at-the-eisgruber-stud",
-    letter: "H"
+    letter: "H",
+    location: "Liechtenstein Museum Vienna Austria"
   },
   {
     name: "A Black Horse Performing The Courbette",
@@ -4192,7 +4511,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/a black horse performing the courbette.webp",
     artistLifespan: "1672-1737",
     slug: "a-black-horse-performing-the-courbette",
-    letter: "H"
+    letter: "H",
+    location: "Kunsthistorisches Museum Vienna Austria"
   },
   {
     name: "Rosslyn Chapel Near Edingburgh",
@@ -4216,7 +4536,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/george glennie putting at blackheath with putting cleek.webp",
     artistLifespan: "1843-1933",
     slug: "george-glennie-putting-at-blackheath-with-putting-cleek",
-    letter: "H"
+    letter: "H",
+    location: "Private Collection"
   },
   {
     name: "The Meet",
@@ -4228,7 +4549,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the meet.webp",
     artistLifespan: "1843-1933",
     slug: "the-meet",
-    letter: "H"
+    letter: "H",
+    location: "Private Collection"
   },
   {
     name: "Moonlight On The River",
@@ -4240,7 +4562,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/moonlight on the river.webp",
     artistLifespan: "1854-1929",
     slug: "moonlight-on-the-river",
-    letter: "H"
+    letter: "H",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Summer In The Catskills",
@@ -4252,7 +4575,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/summer in the catskills.webp",
     artistLifespan: "1828-1901",
     slug: "summer-in-the-catskills",
-    letter: "H"
+    letter: "H",
+    location: "Thyssen-Bornemisza Museum Madrid Spain"
   },
   {
     name: "New England Sea View Fish House",
@@ -4264,7 +4588,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/new england sea view fish house.webp",
     artistLifespan: "1877-1934",
     slug: "new-england-sea-view-fish-house",
-    letter: "H"
+    letter: "H",
+    location: "Private Collection"
   },
   {
     name: "The Aero",
@@ -4276,7 +4601,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the aero.webp",
     artistLifespan: "1877-1934",
     slug: "the-aero",
-    letter: "H"
+    letter: "H",
+    location: "National Gallery of Art Washington USA"
   },
   {
     name: "The Summer Camp Blue Mountain",
@@ -4288,7 +4614,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the summer camp blue mountain.webp",
     artistLifespan: "1877-1934",
     slug: "the-summer-camp-blue-mountain",
-    letter: "H"
+    letter: "H",
+    location: "Fine Arts Museums of San Francisco California USA"
   },
   {
     name: "Newport Waterfront",
@@ -4300,7 +4627,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/newport waterfront.webp",
     artistLifespan: "1851-1935",
     slug: "newport-waterfront",
-    letter: "H"
+    letter: "H",
+    location: "Flint Institute of Arts Michigan USA"
   },
   {
     name: "An Outdoor Portrait Of Miss Weir",
@@ -4312,7 +4640,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/an outdoor portrait of miss weir.webp",
     artistLifespan: "1851-1935",
     slug: "an-outdoor-portrait-of-miss-weir",
-    letter: "H"
+    letter: "H",
+    location: "Crocker Art Museum California USA"
   },
   {
     name: "Surf and Rocks",
@@ -4324,7 +4653,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/surf and rocks.webp",
     artistLifespan: "1851-1935",
     slug: "surf-and-rocks",
-    letter: "H"
+    letter: "H",
+    location: "Detroit Institute of Arts Michigan USA"
   },
   {
     name: "The Smelt Fishers, Cos Cob",
@@ -4336,7 +4666,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the smelt fishers, cos cob.webp",
     artistLifespan: "1851-1935",
     slug: "the-smelt-fishers-cos-cob",
-    letter: "H"
+    letter: "H",
+    location: "Fine Arts Museums of San Francisco California USA"
   },
   {
     name: "The Table Garden",
@@ -4348,7 +4679,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the table garden.webp",
     artistLifespan: "1851-1935",
     slug: "the-table-garden",
-    letter: "H"
+    letter: "H",
+    location: "Mitchell Museum at Cedarhurst Illinois USA"
   },
   {
     name: "Oyster Sloop, Cos Cob",
@@ -4360,7 +4692,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/oyster sloop, cos cob.webp",
     artistLifespan: "1851-1935",
     slug: "oyster-sloop-cos-cob",
-    letter: "H"
+    letter: "H",
+    location: "National Gallery of Art Washington USA"
   },
   {
     name: "The Victorian Chair",
@@ -4372,7 +4705,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the victorian chair.webp",
     artistLifespan: "1851-1935",
     slug: "the-victorian-chair",
-    letter: "H"
+    letter: "H",
+    location: "Smithsonian American Art Museum Washington USA"
   },
   {
     name: "Twenty Sixth June Old Lyme",
@@ -4384,7 +4718,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/twenty sixth june old lyme.webp",
     artistLifespan: "1851-1935",
     slug: "twenty-sixth-june-old-lyme",
-    letter: "H"
+    letter: "H",
+    location: "Private Collection"
   },
   {
     name: "Church At Old Lyme",
@@ -4396,7 +4731,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/church at old lyme.webp",
     artistLifespan: "1851-1935",
     slug: "church-at-old-lyme",
-    letter: "H"
+    letter: "H",
+    location: "Albright-Knox Art Gallery Buffalo USA"
   },
   {
     name: "The West Wind Isles Of Shoals",
@@ -4408,7 +4744,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the west wind isles of shoals.webp",
     artistLifespan: "1851-1935",
     slug: "the-west-wind-isles-of-shoals",
-    letter: "H"
+    letter: "H",
+    location: "Yale University Art Gallery Connecticut USA"
   },
   {
     name: "Duck Island from Appledore",
@@ -4420,7 +4757,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/duck island from appledore.webp",
     artistLifespan: "1851-1935",
     slug: "duck-island-from-appledore",
-    letter: "H"
+    letter: "H",
+    location: "Private Collection"
   },
   {
     name: "Central Park",
@@ -4432,7 +4770,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/central park.webp",
     artistLifespan: "1851-1935",
     slug: "central-park",
-    letter: "H"
+    letter: "H",
+    location: "Private Collection"
   },
   {
     name: "Promenade At Sunset Paris",
@@ -4444,7 +4783,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/promenade at sunset paris.webp",
     artistLifespan: "1851-1935",
     slug: "promenade-at-sunset-paris",
-    letter: "H"
+    letter: "H",
+    location: "Private Collection"
   },
   {
     name: "The Spanish Stairs Rome",
@@ -4456,7 +4796,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the spanish stairs rome.webp",
     artistLifespan: "1851-1935",
     slug: "the-spanish-stairs-rome",
-    letter: "H"
+    letter: "H",
+    location: "Private Collection"
   },
   {
     name: "Abraham Lincoln",
@@ -4468,7 +4809,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/abraham lincoln.webp",
     artistLifespan: "1813-1894",
     slug: "abraham-lincoln",
-    letter: "H"
+    letter: "H",
+    location: "White House Museum Washington USA"
   },
   {
     name: "The Three Masted Merchantman",
@@ -4480,7 +4822,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the three masted merchantman.webp",
     artistLifespan: "1799-1859",
     slug: "the-three-masted-merchantman",
-    letter: "H"
+    letter: "H",
+    location: "Private Collection"
   },
   {
     name: "The Great Wave Of Kanagawa",
@@ -4492,7 +4835,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/the great wave of kanagawa.webp",
     artistLifespan: "1760-1849",
     slug: "the-great-wave-of-kanagawa",
-    letter: "H"
+    letter: "H",
+    location: "Metropolitan Museum of Art, New York, USA"
   },
   // Letter I
   {
@@ -4505,7 +4849,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/domtesse d'haussonville.webp",
     artistLifespan: "1780-1867",
     slug: "domtesse-dhaussonville",
-    letter: "I"
+    letter: "I",
+    location: "Frick Collection New York USA"
   },
   {
     name: "The Clouded Sun",
@@ -4517,7 +4862,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/the clouded sun.webp",
     artistLifespan: "1825-1894",
     slug: "the-clouded-sun",
-    letter: "I"
+    letter: "I",
+    location: "Carnegie Museum of Art Pittsburgh USA"
   },
   {
     name: "The Home At Montclair",
@@ -4529,7 +4875,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/the home at montclair.webp",
     artistLifespan: "1825-1894",
     slug: "the-home-at-montclair",
-    letter: "I"
+    letter: "I",
+    location: "The Clark Art Institute Massachusetts USA"
   },
   {
     name: "Morning, Catskill Valley",
@@ -4541,7 +4888,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/morning, catskill valley.webp",
     artistLifespan: "1825-1894",
     slug: "morning-catskill-valley",
-    letter: "I"
+    letter: "I",
+    location: "Santa Barbara Museum of Art California USA"
   },
   {
     name: "Sundown Near Montclair",
@@ -4553,7 +4901,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/sundown near montclair.webp",
     artistLifespan: "1825-1894",
     slug: "sundown-near-montclair",
-    letter: "I"
+    letter: "I",
+    location: "Private Collection"
   },
   {
     name: "The Coming Storm",
@@ -4565,7 +4914,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/the coming storm.webp",
     artistLifespan: "1825-1894",
     slug: "the-coming-storm",
-    letter: "I"
+    letter: "I",
+    location: "Albright-Knox Art Gallery Buffalo USA"
   },
   {
     name: "A Bit Of Roman Aqueduct",
@@ -4577,7 +4927,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/a bit of roman aqueduct.webp",
     artistLifespan: "1825-1894",
     slug: "a-bit-of-roman-aqueduct",
-    letter: "I"
+    letter: "I",
+    location: "High Museum of Art Atlanta USA"
   },
   {
     name: "The Wood Chopper",
@@ -4589,7 +4940,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/the wood chopper.webp",
     artistLifespan: "1825-1894",
     slug: "the-wood-chopper",
-    letter: "I"
+    letter: "I",
+    location: "Cleveland Museum of Art Ohio USA"
   },
   {
     name: "Crossing The Ford",
@@ -4601,7 +4953,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/crossing the ford.webp",
     artistLifespan: "1825-1894",
     slug: "crossing-the-ford",
-    letter: "I"
+    letter: "I",
+    location: "Art Institute of Chicago Illinois USA"
   },
   {
     name: "Hudson River Valley",
@@ -4613,7 +4966,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/hudson river valley.webp",
     artistLifespan: "1825-1894",
     slug: "hudson-river-valley",
-    letter: "I"
+    letter: "I",
+    location: "Detroit Institute of Arts Michigan USA"
   },
   {
     name: "Landscape Sunset",
@@ -4625,7 +4979,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/landscape sunset.webp",
     artistLifespan: "1825-1894",
     slug: "landscape-sunset",
-    letter: "I"
+    letter: "I",
+    location: "Art Institute of Chicago Illinois USA"
   },
   {
     name: "Landscape",
@@ -4637,7 +4992,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/landscape.webp",
     artistLifespan: "1825-1894",
     slug: "landscape",
-    letter: "I"
+    letter: "I",
+    location: "Fine Arts Museums of San Francisco California USA"
   },
   {
     name: "Autumn Oaks",
@@ -4649,7 +5005,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/autumn oaks.webp",
     artistLifespan: "1825-1894",
     slug: "autumn-oaks",
-    letter: "I"
+    letter: "I",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "Villa Borgese, Rome",
@@ -4661,7 +5018,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/villa borgese, rome.webp",
     artistLifespan: "1825-1894",
     slug: "villa-borgese-rome",
-    letter: "I"
+    letter: "I",
+    location: "Boston Museum of Fine Arts Massachusetts USA"
   },
   {
     name: "Golden Glow (The Golden Sun)",
@@ -4673,7 +5031,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/golden glow (the golden sun).webp",
     artistLifespan: "1825-1894",
     slug: "golden-glow-the-golden-sun",
-    letter: "I"
+    letter: "I",
+    location: "Ball State University Museum of Art Indiana USA"
   },
   {
     name: "Sunrise",
@@ -4685,7 +5044,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/sunrise.webp",
     artistLifespan: "1825-1894",
     slug: "sunrise",
-    letter: "I"
+    letter: "I",
+    location: "Brooklyn Museum of Art New York USA"
   },
   {
     name: "Summer Foliage",
@@ -4697,7 +5057,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/summer foliage.webp",
     artistLifespan: "1825-1894",
     slug: "summer-foliage",
-    letter: "I"
+    letter: "I",
+    location: "Dallas Museum of Art Texas USA"
   },
   {
     name: "The Shepherds Prayer",
@@ -4709,7 +5070,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/the shepherds prayer.webp",
     artistLifespan: "1824-1911",
     slug: "the-shepherds-prayer",
-    letter: "I"
+    letter: "I",
+    location: "Toledo Museum of Art Ohio USA"
   },
   {
     name: "Children Of The Sea",
@@ -4721,7 +5083,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/i/children of the sea.webp",
     artistLifespan: "1824-1911",
     slug: "children-of-the-sea",
-    letter: "I"
+    letter: "I",
+    location: "Rijksmuseum Amsterdam Netherlands"
   },
   // Letter J
   {
@@ -4734,7 +5097,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/j/banquet in the thames tunnel.webp",
     artistLifespan: "1786-1869",
     slug: "banquet-in-the-thames-tunnel",
-    letter: "J"
+    letter: "J",
+    location: "Private Collection"
   },
   {
     name: "The Port Of Dordrecht",
@@ -4746,7 +5110,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/j/the port of dordrecht.webp",
     artistLifespan: "1819-1891",
     slug: "the-port-of-dordrecht",
-    letter: "J"
+    letter: "J",
+    location: "Private Collection"
   },
   {
     name: "Rotterdam",
@@ -4758,7 +5123,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/j/rotterdam.webp",
     artistLifespan: "1819-1891",
     slug: "rotterdam",
-    letter: "J"
+    letter: "J",
+    location: "Private Collection"
   },
   {
     name: "The Port Of Marseille",
@@ -4770,7 +5136,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/j/the port of marseille.webp",
     artistLifespan: "1819-1891",
     slug: "the-port-of-marseille",
-    letter: "J"
+    letter: "J",
+    location: "Private Collection"
   },
   {
     name: "Boatman By Windmill",
@@ -4782,7 +5149,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/j/boatman by windmill.webp",
     artistLifespan: "1819-1891",
     slug: "boatman-by-windmill",
-    letter: "J"
+    letter: "J",
+    location: "Private Collection"
   },
   {
     name: "Le Port De La Tounelle, Paris",
@@ -4794,7 +5162,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/j/le port de la tounelle, paris.webp",
     artistLifespan: "1819-1891",
     slug: "le-port-de-la-tounelle-paris",
-    letter: "J"
+    letter: "J",
+    location: "Private Collection"
   },
   {
     name: "Portrait Of Louis XV",
@@ -4806,7 +5175,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/j/portrait of louis XV.webp",
     artistLifespan: "1692-1743",
     slug: "portrait-of-louis-xv",
-    letter: "J"
+    letter: "J",
+    location: "Private Collection"
   },
   // Letter K
   {
@@ -4819,7 +5189,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/the promernade.webp",
     artistLifespan: "1839-1902",
     slug: "the-promernade",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "Still Life With Drinking Horn",
@@ -4831,7 +5202,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/still life with drinking horn.webp",
     artistLifespan: "1619-1693",
     slug: "still-life-with-drinking-horn",
-    letter: "K"
+    letter: "K",
+    location: "National Gallery London UK"
   },
   {
     name: "Still Life With Fruit In A Wan-Li Bowl",
@@ -4843,7 +5215,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/still life with fruit in a wan-li bowl.webp",
     artistLifespan: "1619-1693",
     slug: "still-life-with-fruit-in-a-wan-li-bowl",
-    letter: "K"
+    letter: "K",
+    location: "Boston Museum of Fine Arts Massachusetts USA"
   },
   {
     name: "Upward",
@@ -4855,7 +5228,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/upward.webp",
     artistLifespan: "1866-1944",
     slug: "upward",
-    letter: "K"
+    letter: "K",
+    location: "Solomon R. Guggenheim Museum New York USA"
   },
   {
     name: "Concentric Circles",
@@ -4867,7 +5241,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/concentric circles.webp",
     artistLifespan: "1866-1944",
     slug: "concentric-circles",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "Composition 8",
@@ -4880,6 +5255,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/composition 8.webp",
     artistLifespan: "1866-1944",
     slug: "composition-8",
+    location: "Solomon R. Guggenheim Museum New York USA",
     letter: "K",
     currency: "AED",
     options: [
@@ -4897,7 +5273,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/group in crinolines.webp",
     artistLifespan: "1866-1944",
     slug: "group-in-crinolines",
-    letter: "K"
+    letter: "K",
+    location: "Solomon R. Guggenheim Museum New York USA"
   },
   {
     name: "White Cross",
@@ -4909,7 +5286,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/white cross.webp",
     artistLifespan: "1866-1944",
     slug: "white-cross",
-    letter: "K"
+    letter: "K",
+    location: "Peggy Guggenheim Collection Venice Italy"
   },
   {
     name: "Several Circles",
@@ -4921,7 +5299,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/several circles.webp",
     artistLifespan: "1866-1944",
     slug: "several-circles",
-    letter: "K"
+    letter: "K",
+    location: "Solomon R. Guggenheim Museum New York USA"
   },
   {
     name: "Oriental",
@@ -4933,7 +5312,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/oriental.webp",
     artistLifespan: "1866-1944",
     slug: "oriental",
-    letter: "K"
+    letter: "K",
+    location: "Stadusche Galarie Munich Germany"
   },
   {
     name: "Circles In A Circle",
@@ -4945,7 +5325,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/circles in a circle.webp",
     artistLifespan: "1866-1944",
     slug: "circles-in-a-circle",
-    letter: "K"
+    letter: "K",
+    location: "Museum Of Art Philadelphia"
   },
   {
     name: "Winter Landscape",
@@ -4957,6 +5338,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/winter landscape.webp",
     artistLifespan: "1866-1944",
     slug: "winter-landscape",
+    location: "The State Hermitage Museum St Peterburg Russia",
     letter: "K",
     basePrice: 3963,
     options: [
@@ -4974,7 +5356,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/moscow i.webp",
     artistLifespan: "1866-1944",
     slug: "moscow-i",
-    letter: "K"
+    letter: "K",
+    location: "The State Gallery Moscow Russia"
   },
   {
     name: "Song Of The Volga",
@@ -4986,7 +5369,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/song of the volga.webp",
     artistLifespan: "1866-1944",
     slug: "song-of-the-volga",
-    letter: "K"
+    letter: "K",
+    location: "Musee D'Arte Moderne"
   },
   {
     name: "Bavarian Landscape With A Church",
@@ -5010,7 +5394,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/composition 4.webp",
     artistLifespan: "1866-1944",
     slug: "composition-4",
-    letter: "K"
+    letter: "K",
+    location: "Dusseldorf Germany Museum"
   },
   {
     name: "Summer Landscape",
@@ -5022,7 +5407,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/summer landscape.webp",
     artistLifespan: "1866-1944",
     slug: "summer-landscape",
-    letter: "K"
+    letter: "K",
+    location: "The State Hermitage Museum St Peterburg Russia"
   },
   {
     name: "Blue Sky",
@@ -5034,7 +5420,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/blue sky.webp",
     artistLifespan: "1866-1944",
     slug: "blue-sky",
-    letter: "K"
+    letter: "K",
+    location: "Musee D'Arte Moderne, Paris France"
   },
   {
     name: "Composition IX",
@@ -5046,7 +5433,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/composition ix.webp",
     artistLifespan: "1866-1944",
     slug: "composition-ix",
-    letter: "K"
+    letter: "K",
+    location: "Musee D'Arte Moderne, Paris France"
   },
   {
     name: "Portrait Of A Rabbi",
@@ -5058,7 +5446,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/portrait of a rabbi.webp",
     artistLifespan: "1854-1912",
     slug: "portrait-of-a-rabbi",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "Portrait Of A Young Boy With Peyot",
@@ -5070,7 +5459,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/portrait of a young boy with peyot.webp",
     artistLifespan: "1854-1912",
     slug: "portrait-of-a-young-boy-with-peyot",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "Portrait Of A Man With Streimel",
@@ -5094,7 +5484,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/untitled (transition).webp",
     artistLifespan: "b.1976",
     slug: "untitled-transition",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "Untitled (The Edge Of Tomorrow)",
@@ -5106,7 +5497,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/untitled (the edge of tomorrow).webp",
     artistLifespan: "b.1976",
     slug: "untitled-the-edge-of-tomorrow",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "Untitled V (Resurection)",
@@ -5118,6 +5510,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/untitled v (resurection).webp",
     artistLifespan: "b.1976",
     slug: "untitled-v-resurection",
+    location: "Private Collection",
     letter: "K"
   },
   {
@@ -5142,7 +5535,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/a few small nips (passionately in love).webp",
     artistLifespan: "1907-1954",
     slug: "a-few-small-nips-passionately-in-love",
-    letter: "K"
+    letter: "K",
+    location: "Museo Dolores Olmedo Mexico City Mexico"
   },
   {
     name: "Roots",
@@ -5154,7 +5548,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/roots.webp",
     artistLifespan: "1907-1954",
     slug: "roots",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "The Suicide Of Dorothy Hale",
@@ -5166,7 +5561,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/the suicide of dorothy hale.webp",
     artistLifespan: "1907-1954",
     slug: "the-suicide-of-dorothy-hale",
-    letter: "K"
+    letter: "K",
+    location: "Pheonix Art Museum"
   },
   {
     name: "Self Portrait With A Monkey",
@@ -5178,7 +5574,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/self portrait with a monkey.webp",
     artistLifespan: "1907-1954",
     slug: "self-portrait-with-a-monkey",
-    letter: "K"
+    letter: "K",
+    location: "Buffalo AKG Art Museum NY USA"
   },
   {
     name: "Marxism Will Give Health To The Sick",
@@ -5190,7 +5587,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/marxism will give health to the sick.webp",
     artistLifespan: "1907-1954",
     slug: "marxism-will-give-health-to-the-sick",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "Flower Myth",
@@ -5202,7 +5600,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/flower myth.webp",
     artistLifespan: "1903-1940",
     slug: "flower-myth",
-    letter: "K"
+    letter: "K",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "Senicio",
@@ -5214,7 +5613,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/senicio.webp",
     artistLifespan: "1903-1940",
     slug: "senicio",
-    letter: "K"
+    letter: "K",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "Struck From The List",
@@ -5226,7 +5626,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/struck from the list.webp",
     artistLifespan: "1903-1940",
     slug: "struck-from-the-list",
-    letter: "K"
+    letter: "K",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "With The Setting Sun",
@@ -5238,7 +5639,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/with the setting sun.webp",
     artistLifespan: "1903-1940",
     slug: "with-the-setting-sun",
-    letter: "K"
+    letter: "K",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "Landscape With Sunset",
@@ -5250,7 +5652,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/landscape with sunset.webp",
     artistLifespan: "1903-1940",
     slug: "landscape-with-sunset",
-    letter: "K"
+    letter: "K",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "Portrait Of Adele Bloch-Bauer I",
@@ -5262,6 +5665,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/portrait of adele bloch-bauer i.webp",
     artistLifespan: "1862-1916",
     slug: "portrait-of-adele-bloch-bauer-i",
+    location: "Neue Galerie New York USA",
     letter: "K",
     basePrice: 7165,
     options: [
@@ -5280,7 +5684,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/portrait of johanna straude.webp",
     artistLifespan: "1862-1916",
     slug: "portrait-of-johanna-straude",
-    letter: "K"
+    letter: "K",
+    location: "Galerie Belvedere Vienna Austria"
   },
   {
     name: "The Tree Of Life",
@@ -5292,7 +5697,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/the tree of life.webp",
     artistLifespan: "1862-1916",
     slug: "the-tree-of-life",
-    letter: "K"
+    letter: "K",
+    location: "MAK Museum Vienna Austria"
   },
   {
     name: "Hope II",
@@ -5304,7 +5710,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/hope ii.webp",
     artistLifespan: "1862-1916",
     slug: "hope-ii",
-    letter: "K"
+    letter: "K",
+    location: "Museum of Modern Art New York USA"
   },
   {
     name: "Judith I",
@@ -5316,6 +5723,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/judith i.webp",
     artistLifespan: "1862-1916",
     slug: "judith-i",
+    location: "Galerie Belvedere Vienna Austria",
     letter: "K",
     basePrice: 3985,
     options: [
@@ -5333,7 +5741,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/the dancer.webp",
     artistLifespan: "1862-1916",
     slug: "the-dancer",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "Music I",
@@ -5345,6 +5754,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/music i.webp",
     artistLifespan: "1862-1916",
     slug: "music-i",
+    location: "Neue Pinakothek Munich Germany",
     letter: "K",
     basePrice: 3635,
     options: [
@@ -5362,7 +5772,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/portrait of a young woman.webp",
     artistLifespan: "1862-1916",
     slug: "portrait-of-a-young-woman",
-    letter: "K"
+    letter: "K",
+    location: "Galleria d'arte moderna Piacenza Italy"
   },
   {
     name: "The Three Ages Of Women",
@@ -5374,7 +5785,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/the three ages of women.webp",
     artistLifespan: "1862-1916",
     slug: "the-three-ages-of-women",
-    letter: "K"
+    letter: "K",
+    location: "Galleria Nazionale d'Arte Moderna Rome Italy"
   },
   {
     name: "Water Serpents",
@@ -5386,7 +5798,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/water serpents.webp",
     artistLifespan: "1862-1916",
     slug: "water-serpents",
-    letter: "K"
+    letter: "K",
+    location: "Galerie Belvedere Vienna Austria"
   },
   {
     name: "Gold Fish",
@@ -5398,7 +5811,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/gold fish.webp",
     artistLifespan: "1862-1916",
     slug: "gold-fish",
-    letter: "K"
+    letter: "K",
+    location: "Dubi-Muller Foundation Solothurn Switzerland"
   },
   {
     name: "Danae",
@@ -5410,7 +5824,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/danae.webp",
     artistLifespan: "1862-1916",
     slug: "danae",
-    letter: "K"
+    letter: "K",
+    location: "Universalmuseum Joanneum Graz Austria"
   },
   {
     name: "Portrait Of Fritza Riedlar",
@@ -5422,7 +5837,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/portrait of fritza riedlar.webp",
     artistLifespan: "1862-1916",
     slug: "portrait-of-fritza-riedlar",
-    letter: "K"
+    letter: "K",
+    location: "Galerie Belvedere Vienna Austria"
   },
   {
     name: "Portrait of Eugeina Primavesi",
@@ -5434,7 +5850,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/portrait of eugeina primavesi.webp",
     artistLifespan: "1862-1916",
     slug: "portrait-of-eugeina-primavesi",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "Girl Friends",
@@ -5446,7 +5863,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/girl friends.webp",
     artistLifespan: "1862-1916",
     slug: "girl-friends",
-    letter: "K"
+    letter: "K",
+    location: "Destroyed by Fire at Immendorf Palace in 1945"
   },
   {
     name: "Shubert At The Piano",
@@ -5458,7 +5876,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/shubert at the piano.webp",
     artistLifespan: "1862-1916",
     slug: "shubert-at-the-piano",
-    letter: "K"
+    letter: "K",
+    location: "Destroyed by Fire at Immendorf Palace in 1945"
   },
   {
     name: "University Of Vienna Ceiling (Medicine) Detail Showing Hygiieia",
@@ -5470,6 +5889,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/university of vienna ceiling (medicine) detail showing hygiieia.webp",
     artistLifespan: "1862-1918",
     slug: "university-of-vienna-ceiling-medicine-detail-showing-hygiieia",
+    location: "Nuda Veritas",
     letter: "K"
   },
   {
@@ -5482,7 +5902,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/nuda veritas.webp",
     artistLifespan: "1862-1918",
     slug: "nuda-veritas",
-    letter: "K"
+    letter: "K",
+    location: "Theatre Collection of the National Librady Vienna Austria"
   },
   {
     name: "Ria Munk On Her Death Bed",
@@ -5494,7 +5915,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/ria munk on her death bed.webp",
     artistLifespan: "1862-1918",
     slug: "ria-munk-on-her-death-bed",
-    letter: "K"
+    letter: "K",
+    location: "Private Collectiom"
   },
   {
     name: "The Virgins",
@@ -5506,7 +5928,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/the virgins.webp",
     artistLifespan: "1862-1918",
     slug: "the-virgins",
-    letter: "K"
+    letter: "K",
+    location: "National Gallery Of Prague Czech Republic"
   },
   {
     name: "Lady With A Fan",
@@ -5518,7 +5941,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/lady with a fan.webp",
     artistLifespan: "1862-1918",
     slug: "lady-with-a-fan",
-    letter: "K"
+    letter: "K",
+    location: "Private Collectiom"
   },
   {
     name: "The Polecat Fur",
@@ -5530,7 +5954,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/the polecat fur.webp",
     artistLifespan: "1862-1918",
     slug: "the-polecat-fur",
-    letter: "K"
+    letter: "K",
+    location: "Private Collectiom"
   },
   {
     name: "Portrait Of Adele Bloch-Bauer II",
@@ -5542,7 +5967,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/portrait of adele bloch-bauer ii.webp",
     artistLifespan: "1862-1918",
     slug: "portrait-of-adele-bloch-bauer-ii",
-    letter: "K"
+    letter: "K",
+    location: "Galerie Belvedere Vienna Austria"
   },
   {
     name: "Lady With A Hat And Featherboa",
@@ -5554,7 +5980,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/lady with a hat and featherboa.webp",
     artistLifespan: "1862-1918",
     slug: "lady-with-a-hat-and-featherboa",
-    letter: "K"
+    letter: "K",
+    location: "Galerie Belvedere Vienna Austria"
   },
   {
     name: "Expectation",
@@ -5566,7 +5993,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/expectation.webp",
     artistLifespan: "1862-1918",
     slug: "expectation",
-    letter: "K"
+    letter: "K",
+    location: "MAK Museum Vienna Austria"
   },
   {
     name: "The Sunflower",
@@ -5578,7 +6006,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/the sunflower.webp",
     artistLifespan: "1862-1918",
     slug: "the-sunflower",
-    letter: "K"
+    letter: "K",
+    location: "Galerie Belvedere Vienna Austria"
   },
   {
     name: "Sir Christopher Wren",
@@ -5590,7 +6019,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/sir christopher wren.webp",
     artistLifespan: "1646-1723",
     slug: "sir-christopher-wren",
-    letter: "K"
+    letter: "K",
+    location: "National Portrait Gallery London UK"
   },
   {
     name: "Portrait Of Wolfang Amadeus Mozart",
@@ -5602,7 +6032,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/portrait of wolfang amadeus mozart.webp",
     artistLifespan: "1764-1825",
     slug: "portrait-of-wolfang-amadeus-mozart",
-    letter: "K"
+    letter: "K",
+    location: "Private Collectiom"
   },
   {
     name: "Hip Hip Hooray, Artist Festival At Skagen",
@@ -5614,7 +6045,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/hip hip hooray, artist festival at skagen.webp",
     artistLifespan: "1851-1909",
     slug: "hip-hip-hooray-artist-festival-at-skagen",
-    letter: "K"
+    letter: "K",
+    location: "Museum of Art Gothenburg Sweden"
   },
   // Letter L
   {
@@ -5627,7 +6059,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/a favorite greyhound of prince albert.webp",
     artistLifespan: "1802-1873",
     slug: "a-favorite-greyhound-of-prince-albert",
-    letter: "L"
+    letter: "L",
+    location: "The Royal Collection London UK"
   },
   {
     name: "There's No Place Like Home",
@@ -5639,7 +6072,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/there's no place like home.webp",
     artistLifespan: "1802-1873",
     slug: "theres-no-place-like-home",
-    letter: "L"
+    letter: "L",
+    location: "Victoria and Albert Museum London UK"
   },
   {
     name: "Monarch Of The Glen",
@@ -5651,7 +6085,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/monarch of the glen.webp",
     artistLifespan: "1802-1873",
     slug: "monarch-of-the-glen",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "The Gold Turban",
@@ -5663,7 +6098,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/the gold turban.webp",
     artistLifespan: "1856-1941",
     slug: "the-gold-turban",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "Hazel In Black And Gold",
@@ -5675,7 +6111,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/hazel in black and gold.webp",
     artistLifespan: "1856-1941",
     slug: "hazel-in-black-and-gold",
-    letter: "L"
+    letter: "L",
+    location: "Public Collection"
   },
   {
     name: "The Green Coat",
@@ -5687,7 +6124,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/the green coat.webp",
     artistLifespan: "1856-1941",
     slug: "the-green-coat",
-    letter: "L"
+    letter: "L",
+    location: "Public Collection"
   },
   {
     name: "Children In The Meadow",
@@ -5699,7 +6137,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/children in the meadow.webp",
     artistLifespan: "1865-1937",
     slug: "children-in-the-meadow",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "The Resting In Saint Tropez",
@@ -5711,7 +6150,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/the resting in saint tropez.webp",
     artistLifespan: "1865-1937",
     slug: "the-resting-in-saint-tropez",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "A Boat On The Marne",
@@ -5723,7 +6163,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/a boat on the marne.webp",
     artistLifespan: "1865-1937",
     slug: "a-boat-on-the-marne",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "The Japanese Bathrobe",
@@ -5735,7 +6176,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/the japanese bathrobe.webp",
     artistLifespan: "1865-1937",
     slug: "the-japanese-bathrobe",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "Nude Lying",
@@ -5747,7 +6189,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/nude lying.webp",
     artistLifespan: "1865-1937",
     slug: "nude-lying",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "Portrait Of Eugine-Louis-Napoleon Bonaparte",
@@ -5759,7 +6202,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/portrait of eugine-louis-napoleon bonaparte.webp",
     artistLifespan: "1836-1911",
     slug: "portrait-of-eugine-louis-napoleon-bonaparte",
-    letter: "L"
+    letter: "L",
+    location: "Museum of Palace of Versailles Paris France"
   },
   {
     name: "Mary Magdelene In The Cave",
@@ -5771,7 +6215,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/mary magdelene in the cave.webp",
     artistLifespan: "1836-1911",
     slug: "mary-magdelene-in-the-cave",
-    letter: "L"
+    letter: "L",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Portrait of Imperial Prince",
@@ -5783,7 +6228,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/portrait of imperial prince.webp",
     artistLifespan: "1836-1911",
     slug: "portrait-of-imperial-prince",
-    letter: "L"
+    letter: "L",
+    location: "National Museum of Chateau de Compiegne Compiegne France"
   },
   {
     name: "Oldasique",
@@ -5795,7 +6241,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/oldasique.webp",
     artistLifespan: "1836-1911",
     slug: "oldasique",
-    letter: "L"
+    letter: "L",
+    location: "Art Institute of Chicago Illinois USA"
   },
   {
     name: "The Grasshopper",
@@ -5807,7 +6254,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/the grasshopper.webp",
     artistLifespan: "1836-1911",
     slug: "the-grasshopper",
-    letter: "L"
+    letter: "L",
+    location: "National Gallery of Victoria Melbourne Australia"
   },
   {
     name: "Chloe",
@@ -5819,7 +6267,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/chloe.webp",
     artistLifespan: "1836-1911",
     slug: "chloe",
-    letter: "L"
+    letter: "L",
+    location: "Public Collection"
   },
   {
     name: "Flaming June",
@@ -5832,6 +6281,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/flaming june.webp",
     artistLifespan: "1830-1896",
     slug: "flaming-june",
+    location: "Museo de Arte Ponce",
     letter: "L",
     currency: "AED",
     options: [
@@ -5849,7 +6299,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/phoebe.webp",
     artistLifespan: "1830-1896",
     slug: "phoebe",
-    letter: "L"
+    letter: "L",
+    location: "Collection of Fred and Sherry Ross New Jersey USA"
   },
   {
     name: "Music Lesson",
@@ -5861,7 +6312,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/music lesson.webp",
     artistLifespan: "1830-1896",
     slug: "music-lesson",
-    letter: "L"
+    letter: "L",
+    location: "Guildhall Art Gallery London UK"
   },
   {
     name: "Hercules Wrestling With Death For The Body Of Alcestis",
@@ -5873,7 +6325,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/hercules wrestling with death for the body of alcestis.webp",
     artistLifespan: "1830-1896",
     slug: "hercules-wrestling-with-death-for-the-body-of-alcestis",
-    letter: "L"
+    letter: "L",
+    location: "Wadsworth Atheneum Hartford USA"
   },
   {
     name: "Mother And Child",
@@ -5885,7 +6338,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/mother and child.webp",
     artistLifespan: "1830-1896",
     slug: "mother-and-child",
-    letter: "L"
+    letter: "L",
+    location: "Blackburn Museum and Art Gallery Lancashire UK"
   },
   {
     name: "The Painters Honeymoon",
@@ -5909,7 +6363,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/wedded.webp",
     artistLifespan: "1830-1896",
     slug: "wedded",
-    letter: "L"
+    letter: "L",
+    location: "Art Gallery of New South Wales Sydney Australia"
   },
   {
     name: "Mrs James Guthrie",
@@ -5921,7 +6376,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/mrs james guthrie.webp",
     artistLifespan: "1830-1896",
     slug: "mrs-james-guthrie",
-    letter: "L"
+    letter: "L",
+    location: "Yale Center for British Art Connecticut USA"
   },
   {
     name: "The Roman Lady (La Nana)",
@@ -5933,7 +6389,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/the roman lady (la nana).webp",
     artistLifespan: "1830-1896",
     slug: "the-roman-lady-la-nana",
-    letter: "L"
+    letter: "L",
+    location: "Philadelphia Museum of Art Pennsylvania USA"
   },
   {
     name: "Pavonia",
@@ -5945,7 +6402,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/pavonia.webp",
     artistLifespan: "1830-1896",
     slug: "pavonia",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "The Fisherman And The Syren",
@@ -5957,7 +6415,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/the fisherman and the syren.webp",
     artistLifespan: "1830-1896",
     slug: "the-fisherman-and-the-syren",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "The Nymph Of The River",
@@ -5969,7 +6428,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/the nymph of the river.webp",
     artistLifespan: "1830-1896",
     slug: "the-nymph-of-the-river",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "Memories",
@@ -5981,7 +6441,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/memories.webp",
     artistLifespan: "1830-1896",
     slug: "memories",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "Gulnihal",
@@ -5993,7 +6454,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/gulnihal.webp",
     artistLifespan: "1830-1896",
     slug: "gulnihal",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "Solitude",
@@ -6005,7 +6467,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/solitude.webp",
     artistLifespan: "1830-1896",
     slug: "solitude",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "The Vestal",
@@ -6017,7 +6480,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/the vestal.webp",
     artistLifespan: "1830-1896",
     slug: "the-vestal",
-    letter: "L"
+    letter: "L",
+    location: "Private Collection"
   },
   {
     name: "Hhareem Life Constantinople",
@@ -6029,7 +6493,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/hhareem life constantinople.webp",
     artistLifespan: "1805-1876",
     slug: "hhareem-life-constantinople",
-    letter: "L"
+    letter: "L",
+    location: "Laing Art Gallery Newcastle-upon-Tyne UK"
   },
   {
     name: "The Son Of Man",
@@ -6041,7 +6506,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the son of man.webp",
     artistLifespan: "1898-1964",
     slug: "the-son-of-man",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "Man In A Bowler Hat",
@@ -6053,7 +6519,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/man in a bowler hat.webp",
     artistLifespan: "1898-1964",
     slug: "man-in-a-bowler-hat",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "The Gold Weigher",
@@ -6065,7 +6532,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the gold weigher.webp",
     artistLifespan: "1861-1706",
     slug: "the-gold-weigher",
-    letter: "M"
+    letter: "M",
+    location: "Otto Naumann Ltd. New York USA"
   },
   {
     name: "Olympia",
@@ -6077,7 +6545,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/olympia.webp",
     artistLifespan: "1832-1883",
     slug: "olympia",
-    letter: "M"
+    letter: "M",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Lunch On The Grass",
@@ -6089,7 +6558,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/lunch on the grass.webp",
     artistLifespan: "1868-69",
     slug: "lunch-on-the-grass",
-    letter: "M"
+    letter: "M",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "A Bar At The Folies-Begere",
@@ -6101,7 +6571,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/a bar at the folies-begere.webp",
     artistLifespan: "1868-69",
     slug: "a-bar-at-the-folies-begere",
-    letter: "M"
+    letter: "M",
+    location: "Courtauld Institute of Art London UK"
   },
   {
     name: "The Balcony",
@@ -6113,7 +6584,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the balcony.webp",
     artistLifespan: "1868-69",
     slug: "the-balcony",
-    letter: "M"
+    letter: "M",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "The Vieux Musician",
@@ -6125,7 +6597,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the vieux musician.webp",
     artistLifespan: "1868-69",
     slug: "the-vieux-musician",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "Oysters",
@@ -6137,7 +6610,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/oysters.webp",
     artistLifespan: "1868-69",
     slug: "oysters",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "Still Life With Melon And Peaches",
@@ -6161,7 +6635,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/plum brandy.webp",
     artistLifespan: "1868-69",
     slug: "plum-brandy",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "Masked Ball At The Opera",
@@ -6173,7 +6648,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/masked ball at the opera.webp",
     artistLifespan: "1868-69",
     slug: "masked-ball-at-the-opera",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "The Luncheon At The Studio",
@@ -6185,7 +6661,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the luncheon at the studio.webp",
     artistLifespan: "1868-69",
     slug: "the-luncheon-at-the-studio",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "The House At Rueil",
@@ -6197,7 +6674,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the house at rueil.webp",
     artistLifespan: "1868-69",
     slug: "the-house-at-rueil",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "The Garden Of Pere Lathuille",
@@ -6209,7 +6687,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the garden of pere lathuille.webp",
     artistLifespan: "1868-69",
     slug: "the-garden-of-pere-lathuille",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "The Woman In The Garden",
@@ -6221,7 +6700,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the woman in the garden.webp",
     artistLifespan: "1868-69",
     slug: "the-woman-in-the-garden",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "Boating",
@@ -6233,7 +6713,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/boating.webp",
     artistLifespan: "1868-69",
     slug: "boating",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "The Monet Family In Their Garden At Argenteuil",
@@ -6245,7 +6726,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the monet family in their garden at argenteuil.webp",
     artistLifespan: "1868-69",
     slug: "the-monet-family-in-their-garden-at-argenteuil",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "The Grand Canal Venice",
@@ -6257,7 +6739,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the grand canal venice.webp",
     artistLifespan: "1868-69",
     slug: "the-grand-canal-venice",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "The Grand Canal (Blue Venice)",
@@ -6269,7 +6752,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the grand canal (blue venice).webp",
     artistLifespan: "1868-69",
     slug: "the-grand-canal-blue-venice",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "The Brioche",
@@ -6281,7 +6765,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the brioche.webp",
     artistLifespan: "1868-69",
     slug: "the-brioche",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "Skating",
@@ -6293,7 +6778,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/skating.webp",
     artistLifespan: "1868-69",
     slug: "skating",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "A Parisian Lady",
@@ -6305,7 +6791,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/a parisian lady.webp",
     artistLifespan: "1868-69",
     slug: "a-parisian-lady",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "Stanczyk",
@@ -6317,7 +6804,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/stanczyk.webp",
     artistLifespan: "1838-1893",
     slug: "stanczyk",
-    letter: "M"
+    letter: "M",
+    location: "National Museum Warsaw Poland"
   },
   {
     name: "The Dance",
@@ -6329,7 +6817,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the dance.webp",
     artistLifespan: "1869-1954",
     slug: "the-dance",
-    letter: "M"
+    letter: "M",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "The Red Room, Harmony In Red",
@@ -6341,7 +6830,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the red room, harmony in red.webp",
     artistLifespan: "1869-1954",
     slug: "the-red-room-harmony-in-red",
-    letter: "M"
+    letter: "M",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Goldfish",
@@ -6353,7 +6843,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/goldfish.webp",
     artistLifespan: "1869-1954",
     slug: "goldfish",
-    letter: "M"
+    letter: "M",
+    location: "Pushkin Museum of Fine Arts Moscow Russia"
   },
   {
     name: "Open Window Colloure",
@@ -6365,7 +6856,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/open window colloure.webp",
     artistLifespan: "1869-1954",
     slug: "open-window-colloure",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery of Art Washington USA"
   },
   {
     name: "Interior With Phonograph",
@@ -6377,7 +6869,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/interior with phonograph.webp",
     artistLifespan: "1869-1954",
     slug: "interior-with-phonograph",
-    letter: "M"
+    letter: "M",
+    location: "Pinacoteca Agnelli Torino Italy"
   },
   {
     name: "Arabian Coffee House",
@@ -6389,7 +6882,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/arabian coffee house.webp",
     artistLifespan: "1869-1954",
     slug: "arabian-coffee-house",
-    letter: "M"
+    letter: "M",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Pink Statuette On The Red Chest",
@@ -6401,7 +6895,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/pink statuette on the red chest.webp",
     artistLifespan: "1869-1954",
     slug: "pink-statuette-on-the-red-chest",
-    letter: "M"
+    letter: "M",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Spanish Still Life",
@@ -6413,7 +6908,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/spanish still life.webp",
     artistLifespan: "1869-1954",
     slug: "spanish-still-life",
-    letter: "M"
+    letter: "M",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Still Life Of Fruit and Bronze Statue",
@@ -6425,7 +6921,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/still life of fruit and bronze statue.webp",
     artistLifespan: "1869-1954",
     slug: "still-life-of-fruit-and-bronze-statue",
-    letter: "M"
+    letter: "M",
+    location: "Pushkin Museum of Fine Arts Moscow Russia"
   },
   {
     name: "Music",
@@ -6437,7 +6934,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/music.webp",
     artistLifespan: "1869-1954",
     slug: "music",
-    letter: "M"
+    letter: "M",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "A Game Of Bowls",
@@ -6449,7 +6947,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/a game of bowls.webp",
     artistLifespan: "1869-1954",
     slug: "a-game-of-bowls",
-    letter: "M"
+    letter: "M",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Woman In Purple Coat Print",
@@ -6461,7 +6960,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/woman in purple coat print.webp",
     artistLifespan: "1869-1954",
     slug: "woman-in-purple-coat-print",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Fine Arts Houston Texas USA"
   },
   {
     name: "The Joy Of Life",
@@ -6473,7 +6973,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the joy of life.webp",
     artistLifespan: "1869-1954",
     slug: "the-joy-of-life",
-    letter: "M"
+    letter: "M",
+    location: "The Barnes Foundation Philadelphia"
   },
   {
     name: "Still Life With Blue Tablecloth",
@@ -6485,7 +6986,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/still life with blue tablecloth.webp",
     artistLifespan: "1869-1954",
     slug: "still-life-with-blue-tablecloth",
-    letter: "M"
+    letter: "M",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Nymph and Satyr",
@@ -6497,7 +6999,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/nymph and satyr.webp",
     artistLifespan: "1869-1954",
     slug: "nymph-and-satyr",
-    letter: "M"
+    letter: "M",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Landscape Viewed From A Window",
@@ -6509,7 +7012,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/landscape viewed from a window.webp",
     artistLifespan: "1869-1954",
     slug: "landscape-viewed-from-a-window",
-    letter: "M"
+    letter: "M",
+    location: "Pushkin Museum of Fine Arts Moscow Russia"
   },
   {
     name: "Lady In Green With A Red Carnation",
@@ -6521,7 +7025,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/lady in green with a red carnation.webp",
     artistLifespan: "1869-1954",
     slug: "lady-in-green-with-a-red-carnation",
-    letter: "M"
+    letter: "M",
+    location: "The State Hermitage Museum St. Petersburg Russia"
   },
   {
     name: "Woman With A Hat",
@@ -6533,7 +7038,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/woman with a hat.webp",
     artistLifespan: "1869-1954",
     slug: "woman-with-a-hat",
-    letter: "M"
+    letter: "M",
+    location: "San Francisco Museum of Modern Art California USA"
   },
   {
     name: "The Window",
@@ -6545,7 +7051,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the window.webp",
     artistLifespan: "1869-1954",
     slug: "the-window",
-    letter: "M"
+    letter: "M",
+    location: "Detroit Institute Of Arts Michigan USA"
   },
   {
     name: "Nude In The Studio",
@@ -6557,7 +7064,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/nude in the studio.webp",
     artistLifespan: "1869-1954",
     slug: "nude-in-the-studio",
-    letter: "M"
+    letter: "M",
+    location: "Artizon Museum Tokyo Japan"
   },
   {
     name: "The Green Line",
@@ -6569,7 +7077,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the green line.webp",
     artistLifespan: "1869-1954",
     slug: "the-green-line",
-    letter: "M"
+    letter: "M",
+    location: "Statens Museum For Kunst Denmark"
   },
   {
     name: "Corner Of The Artists Studio",
@@ -6581,7 +7090,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/corner of the artists studio.webp",
     artistLifespan: "1869-1954",
     slug: "corner-of-the-artists-studio",
-    letter: "M"
+    letter: "M",
+    location: "Pushkin Museum of Fine Arts Moscow Russia"
   },
   {
     name: "La Gerbe",
@@ -6593,7 +7103,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/la gerbe.webp",
     artistLifespan: "1869-1954",
     slug: "la-gerbe",
-    letter: "M"
+    letter: "M",
+    location: "Los Angeles County `museum Of Art LA USA"
   },
   {
     name: "Countryside At Collioure",
@@ -6605,7 +7116,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/countryside at collioure.webp",
     artistLifespan: "1869-1954",
     slug: "countryside-at-collioure",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Modern Art New York City"
   },
   {
     name: "The Gulf Of St Tropez",
@@ -6617,7 +7129,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the gulf of st tropez.webp",
     artistLifespan: "1869-1954",
     slug: "the-gulf-of-st-tropez",
-    letter: "M"
+    letter: "M",
+    location: "Musee De L'Annonciade Saint Tropez France"
   },
   {
     name: "Still Life With Aubergines",
@@ -6629,7 +7142,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/still life with aubergines.webp",
     artistLifespan: "1869-1954",
     slug: "still-life-with-aubergines",
-    letter: "M"
+    letter: "M",
+    location: "Musee De Grenoble"
   },
   {
     name: "Woman At The Window",
@@ -6641,7 +7155,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/woman at the window.webp",
     artistLifespan: "1869-1954",
     slug: "woman-at-the-window",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Modern Art New York City USA"
   },
   {
     name: "The Creation Of Adam",
@@ -6653,7 +7168,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the creation of adam.webp",
     artistLifespan: "1475-1564",
     slug: "the-creation-of-adam",
-    letter: "M"
+    letter: "M",
+    location: "Sistine Chapel, Vatican"
   },
   {
     name: "The Holy Family Of St John",
@@ -6665,7 +7181,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the holy family of st john.webp",
     artistLifespan: "1475-1564",
     slug: "the-holy-family-of-st-john",
-    letter: "M"
+    letter: "M",
+    location: "Uffizi Gallery, Florence, Italy"
   },
   {
     name: "Adam And Eve",
@@ -6677,7 +7194,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/adam and eve.webp",
     artistLifespan: "1475-1564",
     slug: "adam-and-eve",
-    letter: "M"
+    letter: "M",
+    location: "Sistine Chapel Paintings"
   },
   {
     name: "The Last Judgement",
@@ -6689,7 +7207,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the last judgement.webp",
     artistLifespan: "1475-1564",
     slug: "the-last-judgement",
-    letter: "M"
+    letter: "M",
+    location: "Sistine Chapel Paintings"
   },
   {
     name: "The Torment Of Saint Anthony",
@@ -6701,7 +7220,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the torment of saint anthony.webp",
     artistLifespan: "1475-1564",
     slug: "the-torment-of-saint-anthony",
-    letter: "M"
+    letter: "M",
+    location: "Kimbell Art Museum, Fort Worth, TX, US"
   },
   {
     name: "Woman With Blue Eyes",
@@ -6713,7 +7233,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/woman with blue eyes.webp",
     artistLifespan: "1884-1920",
     slug: "woman-with-blue-eyes",
-    letter: "M"
+    letter: "M",
+    location: "Museum De L'Orangie Paris France"
   },
   {
     name: "Red Nude On A Cushion",
@@ -6725,7 +7246,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/red nude on a cushion.webp",
     artistLifespan: "1884-1920",
     slug: "red-nude-on-a-cushion",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington USA"
   },
   {
     name: "Portrait Of Diego Rivera",
@@ -6737,7 +7259,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/portrait of diego rivera.webp",
     artistLifespan: "1884-1920",
     slug: "portrait-of-diego-rivera",
-    letter: "M"
+    letter: "M",
+    location: "Kunstsammiung Nordrhein-Westfalen Dussledorf Germany"
   },
   {
     name: "Le Grand Nu",
@@ -6749,7 +7272,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/le grand nu.webp",
     artistLifespan: "1884-1920",
     slug: "le-grand-nu",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Modern Art New York City USA"
   },
   {
     name: "Composition With Red Yellow Green",
@@ -6761,7 +7285,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/composition with red yellow green.webp",
     artistLifespan: "1872-1944",
     slug: "composition-with-red-yellow-green",
-    letter: "M"
+    letter: "M",
+    location: "National Museum Belgrade Serbia"
   },
   {
     name: "Blossoming Apple Trees",
@@ -6785,7 +7310,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/composition with large red yellow plane, yellow, black grey and blue.webp",
     artistLifespan: "1872-1944",
     slug: "composition-with-large-red-yellow-plane-yellow-black-grey-and-blue",
-    letter: "M"
+    letter: "M",
+    location: "Haags Gemeentemuseum The Hague Netherlands"
   },
   {
     name: "Composition No IV",
@@ -6797,7 +7323,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/composition no iv.webp",
     artistLifespan: "1872-1944",
     slug: "composition-no-iv",
-    letter: "M"
+    letter: "M",
+    location: "Haags Gemeentemuseum The Hague Netherlands"
   },
   {
     name: "Trafalgar Square",
@@ -6809,7 +7336,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/trafalgar square.webp",
     artistLifespan: "1872-1944",
     slug: "trafalgar-square",
-    letter: "M"
+    letter: "M",
+    location: "Museum of Modern Art New York USA"
   },
   {
     name: "Composition In Black And White",
@@ -6821,7 +7349,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/composition in black and white.webp",
     artistLifespan: "1872-1944",
     slug: "composition-in-black-and-white",
-    letter: "M"
+    letter: "M",
+    location: "Kroller-Mueller Museum Otterlo Netherlands"
   },
   {
     name: "Composition No II",
@@ -6833,7 +7362,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/composition no ii.webp",
     artistLifespan: "1872-1944",
     slug: "composition-no-ii",
-    letter: "M"
+    letter: "M",
+    location: "Kroller-Mueller Museum Otterlo Netherlands"
   },
   {
     name: "Tableau No I",
@@ -6845,7 +7375,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/tableau no i.webp",
     artistLifespan: "1872-1944",
     slug: "tableau-no-i",
-    letter: "M"
+    letter: "M",
+    location: "Kroller-Mueller Museum Otterlo Netherlands"
   },
   {
     name: "Composition Red, Yellow and Blue",
@@ -6869,7 +7400,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/composition of red and white.webp",
     artistLifespan: "1872-1944",
     slug: "composition-of-red-and-white",
-    letter: "M"
+    letter: "M",
+    location: "Saint Louis Art Museum Missouri USA"
   },
   {
     name: "Water Lilies",
@@ -6881,6 +7413,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/water lilies.webp",
     artistLifespan: "1840-1926",
     slug: "water-lilies-1906",
+    location: "Museum Of Fine Arts Boston",
     letter: "M",
     basePrice: 4800,
     options: [
@@ -6898,6 +7431,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/grand canal.webp",
     artistLifespan: "1840-1926",
     slug: "grand-canal",
+    location: "Boston Museum of Fine Arts Massachusetts USA",
     letter: "M",
     basePrice: 4100,
     options: [
@@ -6915,7 +7449,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the japanese bridge, pond with water lilies.webp",
     artistLifespan: "1840-1926",
     slug: "the-japanese-bridge-pond-with-water-lilies",
-    letter: "M"
+    letter: "M",
+    location: "Art Institute Of Chicago USA"
   },
   {
     name: "Hay Stacks, Sun In The Mist",
@@ -6927,7 +7462,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/hay stacks, sun in the mist.webp",
     artistLifespan: "1840-1926",
     slug: "hay-stacks-sun-in-the-mist",
-    letter: "M"
+    letter: "M",
+    location: "Minneapolis Institute Of Art USA"
   },
   {
     name: "The Hunt",
@@ -6939,7 +7475,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the hunt.webp",
     artistLifespan: "1840-1926",
     slug: "the-hunt",
-    letter: "M"
+    letter: "M",
+    location: "Musee D'Orsay Paris France"
   },
   {
     name: "The Houses Of Parliament Sunset",
@@ -6951,7 +7488,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the houses of parliament sunset.webp",
     artistLifespan: "1840-1926",
     slug: "the-houses-of-parliament-sunset",
-    letter: "M"
+    letter: "M",
+    location: "Gallery Of Art Washington DC USA"
   },
   {
     name: "Near Monte Carlo",
@@ -6963,7 +7501,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/near monte carlo.webp",
     artistLifespan: "1840-1926",
     slug: "near-monte-carlo",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "The Water Lily Pond",
@@ -6975,7 +7514,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the water lily pond.webp",
     artistLifespan: "1840-1926",
     slug: "the-water-lily-pond",
-    letter: "M"
+    letter: "M",
+    location: "Denver Art Museum Denver Colorado"
   },
   {
     name: "Water Lilies",
@@ -6987,7 +7527,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/water lilies (1).webp",
     artistLifespan: "1840-1926",
     slug: "water-lilies-1905",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Fine Arts Boston"
   },
   {
     name: "Water Lilies",
@@ -6999,7 +7540,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/water lilies (2).webp",
     artistLifespan: "1840-1926",
     slug: "water-lilies-1908",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Fine Arts Boston"
   },
   {
     name: "Water Lilies",
@@ -7011,7 +7553,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/water lilies (3).webp",
     artistLifespan: "1840-1926",
     slug: "water-lilies-1907",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Fine Arts Boston"
   },
   {
     name: "Water Lilies",
@@ -7023,7 +7566,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/water lilies (4).webp",
     artistLifespan: "1840-1926",
     slug: "water-lilies-1905-2",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Fine Arts Boston"
   },
   {
     name: "Waterloo Bridge Gray Day",
@@ -7035,7 +7579,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/waterloo bridge gray day.webp",
     artistLifespan: "1840-1926",
     slug: "waterloo-bridge-gray-day",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington DC"
   },
   {
     name: "Palazza Da Mula Venice",
@@ -7047,7 +7592,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/palazza da mula venice.webp",
     artistLifespan: "1840-1926",
     slug: "palazza-da-mula-venice",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington DC"
   },
   {
     name: "The Seine In Giverny",
@@ -7059,7 +7605,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the seine in giverny.webp",
     artistLifespan: "1840-1926",
     slug: "the-seine-in-giverny",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington DC"
   },
   {
     name: "Poplars On The Epte",
@@ -7071,7 +7618,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/poplars on the epte.webp",
     artistLifespan: "1840-1926",
     slug: "poplars-on-the-epte",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery London UK"
   },
   {
     name: "Haystack At Sunset",
@@ -7083,7 +7631,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/haystack at sunset.webp",
     artistLifespan: "1840-1926",
     slug: "haystack-at-sunset",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Fine Arts Boston USA"
   },
   {
     name: "Haystacks In The Sunlight Midday",
@@ -7095,7 +7644,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/haystacks in the sunlight midday.webp",
     artistLifespan: "1840-1926",
     slug: "haystacks-in-the-sunlight-midday",
-    letter: "M"
+    letter: "M",
+    location: "Geelong Gallery Victoria Australia"
   },
   {
     name: "Rocks At Port-Goulphar Belle-lle",
@@ -7119,7 +7669,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/houses of parliament.webp",
     artistLifespan: "1840-1926",
     slug: "houses-of-parliament",
-    letter: "M"
+    letter: "M",
+    location: "Musee D'Orsay Paris France"
   },
   {
     name: "Jar Of Peaches",
@@ -7131,7 +7682,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/jar of peaches.webp",
     artistLifespan: "1840-1926",
     slug: "jar-of-peaches",
-    letter: "M"
+    letter: "M",
+    location: "Galerie Neue Meister Dresden Germany"
   },
   {
     name: "The Rue Montorgueil Paris",
@@ -7143,7 +7695,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the rue montorgueil paris.webp",
     artistLifespan: "1840-1926",
     slug: "the-rue-montorgueil-paris",
-    letter: "M"
+    letter: "M",
+    location: "Musee D'Orsay Paris France"
   },
   {
     name: "The Galettes",
@@ -7155,7 +7708,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the galettes.webp",
     artistLifespan: "1840-1926",
     slug: "the-galettes",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "Women In The Garden",
@@ -7167,7 +7721,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/women in the garden.webp",
     artistLifespan: "1840-1926",
     slug: "women-in-the-garden",
-    letter: "M"
+    letter: "M",
+    location: "Musee D'Orsay Paris France"
   },
   {
     name: "Irises In Monet's Garden",
@@ -7179,7 +7734,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/irises in monet's garden.webp",
     artistLifespan: "1840-1926",
     slug: "irises-in-monets-garden",
-    letter: "M"
+    letter: "M",
+    location: "Musee D'Orsay Paris France"
   },
   {
     name: "Fishing Boats Calm Sea",
@@ -7191,7 +7747,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/fishing boats calm sea.webp",
     artistLifespan: "1840-1926",
     slug: "fishing-boats-calm-sea",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "The Turkeys",
@@ -7203,7 +7760,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the turkeys.webp",
     artistLifespan: "1840-1926",
     slug: "the-turkeys",
-    letter: "M"
+    letter: "M",
+    location: "Musee D'Orsay Paris France"
   },
   {
     name: "The Rue Montorgueil",
@@ -7215,6 +7773,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the rue montorgueil.webp",
     artistLifespan: "1840-1926",
     slug: "the-rue-montorgueil",
+    location: "Artizon Museum Tokyo Japan",
     letter: "M"
   },
   {
@@ -7227,7 +7786,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/gladiolus.webp",
     artistLifespan: "1840-1926",
     slug: "gladiolus",
-    letter: "M"
+    letter: "M",
+    location: "Pola Museum Of Art Japan"
   },
   {
     name: "Clifftop Walk At Porville",
@@ -7239,7 +7799,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/clifftop walk at porville.webp",
     artistLifespan: "1840-1926",
     slug: "clifftop-walk-at-porville",
-    letter: "M"
+    letter: "M",
+    location: "The Art Institute Of Chicago"
   },
   {
     name: "Christmas Roses",
@@ -7251,7 +7812,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/christmas roses.webp",
     artistLifespan: "1840-1926",
     slug: "christmas-roses",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "Landscape By Montecarlo",
@@ -7263,7 +7825,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/landscape by montecarlo.webp",
     artistLifespan: "1840-1926",
     slug: "landscape-by-montecarlo",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "Branch Of Orange Bearing Fruit",
@@ -7275,7 +7838,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/branch of orange bearing fruit.webp",
     artistLifespan: "1840-1926",
     slug: "branch-of-orange-bearing-fruit",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Fine Arts Houston Texas USA"
   },
   {
     name: "The Pink Skiff",
@@ -7287,7 +7851,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the pink skiff.webp",
     artistLifespan: "1840-1926",
     slug: "the-pink-skiff",
-    letter: "M"
+    letter: "M",
+    location: "Artizon Museum Tokyo Japan"
   },
   {
     name: "Rouen Cathedreal",
@@ -7299,7 +7864,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/rouen cathedreal.webp",
     artistLifespan: "1840-1926",
     slug: "rouen-cathedreal",
-    letter: "M"
+    letter: "M",
+    location: "Musee D'Orsay Paris France"
   },
   {
     name: "Dandelions",
@@ -7311,7 +7877,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/dandelions.webp",
     artistLifespan: "1840-1926",
     slug: "dandelions",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "Camille Known As The Woman In The Green Dress",
@@ -7323,7 +7890,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/camille known as the woman in the green dress.webp",
     artistLifespan: "1840-1926",
     slug: "camille-known-as-the-woman-in-the-green-dress",
-    letter: "M"
+    letter: "M",
+    location: "Kunsthalle Bremen Germany"
   },
   {
     name: "Path Through Ther Forest Snow Effect",
@@ -7335,7 +7903,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/path through ther forest snow effect.webp",
     artistLifespan: "1840-1926",
     slug: "path-through-ther-forest-snow-effect",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "The Seine At Argenteuil",
@@ -7347,7 +7916,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the seine at argenteuil.webp",
     artistLifespan: "1840-1926",
     slug: "the-seine-at-argenteuil",
-    letter: "M"
+    letter: "M",
+    location: "RISD Museum Providence Rhode Island USA"
   },
   {
     name: "House Of Parliament Sun",
@@ -7359,7 +7929,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/house of parliament sun.webp",
     artistLifespan: "1840-1926",
     slug: "house-of-parliament-sun",
-    letter: "M"
+    letter: "M",
+    location: "Brooklyn Museum New York USA"
   },
   {
     name: "Japan's (Camile's Monet In Japanese Costume)",
@@ -7371,7 +7942,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/japan's (camile's monet in japanese costume).webp",
     artistLifespan: "1840-1926",
     slug: "japans-camiles-monet-in-japanese-costume",
-    letter: "M"
+    letter: "M",
+    location: "Museum Of Fine Ats Boston USA"
   },
   {
     name: "Peaches",
@@ -7383,7 +7955,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/peaches.webp",
     artistLifespan: "1840-1926",
     slug: "peaches",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "A Stream Through The Glen, Deer In The Distance",
@@ -7395,7 +7968,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/a stream through the glen, deer in the distance.webp",
     artistLifespan: "18040-1926",
     slug: "a-stream-through-the-glen-deer-in-the-distance",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "The Left Arm Of The Seineln Front Of The Place Dauphine",
@@ -7419,7 +7993,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/dieppe.webp",
     artistLifespan: "1865-1924",
     slug: "dieppe",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery of Art Ottawa Canada"
   },
   {
     name: "A Street In The Suburbs Of Havana",
@@ -7431,7 +8006,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/a street in the suburbs of havana.webp",
     artistLifespan: "1865-1924",
     slug: "a-street-in-the-suburbs-of-havana",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery of Art Ottawa Canada"
   },
   {
     name: "Landscape Trinidad",
@@ -7455,7 +8031,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/cafe pasaje havana.webp",
     artistLifespan: "1865-1924",
     slug: "cafe-pasaje-havana",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery of Art Ottawa Canada"
   },
   {
     name: "Woman In Red Bathrobe",
@@ -7467,7 +8044,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/woman in red bathrobe.webp",
     artistLifespan: "1865-1924",
     slug: "woman-in-red-bathrobe",
-    letter: "M"
+    letter: "M",
+    location: "Musee des Beaux-Arts de Montreal Quebec Canada"
   },
   {
     name: "House In Santiago",
@@ -7479,7 +8057,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/house in santiago.webp",
     artistLifespan: "1865-1924",
     slug: "house-in-santiago",
-    letter: "M"
+    letter: "M",
+    location: "Tate Gallery London UK"
   },
   {
     name: "Sailing Boats",
@@ -7491,7 +8070,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/sailing boats.webp",
     artistLifespan: "1865-1924",
     slug: "sailing-boats",
-    letter: "M"
+    letter: "M",
+    location: "Private Collection"
   },
   {
     name: "The Banjo Player",
@@ -7503,7 +8083,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the banjo player.webp",
     artistLifespan: "1807-1868",
     slug: "the-banjo-player",
-    letter: "M"
+    letter: "M",
+    location: "The Long Island Museum of American Art New York USA"
   },
   {
     name: "The Bone Player",
@@ -7515,7 +8096,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the bone player.webp",
     artistLifespan: "1807-1868",
     slug: "the-bone-player",
-    letter: "M"
+    letter: "M",
+    location: "Boston Museum of Fine Arts Massachusetts USA"
   },
   {
     name: "The Scream",
@@ -7527,6 +8109,7 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the scream.webp",
     artistLifespan: "1863-1944",
     slug: "the-scream",
+    location: "Nasjonalgalleriet Oslo Norway",
     letter: "M",
     options: [
       { id: "size-1", width: 91, height: 68, price: 2485, label: "91 x 68 cm" },
@@ -7544,7 +8127,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/death in the sick room.webp",
     artistLifespan: "1863-1944",
     slug: "death-in-the-sick-room",
-    letter: "M"
+    letter: "M",
+    location: "Munch Museum, Oslo, Norway"
   },
   {
     name: "Anxiety",
@@ -7556,7 +8140,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/anxiety.webp",
     artistLifespan: "1863-1944",
     slug: "anxiety",
-    letter: "M"
+    letter: "M",
+    location: "Munch Museum, Oslo, Norway"
   },
   {
     name: "Kiss",
@@ -7568,7 +8153,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/kiss.webp",
     artistLifespan: "1863-1944",
     slug: "kiss",
-    letter: "M"
+    letter: "M",
+    location: "Munch Museum, Oslo, Norway"
   },
 ];
 

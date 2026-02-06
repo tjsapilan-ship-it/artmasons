@@ -12,6 +12,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/n/the palazzo contarini.webp",
     artistLifespan: "1807-1878",
     slug: "the-palazzo-contarini",
+    location: "Private Collection",
     letter: "N"
   },
   {
@@ -24,6 +25,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/n/the house of desdemona.webp",
     artistLifespan: "1807-1878",
     slug: "the-house-of-desdemona",
+    location: "Private Collection",
     letter: "N"
   },
   {
@@ -36,6 +38,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/n/tunnel in possilipo naples.webp",
     artistLifespan: "1807-1878",
     slug: "tunnel-in-possilipo-naples",
+    location: "Private Collection",
     letter: "N"
   },
   {
@@ -48,6 +51,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/n/view of terracina and monte circeo.webp",
     artistLifespan: "1807-1878",
     slug: "view-of-terracina-and-monte-circeo",
+    location: "Hamburger Kunsthalle Hamburg Germany",
     letter: "N"
   },
 
@@ -62,6 +66,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/a cloudy day, bluebonnets near san antonio, texas.webp",
     artistLifespan: "1882-1922",
     slug: "a-cloudy-day-bluebonnets-near-san-antonio-texas",
+    location: "Amon Carter Museum Texas USA",
     letter: "O"
   },
   {
@@ -74,6 +79,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/october sunlight.webp",
     artistLifespan: "1882-1922",
     slug: "october-sunlight",
+    location: "allas Museum of Art Texas USA",
     letter: "O"
   },
   {
@@ -98,6 +104,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/near san antonio.webp",
     artistLifespan: "1882-1922",
     slug: "near-san-antonio",
+    location: "Amon Carter Museum Texas USA",
     letter: "O"
   },
   {
@@ -110,6 +117,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/david bearing the head of goliath.webp",
     artistLifespan: "1601-1671",
     slug: "david-bearing-the-head-of-goliath",
+    location: "The State Hermitage Museum St. Petersburg Russia",
     letter: "O"
   },
   {
@@ -122,6 +130,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/old woman praying.webp",
     artistLifespan: "1601-1671",
     slug: "old-woman-praying",
+    location: "Hamburger Kunsthalle Hamburg Germany",
     letter: "O"
   },
   {
@@ -134,6 +143,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/female martyr.webp",
     artistLifespan: "1601-1671",
     slug: "female-martyr",
+    location: "Groeninge Museum Bruges Belgium",
     letter: "O"
   },
   {
@@ -146,6 +156,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/saint anthony raising man from the dead.webp",
     artistLifespan: "1601-1671",
     slug: "saint-anthony-raising-man-from-the-dead",
+    location: "�",
     letter: "O"
   },
   {
@@ -182,6 +193,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/italia and germania.webp",
     artistLifespan: "1789-1869",
     slug: "italia-and-germania",
+    location: "Neue Pinakothek Munich Germany",
     letter: "O"
   },
   {
@@ -194,6 +206,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/the marriage of the virgin.webp",
     artistLifespan: "1789-1869",
     slug: "the-marriage-of-the-virgin",
+    location: "The National Museum Poznan Poland",
     letter: "O"
   },
   {
@@ -206,6 +219,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/vittoria caldoni.webp",
     artistLifespan: "1789-1869",
     slug: "vittoria-caldoni",
+    location: "Neue Pinakothek Munich Germany",
     letter: "O"
   },
   {
@@ -218,6 +232,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/o/the raising of lazarus.webp",
     artistLifespan: "1789-1869",
     slug: "the-raising-of-lazarus",
+    location: "Museum for Art and Culture Lubeck Germany",
     letter: "O"
   },
 
@@ -232,6 +247,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/hesperus, the evening star, sacred to lovers.webp",
     artistLifespan: "1821-1901",
     slug: "hesperus-the-evening-star-sacred-to-lovers",
+    location: "Art Gallery and Museum Glasgow UK",
     letter: "P"
   },
   {
@@ -244,6 +260,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/dantes dream from the divine comedy.webp",
     artistLifespan: "1821-1901",
     slug: "dantes-dream-from-the-divine-comedy",
+    location: "Bury Art Gallery and Museum Lancashire UK",
     letter: "P"
   },
   {
@@ -256,6 +273,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/how an angel rowed sir galahad across dern mere.webp",
     artistLifespan: "1821-1901",
     slug: "how-an-angel-rowed-sir-galahad-across-dern-mere",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -268,6 +286,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/puck and fairies from mid-summer's night dream.webp",
     artistLifespan: "1821-1901",
     slug: "puck-and-fairies-from-mid-summers-night-dream",
+    location: "Yale Center for British Art Connecticut USA",
     letter: "P"
   },
   {
@@ -280,6 +299,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/south rim grand canyon.webp",
     artistLifespan: "1882-1947",
     slug: "south-rim-grand-canyon",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -292,6 +312,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/monument valley riverbed.webp",
     artistLifespan: "1882-1947",
     slug: "monument-valley-riverbed",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -304,6 +325,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the sierra divide.webp",
     artistLifespan: "1882-1947",
     slug: "the-sierra-divide",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -316,6 +338,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/high surf along the laguna coast.webp",
     artistLifespan: "1882-1947",
     slug: "high-surf-along-the-laguna-coast",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -328,6 +351,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/apples.webp",
     artistLifespan: "1878-1939",
     slug: "apples",
+    location: "State Russian Museum St. Petersburg Russia",
     letter: "P"
   },
   {
@@ -340,6 +364,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/still life with a violin.webp",
     artistLifespan: "1878-1939",
     slug: "still-life-with-a-violin",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -352,6 +377,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/spring.webp",
     artistLifespan: "1878-1939",
     slug: "spring",
+    location: "State Russian Museum St. Petersburg Russia",
     letter: "P"
   },
   {
@@ -364,6 +390,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the worker.webp",
     artistLifespan: "1878-1939",
     slug: "the-worker",
+    location: "Public Colllection",
     letter: "P"
   },
   {
@@ -376,6 +403,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/crouching woman (jacqueline).webp",
     artistLifespan: "1881-1973",
     slug: "crouching-woman-jacqueline",
+    location: "Art Gallery Of Ontario Canada",
     letter: "P",
     basePrice: 2200,
     options: [
@@ -393,6 +421,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/a blue acrobat.webp",
     artistLifespan: "1881-1973",
     slug: "a-blue-acrobat",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -405,6 +434,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/a hat with flowers.webp",
     artistLifespan: "1881-1973",
     slug: "a-hat-with-flowers",
+    location: "Musee National D'Arte Moderne Paris France",
     letter: "P"
   },
   {
@@ -417,6 +447,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/great still on pedastal.webp",
     artistLifespan: "1881-1973",
     slug: "great-still-on-pedastal",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -429,6 +460,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/a rooster.webp",
     artistLifespan: "1881-1973",
     slug: "a-rooster",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -441,6 +473,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/an artiste.webp",
     artistLifespan: "1881-1973",
     slug: "an-artiste",
+    location: "Wandsworth Atheneum Museum Of Art Hartford USA",
     letter: "P"
   },
   {
@@ -453,6 +486,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/bather.webp",
     artistLifespan: "1881-1973",
     slug: "bather",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -465,6 +499,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/bather opening a cabin.webp",
     artistLifespan: "1881-1973",
     slug: "bather-opening-a-cabin",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -477,6 +512,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/bather with a beach ball.webp",
     artistLifespan: "1881-1973",
     slug: "bather-with-a-beach-ball",
+    location: "Museum Of Modern Art New York USA",
     letter: "P"
   },
   {
@@ -489,6 +525,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/bust of a woman and self portrait.webp",
     artistLifespan: "1881-1973",
     slug: "bust-of-a-woman-and-self-portrait",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -501,6 +538,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/weeping woman.webp",
     artistLifespan: "1881-1973",
     slug: "weeping-woman",
+    location: "Tate Modern London UK",
     letter: "P"
   },
   {
@@ -513,6 +551,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/dora maar.webp",
     artistLifespan: "1881-1973",
     slug: "dora-maar",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -525,6 +564,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/embrace.webp",
     artistLifespan: "1881-1973",
     slug: "embrace",
+    location: "Musee De L'Orangie Paris France",
     letter: "P"
   },
   {
@@ -537,6 +577,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/farmers wife on a step ladder.webp",
     artistLifespan: "1881-1973",
     slug: "farmers-wife-on-a-step-ladder",
+    location: "Kunstsammlung Basel Switzerland",
     letter: "P"
   },
   {
@@ -549,6 +590,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/female nude in the garden.webp",
     artistLifespan: "1881-1973",
     slug: "female-nude-in-the-garden",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -561,6 +603,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/female nude on a red chair.webp",
     artistLifespan: "1881-1973",
     slug: "female-nude-on-a-red-chair",
+    location: "Tate Modern London UK",
     letter: "P"
   },
   {
@@ -573,6 +616,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/writing woman.webp",
     artistLifespan: "1881-1973",
     slug: "writing-woman",
+    location: "Private Collection",
     letter: "P",
     basePrice: 2724,
     options: [
@@ -590,6 +634,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the dream.webp",
     artistLifespan: "1881-1973",
     slug: "the-dream",
+    location: "Private Collection",
     letter: "P",
     basePrice: 4365,
     options: [
@@ -607,6 +652,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/nude, green leaves and bust.webp",
     artistLifespan: "1881-1973",
     slug: "nude-green-leaves-and-bust",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -619,6 +665,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/horse's head.webp",
     artistLifespan: "1881-1973",
     slug: "horses-head",
+    location: "Museo Nacional Centro De Arte Reina Sofia Madrid Spain",
     letter: "P"
   },
   {
@@ -631,6 +678,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/boy with a pipe.webp",
     artistLifespan: "1881-1973",
     slug: "boy-with-a-pipe",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -643,6 +691,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/appointment.webp",
     artistLifespan: "1881-1973",
     slug: "appointment",
+    location: "Pushkin Museum Of Fine Arts Moscow Russia",
     letter: "P"
   },
   {
@@ -655,6 +704,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the tragedy.webp",
     artistLifespan: "1881-1973",
     slug: "the-tragedy",
+    location: "National Gallery Of Art Washington DC USA",
     letter: "P"
   },
   {
@@ -667,6 +717,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the old guitarist.webp",
     artistLifespan: "1881-1973",
     slug: "the-old-guitarist",
+    location: "Art Institute Of Chicago USA",
     letter: "P"
   },
   {
@@ -679,6 +730,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/dora mar with cat.webp",
     artistLifespan: "1881-1973",
     slug: "dora-mar-with-cat",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -691,6 +743,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/a girl before a mirror.webp",
     artistLifespan: "1881-1973",
     slug: "a-girl-before-a-mirror",
+    location: "Museum Of Modern Art New York City New York USA",
     letter: "P"
   },
   {
@@ -703,6 +756,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/women of algiers.webp",
     artistLifespan: "1881-1973",
     slug: "women-of-algiers",
+    location: "Mildred Lane Kemper Art Museum Missouri USA",
     letter: "P"
   },
   {
@@ -715,6 +769,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/child with a dove.webp",
     artistLifespan: "1881-1973",
     slug: "child-with-a-dove",
+    location: "Qatar Museums Authority Doha Qatar",
     letter: "P"
   },
   {
@@ -727,6 +782,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/girl on the ball.webp",
     artistLifespan: "1881-1973",
     slug: "girl-on-the-ball",
+    location: "Pushkin State Museum Moscow Russia",
     letter: "P"
   },
   {
@@ -739,6 +795,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/girls of avignon.webp",
     artistLifespan: "1881-1973",
     slug: "girls-of-avignon",
+    location: "Museum Of Modern Art New York City New York USA",
     letter: "P"
   },
   {
@@ -751,6 +808,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/figures at the seaside.webp",
     artistLifespan: "1881-1973",
     slug: "figures-at-the-seaside",
+    location: "Kunstmuseum Basel Switzerland",
     letter: "P"
   },
   {
@@ -763,6 +821,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/cat catching a bird.webp",
     artistLifespan: "1881-1973",
     slug: "cat-catching-a-bird",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -775,6 +834,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/portrait of a woman in d'hermine pass.webp",
     artistLifespan: "1881-1973",
     slug: "portrait-of-a-woman-in-dhermine-pass",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -787,6 +847,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/self portrait.webp",
     artistLifespan: "1881-1973",
     slug: "self-portrait-picasso",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -811,6 +872,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/jacqueline with flowers.webp",
     artistLifespan: "1881-1973",
     slug: "jacqueline-with-flowers",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -823,6 +885,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/large red nude in red armchair.webp",
     artistLifespan: "1881-1973",
     slug: "large-red-nude-in-red-armchair",
+    location: "Musee National Picasso Paris France",
     letter: "P"
   },
   {
@@ -835,6 +898,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/quai malaquais, sunny afternoon.webp",
     artistLifespan: "1830-1903",
     slug: "quai-malaquais-sunny-afternoon",
+    location: "The State Hermitage Museum St. Petersburg Russia",
     letter: "P"
   },
   {
@@ -847,6 +911,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the pont royal and pavillion de flore.webp",
     artistLifespan: "1830-1903",
     slug: "the-pont-royal-and-pavillion-de-flore",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -859,6 +924,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the louvre and the siene from pont neuf.webp",
     artistLifespan: "1830-1903",
     slug: "the-louvre-and-the-siene-from-pont-neuf",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -871,6 +937,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/l'avenue de l'opera.webp",
     artistLifespan: "1830-1903",
     slug: "lavenue-de-lopera",
+    location: "Pushkin Museum of Fine Arts Moscow Russia",
     letter: "P"
   },
   {
@@ -883,6 +950,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/boulevard montemarte afternoon in the rain.webp",
     artistLifespan: "1830-1903",
     slug: "boulevard-montemarte-afternoon-in-the-rain",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -895,6 +963,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/brother and sister.webp",
     artistLifespan: "1857-1927",
     slug: "brother-and-sister",
+    location: "Cincinnati Art Museum Ohio USA",
     letter: "P"
   },
   {
@@ -907,6 +976,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/a sailing party.webp",
     artistLifespan: "1857-1927",
     slug: "a-sailing-party",
+    location: "Cincinnati Art Museum Ohio USA",
     letter: "P"
   },
   {
@@ -919,6 +989,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/holland peasant with cow.webp",
     artistLifespan: "1857-1927",
     slug: "holland-peasant-with-cow",
+    location: "Cincinnati Art Museum Ohio USA",
     letter: "P"
   },
   {
@@ -931,6 +1002,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/dutch interior.webp",
     artistLifespan: "1857-1927",
     slug: "dutch-interior",
+    location: "Cincinnati Art Museum Ohio USA",
     letter: "P"
   },
   {
@@ -943,6 +1015,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/vanity.webp",
     artistLifespan: "1613-1699",
     slug: "vanity",
+    location: "Galleria degli Uffizi Florence Italy",
     letter: "P"
   },
   {
@@ -955,6 +1028,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the queen of sheba before solomon.webp",
     artistLifespan: "1613-1699",
     slug: "the-queen-of-sheba-before-solomon",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -979,6 +1053,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/st paul the hermit.webp",
     artistLifespan: "1613-1699",
     slug: "st-paul-the-hermit",
+    location: "Museu Nacional d'Art de Catalunya Barcelona Spain",
     letter: "P"
   },
   {
@@ -991,6 +1066,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/interior of st george's chapel.webp",
     artistLifespan: "1800-1870",
     slug: "interior-of-st-georges-chapel",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -1003,6 +1079,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/south coridoor windsor castle.webp",
     artistLifespan: "1800-1870",
     slug: "south-coridoor-windsor-castle",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -1015,6 +1092,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the queen's private sitting room windsor castle.webp",
     artistLifespan: "1800-1870",
     slug: "the-queens-private-sitting-room-windsor-castle",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -1027,6 +1105,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the library windsor castle.webp",
     artistLifespan: "1800-1870",
     slug: "the-library-windsor-castle",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -1039,6 +1118,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/peddler.webp",
     artistLifespan: "1930-1935",
     slug: "peddler",
+    location: "Smithsonian American Art Museum Washington DC",
     letter: "P"
   },
   {
@@ -1051,6 +1131,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/bird.webp",
     artistLifespan: "1930-1935",
     slug: "bird",
+    location: "Museum Of Modern Art New York City New York USA",
     letter: "P"
   },
   {
@@ -1063,6 +1144,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/stenographic figure.webp",
     artistLifespan: "1930-1935",
     slug: "stenographic-figure",
+    location: "Museum Of Modern Art New York City New York USA",
     letter: "P"
   },
   {
@@ -1075,6 +1157,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/male and female.webp",
     artistLifespan: "1930-1935",
     slug: "male-and-female",
+    location: "Philadelphia Museum Of Art",
     letter: "P"
   },
   {
@@ -1087,6 +1170,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/moon woman.webp",
     artistLifespan: "1930-1935",
     slug: "moon-woman",
+    location: "Peggy Guggenheim Collection Venice Itlay",
     letter: "P"
   },
   {
@@ -1099,6 +1183,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/blue moby dick.webp",
     artistLifespan: "1930-1935",
     slug: "blue-moby-dick",
+    location: "Ohara Museum Of Art Japan",
     letter: "P"
   },
   {
@@ -1111,6 +1196,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the tea cup.webp",
     artistLifespan: "1930-1935",
     slug: "the-tea-cup",
+    location: "Museum Frieda Burda Baden Baden Germany",
     letter: "P"
   },
   {
@@ -1123,6 +1209,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the key.webp",
     artistLifespan: "1930-1935",
     slug: "the-key",
+    location: "Art Institute Of Chicago USA",
     letter: "P"
   },
   {
@@ -1135,6 +1222,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/full fathom five.webp",
     artistLifespan: "1930-1935",
     slug: "full-fathom-five",
+    location: "Museum Of Modern Art New York City New York USA",
     letter: "P"
   },
   {
@@ -1147,6 +1235,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/no.1.webp",
     artistLifespan: "1930-1935",
     slug: "no-1",
+    location: "Museum Of Modern Art New York City New York USA",
     letter: "P"
   },
   {
@@ -1159,6 +1248,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/no.5.webp",
     artistLifespan: "1930-1935",
     slug: "no-5",
+    location: "Private Collection",
     letter: "P"
   },
   {
@@ -1171,6 +1261,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/blue poles no.11.webp",
     artistLifespan: "1930-1935",
     slug: "blue-poles-no-11",
+    location: "National Gallery Of Australia",
     letter: "P"
   },
   {
@@ -1195,6 +1286,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/convergence.webp",
     artistLifespan: "1930-1935",
     slug: "convergence",
+    location: "Buffalo AKG Art Museum NY USA",
     letter: "P"
   },
   {
@@ -1207,6 +1299,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/the deep.webp",
     artistLifespan: "1930-1935",
     slug: "the-deep",
+    location: "MuseeNational D'Art Moderne Paris France",
     letter: "P"
   },
   {
@@ -1219,6 +1312,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/ink on paper.webp",
     artistLifespan: "1930-1935",
     slug: "ink-on-paper",
+    location: "Museum Of Modern Art New York City New York USA",
     letter: "P"
   },
   {
@@ -1231,6 +1325,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/p/number 17 a.webp",
     artistLifespan: "1930-1935",
     slug: "number-17-a",
+    location: "Private Collection",
     letter: "P"
   },
   // Letter R
@@ -1244,6 +1339,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the kiss.webp",
     artistLifespan: "1852-1909",
     slug: "the-kiss-ralli",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -1256,6 +1352,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the laundress.webp",
     artistLifespan: "1852-1909",
     slug: "the-laundress",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -1268,6 +1365,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/turkish woman.webp",
     artistLifespan: "1852-1909",
     slug: "turkish-woman",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -1280,6 +1378,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/a moments rest.webp",
     artistLifespan: "1852-1909",
     slug: "a-moments-rest",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -1292,6 +1391,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/portrait of a young woman.webp",
     artistLifespan: "1483-1510",
     slug: "portrait-of-a-young-woman-raphael",
+    location: "Galleria Nazionale d'Arte Antica a Palazzo Corsini Rome Italy",
     letter: "R"
   },
   {
@@ -1316,6 +1416,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/la donna lavatta.webp",
     artistLifespan: "1483-1510",
     slug: "la-donna-lavatta",
+    location: "Palazzo Pitti Florence Italy",
     letter: "R"
   },
   {
@@ -1328,6 +1429,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/school of athens.webp",
     artistLifespan: "1483-1510",
     slug: "school-of-athens",
+    location: "Pinacoteca Vatican Vatican City",
     letter: "R"
   },
   {
@@ -1340,6 +1442,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/california poppy fields.webp",
     artistLifespan: "1871-1935",
     slug: "california-poppy-fields",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -1352,6 +1455,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/lupines.webp",
     artistLifespan: "1871-1935",
     slug: "lupines",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -1364,6 +1468,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/spring antelope valley.webp",
     artistLifespan: "1871-1935",
     slug: "spring-antelope-valley",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -1376,6 +1481,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/a field of californian poppies.webp",
     artistLifespan: "1871-1935",
     slug: "a-field-of-californian-poppies",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -1388,6 +1494,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the flirtation.webp",
     artistLifespan: "1858-1938",
     slug: "the-flirtation",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -1400,6 +1507,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/death of cleopatra.webp",
     artistLifespan: "1754-1829",
     slug: "death-of-cleopatra",
+    location: "Museum Kunst Palast Dusseldorf Germany",
     letter: "R"
   },
   {
@@ -1412,6 +1520,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the three graces.webp",
     artistLifespan: "1754-1829",
     slug: "the-three-graces",
+    location: "Louvre Museum Paris France",
     letter: "R"
   },
   {
@@ -1424,6 +1533,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/portrait of a officer from the napoleonic wars.webp",
     artistLifespan: "1754-1829",
     slug: "portrait-of-a-officer-from-the-napoleonic-wars",
+    location: "Yale University Art Gallery Connecticut USA",
     letter: "R"
   },
   {
@@ -1436,6 +1546,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the judgement of paris.webp",
     artistLifespan: "1754-1829",
     slug: "the-judgement-of-paris",
+    location: "Detroit Institute of Arts Michigan USA",
     letter: "R"
   },
   {
@@ -1448,6 +1559,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/fleur de lis.webp",
     artistLifespan: "1862-1929",
     slug: "fleur-de-lis",
+    location: "Metropolitan Museum of Art New York USA",
     letter: "R"
   },
   {
@@ -1460,6 +1572,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the mirror.webp",
     artistLifespan: "1862-1929",
     slug: "the-mirror",
+    location: "Smithsonian American Art Museum Washington USA",
     letter: "R"
   },
   {
@@ -1472,6 +1585,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the white parasol.webp",
     artistLifespan: "1862-1929",
     slug: "the-white-parasol",
+    location: "Smithsonian American Art Museum Washington USA",
     letter: "R"
   },
   {
@@ -1484,6 +1598,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the violet kimono.webp",
     artistLifespan: "1862-1929",
     slug: "the-violet-kimono",
+    location: "Smithsonian American Art Museum Washington USA",
     letter: "R"
   },
   {
@@ -1496,6 +1611,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the bathers.webp",
     artistLifespan: "1862-1929",
     slug: "the-bathers-reid",
+    location: "Smithsonian American Art Museum Washington USA",
     letter: "R"
   },
   {
@@ -1958,6 +2074,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the banana leaf loader.webp",
     artistLifespan: "1886-1957",
     slug: "the-banana-leaf-loader",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -1970,6 +2087,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/flower festival.webp",
     artistLifespan: "1886-1957",
     slug: "flower-festival",
+    location: "Los Angeles County Museum of Art (LACMA), Los Angeles, CA, US",
     letter: "R"
   },
   {
@@ -1982,6 +2100,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the flower carrier.webp",
     artistLifespan: "1886-1957",
     slug: "the-flower-carrier",
+    location: "San Francisco Museum of Modern Art (SFMOMA), San Francisco, CA, US",
     letter: "R"
   },
   {
@@ -1994,6 +2113,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the woman grinding maiize.webp",
     artistLifespan: "1886-1957",
     slug: "the-woman-grinding-maiize",
+    location: "Museo Nacional de Arte (MUNAL), Mexico City, Mexico",
     letter: "R"
   },
   {
@@ -2006,6 +2126,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/nude with calla lilies.webp",
     artistLifespan: "1886-1957",
     slug: "nude-with-calla-lilies",
+    location: "Private Collection",
     letter: "R"
   },
   {
@@ -2018,6 +2139,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the flower vendor (girl with lilies).webp",
     artistLifespan: "1886-1957",
     slug: "the-flower-vendor-girl-with-lilies",
+    location: "Norton Simon Museum",
     letter: "R"
   },
   {
@@ -2160,6 +2282,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/portrait of lady skipwith.webp",
     artistLifespan: "1723-1792",
     slug: "portrait-of-lady-skipwith",
+    location: "Frick Collection New York USA",
     letter: "R"
   },
   {
@@ -2172,6 +2295,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/frances countess of lincoln.webp",
     artistLifespan: "1723-1792",
     slug: "frances-countess-of-lincoln",
+    location: "The Wallace Collection London UK",
     letter: "R"
   },
   {
@@ -2184,6 +2308,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/jane fleming later countess of harrington.webp",
     artistLifespan: "1723-1792",
     slug: "jane-fleming-later-countess-of-harrington",
+    location: "Yale University Art Gallery Connecticut USA",
     letter: "R"
   },
   {
@@ -2196,6 +2321,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/portrait of lady worsely.webp",
     artistLifespan: "1723-1792",
     slug: "portrait-of-lady-worsely",
+    location: "Public Collection",
     letter: "R"
   },
   {
@@ -2208,6 +2334,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the murder of abel.webp",
     artistLifespan: "1518-1594",
     slug: "the-murder-of-abel",
+    location: "Gallerie dell'Accademia Venice Italy",
     letter: "R"
   },
   {
@@ -2232,6 +2359,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the temptation of adam.webp",
     artistLifespan: "1518-1594",
     slug: "the-temptation-of-adam",
+    location: "Gallerie dell'Accademia Venice Italy",
     letter: "R"
   },
   {
@@ -2244,6 +2372,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/moses striking water from the rock.webp",
     artistLifespan: "1518-1594",
     slug: "moses-striking-water-from-the-rock",
+    location: "National Gallery London UK",
     letter: "R"
   },
   {
@@ -2256,6 +2385,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the madonna of the stars.webp",
     artistLifespan: "1518-1594",
     slug: "the-madonna-of-the-stars",
+    location: "National Gallery of Art Washington USA",
     letter: "R"
   },
   {
@@ -2268,6 +2398,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the burning of the houses of parliament.webp",
     artistLifespan: "1775-1851",
     slug: "the-burning-of-the-houses-of-parliament",
+    location: "Philadelphia Museum of Art, Philadelphia, PA, US",
     letter: "T"
   },
   {
@@ -2280,6 +2411,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/the shipwreck.webp",
     artistLifespan: "1775-1851",
     slug: "the-shipwreck",
+    location: "Tate Modern, London, UK",
     letter: "T"
   },
   {
@@ -2292,6 +2424,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/interior of salisbury cathedral.webp",
     artistLifespan: "1775-1851",
     slug: "interior-of-salisbury-cathedral",
+    location: "The Sailsbury Museum Sailsbury",
     letter: "T"
   },
   {
@@ -2304,6 +2437,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/r/ivy bridge devonshire.webp",
     artistLifespan: "1775-1851",
     slug: "ivy-bridge-devonshire",
+    location: "Private Collection",
     letter: "T"
   },
 
@@ -2318,6 +2452,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/lady magdelene.webp",
     artistLifespan: "1829-1904",
     slug: "lady-magdelene",
+    location: "Delaware Art Museum Wilmington USA",
     letter: "S"
   },
   {
@@ -2330,6 +2465,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/medea.webp",
     artistLifespan: "1829-1904",
     slug: "medea",
+    location: "Museum and Art Gallery Birmingham UK",
     letter: "S"
   },
   {
@@ -2342,6 +2478,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/late moon rising (wild horse creek).webp",
     artistLifespan: "1871-1954",
     slug: "late-moon-rising-wild-horse-creek",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2354,6 +2491,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/summer sunset.webp",
     artistLifespan: "1871-1954",
     slug: "summer-sunset",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2366,6 +2504,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/still life with roses.webp",
     artistLifespan: "1871-1954",
     slug: "still-life-with-roses",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2378,6 +2517,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/twilight cotton wood grove and pond.webp",
     artistLifespan: "1871-1954",
     slug: "twilight-cotton-wood-grove-and-pond",
+    location: "Wichita Art Museum Kansas USA",
     letter: "S"
   },
   {
@@ -2390,6 +2530,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/the virgin in prayer.webp",
     artistLifespan: "1609-1685",
     slug: "the-virgin-in-prayer",
+    location: "Private Collection",
     letter: "S",
     basePrice: 9674,
     options: [
@@ -2407,6 +2548,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/the virgin and child embracing.webp",
     artistLifespan: "1609-1685",
     slug: "the-virgin-and-child-embracing",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2419,6 +2561,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/madonna and child.webp",
     artistLifespan: "1609-1685",
     slug: "madonna-and-child-sassoferrato",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2431,6 +2574,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/portrait of ida rubenstein.webp",
     artistLifespan: "1865-1911",
     slug: "portrait-of-ida-rubenstein",
+    location: "State Russian Museum St. Petersburg Russia",
     letter: "S"
   },
   {
@@ -2443,6 +2587,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/portrait of mika morozov.webp",
     artistLifespan: "1865-1911",
     slug: "portrait-of-mika-morozov",
+    location: "The Tretyakov Gallery Moscow Russia",
     letter: "S"
   },
   {
@@ -2455,6 +2600,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/portrait of princess olga orlova.webp",
     artistLifespan: "1865-1911",
     slug: "portrait-of-princess-olga-orlova",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2467,6 +2613,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/now is the pilrim year fair autumn's charge.webp",
     artistLifespan: "1872-1919",
     slug: "now-is-the-pilrim-year-fair-autumns-charge",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2479,6 +2626,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/portia wounding her thigh.webp",
     artistLifespan: "1638-1665",
     slug: "portia-wounding-her-thigh",
+    location: "Miles Foundation Houston USA",
     letter: "S"
   },
   {
@@ -2491,6 +2639,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/penitent magdalene.webp",
     artistLifespan: "1638-1665",
     slug: "penitent-magdalene",
+    location: "Musee des Beaux Arts Besancon France",
     letter: "S"
   },
   {
@@ -2503,6 +2652,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/view of the canal st martin.webp",
     artistLifespan: "1839-1899",
     slug: "view-of-the-canal-st-martin",
+    location: "Musee d'Orsay Paris France",
     letter: "S"
   },
   {
@@ -2515,6 +2665,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/under the bridge at hampton court.webp",
     artistLifespan: "1839-1899",
     slug: "under-the-bridge-at-hampton-court",
+    location: "Kunstmuseum Winterthur Switzerland",
     letter: "S"
   },
   {
@@ -2527,6 +2678,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/the road to saint-germain at marly.webp",
     artistLifespan: "1839-1899",
     slug: "the-road-to-saint-germain-at-marly",
+    location: "E.G. Buehrle Zurich Switzerland",
     letter: "S"
   },
   {
@@ -2539,6 +2691,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/near the banks of seine at by.webp",
     artistLifespan: "1839-1899",
     slug: "near-the-banks-of-seine-at-by",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2551,6 +2704,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/on the beach.webp",
     artistLifespan: "1863-1923",
     slug: "on-the-beach",
+    location: "Fine Arts Museums of San Francisco California USA",
     letter: "S"
   },
   {
@@ -2563,6 +2717,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/two sisters valencia.webp",
     artistLifespan: "1863-1923",
     slug: "two-sisters-valencia",
+    location: "Art Institute of Chicago Illinois USA",
     letter: "S"
   },
   {
@@ -2575,6 +2730,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/beach scene.webp",
     artistLifespan: "1863-1923",
     slug: "beach-scene",
+    location: "Art Institute of Chicago Illinois USA",
     letter: "S"
   },
   {
@@ -2587,6 +2743,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/bathing on the beach.webp",
     artistLifespan: "1863-1923",
     slug: "bathing-on-the-beach",
+    location: "Real Academia de Bellas Artes de San Fernando Madrid Spain",
     letter: "S"
   },
   {
@@ -2599,6 +2756,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/clotllde in a evening dress.webp",
     artistLifespan: "1863-1923",
     slug: "clotllde-in-a-evening-dress",
+    location: "Museo Sorolla Madrid Spain",
     letter: "S"
   },
   {
@@ -2611,6 +2769,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/lady reading.webp",
     artistLifespan: "1825-1879",
     slug: "lady-reading",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2623,6 +2782,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/a shared confidence.webp",
     artistLifespan: "1825-1879",
     slug: "a-shared-confidence",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2635,6 +2795,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/confidences.webp",
     artistLifespan: "1825-1879",
     slug: "confidences",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2647,6 +2808,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/flirtation.webp",
     artistLifespan: "1825-1879",
     slug: "flirtation",
+    location: "Private Collection",
     letter: "S",
     basePrice: 19422,
     options: [
@@ -2664,6 +2826,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/marriage proposal.webp",
     artistLifespan: "1825-1879",
     slug: "marriage-proposal",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2676,6 +2839,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/the three connoisseuers.webp",
     artistLifespan: "1825-1879",
     slug: "the-three-connoisseuers",
+    location: "Private Collection",
     letter: "S"
   },
   {
@@ -2688,6 +2852,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/s/the afternoon visitor.webp",
     artistLifespan: "1825-1879",
     slug: "the-afternoon-visitor",
+    location: "Private Collection",
     letter: "S"
   },
 
@@ -2702,6 +2867,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/three sisters a study in june sunlight.webp",
     artistLifespan: "1862-1938",
     slug: "three-sisters-a-study-in-june-sunlight",
+    location: "Milwaukee Art Museum Wisconsin USA",
     letter: "T"
   },
   {
@@ -2714,6 +2880,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/portrait of a lady.webp",
     artistLifespan: "1862-1938",
     slug: "portrait-of-a-lady",
+    location: "Private Collection",
     letter: "T"
   },
   {
@@ -2726,6 +2893,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/the blue veil.webp",
     artistLifespan: "1862-1938",
     slug: "the-blue-veil",
+    location: "Fine Arts Museums of San Francisco California USA",
     letter: "T"
   },
   {
@@ -2738,6 +2906,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/mother and child in a boat.webp",
     artistLifespan: "1862-1938",
     slug: "mother-and-child-in-a-boat",
+    location: "Boston Museum of Fine Arts Massachusetts USA",
     letter: "T"
   },
   {
@@ -2750,6 +2919,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/reverie (kathering finn).webp",
     artistLifespan: "1862-1938",
     slug: "reverie-kathering-finn",
+    location: "Boston Museum of Fine Arts Massachusetts USA",
     letter: "T"
   },
   {
@@ -2822,6 +2992,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/young woman in a boat.webp",
     artistLifespan: "1836-1902",
     slug: "young-woman-in-a-boat",
+    location: "Private Collection",
     letter: "T"
   },
   {
@@ -2834,6 +3005,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/october.webp",
     artistLifespan: "1836-1902",
     slug: "october",
+    location: "Musee des Beaux-Arts de Montreal Quebec Canada",
     letter: "T"
   },
   {
@@ -2846,6 +3018,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/the letter.webp",
     artistLifespan: "1836-1902",
     slug: "the-letter",
+    location: "National Gallery of Art Ottawa Canada",
     letter: "T"
   },
   {
@@ -2858,6 +3031,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/the gallery of h m s calcutta.webp",
     artistLifespan: "1836-1902",
     slug: "the-gallery-of-h-m-s-calcutta",
+    location: "Tate Gallery London UK",
     letter: "T"
   },
   {
@@ -2870,6 +3044,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/the thames.webp",
     artistLifespan: "1836-1902",
     slug: "the-thames",
+    location: "Art Gallery and Museums Wakefield UK",
     letter: "T"
   },
   {
@@ -2882,6 +3057,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/the convalescent.webp",
     artistLifespan: "1836-1902",
     slug: "the-convalescent",
+    location: "Galleries and Museums Sheffield UK",
     letter: "T"
   },
   {
@@ -2894,6 +3070,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/the portrait (miss lloyd).webp",
     artistLifespan: "1836-1902",
     slug: "the-portrait-miss-lloyd",
+    location: "Tate Gallery London UK",
     letter: "T"
   },
   {
@@ -2906,6 +3083,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/the political lady.webp",
     artistLifespan: "1836-1902",
     slug: "the-political-lady",
+    location: "Tate Gallery London UK",
     letter: "T"
   },
   {
@@ -2918,6 +3096,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/the shop girl (the millner's shop).webp",
     artistLifespan: "1836-1902",
     slug: "the-shop-girl-the-millners-shop",
+    location: "Art Gallery of Ontario Toronto Canada",
     letter: "T"
   },
   {
@@ -2930,6 +3109,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/on the thames.webp",
     artistLifespan: "1836-1902",
     slug: "on-the-thames",
+    location: "Private Collection",
     letter: "T"
   },
   {
@@ -2942,6 +3122,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/richmond bridge.webp",
     artistLifespan: "1836-1902",
     slug: "richmond-bridge",
+    location: "Private Collection",
     letter: "T"
   },
   {
@@ -2978,6 +3159,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/the bathers.webp",
     artistLifespan: "1858-1929",
     slug: "the-bathers-henry-scott-tuke",
+    location: "City Art Gallery Leeds UK",
     letter: "T"
   },
   {
@@ -2990,6 +3172,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/boys bathing.webp",
     artistLifespan: "1858-1929",
     slug: "boys-bathing",
+    location: "Bristol City Museum and Art Gallery Bristol UK",
     letter: "T"
   },
   {
@@ -3002,6 +3185,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/drinking.webp",
     artistLifespan: "1858-1929",
     slug: "drinking",
+    location: "Private Collection",
     letter: "T"
   },
   {
@@ -3014,6 +3198,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/t/bluebells.webp",
     artistLifespan: "1858-1929",
     slug: "bluebells",
+    location: "Private Collection",
     letter: "T"
   },
 
@@ -3028,6 +3213,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/u/a view of venice rio s marina.webp",
     artistLifespan: "1838-1902",
     slug: "a-view-of-venice-rio-s-marina",
+    location: "Private Collection",
     letter: "U"
   },
   {
@@ -3040,6 +3226,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/u/the grand canal, venice.webp",
     artistLifespan: "1838-1902",
     slug: "the-grand-canal-venice-unterberger",
+    location: "Private Collection",
     letter: "U"
   },
   {
@@ -3052,6 +3239,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/u/venice view from the zattere with san giorgio maggiore in the distance.webp",
     artistLifespan: "1838-1902",
     slug: "venice-view-from-the-zattere-with-san-giorgio-maggiore-in-the-distance",
+    location: "Private Collection",
     letter: "U"
   },
   {
@@ -3064,6 +3252,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/u/canal in venice.webp",
     artistLifespan: "1838-1902",
     slug: "canal-in-venice",
+    location: "Private Collection",
     letter: "U"
   },
   {
@@ -3076,6 +3265,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/u/banquet still life.webp",
     artistLifespan: "1599-1652",
     slug: "banquet-still-life",
+    location: "Rijksmuseum Amsterdam Netherlands",
     letter: "U"
   },
 
@@ -3090,6 +3280,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/still life with peaches and grapes.webp",
     artistLifespan: "1744-1818",
     slug: "still-life-with-peaches-and-grapes",
+    location: "National Gallery of Art Ottawa Canada",
     letter: "V"
   },
   {
@@ -3102,6 +3293,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/still life with ham.webp",
     artistLifespan: "1744-1818",
     slug: "still-life-with-ham",
+    location: "Gemaldegalerie Berlin Germany",
     letter: "V"
   },
   {
@@ -3114,6 +3306,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/still life with peaches and silver mugs.webp",
     artistLifespan: "1744-1818",
     slug: "still-life-with-peaches-and-silver-mugs",
+    location: "Private Collection",
     letter: "V"
   },
   {
@@ -3126,6 +3319,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/still life with bulbous bottle.webp",
     artistLifespan: "1744-1818",
     slug: "still-life-with-bulbous-bottle",
+    location: "Gemaldegalerie Berlin Germany",
     letter: "V"
   },
   {
@@ -3138,6 +3332,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/still life with mackrell.webp",
     artistLifespan: "1744-1818",
     slug: "still-life-with-mackrell",
+    location: "Kimbell Art Museum Fort Worth USA",
     letter: "V"
   },
   {
@@ -3150,6 +3345,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/las meninas.webp",
     artistLifespan: "1599-1660",
     slug: "las-meninas",
+    location: "Prado Museum Madrid Spain",
     letter: "V"
   },
   {
@@ -3162,6 +3358,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/king philip iv of spain.webp",
     artistLifespan: "1599-1660",
     slug: "king-philip-iv-of-spain",
+    location: "Frick Collection New York USA",
     letter: "V"
   },
   {
@@ -3174,6 +3371,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the waterseller of seville.webp",
     artistLifespan: "1599-1660",
     slug: "the-waterseller-of-seville",
+    location: "Wellington Museum London UK",
     letter: "V"
   },
   {
@@ -3186,6 +3384,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/an old woman cooking eggs.webp",
     artistLifespan: "1599-1660",
     slug: "an-old-woman-cooking-eggs",
+    location: "National Galleries of Scotland Edinburgh UK",
     letter: "V"
   },
   {
@@ -3198,6 +3397,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/villa medici in rome (pavillion of ariadne).webp",
     artistLifespan: "1599-1660",
     slug: "villa-medici-in-rome-pavillion-of-ariadne",
+    location: "Prado Museum Madrid Spain",
     letter: "V"
   },
   {
@@ -3210,6 +3410,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/villa medici in rome (facade of grotto logia).webp",
     artistLifespan: "1599-1660",
     slug: "villa-medici-in-rome-facade-of-grotto-logia",
+    location: "Prado Museum Madrid Spain",
     letter: "V"
   },
   {
@@ -3222,6 +3423,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the girl with the pearl earring.webp",
     artistLifespan: "1632-1675",
     slug: "the-girl-with-the-pearl-earring",
+    location: "Mauritshuis Royal Picture Gallery The Hague Netherlands",
     letter: "V"
   },
   {
@@ -3234,6 +3436,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the milkmaid the kitchen maid.webp",
     artistLifespan: "1632-1675",
     slug: "the-milkmaid-the-kitchen-maid",
+    location: "Rijksmuseum Amsterdam Netherlands",
     letter: "V"
   },
   {
@@ -3246,6 +3449,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/mistress and maid.webp",
     artistLifespan: "1632-1675",
     slug: "mistress-and-maid",
+    location: "Frick Collection New York USA",
     letter: "V"
   },
   {
@@ -3258,6 +3462,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/girl reading a letter at a open window.webp",
     artistLifespan: "1632-1675",
     slug: "girl-reading-a-letter-at-a-open-window",
+    location: "Gemaldegalerie Alte Meister Dresden Germany",
     letter: "V"
   },
   {
@@ -3270,6 +3475,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/pope julius i ordering bramante, michelangelo and raphael to construct the vatican and st peter's.webp",
     artistLifespan: "1789-1863",
     slug: "pope-julius-i-ordering-bramante-michelangelo-and-raphael-to-construct-the-vatican-and-st-peters",
+    location: "Louvre Museum Paris France",
     letter: "V"
   },
   {
@@ -3282,6 +3488,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the arab tale teller.webp",
     artistLifespan: "1789-1863",
     slug: "the-arab-tale-teller",
+    location: "The Wallace Collection London UK",
     letter: "V"
   },
   {
@@ -3294,6 +3501,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/hunting in the pontine marshes.webp",
     artistLifespan: "1789-1863",
     slug: "hunting-in-the-pontine-marshes",
+    location: "National Gallery of Art Washington USA",
     letter: "V"
   },
   {
@@ -3306,6 +3514,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/departure for the hunt in the pontine marshes.webp",
     artistLifespan: "1789-1863",
     slug: "departure-for-the-hunt-in-the-pontine-marshes",
+    location: "National Gallery of Art Washington USA",
     letter: "V"
   },
   {
@@ -3318,6 +3527,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/allegory of wisdom and strength.webp",
     artistLifespan: "1528-1588",
     slug: "allegory-of-wisdom-and-strength",
+    location: "Frick Collection New York USA",
     letter: "V"
   },
   {
@@ -3330,6 +3540,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/mars and venus united by love.webp",
     artistLifespan: "1528-1588",
     slug: "mars-and-venus-united-by-love",
+    location: "Metropolitan Museum of Art New York USA",
     letter: "V"
   },
   {
@@ -3342,6 +3553,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/moses saved from the waters.webp",
     artistLifespan: "1528-1588",
     slug: "moses-saved-from-the-waters",
+    location: "Prado Museum Madrid Spain",
     letter: "V"
   },
   {
@@ -3354,6 +3566,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/respect.webp",
     artistLifespan: "1528-1588",
     slug: "respect",
+    location: "National Gallery London UK",
     letter: "V"
   },
   {
@@ -3366,6 +3579,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the family of darius before alexander.webp",
     artistLifespan: "1528-1588",
     slug: "the-family-of-darius-before-alexander",
+    location: "National Gallery London UK",
     letter: "V"
   },
   {
@@ -3378,6 +3592,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the marvellous sauce.webp",
     artistLifespan: "1840-1902",
     slug: "the-marvellous-sauce",
+    location: "Albright-Knox Art Gallery Buffalo USA",
     letter: "V"
   },
   {
@@ -3390,6 +3605,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/la sieste.webp",
     artistLifespan: "1840-1902",
     slug: "la-sieste",
+    location: "Private Collection",
     letter: "V"
   },
   {
@@ -3402,6 +3618,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the church in danger.webp",
     artistLifespan: "1840-1902",
     slug: "the-church-in-danger",
+    location: "Private Collection",
     letter: "V"
   },
   {
@@ -3414,6 +3631,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the view.webp",
     artistLifespan: "1840-1902",
     slug: "the-view",
+    location: "Dahesh Museum of Art New York USA",
     letter: "V"
   },
   {
@@ -3426,6 +3644,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the convent choir.webp",
     artistLifespan: "1840-1902",
     slug: "the-convent-choir",
+    location: "Private Collection",
     letter: "V"
   },
   {
@@ -3438,6 +3657,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/tea for the bishop.webp",
     artistLifespan: "1840-1902",
     slug: "tea-for-the-bishop",
+    location: "Collection of Fred and Sherry Ross New Jersey USA",
     letter: "V"
   },
   {
@@ -3450,6 +3670,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/eruption in vesuvius.webp",
     artistLifespan: "1729-1802",
     slug: "eruption-in-vesuvius",
+    location: "Musee des Beaux Arts Nantes France",
     letter: "V"
   },
   {
@@ -3462,6 +3683,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the eruption of vesuvius.webp",
     artistLifespan: "1729-1802",
     slug: "the-eruption-of-vesuvius",
+    location: "Private Collection",
     letter: "V",
     basePrice: 4271,
     options: [
@@ -3479,6 +3701,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/apple bloom.webp",
     artistLifespan: "1858-1930",
     slug: "apple-bloom",
+    location: "Minneapolis Institute of Arts Minnesota USA",
     letter: "V"
   },
   {
@@ -3491,6 +3714,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the flanders field where soldiers sleep and poppies grow.webp",
     artistLifespan: "1858-1930",
     slug: "the-flanders-field-where-soldiers-sleep-and-poppies-grow",
+    location: "Butler Institute of American Art Youngstown USA",
     letter: "V"
   },
   {
@@ -3503,6 +3727,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the bridge at grez.webp",
     artistLifespan: "1858-1930",
     slug: "the-bridge-at-grez",
+    location: "Metropolitan Museum of Art New York USA",
     letter: "V"
   },
   {
@@ -3515,6 +3740,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/jardin de paysanne.webp",
     artistLifespan: "1858-1930",
     slug: "jardin-de-paysanne",
+    location: "Terra Museum of American Art Chicago USA",
     letter: "V"
   },
   {
@@ -3527,6 +3753,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/poppies in france.webp",
     artistLifespan: "1858-1930",
     slug: "poppies-in-france",
+    location: "Terra Museum of American Art Chicago USA",
     letter: "V"
   },
   {
@@ -3539,6 +3766,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/sleeping venus.webp",
     artistLifespan: "1590-1649",
     slug: "sleeping-venus",
+    location: "Museum of Fine Arts Budapest Hungary",
     letter: "V"
   },
   {
@@ -3551,6 +3779,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/wealth.webp",
     artistLifespan: "1590-1649",
     slug: "wealth",
+    location: "Louvre Museum Paris France",
     letter: "V"
   },
   {
@@ -3563,6 +3792,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/model for alterpiece in st peter's.webp",
     artistLifespan: "1590-1649",
     slug: "model-for-alterpiece-in-st-peters",
+    location: "Los Angeles County Museum of Art California USA",
     letter: "V"
   },
   {
@@ -3575,6 +3805,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the voiles de genes' boudoir.webp",
     artistLifespan: "1868-1940",
     slug: "the-voiles-de-genes-boudoir",
+    location: "Private Collection",
     letter: "V"
   },
   {
@@ -3587,6 +3818,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/in a room.webp",
     artistLifespan: "1868-1940",
     slug: "in-a-room",
+    location: "The State Hermitage Museum St. Petersburg Russia",
     letter: "V"
   },
   {
@@ -3599,6 +3831,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/the guinguette.webp",
     artistLifespan: "1868-1940",
     slug: "the-guinguette",
+    location: "Private Collection",
     letter: "V"
   },
   {
@@ -3611,6 +3844,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/woman in a striped dress.webp",
     artistLifespan: "1868-1940",
     slug: "woman-in-a-striped-dress",
+    location: "National Gallery of Art Washington USA",
     letter: "V"
   },
   {
@@ -3623,6 +3857,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/child wearing a red scarf.webp",
     artistLifespan: "1868-1940",
     slug: "child-wearing-a-red-scarf",
+    location: "National Gallery of Art Washington USA",
     letter: "V"
   },
   {
@@ -3635,6 +3870,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/le vase bleu.webp",
     artistLifespan: "1868-1940",
     slug: "le-vase-bleu",
+    location: "Private Collection",
     letter: "V"
   },
   {
@@ -3647,6 +3883,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/v/children in a room.webp",
     artistLifespan: "1868-1940",
     slug: "children-in-a-room",
+    location: "The State Hermitage Museum St. Petersburg Russia",
     letter: "V"
   },
 
@@ -3661,6 +3898,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the lady of shalotte.webp",
     artistLifespan: "1849-1917",
     slug: "the-lady-of-shalotte",
+    location: "Tate Gallery London UK",
     letter: "W"
   },
   {
@@ -3673,6 +3911,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/hylas and nymphs.webp",
     artistLifespan: "1849-1917",
     slug: "hylas-and-nymphs",
+    location: "Manchester Art Gallery Manchester UK",
     letter: "W"
   },
   {
@@ -3685,6 +3924,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/orphelia.webp",
     artistLifespan: "1849-1917",
     slug: "orphelia",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3697,6 +3937,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the tale of decameron.webp",
     artistLifespan: "1849-1917",
     slug: "the-tale-of-decameron",
+    location: "Lady Lever Art Gallery Port Sunlight UK",
     letter: "W"
   },
   {
@@ -3709,6 +3950,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/i am half sick of the shadows said the lady of shallot.webp",
     artistLifespan: "1849-1917",
     slug: "i-am-half-sick-of-the-shadows-said-the-lady-of-shallot",
+    location: "Art Gallery of Ontario Toronto Canada",
     letter: "W"
   },
   {
@@ -3721,6 +3963,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/desiny.webp",
     artistLifespan: "1849-1917",
     slug: "desiny",
+    location: "Towneley Hall Art Gallery and Museum Burnley UK",
     letter: "W"
   },
   {
@@ -3733,6 +3976,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/actors of the comedie-francais.webp",
     artistLifespan: "1684-1721",
     slug: "actors-of-the-comedie-francais",
+    location: "The State Hermitage Museum",
     letter: "W"
   },
   {
@@ -3745,6 +3989,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/les champs elisees.webp",
     artistLifespan: "1684-1721",
     slug: "les-champs-elisees",
+    location: "The Wallace Collection London UK",
     letter: "W"
   },
   {
@@ -3757,6 +4002,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the festival of love (the pleasures of love).webp",
     artistLifespan: "1684-1721",
     slug: "the-festival-of-love-the-pleasures-of-love",
+    location: "Gemaldegalerie Alte Meister Dresden Germany",
     letter: "W"
   },
   {
@@ -3769,6 +4015,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the fortune teller.webp",
     artistLifespan: "1684-1721",
     slug: "the-fortune-teller-watteau",
+    location: "Fine Arts Museums of San Francisco California USA",
     letter: "W"
   },
   {
@@ -3781,6 +4028,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/dianna bathing.webp",
     artistLifespan: "1684-1721",
     slug: "dianna-bathing",
+    location: "Louvre Museum Paris France",
     letter: "W"
   },
   {
@@ -3793,6 +4041,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/pleasures of the ball.webp",
     artistLifespan: "1684-1721",
     slug: "pleasures-of-the-ball",
+    location: "Dulwich Picture Gallery London UK",
     letter: "W"
   },
   {
@@ -3805,6 +4054,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/a lady at her toilet.webp",
     artistLifespan: "1684-1721",
     slug: "a-lady-at-her-toilet-jean-antoine-watteau",
+    location: "The Wallace Collection London UK",
     letter: "W"
   },
   {
@@ -3817,6 +4067,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the shy lover.webp",
     artistLifespan: "1684-1721",
     slug: "the-shy-lover",
+    location: "Palacio Real Madrid Spain",
     letter: "W"
   },
   {
@@ -3829,6 +4080,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the spring fete champetre in a water garden with figures in a boat.webp",
     artistLifespan: "1684-1721",
     slug: "the-spring-fete-champetre-in-a-water-garden-with-figures-in-a-boat",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3841,6 +4093,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/along the ghats malhuta.webp",
     artistLifespan: "1849-1903",
     slug: "along-the-ghats-malhuta",
+    location: "Los Angeles County Museum of Art California USA",
     letter: "W"
   },
   {
@@ -3853,6 +4106,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the nautch.webp",
     artistLifespan: "1849-1903",
     slug: "the-nautch",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3865,6 +4119,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/departure for the hunt.webp",
     artistLifespan: "1849-1903",
     slug: "departure-for-the-hunt",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3877,6 +4132,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the arrival of prince humbert, the rajah at the palace of amber.webp",
     artistLifespan: "1849-1903",
     slug: "the-arrival-of-prince-humbert-the-rajah-at-the-palace-of-amber",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3889,6 +4145,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/dead hare and partridges.webp",
     artistLifespan: "1621-1660",
     slug: "dead-hare-and-partridges",
+    location: "The Wallace Collection London UK",
     letter: "W"
   },
   {
@@ -3901,6 +4158,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the white peacock.webp",
     artistLifespan: "1621-1660",
     slug: "the-white-peacock",
+    location: "Liechtenstein Museum Vienna Austria",
     letter: "W"
   },
   {
@@ -3913,6 +4171,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/portrait of a hazewindhoud and a young partridge dog.webp",
     artistLifespan: "1621-1660",
     slug: "portrait-of-a-hazewindhoud-and-a-young-partridge-dog",
+    location: "Rijksmuseum Amsterdam Netherlands",
     letter: "W"
   },
   {
@@ -3925,6 +4184,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the ballerina ulla poulsen in the ballet chopinana.webp",
     artistLifespan: "1886-1940",
     slug: "the-ballerina-ulla-poulsen-in-the-ballet-chopinana",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3937,6 +4197,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/lili with a feathered fan.webp",
     artistLifespan: "1886-1940",
     slug: "lili-with-a-feathered-fan",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3949,6 +4210,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/two cocottes with hats (lili and friend).webp",
     artistLifespan: "1886-1940",
     slug: "two-cocottes-with-hats-lili-and-friend",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3961,6 +4223,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the mask.webp",
     artistLifespan: "1886-1940",
     slug: "the-mask",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3973,6 +4236,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/on the anacapri road.webp",
     artistLifespan: "1886-1940",
     slug: "on-the-anacapri-road",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3985,6 +4249,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the conservatory at carlton house.webp",
     artistLifespan: "1871-1835",
     slug: "the-conservatory-at-carlton-house",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -3997,6 +4262,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the conservatory at carlton house pyne's private residence.webp",
     artistLifespan: "1871-1835",
     slug: "the-conservatory-at-carlton-house-pynes-private-residence",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -4009,6 +4275,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/interior of st georges chapel windsor.webp",
     artistLifespan: "1871-1835",
     slug: "interior-of-st-georges-chapel-windsor",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -4021,6 +4288,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/an elegant beauty.webp",
     artistLifespan: "1857-1930",
     slug: "an-elegant-beauty",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -4033,6 +4301,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the jade necklace.webp",
     artistLifespan: "1857-1930",
     slug: "the-jade-necklace",
+    location: "Towneley Hall Art Gallery and Museum Burnley UK",
     letter: "W"
   },
   {
@@ -4045,6 +4314,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the basket of anemones.webp",
     artistLifespan: "1857-1930",
     slug: "the-basket-of-anemones",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -4057,6 +4327,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/the false god.webp",
     artistLifespan: "1857-1930",
     slug: "the-false-god",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -4069,6 +4340,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/american gothic.webp",
     artistLifespan: "1891-1942",
     slug: "american-gothic",
+    location: "Art Institute of Chicago Illinois USA",
     letter: "W"
   },
   {
@@ -4081,6 +4353,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/stone city iowa.webp",
     artistLifespan: "1891-1942",
     slug: "stone-city-iowa",
+    location: "Art Institute of Chicago Illinois USA",
     letter: "W"
   },
   {
@@ -4093,6 +4366,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/a girl reading a letter with an old man.webp",
     artistLifespan: "1734-1797",
     slug: "a-girl-reading-a-letter-with-an-old-man",
+    location: "Private Collection",
     letter: "W"
   },
   {
@@ -4117,6 +4391,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/miravan breaking open the tomb of his ancestors.webp",
     artistLifespan: "1734-1797",
     slug: "miravan-breaking-open-the-tomb-of-his-ancestors",
+    location: "Museum and Art Gallery Derby UK",
     letter: "W"
   },
   {
@@ -4129,6 +4404,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/w/an eruption of vesuvius seen from portici.webp",
     artistLifespan: "1734-1797",
     slug: "an-eruption-of-vesuvius-seen-from-portici",
+    location: "University College of Wales Aberystwyth UK",
     letter: "W"
   },
 
@@ -4181,6 +4457,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/the favourite of the king.webp",
     artistLifespan: "1842-1871",
     slug: "the-favourite-of-the-king",
+    location: "Private Collection",
     letter: "Z"
   },
   {
@@ -4193,6 +4470,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/a momentary diversion.webp",
     artistLifespan: "1842-1871",
     slug: "a-momentary-diversion",
+    location: "Private Collection",
     letter: "Z"
   },
   {
@@ -4205,6 +4483,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/in werners rowing boat.webp",
     artistLifespan: "1860-1920",
     slug: "in-werners-rowing-boat",
+    location: "Private Collection",
     letter: "Z"
   },
   {
@@ -4217,6 +4496,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/morning toilet with his mother.webp",
     artistLifespan: "1860-1920",
     slug: "morning-toilet-with-his-mother",
+    location: "Isabella Stewart Gardner Museum Boston USA",
     letter: "Z"
   },
   {
@@ -4229,6 +4509,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/night effect.webp",
     artistLifespan: "1860-1920",
     slug: "night-effect",
+    location: "Museum of Art Gothenburg Sweden",
     letter: "Z"
   },
   {
@@ -4241,6 +4522,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/opal.webp",
     artistLifespan: "1860-1920",
     slug: "opal",
+    location: "Worcester Art Museum Massachusetts USA",
     letter: "Z"
   },
   {
@@ -4253,6 +4535,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/st francis in ecstacy.webp",
     artistLifespan: "1598-1664",
     slug: "st-francis-in-ecstacy",
+    location: "Alte Pinakothek Munich Germany",
     letter: "Z"
   },
   {
@@ -4265,6 +4548,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/agnus dei.webp",
     artistLifespan: "1598-1664",
     slug: "agnus-dei",
+    location: "Prado Museum Madrid Spain",
     letter: "Z"
   },
   {
@@ -4277,6 +4561,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/st francis in meditation.webp",
     artistLifespan: "1598-1664",
     slug: "st-francis-in-meditation",
+    location: "National Gallery London UK",
     letter: "Z"
   },
   {
@@ -4289,6 +4574,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/the immaculate conception.webp",
     artistLifespan: "1598-1664",
     slug: "the-immaculate-conception",
+    location: "Museo Diocesano de Siguenza Guadalajara Spain",
     letter: "Z"
   },
   {
@@ -4301,6 +4587,7 @@ export const ARTWORKS_NZ: Artwork[] = [
     image: "/image/z/a cup of water and a rose on a silver plate.webp",
     artistLifespan: "1598-1664",
     slug: "a-cup-of-water-and-a-rose-on-a-silver-plate",
+    location: "National Gallery London UK",
     letter: "Z"
   },
 ];

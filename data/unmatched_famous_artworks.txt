@@ -1,0 +1,201 @@
+Summary:
+Total unique locations in text file: 119
+Unmatched: 49
+
+--- UNMATCHED FAMOUS ARTWORKS ---
+Artwork: ARTIST  NAME
+Artist:  Location Of Art
+Location: FAMOUS ART
+---
+Artwork: Napoleon Crossing The Alps On 20th May 1800 1803
+Artist:  Jacques-Louis David
+Location: Museum of Palace of Versailles Paris France
+---
+Artwork: Napoleon Crossing The Alps On 20th May 1800 1804
+Artist:  Jacques-Louis David
+Location: Museum of Palace of Versailles Paris France
+---
+Artwork: Irises
+Artist:  Van Gogh
+Location: J. Paul Getty Museum Los Angeles USA
+---
+Artwork: Death Of Marat
+Artist:  Jaques-Louis David
+Location: Royal Museums of Fine Arts Brussels Belgium
+---
+Artwork: Water Lily Pomd  Symphony In Green
+Artist:  Claude Monet
+Location: National Gallery London UK
+---
+Artwork: The Caf� Terrace On The Place Du Forum Aries
+Artist:  Vincent Van Gogh
+Location: Kroller-Mueller Museum Otterlo Netherlands
+---
+Artwork: Blossoming Almod Tree
+Artist:  Vincent Van Gogh
+Location: Van Gogh Museum Amsterdam Netherlands
+---
+Artwork: Storm On The Sea Of Gaiilee
+Artist:  Van Rijn Rembrandt
+Location: Isabella Stewart Gardner Museum Boston USA
+---
+Artwork: The Lady Of Shalotte
+Artist:  John William Waterhouse
+Location: Tate Gallery London UK
+---
+Artwork: Luncheon On The Boating Party
+Artist:  Pierre Auguste Renoir
+Location: Phillips Collection Washington USA
+---
+Artwork: Two Sisters On The Terrace
+Artist:  Pierre Auguste Renoir
+Location: Art Institute of Chicago Illinois USA
+---
+Artwork: Th Skiff (La Yole)
+Artist:  Pierre Auguste Renoir
+Location: National Gallery London UK
+---
+Artwork: Vase With Irises Against A Yellow Background
+Artist:  Vincemt Van Gogh
+Location: Van Gogh Museum Amsterdam Netherlands
+---
+Artwork: Still Life Vase With Fourteen Sunflowers
+Artist:  Vincent an Gogh
+Location: National Gallery London UK
+---
+Artwork: St Paul
+Artist:  Pompeo Girolamo Batoni
+Location: Private Collection
+---
+Artwork: Dance At The Moulin Del La Galette
+Artist:  Pierre Auguste Renoir
+Location: Musee d'Orsay Paris France
+---
+Artwork: Impression Sunrise (Soliel Levante)
+Artist:  Claude Monet
+Location: Musee Marmottan Monet Paris France
+---
+Artwork: Nude Descending A Staircase II
+Artist:  Marcel Duchamp
+Location: Philadelphia Museum of Art Pennsylvania USA
+---
+Artwork: A Bar At The Folies-Begere
+Artist:  Edouard Manet
+Location: Courtauld Institute of Art London UK
+---
+Artwork: Van Gogh's  Bedroom At Aries
+Artist:  Vincemt Van Gogh
+Location: The Art Institute Of Chicago
+---
+Artwork: Las Meninas
+Artist:  Diego Rodriguez De Silva Velazquez
+Location: Museo Del Prado Madrid Spain
+---
+Artwork: Grand Canal Venice
+Artist:  Claude Monet
+Location: Boston Museum of Fine Arts Massachusetts USA
+---
+Artwork: Open Window Colloure
+Artist:  Henri Matisse
+Location: National Gallery of Art Washington USA
+---
+Artwork: Mistress And Maid
+Artist:  Johannes Vermeer Van Delft
+Location: Frick Collection New York USA
+---
+Artwork: Woman In Purple Coat Print
+Artist:  Henri Matisse
+Location: Museum Of Fine Arts Houston Texas USA
+---
+Artwork: Still Life With A Plate Of Cherries and Peaches
+Artist:  Paul Cezanne
+Location: Los Angeles County Museum of Art California USA
+---
+Artwork: Mount Saint-Victoire
+Artist:  Paul Cezanne
+Location: Private Collection
+---
+Artwork: Great Still On Pedastal
+Artist:  Pablo Picasso
+Location: Musee National Picasso Paris France
+---
+Artwork: The Blinding Of Samson
+Artist:  Rembrandt Von Rijn
+Location: Stadel Museum Frankfurt Germany
+---
+Artwork: The Coronation Of Napoleon
+Artist:  Jaques-Louis David
+Location: Louvre Museum Paris France
+---
+Artwork: Large Red Nude In Red Armchair
+Artist:  Pablo Picasso
+Location: Musee National Picasso Paris France
+---
+Artwork: Portrait of Johanna Straude
+Artist:  Gustav Klimt
+Location: Galerie Belvedere Vienna Austria
+---
+Artwork: Dancer In Green
+Artist:  Hilaire Germaine Edgar Degas
+Location: Museo Nacional Thyssen-Bornemisza Madrid Spain
+---
+Artwork: The Sacrafice Of Abraham
+Artist:  Rembrandt Von Rijn
+Location: The State Hermitage Museum St. Petersburg Russia
+---
+Artwork: Old Woman Praying (Rembrandt's Mother)
+Artist:  Rembrandt Von Rijn
+Location: Liechtenstein Museum Vienna Austria
+---
+Artwork: Nefea Faa Lpoipo (when Will You Marry?)
+Artist:  Paul Gauguin
+Location: Kunstmuseum Basel Switzerland
+---
+Artwork: The Virgins
+Artist:  Gustav Klimt
+Location: Museum National Gallery Prague
+---
+Artwork: The Milkmaid The Kitchen Maid
+Artist:  Johannes Vermeer Van Delft
+Location: Rijksmuseum Amsterdam Netherlands
+---
+Artwork: Garcon A'la Pipe
+Artist:  Pablo Picasso
+Location: Private Collection
+---
+Artwork: Portrait of Eugeina Primavesi
+Artist:  Gustav Klimt
+Location: Private Collection
+---
+Artwork: After The Bath Woman Drying Her Neck
+Artist:  Hilaire Germaine Edgar Degas
+Location: Philadelphia Museum of Art Pennsylvania USA
+---
+Artwork: Lady With An Emine (Cecilia Gallerani)
+Artist:  Leonardo Da Vinci
+Location: Czartoryski Museum Krakow Poland
+---
+Artwork: Laughing Cavallier
+Artist:  Frans Halls
+Location: The Wallace Collection London UK
+---
+Artwork: The Night Watch
+Artist:  Rembrandt Von Rijn
+Location: Rijksmuseum Amsterdam Netherlands
+---
+Artwork: The Great Wave Of Kanagawa
+Artist:  Katsushika Hokusai
+Location: Metropolitan Museum of Art, New York, USA
+---
+Artwork: Composition With Red Yellow Green
+Artist:  Piet Mondrian
+Location: National Museum Belgrade Serbia
+---
+Artwork: Dance At Bougival
+Artist:  Pierre-August Renoir
+Location: Boston Museum of Fine Arts Massachusetts USA
+---
+Artwork: Number 17 A
+Artist:  Jackson Pollock
+Location: Private Collection
+---

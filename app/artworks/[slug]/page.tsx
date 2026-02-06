@@ -49,6 +49,7 @@ export default async function ProductDetailsPage({
         currency: famousArtwork.currency,
         basePrice: famousArtwork.basePrice,
         options: famousArtwork.options,
+        location: (famousArtwork as any).location,
       };
     }
   }

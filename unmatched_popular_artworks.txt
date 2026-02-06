@@ -1,0 +1,765 @@
+Summary:
+Total unique locations parsed: 293
+Unmatched: 190
+
+--- UNMATCHED POPULAR ARTWORKS ---
+Artwork: ARTIST  NAME
+Artist:  Location Of Art
+Location: CLAUDE MONET
+---
+Artwork: Rocks At Port-Goulphar Belle-IIe
+Artist:  Claude Monet
+Location: Art Institute of Chicago Illinois USA
+---
+Artwork: GUSTAV KLIMT
+Artist:  Portrait Of Adele Bloch-Bauer I
+Location: Gustav Klimt
+---
+Artwork: Neue Galerie New York USA
+Artist:  Portrait Of Adele Bloch-Bauer I
+Location: Gustav Klimt
+---
+Artwork: Neue Galerie New York USA
+Artist:  Portrait of Johanna Straude
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  The Tree Of Life
+Location: Gustav Klimt
+---
+Artwork: MAK Museum Vienna Austria
+Artist:  Hope II
+Location: Gustav Klimt
+---
+Artwork: Museum of Modern Art New York USA
+Artist:  Judith I
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  Judith I
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  The Dancer
+Location: Gustav Klimt
+---
+Artwork: Private Collection
+Artist:  Music I
+Location: Gustav Klimt
+---
+Artwork: Neue Pinakothek Munich Germany
+Artist:  Music I
+Location: Gustav Klimt
+---
+Artwork: Neue Pinakothek Munich Germany
+Artist:  Portrait Of Adele Bloch-Bauer I
+Location: Gustav Klimt
+---
+Artwork: Neue Galerie New York USA
+Artist:  Portrait Of A Young Woman
+Location: Gustav Klimt
+---
+Artwork: Galleria d'arte moderna Piacenza Italy
+Artist:  The Three Ages Of Women
+Location: Gustav Klimt
+---
+Artwork: Galleria Nazionale d'Arte Moderna Rome Italy
+Artist:  Water Serpents
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  Gold Fish
+Location: Gustav Klimt
+---
+Artwork: Dubi-Muller Foundation Solothurn Switzerland
+Artist:  Danae
+Location: Gustav Klimt
+---
+Artwork: Universalmuseum Joanneum Graz Austria
+Artist:  Portrait Of Fritza Riedlar
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  Portrait of Eugeina Primavesi
+Location: Gustav Klimt
+---
+Artwork: Private Collection
+Artist:  Girl Friends
+Location: Gustav Klimt
+---
+Artwork: Destroyed by Fire at Immendorf Palace in 1945
+Artist:  Shubert At The Piano
+Location: Gustav Klimt
+---
+Artwork: Destroyed by Fire at Immendorf Palace in 1945
+Artist:  University Of Vienna Ceiling (Medicine) Detail Showing Hygiieia
+Location: Gustav Klimt
+---
+Artwork: University Of Vienna Ceiling
+Artist:  Nuda Veritas
+Location: Gustav Klimt
+---
+Artwork: Theatre Collection of the National Librady Vienna Austria
+Artist:  Ria Munk On Her Death Bed
+Location: Gustav Klimt
+---
+Artwork: Private Collectiom
+Artist:  The Virgins
+Location: Gustav Klimt
+---
+Artwork: National Gallery Of Prague Czech Republic
+Artist:  Lady With A Fan
+Location: Gustav Klimt
+---
+Artwork: Private Collectiom
+Artist:  The Polecat Fur
+Location: Gustav Klimt
+---
+Artwork: Private Collectiom
+Artist:  Portrait Of Adele Bloch-Bauer II
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  Lady With A Hat And Featherboa
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  Expectation
+Location: Gustav Klimt
+---
+Artwork: MAK Museum Vienna Austria
+Artist:  The Sunflower
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  HENRI MATISSE
+Location: The Dance
+---
+Artwork: Henri Matisse
+Artist:  The State Hermitage Museum St. Petersburg Russia
+Location: The Red Room, Harmony In Red
+---
+Artwork: Henri Matisse
+Artist:  Pushkin Museum of Fine Arts Moscow Russia
+Location: Open Window Colloure
+---
+Artwork: Henri Matisse
+Artist:  National Gallery of Art Washington USA
+Location: Interior With Phonograph
+---
+Artwork: Henri Matisse
+Artist:  Pinacoteca Agnelli Torino Italy
+Location: Arabian Coffee House
+---
+Artwork: Henri Matisse
+Artist:  Museum Of Fine Arts Houston Texas USA
+Location: The Joy Of Life
+---
+Artwork: Henri Matisse
+Artist:  The Barnes Foundation Philadelphia
+Location: Still Life With Blue Tablecloth
+---
+Artwork: Henri Matisse
+Artist:  San Francisco Museum of Modern Art California USA
+Location: The Window
+---
+Artwork: Henri Matisse
+Artist:  Detroit Institute Of Arts Michigan USA
+Location: Nude In The Studio
+---
+Artwork: Henri Matisse
+Artist:  Artizon Museum Tokyo Japan
+Location: The Green Line
+---
+Artwork: Henri Matisse
+Artist:  Statens Museum For Kunst Denmark
+Location: Corner Of The Artist's Studio
+---
+Artwork: Henri Matisse
+Artist:  Los Angeles County `museum Of Art LA USA
+Location: Countryside At Collioure
+---
+Artwork: Henri Matisse
+Artist:  Museum Of Modern Art New York City
+Location: The Gulf Of St Tropez
+---
+Artwork: Henri Matisse
+Artist:  Musee De L'Annonciade Saint Tropez France
+Location: Still Life With Aubergines
+---
+Artwork: Henri Matisse
+Artist:  Musee De Grenoble
+Location: Woman At The Window
+---
+Artwork: Henri Matisse
+Artist:  Museum Of Modern Art New York City USA
+Location: VINCENT VAN GOGH
+---
+Artwork: Olive Tress
+Artist:  Vincent Van Gogh
+Location: Minneapolis Institute of Arts Minnesota USA
+---
+Artwork: Blossoming Almomd Tree
+Artist:  Vincent Van Gogh
+Location: Van Gogh Museum Amsterdam Netherlands
+---
+Artwork: Whaet Field With Crows 1890
+Artist:  Vincent Van Gogh
+Location: Van Gogh Museum Amsterdam Netherlands
+---
+Artwork: Starry Night Over The Rhone
+Artist:  Vincent Van Gogh
+Location: Musee d'Orsay Paris France
+---
+Artwork: LEONARDO DA VINCI
+Artist:  Mona Lisa (La Gioconda)
+Location: Leonardo Da Vinci
+---
+Artwork: Louvre Museum Paris France
+Artist:  St John The Baptist
+Location: Leonardo Da Vinci
+---
+Artwork: Louvre Museum Paris France
+Artist:  The Last Supper
+Location: Leonardo Da Vinci
+---
+Artwork: Santa Maria delle Grazie, Milan, Italy
+Artist:  The Virgin On The Rocks
+Location: Leonardo Da Vinci
+---
+Artwork: Louvre Museum Paris France
+Artist:  Virgin And Child With St Anne
+Location: Leonardo Da Vinci
+---
+Artwork: Louvre Museum Paris France
+Artist:  Madonna Of The Carnation
+Location: Leonardo Da Vinci
+---
+Artwork: Museum Alte Pinakothek Munich Germany
+Artist:  Madonna Litta (Madonna And The Child)
+Location: Leonardo Da Vinci
+---
+Artwork: The Heritage St Petersburg
+Artist:  Lady With An Emine (Cecilia Gallerani)
+Location: Leonardo Da Vinci
+---
+Artwork: Czartoryski Museum Krakow Poland
+Artist:  Self Portrait
+Location: Leonardo Da Vinci
+---
+Artwork: Biblioteca Reale Turin Italy
+Artist:  Salvator Mundi
+Location: Leonardo Da Vinci
+---
+Artwork: Public Collection
+Artist:  EDGAR DEGAS
+Location: Dancers In Pink
+---
+Artwork: Hilaire Germaine Edgar Degas
+Artist:  Hill-Stead Museum Farmington USA
+Location: Dancer Adjusting Her Sandel
+---
+Artwork: Hilaire Germaine Edgar Degas
+Artist:  Metropolitan Museum of Art New York USA
+Location: Dancer In Green
+---
+Artwork: Hilaire Germaine Edgar Degas
+Artist:  Museo Nacional Thyssen-Bornemisza Madrid Spain
+Location: Two Dancers On A Stage
+---
+Artwork: Hilaire Germaine Edgar Degas
+Artist:  The Courtauld Gallery UK
+Location: The Ballet Class
+---
+Artwork: Hilaire Germaine Edgar Degas
+Artist:  Musee d'Orsay Paris France
+Location: Dancers Practising At The Barre
+---
+Artwork: Hilaire Germaine Edgar Degas
+Artist:  National Gallery Of Victoria Melbourne Australia
+Location: Miss La La At The Cirque Fernando
+---
+Artwork: Hilaire Germaine Edgar Degas
+Artist:  The National Gallery London UK
+Location: After The Bath Woman Drying Her Neck
+---
+Artwork: Hilaire Germaine Edgar Degas
+Artist:  Pushkin State Museum Of Fine Arts Moscow Russia
+Location: PABLO PICASSO
+---
+Artwork: The Brtutal Embrace
+Artist:  Pablo Picasso
+Location: Private Collection
+---
+Artwork: Garcon A'la Pipe
+Artist:  Pablo Picasso
+Location: Private Collection
+---
+Artwork: PORTRAITS
+Artist:  Mona Lisa (La Gioconda)
+Location: Leonardo Da Vinci
+---
+Artwork: Louvre Museum Paris France
+Artist:  The Girl With A Pearl Earring
+Location: Johannes Vermeer Van Delft
+---
+Artwork: Mauritshuis Royal Picture Gallery The Hague Netherlands
+Artist:  Portrait Of Adele Bloch-Bauer I
+Location: Gustav Klimt
+---
+Artwork: Neue Galerie New York USA
+Artist:  Self Portrait With Bandaged Ear And Pipe
+Location: Vincent Van Gogh
+---
+Artwork: Private Collection
+Artist:  American Gothic
+Location: Grant Wood
+---
+Artwork: Art Institute of Chicago Illinois USA
+Artist:  Portrait Of Dora Maar
+Location: Pablo Picasso
+---
+Artwork: Musee National Picasso Paris France
+Artist:  Self Portrait Rembrandt
+Location: Rembrandt Van Rijn
+---
+Artwork: Museum National Gallery Of Art Washington DC USA
+Artist:  Napoleon Crossing The Alps On 20th May 1800 1803
+Location: Jacques-Loius David
+---
+Artwork: Museum of Palace of Versailles Paris France
+Artist:  Portrait Ludwig X Of Bavaria
+Location: Barthel Beham
+---
+Artwork: Lietchtenstein Museum Vienna Austria
+Artist:  Young Woman (Laura)
+Location: Giovanni Bellini
+---
+Artwork: Kunsthistorisches Museum Vienna Austria
+Artist:  Portrait Of James Abbott
+Location: Giovanni Boldini
+---
+Artwork: Brooklyn Museum of Art New York USA
+Artist:  Portrait Of Cardinal Richelieu
+Location: Philippe De Champaigne
+---
+Artwork: National Gallery London UK
+Artist:  Triple Portrait Of Cardinal Richelieu
+Location: Philippe De Champaigne
+---
+Artwork: National Gallery London UK
+Artist:  Portrait Of A Man Possibly Of Robert Arnauld Of Andilly
+Location: Philippe De Champaigne
+---
+Artwork: Louvre Museum Paris France
+Artist:  Portrait Of Sarah Bernhardt
+Location: Georges Clarin
+---
+Artwork: Modern Art Museum of the City of Paris Paris France
+Artist:  Portrait Of Francis I Roi De France
+Location: Jean The Younger Clouet
+---
+Artwork: Louvre Museum Paris France
+Artist:  Portrait Of Charles IX
+Location: Francois Clouet
+---
+Artwork: Musee Conde Chantilly France
+Artist:  Portrait of Henri II King Of France
+Location: Francois Clouet
+---
+Artwork: Musee Conde Chantilly France
+Artist:  Portrait Of Odet De Coligny Cardinal Of Chatillon
+Location: Francois Clouet
+---
+Artwork: Musee Conde Chantilly France
+Artist:  Portrait Of Mary Queen Of Scots
+Location: Francois Clouet
+---
+Artwork: Victoria and Albert Museum London UK
+Artist:  Portrait Henri VI England
+Location: Francois Clouet
+---
+Artwork: Victoria and Albert Museum London UK
+Artist:  Portrait Of Catherine De Medici
+Location: Francois Clouet
+---
+Artwork: Musee Carnavalet Paris France
+Artist:  Portrait King Charles IX Of France
+Location: Francois Clouet
+---
+Artwork: Musee Conde Chantilly France
+Artist:  Portrait Of Elizabeth Of Austris Queen Of France
+Location: Francois Clouet
+---
+Artwork: Louvre Museum Paris France
+Artist:  Portrait Of Louise De Lorraine
+Location: Francois Clouet
+---
+Artwork: Museum of Fine Arts Houston USA
+Artist:  Portrait of My Daughters
+Location: Frank Weston Benson
+---
+Artwork: Worcester Art Museum Massachusetts USA
+Artist:  Emporer Napoleon I
+Location: Jaques-Louis David
+---
+Artwork: Fogg Art Museum at Harvard University Massachusetts USA
+Artist:  Portrait Of Emma Dobigny
+Location: Hilaire Germaine Edgar Degas
+---
+Artwork: National Gallery Of Victoria Melbourne Australia
+Artist:  Nanna
+Location: Anselm Feuerbach
+---
+Artwork: Neue Pinakothek Munich Germany
+Artist:  Nanna
+Location: Anselm Feuerbach
+---
+Artwork: Staatliche Kunsthalle Karlsruhe Germany
+Artist:  Self Portrait
+Location: Anselm Feuerbach
+---
+Artwork: The State Hermitage Museum St. Petersburg Russia
+Artist:  Portrait Of Princess Zinaida Yusupova With Two Sons At Arkhangelskoe
+Location: Francois Flameng
+---
+Artwork: Private Collection
+Artist:  Family Portrait Of A Boy And His Two Sisters
+Location: Francois Flameng
+---
+Artwork: Private Collection
+Artist:  Madam Hippolyte Flandrin
+Location: Hippolyte Flandrin
+---
+Artwork: Louvre Museum Paris France
+Artist:  Marie-Anne De Bourbon Duchesse De Vendome
+Location: Hippolyte Flandrin
+---
+Artwork: Museum of Palace of Versailles Paris France
+Artist:  The Woman In Blue (Portrait Of Duchess Of Beaufort)
+Location: Thomas Gainesborough
+---
+Artwork: The State Hermitage Museum St. Petersburg Russia
+Artist:  Napoleon In Coronation Robes
+Location: Anne-Louis Girodet De Roussy-Trioson
+---
+Artwork: Private Collection
+Artist:  Portrait Of Young Man As A Hunter
+Location: Anne-Louis Girodet De Roussy-Trioson
+---
+Artwork: Private Collection
+Artist:  Portrait Of A Young Man Holding A Glove
+Location: Frans Halls
+---
+Artwork: The State Hermitage Museum St. Petersburg Russia
+Artist:  Laughing Cavallier
+Location: Frans Halls
+---
+Artwork: The Wallace Collection London UK
+Artist:  Portrait Of A Man
+Location: Frans Halls
+---
+Artwork: Frick Collection New York USA
+Artist:  Portrait Of A Woman
+Location: Frans Halls
+---
+Artwork: Frick Collection New York USA
+Artist:  Portrait Of A Elderly Man
+Location: Frans Halls
+---
+Artwork: Frick Collection New York USA
+Artist:  Malle Babbe
+Location: Frans Halls
+---
+Artwork: Gemaldegalerie Berlin Germany
+Artist:  Portrait Of Doctor Gachet
+Location: Vincent Van Gogh
+---
+Artwork: Musee d'Orsay Paris France
+Artist:  Portrait of Johanna Straude
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  Portrait Of Dr Felix Rey
+Location: Vincent Van Gogh
+---
+Artwork: Pushkin Museum of Fine Arts Moscow Russia
+Artist:  Portrait Of The Postman Joseph Roulin
+Location: Vincent Van Gogh
+---
+Artwork: Kroller-Mueller Museum Otterlo Netherlands
+Artist:  Portrait Of Wolfang Amadeus Mozart
+Location: Barbara Kraftt
+---
+Artwork: Private Collectiom
+Artist:  Self Portrait
+Location: Rembrandt Von Rijn
+---
+Artwork: The Frick Collection New York City New York USA
+Artist:  Portrait Of Adele Bloch-Bauer II
+Location: Gustav Klimt
+---
+Artwork: Galerie Belvedere Vienna Austria
+Artist:  Bust Of A Woman And Self Portrait
+Location: Pablo Picasso
+---
+Artwork: Musee National Picasso Paris France
+Artist:  Portrait Of A Woman In D'Hermine Pass
+Location: Pablo Picasso
+---
+Artwork: Private Collection
+Artist:  Self Portrait
+Location: Pablo Picasso
+---
+Artwork: Private Collection
+Artist:  Portrait Of A Lady
+Location: Edward Charles Tarbell
+---
+Artwork: Private Collection
+Artist:  The Portrait (Miss Lloyd)
+Location: James Jaques Joseph Tissot
+---
+Artwork: Tate Gallery London UK
+Artist:  Dead Hare and Partridges
+Location: Jan Weenix
+---
+Artwork: The Wallace Collection London UK
+Artist:  LANDSCAPE
+Location: Water Lilies
+---
+Artwork: Claude Monet
+Artist:  Private Collection
+Location: Grand Canal
+---
+Artwork: Claude Monet
+Artist:  Boston Museum of Fine Arts Massachusetts USA
+Location: Grand Canal
+---
+Artwork: Claude Monet
+Artist:  Art Institute Of Chicago USA
+Location: Hay Stacks, Sun In The Mist
+---
+Artwork: Claude Monet
+Artist:  Minneapolis Institute Of Art USA
+Location: The Hunt
+---
+Artwork: Claude Monet
+Artist:  Musee D'Orsay Paris France
+Location: The Houses Of Parliament Sunset
+---
+Artwork: Claude Monet
+Artist:  Gallery Of Art Washington DC USA
+Location: Near Monte Carlo
+---
+Artwork: Claude Monet
+Artist:  Denver Art Museum Denver Colorado
+Location: Water Lilies
+---
+Artwork: Claude Monet
+Artist:  Museum Of Fine Arts Boston
+Location: Water Lilies
+---
+Artwork: Claude Monet
+Artist:  Dallas Museum Of Art Dallas Texas USA
+Location: Water Lilies
+---
+Artwork: Claude Monet
+Artist:  Museum Of Fine Art Houston Texas USA
+Location: Water Lilies
+---
+Artwork: Claude Monet
+Artist:  National Gallery Of Art Washington DC
+Location: Palazza Da Mula Venice
+---
+Artwork: Claude Monet
+Artist:  National Gallery London UK
+Location: Haystack At Sunset
+---
+Artwork: Claude Monet
+Artist:  Museum Of Fine Arts Boston USA
+Location: Haystacks In The Sunlight Midday
+---
+Artwork: Claude Monet
+Artist:  Geelong Gallery Victoria Australia
+Location: Rocks At Port-Goulphar Belle-IIe
+---
+Artwork: Claude Monet
+Artist:  Art Institute of Chicago Illinois USA
+Location: Starry Night
+---
+Artwork: Vincent Van Gogh
+Artist:  Museum of Modern Art New York USA
+Location: Irises
+---
+Artwork: Vincent Van Gogh
+Artist:  J. Paul Getty Museum Los Angeles USA
+Location: Red Vineyards At Airies
+---
+Artwork: Vincent Van Gogh
+Artist:  Pushkin Museum of Fine Arts Moscow Russia
+Location: Whaet Field With Crows 1890
+---
+Artwork: Vincent Van Gogh
+Artist:  Van Gogh Museum Amsterdam Netherlands
+Location: Starry Night Over The Rhone
+---
+Artwork: Vincent Van Gogh
+Artist:  Musee d'Orsay Paris France
+Location: The Cafe Terrace On The Place Du Forum Airies
+---
+Artwork: Vincent Van Gogh
+Artist:  Kroller-Mueller Museum Otterlo Netherlands
+Location: Haystacks In Provence
+---
+Artwork: John Otis Adams
+Artist:  Indianapolis Museum ofArt (Newfields)
+Location: Philadelphia Winter Landscape
+---
+Artwork: Thomas Birch
+Artist:  Thyssen-Bornemisza Museum Madrid Spain
+Location: Monte Sainte-Victoire
+---
+Artwork: Paul Cezanne
+Artist:  Private Collection
+Location: A Wanderer Above A Sea Of Mist
+---
+Artwork: Caspar David Friedrich
+Artist:  Hamburger Kunsthalle Hamburg Germany
+Location: The Pond October
+---
+Artwork: Clarence Ganon
+Artist:  National Gallery of Art Ottawa Canada
+Location: After The Storm
+---
+Artwork: Clarence Ganon
+Artist:  Private Collection
+Location: Village In The Laurentian Mountains
+---
+Artwork: Thomas Gainesborough
+Artist:  Frick Collection New York USA
+Location: Italian Landscape
+---
+Artwork: Jacob Philippe Hackett
+Artist:  The State Hermitage Museum St. Petersburg Russia
+Location: The Summer Camp Blue Mountain
+---
+Artwork: Marsden Hartley
+Artist:  Fine Arts Museums of San Francisco California USA
+Location: The West Wind Isles Of Shoals
+---
+Artwork: Frederick Childe Hassam
+Artist:  Yale University Art Gallery Connecticut USA
+Location: Duck Island from Appledore
+---
+Artwork: Frederick Childe Hassam
+Artist:  Private Collection
+Location: Central Park
+---
+Artwork: George Inness
+Artist:  Carnegie Museum of Art Pittsburgh USA
+Location: The Home At Montclair
+---
+Artwork: George Inness
+Artist:  The Clark Art Institute Massachusetts USA
+Location: Morning, Catskill Valley
+---
+Artwork: George Inness
+Artist:  Santa Barbara Museum of Art California USA
+Location: Sundown Near Montclair
+---
+Artwork: George Inness
+Artist:  Private Collection
+Location: The Coming Storm
+---
+Artwork: George Inness
+Artist:  Albright-Knox Art Gallery Buffalo USA
+Location: A Bit Of Roman Aqueduct
+---
+Artwork: George Inness
+Artist:  High Museum of Art Atlanta USA
+Location: The Wood Chopper
+---
+Artwork: George Inness
+Artist:  Cleveland Museum of Art Ohio USA
+Location: Crossing The Ford
+---
+Artwork: George Inness
+Artist:  Art Institute of Chicago Illinois USA
+Location: Hudson River Valley
+---
+Artwork: George Inness
+Artist:  Detroit Institute of Arts Michigan USA
+Location: Landscape Sunset
+---
+Artwork: George Inness
+Artist:  Fine Arts Museums of San Francisco California USA
+Location: Autumn Oaks
+---
+Artwork: George Inness
+Artist:  Metropolitan Museum of Art New York USA
+Location: Villa Borgese, Rome
+---
+Artwork: George Inness
+Artist:  Boston Museum of Fine Arts Massachusetts USA
+Location: Golden Glow (The Golden Sun)
+---
+Artwork: George Inness
+Artist:  Ball State University Museum of Art Indiana USA
+Location: Sunrise
+---
+Artwork: George Inness
+Artist:  Brooklyn Museum of Art New York USA
+Location: Summer Foliage
+---
+Artwork: George Inness
+Artist:  Dallas Museum of Art Texas USA
+Location: Winter Landscape
+---
+Artwork: Wassily Kadinsky
+Artist:  The State Hermitage Museum St Peterburg Russia
+Location: A Cloudy Day, Bluebonnets Near San Antonio, Texas
+---
+Artwork: Julian Onderdonk
+Artist:  Amon Carter Museum Texas USA
+Location: October Sunlight
+---
+Artwork: Julian Onderdonk
+Artist:  allas Museum of Art Texas USA
+Location: Fall Landscaape
+---
+Artwork: Julian Onderdonk
+Artist:  Private Collection
+Location: Near San Antonio
+---
+Artwork: Edgar Alwin Payne
+Artist:  Private Collection
+Location: Monument Valley Riverbed
+---
+Artwork: Pablo Picasso
+Artist:  Museum Of Modern Art New York USA
+Location: Figures At The Seaside
+---
+Artwork: Pablo Picasso
+Artist:  Kunstmuseum Basel Switzerland
+Location: A View Of Venice Rio S marina
+---
+Artwork: Franz Richard Unterberger
+Artist:  Private Collection
+Location: The Grand Canal, Venice
+---
+Artwork: Robert Vennoh
+Artist:  Minneapolis Institute of Arts Minnesota USA
+Location: The Flanders Field Where Soldiers Sleep And Poppies Grow
+---
+Artwork: Robert Vennoh
+Artist:  Butler Institute of American Art Youngstown USA
+Location: The Bridge At Grez
+---
+Artwork: Robert Vennoh
+Artist:  Metropolitan Museum of Art New York USA
+Location: Jardin De Paysanne
+---
+Artwork: Robert Vennoh
+Artist:  Terra Museum of American Art Chicago USA
+Location: Poppies In France
+---
