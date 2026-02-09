@@ -49,7 +49,8 @@ export default async function ProductDetailsPage({
         currency: famousArtwork.currency,
         basePrice: famousArtwork.basePrice,
         options: famousArtwork.options,
-        location: (famousArtwork as any).location,
+        location: famousArtwork.location,
+        hammerPrice: famousArtwork.hammerPrice,
       };
     }
   }
@@ -76,6 +77,8 @@ export default async function ProductDetailsPage({
         currency: item.currency,
         basePrice: item.basePrice,
         options: item.options,
+        location: item.location,
+        hammerPrice: item.hammerPrice,
         _slug: getFamousArtworkSlug(item)
       } as Artwork & { _slug: string }))
     ].slice(0, 4)

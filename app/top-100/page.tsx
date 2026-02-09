@@ -24,6 +24,7 @@ type CollectionPainting = {
   price: number | null;
   currency: string;
   priceLabel: string;
+  hammerPrice?: string;
 };
 
 // ... (existing helper logic remains same) ...
@@ -114,7 +115,8 @@ const COLLECTION_PAINTINGS: CollectionPainting[] = TOP_100_PAINTINGS.map((artwor
     ...(() => {
       const pricing = matchingArtwork ? getPrimaryPricingFromArtwork(matchingArtwork) : getPrimaryPricing(artwork);
       return { price: pricing.price, currency: pricing.currency, priceLabel: pricing.label };
-    })()
+    })(),
+    hammerPrice: artwork.hammerPrice
   };
 });
 
@@ -304,6 +306,12 @@ export default function Top100Page() {
                       <p className="line-clamp-1">{painting.artist}</p>
                       <p className="line-clamp-1">Year: {painting.year}</p>
                       <p className="line-clamp-1 text-gray-400">Hand-painted on linen canvas</p>
+                      {painting.hammerPrice && (
+                        <div className="mt-2 pt-2 border-t border-amber-200 bg-gradient-to-r from-amber-50 to-yellow-50 -mx-3 px-3 py-2 rounded">
+                          <p className="text-xs text-amber-900 font-bold uppercase tracking-wide mb-1">Est. Value</p>
+                          <p className="text-sm font-bold text-amber-700">{painting.hammerPrice}</p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
