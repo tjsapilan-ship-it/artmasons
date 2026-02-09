@@ -9,7 +9,8 @@ import {
   Palette,
   Phone,
   Star,
-  Info
+  Info,
+  BadgeDollarSign
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { type CartItem, useCart } from '../context/CartContext';
@@ -116,6 +117,15 @@ export default function ClientProductDetails({
                   {artwork.location}
                 </p>
               )}
+              {artwork.hammerPrice && (
+                <div className="mt-3 pt-3 border-t border-amber-200 bg-gradient-to-r from-amber-50 to-yellow-50 -mx-4 md:-mx-5 px-4 md:px-5 py-3">
+                  <p className="flex items-center gap-2 mb-1">
+                    <BadgeDollarSign size={16} className="text-amber-600" />
+                    <span className="font-bold text-amber-900 uppercase text-xs tracking-wide">Original Artwork Est. Value</span>
+                  </p>
+                  <p className="text-2xl font-bold text-amber-700 font-serif">{artwork.hammerPrice}</p>
+                </div>
+              )}
             </div>
           </div>
 
@@ -172,6 +182,18 @@ export default function ClientProductDetails({
           <p className="text-sm md:text-sm text-gray-500 font-serif uppercase tracking-wide">
             Hand-painted on linen canvas
           </p>
+          {artwork.hammerPrice && (
+            <div className="mt-4 pt-4 border-t border-amber-200">
+              <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-300 p-3 rounded">
+                <div className="flex items-center gap-2 mb-1.5">
+                  <BadgeDollarSign size={14} className="text-amber-600" />
+                  <p className="text-xs text-amber-900 font-bold uppercase tracking-wide">Original Artwork Value</p>
+                </div>
+                <p className="text-2xl md:text-3xl font-bold text-amber-700 font-serif">{artwork.hammerPrice}</p>
+                <p className="text-xs text-amber-800 mt-1 italic">Estimated market value of the original masterpiece</p>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Size Selection */}

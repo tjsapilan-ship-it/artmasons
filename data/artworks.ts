@@ -15,7 +15,37 @@ export interface Artwork {
   basePrice?: number;
   options?: Array<{ id: string; width: number; height: number; price: number; label: string }>;
   location?: string;
+  hammerPrice?: string;
 }
+
+const POPULAR_ART_HAMMER_PRICE_BY_SLUG: Record<string, string> = {
+  "water-lilies-1906": "$50 - $70M",
+  "grand-canal": "$56.6 M",
+  "the-japanese-bridge-pond-with-water-lilies": "$20 - $70 M",
+  "hay-stacks-sun-in-the-mist": "$115 - $130M",
+  "the-hunt": "$110M",
+  "the-houses-of-parliament-sunset": "$60 - $100M",
+  "near-monte-carlo": "$60 - $100M",
+  "the-water-lily-pond": "$45 - $65M",
+  "water-lilies-1905": "$50 - $70M",
+  "water-lilies-1908": "$50 - $70M",
+  "water-lilies-1907": "$50 - $70M",
+  "water-lilies-1905-2": "$50 - $70M",
+  "waterloo-bridge-gray-day": "$60 - $70M",
+  "palazza-da-mula-venice": "$30 - $55 M",
+  "the-seine-in-giverny": "$18 - $25 M",
+  "poplars-on-the-epte": "$35 - $50 M",
+  "haystack-at-sunset": "$115 - $113 M",
+  "haystacks-in-the-sunlight-midday": "$35 - $65 M",
+  "starry-night": "$150 - $200M",
+  "irises": "$110 - $150M",
+  "red-vineyards-at-airies": "$400 - $550 M",
+  "open-window-colloure": "$200 - $280 M",
+  "portrait-of-adele-bloch-bauer-i": "$250 - $350 M",
+  "portrait-of-johanna-straude": "$45 - $70 M",
+  "portrait-of-adele-bloch-bauer-ii": "$200 - $260 M",
+  "self-portrait-with-bandaged-ear-and-pipe": "$250 - $350 M",
+};
 
 const ARTWORKS_A_TO_M: Artwork[] = [
   // Letter A
@@ -172,7 +202,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/a/still life a velvet bag on a marble ledge.webp",
     artistLifespan: "1627-1683",
     slug: "still-life-a-velvet-bag-on-a-marble-edge",
-    letter: "A"
+    letter: "A",
+    location: "Museum Of Fine Arts Houston"
   },
   {
     name: "Still Life With Dead Birds And Game Bag",
@@ -1473,7 +1504,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/b/the handkerchief dance.webp",
     artistLifespan: "1730-1796",
     slug: "the-handkerchief-dance",
-    letter: "B"
+    letter: "B",
+    location: "Museo Carmen Thyssen M�laga Spain"
   },
   {
     name: "West Indian Village With Figures Dancing",
@@ -1837,7 +1869,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/c/marie-anne caralus duran (the artists daughter).webp",
     artistLifespan: "1837-1917",
     slug: "marie-anne-caralus-duran-the-artists-daughter",
-    letter: "C"
+    letter: "C",
+    location: "Fine Arts Museums of San Francisco California USA"
   },
   {
     name: "The Card Players",
@@ -2894,7 +2927,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/death of marat.webp",
     artistLifespan: "1748-1825",
     slug: "death-of-marat",
-    letter: "D"
+    letter: "D",
+    location: "Royal Museums of Fine Arts Brussels Belgium"
   },
   {
     name: "Lictors Bearing To Brutus The Bodies Of His Sons",
@@ -2906,7 +2940,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/lictors bearing to brutus the bodies of his sons.webp",
     artistLifespan: "1748-1825",
     slug: "lictors-bearing-to-brutus-the-bodies-of-his-sons",
-    letter: "D"
+    letter: "D",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "The Death Of Socrates",
@@ -2918,7 +2953,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the death of socrates.webp",
     artistLifespan: "1748-1825",
     slug: "the-death-of-socrates",
-    letter: "D"
+    letter: "D",
+    location: "Metropolitan Museum of Art New York USA"
   },
   {
     name: "The Emporer Napoleon In His Study At The Tuileries",
@@ -2930,7 +2966,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the emporer napoleon in his study at the tuileries.webp",
     artistLifespan: "1748-1825",
     slug: "the-emporer-napoleon-in-his-study-at-the-tuileries",
-    letter: "D"
+    letter: "D",
+    location: "National Gallery of Art Washington USA"
   },
   {
     name: "Mars Disarmed By Venus And The Three Graces",
@@ -2942,7 +2979,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/mars disarmed by venus and the three graces.webp",
     artistLifespan: "1748-1825",
     slug: "mars-disarmed-by-venus-and-the-three-graces",
-    letter: "D"
+    letter: "D",
+    location: "Royal Museums of Fine Arts Brussels Belgium"
   },
   {
     name: "The Coronation Of Napoleon",
@@ -2954,7 +2992,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/the coronation of napoleon.webp",
     artistLifespan: "1748-1825",
     slug: "the-coronation-of-napoleon",
-    letter: "D"
+    letter: "D",
+    location: "Louvre Museum Paris France"
   },
   {
     name: "Emporer Napoleon I",
@@ -3296,7 +3335,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/d/open window.webp",
     artistLifespan: "1977-1953",
     slug: "open-window",
-    letter: "D"
+    letter: "D",
+    location: "The Art Institute Of Chicago"
   },
   {
     name: "The Yellow Console With A Violin",
@@ -3854,7 +3894,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/g/still life sunflowers on an armchair.webp",
     artistLifespan: "1848-1903",
     slug: "still-life-sunflowers-on-an-armchair",
-    letter: "G"
+    letter: "G",
+    location: "E.G. Buehrle Zurich Switzerland"
   },
   {
     name: "Three Tahitians",
@@ -4431,7 +4472,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/married couple in a garden.webp",
     artistLifespan: "1582-1666",
     slug: "married-couple-in-a-garden",
-    letter: "H"
+    letter: "H",
+    location: "Rijksmuseum Amsterdam Netherlands"
   },
   {
     name: "Laughing Cavallier",
@@ -4534,7 +4576,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/h/rosslyn chapel near edingburgh.webp",
     artistLifespan: "1821-1890",
     slug: "rosslyn-chapel-near-edingburgh",
-    letter: "H"
+    letter: "H",
+    location: "Public Collection"
   },
   {
     name: "George Glennie Putting At Blackheath With Putting Cleek",
@@ -5392,7 +5435,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/bavarian landscape with a church.webp",
     artistLifespan: "1866-1944",
     slug: "bavarian-landscape-with-a-church",
-    letter: "K"
+    letter: "K",
+    location: "Museum Folkwang Essen"
   },
   {
     name: "Composition 4",
@@ -5482,7 +5526,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/portrait of a man with streimel.webp",
     artistLifespan: "1854-1912",
     slug: "portrait-of-a-man-with-streimel",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "Untitled (Transition)",
@@ -5533,7 +5578,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/k/self portrait in velvet.webp",
     artistLifespan: "1907-1954",
     slug: "self-portrait-in-velvet",
-    letter: "K"
+    letter: "K",
+    location: "Private Collection"
   },
   {
     name: "A Few Small Nips (Passionately In Love)",
@@ -6361,7 +6407,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/l/the painters honeymoon.webp",
     artistLifespan: "1830-1896",
     slug: "the-painters-honeymoon",
-    letter: "L"
+    letter: "L",
+    location: "Boston Museum of Fine Arts Massachusetts USA"
   },
   {
     name: "Wedded",
@@ -6633,7 +6680,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/still life with melon and peaches.webp",
     artistLifespan: "1868-69",
     slug: "still-life-with-melon-and-peaches",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery Of Art Washington"
   },
   {
     name: "Plum Brandy",
@@ -7308,7 +7356,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/blossoming apple trees.webp",
     artistLifespan: "1872-1944",
     slug: "blossoming-apple-trees",
-    letter: "M"
+    letter: "M",
+    location: "Haags Gemeentemuseum The Hague Netherlands"
   },
   {
     name: "Composition With Large Red Yellow Plane, Yellow, Black Grey and Blue",
@@ -7398,7 +7447,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/composition red, yellow and blue.webp",
     artistLifespan: "1872-1944",
     slug: "composition-red-yellow-and-blue",
-    letter: "M"
+    letter: "M",
+    location: "Kroller-Mueller Museum Otterlo Netherlands"
   },
   {
     name: "Composition Of Red and White",
@@ -7992,7 +8042,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/the left arm of the seineln front of the place dauphine.webp",
     artistLifespan: "1865-1924",
     slug: "the-left-arm-of-the-seineln-front-of-the-place-dauphine",
-    letter: "M"
+    letter: "M",
+    location: "Musee d'Orsay Paris France"
   },
   {
     name: "Dieppe",
@@ -8030,7 +8081,8 @@ const ARTWORKS_A_TO_M: Artwork[] = [
     image: "/image/m/landscape trinidad.webp",
     artistLifespan: "1865-1924",
     slug: "landscape-trinidad",
-    letter: "M"
+    letter: "M",
+    location: "National Gallery of Art Ottawa Canada"
   },
   {
     name: "Cafe Pasaje Havana",
@@ -8170,10 +8222,15 @@ const ARTWORKS_A_TO_M: Artwork[] = [
 ];
 
 // Merge all artworks from different files
-export const ARTWORKS: Artwork[] = [
+const ARTWORKS_BASE: Artwork[] = [
   ...ARTWORKS_A_TO_M,
   ...ARTWORKS_NZ,
 ];
+
+export const ARTWORKS: Artwork[] = ARTWORKS_BASE.map((artwork) => ({
+  ...artwork,
+  hammerPrice: POPULAR_ART_HAMMER_PRICE_BY_SLUG[artwork.slug],
+}));
 
 export function getArtworkSlug(artwork: Artwork | string): string {
   const name = typeof artwork === 'string' ? artwork : artwork.slug || artwork.name;
