@@ -68,7 +68,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h3 className="font-serif text-2xl font-bold mb-2 text-[#800000]">Cookies</h3>
             <p className="mb-4">
-              Our website uses cookies to enhance user experience. By using our site, you consent to the use of cookies in accordance with this policy. A cookie is a small file containing an identifier (a string of letters and numbers) sent by a web server to your browser and stored locally.
+              Our website uses cookies to enhance user experience. By using our site, you consent to the use of cookies in accordance with this policy. When you first visit our site, a consent banner will appear at the bottom of the page asking you to accept or decline cookies. A cookie is a small file containing an identifier (a string of letters and numbers) sent by a web server to your browser and stored locally.
             </p>
             <p className="mb-4">
               The identifier is sent back to the server whenever the browser requests a page, allowing the server to track your visit.
@@ -77,8 +77,11 @@ export default function PrivacyPolicyPage() {
               <li><strong>Session cookies</strong> expire when you close your browser.</li>
               <li><strong>Persistent cookies</strong> remain on your device until the set expiry date, unless you delete them manually.</li>
             </ul>
-            <p>
+            <p className="mb-4">
               Cookies themselves do not contain personally identifiable information, but they may be linked to information you provide voluntarily. They help us identify returning visitors and track usage across different pages. We use both session and persistent cookies to improve site functionality and user experience.
+            </p>
+            <p className="mb-4">
+              <strong>Consent Management:</strong> Your cookie consent preference is stored locally on your device for 30 days. If you wish to change your preference at any time, you can clear your browser's local storage data to reset the consent prompt. By clicking "Accept All" on the consent banner, you agree to the use of cookies as described in this policy.
             </p>
           </section>
 

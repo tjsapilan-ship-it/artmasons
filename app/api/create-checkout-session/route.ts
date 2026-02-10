@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 import ordersLib from '../../lib/orders';
 import { getStripe } from '../../lib/stripe';
+import { getClientIP, isRateLimited, withSecurityHeaders, sanitizeInput } from '../../lib/security';
+import { sanitizeForLogging } from '../../lib/encryption';
 
 export const runtime = 'nodejs';
 
@@ -37,16 +40,28 @@ function toUnitAmount(priceMajor: number): number {
   return Math.round(priceMajor * 100);
 }
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
+  // Rate limiting
+  const clientIP = getClientIP(req);
+  if (isRateLimited(clientIP, 20, 60000)) { // 20 checkout attempts per minute
+    return withSecurityHeaders(
+      NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 })
+    );
+  }
+
   let body: CheckoutRequestBody;
   try {
     body = (await req.json()) as CheckoutRequestBody;
   } catch {
-    return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
+    return withSecurityHeaders(
+      NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 })
+    );
   }
 
   if (!body?.items?.length) {
-    return NextResponse.json({ error: 'No items provided' }, { status: 400 });
+    return withSecurityHeaders(
+      NextResponse.json({ error: 'No items provided' }, { status: 400 })
+    );
   }
 
   const stripe = getStripe();
@@ -65,15 +80,21 @@ export async function POST(req: Request) {
     .filter((it) => it.title && Number.isFinite(it.price) && Number.isFinite(it.quantity));
 
   if (items.length === 0) {
-    return NextResponse.json({ error: 'Invalid items' }, { status: 400 });
+    return withSecurityHeaders(
+      NextResponse.json({ error: 'Invalid items' }, { status: 400 })
+    );
   }
 
   const currency = items[0].currency;
   if (!/^[a-z]{3}$/.test(currency)) {
-    return NextResponse.json({ error: 'Invalid currency' }, { status: 400 });
+    return withSecurityHeaders(
+      NextResponse.json({ error: 'Invalid currency' }, { status: 400 })
+    );
   }
   if (items.some((it) => it.currency !== currency)) {
-    return NextResponse.json({ error: 'All items must have the same currency' }, { status: 400 });
+    return withSecurityHeaders(
+      NextResponse.json({ error: 'All items must have the same currency' }, { status: 400 })
+    );
   }
 
   const line_items = items.map((it) => {
@@ -100,30 +121,37 @@ export async function POST(req: Request) {
 
   const customer = body.customer || {};
 
+  // Sanitize customer data
+  const sanitizedCustomer = {
+    name: customer.name ? sanitizeInput(String(customer.name)) : undefined,
+    email: customer.email ? String(customer.email).toLowerCase().trim() : undefined,
+    phone: customer.phone ? String(customer.phone).trim() : undefined,
+    address: customer.address ? sanitizeInput(String(customer.address)) : undefined,
+  };
+
+  // Log sanitized checkout attempt
+  console.log('Checkout session request:', sanitizeForLogging({ items: items.length, customer: sanitizedCustomer }));
+
   try {
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
       line_items,
       success_url: `${baseUrl}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${baseUrl}/cart`,
-      customer_email: customer.email ? String(customer.email) : undefined,
+      customer_email: sanitizedCustomer.email,
       metadata: {
-        customer_name: customer.name ? String(customer.name) : '',
-        customer_phone: customer.phone ? String(customer.phone) : '',
-        customer_address: customer.address ? String(customer.address) : '',
+        customer_name: sanitizedCustomer.name || '',
+        customer_phone: sanitizedCustomer.phone || '',
+        customer_address: sanitizedCustomer.address || '',
       },
     });
 
+    // Save order with encrypted customer data (encryption happens in ordersLib)
     ordersLib.saveOrder({
       sessionId: session.id,
       status: 'pending',
       items,
-      customer: {
-        name: customer.name,
-        email: customer.email,
-        address: customer.address,
-        phone: customer.phone,
-      },
+      customer: sanitizedCustomer,
       raw: {
         id: session.id,
         payment_status: session.payment_status,
@@ -131,10 +159,14 @@ export async function POST(req: Request) {
       },
     });
 
-    return NextResponse.json({ id: session.id, url: session.url });
+    return withSecurityHeaders(
+      NextResponse.json({ id: session.id, url: session.url })
+    );
   } catch (err: unknown) {
     console.error('Failed to create checkout session', err);
     const message = err instanceof Error ? err.message : 'Failed to create checkout session';
-    return NextResponse.json({ error: message }, { status: 500 });
+    return withSecurityHeaders(
+      NextResponse.json({ error: message }, { status: 500 })
+    );
   }
 }

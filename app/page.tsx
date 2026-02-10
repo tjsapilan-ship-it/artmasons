@@ -564,7 +564,7 @@ export default function ArtMasonsLanding() {
                     sizes="(max-width: 768px) 100vw, 66vw"
                     className="object-contain z-10 drop-shadow-2xl"
                     style={{ aspectRatio: '3/4' }}
-                    priority
+                    priority={currentArtIndex === 0}
                     quality={90}
                   />
                 </motion.div>

@@ -7,8 +7,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 import ErrorBoundary from "./components/ErrorBoundary";
+import CookieConsentBanner from "./components/CookieConsentBanner";
 import { CartProvider } from "./context/CartContext";
 import { ToastProvider } from "./context/ToastContext";
+import { ConsentProvider } from "./context/ConsentContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -74,14 +76,17 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}>
         <PageLoader />
         <ErrorBoundary>
-          <ToastProvider>
-            <CartProvider>
-              <Header />
-              {children}
-              <BackToTop />
-              <Footer />
-            </CartProvider>
-          </ToastProvider>
+          <ConsentProvider>
+            <ToastProvider>
+              <CartProvider>
+                <Header />
+                {children}
+                <BackToTop />
+                <Footer />
+                <CookieConsentBanner />
+              </CartProvider>
+            </ToastProvider>
+          </ConsentProvider>
         </ErrorBoundary>
       </body>
     </html>
