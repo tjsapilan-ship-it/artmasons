@@ -8,6 +8,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import { type Artwork, ARTWORKS, getArtworkSlug } from '../../data/artworks';
 import { TOP_100_PAINTINGS, getFamousArtworkSlug, FamousArtwork } from '../../data/famousAndTop100';
 import QuoteRequestModal from '../components/QuoteRequestModal';
+import { useCurrency } from '../context/CurrencyContext';
 
 
 // --- THEME COLORS ---
@@ -65,44 +66,38 @@ const getPrimaryPricingFromArtwork = (artwork: Artwork) => {
   return { price, currency: artwork.currency || 'AED', label: minOption?.label || 'Original Size' };
 };
 
-const formatPrice = (price: number, currency: string) => {
-  const formatted = new Intl.NumberFormat('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(price);
-  return `${currency} ${formatted}`;
+const normalizeName = (name: string): string => {
+  return name
+    .toLowerCase()
+    .normalize('NFD') // Decompose accented characters
+    .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
+    .replace(/[()]/g, '') // Remove parentheses
+    .replace(/\s+/g, ' ') // Normalize whitespace
+    .trim();
 };
-
-  // Helper to normalize names for better matching
-  const normalizeName = (name: string): string => {
-    return name
-      .toLowerCase()
-      .normalize('NFD') // Decompose accented characters
-      .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
-      .replace(/[()]/g, '') // Remove parentheses
-      .replace(/\s+/g, ' ') // Normalize whitespace
-      .trim();
-  };
 
 // Use TOP_100_PAINTINGS from the PDF data file
 const COLLECTION_PAINTINGS: CollectionPainting[] = TOP_100_PAINTINGS.map((artwork: FamousArtwork, index: number) => {
-    // Try to find matching artwork in main ARTWORKS collection for slug and pricing
-    // Match by title AND artist with normalized comparison
-    const normalizedTitle = normalizeName(artwork.title);
-    const normalizedArtist = normalizeName(artwork.artist);
-  
-    const matchingArtwork = ARTWORKS.find((a) => {
-      const artworkTitle = normalizeName(a.name ?? "");
-      const artworkArtist = normalizeName(a.artist ?? "");
-    
-      // Check for exact match or title contains/is contained
-      const titleMatch = artworkTitle === normalizedTitle || 
-                         artworkTitle.includes(normalizedTitle) || 
-                         normalizedTitle.includes(artworkTitle);
-    
-      // Check for artist match with name order flexibility
-      const artistMatch = artworkArtist === normalizedArtist ||
-                         artworkArtist.split(' ').reverse().join(' ') === normalizedArtist;
-    
-      return titleMatch && artistMatch;
-    });
+  // Try to find matching artwork in main ARTWORKS collection for slug and pricing
+  // Match by title AND artist with normalized comparison
+  const normalizedTitle = normalizeName(artwork.title);
+  const normalizedArtist = normalizeName(artwork.artist);
+
+  const matchingArtwork = ARTWORKS.find((a) => {
+    const artworkTitle = normalizeName(a.name ?? "");
+    const artworkArtist = normalizeName(a.artist ?? "");
+
+    // Check for exact match or title contains/is contained
+    const titleMatch = artworkTitle === normalizedTitle ||
+      artworkTitle.includes(normalizedTitle) ||
+      normalizedTitle.includes(artworkTitle);
+
+    // Check for artist match with name order flexibility
+    const artistMatch = artworkArtist === normalizedArtist ||
+      artworkArtist.split(' ').reverse().join(' ') === normalizedArtist;
+
+    return titleMatch && artistMatch;
+  });
 
   return {
     rank: index + 1,
@@ -125,6 +120,7 @@ export default function Top100Page() {
   const [selectedPeriod, setSelectedPeriod] = useState<string>('All');
   const [showQuoteModal, setShowQuoteModal] = useState(false);
   const [selectedArtwork, setSelectedArtwork] = useState<{ title: string; artist: string } | null>(null);
+  const { formatPrice } = useCurrency();
 
   const periods = useMemo(() => {
     const uniquePeriods = Array.from(new Set(COLLECTION_PAINTINGS.map((p: CollectionPainting) => p.period)));
@@ -286,7 +282,7 @@ export default function Top100Page() {
                       <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
                         <div className="font-serif text-xs text-gray-600 mb-1">{painting.priceLabel}</div>
                         <div className="font-serif text-base font-bold text-[#800000]">
-                          {painting.price !== null ? formatPrice(painting.price, painting.currency) : 'Price on request'}
+                          {painting.price !== null ? formatPrice(painting.price) : 'Price on request'}
                         </div>
                       </button>
                       <button

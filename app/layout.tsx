@@ -11,6 +11,7 @@ import CookieConsentBanner from "./components/CookieConsentBanner";
 import { CartProvider } from "./context/CartContext";
 import { ToastProvider } from "./context/ToastContext";
 import { ConsentProvider } from "./context/ConsentContext";
+import { CurrencyProvider } from "./context/CurrencyContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -78,13 +79,15 @@ export default function RootLayout({
         <ErrorBoundary>
           <ConsentProvider>
             <ToastProvider>
-              <CartProvider>
-                <Header />
-                {children}
-                <BackToTop />
-                <Footer />
-                <CookieConsentBanner />
-              </CartProvider>
+              <CurrencyProvider>
+                <CartProvider>
+                  <Header />
+                  {children}
+                  <BackToTop />
+                  <Footer />
+                  <CookieConsentBanner />
+                </CartProvider>
+              </CurrencyProvider>
             </ToastProvider>
           </ConsentProvider>
         </ErrorBoundary>

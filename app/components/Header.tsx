@@ -5,18 +5,28 @@ import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Search, ShoppingBag, Menu, X } from "lucide-react";
+import { Search, ShoppingBag, Menu, X, Globe, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCart } from "../context/CartContext";
+import { useCurrency, Currency } from "../context/CurrencyContext";
 
 const THEME_RED = "#800000";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [currencyMenuOpen, setCurrencyMenuOpen] = useState(false);
   const router = useRouter();
 
   const { count } = useCart();
+  const { currency, setCurrency } = useCurrency();
+
+  const currencies: Currency[] = ['AUD', 'GBP', 'EUR', 'USD', 'AED'];
+
+  const handleCurrencyChange = (newCurrency: Currency) => {
+    setCurrency(newCurrency);
+    setCurrencyMenuOpen(false);
+  };
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -111,7 +121,7 @@ export default function Header() {
                     onChange={(e) => setSearchQuery(e.target.value)}
                     style={{ color: '#000000' }}
                   />
-                  <button 
+                  <button
                     type="submit"
                     className="p-3 hover:bg-gray-100 transition-colors cursor-pointer"
                   >
@@ -130,6 +140,41 @@ export default function Header() {
                 <div className="absolute top-0 right-0 w-3/4 h-1/3 bg-green-600"></div>
                 <div className="absolute bottom-0 right-0 w-3/4 h-1/3 bg-black"></div>
                 <div className="absolute top-1/3 right-0 w-3/4 h-1/3 bg-white"></div>
+              </div>
+
+              {/* Currency Selector */}
+              <div className="relative hidden md:block">
+                <button
+                  onClick={() => setCurrencyMenuOpen(!currencyMenuOpen)}
+                  className="flex items-center gap-1 px-3 py-1.5 rounded-sm border border-gray-300 hover:border-[#800000] transition-colors bg-white cursor-pointer"
+                  aria-label="Select currency"
+                >
+                  <Globe size={16} className="text-gray-600" />
+                  <span className="font-serif text-sm font-medium text-black">{currency}</span>
+                  <ChevronDown size={14} className="text-gray-600" />
+                </button>
+                <AnimatePresence>
+                  {currencyMenuOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-full right-0 mt-2 bg-white border border-gray-200 rounded-sm shadow-lg overflow-hidden z-50 min-w-[100px]"
+                    >
+                      {currencies.map((curr) => (
+                        <button
+                          key={curr}
+                          onClick={() => handleCurrencyChange(curr)}
+                          className={`w-full px-4 py-2 text-left font-serif text-sm hover:bg-gray-50 transition-colors cursor-pointer ${curr === currency ? 'bg-[#800000] text-white hover:bg-[#600000]' : 'text-black'
+                            }`}
+                        >
+                          {curr}
+                        </button>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
               <Link href="/cart" className="flex items-center gap-2 cursor-pointer hover:opacity-70">

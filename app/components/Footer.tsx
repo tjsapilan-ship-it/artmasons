@@ -9,6 +9,42 @@ import {
 } from "lucide-react";
 
 export default function Footer() {
+  const [email, setEmail] = React.useState('');
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [message, setMessage] = React.useState<{ type: 'success' | 'error'; text: string } | null>(null);
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!email.trim()) {
+      setMessage({ type: 'error', text: 'Please enter your email address.' });
+      return;
+    }
+
+    setIsSubmitting(true);
+    setMessage(null);
+
+    try {
+      const response = await fetch('/api/subscribe-newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage({ type: 'success', text: data.message });
+        setEmail('');
+      } else {
+        setMessage({ type: 'error', text: data.error || 'An error occurred. Please try again.' });
+      }
+    } catch (error) {
+      setMessage({ type: 'error', text: 'Network error. Please check your connection and try again.' });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <footer className="bg-[#1a1a1a] text-white pt-10 pb-10 md:pt-20">
       <div className="w-full px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -74,10 +110,15 @@ export default function Footer() {
             >
               <Mail size={18} /> info@artmasons.com
             </a>
-            <div className="flex items-center gap-3 text-gray-300 font-serif">
+            <a
+              href="https://wa.me/971561704788"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-gray-300 font-serif cursor-pointer hover:text-white transition-colors"
+            >
               <Image src="/image/icons/whatsapp.webp" alt="WhatsApp" width={20} height={20} />
               <span>+971 56 170 4788</span>
-            </div>
+            </a>
           </div>
 
           <h4 className="font-serif text-xs font-bold uppercase tracking-widest text-gray-500 mb-6 mt-8">
@@ -132,19 +173,32 @@ export default function Footer() {
             <h4 className="font-serif text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">
               Newsletter
             </h4>
-            <div className="flex flex-col gap-3">
+            <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
               <input
                 type="email"
                 placeholder="Your email"
-                className="bg-white text-black px-4 py-2 outline-none rounded-sm w-full font-serif text-sm"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={isSubmitting}
+                className="bg-white text-black px-4 py-2 outline-none rounded-sm w-full font-serif text-sm disabled:opacity-50"
               />
-              <button className="bg-[#800000] text-white px-4 py-2 font-bold uppercase text-xs tracking-widest hover:bg-[#600000] transition-colors rounded-sm font-serif cursor-pointer">
-                Subscribe*
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="bg-[#800000] text-white px-4 py-2 font-bold uppercase text-xs tracking-widest hover:bg-[#600000] transition-colors rounded-sm font-serif cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? 'Subscribing...' : 'Subscribe*'}
               </button>
+              {message && (
+                <p className={`text-xs font-serif leading-tight ${message.type === 'success' ? 'text-green-400' : 'text-red-400'
+                  }`}>
+                  {message.text}
+                </p>
+              )}
               <p className="text-[10px] text-gray-500 font-serif leading-tight">
                 *Subscribe to receive special offers, updates and news.
               </p>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -159,10 +213,20 @@ export default function Footer() {
           </span>
           <div className="flex items-center gap-4">
 
-            <a href="https://instagram.com/Theartmasons" className="block cursor-pointer">
+            <a
+              href="https://instagram.com/Theartmasons"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block cursor-pointer"
+            >
               <Image src="/image/icons/instagram.webp" alt="Instagram" width={20} height={20} />
             </a>
-            <a href="#" className="block cursor-pointer">
+            <a
+              href="https://wa.me/971561704788"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block cursor-pointer hover:opacity-70 transition-opacity"
+            >
               <Image src="/image/icons/whatsapp.webp" alt="WhatsApp" width={20} height={20} />
             </a>
             <a href="https://www.tiktok.com/@theartmasons" className="block cursor-pointer" target="_blank" rel="noopener noreferrer">

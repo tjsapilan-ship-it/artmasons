@@ -18,6 +18,7 @@ import type { Artwork } from '../../data/artworks';
 import { getArtworkSlug } from '../../data/artworks';
 import { useToast } from '../context/ToastContext';
 import QuoteRequestModal from '../components/QuoteRequestModal';
+import { useCurrency } from '../context/CurrencyContext';
 
 type ArtworkOption = NonNullable<Artwork['options']>[number];
 
@@ -46,10 +47,10 @@ export default function ClientProductDetails({
   );
   const [quantity, setQuantity] = useState(1);
   const [imageIsPortrait, setImageIsPortrait] = useState<boolean | null>(null);
+  const { formatPrice, currency } = useCurrency();
 
   const optionIsPortrait = useMemo(() => selectedOption.width < selectedOption.height, [selectedOption.width, selectedOption.height]);
   const isPortrait = imageIsPortrait ?? optionIsPortrait;
-  const formatPrice = (value: number) => new Intl.NumberFormat('en-US').format(value);
 
   const availableOptions = (artwork.options && artwork.options.length > 0) ? artwork.options : [selectedOption];
   const { addItem, items: cartItems } = useCart();
@@ -177,7 +178,6 @@ export default function ClientProductDetails({
             <span className="font-serif text-4xl md:text-5xl font-bold text-[#800000] inline-flex items-end">
               {formatPrice(selectedOption.price)}
             </span>
-            <span className="font-serif text-lg md:text-xl text-gray-600">{artwork.currency}</span>
           </div>
           <p className="text-sm md:text-sm text-gray-500 font-serif uppercase tracking-wide">
             Hand-painted on linen canvas
@@ -234,7 +234,6 @@ export default function ClientProductDetails({
                 </div>
                 <span className="font-serif font-bold text-base md:text-lg text-gray-800 inline-flex items-end">
                   {formatPrice(option.price)}
-                  <span className="ml-1">{artwork.currency}</span>
                 </span>
 
                 <input
@@ -324,7 +323,6 @@ export default function ClientProductDetails({
               Add to Cart -
               &nbsp;
               {formatPrice(selectedOption.price)}
-              <span className="ml-1">{artwork.currency}</span>
             </span>
           </button>
 
@@ -451,7 +449,7 @@ export default function ClientProductDetails({
                     <p className="font-serif text-base font-bold text-gray-900 leading-snug line-clamp-2">{item.name}</p>
                     <p className="font-serif text-xs text-gray-500">{item.year ?? 'Year unknown'}</p>
                     <p className="font-serif text-lg md:text-xl font-bold text-[#800000]">
-                      {displayPrice.toLocaleString()} {item.currency ?? artwork.currency}
+                      {formatPrice(displayPrice)}
                     </p>
                   </div>
                 </Link>

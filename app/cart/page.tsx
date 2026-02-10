@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Trash2, Plus, Minus, ShoppingBag, ArrowRight, Lock, Truck, Shield } from 'lucide-react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useCart } from '../context/CartContext';
+import { useCurrency } from '../context/CurrencyContext';
 
 
 const SHIPPING_COST = 0; // Free shipping
@@ -15,6 +16,7 @@ export default function CartPage() {
   const { items: cartItems, updateQuantity, removeItem, subtotal } = useCart();
   const [promoCode, setPromoCode] = useState('');
   const [promoApplied, setPromoApplied] = useState(false);
+  const { formatPrice } = useCurrency();
 
   const applyPromoCode = () => {
     if (promoCode.trim()) {
@@ -141,11 +143,11 @@ export default function CartPage() {
                         {/* Price */}
                         <div className="text-right">
                           <p className="font-serif text-2xl font-bold text-[#800000] tabular-nums">
-                            AED {(item.price * item.quantity).toLocaleString()}
+                            {formatPrice(item.price * item.quantity)}
                           </p>
                           {item.quantity > 1 && (
                             <p className="font-serif text-sm text-gray-500 tabular-nums">
-                              AED {item.price.toLocaleString()} each
+                              {formatPrice(item.price)} each
                             </p>
                           )}
                         </div>
@@ -190,8 +192,8 @@ export default function CartPage() {
                         onClick={applyPromoCode}
                         disabled={promoApplied}
                         className={`px-4 py-2 rounded-lg font-serif font-bold transition-colors ${promoApplied
-                            ? 'bg-green-600 text-white cursor-not-allowed'
-                            : 'bg-[#800000] text-white hover:bg-[#600000] cursor-pointer'
+                          ? 'bg-green-600 text-white cursor-not-allowed'
+                          : 'bg-[#800000] text-white hover:bg-[#600000] cursor-pointer'
                           }`}
                       >
                         {promoApplied ? '✓' : 'Apply'}
@@ -207,13 +209,13 @@ export default function CartPage() {
                   <div className="space-y-3 mb-6 pb-6 border-b border-gray-300">
                     <div className="flex justify-between items-baseline font-serif">
                       <span className="text-gray-700">Subtotal:</span>
-                      <span className="font-semibold tabular-nums">AED {subtotal.toLocaleString()}</span>
+                      <span className="font-semibold tabular-nums">{formatPrice(subtotal)}</span>
                     </div>
 
                     {promoApplied && (
                       <div className="flex justify-between items-baseline font-serif text-green-600">
                         <span>Discount (10%):</span>
-                        <span className="font-semibold tabular-nums">-AED {discount.toLocaleString()}</span>
+                        <span className="font-semibold tabular-nums">-{formatPrice(discount)}</span>
                       </div>
                     )}
 
@@ -224,13 +226,13 @@ export default function CartPage() {
 
                     <div className="flex justify-between items-baseline font-serif">
                       <span className="text-gray-700">Tax (5%):</span>
-                      <span className="font-semibold tabular-nums">AED {tax.toFixed(2)}</span>
+                      <span className="font-semibold tabular-nums">{formatPrice(tax)}</span>
                     </div>
                   </div>
 
                   <div className="flex justify-between items-baseline font-serif text-xl font-bold mb-6">
                     <span className="text-gray-900">Total:</span>
-                    <span className="text-[#800000] tabular-nums">AED {total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                    <span className="text-[#800000] tabular-nums">{formatPrice(total)}</span>
                   </div>
 
                   <Link
