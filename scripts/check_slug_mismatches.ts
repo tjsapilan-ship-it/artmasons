@@ -16,7 +16,8 @@ const hammerPriceFile = path.join(__dirname, '..', 'data', 'HAMMER PRICE.txt');
 let hammerPriceContent = '';
 
 try {
-  for (const encoding of ['utf-8', 'latin-1', 'cp1252', 'iso-8859-1']) {
+  const encodings: BufferEncoding[] = ['utf-8', 'latin1'];
+  for (const encoding of encodings) {
     try {
       hammerPriceContent = fs.readFileSync(hammerPriceFile, encoding);
       break;
@@ -33,7 +34,7 @@ try {
 const lines = hammerPriceContent.split(/\r?\n/).map(line => line.trim()).filter(line => line);
 let startIdx = lines.findIndex(line => line.includes('FAMOUS ART')) + 1;
 
-const hammerPriceData: Array<{name: string, slug: string, price: string}> = [];
+const hammerPriceData: Array<{ name: string, slug: string, price: string }> = [];
 const seenSlugs = new Set<string>();
 
 for (let i = startIdx; i < lines.length - 3; i += 4) {
@@ -41,7 +42,7 @@ for (let i = startIdx; i < lines.length - 3; i += 4) {
   const artist = lines[i + 1]?.trim();
   const location = lines[i + 2]?.trim();
   const price = lines[i + 3]?.trim();
-  
+
   if (artName && artist && location && price) {
     const slug = generateSlug(artName);
     if (!seenSlugs.has(slug)) {
@@ -68,12 +69,12 @@ if (unmatched.length > 0) {
   console.log('\n' + '='.repeat(80));
   console.log('Artworks in HAMMER PRICE.txt NOT found in database:');
   console.log('='.repeat(80));
-  
+
   unmatched.forEach((item, idx) => {
     console.log(`\n${idx + 1}. "${item.name}"`);
     console.log(`   Expected slug: ${item.slug}`);
     console.log(`   Price: ${item.price}`);
-    
+
     // Try to find similar artwork names
     const similar = ARTWORKS.filter(a => {
       const nameWords = a.name.toLowerCase().split(/\s+/);
@@ -81,7 +82,7 @@ if (unmatched.length > 0) {
       const commonWords = nameWords.filter(w => itemWords.includes(w) && w.length > 3);
       return commonWords.length >= 2;
     });
-    
+
     if (similar.length > 0) {
       console.log(`   Possible matches in database:`);
       similar.slice(0, 3).forEach(s => {

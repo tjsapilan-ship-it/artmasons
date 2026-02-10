@@ -7,7 +7,8 @@ const hammerPriceFile = path.join(__dirname, '..', 'data', 'HAMMER PRICE.txt');
 let hammerPriceContent = '';
 
 try {
-  for (const encoding of ['utf-8', 'latin-1', 'cp1252', 'iso-8859-1']) {
+  const encodings: BufferEncoding[] = ['utf-8', 'latin1'];
+  for (const encoding of encodings) {
     try {
       hammerPriceContent = fs.readFileSync(hammerPriceFile, encoding);
       break;
@@ -64,7 +65,7 @@ withoutHammerPrice.slice(0, 20).forEach((artwork) => {
     const commonWords = nameWords.filter(w => hpWords.includes(w) && w.length > 3);
     return commonWords.length >= 2;
   });
-  
+
   if (found) {
     console.log(`\n✓ "${artwork.name}" (${artwork.slug})`);
     console.log(`  May match: "${found}"`);
