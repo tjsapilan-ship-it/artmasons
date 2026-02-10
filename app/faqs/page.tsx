@@ -113,15 +113,8 @@ export default function FAQsPage() {
               <p>
                 However, framing your artwork once it arrives is extremely simple. Any professional frame shop will offer a wide selection of frames to match your style and interior, ranging from wood to metal and high-quality synthetic options. Simply take your rolled canvas to the frame shop, and their specialists will advise you on suitable frame styles, materials, and finishes that best complement your artwork.
               </p>
-              <p className="font-bold">Framing Services for Customers in Dubai and Australia:</p>
               <p>
-                If you are based in <strong>Dubai</strong>, we are pleased to offer additional assistance with stretching and framing your artwork. Through our trusted network of professional framing partners, we can help you select the ideal frame and ensure your painting is stretched and finished to the highest standard.
-              </p>
-              <p>
-                We will connect you directly with one of our recommended frame shops, where you can choose from a wide variety of materials, finishes, and styles that complement both your artwork and your interior design. All payments for stretching and framing are made directly to the framing shop, giving you full transparency and flexibility in selecting the service that best meets your needs.
-              </p>
-              <p>
-                For customers in <strong>Australia</strong>, while we don't have direct framing partnerships, professional framing services are widely available throughout the country. Any reputable local frame shop will be able to stretch and frame your artwork to museum standards. Simply take your rolled canvas to a professional framer, and they will guide you through the available options to beautifully showcase your painting.
+                If you are based in Dubai or Australia
               </p>
             </div>
           </section>
