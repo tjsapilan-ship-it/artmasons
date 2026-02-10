@@ -140,8 +140,9 @@ export async function POST(request: NextRequest) {
                     {
                         success: false,
                         message: 'Failed to send quote request. Please try again or contact us directly at info@artmasons.com'
-                },
-                { status: 500 }
+                    },
+                    { status: 500 }
+                )
             );
         }
     } catch (error) {
