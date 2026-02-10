@@ -301,7 +301,7 @@ export default function FrameSizeArtPage() {
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             {[
               { step: 1, title: "Order", desc: "Select your artwork and choose a standard or custom size online." },
-              { step: 2, title: "Creation", desc: "Your artwork is hand-painted by our academically trained artists. Production takes approximately 8 weeks, including proper drying time." },
+              { step: 2, title: "Creation", desc: "Your artwork is hand-painted by our academically trained artists. Production takes approximately 6 weeks, including proper drying time." },
               { step: 3, title: "Delivery", desc: "Once complete, we ship your artwork directly to your framer of choice for a seamless transition. Estimated delivery time: 1 week." },
               { step: 4, title: "Consult", desc: "Work with your framer to select materials that best complement your interior and artwork." },
               { step: 5, title: "Preparation", desc: "Your framer professionally stretches and frames the canvas to museum standards." },
