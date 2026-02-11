@@ -312,7 +312,7 @@ export default function QuoteRequestModal({
                                                         onChange={handleChange}
                                                         className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg font-serif focus:outline-none focus:border-[#800000] focus:ring-1 focus:ring-[#800000] cursor-pointer appearance-none transition-all hover:border-gray-300"
                                                     >
-                                                        <option value="">Select frame option...</option>
+                                                        {/* <option value="">Select frame option...</option> */}
                                                         <option value="Unframed">Unframed (Canvas Only)</option>
                                                         <option value="Simple Frame">Simple Museum Frame</option>
                                                         <option value="Premium Frame">Premium Gold/Wood Frame</option>
@@ -347,7 +347,7 @@ export default function QuoteRequestModal({
                                                 onChange={handleChange}
                                                 rows={4}
                                                 className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg font-serif focus:outline-none focus:border-[#800000] focus:ring-1 focus:ring-[#800000] resize-none transition-colors"
-                                                placeholder="Tell us about any specific requirements, timeline, or questions..."
+                                                placeholder=""
                                             />
                                         </div>
                                     </div>

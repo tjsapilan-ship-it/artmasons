@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { ARTWORKS, generateSlug, getArtworkSlug } from '../../data/artworks';
 import { ARTIST_RECOMMENDED_IMAGES } from '../../data/artistRecommendedImages';
+import { useCurrency } from '../context/CurrencyContext';
 
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -34,25 +35,8 @@ const getArtistDates = (artistName: string): { birth?: number; death?: number } 
   return {};
 };
 
-const formatPrice = (price: number, currency: string = 'AED') => {
-  const formatted = new Intl.NumberFormat('en-US', {
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(price);
-
-  if (currency === 'AED') {
-    return `AED ${formatted}`;
-  }
-
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: currency,
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(price);
-};
-
 export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise<{ view?: string }> }) {
+  const { formatPrice } = useCurrency();
   const [selectedLetter, setSelectedLetter] = useState<string>('A');
   const [showAllGallery, setShowAllGallery] = useState<boolean>(true);
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -390,7 +374,7 @@ export default function ArtistsAZPage({ searchParams }: { searchParams?: Promise
                         <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
                           <div className="font-serif text-xs text-gray-600 mb-1">Original Size</div>
                           <div className="font-serif text-base font-bold text-[#800000]">
-                            {artwork.price ? formatPrice(artwork.price, artwork.currency) : 'Price on request'}
+                            {artwork.price ? formatPrice(artwork.price) : 'Price on request'}
                           </div>
                         </button>
                         <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">

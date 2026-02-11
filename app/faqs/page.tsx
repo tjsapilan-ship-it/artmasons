@@ -50,7 +50,7 @@ export default function FAQsPage() {
                 Creating a hand-painted reproduction of museum quality requires patience, precision, and time. Each artwork is painted entirely by hand and must also be allowed to dry fully before it can be safely shipped.
               </p>
               <p>
-                On average, we require 6 weeks from the moment your order and payment are received until your painting is ready for dispatch.
+                On average, we require 6-7 weeks from the moment your order and payment are received until your painting is ready for dispatch.
               </p>
               <p>
                 The exact timeframe may vary depending on the complexity of the original artwork and, to a lesser extent, the size of the piece. More intricate paintings naturally require additional time to ensure every detail is faithfully reproduced.
@@ -104,7 +104,7 @@ export default function FAQsPage() {
           </section>
 
           {/* Section 6 */}
-          <section>
+          {/* <section>
             <h2 className="font-serif text-2xl font-bold mb-4 text-[#800000]">Can You Frame the Painting I Have Chosen?</h2>
             <div className="font-serif text-gray-700 leading-relaxed space-y-4">
               <p>
@@ -122,6 +122,25 @@ export default function FAQsPage() {
               </p>
               <p>
                 For customers in <strong>Australia</strong>, while we don't have direct framing partnerships, professional framing services are widely available throughout the country. Any reputable local frame shop will be able to stretch and frame your artwork to museum standards. Simply take your rolled canvas to a professional framer, and they will guide you through the available options to beautifully showcase your painting.
+              </p>
+            </div>
+          </section> */}
+
+          <section>
+            <h2 className="font-serif text-2xl font-bold mb-4 text-[#800000]">Can You Frame the Painting I Have Chosen?</h2>
+            <div className="font-serif text-gray-700 leading-relaxed space-y-4">
+              <p>
+                Our paintings are shipped unstretched and unframed due to international mailing limitations. High-quality oil paintings are valuable and can be easily damaged during transport if shipped already stretched on a frame.
+              </p>
+              <p>
+                However, framing your artwork once it arrives is extremely simple. Any professional frame shop will offer a wide selection of frames to match your style and interior, ranging from wood to metal and high-quality synthetic options. Simply take your rolled canvas to the frame shop, and their specialists will advise you on suitable frame styles, materials, and finishes that best complement your artwork.
+              </p>
+              <p className="font-bold">Framing Services for Customers in Dubai and Australia:</p>
+              <p>
+                If you are based in <strong>Dubai</strong> or <strong>Australia</strong>, we are pleased to offer additional assistance with stretching and framing your artwork. Through our trusted network of professional framing partners, we can help you select the ideal frame and ensure your painting is stretched and finished to the highest standard.
+              </p>
+              <p>
+                We will connect you directly with one of our recommended frame shops, where you can choose from a wide variety of materials, finishes, and styles that complement both your artwork and your interior design. All payments for stretching and framing are made directly to the framing shop, giving you full transparency and flexibility in selecting the service that best meets your needs.
               </p>
             </div>
           </section>

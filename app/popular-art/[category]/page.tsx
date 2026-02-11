@@ -9,6 +9,7 @@ import PopularArtCarousel from '../../components/PopularArtCarousel';
 import { ARTWORKS, generateSlug, getArtworkBySlug, getArtworkSlug, type Artwork } from '../../../data/artworks';
 import { getCategorySlugs } from '../../../data/popularCategories';
 import QuoteRequestModal from '../../components/QuoteRequestModal';
+import { useCurrency } from '../../context/CurrencyContext';
 
 
 const getPrimaryPricing = (artwork: Artwork) => {
@@ -17,12 +18,7 @@ const getPrimaryPricing = (artwork: Artwork) => {
     ? artwork.options.reduce((min, option) => (option.price < min.price ? option : min), artwork.options[0])
     : null;
   const price = minOption?.price ?? artwork.basePrice ?? artwork.price ?? null;
-  return { price, currency: artwork.currency || 'AED', label: minOption?.label || 'Original Size' };
-};
-
-const formatPrice = (price: number, currency: string) => {
-  const formatted = new Intl.NumberFormat('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(price);
-  return `${currency} ${formatted}`;
+  return { price, label: minOption?.label || 'Original Size' };
 };
 
 function humanize(slug: string) {
@@ -72,6 +68,7 @@ function matchesCategory(artwork: Artwork, slug?: string) {
 }
 
 export default function CategoryPage({ params, searchParams }: { params: Promise<{ category: string }>, searchParams?: Promise<{ sort?: string }> }) {
+  const { formatPrice } = useCurrency();
   const [showQuoteModal, setShowQuoteModal] = useState(false);
   const [selectedArtwork, setSelectedArtwork] = useState<{ title: string; artist: string } | null>(null);
   const [resolvedParams, setResolvedParams] = React.useState<{ category: string } | null>(null);
@@ -209,7 +206,7 @@ export default function CategoryPage({ params, searchParams }: { params: Promise
                           </div>
                           <div className="font-serif text-base font-bold text-[#800000]">
                             {pricing.price !== null && pricing.price !== undefined
-                              ? formatPrice(pricing.price, pricing.currency)
+                              ? formatPrice(pricing.price)
                               : 'Price on request'}
                           </div>
                         </button>

@@ -119,12 +119,11 @@ export default function ClientProductDetails({
                 </p>
               )}
               {artwork.hammerPrice && (
-                <div className="mt-3 pt-3 border-t border-amber-200 bg-gradient-to-r from-amber-50 to-yellow-50 -mx-4 md:-mx-5 px-4 md:px-5 py-3">
+                <div className="mt-3 pt-3 border-t border-[#800000]/20 bg-gradient-to-r from-[#800000]/10 to-[#800000]/20 -mx-4 md:-mx-5 px-4 md:px-5 py-3">
                   <p className="flex items-center gap-2 mb-1">
-                    <BadgeDollarSign size={16} className="text-amber-600" />
-                    <span className="font-bold text-amber-900 uppercase text-xs tracking-wide">Original Artwork Est. Value</span>
+                    <span className="font-bold text-[#800000] uppercase text-xs tracking-wide">Original Art Valuation</span>
                   </p>
-                  <p className="text-2xl font-bold text-amber-700 font-serif">{artwork.hammerPrice}</p>
+                  <p className="text-2xl font-bold text-[#800000] font-serif">{artwork.hammerPrice}</p>
                 </div>
               )}
             </div>
@@ -173,7 +172,7 @@ export default function ClientProductDetails({
         </div>
 
         {/* Pricing Section */}
-        <div className="bg-gray-50 border border-gray-200 p-4 md:p-5">
+        {/* <div className="bg-gray-50 border border-gray-200 p-4 md:p-5">
           <div className="flex items-baseline gap-2 mb-1">
             <span className="font-serif text-4xl md:text-5xl font-bold text-[#800000] inline-flex items-end">
               {formatPrice(selectedOption.price)}
@@ -194,7 +193,7 @@ export default function ClientProductDetails({
               </div>
             </div>
           )}
-        </div>
+        </div> */}
 
         {/* Size Selection */}
         <div>
@@ -345,7 +344,7 @@ export default function ClientProductDetails({
         </div>
 
         {/* Trust Badges */}
-        <div className="grid grid-cols-2 gap-3 pt-4">
+        {/* <div className="grid grid-cols-2 gap-3 pt-4">
           <div className="flex items-center gap-2 p-3 bg-gray-50 border border-gray-200">
             <ShoppingBag size={20} className="text-[#800000] flex-shrink-0" />
             <div className="font-serif text-sm md:text-sm">
@@ -360,7 +359,7 @@ export default function ClientProductDetails({
               <p className="text-gray-600 leading-tight">By Master Artists</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <AnimatePresence>
         {showConflictModal && conflictItem && (

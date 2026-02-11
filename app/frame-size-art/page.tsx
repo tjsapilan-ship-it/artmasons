@@ -299,7 +299,7 @@ export default function FrameSizeArtPage() {
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             {[
               { step: 1, title: "Order", desc: "Select your artwork and choose a standard or custom size online." },
-              { step: 2, title: "Creation", desc: "Your artwork is hand-painted by our academically trained artists. Production takes approximately 8 weeks, including proper drying time." },
+              { step: 2, title: "Creation", desc: "Your artwork is hand-painted by our academically trained artists. Production takes approximately 6 weeks, including proper drying time." },
               { step: 3, title: "Delivery", desc: "Once complete, we ship your artwork directly to your framer of choice for a seamless transition. Estimated delivery time: 1 week." },
               { step: 4, title: "Consult", desc: "Work with your framer to select materials that best complement your interior and artwork." },
               { step: 5, title: "Preparation", desc: "Your framer professionally stretches and frames the canvas to museum standards." },
@@ -319,14 +319,14 @@ export default function FrameSizeArtPage() {
           <div className="relative rounded-lg overflow-hidden shadow-lg bg-white border-2 border-[#800000]">
             <div className="grid md:grid-cols-2">
               <div className="p-10 md:p-12 flex flex-col justify-center">
-                <div className="inline-flex items-center gap-2 bg-[#800000] text-white w-fit px-3 py-1 rounded-full text-sm font-medium mb-6">
+                {/* <div className="inline-flex items-center gap-2 bg-[#800000] text-white w-fit px-3 py-1 rounded-full text-sm font-medium mb-6">
                   <span className="uppercase tracking-wider">Dubai Exclusive</span>
-                </div>
+                </div> */}
                 <h3 className="font-serif text-3xl font-bold mb-6 text-gray-900">
                   Professional Framing Service
                 </h3>
                 <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                  Based in Dubai? We connect you directly with the city’s leading professional framers for a seamless, trusted experience. Museum standard craftmanship, handled with care from start to finish.
+                 We connect you directly with leading professional framers for a seamless, trusted experience. Museum-standard craftsmanship, handled with care from start to finish.
                 </p>
 
                 <div className="flex items-center gap-4 bg-gray-50 p-4 rounded-lg border border-gray-200">

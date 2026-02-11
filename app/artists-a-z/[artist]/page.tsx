@@ -8,6 +8,7 @@ import PageTransition from '../../components/PageTransition';
 import ArtistsAZNavigation from '../../components/ArtistsAZNavigation';
 import { getArtworkSlug, getArtworksByArtistSlug, getArtistNameBySlug, type Artwork } from '../../../data/artworks';
 import QuoteRequestModal from '../../components/QuoteRequestModal';
+import { useCurrency } from '../../context/CurrencyContext';
 
 
 const humanizeSlug = (slug: string) =>
@@ -16,11 +17,6 @@ const humanizeSlug = (slug: string) =>
     .split(' ')
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(' ');
-
-const formatPrice = (price: number, currency: string) => {
-  const formatted = new Intl.NumberFormat('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(price);
-  return `${currency} ${formatted}`;
-};
 
 const sortArtworks = (items: Artwork[], sort: string) => {
   if (sort === 'title') {
@@ -41,6 +37,7 @@ export default function ArtistPage({
   params: Promise<{ artist: string }>;
   searchParams?: Promise<{ sort?: string }>;
 }) {
+  const { formatPrice } = useCurrency();
   const [showQuoteModal, setShowQuoteModal] = useState(false);
   const [selectedArtwork, setSelectedArtwork] = useState<{ title: string; artist: string } | null>(null);
   const [resolvedParams, setResolvedParams] = React.useState<{ artist: string } | null>(null);
@@ -178,7 +175,7 @@ export default function ArtistPage({
                       <button className="bg-white border-2 border-gray-200 rounded-md px-3 py-2.5 text-center hover:border-[#800000] hover:bg-gray-50 transition-all cursor-pointer">
                         <div className="font-serif text-xs text-gray-600 mb-1">Original Size</div>
                         <div className="font-serif text-base font-bold text-[#800000]">
-                          {formatPrice(art.price, art.currency || 'AED')}
+                          {formatPrice(art.price)}
                         </div>
                       </button>
                       <button
