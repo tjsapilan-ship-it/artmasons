@@ -10,7 +10,7 @@ import { useCurrency } from '../context/CurrencyContext';
 
 
 const SHIPPING_COST = 0; // Free shipping
-const TAX_RATE = 0.05; // 5% tax
+//const TAX_RATE = 0.05; // 5% tax
 
 export default function CartPage() {
   const { items: cartItems, updateQuantity, removeItem, subtotal } = useCart();
@@ -25,8 +25,8 @@ export default function CartPage() {
   };
 
   const discount = promoApplied ? subtotal * 0.1 : 0;
-  const tax = (subtotal - discount) * TAX_RATE;
-  const total = subtotal - discount + tax + SHIPPING_COST;
+  //const tax = (subtotal - discount) * TAX_RATE;
+  const total = subtotal - discount + /*tax*/ + SHIPPING_COST;
 
   return (
     <main className="min-h-screen bg-art-texture text-black">
