@@ -10,7 +10,7 @@ import { useCurrency } from '../context/CurrencyContext';
 
 
 const SHIPPING_COST = 0; // Free shipping
-const TAX_RATE = 0.05; // 5% tax
+const TAX_RATE = 0; // Tax set to 0%
 
 export default function CartPage() {
   const { items: cartItems, updateQuantity, removeItem, subtotal } = useCart();
@@ -223,11 +223,8 @@ export default function CartPage() {
                       <span className="text-gray-700">Shipping:</span>
                       <span className="font-semibold text-green-600">FREE</span>
                     </div>
-
-                    <div className="flex justify-between items-baseline font-serif">
-                      <span className="text-gray-700">Tax (5%):</span>
-                      <span className="font-semibold tabular-nums">{formatPrice(tax)}</span>
-                    </div>
+                    
+                    {/* Tax row removed to keep UI clean for 0% tax */}
                   </div>
 
                   <div className="flex justify-between items-baseline font-serif text-xl font-bold mb-6">
@@ -258,65 +255,7 @@ export default function CartPage() {
                     </div>
                   </div>
                 </div>
-
-                {/* Trust Badges */}
-                <div className="bg-white/80 border border-gray-200 rounded-lg p-6 backdrop-blur-sm">
-                  <h3 className="font-serif text-lg font-bold mb-4 text-gray-800">Why Choose Art Masons?</h3>
-                  <ul className="space-y-3 font-serif text-sm text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#800000] mt-1">✓</span>
-                      <span>Museum-quality reproductions</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#800000] mt-1">✓</span>
-                      <span>Hand-painted by master artists</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#800000] mt-1">✓</span>
-                      <span>Premium linen canvas & oil paints</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#800000] mt-1">✓</span>
-                      <span>Worldwide secure shipping</span>
-                    </li>
-                  </ul>
-                </div>
               </div>
-            </div>
-          </div>
-        )}
-
-        {/* Additional Information Section */}
-        {cartItems.length > 0 && (
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white/80 p-6 rounded-lg text-center border border-[#800000]/5 backdrop-blur-sm">
-              <div className="inline-block p-4 bg-[#800000] text-white rounded-full mb-4">
-                <Lock size={32} />
-              </div>
-              <h3 className="font-serif text-xl font-bold mb-2 text-gray-800">Secure Checkout</h3>
-              <p className="font-serif text-sm text-gray-600">
-                Your payment information is protected with industry-standard encryption
-              </p>
-            </div>
-
-            <div className="bg-white/80 p-6 rounded-lg text-center border border-[#800000]/5 backdrop-blur-sm">
-              <div className="inline-block p-4 bg-[#800000] text-white rounded-full mb-4">
-                <Truck size={32} />
-              </div>
-              <h3 className="font-serif text-xl font-bold mb-2 text-gray-800">Free Shipping</h3>
-              <p className="font-serif text-sm text-gray-600">
-                Complimentary worldwide shipping on all orders, carefully packaged for protection
-              </p>
-            </div>
-
-            <div className="bg-white/80 p-6 rounded-lg text-center border border-[#800000]/5 backdrop-blur-sm">
-              <div className="inline-block p-4 bg-[#800000] text-white rounded-full mb-4">
-                <Shield size={32} />
-              </div>
-              <h3 className="font-serif text-xl font-bold mb-2 text-gray-800">Quality Guarantee</h3>
-              <p className="font-serif text-sm text-gray-600">
-                Each painting is inspected for quality before shipping with a satisfaction guarantee
-              </p>
             </div>
           </div>
         )}
